@@ -10,10 +10,10 @@ use this with vue-inbrowser-compiler to compile for vue2 or vue3
 | ------------------ | :-------------: |
 | Full name          | vue-inbrowser-compiler-demi |
 | Keywords           | vue, compile |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 482014.0 |
-| # stars            | 2269.0 |
+| # downloads        | 391606.0 |
+| # stars            | 2295.0 |
 
 ## Links
 - [Homepage](https://vue-styleguidist.github.io)

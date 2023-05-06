@@ -10,10 +10,10 @@ Create PeerId instances
 | ------------------ | :-------------: |
 | Full name          | @libp2p/peer-id-factory |
 | Keywords           | IPFS |
-| # releases         | 21 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 10749.0 |
-| # stars            | 2.0 |
+| # downloads        | 28176.333333333332 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-peer-id/tree/master/packages/libp2p-peer-id-factory#readme)

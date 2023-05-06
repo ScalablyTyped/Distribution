@@ -10,10 +10,10 @@ Invokes the passed function for each item in an iterable
 | ------------------ | :-------------: |
 | Full name          | it-foreach |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 23731.333333333332 |
-| # stars            | 200.0 |
+| # downloads        | 27224.333333333332 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-foreach#readme)

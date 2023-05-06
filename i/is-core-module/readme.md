@@ -10,10 +10,10 @@ Is this specifier a node.js core module?
 | ------------------ | :-------------: |
 | Full name          | is-core-module |
 | Keywords           | core, modules, module, npm, node, dependencies |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1.38902902E8 |
-| # stars            | 11.0 |
+| # downloads        | 1.5173543333333334E8 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/inspect-js/is-core-module)

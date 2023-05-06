@@ -10,9 +10,9 @@ A small utility for creating warnings and emitting them.
 | ------------------ | :-------------: |
 | Full name          | process-warning |
 | Keywords           | fastify, error, warning, utility, plugin, emit, once |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 5952493.666666667 |
+| # downloads        | 9597701.666666666 |
 | # stars            | 15.0 |
 
 ## Links

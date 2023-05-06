@@ -10,10 +10,10 @@ Converts inline style to object.
 | ------------------ | :-------------: |
 | Full name          | style-to-object |
 | Keywords           | style-to-object, inline, style, parser, css, object, pojo |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8447916E7 |
-| # stars            | 21.0 |
+| # downloads        | 2.221669E7 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/remarkablemark/style-to-object#readme)

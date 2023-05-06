@@ -10,10 +10,10 @@ Bridging infrastructure for Matrix Application Services
 | ------------------ | :-------------: |
 | Full name          | matrix-appservice-bridge |
 | Keywords           | matrix-org |
-| # releases         | 32 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 1933.0 |
-| # stars            | 118.0 |
+| # downloads        | 3028.3333333333335 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/matrix-org/matrix-appservice-bridge#readme)

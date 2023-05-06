@@ -10,12 +10,15 @@ An optimised way to copy'ing an object. A small and simple integration
 | ------------------ | :-------------: |
 | Full name          | copy-anything |
 | Keywords           | copy, clone, json-stringify, stringify-parse, object, copy-objects, clone-objects, json-stringify-json-parse, deep-clone, deep-copy, typescript, ts |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1012970333333334E7 |
-| # stars            | 19.0 |
+| # downloads        | 1.2527523666666666E7 |
+| # stars            | 22.0 |
 
 ## Links
+- [Homepage](https://github.com/mesqueeb/copy-anything#readme)
+- [Bugs](https://github.com/mesqueeb/copy-anything/issues)
+- [Repository](https://github.com/mesqueeb/copy-anything)
 - [Npm](https://www.npmjs.com/package/copy-anything)
     
 

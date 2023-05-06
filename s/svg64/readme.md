@@ -9,14 +9,14 @@ Convert SVG to base64 anywhere
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | svg64 |
-| Keywords           | SVG, Convert, base64 |
-| # releases         | 2 |
+| Keywords           | SVG convert, SVG to base64, base64 convert |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 7555.666666666667 |
-| # stars            | 18.0 |
+| # downloads        | 9797.333333333334 |
+| # stars            | 23.0 |
 
 ## Links
-- [Homepage](https://github.com/scriptex/svg64#readme)
+- [Homepage](https://svg64.atanas.info)
 - [Bugs](https://github.com/scriptex/svg64/issues)
 - [Repository](https://github.com/scriptex/svg64)
 - [Npm](https://www.npmjs.com/package/svg64)

@@ -10,10 +10,10 @@ The official Node client library for the Mailchimp Marketing API
 | ------------------ | :-------------: |
 | Full name          | @mailchimp/mailchimp_marketing |
 | Keywords           | mailchimp, api, v3 |
-| # releases         | 72 |
+| # releases         | 55 |
 | # dependents       | 0.0 |
-| # downloads        | 219706.33333333334 |
-| # stars            | 94.0 |
+| # downloads        | 261789.0 |
+| # stars            | 102.0 |
 
 ## Links
 - [Homepage](https://github.com/mailchimp/mailchimp-marketing-node)

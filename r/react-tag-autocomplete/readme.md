@@ -10,10 +10,10 @@ React Tag Autocomplete is a simple tagging component ready to drop in your React
 | ------------------ | :-------------: |
 | Full name          | react-tag-autocomplete |
 | Keywords           | react, tags, tag input, react-component, autosuggest, autocomplete |
-| # releases         | 10 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 145142.0 |
-| # stars            | 410.0 |
+| # downloads        | 133571.0 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/i-like-robots/react-tags#readme)

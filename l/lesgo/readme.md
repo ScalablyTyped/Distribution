@@ -10,9 +10,9 @@ Core framework for lesgo node.js serverless framework.
 | ------------------ | :-------------: |
 | Full name          | lesgo |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 230.0 |
+| # downloads        | 167.0 |
 | # stars            | 7.0 |
 
 ## Links

@@ -10,10 +10,10 @@ A simple node.js telnet client
 | ------------------ | :-------------: |
 | Full name          | telnet-client |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 550330.6666666666 |
-| # stars            | 313.0 |
+| # downloads        | 610300.6666666666 |
+| # stars            | 323.0 |
 
 ## Links
 - [Homepage](https://github.com/mkozjak/node-telnet-client#readme)

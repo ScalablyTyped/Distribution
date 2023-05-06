@@ -10,10 +10,10 @@ Component level cssinjs resolution for antd
 | ------------------ | :-------------: |
 | Full name          | @ant-design/cssinjs |
 | Keywords           | react, cssinjs, antd, ant-design |
-| # releases         | 49 |
+| # releases         | 59 |
 | # dependents       | 0.0 |
-| # downloads        | 7311.333333333333 |
-| # stars            | 61.0 |
+| # downloads        | 178717.66666666666 |
+| # stars            | 123.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/cssinjs)

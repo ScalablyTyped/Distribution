@@ -9,10 +9,10 @@ Typings are for version 9.3.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-platform-android |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 4764717.666666667 |
-| # stars            | 1890.0 |
+| # downloads        | 5561382.666666667 |
+| # stars            | 1977.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/cli#readme)

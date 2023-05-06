@@ -12,7 +12,7 @@ Default Jimp bmp encoder/decoder.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5256876.666666667 |
+| # downloads        | 5916591.333333333 |
 | # stars            | ? |
 
 ## Links

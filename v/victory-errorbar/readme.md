@@ -10,10 +10,10 @@ Error Bar Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-errorbar |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 59 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 762007.6666666666 |
-| # stars            | 9909.0 |
+| # downloads        | 750064.6666666666 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

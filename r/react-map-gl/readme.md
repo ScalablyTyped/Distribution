@@ -10,10 +10,10 @@ React components for Mapbox GL JS-compatible libraries
 | ------------------ | :-------------: |
 | Full name          | react-map-gl |
 | Keywords           | mapbox, mapbox-gl, react, react-mapbox-gl, react mapbox |
-| # releases         | 77 |
+| # releases         | 75 |
 | # dependents       | 0.0 |
-| # downloads        | 835781.0 |
-| # stars            | 6695.0 |
+| # downloads        | 1072371.0 |
+| # stars            | 6935.0 |
 
 ## Links
 - [Homepage](https://github.com/visgl/react-map-gl#readme)

@@ -10,9 +10,9 @@ GitHub API token authentication for browsers and Node.js
 | ------------------ | :-------------: |
 | Full name          | @octokit/auth-token |
 | Keywords           | github, octokit, authentication, api |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9134646666666668E7 |
+| # downloads        | 2.0928829666666668E7 |
 | # stars            | 81.0 |
 
 ## Links

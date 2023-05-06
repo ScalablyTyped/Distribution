@@ -10,10 +10,10 @@ Lerna's internal representation of a package
 | ------------------ | :-------------: |
 | Full name          | @lerna/package |
 | Keywords           | lerna, core |
-| # releases         | 23 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 5538870.666666667 |
-| # stars            | 33535.0 |
+| # downloads        | 5345496.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lerna.js.org)

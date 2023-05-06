@@ -10,10 +10,10 @@ Typings are for version 0.1.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/messaging-interop-types |
 | Keywords           | - |
-| # releases         | 381 |
+| # releases         | 474 |
 | # dependents       | 0.0 |
-| # downloads        | 2487477.0 |
-| # stars            | 4194.0 |
+| # downloads        | 3148896.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

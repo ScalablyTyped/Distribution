@@ -10,10 +10,10 @@ DOM manipulation utilities for Material Components for the web
 | ------------------ | :-------------: |
 | Full name          | @material/dom |
 | Keywords           | - |
-| # releases         | 715 |
+| # releases         | 776 |
 | # dependents       | 0.0 |
-| # downloads        | 668206.0 |
-| # stars            | 16381.0 |
+| # downloads        | 922768.6666666666 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

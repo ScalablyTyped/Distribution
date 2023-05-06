@@ -10,10 +10,10 @@ Load assets and resources
 | ------------------ | :-------------: |
 | Full name          | @pixi/loaders |
 | Keywords           | - |
-| # releases         | 49 |
+| # releases         | 46 |
 | # dependents       | 0.0 |
-| # downloads        | 356073.0 |
-| # stars            | 37387.0 |
+| # downloads        | 399565.0 |
+| # stars            | 38370.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)

@@ -10,15 +10,15 @@ Object schema validation
 | ------------------ | :-------------: |
 | Full name          | joi |
 | Keywords           | schema, validation |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 2.6956821666666668E7 |
-| # stars            | 19076.0 |
+| # downloads        | 2.9613862666666668E7 |
+| # stars            | 19320.0 |
 
 ## Links
-- [Homepage](https://github.com/sideway/joi#readme)
-- [Bugs](https://github.com/sideway/joi/issues)
-- [Repository](https://github.com/sideway/joi)
+- [Homepage](https://github.com/hapijs/joi#readme)
+- [Bugs](https://github.com/hapijs/joi/issues)
+- [Repository](https://github.com/hapijs/joi)
 - [Npm](https://www.npmjs.com/package/joi)
     
 

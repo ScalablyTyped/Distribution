@@ -12,8 +12,8 @@ A small library to provide I18n on JavaScript.
 | Keywords           | - |
 | # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 835648.0 |
-| # stars            | 18.0 |
+| # downloads        | 918925.6666666666 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/fnando/i18n#readme)

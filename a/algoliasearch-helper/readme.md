@@ -10,10 +10,10 @@ Helper for implementing advanced search features with algolia
 | ------------------ | :-------------: |
 | Full name          | algoliasearch-helper |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 1703951.0 |
-| # stars            | 165.0 |
+| # downloads        | 1850356.3333333333 |
+| # stars            | 170.0 |
 
 ## Links
 - [Homepage](https://community.algolia.com/algoliasearch-helper-js/)

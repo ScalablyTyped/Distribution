@@ -10,10 +10,10 @@ A logger for just about everything.
 | ------------------ | :-------------: |
 | Full name          | winston |
 | Keywords           | winston, logger, logging, logs, sysadmin, bunyan, pino, loglevel, tools, json, stream |
-| # releases         | 10 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 3.4452976E7 |
-| # stars            | 19426.0 |
+| # downloads        | 3.7547732666666664E7 |
+| # stars            | 19899.0 |
 
 ## Links
 - [Homepage](https://github.com/winstonjs/winston#readme)

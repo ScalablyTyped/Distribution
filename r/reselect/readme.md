@@ -10,12 +10,15 @@ Selectors for Redux.
 | ------------------ | :-------------: |
 | Full name          | reselect |
 | Keywords           | react, redux |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1005932333333332E7 |
-| # stars            | 18647.0 |
+| # downloads        | 2.4312115333333332E7 |
+| # stars            | 18774.0 |
 
 ## Links
+- [Homepage](https://github.com/reduxjs/reselect#readme)
+- [Bugs](https://github.com/reduxjs/reselect/issues)
+- [Repository](https://github.com/reduxjs/reselect)
 - [Npm](https://www.npmjs.com/package/reselect)
     
 

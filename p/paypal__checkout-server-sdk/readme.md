@@ -10,10 +10,10 @@ NodeJS SDK for PayPal Checkout APIs
 | ------------------ | :-------------: |
 | Full name          | @paypal/checkout-server-sdk |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 91468.33333333333 |
-| # stars            | 251.0 |
+| # downloads        | 86393.33333333333 |
+| # stars            | 250.0 |
 
 ## Links
 - [Homepage](https://github.com/paypal/Checkout-NodeJS-SDK#readme)

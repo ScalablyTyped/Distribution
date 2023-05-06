@@ -10,10 +10,10 @@ Next-gen browser and mobile automation test framework for Node.js
 | ------------------ | :-------------: |
 | Full name          | webdriverio |
 | Keywords           | webdriverio, webdriver, selenium, appium, saucelabs, sauce, labs, mocha, nodeUnit, buster, devtools, puppeteer, vows, jasmine, assert, cucumber, testingbot |
-| # releases         | 143 |
+| # releases         | 172 |
 | # dependents       | 0.0 |
-| # downloads        | 4431640.666666667 |
-| # stars            | 7720.0 |
+| # downloads        | 5282086.666666667 |
+| # stars            | 7901.0 |
 
 ## Links
 - [Homepage](https://webdriver.io)

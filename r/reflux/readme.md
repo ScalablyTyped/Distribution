@@ -10,10 +10,10 @@ A simple library for uni-directional dataflow application architecture inspired 
 | ------------------ | :-------------: |
 | Full name          | reflux |
 | Keywords           | reflux, react, flux, architecture, dataflow, action, event, data |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 117360.0 |
-| # stars            | 5392.0 |
+| # downloads        | 129190.0 |
+| # stars            | 5383.0 |
 
 ## Links
 - [Homepage](https://github.com/reflux/refluxjs#readme)

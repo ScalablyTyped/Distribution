@@ -10,10 +10,10 @@ Gatsby's fork to modernize reach-router
 | ------------------ | :-------------: |
 | Full name          | @gatsbyjs/reach-router |
 | Keywords           | react, reach router, gatsby |
-| # releases         | 14 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1089410.0 |
-| # stars            | 6.0 |
+| # downloads        | 1272084.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/gatsbyjs/reach-router#readme)

@@ -10,10 +10,10 @@ Interact with HTTP status code
 | ------------------ | :-------------: |
 | Full name          | http-status |
 | Keywords           | http, express, connect |
-| # releases         | 3 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 7957439.333333333 |
-| # stars            | 399.0 |
+| # downloads        | 1.0390529666666666E7 |
+| # stars            | 406.0 |
 
 ## Links
 - [Homepage](https://github.com/adaltas/node-http-status)

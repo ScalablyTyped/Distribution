@@ -10,10 +10,10 @@ survey.js is a JavaScript Survey Library. It is a modern way to add a survey to 
 | ------------------ | :-------------: |
 | Full name          | survey-knockout |
 | Keywords           | Survey, JavaScript, Bootstrap, Library, knockout |
-| # releases         | 126 |
+| # releases         | 124 |
 | # dependents       | 0.0 |
-| # downloads        | 72978.33333333333 |
-| # stars            | 3276.0 |
+| # downloads        | 71341.33333333333 |
+| # stars            | 3480.0 |
 
 ## Links
 - [Homepage](https://surveyjs.io/)

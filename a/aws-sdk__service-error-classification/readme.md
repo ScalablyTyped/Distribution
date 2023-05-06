@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/service-error-classification |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 66 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5786073E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.2994391666666668E7 |
+| # stars            | 2023.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/service-error-classification)

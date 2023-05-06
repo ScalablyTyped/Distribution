@@ -4,15 +4,15 @@
 Typings are for version 3.0.0
 
 ## Library description:
-Clone a constructor without affecting the super-class
+Create a subclass that can be modified without affecting the super class
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | unherit |
 | Keywords           | clone, super, class, constructor |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8025281333333332E7 |
+| # downloads        | 2.0571452333333332E7 |
 | # stars            | 8.0 |
 
 ## Links

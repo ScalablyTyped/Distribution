@@ -10,10 +10,10 @@ Modern AJAX library for Nette Framework
 | ------------------ | :-------------: |
 | Full name          | naja |
 | Keywords           | nette, ajax, history |
-| # releases         | 14 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 7391.333333333333 |
-| # stars            | 100.0 |
+| # downloads        | 7248.666666666667 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://naja.js.org)

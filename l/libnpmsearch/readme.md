@@ -10,10 +10,10 @@ Programmatic API for searching in npm and compatible registries.
 | ------------------ | :-------------: |
 | Full name          | libnpmsearch |
 | Keywords           | npm, search, api, libnpm |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 2531931.0 |
-| # stars            | 6348.0 |
+| # downloads        | 2440298.6666666665 |
+| # stars            | 6718.0 |
 
 ## Links
 - [Homepage](https://npmjs.com/package/libnpmsearch)

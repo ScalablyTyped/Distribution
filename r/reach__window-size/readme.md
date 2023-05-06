@@ -10,10 +10,10 @@ Measure the window size in React
 | ------------------ | :-------------: |
 | Full name          | @reach/window-size |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 58681.0 |
-| # stars            | 5390.0 |
+| # downloads        | 59504.333333333336 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)

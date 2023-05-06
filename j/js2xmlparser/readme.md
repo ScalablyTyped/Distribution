@@ -10,10 +10,10 @@ Parses JavaScript objects into XML
 | ------------------ | :-------------: |
 | Full name          | js2xmlparser |
 | Keywords           | convert, converter, javascript, js, json, object, objects, parse, parser, xml |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 6299586.333333333 |
-| # stars            | 186.0 |
+| # downloads        | 6392579.333333333 |
+| # stars            | 188.0 |
 
 ## Links
 - [Homepage](https://github.com/michaelkourlas/node-js2xmlparser#readme)

@@ -12,13 +12,10 @@ state and province lists for countries
 | Keywords           | state, province, geo, data |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 71916.33333333333 |
-| # stars            | 225.0 |
+| # downloads        | 135790.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/provinces)
-- [Bugs](https://github.com/substack/provinces/issues)
-- [Repository](https://github.com/substack/provinces)
 - [Npm](https://www.npmjs.com/package/provinces)
     
 

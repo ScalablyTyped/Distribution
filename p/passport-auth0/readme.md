@@ -10,10 +10,10 @@ Auth0 platform authentication strategy for Passport.js
 | ------------------ | :-------------: |
 | Full name          | passport-auth0 |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 171535.33333333334 |
-| # stars            | 267.0 |
+| # downloads        | 255218.66666666666 |
+| # stars            | 273.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/passport-auth0#readme)

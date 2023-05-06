@@ -10,10 +10,10 @@ Next-generation ES module bundler
 | ------------------ | :-------------: |
 | Full name          | rollup |
 | Keywords           | modules, bundler, bundling, es6, optimizer |
-| # releases         | 146 |
+| # releases         | 167 |
 | # dependents       | 0.0 |
-| # downloads        | 3.4544536333333336E7 |
-| # stars            | 22118.0 |
+| # downloads        | 3.9357867333333336E7 |
+| # stars            | 22838.0 |
 
 ## Links
 - [Homepage](https://rollupjs.org/)

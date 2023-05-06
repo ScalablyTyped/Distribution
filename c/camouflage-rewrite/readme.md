@@ -10,9 +10,9 @@ Express middleware to rewrite a request to a different URL and optional also rep
 | ------------------ | :-------------: |
 | Full name          | camouflage-rewrite |
 | Keywords           | camouflage, rewrite |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 745.3333333333334 |
+| # downloads        | 776.3333333333334 |
 | # stars            | 0.0 |
 
 ## Links

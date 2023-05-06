@@ -10,10 +10,10 @@ This package is used internally by Apollo Server and not meant to be consumed di
 | ------------------ | :-------------: |
 | Full name          | apollo-server-env |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1623504666666666E7 |
-| # stars            | 12821.0 |
+| # downloads        | 1.1968793333333334E7 |
+| # stars            | 13013.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-server#readme)

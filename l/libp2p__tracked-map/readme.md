@@ -10,9 +10,9 @@ Allows tracking of statistics while libp2p is running
 | ------------------ | :-------------: |
 | Full name          | @libp2p/tracked-map |
 | Keywords           | IPFS |
-| # releases         | 13 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 9617.666666666666 |
+| # downloads        | 25770.333333333332 |
 | # stars            | 0.0 |
 
 ## Links

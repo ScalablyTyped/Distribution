@@ -10,10 +10,10 @@ Returns the last result from an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-last |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 320380.6666666667 |
-| # stars            | 200.0 |
+| # downloads        | 270499.6666666667 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-last#readme)

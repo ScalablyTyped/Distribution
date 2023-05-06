@@ -12,8 +12,8 @@ rehype plugin to highlight code blocks in HTML with Prism
 | Keywords           | rehype, rehype-plugin, syntax-highlighting, prism, html |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 150622.0 |
-| # stars            | 136.0 |
+| # downloads        | 126177.33333333333 |
+| # stars            | 146.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/rehype-prism#readme)

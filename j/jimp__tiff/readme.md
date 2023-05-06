@@ -12,7 +12,7 @@ Default Jimp tiff encoder/decoder.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5265766.0 |
+| # downloads        | 5924355.666666667 |
 | # stars            | ? |
 
 ## Links

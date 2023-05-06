@@ -12,7 +12,7 @@ Lightens an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 4392946.0 |
+| # downloads        | 4677812.0 |
 | # stars            | ? |
 
 ## Links

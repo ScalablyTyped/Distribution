@@ -12,8 +12,8 @@ Renders highlighted Prism output using React
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1722808.3333333333 |
-| # stars            | 1415.0 |
+| # downloads        | 1932889.3333333333 |
+| # stars            | 1506.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/prism-react-renderer#readme)

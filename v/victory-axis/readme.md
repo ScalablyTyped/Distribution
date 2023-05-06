@@ -10,10 +10,10 @@ Axis Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-axis |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 61 |
+| # releases         | 46 |
 | # dependents       | 0.0 |
-| # downloads        | 829660.6666666666 |
-| # stars            | 9909.0 |
+| # downloads        | 814801.3333333334 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

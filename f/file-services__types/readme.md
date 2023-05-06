@@ -10,9 +10,9 @@ Common file system interfaces
 | ------------------ | :-------------: |
 | Full name          | @file-services/types |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 24902.666666666668 |
+| # downloads        | 17458.333333333332 |
 | # stars            | 15.0 |
 
 ## Links

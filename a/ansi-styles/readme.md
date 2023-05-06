@@ -10,10 +10,10 @@ ANSI escape codes for styling strings in the terminal
 | ------------------ | :-------------: |
 | Full name          | ansi-styles |
 | Keywords           | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 7.81262109E8 |
-| # stars            | 351.0 |
+| # downloads        | 8.105603446666666E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/chalk/ansi-styles#readme)

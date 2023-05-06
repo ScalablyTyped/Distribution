@@ -12,8 +12,8 @@ JavaScript implementation of the BSER Binary Serialization
 | Keywords           | bser, binary, protocol |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 6.4016859333333336E7 |
-| # stars            | 11009.0 |
+| # downloads        | 6.7405313E7 |
+| # stars            | 11144.0 |
 
 ## Links
 - [Homepage](https://facebook.github.io/watchman/docs/bser.html)

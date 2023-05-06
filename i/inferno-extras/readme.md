@@ -12,8 +12,8 @@ Collection of utilities for InfernoJS
 | Keywords           | inferno, performance, extras, methods, utils |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 217724.0 |
-| # stars            | 15512.0 |
+| # downloads        | 262362.0 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

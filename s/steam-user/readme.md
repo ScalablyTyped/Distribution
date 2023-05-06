@@ -10,10 +10,10 @@ Steam client for Individual and AnonUser Steam account types
 | ------------------ | :-------------: |
 | Full name          | steam-user |
 | Keywords           | steam, steam client, steam user |
-| # releases         | 28 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 21266.333333333332 |
-| # stars            | 561.0 |
+| # downloads        | 21724.333333333332 |
+| # stars            | 589.0 |
 
 ## Links
 - [Homepage](https://github.com/DoctorMcKay/node-steam-user)

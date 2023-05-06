@@ -10,15 +10,15 @@ A simple alternative to events and signals with an emphasis on performance.
 | ------------------ | :-------------: |
 | Full name          | @pixi/runner |
 | Keywords           | runner, signals, event, messaging, publish, subscribe, observer, pub/sub, fast |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 395363.6666666667 |
-| # stars            | 37483.0 |
+| # downloads        | 450899.6666666667 |
+| # stars            | 38551.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Frunner)
     
 

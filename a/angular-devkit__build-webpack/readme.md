@@ -9,11 +9,11 @@ Webpack Builder for Architect
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @angular-devkit/build-webpack |
-| Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit |
-| # releases         | 217 |
+| Keywords           | Angular CLI, Angular DevKit, angular, devkit, sdk |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 9055463.333333334 |
-| # stars            | 25629.0 |
+| # downloads        | 9398074.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/angular/angular-cli)

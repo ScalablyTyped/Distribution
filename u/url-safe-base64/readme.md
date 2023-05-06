@@ -10,10 +10,10 @@ url safe base64 en- and decoding
 | ------------------ | :-------------: |
 | Full name          | url-safe-base64 |
 | Keywords           | base64, safe, url |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 29575.666666666668 |
-| # stars            | 20.0 |
+| # downloads        | 23792.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/commenthol/url-safe-base64#readme)

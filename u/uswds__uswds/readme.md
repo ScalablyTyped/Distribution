@@ -10,10 +10,10 @@ Open source UI components and visual style guide for U.S. government websites
 | ------------------ | :-------------: |
 | Full name          | @uswds/uswds |
 | Keywords           | ui, uswds, components, library, open source, united states, usa, u.s., government, websites |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 6762.0 |
-| # stars            | 6215.0 |
+| # downloads        | 13845.333333333334 |
+| # stars            | 6264.0 |
 
 ## Links
 - [Homepage](https://github.com/uswds/uswds#readme)

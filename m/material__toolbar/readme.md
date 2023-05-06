@@ -12,7 +12,7 @@ The Material Components for the web toolbar component
 | Keywords           | material components, material design, toolbar |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 33903.333333333336 |
+| # downloads        | 34003.333333333336 |
 | # stars            | ? |
 
 ## Links

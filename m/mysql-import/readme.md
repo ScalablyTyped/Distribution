@@ -10,12 +10,15 @@ Import .sql into a MySQL database with Node.
 | ------------------ | :-------------: |
 | Full name          | mysql-import |
 | Keywords           | nodejs, mysql, textfiles, import, sql |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 37240.333333333336 |
-| # stars            | 34.0 |
+| # downloads        | 25270.666666666668 |
+| # stars            | 35.0 |
 
 ## Links
+- [Homepage](https://github.com/pamblam/mysql-import#readme)
+- [Bugs](https://github.com/pamblam/mysql-import/issues)
+- [Repository](https://github.com/pamblam/mysql-import)
 - [Npm](https://www.npmjs.com/package/mysql-import)
     
 

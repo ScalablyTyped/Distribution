@@ -10,10 +10,10 @@ Provides a chainable axe API for Puppeteer and automatically injects into all fr
 | ------------------ | :-------------: |
 | Full name          | @axe-core/puppeteer |
 | Keywords           | - |
-| # releases         | 216 |
+| # releases         | 227 |
 | # dependents       | 0.0 |
-| # downloads        | 484125.6666666667 |
-| # stars            | 401.0 |
+| # downloads        | 510078.3333333333 |
+| # stars            | 434.0 |
 
 ## Links
 - [Homepage](https://github.com/dequelabs/axe-core-npm#readme)

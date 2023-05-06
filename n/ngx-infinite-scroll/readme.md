@@ -10,10 +10,10 @@ Typings are for version 14.0.1
 | ------------------ | :-------------: |
 | Full name          | ngx-infinite-scroll |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 841293.6666666666 |
-| # stars            | 1127.0 |
+| # downloads        | 974791.6666666666 |
+| # stars            | 1145.0 |
 
 ## Links
 - [Homepage](https://github.com/orizens/ngx-infinite-scroll)

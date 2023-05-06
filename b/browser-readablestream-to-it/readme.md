@@ -10,10 +10,10 @@ Turns a browser readble stream into an async iterator
 | ------------------ | :-------------: |
 | Full name          | browser-readablestream-to-it |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 307275.3333333333 |
-| # stars            | 200.0 |
+| # downloads        | 267321.6666666667 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/browser-readablestream-to-it#readme)

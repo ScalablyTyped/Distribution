@@ -10,10 +10,10 @@ Typings are for version 0.11.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/auth-types |
 | Keywords           | - |
-| # releases         | 1162 |
+| # releases         | 975 |
 | # dependents       | 0.0 |
-| # downloads        | 5027249.333333333 |
-| # stars            | 4194.0 |
+| # downloads        | 5182937.666666667 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

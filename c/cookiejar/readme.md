@@ -10,10 +10,10 @@ simple persistent cookiejar system
 | ------------------ | :-------------: |
 | Full name          | cookiejar |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2.7372405E7 |
-| # stars            | 101.0 |
+| # downloads        | 2.7374787666666668E7 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/bmeck/node-cookiejar#readme)

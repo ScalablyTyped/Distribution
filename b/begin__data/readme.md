@@ -10,10 +10,10 @@ Begin Data is a durable and fast key/value document store built on top of Dynamo
 | ------------------ | :-------------: |
 | Full name          | @begin/data |
 | Keywords           | serverless, database, AWS, dynamodb, keyvalue, infrastructure, infra |
-| # releases         | 13 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 3208.0 |
-| # stars            | 68.0 |
+| # downloads        | 4802.666666666667 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://begin.com)

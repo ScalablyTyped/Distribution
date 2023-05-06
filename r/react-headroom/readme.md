@@ -12,8 +12,8 @@ Hide your header until you need it. React.js port of headroom.js
 | Keywords           | headroom, react, react-component |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 132309.0 |
-| # stars            | 1726.0 |
+| # downloads        | 133770.33333333334 |
+| # stars            | 1741.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/react-headroom)

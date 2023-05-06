@@ -9,10 +9,10 @@ Angular DevKit - Core Utility Library
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @angular-devkit/core |
-| Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit, core |
-| # releases         | 217 |
+| Keywords           | Angular CLI, Angular DevKit, angular, core, devkit, sdk |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 2.8321548333333332E7 |
+| # downloads        | 2.9849662333333332E7 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.
 | ------------------ | :-------------: |
 | Full name          | country-list |
 | Keywords           | country, countries, ISO 3166-1-alpha-2, ISO 3166-1 |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 461556.0 |
-| # stars            | 211.0 |
+| # downloads        | 562014.6666666666 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/fannarsh/country-list)

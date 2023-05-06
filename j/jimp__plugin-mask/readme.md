@@ -12,7 +12,7 @@ mask an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5077402.0 |
+| # downloads        | 5720318.0 |
 | # stars            | ? |
 
 ## Links

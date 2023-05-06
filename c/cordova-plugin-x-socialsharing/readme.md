@@ -10,10 +10,10 @@ Share text, images (and other files), or a link via the native sharing widget of
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-x-socialsharing |
 | Keywords           | Social, Share, Twitter, Facebook, Email, SMS, WhatsApp, Tumblr, Pocket, LinkedIn, cordova, WebShare, ecosystem:cordova, cordova-ios, cordova-android, cordova-windows |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 65340.333333333336 |
-| # stars            | 1772.0 |
+| # downloads        | 67447.66666666667 |
+| # stars            | 1774.0 |
 
 ## Links
 - [Homepage](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin#readme)

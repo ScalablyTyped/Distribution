@@ -10,10 +10,10 @@ Koa middleware for validating JSON Web Tokens
 | ------------------ | :-------------: |
 | Full name          | koa-jwt |
 | Keywords           | auth, authn, authentication, authz, authorization, http, jwt, json, middleware, token, oauth, permissions, koa |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 204198.33333333334 |
-| # stars            | 1295.0 |
+| # downloads        | 200221.33333333334 |
+| # stars            | 1314.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/jwt)

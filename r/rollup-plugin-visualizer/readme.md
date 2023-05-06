@@ -10,10 +10,10 @@ Typings are for version 5.8.3
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-visualizer |
 | Keywords           | rollup-plugin, visualizer, network, treemap, sunburst, diagram |
-| # releases         | 27 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 1066836.3333333333 |
-| # stars            | 920.0 |
+| # downloads        | 1543362.0 |
+| # stars            | 1114.0 |
 
 ## Links
 - [Homepage](https://github.com/btd/rollup-plugin-visualizer)

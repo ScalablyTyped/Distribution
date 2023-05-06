@@ -12,10 +12,13 @@ Lumino Algorithms and Iterators
 | Keywords           | - |
 | # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 286149.6666666667 |
-| # stars            | 370.0 |
+| # downloads        | 198910.66666666666 |
+| # stars            | 420.0 |
 
 ## Links
+- [Homepage](https://github.com/jupyterlab/lumino)
+- [Bugs](https://github.com/jupyterlab/lumino/issues)
+- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Falgorithm)
     
 

@@ -12,7 +12,7 @@ HTTP Router
 | Keywords           | HTTP, router |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2334915.0 |
+| # downloads        | 2492591.6666666665 |
 | # stars            | 36.0 |
 
 ## Links

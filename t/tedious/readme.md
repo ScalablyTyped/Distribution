@@ -10,10 +10,10 @@ A TDS driver, for connecting to MS SQLServer databases.
 | ------------------ | :-------------: |
 | Full name          | tedious |
 | Keywords           | sql, database, mssql, sqlserver, sql-server, tds, msnodesql, azure |
-| # releases         | 60 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 2233594.6666666665 |
-| # stars            | 1483.0 |
+| # downloads        | 2689790.6666666665 |
+| # stars            | 1496.0 |
 
 ## Links
 - [Homepage](https://github.com/tediousjs/tedious)

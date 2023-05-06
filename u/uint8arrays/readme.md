@@ -10,13 +10,13 @@ Utility functions to make dealing with Uint8Arrays easier
 | ------------------ | :-------------: |
 | Full name          | uint8arrays |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 1375238.0 |
-| # stars            | 18.0 |
+| # downloads        | 1439939.0 |
+| # stars            | 20.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/uint8arrays)
+- [Homepage](https://github.com/achingbrain/uint8arrays#readme)
 - [Bugs](https://github.com/achingbrain/uint8arrays/issues)
 - [Repository](https://github.com/achingbrain/uint8arrays)
 - [Npm](https://www.npmjs.com/package/uint8arrays)

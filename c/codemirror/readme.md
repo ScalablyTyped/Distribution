@@ -10,10 +10,10 @@ Basic configuration for the CodeMirror code editor
 | ------------------ | :-------------: |
 | Full name          | codemirror |
 | Keywords           | editor, code |
-| # releases         | 35 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 7176065.666666667 |
-| # stars            | 27.0 |
+| # downloads        | 7507727.666666667 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/codemirror/basic-setup#readme)

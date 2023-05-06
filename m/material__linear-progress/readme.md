@@ -10,10 +10,10 @@ The Material Components for the web linear progress indicator component
 | ------------------ | :-------------: |
 | Full name          | @material/linear-progress |
 | Keywords           | material components, material design, linear progress |
-| # releases         | 714 |
+| # releases         | 774 |
 | # dependents       | 0.0 |
-| # downloads        | 230123.66666666666 |
-| # stars            | 16381.0 |
+| # downloads        | 412671.0 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

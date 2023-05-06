@@ -10,10 +10,10 @@ return a throttled function
 | ------------------ | :-------------: |
 | Full name          | just-throttle |
 | Keywords           | function, throttle, no-dependencies, just |
-| # releases         | 12 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 54088.0 |
-| # stars            | 4414.0 |
+| # downloads        | 59990.666666666664 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

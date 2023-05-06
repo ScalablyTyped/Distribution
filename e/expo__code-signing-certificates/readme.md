@@ -10,9 +10,9 @@ A library for working with expo-updates code signing certificates
 | ------------------ | :-------------: |
 | Full name          | @expo/code-signing-certificates |
 | Keywords           | code signing |
-| # releases         | 3 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 687644.0 |
+| # downloads        | 1017359.6666666666 |
 | # stars            | 0.0 |
 
 ## Links

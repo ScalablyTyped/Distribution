@@ -10,9 +10,9 @@ HMAC backed by BLAKE2b
 | ------------------ | :-------------: |
 | Full name          | hmac-blake2b |
 | Keywords           | hmac, blake2b |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 7495.333333333333 |
+| # downloads        | 6120.666666666667 |
 | # stars            | 6.0 |
 
 ## Links

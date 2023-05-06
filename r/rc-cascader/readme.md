@@ -10,10 +10,10 @@ cascade select ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-cascader |
 | Keywords           | react, react-component, react-cascader, react-select, select, cascade, cascader |
-| # releases         | 67 |
+| # releases         | 65 |
 | # dependents       | 0.0 |
-| # downloads        | 3495169.6666666665 |
-| # stars            | 176.0 |
+| # downloads        | 3797202.3333333335 |
+| # stars            | 181.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/cascader)

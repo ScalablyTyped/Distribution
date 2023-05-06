@@ -10,10 +10,10 @@ map an object, predicate updates values, receives (value, key, object)
 | ------------------ | :-------------: |
 | Full name          | just-map-values |
 | Keywords           | object, map, values, no-dependencies, just |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 9840.0 |
-| # stars            | 4414.0 |
+| # downloads        | 5131.0 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

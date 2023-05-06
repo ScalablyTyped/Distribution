@@ -10,10 +10,10 @@ A revision of AWS Signature V4 request signer based on AWS Common Runtime https:
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/signature-v4-crt |
 | Keywords           | - |
-| # releases         | 42 |
+| # releases         | 59 |
 | # dependents       | 0.0 |
-| # downloads        | 295073.0 |
-| # stars            | 1854.0 |
+| # downloads        | 465266.0 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3#readme)

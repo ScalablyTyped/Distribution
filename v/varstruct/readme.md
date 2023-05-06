@@ -10,10 +10,10 @@ encode/decode variable binary structures
 | ------------------ | :-------------: |
 | Full name          | varstruct |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 15598.333333333334 |
-| # stars            | 61.0 |
+| # downloads        | 15062.666666666666 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/varstruct/varstruct)

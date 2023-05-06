@@ -3,16 +3,17 @@
 
 Typings are for version 2.1.10
 
-
+## Library description:
+Hand-written ICU MessageFormat parser with compatible output as [`intl-messageformat-parser`](https://www.npmjs.com/package/intl-messageformat-parser) but 6 - 10 times as fast.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @formatjs/icu-messageformat-parser |
 | Keywords           | - |
-| # releases         | 40 |
+| # releases         | 46 |
 | # dependents       | 0.0 |
-| # downloads        | 5297585.0 |
-| # stars            | 13324.0 |
+| # downloads        | 6875809.0 |
+| # stars            | 13464.0 |
 
 ## Links
 - [Homepage](https://github.com/formatjs/formatjs#readme)

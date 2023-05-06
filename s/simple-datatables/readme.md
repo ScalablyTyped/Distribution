@@ -10,15 +10,15 @@ A lightweight, dependency-free JavaScript HTML table plugin.
 | ------------------ | :-------------: |
 | Full name          | simple-datatables |
 | Keywords           | DataTable, DataTables, table, html table, filter, sort |
-| # releases         | 7 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 19377.0 |
-| # stars            | 845.0 |
+| # downloads        | 27063.666666666668 |
+| # stars            | 977.0 |
 
 ## Links
-- [Homepage](https://github.com/fiduswriter/Simple-DataTables#readme)
-- [Bugs](https://github.com/fiduswriter/Simple-DataTables/issues)
-- [Repository](https://github.com/fiduswriter/Simple-DataTables)
+- [Homepage](https://github.com/fiduswriter/simple-datatables#readme)
+- [Bugs](https://github.com/fiduswriter/simple-datatables/issues)
+- [Repository](https://github.com/fiduswriter/simple-datatables)
 - [Npm](https://www.npmjs.com/package/simple-datatables)
     
 

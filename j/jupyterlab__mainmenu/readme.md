@@ -10,9 +10,9 @@ JupyterLab - Main Menu
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/mainmenu |
 | Keywords           | - |
-| # releases         | 145 |
+| # releases         | 133 |
 | # dependents       | 0.0 |
-| # downloads        | 206133.66666666666 |
+| # downloads        | 103570.0 |
 | # stars            | ? |
 
 ## Links

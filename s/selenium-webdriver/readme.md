@@ -10,10 +10,10 @@ The official WebDriver JavaScript bindings from the Selenium project
 | ------------------ | :-------------: |
 | Full name          | selenium-webdriver |
 | Keywords           | automation, selenium, testing, webdriver, webdriverjs |
-| # releases         | 14 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0676233666666666E7 |
-| # stars            | 24273.0 |
+| # downloads        | 1.2055217333333334E7 |
+| # stars            | 25334.0 |
 
 ## Links
 - [Homepage](https://github.com/SeleniumHQ/selenium/tree/trunk/javascript/node/selenium-webdriver#readme)

@@ -10,10 +10,10 @@ Simple HTML5 drag-drop zone with React.js
 | ------------------ | :-------------: |
 | Full name          | react-dropzone |
 | Keywords           | react-component, react, drag, drop, upload |
-| # releases         | 42 |
+| # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 8694527.0 |
-| # stars            | 9065.0 |
+| # downloads        | 9404143.666666666 |
+| # stars            | 9256.0 |
 
 ## Links
 - [Homepage](https://github.com/react-dropzone/react-dropzone)

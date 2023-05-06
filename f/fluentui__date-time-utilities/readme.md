@@ -10,9 +10,9 @@ Date-time utilities
 | ------------------ | :-------------: |
 | Full name          | @fluentui/date-time-utilities |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 560635.6666666666 |
+| # downloads        | 595411.0 |
 | # stars            | ? |
 
 ## Links

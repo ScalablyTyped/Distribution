@@ -10,10 +10,10 @@ Collection of helper functions for Stylable based tooling.
 | ------------------ | :-------------: |
 | Full name          | @stylable/build-tools |
 | Keywords           | - |
-| # releases         | 59 |
+| # releases         | 65 |
 | # dependents       | 0.0 |
-| # downloads        | 18370.333333333332 |
-| # stars            | 1174.0 |
+| # downloads        | 17265.0 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/stylable/tree/master#readme)

@@ -12,8 +12,8 @@ Look up X11 keysyms, unicode positions, and names.
 | Keywords           | x11, keysym, key, unicode |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 205.0 |
-| # stars            | 16.0 |
+| # downloads        | 126.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/keysym)

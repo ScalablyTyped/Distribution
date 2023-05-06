@@ -10,12 +10,15 @@ Leaflet plugin for plain image map projection to display large images using tile
 | ------------------ | :-------------: |
 | Full name          | leaflet-rastercoords |
 | Keywords           | Leaflet, coordinates, raster |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1982.6666666666667 |
-| # stars            | 90.0 |
+| # downloads        | 1901.6666666666667 |
+| # stars            | 92.0 |
 
 ## Links
+- [Homepage](https://github.com/commenthol/leaflet-rastercoords#readme)
+- [Bugs](https://github.com/commenthol/leaflet-rastercoords/issues)
+- [Repository](https://github.com/commenthol/leaflet-rastercoords)
 - [Npm](https://www.npmjs.com/package/leaflet-rastercoords)
     
 

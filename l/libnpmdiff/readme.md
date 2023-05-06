@@ -10,10 +10,10 @@ The registry diff
 | ------------------ | :-------------: |
 | Full name          | libnpmdiff |
 | Keywords           | npm, npmcli, libnpm, cli, diff |
-| # releases         | 18 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 1642139.0 |
-| # stars            | 6348.0 |
+| # downloads        | 1626173.3333333333 |
+| # stars            | 6723.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/cli#readme)

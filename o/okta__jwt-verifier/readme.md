@@ -10,10 +10,10 @@ Easily validate Okta access tokens
 | ------------------ | :-------------: |
 | Full name          | @okta/jwt-verifier |
 | Keywords           | okta, oidc, OpenId Connect, authentication, auth, jwt |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 411998.3333333333 |
-| # stars            | 5.0 |
+| # downloads        | 421576.6666666667 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/okta/okta-jwt-verifier-js)

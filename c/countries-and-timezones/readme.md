@@ -10,10 +10,10 @@ Minimalistic library to work with countries and timezones data.
 | ------------------ | :-------------: |
 | Full name          | countries-and-timezones |
 | Keywords           | Countries, Timezones, Country, Timezone, Time, Date, DST, IANA, ICANN |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 330709.3333333333 |
-| # stars            | 124.0 |
+| # downloads        | 401693.6666666667 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](https://github.com/manuelmhtr/countries-and-timezones#readme)

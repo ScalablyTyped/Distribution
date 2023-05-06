@@ -10,9 +10,9 @@ Styling helpers for Fluent UI React.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/styling |
 | Keywords           | - |
-| # releases         | 34 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 268376.0 |
+| # downloads        | 260005.33333333334 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Metascraper integration with Clearbit Logo API
 | ------------------ | :-------------: |
 | Full name          | metascraper-clearbit |
 | Keywords           | autocomplete, clearbit, logo, metascraper |
-| # releases         | 104 |
+| # releases         | 87 |
 | # dependents       | 0.0 |
-| # downloads        | 23031.666666666668 |
-| # stars            | 1802.0 |
+| # downloads        | 32147.666666666668 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper#readme)

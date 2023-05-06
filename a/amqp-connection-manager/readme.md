@@ -10,10 +10,10 @@ Auto-reconnect and round robin support for amqplib.
 | ------------------ | :-------------: |
 | Full name          | amqp-connection-manager |
 | Keywords           | amqp, rabbitmq, cluster, amqplib |
-| # releases         | 27 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 740080.0 |
-| # stars            | 429.0 |
+| # downloads        | 895697.6666666666 |
+| # stars            | 452.0 |
 
 ## Links
 - [Homepage](https://github.com/jwalton/node-amqp-connection-manager)

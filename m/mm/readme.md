@@ -10,10 +10,10 @@ mock mate, mock http request, fs access and so on.
 | ------------------ | :-------------: |
 | Full name          | mm |
 | Keywords           | mm, muk, mock, test |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 114015.33333333333 |
-| # stars            | 155.0 |
+| # downloads        | 81073.66666666667 |
+| # stars            | 157.0 |
 
 ## Links
 - [Homepage](http://github.com/node-modules/mm)

@@ -10,10 +10,10 @@ A tooltip plugin for Vega-Lite and Vega visualizations.
 | ------------------ | :-------------: |
 | Full name          | vega-tooltip |
 | Keywords           | vega-lite, vega, tooltip |
-| # releases         | 17 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 378958.6666666667 |
-| # stars            | 73.0 |
+| # downloads        | 448065.6666666667 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega-tooltip#readme)

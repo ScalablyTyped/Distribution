@@ -10,12 +10,15 @@ JWT Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | njwt |
 | Keywords           | jwt |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 747673.6666666666 |
-| # stars            | 418.0 |
+| # downloads        | 895571.3333333334 |
+| # stars            | 427.0 |
 
 ## Links
+- [Homepage](https://github.com/jwtk/njwt)
+- [Bugs](https://github.com/jwtk/njwt/issues)
+- [Repository](https://github.com/jwtk/njwt)
 - [Npm](https://www.npmjs.com/package/njwt)
     
 

@@ -10,10 +10,10 @@ IPFS interface definitions used by implementations for API compatibility.
 | ------------------ | :-------------: |
 | Full name          | ipfs-core-types |
 | Keywords           | API, IPFS, interface, types |
-| # releases         | 206 |
+| # releases         | 217 |
 | # dependents       | 0.0 |
-| # downloads        | 273749.3333333333 |
-| # stars            | 7055.0 |
+| # downloads        | 315341.6666666667 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-core-types#readme)

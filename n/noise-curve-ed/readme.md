@@ -10,9 +10,9 @@ Ed25519 elliptic curve operations for [`noise-handshake`](https://github.com/chm
 | ------------------ | :-------------: |
 | Full name          | noise-curve-ed |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 2294.0 |
+| # downloads        | 4157.0 |
 | # stars            | 0.0 |
 
 ## Links

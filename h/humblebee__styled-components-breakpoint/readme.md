@@ -10,9 +10,9 @@ Utility functions for creating breakpoints in styled-components.
 | ------------------ | :-------------: |
 | Full name          | @humblebee/styled-components-breakpoint |
 | Keywords           | react, styled-components, utils, glamour, styles, css, inline-styles, breakpoint, breakpoints, media-query, media-queries |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 686.3333333333334 |
+| # downloads        | 827.3333333333334 |
 | # stars            | 16.0 |
 
 ## Links

@@ -10,10 +10,10 @@ A powerful web-proxy used as a core for the TestCafe testing framework (https://
 | ------------------ | :-------------: |
 | Full name          | testcafe-hammerhead |
 | Keywords           | - |
-| # releases         | 73 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 1390912.0 |
-| # stars            | 148.0 |
+| # downloads        | 1430652.3333333333 |
+| # stars            | 151.0 |
 
 ## Links
 - [Homepage](https://github.com/DevExpress/testcafe-hammerhead)

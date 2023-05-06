@@ -10,10 +10,10 @@ Fast 3kb React-compatible Virtual DOM library.
 | ------------------ | :-------------: |
 | Full name          | preact |
 | Keywords           | preact, react, ui, user interface, virtual dom, vdom, components, dom diff, front-end, framework |
-| # releases         | 42 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 6245316.666666667 |
-| # stars            | 32834.0 |
+| # downloads        | 7532165.0 |
+| # stars            | 33303.0 |
 
 ## Links
 - [Homepage](https://preactjs.com)

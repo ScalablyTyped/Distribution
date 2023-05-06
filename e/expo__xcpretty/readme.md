@@ -10,9 +10,9 @@ Parse and format xcodebuild logs
 | ------------------ | :-------------: |
 | Full name          | @expo/xcpretty |
 | Keywords           | xcodebuild, formatter, logging |
-| # releases         | 28 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 731147.3333333334 |
+| # downloads        | 968286.3333333334 |
 | # stars            | ? |
 
 ## Links

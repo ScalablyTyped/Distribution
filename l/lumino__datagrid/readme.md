@@ -10,12 +10,15 @@ Lumino Tabular Data Grid
 | ------------------ | :-------------: |
 | Full name          | @lumino/datagrid |
 | Keywords           | - |
-| # releases         | 41 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 193747.66666666666 |
-| # stars            | 370.0 |
+| # downloads        | 95194.33333333333 |
+| # stars            | 420.0 |
 
 ## Links
+- [Homepage](https://github.com/jupyterlab/lumino)
+- [Bugs](https://github.com/jupyterlab/lumino/issues)
+- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Fdatagrid)
     
 

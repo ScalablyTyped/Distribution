@@ -10,10 +10,10 @@ CSV and object generation implementing the Node.js `stream.Readable` API
 | ------------------ | :-------------: |
 | Full name          | csv-generate |
 | Keywords           | stream, generate, csv, object |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 4374711.0 |
-| # stars            | 3273.0 |
+| # downloads        | 3473405.6666666665 |
+| # stars            | 3375.0 |
 
 ## Links
 - [Homepage](https://csv.js.org/generate/)

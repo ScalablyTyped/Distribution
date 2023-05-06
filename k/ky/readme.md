@@ -10,10 +10,10 @@ Tiny and elegant HTTP client based on the browser Fetch API
 | ------------------ | :-------------: |
 | Full name          | ky |
 | Keywords           | fetch, request, requests, http, https, fetching, get, url, curl, wget, net, network, ajax, api, rest, xhr, browser, got, axios, node-fetch |
-| # releases         | 18 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 4024549.6666666665 |
-| # stars            | 7930.0 |
+| # downloads        | 3972268.3333333335 |
+| # stars            | 8784.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ky#readme)

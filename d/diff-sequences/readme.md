@@ -12,8 +12,8 @@ Compare items in two sequences to find a longest common subsequence
 | Keywords           | fast, linear, space, callback, diff |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 1.13587275E8 |
-| # stars            | 39951.0 |
+| # downloads        | 1.2431975133333333E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

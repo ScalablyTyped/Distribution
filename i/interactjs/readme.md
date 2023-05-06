@@ -10,10 +10,10 @@ Drag and drop, resizing and multi-touch gestures with inertia and snapping for m
 | ------------------ | :-------------: |
 | Full name          | interactjs |
 | Keywords           | interact.js, draggable, droppable, drag, drop, drag and drop, resize, touch, multi-touch, gesture, snap, inertia, grid, autoscroll, SVG, interact |
-| # releases         | 21 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 421014.3333333333 |
-| # stars            | 10973.0 |
+| # downloads        | 511302.0 |
+| # stars            | 11242.0 |
 
 ## Links
 - [Homepage](https://interactjs.io)

@@ -10,10 +10,10 @@ With a given country and phone number, validate and format the phone number to E
 | ------------------ | :-------------: |
 | Full name          | phone |
 | Keywords           | phone, e.164 |
-| # releases         | 36 |
+| # releases         | 40 |
 | # dependents       | 0.0 |
-| # downloads        | 325459.6666666667 |
-| # stars            | 667.0 |
+| # downloads        | 373856.6666666667 |
+| # stars            | 693.0 |
 
 ## Links
 - [Homepage](https://github.com/aftership/phone#readme)

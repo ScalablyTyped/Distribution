@@ -10,10 +10,10 @@ Provides an interface for logging into and interacting with the Steam Community 
 | ------------------ | :-------------: |
 | Full name          | steamcommunity |
 | Keywords           | steam, steam community |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 16812.333333333332 |
-| # stars            | 349.0 |
+| # downloads        | 19467.333333333332 |
+| # stars            | 353.0 |
 
 ## Links
 - [Homepage](https://github.com/DoctorMcKay/node-steamcommunity)

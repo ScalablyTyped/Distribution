@@ -10,10 +10,10 @@ The core lightweight HTTP client for Node
 | ------------------ | :-------------: |
 | Full name          | centra |
 | Keywords           | http, https, request, fetch, url, lightweight |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 232583.66666666666 |
-| # stars            | 52.0 |
+| # downloads        | 249153.0 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/ethanent/centra)

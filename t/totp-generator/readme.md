@@ -10,12 +10,15 @@ Generate TOTP tokens from key
 | ------------------ | :-------------: |
 | Full name          | totp-generator |
 | Keywords           | totp, time-based one-time password, generator, password, auth, authentication, google authenticator, oath, 2-factor, two-factor |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 187860.66666666666 |
-| # stars            | 111.0 |
+| # downloads        | 512167.0 |
+| # stars            | 126.0 |
 
 ## Links
+- [Homepage](https://github.com/bellstrand/totp-generator)
+- [Bugs](https://github.com/bellstrand/totp-generator/issues)
+- [Repository](https://github.com/bellstrand/totp-generator)
 - [Npm](https://www.npmjs.com/package/totp-generator)
     
 

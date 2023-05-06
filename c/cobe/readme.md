@@ -3,17 +3,16 @@
 
 Typings are for version 0.4
 
-## Library description:
-[![COBE](card.png)](https://cobe.vercel.app)
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cobe |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 12897.0 |
-| # stars            | 1584.0 |
+| # downloads        | 29740.0 |
+| # stars            | 1904.0 |
 
 ## Links
 - [Homepage](https://github.com/shuding/cobe#readme)

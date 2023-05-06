@@ -10,10 +10,10 @@ yargs the modern, pirate-themed, successor to optimist.
 | ------------------ | :-------------: |
 | Full name          | yargs |
 | Keywords           | argument, args, option, parser, parsing, cli, command |
-| # releases         | 42 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 3.083196583333333E8 |
-| # stars            | 9986.0 |
+| # downloads        | 3.195223766666667E8 |
+| # stars            | 10145.0 |
 
 ## Links
 - [Homepage](https://yargs.js.org/)

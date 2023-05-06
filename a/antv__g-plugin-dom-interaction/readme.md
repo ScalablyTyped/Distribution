@@ -10,10 +10,10 @@ A G plugin
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-dom-interaction |
 | Keywords           | antv, g |
-| # releases         | 122 |
+| # releases         | 141 |
 | # dependents       | 0.0 |
-| # downloads        | 2888.0 |
-| # stars            | 795.0 |
+| # downloads        | 3022.3333333333335 |
+| # stars            | 834.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

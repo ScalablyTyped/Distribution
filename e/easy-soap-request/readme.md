@@ -12,8 +12,8 @@ A small library to make SOAP requests easier
 | Keywords           | soap, http, axios, xml, wsdl |
 | # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 97027.0 |
-| # stars            | 129.0 |
+| # downloads        | 113002.0 |
+| # stars            | 136.0 |
 
 ## Links
 - [Homepage](https://github.com/circa10a/easy-soap-request#readme)

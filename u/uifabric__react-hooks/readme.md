@@ -10,9 +10,9 @@ Fluent UI React hooks.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/react-hooks |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 184253.33333333334 |
+| # downloads        | 170379.66666666666 |
 | # stars            | ? |
 
 ## Links

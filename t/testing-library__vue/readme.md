@@ -10,10 +10,10 @@ Simple and complete Vue DOM testing utilities that encourage good testing practi
 | ------------------ | :-------------: |
 | Full name          | @testing-library/vue |
 | Keywords           | vue.js, vue.js testing, vue, vue testing, vue.js 3, vue.js 3 testing, vue 3, vue 3 testing |
-| # releases         | 31 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 556358.3333333334 |
-| # stars            | 862.0 |
+| # downloads        | 536813.0 |
+| # stars            | 905.0 |
 
 ## Links
 - [Homepage](https://github.com/testing-library/vue-testing-library#readme)

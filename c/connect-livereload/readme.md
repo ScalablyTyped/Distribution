@@ -12,8 +12,8 @@ connect middleware for adding the livereload script to the response
 | Keywords           | connect, livereload, live-reload |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1052545.0 |
-| # stars            | 305.0 |
+| # downloads        | 1116711.6666666667 |
+| # stars            | 306.0 |
 
 ## Links
 - [Homepage](https://github.com/intesso/connect-livereload#readme)

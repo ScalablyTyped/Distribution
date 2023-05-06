@@ -10,10 +10,10 @@ a base class for sdk with default error handler
 | ------------------ | :-------------: |
 | Full name          | sdk-base |
 | Keywords           | sdk, error |
-| # releases         | 0 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 389992.3333333333 |
-| # stars            | 59.0 |
+| # downloads        | 633628.0 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/sdk-base#readme)

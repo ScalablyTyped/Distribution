@@ -10,10 +10,10 @@ A low-level Symbol-based API for defining common collection behaviors.
 | ------------------ | :-------------: |
 | Full name          | @esfx/collection-core |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 9023.0 |
-| # stars            | 161.0 |
+| # downloads        | 7347.333333333333 |
+| # stars            | 169.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

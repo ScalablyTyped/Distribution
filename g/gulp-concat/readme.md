@@ -9,10 +9,10 @@ Concatenates files
 | ------------------ | :-------------: |
 | Full name          | gulp-concat |
 | Keywords           | gulpplugin |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1957370.3333333333 |
-| # stars            | 791.0 |
+| # downloads        | 1984310.0 |
+| # stars            | 790.0 |
 
 ## Links
 - [Homepage](https://github.com/contra/gulp-concat#readme)

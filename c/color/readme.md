@@ -10,10 +10,10 @@ Color conversion and manipulation with CSS string support
 | ------------------ | :-------------: |
 | Full name          | color |
 | Keywords           | color, colour, css |
-| # releases         | 13 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 6.734926166666667E7 |
-| # stars            | 4327.0 |
+| # downloads        | 6.747004533333333E7 |
+| # stars            | 4442.0 |
 
 ## Links
 - [Homepage](https://github.com/Qix-/color#readme)

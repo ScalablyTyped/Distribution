@@ -12,8 +12,8 @@ A minimalistic routing for React and Preact. Nothing extra, just HOOKS.
 | Keywords           | react, preact, router, tiny, routing, hooks, useLocation |
 | # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 165407.0 |
-| # stars            | 4231.0 |
+| # downloads        | 83600.0 |
+| # stars            | 4758.0 |
 
 ## Links
 - [Homepage](https://github.com/molefrog/wouter#readme)

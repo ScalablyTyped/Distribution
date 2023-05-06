@@ -10,10 +10,10 @@ Get a list of the files to add from a folder into an npm package
 | ------------------ | :-------------: |
 | Full name          | npm-packlist |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 3.1119937333333332E7 |
-| # stars            | 59.0 |
+| # downloads        | 2.9428917666666668E7 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/npm-packlist#readme)

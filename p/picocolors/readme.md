@@ -12,8 +12,8 @@ The tiniest and the fastest library for terminal output formatting with ANSI col
 | Keywords           | terminal, colors, formatting, cli, console |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6554101033333334E8 |
-| # stars            | 676.0 |
+| # downloads        | 2.0262648933333334E8 |
+| # stars            | 781.0 |
 
 ## Links
 - [Homepage](https://github.com/alexeyraspopov/picocolors#readme)

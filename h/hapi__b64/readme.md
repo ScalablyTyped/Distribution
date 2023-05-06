@@ -12,7 +12,7 @@ Base64 streaming encoder and decoder
 | Keywords           | buffer, base64, decode, encode, stream |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2883319.6666666665 |
+| # downloads        | 3300798.3333333335 |
 | # stars            | 38.0 |
 
 ## Links

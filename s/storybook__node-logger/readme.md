@@ -10,10 +10,10 @@ Any node logging that is done through storybook should be done through this pack
 | ------------------ | :-------------: |
 | Full name          | @storybook/node-logger |
 | Keywords           | storybook |
-| # releases         | 479 |
+| # releases         | 465 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2150871666666668E7 |
-| # stars            | 73947.0 |
+| # downloads        | 2.3795423E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/node-logger)

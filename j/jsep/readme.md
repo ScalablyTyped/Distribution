@@ -10,10 +10,10 @@ a tiny JavaScript expression parser
 | ------------------ | :-------------: |
 | Full name          | jsep |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1105791.3333333333 |
-| # stars            | 707.0 |
+| # downloads        | 1544863.3333333333 |
+| # stars            | 720.0 |
 
 ## Links
 - [Homepage](https://ericsmekens.github.io/jsep/)

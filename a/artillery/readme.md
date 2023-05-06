@@ -10,10 +10,10 @@ Modern performance testing toolkit for DevOps and SRE
 | ------------------ | :-------------: |
 | Full name          | artillery |
 | Keywords           | load testing, stress testing, benchmark, performance, blackbox testing |
-| # releases         | 43 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 232552.66666666666 |
-| # stars            | 5731.0 |
+| # downloads        | 236420.33333333334 |
+| # stars            | 6000.0 |
 
 ## Links
 - [Homepage](https://github.com/artilleryio/artillery#readme)

@@ -10,10 +10,10 @@ Value identification and comparison functions
 | ------------------ | :-------------: |
 | Full name          | @sinonjs/samsam |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7527926666666668E7 |
-| # stars            | 24.0 |
+| # downloads        | 1.8712452666666668E7 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](http://sinonjs.github.io/samsam/)

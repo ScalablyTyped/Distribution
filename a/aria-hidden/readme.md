@@ -10,10 +10,10 @@ Cast aria-hidden to everything, except...
 | ------------------ | :-------------: |
 | Full name          | aria-hidden |
 | Keywords           | DOM, aria, hidden, inert |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2616202.3333333335 |
-| # stars            | 35.0 |
+| # downloads        | 3781262.0 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/theKashey/aria-hidden#readme)

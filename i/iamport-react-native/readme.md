@@ -12,8 +12,8 @@ Typings are for version 1.5
 | Keywords           | iamport, react, react-native |
 | # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 8049.666666666667 |
-| # stars            | 127.0 |
+| # downloads        | 8103.0 |
+| # stars            | 137.0 |
 
 ## Links
 - [Homepage](https://github.com/iamport/iamport-react-native#readme)

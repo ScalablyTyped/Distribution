@@ -12,8 +12,8 @@ Yet another Base64 transcoder in pure-JS
 | Keywords           | base64, binary |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2.32616E7 |
-| # stars            | 3795.0 |
+| # downloads        | 2.1539849E7 |
+| # stars            | 3894.0 |
 
 ## Links
 - [Homepage](https://github.com/dankogai/js-base64#readme)

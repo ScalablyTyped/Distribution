@@ -10,10 +10,10 @@ Rollup plugin that bundles imported css
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-css-only |
 | Keywords           | rollup-plugin, css |
-| # releases         | 2 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 163804.33333333334 |
-| # stars            | 86.0 |
+| # downloads        | 182654.66666666666 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/thgh/rollup-plugin-css-only)

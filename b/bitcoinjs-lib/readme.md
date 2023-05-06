@@ -10,10 +10,10 @@ Client-side Bitcoin JavaScript library
 | ------------------ | :-------------: |
 | Full name          | bitcoinjs-lib |
 | Keywords           | bitcoinjs, bitcoin, browserify, javascript, bitcoinjs |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 189260.66666666666 |
-| # stars            | 4658.0 |
+| # downloads        | 252204.0 |
+| # stars            | 4770.0 |
 
 ## Links
 - [Homepage](https://github.com/bitcoinjs/bitcoinjs-lib#readme)

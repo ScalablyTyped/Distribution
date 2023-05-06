@@ -10,10 +10,10 @@ A Storage done right for AngularJS.
 | ------------------ | :-------------: |
 | Full name          | angular-storage |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 10345.0 |
-| # stars            | 649.0 |
+| # downloads        | 9688.0 |
+| # stars            | 648.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/angular-storage#readme)

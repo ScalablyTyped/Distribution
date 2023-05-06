@@ -10,9 +10,9 @@ Simple String Wildcard Handling
 | ------------------ | :-------------: |
 | Full name          | wildstring |
 | Keywords           | wildcard, string, interpolation |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 88891.66666666667 |
+| # downloads        | 66351.66666666667 |
 | # stars            | 4.0 |
 
 ## Links

@@ -10,10 +10,10 @@ New Relic log enricher for the `winston` package. Allows `winston` logs to be co
 | ------------------ | :-------------: |
 | Full name          | @newrelic/winston-enricher |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 257597.0 |
-| # stars            | 7.0 |
+| # downloads        | 208894.66666666666 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/newrelic/newrelic-node-log-extensions#readme)

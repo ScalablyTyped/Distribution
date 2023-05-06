@@ -10,10 +10,10 @@ A configurable mock file system.  You know, for testing.
 | ------------------ | :-------------: |
 | Full name          | mock-fs |
 | Keywords           | mock, fs, test, fixtures, file system, memory |
-| # releases         | 17 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 2337006.3333333335 |
-| # stars            | 831.0 |
+| # downloads        | 2572264.6666666665 |
+| # stars            | 839.0 |
 
 ## Links
 - [Homepage](https://github.com/tschaub/mock-fs)

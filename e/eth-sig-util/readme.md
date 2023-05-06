@@ -12,8 +12,8 @@ A few useful functions for signing ethereum data
 | Keywords           | ethereum, signature |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1914476.3333333333 |
-| # stars            | 425.0 |
+| # downloads        | 1929832.3333333333 |
+| # stars            | 467.0 |
 
 ## Links
 - [Homepage](https://github.com/MetaMask/eth-sig-util#readme)

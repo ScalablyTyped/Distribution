@@ -10,15 +10,12 @@ Treat a collection of Buffers as a single contiguous partially mutable Buffer.
 | ------------------ | :-------------: |
 | Full name          | buffers |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1024502666666666E7 |
-| # stars            | 96.0 |
+| # downloads        | 1.1701140666666666E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/node-buffers#readme)
-- [Bugs](https://github.com/substack/node-buffers/issues)
-- [Repository](https://github.com/substack/node-buffers)
 - [Npm](https://www.npmjs.com/package/buffers)
     
 

@@ -10,10 +10,10 @@ Focus helpers to be used in React applications.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-focus |
 | Keywords           | - |
-| # releases         | 138 |
+| # releases         | 117 |
 | # dependents       | 0.0 |
-| # downloads        | 617778.3333333334 |
-| # stars            | 13904.0 |
+| # downloads        | 653951.3333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

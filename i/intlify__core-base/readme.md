@@ -10,10 +10,10 @@ Typings are for version 9.2.2
 | ------------------ | :-------------: |
 | Full name          | @intlify/core-base |
 | Keywords           | core, fundamental, i18n, internationalization, intlify |
-| # releases         | 83 |
+| # releases         | 101 |
 | # dependents       | 0.0 |
-| # downloads        | 932728.3333333334 |
-| # stars            | 959.0 |
+| # downloads        | 1282506.0 |
+| # stars            | 1132.0 |
 
 ## Links
 - [Homepage](https://github.com/intlify/vue-i18n-next/tree/master/packages/core-base#readme)

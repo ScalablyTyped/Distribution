@@ -4,15 +4,15 @@
 Typings are for version 3.1.0
 
 ## Library description:
-Pushable iterable
+An iterable that you can push values into
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | it-pushable |
-| Keywords           | push, iterable, iterator, pushable |
-| # releases         | 6 |
+| Keywords           | iterable, iterator, push, pushable |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 103526.33333333333 |
+| # downloads        | 164327.66666666666 |
 | # stars            | 11.0 |
 
 ## Links

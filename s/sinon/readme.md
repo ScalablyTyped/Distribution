@@ -12,8 +12,8 @@ JavaScript test spies, stubs and mocks.
 | Keywords           | sinon, test, testing, unit, stub, spy, fake, time, clock, mock, xhr, assert |
 | # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 2.0972303666666668E7 |
-| # stars            | 9029.0 |
+| # downloads        | 2.2877539E7 |
+| # stars            | 9193.0 |
 
 ## Links
 - [Homepage](https://sinonjs.org/)

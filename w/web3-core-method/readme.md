@@ -10,10 +10,10 @@ Creates the methods on the web3 modules. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core-method |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 52 |
 | # dependents       | 0.0 |
-| # downloads        | 2626419.3333333335 |
-| # stars            | 16013.0 |
+| # downloads        | 2528166.3333333335 |
+| # stars            | 16750.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

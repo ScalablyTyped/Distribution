@@ -10,10 +10,10 @@ The iconic font, CSS, and SVG framework
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/free-solid-svg-icons |
 | Keywords           | font, awesome, fontawesome, icon, svg, bootstrap |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 5084475.666666667 |
-| # stars            | 70007.0 |
+| # downloads        | 5406997.666666667 |
+| # stars            | 70445.0 |
 
 ## Links
 - [Homepage](https://fontawesome.com)

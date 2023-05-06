@@ -10,10 +10,10 @@ JavaScript SDK view layer for Onfido identity verification
 | ------------------ | :-------------: |
 | Full name          | onfido-sdk-ui |
 | Keywords           | onfido, sdk, document, capture, identity, verification |
-| # releases         | 134 |
+| # releases         | 130 |
 | # dependents       | 0.0 |
-| # downloads        | 116647.66666666667 |
-| # stars            | 170.0 |
+| # downloads        | 121035.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/onfido/onfido-sdk-ui#readme)

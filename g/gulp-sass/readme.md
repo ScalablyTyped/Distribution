@@ -10,10 +10,10 @@ Gulp plugin for sass
 | ------------------ | :-------------: |
 | Full name          | gulp-sass |
 | Keywords           | gulpplugin, sass, gulp |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1710724.0 |
-| # stars            | 1551.0 |
+| # downloads        | 1690618.0 |
+| # stars            | 1556.0 |
 
 ## Links
 - [Homepage](https://github.com/dlmanning/gulp-sass#readme)

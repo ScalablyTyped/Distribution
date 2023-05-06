@@ -10,10 +10,10 @@ datastore interface
 | ------------------ | :-------------: |
 | Full name          | interface-datastore |
 | Keywords           | datastore, interface, ipfs, key-value |
-| # releases         | 22 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 277232.3333333333 |
-| # stars            | 1.0 |
+| # downloads        | 334679.6666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-interfaces/tree/master/packages/interface-datastore#readme)

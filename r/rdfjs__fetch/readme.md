@@ -12,8 +12,8 @@ Wrapper for fetch to simplify sending and receiving RDF data
 | Keywords           | rdf, rdfjs, fetch |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1448.6666666666667 |
-| # stars            | 0.0 |
+| # downloads        | 1400.3333333333333 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/fetch)

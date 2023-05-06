@@ -10,10 +10,10 @@ Abstraction over common javascript date management libraries
 | ------------------ | :-------------: |
 | Full name          | @date-io/date-fns |
 | Keywords           | date, time, date-io, picker, date-fns, moment, luxon |
-| # releases         | 15 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 5185667.0 |
-| # stars            | 560.0 |
+| # downloads        | 5413418.333333333 |
+| # stars            | 572.0 |
 
 ## Links
 - [Homepage](https://github.com/dmtrKovalenko/date-io#readme)

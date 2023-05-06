@@ -12,8 +12,8 @@ Provides an enum of all possible VNode Flags used when calling Inferno.createVNo
 | Keywords           | babel, react, inferno, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vnode, createVNode, flags |
 | # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 363931.0 |
-| # stars            | 15512.0 |
+| # downloads        | 455954.3333333333 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

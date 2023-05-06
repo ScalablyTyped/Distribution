@@ -10,9 +10,9 @@ Gatsby plugin providing breakpoints using React Hooks
 | ------------------ | :-------------: |
 | Full name          | gatsby-plugin-breakpoints |
 | Keywords           | gatsby, gatsby-plugin, gatsby-plugin-breakpoints, breakpoints, media query, media queries, hooks, responsive |
-| # releases         | 14 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 13914.666666666666 |
+| # downloads        | 18750.0 |
 | # stars            | 23.0 |
 
 ## Links

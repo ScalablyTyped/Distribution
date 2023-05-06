@@ -10,10 +10,10 @@ A Minimalist DateTime utility for Node.js and the browser
 | ------------------ | :-------------: |
 | Full name          | date-and-time |
 | Keywords           | date, time, format, parse, utility |
-| # releases         | 15 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 6436482.0 |
-| # stars            | 134.0 |
+| # downloads        | 3715064.0 |
+| # stars            | 157.0 |
 
 ## Links
 - [Homepage](https://github.com/knowledgecode/date-and-time)

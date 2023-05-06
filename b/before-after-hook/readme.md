@@ -10,10 +10,10 @@ asynchronous before/error/after hooks for internal functionality
 | ------------------ | :-------------: |
 | Full name          | before-after-hook |
 | Keywords           | hook, hooks, api |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9688528333333332E7 |
-| # stars            | 63.0 |
+| # downloads        | 1.9753712333333332E7 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/gr2m/before-after-hook#readme)

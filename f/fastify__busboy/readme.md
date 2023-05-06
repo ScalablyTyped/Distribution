@@ -12,10 +12,13 @@ A streaming parser for HTML form data for node.js
 | Keywords           | uploads, forms, multipart, form-data |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 488555.3333333333 |
-| # stars            | 37.0 |
+| # downloads        | 2284901.3333333335 |
+| # stars            | 39.0 |
 
 ## Links
+- [Homepage](https://github.com/fastify/busboy#readme)
+- [Bugs](https://github.com/fastify/busboy/issues)
+- [Repository](https://github.com/fastify/busboy)
 - [Npm](https://www.npmjs.com/package/%40fastify%2Fbusboy)
     
 

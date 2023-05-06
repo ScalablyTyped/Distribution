@@ -12,8 +12,8 @@ JavaScript implementation of the Bitswap data exchange protocol used by IPFS
 | Keywords           | exchange, ipfs, libp2p, p2p |
 | # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 44701.0 |
-| # stars            | 55.0 |
+| # downloads        | 46899.666666666664 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-bitswap#readme)

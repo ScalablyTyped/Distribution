@@ -10,10 +10,10 @@ A tool set for CSS: fast detailed parser (CSS → AST), walker (AST traversal), 
 | ------------------ | :-------------: |
 | Full name          | css-tree |
 | Keywords           | css, ast, tokenizer, parser, walker, lexer, generator, utils, syntax, validation |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 8.8106825E7 |
-| # stars            | 1476.0 |
+| # downloads        | 9.385405766666667E7 |
+| # stars            | 1614.0 |
 
 ## Links
 - [Homepage](https://github.com/csstree/csstree#readme)

@@ -10,10 +10,10 @@ Protocol Buffers for JavaScript
 | ------------------ | :-------------: |
 | Full name          | google-protobuf |
 | Keywords           | - |
-| # releases         | 44 |
+| # releases         | 45 |
 | # dependents       | 0.0 |
-| # downloads        | 4109137.6666666665 |
-| # stars            | 22.0 |
+| # downloads        | 4517868.333333333 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/protocolbuffers/protobuf-javascript#readme)

@@ -12,7 +12,7 @@ Look up environment settings specific to different operating systems
 | Keywords           | environment, variable, home, tmpdir, path, prompt, ps1 |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2.8735495666666668E7 |
+| # downloads        | 2.3772158666666668E7 |
 | # stars            | 135.0 |
 
 ## Links

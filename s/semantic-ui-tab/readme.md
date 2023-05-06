@@ -10,9 +10,9 @@ Single component release of tab
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-tab |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 15545.0 |
+| # downloads        | 1449.0 |
 | # stars            | 4.0 |
 
 ## Links

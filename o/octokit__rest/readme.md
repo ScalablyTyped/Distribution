@@ -12,8 +12,8 @@ GitHub REST API client for Node.js
 | Keywords           | octokit, github, rest, api-client |
 | # releases         | 57 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8740863E7 |
-| # stars            | 267.0 |
+| # downloads        | 1.9414298666666668E7 |
+| # stars            | 293.0 |
 
 ## Links
 - [Homepage](https://github.com/octokit/rest.js#readme)

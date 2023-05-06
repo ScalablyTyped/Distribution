@@ -10,12 +10,15 @@ Non-official api for getting torrent links from Nyaa.si and Nyaa.pantsu.cat
 | ------------------ | :-------------: |
 | Full name          | nyaapi |
 | Keywords           | kawanime, nyaa-si, nyaa-pantsu, torrent, magnet-links |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1021.6666666666666 |
-| # stars            | 74.0 |
+| # downloads        | 1123.0 |
+| # stars            | 78.0 |
 
 ## Links
+- [Homepage](https://github.com/Kylart/Nyaapi#readme)
+- [Bugs](https://github.com/Kylart/Nyaapi/issues)
+- [Repository](https://github.com/Kylart/Nyaapi)
 - [Npm](https://www.npmjs.com/package/nyaapi)
     
 

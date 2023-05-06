@@ -10,10 +10,10 @@ Engine to process multiple files with unified
 | ------------------ | :-------------: |
 | Full name          | unified-engine |
 | Keywords           | unified, processor, engine |
-| # releases         | 12 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 482203.0 |
-| # stars            | 42.0 |
+| # downloads        | 719261.3333333334 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/unifiedjs/unified-engine#readme)

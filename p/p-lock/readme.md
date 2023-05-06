@@ -10,9 +10,9 @@ Simple promise lock
 | ------------------ | :-------------: |
 | Full name          | p-lock |
 | Keywords           | promise, lock, simple, async |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 473.6666666666667 |
+| # downloads        | 573.3333333333334 |
 | # stars            | 1.0 |
 
 ## Links

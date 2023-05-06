@@ -10,10 +10,10 @@ Take an array of string index ranges, delete/replace the string according to the
 | ------------------ | :-------------: |
 | Full name          | ranges-apply |
 | Keywords           | delete, from, many, multiple, ranges, replace, slice, slices, splice, string |
-| # releases         | 47 |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 347909.6666666667 |
-| # stars            | 116.0 |
+| # downloads        | 401912.0 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/ranges-apply)

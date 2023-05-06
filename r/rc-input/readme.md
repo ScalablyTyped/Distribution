@@ -10,10 +10,10 @@ React input component
 | ------------------ | :-------------: |
 | Full name          | rc-input |
 | Keywords           | react, react-component, react-input, input, antd, ant-design |
-| # releases         | 9 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1262826.6666666667 |
-| # stars            | 10.0 |
+| # downloads        | 2005551.6666666667 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/input)

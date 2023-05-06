@@ -12,7 +12,7 @@ Resize an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5256767.0 |
+| # downloads        | 5916992.0 |
 | # stars            | ? |
 
 ## Links

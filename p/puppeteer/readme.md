@@ -10,15 +10,15 @@ A high-level API to control headless Chrome over the DevTools Protocol
 | ------------------ | :-------------: |
 | Full name          | puppeteer |
 | Keywords           | puppeteer, chrome, headless, automation |
-| # releases         | 73 |
+| # releases         | 89 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5154933E7 |
-| # stars            | 79987.0 |
+| # downloads        | 1.5443401666666666E7 |
+| # stars            | 81495.0 |
 
 ## Links
-- [Homepage](https://github.com/puppeteer/puppeteer#readme)
+- [Homepage](https://github.com/puppeteer/puppeteer/tree/main#readme)
 - [Bugs](https://github.com/puppeteer/puppeteer/issues)
-- [Repository](https://github.com/puppeteer/puppeteer)
+- [Repository](https://github.com/puppeteer/puppeteer/tree/main)
 - [Npm](https://www.npmjs.com/package/puppeteer)
     
 

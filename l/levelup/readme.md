@@ -12,8 +12,8 @@ Fast & simple storage - a Node.js-style LevelDB wrapper
 | Keywords           | level, leveldb, stream, database, db, store, storage, json |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 3431951.0 |
-| # stars            | 3994.0 |
+| # downloads        | 3760560.6666666665 |
+| # stars            | 4020.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/levelup)

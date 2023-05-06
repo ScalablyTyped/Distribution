@@ -10,10 +10,10 @@ Rollup plugin to minify generated es bundle
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-terser |
 | Keywords           | rollup, rollup-plugin, terser, minify |
-| # releases         | 5 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5176834333333334E7 |
-| # stars            | 578.0 |
+| # downloads        | 1.7402899666666668E7 |
+| # stars            | 604.0 |
 
 ## Links
 - [Homepage](https://github.com/TrySound/rollup-plugin-terser#readme)

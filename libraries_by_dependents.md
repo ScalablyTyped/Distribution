@@ -838,7 +838,7 @@
 | 0.0 | [bit-array](./b/bit-array) | JavaScript implementation of bit arrays
 | 0.0 | [bit-twiddle](./b/bit-twiddle) | Bit twiddling hacks for JavaScript
 | 0.0 | [bitauth](./b/bitauth) | Passwordless authentication using Bitcoin cryptogr
-| 0.0 | [bitcoin-computer-bitcore](./b/bitcoin-computer-bitcore) | A simple, safe, and powerful JavaScript Bitcoin li
+| 0.0 | [bitcoin-computer-bitcore](./b/bitcoin-computer-bitcore) | Bitcoin Computer
 | 0.0 | [bitcoinjs-lib](./b/bitcoinjs-lib) | Client-side Bitcoin JavaScript library
 | 0.0 | [bitcore-lib](./b/bitcore-lib) | A pure and powerful JavaScript Bitcoin library.
 | 0.0 | [bitcore-lib-cash](./b/bitcore-lib-cash) | A pure and powerful JavaScript Bitcoin Cash librar
@@ -1214,7 +1214,7 @@
 | 0.0 | [check-error](./c/check-error) | Error comparison and information related utility f
 | 0.0 | [check-more-types](./c/check-more-types) | Large collection of predicates.
 | 0.0 | [check-sum](./c/check-sum) | Assert multiple checksums on a stream in parallel.
-| 0.0 | [check-types](./c/check-types) | A little library for asserting types and values.
+| 0.0 | [check-types](./c/check-types) | A little library for asserting types and values, w
 | 0.0 | [checkpoint-stream](./c/checkpoint-stream) | Queue data from a stream until a checkpoint is hit
 | 0.0 | [checkstyle-formatter](./c/checkstyle-formatter) | Simple Checkstyle data formatter
 | 0.0 | [checksum](./c/checksum) | Checksum utility for node
@@ -1482,6 +1482,7 @@
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
+| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1766,13 +1767,14 @@
 | 0.0 | [cyberblast__logger](./c/cyberblast__logger) | A simple logger for node
 | 0.0 | [cyberblast__webserver](./c/cyberblast__webserver) | A minimal node-based web server
 | 0.0 | [cycled](./c/cycled) | Cycle through the items of an array
-| 0.0 | [cypress](./c/cypress) | Cypress.io end to end testing tool
+| 0.0 | [cypress](./c/cypress) | Cypress is a next generation front end testing too
 | 0.0 | [cypress-axe](./c/cypress-axe) | Test accessibility with axe-core in Cypress
 | 0.0 | [cypress-cucumber-preproce](./c/cypress-cucumber-preprocessor) | Run gherkin-syntaxed specs with cypress.io
 | 0.0 | [cypress-dark](./c/cypress-dark) | Dark mode for Cypress test runner from user space
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
+| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -1854,7 +1856,7 @@
 | 0.0 | [data-driven](./d/data-driven) | data driven testing for mocha
 | 0.0 | [data-uri-to-buffer](./d/data-uri-to-buffer) | Generate a Buffer instance from a Data URI string
 | 0.0 | [data-urls](./d/data-urls) | Parses data: URLs
-| 0.0 | [datadog-metrics](./d/datadog-metrics) | Buffered metrics reporting via the DataDog HTTP AP
+| 0.0 | [datadog-metrics](./d/datadog-metrics) | Buffered metrics reporting via the Datadog HTTP AP
 | 0.0 | [datadog-statsd-metrics-co](./d/datadog-statsd-metrics-collector) | Collect, rollup, and batch Datadog statsd metrics
 | 0.0 | [datadog-tracer](./d/datadog-tracer) | -
 | 0.0 | [datadog-winston](./d/datadog-winston) | Ship winston logs to datadog without breaking a sw
@@ -2161,7 +2163,7 @@
 | 0.0 | [drag-timetable](./d/drag-timetable) | Simple, customizable draggable timetable.
 | 0.0 | [draggabilly](./d/draggabilly) | make that shiz draggable
 | 0.0 | [dragscroll](./d/dragscroll) | Tiny library for drag-n-drop scrolling style
-| 0.0 | [dragselect](./d/dragselect) | easy javascript drag select functionality for your
+| 0.0 | [dragselect](./d/dragselect) | Easy JavaScript library for selecting and moving e
 | 0.0 | [dragster](./d/dragster) | Better HTML5 drag events
 | 0.0 | [dragula](./d/dragula) | Drag and drop so simple it hurts
 | 0.0 | [drange](./d/drange) | For adding, subtracting, and indexing discontinuou
@@ -2249,7 +2251,7 @@
 | 0.0 | [egg](./e/egg) | A web framework's framework for Node.js
 | 0.0 | [egg-cookies](./e/egg-cookies) | cookies module for egg
 | 0.0 | [egg-core](./e/egg-core) | A core Pluggable framework based on koa
-| 0.0 | [egg-errors](./e/egg-errors) | -
+| 0.0 | [egg-errors](./e/egg-errors) | egg-errors provide two kinds of errors that is Err
 | 0.0 | [egg-logger](./e/egg-logger) | egg logger
 | 0.0 | [egg-multipart](./e/egg-multipart) | multipart plugin for egg
 | 0.0 | [egg-view](./e/egg-view) | Base view plugin for egg
@@ -2596,7 +2598,6 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
-| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -3035,7 +3036,7 @@
 | 0.0 | [formatcoords](./f/formatcoords) | format decimal lat/lon coords into degrees/minutes
 | 0.0 | [formatjs__ecma402-abstrac](./f/formatjs__ecma402-abstract) | A collection of implementation for ECMAScript abst
 | 0.0 | [formatjs__fast-memoize](./f/formatjs__fast-memoize) | fork of fast-memoize and support esm
-| 0.0 | [formatjs__icu-messageform](./f/formatjs__icu-messageformat-parser) | -
+| 0.0 | [formatjs__icu-messageform](./f/formatjs__icu-messageformat-parser) | Hand-written ICU MessageFormat parser with compati
 | 0.0 | [formatjs__icu-skeleton-pa](./f/formatjs__icu-skeleton-parser) | -
 | 0.0 | [formatjs__intl](./f/formatjs__intl) | Internationalize JS apps. This library provides an
 | 0.0 | [formatjs__intl-displaynam](./f/formatjs__intl-displaynames) | Polyfill for: https://tc39.es/proposal-intl-displa
@@ -3112,8 +3113,8 @@
 | 0.0 | [ftpd](./f/ftpd) | Node FTP Server
 | 0.0 | [ftps](./f/ftps) | FTP, FTPS and SFTP client for node.js, mainly a lf
 | 0.0 | [fullcalendar__common](./f/fullcalendar__common) | internal package
-| 0.0 | [fullcalendar__core](./f/fullcalendar__core) | Provides core functionality, including the Calenda
-| 0.0 | [fullcalendar__vue](./f/fullcalendar__vue) | An official FullCalendar component for Vue 2
+| 0.0 | [fullcalendar__core](./f/fullcalendar__core) | FullCalendar core package for rendering a calendar
+| 0.0 | [fullcalendar__vue](./f/fullcalendar__vue) | The official Vue 2 component for FullCalendar
 | 0.0 | [fullname](./f/fullname) | Get the fullname of the current user
 | 0.0 | [fullpage_dot_js](./f/fullpage_dot_js) | Create beautiful fullscreen snap scrolling website
 | 0.0 | [function-bind](./f/function-bind) | Implementation of Function.prototype.bind
@@ -3391,7 +3392,6 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
-| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -3626,7 +3626,7 @@
 | 0.0 | [hashtable](./h/hashtable) | Native HashTable and ES6 compatible Map for Node.j
 | 0.0 | [hashtag-regex](./h/hashtag-regex) | A regular expression to match hashtag identifiers 
 | 0.0 | [hast](./h/hast) | Renamed to rehype
-| 0.0 | [hast-to-hyperscript](./h/hast-to-hyperscript) | hast utility to transform to something else (react
+| 0.0 | [hast-to-hyperscript](./h/hast-to-hyperscript) | Legacy hast utility to transform to something else
 | 0.0 | [hast-util-embedded](./h/hast-util-embedded) | hast utility to check if a node is an embedded ele
 | 0.0 | [hast-util-from-parse5](./h/hast-util-from-parse5) | hast utility to transform from Parse5’s AST
 | 0.0 | [hast-util-has-property](./h/hast-util-has-property) | hast utility to check if a node has a property
@@ -4044,7 +4044,6 @@
 | 0.0 | [ip1sms__is-disposable-pho](./i/ip1sms__is-disposable-phone-number) | Determine if a phone number is a disposable phone 
 | 0.0 | [ip6addr](./i/ip6addr) | IPv6/IPv4 address parsing and manipulation
 | 0.0 | [ipaddr_dot_js](./i/ipaddr_dot_js) | A library for manipulating IPv4 and IPv6 addresses
-| 0.0 | [ipaiva](./i/ipaiva) | -
 | 0.0 | [ipcheck](./i/ipcheck) | Super-efficient module to parse and check if an IP
 | 0.0 | [ipfs-bitswap](./i/ipfs-bitswap) | JavaScript implementation of the Bitswap data exch
 | 0.0 | [ipfs-cli](./i/ipfs-cli) | JavaScript implementation of the IPFS specificatio
@@ -4238,7 +4237,7 @@
 | 0.0 | [istanbul-reports](./i/istanbul-reports) | istanbul reports
 | 0.0 | [istanbuljs__nyc-config-ba](./i/istanbuljs__nyc-config-babel) | nyc configuration that works with babel-plugin-ist
 | 0.0 | [istextorbinary](./i/istextorbinary) | Determine if a filename and/or buffer is text or b
-| 0.0 | [it-all](./i/it-all) | Collects all values from an async iterator and ret
+| 0.0 | [it-all](./i/it-all) | Collects all values from an (async) iterable and r
 | 0.0 | [it-batch](./i/it-batch) | Takes an async iterator that emits things and emit
 | 0.0 | [it-concat](./i/it-concat) | Concat all buffers/strings yielded from an async i
 | 0.0 | [it-drain](./i/it-drain) | Empties an async iterator
@@ -4259,7 +4258,7 @@
 | 0.0 | [it-pb-stream](./i/it-pb-stream) | A convenience-wrapper around protocol-buffers and 
 | 0.0 | [it-peekable](./i/it-peekable) | Allows peeking/pushing an iterable
 | 0.0 | [it-pipe](./i/it-pipe) | Utility to "pipe" async iterables together
-| 0.0 | [it-pushable](./i/it-pushable) | Pushable iterable
+| 0.0 | [it-pushable](./i/it-pushable) | An iterable that you can push values into
 | 0.0 | [it-reader](./i/it-reader) | Read an exact number of bytes from a binary (async
 | 0.0 | [it-reduce](./i/it-reduce) | Reduces the values yielded from an async iterator
 | 0.0 | [it-sort](./i/it-sort) | Collects all values from an async iterator, sorts 
@@ -4615,7 +4614,7 @@
 | 0.0 | [json2mq](./j/json2mq) | Generate media query string from JSON or javascrip
 | 0.0 | [json2xml](./j/json2xml) | Simple JavaScript Object to XML string converter.
 | 0.0 | [json3](./j/json3) | A JSON polyfill for older JavaScript platforms.
-| 0.0 | [json5](./j/json5) | JSON for humans.
+| 0.0 | [json5](./j/json5) | JSON for Humans
 | 0.0 | [json8-patch](./j/json8-patch) | JSON Patch toolkit for JavaScript
 | 0.0 | [json_ml](./j/json_ml) | JsonML parse/stringify function.
 | 0.0 | [jsonabc](./j/jsonabc) | Sorts JSON object alphabetically. It supports nest
@@ -5138,7 +5137,7 @@
 | 0.0 | [levelup](./l/levelup) | Fast & simple storage - a Node.js-style LevelDB wr
 | 0.0 | [leven](./l/leven) | Measure the difference between two strings using t
 | 0.0 | [levenshtein](./l/levenshtein) | Javascript implementation of the L-diggity.
-| 0.0 | [levenshtein-edit-distance](./l/levenshtein-edit-distance) | Levenshtein edit distance. No cruft. Real fast.
+| 0.0 | [levenshtein-edit-distance](./l/levenshtein-edit-distance) | Levenshtein edit distance
 | 0.0 | [lexicographic-integer](./l/lexicographic-integer) | create lexicographic string keys for positive inte
 | 0.0 | [lezer__common](./l/lezer__common) | Syntax tree data structure and parser interfaces f
 | 0.0 | [lezer__highlight](./l/lezer__highlight) | Highlighting system for Lezer parse trees
@@ -5185,13 +5184,13 @@
 | 0.0 | [libp2p__mplex](./l/libp2p__mplex) | JavaScript implementation of https://github.com/li
 | 0.0 | [libp2p__multistream-selec](./l/libp2p__multistream-select) | JavaScript implementation of multistream-select
 | 0.0 | [libp2p__peer-collections](./l/libp2p__peer-collections) | Stores values against a peer id
-| 0.0 | [libp2p__peer-id](./l/libp2p__peer-id) | Implementation of @libp2p/interface-peer-d
+| 0.0 | [libp2p__peer-id](./l/libp2p__peer-id) | Implementation of @libp2p/interface-peer-id
 | 0.0 | [libp2p__peer-id-factory](./l/libp2p__peer-id-factory) | Create PeerId instances
 | 0.0 | [libp2p__peer-record](./l/libp2p__peer-record) | Used to transfer signed peer data across the netwo
 | 0.0 | [libp2p__peer-store](./l/libp2p__peer-store) | Stores information about peers libp2p knows on the
 | 0.0 | [libp2p__pubsub](./l/libp2p__pubsub) | libp2p pubsub base class
 | 0.0 | [libp2p__record](./l/libp2p__record) | libp2p record implementation
-| 0.0 | [libp2p__tcp](./l/libp2p__tcp) | Node.js implementation of the TCP module that libp
+| 0.0 | [libp2p__tcp](./l/libp2p__tcp) | A TCP transport for libp2p
 | 0.0 | [libp2p__topology](./l/libp2p__topology) | libp2p network topology
 | 0.0 | [libp2p__tracked-map](./l/libp2p__tracked-map) | Allows tracking of statistics while libp2p is runn
 | 0.0 | [libp2p__utils](./l/libp2p__utils) | Package to aggregate shared logic and dependencies
@@ -5609,7 +5608,7 @@
 | 0.0 | [lona__svg-model](./l/lona__svg-model) | -
 | 0.0 | [long](./l/long) | A Long class for representing a 64-bit two's-compl
 | 0.0 | [long-timeout](./l/long-timeout) | Long timeout makes it possible to have a timeout o
-| 0.0 | [longest-streak](./l/longest-streak) | Count the longest repeating streak of a character
+| 0.0 | [longest-streak](./l/longest-streak) | Count the longest repeating streak of a substring
 | 0.0 | [loopback](./l/loopback) | LoopBack: Open Source Framework for Node.js
 | 0.0 | [loopback-boot](./l/loopback-boot) | Convention-based bootstrapper for LoopBack applica
 | 0.0 | [loopbench](./l/loopbench) | Benchmark your event loop
@@ -6112,7 +6111,7 @@
 | 0.0 | [mergerino](./m/mergerino) | immutable state merge util
 | 0.0 | [merkle](./m/merkle) | Javascript implementation of merkle trees
 | 0.0 | [merkle-patricia-tree](./m/merkle-patricia-tree) | This is an implementation of the modified merkle p
-| 0.0 | [mermaid](./m/mermaid) | Markdownish syntax for generating flowcharts, sequ
+| 0.0 | [mermaid](./m/mermaid) | Markdown-ish syntax for generating flowcharts, seq
 | 0.0 | [meros](./m/meros) | A fast 626B utility that makes reading multipart r
 | 0.0 | [mersenne-twister](./m/mersenne-twister) | Mersenne twister pseudorandom number generator
 | 0.0 | [mersennetwister](./m/mersennetwister) | A standalone, pure JavaScript implementation of th
@@ -6644,7 +6643,7 @@
 | 0.0 | [node-dijkstra](./n/node-dijkstra) | A NodeJS implementation of Dijkstra's algorithm
 | 0.0 | [node-dir](./n/node-dir) | asynchronous file and directory operations for Nod
 | 0.0 | [node-dogstatsd](./n/node-dogstatsd) | node client for extended StatsD server of Datadog
-| 0.0 | [node-downloader-helper](./n/node-downloader-helper) | A simple http file downloader for node.js
+| 0.0 | [node-downloader-helper](./n/node-downloader-helper) | A simple http/s file downloader for node.js
 | 0.0 | [node-easy-cert](./n/node-easy-cert) | A tool for managing self-signed certifications
 | 0.0 | [node-emoji](./n/node-emoji) | simple emoji support for node.js projects
 | 0.0 | [node-expat](./n/node-expat) | NodeJS binding for fast XML parsing.
@@ -7990,12 +7989,12 @@
 | 0.0 | [rdfjs__formats-common](./r/rdfjs__formats-common) | Parsers and serializers for common RDF formats
 | 0.0 | [rdfjs__namespace](./r/rdfjs__namespace) | Named Node builder
 | 0.0 | [rdfjs__parser-jsonld](./r/rdfjs__parser-jsonld) | JSON-LD parser that implements the RDFJS Sink inte
-| 0.0 | [rdfjs__parser-n3](./r/rdfjs__parser-n3) | N3 parser that implements the RDFJS Sink interface
-| 0.0 | [rdfjs__serializer-jsonld](./r/rdfjs__serializer-jsonld) | JSON-LD serializer that implements the RDFJS Sink 
+| 0.0 | [rdfjs__parser-n3](./r/rdfjs__parser-n3) | N3 parser that implements the RDF/JS Sink interfac
+| 0.0 | [rdfjs__serializer-jsonld](./r/rdfjs__serializer-jsonld) | JSON-LD serializer that implements the RDF/JS Sink
 | 0.0 | [rdfjs__serializer-jsonld-](./r/rdfjs__serializer-jsonld-ext) | JSON-LD serializer that implements the RDFJS Sink 
-| 0.0 | [rdfjs__serializer-ntriple](./r/rdfjs__serializer-ntriples) | N-Triples serializer that implements the RDFJS Sin
+| 0.0 | [rdfjs__serializer-ntriple](./r/rdfjs__serializer-ntriples) | N-Triples serializer that implements the RDF/JS Si
 | 0.0 | [rdfjs__serializer-rdfjs](./r/rdfjs__serializer-rdfjs) | RDF/JS JavaScript code serializer that implements 
-| 0.0 | [rdfjs__sink-map](./r/rdfjs__sink-map) | Map for RDFJS Sinks including shortcut methods
+| 0.0 | [rdfjs__sink-map](./r/rdfjs__sink-map) | Map for RDF/JS Sinks including shortcut methods
 | 0.0 | [rdfjs__term-map](./r/rdfjs__term-map) | Map for RDF/JS Terms keys
 | 0.0 | [rdfjs__term-set](./r/rdfjs__term-set) | Set for RDF/JS Terms
 | 0.0 | [rdfjs__to-ntriples](./r/rdfjs__to-ntriples) | Converts RDF/JS Terms, Quads and Datasets to N-Tri
@@ -8103,7 +8102,7 @@
 | 0.0 | [react-circular-progressba](./r/react-circular-progressbar) | A circular progress indicator component
 | 0.0 | [react-click-outside](./r/react-click-outside) | A component wrapper that provides click outside de
 | 0.0 | [react-click-outside-hook](./r/react-click-outside-hook) | Simple to use React Hook with click outside functi
-| 0.0 | [react-clipboardjs-copy](./r/react-clipboardjs-copy) | clipboardjs copy component for react
+| 0.0 | [react-clipboardjs-copy](./r/react-clipboardjs-copy) | clipboard.js copy component for react
 | 0.0 | [react-clock](./r/react-clock) | An analog clock for your React app.
 | 0.0 | [react-close-on-escape](./r/react-close-on-escape) | close react component on press escape
 | 0.0 | [react-codemirror](./r/react-codemirror) | Codemirror
@@ -8899,7 +8898,7 @@
 | 0.0 | [redis-server](./r/redis-server) | Start and stop a Redis server.
 | 0.0 | [redis__bloom](./r/redis__bloom) | This package provides support for the 
 | 0.0 | [redis__client](./r/redis__client) | The source code and documentation for this package
-| 0.0 | [redis__graph](./r/redis__graph) | -
+| 0.0 | [redis__graph](./r/redis__graph) | Example usage: javascript import { createClient, G
 | 0.0 | [redis__json](./r/redis__json) | This package provides support for the 
 | 0.0 | [redis__search](./r/redis__search) | This package provides support for the 
 | 0.0 | [redis__time-series](./r/redis__time-series) | This package provides support for the 
@@ -9086,7 +9085,7 @@
 | 0.0 | [resolve-pkg](./r/resolve-pkg) | Resolve the path of a package regardless of it hav
 | 0.0 | [resolve-protobuf-schema](./r/resolve-protobuf-schema) | Read a protobuf schema from the disk, parse it and
 | 0.0 | [resolve-value](./r/resolve-value) | Deeply resolve all promises in a value.
-| 0.0 | [resolve_dot_exports](./r/resolve_dot_exports) | A tiny (737b), correct, general-purpose, and confi
+| 0.0 | [resolve_dot_exports](./r/resolve_dot_exports) | A tiny (813b), correct, general-purpose, and confi
 | 0.0 | [resource-loader](./r/resource-loader) | A generic asset loader, made with web games in min
 | 0.0 | [response-iterator](./r/response-iterator) | Creates an async iterator for a variety of inputs 
 | 0.0 | [response-time](./r/response-time) | Response time for Node.js servers
@@ -9297,6 +9296,7 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
+| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9540,7 +9540,7 @@
 | 0.0 | [sharedb](./s/sharedb) | JSON OT database backend
 | 0.0 | [sharepoint](./s/sharepoint) | SharePoint client for Node.js
 | 0.0 | [sharp](./s/sharp) | High performance Node.js image processing, the fas
-| 0.0 | [sharpie](./s/sharpie) | A simple express middleware for resizing images us
+| 0.0 | [sharpie](./s/sharpie) | Express middleware for image transforms with sharp
 | 0.0 | [shasum](./s/shasum) | Single function that return the sha1sum. Installin
 | 0.0 | [shebang-command](./s/shebang-command) | Get the command from a shebang
 | 0.0 | [shebang-regex](./s/shebang-regex) | Regular expression for matching a shebang line
@@ -9593,6 +9593,7 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
+| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
@@ -10167,6 +10168,7 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
+| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10321,6 +10323,7 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
+| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
@@ -10354,7 +10357,7 @@
 | 0.0 | [theme-ui__color-modes](./t/theme-ui__color-modes) | Adds support for user-controlled color modes
 | 0.0 | [theme-ui__components](./t/theme-ui__components) | Primitive layout, typographic, and other component
 | 0.0 | [theme-ui__core](./t/theme-ui__core) | -
-| 0.0 | [theme-ui__mdx](./t/theme-ui__mdx) | MDX component context for Theme UI
+| 0.0 | [theme-ui__mdx](./t/theme-ui__mdx) | -
 | 0.0 | [theme-ui__parse-props](./t/theme-ui__parse-props) | Internal package — You don't want to consume this 
 | 0.0 | [theme-ui__theme-provider](./t/theme-ui__theme-provider) | **Note:** This package is a hack to fix export ord
 | 0.0 | [theming](./t/theming) | Unified CSSinJS theming solution for React
@@ -10630,7 +10633,7 @@
 | 0.0 | [typeof](./t/typeof) | Node module. typeOf('a string') == 'string', typeO
 | 0.0 | [typeorm-aurora-data-api-d](./t/typeorm-aurora-data-api-driver) |  
 | 0.0 | [types-eslintrc](./t/types-eslintrc) | Type checking for .eslintrc.json
-| 0.0 | [types-json](./t/types-json) | Type checking for JSON objects
+| 0.0 | [types-json](./t/types-json) | Type checking for JSON values
 | 0.0 | [types-pkg-json](./t/types-pkg-json) | Type checking for package.json
 | 0.0 | [typescript-collections](./t/typescript-collections) | A complete, fully tested data structure library wr
 | 0.0 | [typescript-compare](./t/typescript-compare) | TypeScript generics to compare types
@@ -10713,7 +10716,7 @@
 | 0.0 | [ungap__structured-clone](./u/ungap__structured-clone) | A structuredClone polyfill
 | 0.0 | [ungap__url-search-params](./u/ungap__url-search-params) | The URLSearchParams polyfill.
 | 0.0 | [ungap__weakmap](./u/ungap__weakmap) | An essential WeakMap polyfill for legacy browsers.
-| 0.0 | [unherit](./u/unherit) | Clone a constructor without affecting the super-cl
+| 0.0 | [unherit](./u/unherit) | Create a subclass that can be modified without aff
 | 0.0 | [unicode-properties](./u/unicode-properties) | Provides fast access to unicode character properti
 | 0.0 | [unicode-trie](./u/unicode-trie) | Unicode Trie data structure for fast character met
 | 0.0 | [unidecode](./u/unidecode) | ASCII transliterations of Unicode text
@@ -11180,7 +11183,7 @@
 | 0.0 | [webidl2js](./w/webidl2js) | Auto-generates class structures for WebIDL specifi
 | 0.0 | [webix](./w/webix) | Webix UI
 | 0.0 | [webmidi](./w/webmidi) | WEBMIDI.js makes it easy to talk to MIDI instrumen
-| 0.0 | [webp-in-css](./w/webp-in-css) | PostCSS plugin and tiny JS script (184 bytes) to u
+| 0.0 | [webp-in-css](./w/webp-in-css) | PostCSS plugin and tiny JS script (175 bytes) to u
 | 0.0 | [webpack](./w/webpack) | Packs CommonJs/AMD modules for the browser. Allows
 | 0.0 | [webpack-assets-manifest](./w/webpack-assets-manifest) | This Webpack plugin will generate a JSON file that
 | 0.0 | [webpack-blocks](./w/webpack-blocks) | Convenience package that includes all the most com
@@ -11406,7 +11409,7 @@
 | 0.0 | [write-dir-safe](./w/write-dir-safe) | Create directories and their parents recursively
 | 0.0 | [write-file-atomic](./w/write-file-atomic) | Write files in an atomic fashion w/configurable ow
 | 0.0 | [write-file-atomically](./w/write-file-atomically) | Promisified version of write-file-atomic
-| 0.0 | [write-file-safe](./w/write-file-safe) | Write files atomically and create parent directori
+| 0.0 | [write-file-safe](./w/write-file-safe) | Write files atomically, and create parent director
 | 0.0 | [write-file-webpack-plugin](./w/write-file-webpack-plugin) | Forces webpack-dev-server to write bundle files to
 | 0.0 | [write-good](./w/write-good) | Naive linter for English prose
 | 0.0 | [write-json-file](./w/write-json-file) | Stringify and write JSON to a file atomically
@@ -11515,6 +11518,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
@@ -11556,7 +11560,7 @@
 | 0.0 | [zenscroll](./z/zenscroll) | A module to smooth-scroll web pages and scrollable
 | 0.0 | [zepto](./z/zepto) | Zepto is a minimalist JavaScript library for moder
 | 0.0 | [zeroclipboard](./z/zeroclipboard) | The ZeroClipboard library provides an easy way to 
-| 0.0 | [zeromq](./z/zeromq) | ZeroMQ for node.js
+| 0.0 | [zeromq](./z/zeromq) | Next-generation ZeroMQ bindings for Node.js
 | 0.0 | [zetapush-js](./z/zetapush-js) | JavaScript SDK for ZetaPush
 | 0.0 | [zfont](./z/zfont) | Text plugin for Zdog
 | 0.0 | [ziggy-js](./z/ziggy-js) | Use your Laravel named routes in JavaScript.

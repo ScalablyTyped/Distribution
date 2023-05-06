@@ -10,10 +10,10 @@ A service layer for hapi
 | ------------------ | :-------------: |
 | Full name          | @hapipal/schmervice |
 | Keywords           | hapi, hapijs, services, architecture, caching |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2678.3333333333335 |
-| # stars            | 47.0 |
+| # downloads        | 4406.666666666667 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/hapipal/schmervice#readme)

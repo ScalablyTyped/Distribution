@@ -10,10 +10,10 @@ A SIP library for JavaScript
 | ------------------ | :-------------: |
 | Full name          | sip.js |
 | Keywords           | sip, webrtc, library, websocket, javascript, typescript |
-| # releases         | 4 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 45980.666666666664 |
-| # stars            | 1546.0 |
+| # downloads        | 48173.333333333336 |
+| # stars            | 1571.0 |
 
 ## Links
 - [Homepage](https://sipjs.com)

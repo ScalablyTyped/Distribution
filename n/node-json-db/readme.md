@@ -10,10 +10,10 @@ Database using JSON file as storage for Node.JS
 | ------------------ | :-------------: |
 | Full name          | node-json-db |
 | Keywords           | database, json, db, typescript |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 43558.666666666664 |
-| # stars            | 535.0 |
+| # downloads        | 40569.333333333336 |
+| # stars            | 542.0 |
 
 ## Links
 - [Homepage](https://github.com/Belphemur/node-json-db)

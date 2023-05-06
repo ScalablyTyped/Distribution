@@ -10,9 +10,9 @@ Transport classes and utilities shared among Node.js Elastic client libraries
 | ------------------ | :-------------: |
 | Full name          | @elastic/transport |
 | Keywords           | - |
-| # releases         | 24 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 397987.6666666667 |
+| # downloads        | 456566.0 |
 | # stars            | 2.0 |
 
 ## Links

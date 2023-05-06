@@ -12,8 +12,8 @@ Get the name, API level, version level, NDK level, or version code from any vers
 | Keywords           | android, version, versions, ndk, nougat, marshmallow, api, level |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 238516.66666666666 |
-| # stars            | 10.0 |
+| # downloads        | 267505.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/dvoiss/android-versions#readme)

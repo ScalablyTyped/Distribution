@@ -10,10 +10,10 @@ remark plugin to support MDX syntax
 | ------------------ | :-------------: |
 | Full name          | remark-mdx |
 | Keywords           | unified, remark, remark-plugin, plugin, mdast, markdown, jsx, javascript, xml, mdx |
-| # releases         | 23 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6815638666666668E7 |
-| # stars            | 13963.0 |
+| # downloads        | 1.8313076333333332E7 |
+| # stars            | 14346.0 |
 
 ## Links
 - [Homepage](https://mdxjs.com)

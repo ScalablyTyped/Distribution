@@ -10,10 +10,10 @@ Merge objects & other types recursively. A simple & small integration.
 | ------------------ | :-------------: |
 | Full name          | merge-anything |
 | Keywords           | javascript, merge, deepmerge, recursively, object-assign, deep-assign, nested-assign, typescript, deep-merge, merge-object, merge-objects, deep-merge-object, object-assign-deep, nested-object-assign, nested-merge, combine, combine-objects, combine-merge, merge-combine, nested-combine |
-| # releases         | 11 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 1900087.3333333333 |
-| # stars            | 193.0 |
+| # downloads        | 1830654.6666666667 |
+| # stars            | 205.0 |
 
 ## Links
 - [Homepage](https://github.com/mesqueeb/merge-anything#readme)

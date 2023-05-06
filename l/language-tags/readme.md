@@ -10,10 +10,10 @@ Work with IANA language tags.
 | ------------------ | :-------------: |
 | Full name          | language-tags |
 | Keywords           | iana, bcp47, subtags, rfc5646, m17n, multilingualization |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3.0048699666666668E7 |
-| # stars            | 46.0 |
+| # downloads        | 3.7045133333333336E7 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/mattcg/language-tags)

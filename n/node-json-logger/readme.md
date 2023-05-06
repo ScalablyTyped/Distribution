@@ -12,8 +12,8 @@ Simply, output logs to STDOUT in JSON
 | Keywords           | logger, json |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 6271.333333333333 |
-| # stars            | 6.0 |
+| # downloads        | 6533.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/hidori/node-json-logger#readme)

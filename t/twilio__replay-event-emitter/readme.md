@@ -10,9 +10,9 @@ An extension to Node's EventEmitter that supports event replay.
 | ------------------ | :-------------: |
 | Full name          | @twilio/replay-event-emitter |
 | Keywords           | - |
-| # releases         | 39 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 182841.33333333334 |
+| # downloads        | 184940.0 |
 | # stars            | ? |
 
 ## Links

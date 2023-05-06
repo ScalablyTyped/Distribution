@@ -10,10 +10,10 @@ OpenTelemetry grpc automatic instrumentation package.
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/instrumentation-grpc |
 | Keywords           | opentelemetry, grpc, nodejs, tracing, profiling, instrumentation |
-| # releases         | 156 |
+| # releases         | 158 |
 | # dependents       | 0.0 |
-| # downloads        | 735904.0 |
-| # stars            | 1462.0 |
+| # downloads        | 1293194.6666666667 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-instrumentation-grpc)

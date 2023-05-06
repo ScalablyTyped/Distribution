@@ -12,7 +12,7 @@ Apply a fisheye effect to an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 4390765.666666667 |
+| # downloads        | 4675978.333333333 |
 | # stars            | ? |
 
 ## Links

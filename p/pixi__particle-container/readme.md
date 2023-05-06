@@ -10,15 +10,15 @@ Render many sprite particles as efficiently as possible
 | ------------------ | :-------------: |
 | Full name          | @pixi/particle-container |
 | Keywords           | - |
-| # releases         | 28 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 275422.3333333333 |
-| # stars            | 37483.0 |
+| # downloads        | 303861.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fparticle-container)
     
 

@@ -10,10 +10,10 @@ Typings are for version 2.0.16
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-provider |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 83 |
+| # releases         | 88 |
 | # dependents       | 0.0 |
-| # downloads        | 162116.33333333334 |
-| # stars            | 2863.0 |
+| # downloads        | 172772.33333333334 |
+| # stars            | 3200.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/pro-components#readme)

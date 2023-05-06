@@ -10,10 +10,10 @@ Pie Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-pie |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 60 |
+| # releases         | 45 |
 | # dependents       | 0.0 |
-| # downloads        | 858823.0 |
-| # stars            | 9887.0 |
+| # downloads        | 848709.3333333334 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

@@ -10,10 +10,10 @@ Pixel-perfect icons for web cartography
 | ------------------ | :-------------: |
 | Full name          | @mapbox/maki |
 | Keywords           | map, icon, poi, svg |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 11225.666666666666 |
-| # stars            | 1419.0 |
+| # downloads        | 17987.0 |
+| # stars            | 1441.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/maki)

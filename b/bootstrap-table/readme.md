@@ -10,10 +10,10 @@ An extended table to integration with some of the most widely used CSS framework
 | ------------------ | :-------------: |
 | Full name          | bootstrap-table |
 | Keywords           | bootstrap, table, pagination, checkbox, radio, datatables, css, css-framework, semantic, semantic-ui, bulma, material, material-design, materialize, foundation |
-| # releases         | 9 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 452774.0 |
-| # stars            | 11330.0 |
+| # downloads        | 543142.3333333334 |
+| # stars            | 11427.0 |
 
 ## Links
 - [Homepage](https://bootstrap-table.com)

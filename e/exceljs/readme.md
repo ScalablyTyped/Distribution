@@ -10,10 +10,10 @@ Excel Workbook Manager - Read and Write xlsx and csv Files.
 | ------------------ | :-------------: |
 | Full name          | exceljs |
 | Keywords           | xlsx, json, csv, excel, font, border, fill, number, format, number format, alignment, office, spreadsheet, workbook, defined names, data validations, rich text, in-cell format, outlineLevel, views, frozen, split, pageSetup |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2106728.0 |
-| # stars            | 9649.0 |
+| # downloads        | 2567700.6666666665 |
+| # stars            | 10443.0 |
 
 ## Links
 - [Homepage](https://github.com/exceljs/exceljs#readme)

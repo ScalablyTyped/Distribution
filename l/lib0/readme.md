@@ -10,10 +10,10 @@ Typings are for version 0.2.52
 | ------------------ | :-------------: |
 | Full name          | lib0 |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 639109.3333333334 |
-| # stars            | 152.0 |
+| # downloads        | 994247.0 |
+| # stars            | 180.0 |
 
 ## Links
 - [Homepage](https://github.com/dmonad/lib0#readme)

@@ -3,15 +3,16 @@
 
 Typings are for version 1.1.0
 
-
+## Library description:
+Example usage: ```javascript import { createClient, Graph } from 'redis';
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @redis/graph |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 786272.0 |
+| # downloads        | 1957165.3333333333 |
 | # stars            | ? |
 
 ## Links

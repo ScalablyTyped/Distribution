@@ -10,9 +10,9 @@ An http client to periodically fetch and cache data from web services
 | ------------------ | :-------------: |
 | Full name          | ft-poller |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 6584.333333333333 |
+| # downloads        | 6079.333333333333 |
 | # stars            | 11.0 |
 
 ## Links

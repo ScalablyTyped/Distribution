@@ -10,10 +10,10 @@ The core Nx plugin contains the core functionality of Nx like the project graph,
 | ------------------ | :-------------: |
 | Full name          | nx |
 | Keywords           | Monorepo, Angular, React, Web, Node, Nest, Jest, Cypress, CLI |
-| # releases         | 563 |
+| # releases         | 567 |
 | # dependents       | 0.0 |
-| # downloads        | 9021857.0 |
-| # stars            | 14693.0 |
+| # downloads        | 1.0904634E7 |
+| # stars            | 16088.0 |
 
 ## Links
 - [Homepage](https://nx.dev)

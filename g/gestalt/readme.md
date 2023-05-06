@@ -10,10 +10,10 @@ A set of React UI components which enforce Pinterest’s design language
 | ------------------ | :-------------: |
 | Full name          | gestalt |
 | Keywords           | design system, react, react component, pinterest, ui library |
-| # releases         | 994 |
+| # releases         | 1086 |
 | # dependents       | 0.0 |
-| # downloads        | 33994.0 |
-| # stars            | 4015.0 |
+| # downloads        | 21713.333333333332 |
+| # stars            | 4068.0 |
 
 ## Links
 - [Homepage](https://gestalt.pinterest.systems/)

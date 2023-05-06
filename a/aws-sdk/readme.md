@@ -10,10 +10,10 @@ AWS SDK for JavaScript
 | ------------------ | :-------------: |
 | Full name          | aws-sdk |
 | Keywords           | api, amazon, aws, ec2, simpledb, s3, sqs, ses, sns, route53, rds, elasticache, cloudfront, fps, cloudformation, cloudwatch, dynamodb, iam, swf, autoscaling, cloudsearch, elb, loadbalancing, emr, mapreduce, importexport, storagegateway, workflow, ebs, vpc, beanstalk, glacier, kinesis, cloudtrail, waf |
-| # releases         | 464 |
+| # releases         | 469 |
 | # dependents       | 0.0 |
-| # downloads        | 4.2094403666666664E7 |
-| # stars            | 7138.0 |
+| # downloads        | 4.5163671333333336E7 |
+| # stars            | 7274.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js)

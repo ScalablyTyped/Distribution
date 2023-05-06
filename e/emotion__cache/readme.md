@@ -10,10 +10,10 @@ emotion's cache
 | ------------------ | :-------------: |
 | Full name          | @emotion/cache |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 3.4924334666666664E7 |
-| # stars            | 15328.0 |
+| # downloads        | 3.7638148E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

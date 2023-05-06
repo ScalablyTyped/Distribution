@@ -10,10 +10,10 @@ A provider agnostic cloud library for Node.js
 | ------------------ | :-------------: |
 | Full name          | pkgcloud |
 | Keywords           | cloud, cloud computing, api, rackspace, aws, amazon, azure, google, iaas, servers, compute, storage, client, openstack, hpcloud, hp, helion |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 58845.333333333336 |
-| # stars            | 1168.0 |
+| # downloads        | 46665.666666666664 |
+| # stars            | 1171.0 |
 
 ## Links
 - [Homepage](https://github.com/pkgcloud/pkgcloud#readme)

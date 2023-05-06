@@ -10,10 +10,10 @@ Seedable random number generator supporting many common distributions.
 | ------------------ | :-------------: |
 | Full name          | random |
 | Keywords           | random, number, generator, rng, prng, stats, d3-random, seedrandom, distribution, pseudorandom, uniform, normal, gaussian, lognormal, poisson, exponential, irwinhall, bates |
-| # releases         | 7 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 127498.33333333333 |
-| # stars            | 106.0 |
+| # downloads        | 138424.33333333334 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://github.com/transitive-bullshit/random#readme)

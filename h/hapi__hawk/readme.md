@@ -12,8 +12,8 @@ HTTP Hawk Authentication Scheme
 | Keywords           | http, authentication, scheme, hawk |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 13307.666666666666 |
-| # stars            | 1887.0 |
+| # downloads        | 6546.0 |
+| # stars            | 1892.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/hawk#readme)

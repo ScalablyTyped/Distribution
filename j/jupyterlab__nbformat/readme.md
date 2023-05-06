@@ -10,9 +10,9 @@ Notebook format interfaces
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/nbformat |
 | Keywords           | - |
-| # releases         | 139 |
+| # releases         | 129 |
 | # dependents       | 0.0 |
-| # downloads        | 295089.0 |
+| # downloads        | 225372.0 |
 | # stars            | ? |
 
 ## Links

@@ -10,12 +10,15 @@ A deep deletion module for node (like `rm -rf`)
 | ------------------ | :-------------: |
 | Full name          | rimraf |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2.80862836E8 |
-| # stars            | 4753.0 |
+| # downloads        | 2.947741556666667E8 |
+| # stars            | 4994.0 |
 
 ## Links
+- [Homepage](https://github.com/isaacs/rimraf#readme)
+- [Bugs](https://github.com/isaacs/rimraf/issues)
+- [Repository](https://github.com/isaacs/rimraf)
 - [Npm](https://www.npmjs.com/package/rimraf)
     
 

@@ -9,9 +9,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | @jest/test-sequencer |
 | Keywords           | - |
-| # releases         | 73 |
+| # releases         | 72 |
 | # dependents       | 0.0 |
-| # downloads        | 7.116215566666667E7 |
+| # downloads        | 7.6572671E7 |
 | # stars            | ? |
 
 ## Links

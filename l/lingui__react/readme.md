@@ -10,10 +10,10 @@ React components for translations
 | ------------------ | :-------------: |
 | Full name          | @lingui/react |
 | Keywords           | react, component, i18n, internationalization, i9n, translation, icu, messageformat |
-| # releases         | 51 |
+| # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 344277.6666666667 |
-| # stars            | 3389.0 |
+| # downloads        | 388218.3333333333 |
+| # stars            | 3465.0 |
 
 ## Links
 - [Homepage](https://github.com/lingui/js-lingui#readme)

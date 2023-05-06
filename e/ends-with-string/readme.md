@@ -10,9 +10,9 @@ Check if a string or buffer ends with a given string
 | ------------------ | :-------------: |
 | Full name          | ends-with-string |
 | Keywords           | string, ends, with, buffer, endsWith, char, end, check, last |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 3691.6666666666665 |
+| # downloads        | 11015.666666666666 |
 | # stars            | 1.0 |
 
 ## Links

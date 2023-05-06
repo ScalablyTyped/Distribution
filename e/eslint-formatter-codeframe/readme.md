@@ -12,7 +12,7 @@ ESLint’s official `codeframe` formatter, extracted from ESLint 7
 | Keywords           | lint, javascript, ecmascript |
 | # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 294871.0 |
+| # downloads        | 321036.6666666667 |
 | # stars            | 5.0 |
 
 ## Links

@@ -10,10 +10,10 @@ More powerful alternative to Animated library for React Native.
 | ------------------ | :-------------: |
 | Full name          | react-native-reanimated |
 | Keywords           | - |
-| # releases         | 47 |
+| # releases         | 49 |
 | # dependents       | 0.0 |
-| # downloads        | 1893891.6666666667 |
-| # stars            | 6502.0 |
+| # downloads        | 2002361.3333333333 |
+| # stars            | 6843.0 |
 
 ## Links
 - [Homepage](https://github.com/software-mansion/react-native-reanimated#readme)

@@ -10,10 +10,10 @@ Lumino Message Passing
 | ------------------ | :-------------: |
 | Full name          | @lumino/messaging |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 282496.3333333333 |
-| # stars            | 370.0 |
+| # downloads        | 195307.66666666666 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

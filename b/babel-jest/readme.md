@@ -12,8 +12,8 @@ Jest plugin to use babel for transformation.
 | Keywords           | - |
 | # releases         | 73 |
 | # dependents       | 0.0 |
-| # downloads        | 8.0744572E7 |
-| # stars            | 40312.0 |
+| # downloads        | 8.685759366666667E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

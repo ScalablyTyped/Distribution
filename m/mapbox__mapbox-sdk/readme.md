@@ -10,10 +10,10 @@ JS SDK for accessing Mapbox APIs
 | ------------------ | :-------------: |
 | Full name          | @mapbox/mapbox-sdk |
 | Keywords           | mapbox, sdk, api, map, style, tileset, dataset, search, navigation |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 544431.0 |
-| # stars            | 574.0 |
+| # downloads        | 493784.6666666667 |
+| # stars            | 592.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/mapbox-sdk-js#readme)

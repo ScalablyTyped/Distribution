@@ -12,8 +12,8 @@ Unopinionated, no-frills CLI argument parser
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 7.736015333333333E7 |
-| # stars            | 1080.0 |
+| # downloads        | 8.5566716E7 |
+| # stars            | 1094.0 |
 
 ## Links
 - [Homepage](https://github.com/vercel/arg#readme)

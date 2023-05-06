@@ -10,9 +10,9 @@ Typings are for version 1.2
 | ------------------ | :-------------: |
 | Full name          | xml-encryption |
 | Keywords           | xml, encryption, xmlenc |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1085669.6666666667 |
+| # downloads        | 1257976.3333333333 |
 | # stars            | 34.0 |
 
 ## Links

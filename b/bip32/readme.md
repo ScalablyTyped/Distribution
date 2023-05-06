@@ -10,10 +10,10 @@ A BIP32 compatible library
 | ------------------ | :-------------: |
 | Full name          | bip32 |
 | Keywords           | bip32, bitcoinjs, bitcoin, secp256k1 |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 538115.6666666666 |
-| # stars            | 103.0 |
+| # downloads        | 504379.6666666667 |
+| # stars            | 109.0 |
 
 ## Links
 - [Homepage](https://github.com/bitcoinjs/bip32#readme)

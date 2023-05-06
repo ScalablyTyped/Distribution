@@ -10,9 +10,9 @@ An Unoffical Overwatch API.
 | ------------------ | :-------------: |
 | Full name          | overwatch-api |
 | Keywords           | node, overwatch, api |
-| # releases         | 7 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 187.33333333333334 |
+| # downloads        | 135.0 |
 | # stars            | ? |
 
 ## Links

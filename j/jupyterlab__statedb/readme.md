@@ -10,9 +10,9 @@ Package for managing state in Jupyterlab
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/statedb |
 | Keywords           | - |
-| # releases         | 139 |
+| # releases         | 129 |
 | # dependents       | 0.0 |
-| # downloads        | 269541.6666666667 |
+| # downloads        | 183192.33333333334 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ A complete implementation of JSON Pointer (RFC 6901) for nodejs and modern brows
 | ------------------ | :-------------: |
 | Full name          | json-ptr |
 | Keywords           | 6901, json, pointers, fragmentid |
-| # releases         | 54 |
+| # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 1822467.3333333333 |
-| # stars            | 76.0 |
+| # downloads        | 1803005.3333333333 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/flitbit/json-ptr#readme)

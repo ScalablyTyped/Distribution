@@ -12,8 +12,8 @@ Themes for stylized Vega and Vega-Lite visualizations.
 | Keywords           | vega, vega-lite, themes, style |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 301394.6666666667 |
-| # stars            | 90.0 |
+| # downloads        | 387843.6666666667 |
+| # stars            | 93.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega-themes#readme)

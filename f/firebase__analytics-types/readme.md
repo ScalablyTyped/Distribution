@@ -10,10 +10,10 @@ Typings are for version 0.7.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/analytics-types |
 | Keywords           | - |
-| # releases         | 1154 |
+| # releases         | 974 |
 | # dependents       | 0.0 |
-| # downloads        | 4902652.0 |
-| # stars            | ? |
+| # downloads        | 5079043.666666667 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

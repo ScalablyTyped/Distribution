@@ -10,10 +10,10 @@ Angular - the compiler library
 | ------------------ | :-------------: |
 | Full name          | @angular/compiler |
 | Keywords           | - |
-| # releases         | 220 |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2445961333333334E7 |
-| # stars            | ? |
+| # downloads        | 1.2433107E7 |
+| # stars            | 85816.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

@@ -10,10 +10,10 @@ This is the compatibility layer for the Firebase Analytics component of the Fire
 | ------------------ | :-------------: |
 | Full name          | @firebase/analytics-compat |
 | Keywords           | - |
-| # releases         | 438 |
+| # releases         | 539 |
 | # dependents       | 0.0 |
-| # downloads        | 2645884.3333333335 |
-| # stars            | 4194.0 |
+| # downloads        | 3228915.3333333335 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

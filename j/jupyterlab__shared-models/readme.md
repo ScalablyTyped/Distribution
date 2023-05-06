@@ -10,9 +10,9 @@ JupyterLab - Shared Models
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/shared-models |
 | Keywords           | - |
-| # releases         | 103 |
+| # releases         | 108 |
 | # dependents       | 0.0 |
-| # downloads        | 219575.0 |
+| # downloads        | 153612.0 |
 | # stars            | ? |
 
 ## Links

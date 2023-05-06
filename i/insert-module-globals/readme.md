@@ -10,9 +10,9 @@ insert implicit module globals into a module-deps stream
 | ------------------ | :-------------: |
 | Full name          | insert-module-globals |
 | Keywords           | __filename, __dirname, global, process, module-deps, browser-pack, browserify |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 5935845.333333333 |
+| # downloads        | 5706018.666666667 |
 | # stars            | 27.0 |
 
 ## Links

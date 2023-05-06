@@ -10,10 +10,10 @@ Typings are for version 1.33
 | ------------------ | :-------------: |
 | Full name          | braintree-web-drop-in |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 202700.66666666666 |
-| # stars            | 166.0 |
+| # downloads        | 228104.33333333334 |
+| # stars            | 177.0 |
 
 ## Links
 - [Homepage](https://github.com/braintree/braintree-web-dropin#readme)

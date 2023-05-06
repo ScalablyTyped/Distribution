@@ -10,10 +10,10 @@ SWC node register
 | ------------------ | :-------------: |
 | Full name          | @swc-node/register |
 | Keywords           | swc, babel, ts-node, napi-rs, uglify, node-rs, napi-rs, napi, n-api, esbuild, tsc, webpack |
-| # releases         | 25 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 1742171.3333333333 |
-| # stars            | 1112.0 |
+| # downloads        | 1424911.3333333333 |
+| # stars            | 1223.0 |
 
 ## Links
 - [Homepage](https://github.com/swc-project/swc-node)

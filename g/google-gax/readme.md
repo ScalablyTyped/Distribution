@@ -10,10 +10,10 @@ Google API Extensions
 | ------------------ | :-------------: |
 | Full name          | google-gax |
 | Keywords           | grpc |
-| # releases         | 92 |
+| # releases         | 93 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2502162E7 |
-| # stars            | 88.0 |
+| # downloads        | 1.2642324666666666E7 |
+| # stars            | 89.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/gax-nodejs#readme)

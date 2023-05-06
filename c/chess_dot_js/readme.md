@@ -4,16 +4,16 @@
 Typings are for version 0.13
 
 ## Library description:
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jhlywa/chess.js/Node.js%20CI) ![npm](https://img.shields.io/npm/v/chess.js?color=blue) ![npm](https://img.shields.io/npm/dm/chess.js)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jhlywa/chess.js/node.js.yml) ![npm](https://img.shields.io/npm/v/chess.js?color=blue) ![npm](https://img.shields.io/npm/dm/chess.js)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chess.js |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 14418.333333333334 |
-| # stars            | 2860.0 |
+| # downloads        | 33012.666666666664 |
+| # stars            | 2987.0 |
 
 ## Links
 - [Homepage](https://github.com/jhlywa/chess.js)

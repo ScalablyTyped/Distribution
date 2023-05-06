@@ -10,10 +10,10 @@ Ultra-fast MessagePack implementation with extensions for records and structured
 | ------------------ | :-------------: |
 | Full name          | msgpackr |
 | Keywords           | MessagePack, msgpack, performance, structured, clone |
-| # releases         | 72 |
+| # releases         | 68 |
 | # dependents       | 0.0 |
-| # downloads        | 2688097.0 |
-| # stars            | 244.0 |
+| # downloads        | 3290019.6666666665 |
+| # stars            | 271.0 |
 
 ## Links
 - [Homepage](https://github.com/kriszyp/msgpackr#readme)

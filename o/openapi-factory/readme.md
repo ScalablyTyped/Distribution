@@ -10,10 +10,10 @@ Build API's and serverless code using node and first class functions.
 | ------------------ | :-------------: |
 | Full name          | openapi-factory |
 | Keywords           | aws, cloudfront, package creation, microservice, api gateway, serverless, api gateway, aws api gateway, lambda, aws lambda, api, openapi, api factory, openapi factory |
-| # releases         | 42 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 1681.6666666666667 |
-| # stars            | 7.0 |
+| # downloads        | 1830.3333333333333 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/rhosys/openapi-factory.js#readme)

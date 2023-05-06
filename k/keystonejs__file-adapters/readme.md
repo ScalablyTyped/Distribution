@@ -10,12 +10,15 @@ Adapters for handling storage of the File type
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/file-adapters |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 6933.333333333333 |
-| # stars            | 61.0 |
+| # downloads        | 7276.666666666667 |
+| # stars            | 60.0 |
 
 ## Links
+- [Homepage](https://github.com/keystonejs/keystone-5)
+- [Bugs](https://github.com/keystonejs/keystone-5/issues)
+- [Repository](https://github.com/keystonejs/keystone-5)
 - [Npm](https://www.npmjs.com/package/%40keystonejs%2Ffile-adapters)
     
 

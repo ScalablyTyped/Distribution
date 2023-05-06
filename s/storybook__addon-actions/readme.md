@@ -10,10 +10,10 @@ Get UI feedback when an action is performed on an interactive element
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-actions |
 | Keywords           | storybook, essentials, data-state |
-| # releases         | 476 |
+| # releases         | 461 |
 | # dependents       | 0.0 |
-| # downloads        | 1.505707E7 |
-| # stars            | 73947.0 |
+| # downloads        | 1.6101721333333334E7 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/actions)

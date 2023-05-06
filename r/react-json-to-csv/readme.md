@@ -10,12 +10,15 @@ A react button component to easily generate csv downloads of your json data.
 | ------------------ | :-------------: |
 | Full name          | react-json-to-csv |
 | Keywords           | react, react-component, json, csv, button, download |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 19371.666666666668 |
-| # stars            | 34.0 |
+| # downloads        | 22872.666666666668 |
+| # stars            | 43.0 |
 
 ## Links
+- [Homepage](https://github.com/coston/react-json-to-csv)
+- [Bugs](https://github.com/coston/react-json-to-csv/issues)
+- [Repository](https://github.com/coston/react-json-to-csv)
 - [Npm](https://www.npmjs.com/package/react-json-to-csv)
     
 

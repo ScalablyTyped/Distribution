@@ -10,10 +10,10 @@ Typings are for version 0.66
 | ------------------ | :-------------: |
 | Full name          | metro |
 | Keywords           | - |
-| # releases         | 24 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 4123979.6666666665 |
-| # stars            | 4576.0 |
+| # downloads        | 4558317.666666667 |
+| # stars            | 4674.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/metro#readme)

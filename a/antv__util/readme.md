@@ -12,7 +12,7 @@ Typings are for version 3.3.1
 | Keywords           | util, antv |
 | # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 595753.3333333334 |
+| # downloads        | 561608.3333333334 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-sdk-api-gateway |
 | Keywords           | - |
-| # releases         | 56 |
+| # releases         | 65 |
 | # dependents       | 0.0 |
-| # downloads        | 283605.6666666667 |
-| # stars            | 1854.0 |
+| # downloads        | 275534.3333333333 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-sdk-api-gateway)

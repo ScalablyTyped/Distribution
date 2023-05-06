@@ -10,10 +10,10 @@ Fast & forgiving HTML/XML parser
 | ------------------ | :-------------: |
 | Full name          | htmlparser2 |
 | Keywords           | html, parser, streams, xml, dom, rss, feed, atom |
-| # releases         | 13 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 8.971987566666667E7 |
-| # stars            | 3557.0 |
+| # downloads        | 1.02132343E8 |
+| # stars            | 3697.0 |
 
 ## Links
 - [Homepage](https://github.com/fb55/htmlparser2#readme)

@@ -10,10 +10,10 @@ The Material Components Web banner component.
 | ------------------ | :-------------: |
 | Full name          | @material/banner |
 | Keywords           | material components, material design, banner |
-| # releases         | 713 |
+| # releases         | 770 |
 | # dependents       | 0.0 |
-| # downloads        | 66018.0 |
-| # stars            | 16381.0 |
+| # downloads        | 251111.0 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -10,10 +10,10 @@ Network utils for Node
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-network |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 267948.0 |
-| # stars            | 1982.0 |
+| # downloads        | 331880.0 |
+| # stars            | 1983.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com/)

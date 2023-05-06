@@ -12,8 +12,8 @@ Get the system locale
 | Keywords           | locale, language, system, os, string, user, country, id, identifier, region |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 3.8814064333333336E7 |
-| # stars            | 207.0 |
+| # downloads        | 3.7542573333333336E7 |
+| # stars            | 212.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/os-locale#readme)

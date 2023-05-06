@@ -10,10 +10,10 @@ Automated browser testing for the modern web development stack.
 | ------------------ | :-------------: |
 | Full name          | testcafe |
 | Keywords           | automated, functional, browser, browsers, website, webapp, testing, automation, test, runner, tdd, assert, assertion, QA, ES6, ES2015, async, await |
-| # releases         | 99 |
+| # releases         | 95 |
 | # dependents       | 0.0 |
-| # downloads        | 1056443.0 |
-| # stars            | 9432.0 |
+| # downloads        | 1045812.6666666666 |
+| # stars            | 9500.0 |
 
 ## Links
 - [Homepage](https://devexpress.github.io/testcafe/)

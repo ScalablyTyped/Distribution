@@ -10,15 +10,15 @@ A Select control built with and for ReactJS
 | ------------------ | :-------------: |
 | Full name          | react-select |
 | Keywords           | combobox, form, input, multiselect, react, react-component, select, ui |
-| # releases         | 20 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7192458333333332E7 |
-| # stars            | 24781.0 |
+| # downloads        | 1.9324700333333332E7 |
+| # stars            | 25476.0 |
 
 ## Links
-- [Homepage](https://github.com/JedWatson/react-select#readme)
+- [Homepage](https://github.com/JedWatson/react-select/tree/master#readme)
 - [Bugs](https://github.com/JedWatson/react-select/issues)
-- [Repository](https://github.com/JedWatson/react-select)
+- [Repository](https://github.com/JedWatson/react-select/tree/master)
 - [Npm](https://www.npmjs.com/package/react-select)
     
 

@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/g-base |
 | Keywords           | util, antv, g |
-| # releases         | 12 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 410828.3333333333 |
-| # stars            | 71.0 |
+| # downloads        | 413133.0 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

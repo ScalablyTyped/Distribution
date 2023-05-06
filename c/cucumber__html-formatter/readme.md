@@ -10,9 +10,9 @@ HTML formatter for Cucumber
 | ------------------ | :-------------: |
 | Full name          | @cucumber/html-formatter |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1357165.0 |
+| # downloads        | 1904771.0 |
 | # stars            | ? |
 
 ## Links

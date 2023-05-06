@@ -10,10 +10,10 @@ Vue barcodes and QR codes scanner
 | ------------------ | :-------------: |
 | Full name          | vue-barcode-reader |
 | Keywords           | vue, barcode, qrcode, zxing |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 7950.333333333333 |
-| # stars            | 125.0 |
+| # downloads        | 28970.0 |
+| # stars            | 152.0 |
 
 ## Links
 - [Homepage](https://github.com/olefirenko/vue-barcode-reader#readme)

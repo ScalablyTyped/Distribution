@@ -10,9 +10,9 @@ The default blueprint for ember-cli addons.
 | ------------------ | :-------------: |
 | Full name          | @ember/ordered-set |
 | Keywords           | ember-addon |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 213114.66666666666 |
+| # downloads        | 211237.66666666666 |
 | # stars            | 3.0 |
 
 ## Links

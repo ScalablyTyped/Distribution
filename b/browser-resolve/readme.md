@@ -10,10 +10,10 @@ resolve which handles browser field support in package.json
 | ------------------ | :-------------: |
 | Full name          | browser-resolve |
 | Keywords           | resolve, browser |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2925748333333332E7 |
-| # stars            | 98.0 |
+| # downloads        | 2.2224937666666668E7 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/browser-resolve#readme)

@@ -12,8 +12,8 @@ List of known CSS properties
 | Keywords           | css, properties, w3c, chrome, firefox, explorer, edge, safari, opera, samsung-internet, uc-browser |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5142821E7 |
-| # stars            | 97.0 |
+| # downloads        | 1.5921059666666666E7 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/known-css/known-css-properties#readme)

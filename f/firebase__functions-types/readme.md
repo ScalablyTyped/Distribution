@@ -10,10 +10,10 @@ Typings are for version 0.5.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/functions-types |
 | Keywords           | - |
-| # releases         | 1162 |
+| # releases         | 968 |
 | # dependents       | 0.0 |
-| # downloads        | 4955443.666666667 |
-| # stars            | ? |
+| # downloads        | 5113633.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

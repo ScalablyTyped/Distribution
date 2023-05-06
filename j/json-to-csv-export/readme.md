@@ -10,10 +10,10 @@ Easily generate csv downloads of your json data.
 | ------------------ | :-------------: |
 | Full name          | json-to-csv-export |
 | Keywords           | json, csv, download, web |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 29653.333333333332 |
-| # stars            | 15.0 |
+| # downloads        | 40176.666666666664 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/coston/json-to-csv-export)

@@ -10,9 +10,9 @@ JupyterLab - Log Console
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/logconsole |
 | Keywords           | - |
-| # releases         | 141 |
+| # releases         | 135 |
 | # dependents       | 0.0 |
-| # downloads        | 198490.66666666666 |
+| # downloads        | 94811.0 |
 | # stars            | ? |
 
 ## Links

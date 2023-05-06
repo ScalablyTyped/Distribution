@@ -10,10 +10,10 @@ an RDF library for node.js. Suitable for client and server side.
 | ------------------ | :-------------: |
 | Full name          | rdflib |
 | Keywords           | linkeddata, linked data, rdf, rdfa, turtle, semantic, web, read-write web |
-| # releases         | 82 |
+| # releases         | 105 |
 | # dependents       | 0.0 |
-| # downloads        | 4670.666666666667 |
-| # stars            | 514.0 |
+| # downloads        | 4611.666666666667 |
+| # stars            | 526.0 |
 
 ## Links
 - [Homepage](http://github.com/linkeddata/rdflib.js)

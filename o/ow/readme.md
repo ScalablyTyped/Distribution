@@ -12,8 +12,8 @@ Function argument validation for humans
 | Keywords           | type, types, check, checking, guard, guards, assert, assertion, predicate, predicates, is, validate, validation, utility, util, typeof, instanceof, object |
 | # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 4253215.666666667 |
-| # stars            | 3541.0 |
+| # downloads        | 3535709.3333333335 |
+| # stars            | 3643.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ow#readme)

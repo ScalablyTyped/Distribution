@@ -12,7 +12,7 @@ Check if a file path is a binary file
 | Keywords           | binary, extensions, extension, file, path, check, detect, is |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5005866533333334E8 |
+| # downloads        | 1.6165608333333334E8 |
 | # stars            | 36.0 |
 
 ## Links

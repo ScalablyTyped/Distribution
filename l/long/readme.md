@@ -10,10 +10,10 @@ A Long class for representing a 64-bit two's-complement integer value.
 | ------------------ | :-------------: |
 | Full name          | long |
 | Keywords           | math, long, int64 |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 3.8863508666666664E7 |
-| # stars            | 800.0 |
+| # downloads        | 4.87736E7 |
+| # stars            | 814.0 |
 
 ## Links
 - [Homepage](https://github.com/dcodeIO/long.js#readme)

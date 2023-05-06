@@ -10,10 +10,10 @@ Maps the values yielded by an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-map |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 336144.0 |
-| # stars            | 200.0 |
+| # downloads        | 284286.6666666667 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-map#readme)

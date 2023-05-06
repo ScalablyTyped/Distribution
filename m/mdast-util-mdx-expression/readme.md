@@ -10,9 +10,9 @@ mdast extension to parse and serialize MDX (or MDX.js) expressions
 | ------------------ | :-------------: |
 | Full name          | mdast-util-mdx-expression |
 | Keywords           | unist, mdast, mdast-util, util, utility, markdown, markup, mdx, mdxjs, expression, extension |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1486908.0 |
+| # downloads        | 1728072.0 |
 | # stars            | 1.0 |
 
 ## Links

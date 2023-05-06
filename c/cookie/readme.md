@@ -12,8 +12,8 @@ HTTP server cookie parsing and serialization
 | Keywords           | cookie, cookies |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4811295666666666E8 |
-| # stars            | 1028.0 |
+| # downloads        | 1.65173312E8 |
+| # stars            | 1088.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/cookie#readme)

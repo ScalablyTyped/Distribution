@@ -10,10 +10,10 @@ unist utility to visit direct children of a parent
 | ------------------ | :-------------: |
 | Full name          | unist-util-visit-children |
 | Keywords           | unist, unist-util, util, utility, visit, children |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 785254.3333333334 |
-| # stars            | 4.0 |
+| # downloads        | 885779.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/unist-util-visit-children#readme)

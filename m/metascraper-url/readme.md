@@ -10,9 +10,9 @@ Get url property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-url |
 | Keywords           | metascraper, url |
-| # releases         | 84 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 74482.0 |
+| # downloads        | 108089.0 |
 | # stars            | ? |
 
 ## Links

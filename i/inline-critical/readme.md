@@ -10,9 +10,9 @@ Inline critical-path css and load the existing stylesheets asynchronously
 | ------------------ | :-------------: |
 | Full name          | inline-critical |
 | Keywords           | css, inline, loadcss, critical-path |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 100426.0 |
+| # downloads        | 101487.0 |
 | # stars            | 106.0 |
 
 ## Links

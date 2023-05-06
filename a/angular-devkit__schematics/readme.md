@@ -9,11 +9,11 @@ Angular Schematics - Library
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @angular-devkit/schematics |
-| Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit, blueprints, scaffolding, template, tooling, code generation, schematics |
-| # releases         | 217 |
+| Keywords           | Angular CLI, Angular DevKit, angular, blueprints, code generation, devkit, scaffolding, schematics, sdk, template, tooling |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1425748E7 |
-| # stars            | ? |
+| # downloads        | 2.3161194666666668E7 |
+| # stars            | 25891.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/angular-cli)

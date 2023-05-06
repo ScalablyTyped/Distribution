@@ -10,9 +10,9 @@ JupyterLab - Core Utilities
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/coreutils |
 | Keywords           | - |
-| # releases         | 139 |
+| # releases         | 129 |
 | # dependents       | 0.0 |
-| # downloads        | 319486.6666666667 |
+| # downloads        | 235891.0 |
 | # stars            | ? |
 
 ## Links

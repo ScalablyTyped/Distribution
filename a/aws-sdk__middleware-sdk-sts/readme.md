@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-sdk-sts |
 | Keywords           | - |
-| # releases         | 52 |
+| # releases         | 71 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1432378E7 |
-| # stars            | 1854.0 |
+| # downloads        | 1.6930729E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-sdk-sts)

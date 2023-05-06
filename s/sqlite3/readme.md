@@ -10,10 +10,10 @@ Asynchronous, non-blocking SQLite3 bindings
 | ------------------ | :-------------: |
 | Full name          | sqlite3 |
 | Keywords           | sql, sqlite, sqlite3, database |
-| # releases         | 14 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 2073369.6666666667 |
-| # stars            | 5467.0 |
+| # downloads        | 2586902.6666666665 |
+| # stars            | 5590.0 |
 
 ## Links
 - [Homepage](https://github.com/TryGhost/node-sqlite3)

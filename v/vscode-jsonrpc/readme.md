@@ -10,10 +10,10 @@ A json rpc implementation over streams
 | ------------------ | :-------------: |
 | Full name          | vscode-jsonrpc |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 6155510.666666667 |
-| # stars            | 1036.0 |
+| # downloads        | 7499564.666666667 |
+| # stars            | 1121.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/vscode-languageserver-node#readme)

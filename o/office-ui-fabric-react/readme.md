@@ -10,9 +10,9 @@ Reusable React components for building experiences for Microsoft 365.
 | ------------------ | :-------------: |
 | Full name          | office-ui-fabric-react |
 | Keywords           | - |
-| # releases         | 170 |
+| # releases         | 134 |
 | # dependents       | 0.0 |
-| # downloads        | 368993.3333333333 |
+| # downloads        | 358173.3333333333 |
 | # stars            | ? |
 
 ## Links

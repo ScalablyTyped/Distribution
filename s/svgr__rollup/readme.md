@@ -10,15 +10,15 @@ SVGR Rollup plugin.
 | ------------------ | :-------------: |
 | Full name          | @svgr/rollup |
 | Keywords           | svgr, svg, react, rollup, rollup-plugin |
-| # releases         | 13 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 639331.6666666666 |
-| # stars            | 8885.0 |
+| # downloads        | 646483.0 |
+| # stars            | 9155.0 |
 
 ## Links
 - [Homepage](https://react-svgr.com)
 - [Bugs](https://github.com/gregberge/svgr/issues)
-- [Repository](https://github.com/gregberge/svgr/tree/master)
+- [Repository](https://github.com/gregberge/svgr/tree/main)
 - [Npm](https://www.npmjs.com/package/%40svgr%2Frollup)
     
 

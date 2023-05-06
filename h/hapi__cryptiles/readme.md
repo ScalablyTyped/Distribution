@@ -12,7 +12,7 @@ General purpose crypto utilities
 | Keywords           | cryptography, security, utilites |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2932613.3333333335 |
+| # downloads        | 3340021.6666666665 |
 | # stars            | 181.0 |
 
 ## Links

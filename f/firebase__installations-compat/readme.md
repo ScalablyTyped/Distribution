@@ -10,10 +10,10 @@ This is a compatability layer  for the Firebase Installations SDK
 | ------------------ | :-------------: |
 | Full name          | @firebase/installations-compat |
 | Keywords           | - |
-| # releases         | 448 |
+| # releases         | 548 |
 | # dependents       | 0.0 |
-| # downloads        | 927000.3333333334 |
-| # stars            | 4194.0 |
+| # downloads        | 2209458.6666666665 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

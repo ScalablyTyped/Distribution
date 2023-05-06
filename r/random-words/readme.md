@@ -10,12 +10,15 @@ Generate one or more common English words
 | ------------------ | :-------------: |
 | Full name          | random-words |
 | Keywords           | random, words, words, word, generator, sample, text |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 152735.33333333334 |
-| # stars            | 184.0 |
+| # downloads        | 260685.33333333334 |
+| # stars            | 204.0 |
 
 ## Links
+- [Homepage](https://github.com/apostrophecms/random-words#readme)
+- [Bugs](https://github.com/apostrophecms/random-words/issues)
+- [Repository](https://github.com/apostrophecms/random-words)
 - [Npm](https://www.npmjs.com/package/random-words)
     
 

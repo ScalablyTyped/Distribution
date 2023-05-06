@@ -10,10 +10,10 @@ javascript based business reporting
 | ------------------ | :-------------: |
 | Full name          | jsreport |
 | Keywords           | report, business, javascript |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 7196.333333333333 |
-| # stars            | 966.0 |
+| # downloads        | 6543.0 |
+| # stars            | 1013.0 |
 
 ## Links
 - [Homepage](https://github.com/jsreport/jsreport)

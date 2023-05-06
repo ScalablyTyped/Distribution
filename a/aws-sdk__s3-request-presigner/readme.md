@@ -10,10 +10,10 @@ Typings are for version 3.211.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/s3-request-presigner |
 | Keywords           | - |
-| # releases         | 138 |
+| # releases         | 164 |
 | # dependents       | 0.0 |
-| # downloads        | 2519279.6666666665 |
-| # stars            | 1856.0 |
+| # downloads        | 3146451.6666666665 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/s3-request-presigner)

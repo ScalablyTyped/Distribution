@@ -12,8 +12,8 @@ Webpack Virtual Modules
 | Keywords           | webpack, webpack-plugin, virtual, modules |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 2.5952046333333332E7 |
-| # stars            | 408.0 |
+| # downloads        | 3.1139189E7 |
+| # stars            | 431.0 |
 
 ## Links
 - [Homepage](https://github.com/sysgears/webpack-virtual-modules#readme)

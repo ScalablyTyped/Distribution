@@ -12,13 +12,13 @@ A library for installing and finding packages in a node project
 | Keywords           | react-native, package-manager, package-json, node, yarn, yarnpkg, pnpm |
 | # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 806820.6666666666 |
-| # stars            | 2299.0 |
+| # downloads        | 1093175.3333333333 |
+| # stars            | 18105.0 |
 
 ## Links
-- [Homepage](https://github.com/expo/expo-cli/tree/main/packages/package-manager#readme)
-- [Bugs](https://github.com/expo/expo-cli/issues)
-- [Repository](https://github.com/expo/expo-cli)
+- [Homepage](https://github.com/expo/expo/tree/main/packages/@expo/package-manager#readme)
+- [Bugs](https://github.com/expo/expo/issues)
+- [Repository](https://github.com/expo/expo)
 - [Npm](https://www.npmjs.com/package/%40expo%2Fpackage-manager)
     
 

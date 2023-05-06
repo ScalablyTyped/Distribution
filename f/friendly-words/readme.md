@@ -10,10 +10,10 @@ The Glitch word list, packaged into an NPM module for easy use.
 | ------------------ | :-------------: |
 | Full name          | friendly-words |
 | Keywords           | node, glitch, express |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 5295.666666666667 |
-| # stars            | 225.0 |
+| # downloads        | 9105.666666666666 |
+| # stars            | 246.0 |
 
 ## Links
 - [Homepage](https://glitch.com/~friendly-words)

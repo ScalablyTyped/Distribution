@@ -10,10 +10,10 @@ React components for managing files and images
 | ------------------ | :-------------: |
 | Full name          | react-file-utils |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 182651.0 |
-| # stars            | 1.0 |
+| # downloads        | 283044.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/getstream/react-file-utils#readme)

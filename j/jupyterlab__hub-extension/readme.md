@@ -10,10 +10,10 @@ JupyterLab integration for JupyterHub
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/hub-extension |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 137 |
 | # dependents       | 0.0 |
-| # downloads        | 192973.33333333334 |
-| # stars            | 12379.0 |
+| # downloads        | 89207.0 |
+| # stars            | 12551.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

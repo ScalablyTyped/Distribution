@@ -10,9 +10,9 @@ Type checking for .eslintrc.json
 | ------------------ | :-------------: |
 | Full name          | types-eslintrc |
 | Keywords           | eslint, eslintrc, config, json, types, type, check, guard, guards, ts, tsc, config, typescript, .eslintrc.json, eslintrc.json |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1110.0 |
+| # downloads        | 1243.0 |
 | # stars            | 2.0 |
 
 ## Links

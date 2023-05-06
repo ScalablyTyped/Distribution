@@ -10,10 +10,10 @@ Core Storybook API & Context
 | ------------------ | :-------------: |
 | Full name          | @storybook/api |
 | Keywords           | storybook |
-| # releases         | 479 |
+| # releases         | 464 |
 | # dependents       | 0.0 |
-| # downloads        | 2.8366438333333332E7 |
-| # stars            | 73947.0 |
+| # downloads        | 3.4481842666666664E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/api)

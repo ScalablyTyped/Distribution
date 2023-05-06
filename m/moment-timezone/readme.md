@@ -10,10 +10,10 @@ Parse and display moments in any timezone.
 | ------------------ | :-------------: |
 | Full name          | moment-timezone |
 | Keywords           | moment, date, time, timezone, olson, iana, zone, tz |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 3.0494981E7 |
-| # stars            | 3684.0 |
+| # downloads        | 3.3719703333333336E7 |
+| # stars            | 3704.0 |
 
 ## Links
 - [Homepage](http://momentjs.com/timezone/)

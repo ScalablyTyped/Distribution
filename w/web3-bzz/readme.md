@@ -10,10 +10,10 @@ Web3 module to interact with the Swarm network.
 | ------------------ | :-------------: |
 | Full name          | web3-bzz |
 | Keywords           | - |
-| # releases         | 50 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 2316408.6666666665 |
-| # stars            | 16013.0 |
+| # downloads        | 2180708.0 |
+| # stars            | 16750.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

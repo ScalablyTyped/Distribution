@@ -10,10 +10,10 @@ Find URLs, email addresses, #hashtags and @mentions in plain-text strings, then 
 | ------------------ | :-------------: |
 | Full name          | linkifyjs |
 | Keywords           | autolink, email, hashtag, html, jquery, link, mention, react, twitter, url |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1907553.6666666667 |
-| # stars            | 1250.0 |
+| # downloads        | 2136251.6666666665 |
+| # stars            | 1465.0 |
 
 ## Links
 - [Homepage](https://linkify.js.org)

@@ -10,9 +10,9 @@ Parses CSS inline style to JavaScript object (camelCased).
 | ------------------ | :-------------: |
 | Full name          | style-to-js |
 | Keywords           | style-to-js, css, style, javascript, object, pojo |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2058868.0 |
+| # downloads        | 2592615.0 |
 | # stars            | 3.0 |
 
 ## Links

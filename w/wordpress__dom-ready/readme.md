@@ -10,9 +10,9 @@ Execute callback after the DOM is loaded.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/dom-ready |
 | Keywords           | wordpress, gutenberg, dom-ready |
-| # releases         | 47 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 154619.0 |
+| # downloads        | 151044.66666666666 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ A/B testing React components and debug tools. Isomorphic with a simple, universa
 | ------------------ | :-------------: |
 | Full name          | @marvelapp/react-ab-test |
 | Keywords           | react, react-component, testing, test, A/B, ab, A/B testing, A/B test |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 44003.0 |
-| # stars            | 214.0 |
+| # downloads        | 42373.666666666664 |
+| # stars            | 219.0 |
 
 ## Links
 - [Homepage](https://github.com/marvelapp/react-ab-test#readme)

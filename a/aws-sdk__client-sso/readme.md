@@ -10,10 +10,10 @@ AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-sso |
 | Keywords           | - |
-| # releases         | 118 |
+| # releases         | 138 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2764039E7 |
-| # stars            | 1854.0 |
+| # downloads        | 1.9430697333333332E7 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso)

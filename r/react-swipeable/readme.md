@@ -10,10 +10,10 @@ React Swipe event handler hook
 | ------------------ | :-------------: |
 | Full name          | react-swipeable |
 | Keywords           | react swipe, react touch, react hook, touch, swipe, swipeable, react, hook |
-| # releases         | 16 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1566905.3333333333 |
-| # stars            | 1696.0 |
+| # downloads        | 1635685.3333333333 |
+| # stars            | 1755.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/react-swipeable)

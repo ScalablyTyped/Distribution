@@ -10,10 +10,10 @@ Declarative portals for React
 | ------------------ | :-------------: |
 | Full name          | @reach/portal |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 2005394.6666666667 |
-| # stars            | 5390.0 |
+| # downloads        | 2233346.3333333335 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)

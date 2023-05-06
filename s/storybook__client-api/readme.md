@@ -10,10 +10,10 @@ Storybook Client API
 | ------------------ | :-------------: |
 | Full name          | @storybook/client-api |
 | Keywords           | storybook |
-| # releases         | 469 |
+| # releases         | 460 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9109452333333332E7 |
-| # stars            | 74176.0 |
+| # downloads        | 1.9924301333333332E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/client-api)

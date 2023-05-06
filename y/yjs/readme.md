@@ -10,10 +10,10 @@ Shared Editing Library
 | ------------------ | :-------------: |
 | Full name          | yjs |
 | Keywords           | Yjs, CRDT, offline, offline-first, shared-editing, concurrency, collaboration |
-| # releases         | 58 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 668974.6666666666 |
-| # stars            | 8649.0 |
+| # downloads        | 824365.3333333334 |
+| # stars            | 9964.0 |
 
 ## Links
 - [Homepage](https://docs.yjs.dev)

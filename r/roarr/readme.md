@@ -10,10 +10,10 @@ JSON logger for Node.js and browser.
 | ------------------ | :-------------: |
 | Full name          | roarr |
 | Keywords           | log, logger, json |
-| # releases         | 62 |
+| # releases         | 56 |
 | # dependents       | 0.0 |
-| # downloads        | 5654940.0 |
-| # stars            | 826.0 |
+| # downloads        | 5827095.333333333 |
+| # stars            | 892.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/roarr#readme)

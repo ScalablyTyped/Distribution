@@ -10,10 +10,10 @@ This is the stable version of the verovio package
 | ------------------ | :-------------: |
 | Full name          | verovio |
 | Keywords           | music, music notation, music engraving, mei, music encoding, svg |
-| # releases         | 18 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 452.6666666666667 |
-| # stars            | 489.0 |
+| # downloads        | 714.0 |
+| # stars            | 518.0 |
 
 ## Links
 - [Homepage](https://www.verovio.org)

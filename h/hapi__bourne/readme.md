@@ -12,8 +12,8 @@ JSON parse with prototype poisoning protection
 | Keywords           | JSON, parse, safe, prototype |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2013129666666668E7 |
-| # stars            | 143.0 |
+| # downloads        | 1.8142735E7 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/bourne#readme)

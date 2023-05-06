@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-content-length |
 | Keywords           | - |
-| # releases         | 56 |
+| # releases         | 66 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4968567333333334E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1437660666666668E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-content-length)

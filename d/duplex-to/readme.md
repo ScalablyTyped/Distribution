@@ -10,9 +10,9 @@ Wraps a duplex stream and hides the readable or the writable interface
 | ------------------ | :-------------: |
 | Full name          | duplex-to |
 | Keywords           | duplex, readable, stream, writable |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3381.6666666666665 |
+| # downloads        | 3919.6666666666665 |
 | # stars            | 0.0 |
 
 ## Links

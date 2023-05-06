@@ -10,10 +10,10 @@ Utility for creating Universal macOS applications from two x64 and arm64 Electro
 | ------------------ | :-------------: |
 | Full name          | @electron/universal |
 | Keywords           | electron, apple silicon, universal |
-| # releases         | 12 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 1288280.3333333333 |
-| # stars            | 62.0 |
+| # downloads        | 1032971.3333333334 |
+| # stars            | 76.0 |
 
 ## Links
 - [Homepage](https://github.com/electron/universal#readme)

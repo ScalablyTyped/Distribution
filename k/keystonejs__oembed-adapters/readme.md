@@ -12,10 +12,13 @@ Adapters for fetching oEmbed data for the OEmbed field type
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 167.33333333333334 |
+| # downloads        | 128.66666666666666 |
 | # stars            | ? |
 
 ## Links
+- [Homepage](https://github.com/keystonejs/keystone)
+- [Bugs](https://github.com/keystonejs/keystone/issues)
+- [Repository](https://github.com/keystonejs/keystone)
 - [Npm](https://www.npmjs.com/package/%40keystonejs%2Foembed-adapters)
     
 

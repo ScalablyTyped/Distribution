@@ -12,8 +12,8 @@ A convertor between XML text and Javascript object / JSON text.
 | Keywords           | XML, xml, js, JSON, json, cdata, CDATA, doctype, processing instruction, Javascript, js2xml, json2xml, xml2js, xml2json, transform, transformer, transforming, transformation, convert, convertor, converting, conversion, parse, parser, parsing |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 5379803.0 |
-| # stars            | 1070.0 |
+| # downloads        | 5221897.666666667 |
+| # stars            | 1129.0 |
 
 ## Links
 - [Homepage](https://github.com/nashwaan/xml-js#readme)

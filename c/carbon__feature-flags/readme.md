@@ -10,10 +10,10 @@ Build with feature flags in Carbon
 | ------------------ | :-------------: |
 | Full name          | @carbon/feature-flags |
 | Keywords           | ibm, carbon, carbon-design-system, components, react |
-| # releases         | 19 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 186614.33333333334 |
-| # stars            | ? |
+| # downloads        | 277846.0 |
+| # stars            | 6129.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

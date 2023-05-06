@@ -10,10 +10,10 @@ Mercadopago SDK for Node.js
 | ------------------ | :-------------: |
 | Full name          | mercadopago |
 | Keywords           | api, mercadopago, checkout, payment, ipn, sdk, integration |
-| # releases         | 16 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 38836.0 |
-| # stars            | 189.0 |
+| # downloads        | 37362.666666666664 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/mercadopago/sdk-nodejs#readme)

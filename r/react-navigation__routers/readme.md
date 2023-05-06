@@ -10,10 +10,10 @@ Routers to help build custom navigators
 | ------------------ | :-------------: |
 | Full name          | @react-navigation/routers |
 | Keywords           | react, react-native, react-navigation |
-| # releases         | 24 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 2099331.3333333335 |
-| # stars            | 21622.0 |
+| # downloads        | 2331219.6666666665 |
+| # stars            | 21913.0 |
 
 ## Links
 - [Homepage](https://reactnavigation.org/docs/custom-routers/)

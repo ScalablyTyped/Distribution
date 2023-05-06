@@ -10,10 +10,10 @@ Chrome Debugging Protocol interface
 | ------------------ | :-------------: |
 | Full name          | chrome-remote-interface |
 | Keywords           | chrome, debug, protocol, remote, interface |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 2519501.3333333335 |
-| # stars            | 3745.0 |
+| # downloads        | 2410066.0 |
+| # stars            | 3859.0 |
 
 ## Links
 - [Homepage](https://github.com/cyrus-and/chrome-remote-interface)

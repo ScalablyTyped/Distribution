@@ -12,8 +12,8 @@ Get the name of the current operating system. Example: macOS Sierra
 | Keywords           | os, operating, system, platform, name, title, release, version, macos, windows, linux |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3794095333333334E7 |
-| # stars            | 125.0 |
+| # downloads        | 1.3407201E7 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/os-name#readme)

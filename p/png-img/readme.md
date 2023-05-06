@@ -10,9 +10,9 @@ PNG Image
 | ------------------ | :-------------: |
 | Full name          | png-img |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 11098.0 |
+| # downloads        | 11878.333333333334 |
 | # stars            | 28.0 |
 
 ## Links

@@ -10,10 +10,10 @@ Typings are for version 9.5.4
 | ------------------ | :-------------: |
 | Full name          | @react-spring/konva |
 | Keywords           | animated, animation, hooks, motion, react, react-native, spring, typescript, velocity |
-| # releases         | 51 |
+| # releases         | 55 |
 | # dependents       | 0.0 |
-| # downloads        | 1431192.6666666667 |
-| # stars            | 24088.0 |
+| # downloads        | 1561928.0 |
+| # stars            | 24618.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/react-spring#readme)

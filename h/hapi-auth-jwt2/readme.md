@@ -10,10 +10,10 @@ Hapi.js Authentication Plugin/Scheme using JSON Web Tokens (JWT)
 | ------------------ | :-------------: |
 | Full name          | hapi-auth-jwt2 |
 | Keywords           | Hapi.js, Authentication, Auth, JSON Web Tokens, JWT |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 190356.66666666666 |
-| # stars            | 785.0 |
+| # downloads        | 178318.0 |
+| # stars            | 792.0 |
 
 ## Links
 - [Homepage](https://github.com/dwyl/hapi-auth-jwt2)

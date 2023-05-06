@@ -10,9 +10,9 @@ Conversion of JavaScript primitives to and from Buffer with binary order matchin
 | ------------------ | :-------------: |
 | Full name          | ordered-binary |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1483515.6666666667 |
+| # downloads        | 1472989.3333333333 |
 | # stars            | 3.0 |
 
 ## Links

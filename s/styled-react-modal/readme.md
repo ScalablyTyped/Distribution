@@ -10,12 +10,15 @@ A React modal built with styled-components.
 | ------------------ | :-------------: |
 | Full name          | styled-react-modal |
 | Keywords           | react-modal, styled-components, modal, react |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 152966.33333333334 |
-| # stars            | 197.0 |
+| # downloads        | 129579.66666666667 |
+| # stars            | 204.0 |
 
 ## Links
+- [Homepage](https://github.com/AlexanderRichey/styled-react-modal#readme)
+- [Bugs](https://github.com/AlexanderRichey/styled-react-modal/issues)
+- [Repository](https://github.com/AlexanderRichey/styled-react-modal)
 - [Npm](https://www.npmjs.com/package/styled-react-modal)
     
 

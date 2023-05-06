@@ -10,10 +10,10 @@ Get Pretty Quick
 | ------------------ | :-------------: |
 | Full name          | pretty-quick |
 | Keywords           | git, mercurial, hg, prettier, pretty-quick, formatting, code, vcs, precommit |
-| # releases         | 9 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 4525507.0 |
-| # stars            | 1912.0 |
+| # downloads        | 4995315.0 |
+| # stars            | 1973.0 |
 
 ## Links
 - [Homepage](https://github.com/azz/pretty-quick#readme)

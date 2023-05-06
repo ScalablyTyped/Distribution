@@ -10,10 +10,10 @@ A G plugin of path generator with Canvas2D API
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-canvas-path-generator |
 | Keywords           | antv, g |
-| # releases         | 38 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 1476.0 |
-| # stars            | 795.0 |
+| # downloads        | 2811.6666666666665 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

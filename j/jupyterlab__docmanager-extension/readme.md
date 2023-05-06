@@ -10,9 +10,9 @@ JupyterLab - Document Manager Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/docmanager-extension |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 137 |
 | # dependents       | 0.0 |
-| # downloads        | 193761.66666666666 |
+| # downloads        | 90058.0 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Package to aggregate shared logic and dependencies for the libp2p ecosystem
 | ------------------ | :-------------: |
 | Full name          | @libp2p/utils |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 22486.666666666668 |
-| # stars            | 5.0 |
+| # downloads        | 29574.666666666668 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-utils#readme)

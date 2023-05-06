@@ -12,8 +12,8 @@ Query for the status of any game server in Node.JS
 | Keywords           | - |
 | # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 6297.0 |
-| # stars            | ? |
+| # downloads        | 7132.0 |
+| # stars            | 450.0 |
 
 ## Links
 - [Homepage](https://github.com/gamedig/node-gamedig#readme)

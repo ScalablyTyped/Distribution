@@ -12,7 +12,7 @@ Interface to customize jimp configuration
 | Keywords           | - |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 5268021.0 |
+| # downloads        | 5927282.0 |
 | # stars            | ? |
 
 ## Links

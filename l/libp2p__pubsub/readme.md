@@ -12,8 +12,8 @@ libp2p pubsub base class
 | Keywords           | interface, libp2p |
 | # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 17372.666666666668 |
-| # stars            | 17.0 |
+| # downloads        | 30580.333333333332 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-pubsub#readme)

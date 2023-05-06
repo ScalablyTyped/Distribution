@@ -10,10 +10,10 @@ Convert a given OpenAPI specification to Postman Collection v2.0
 | ------------------ | :-------------: |
 | Full name          | openapi-to-postmanv2 |
 | Keywords           | openapi, postman, api, schema, swagger, oas |
-| # releases         | 43 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 65629.33333333333 |
-| # stars            | 590.0 |
+| # downloads        | 107060.0 |
+| # stars            | 659.0 |
 
 ## Links
 - [Homepage](https://github.com/postmanlabs/openapi-to-postman)

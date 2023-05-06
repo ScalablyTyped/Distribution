@@ -10,10 +10,10 @@ Material Bottom Tab Navigation component for React Navigation
 | ------------------ | :-------------: |
 | Full name          | react-navigation-material-bottom-tabs |
 | Keywords           | react-native-component, react-component, react-native, ios, android, tab, material |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 13952.333333333334 |
-| # stars            | 175.0 |
+| # downloads        | 15271.333333333334 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](https://github.com/react-navigation/react-navigation-material-bottom-tabs#readme)

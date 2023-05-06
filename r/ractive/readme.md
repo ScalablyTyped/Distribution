@@ -10,10 +10,10 @@ Next-generation DOM manipulation
 | ------------------ | :-------------: |
 | Full name          | ractive |
 | Keywords           | binding, data binding, declarative, dom, handlebars, mustache, reactive, template, templates, templating, ui, view model |
-| # releases         | 41 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 22449.666666666668 |
-| # stars            | 5880.0 |
+| # downloads        | 22403.333333333332 |
+| # stars            | 5886.0 |
 
 ## Links
 - [Homepage](https://ractive.js.org)

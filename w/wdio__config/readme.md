@@ -10,10 +10,10 @@ A helper utility to parse and validate WebdriverIO options
 | ------------------ | :-------------: |
 | Full name          | @wdio/config |
 | Keywords           | webdriver, wdio, wdio-utility |
-| # releases         | 76 |
+| # releases         | 108 |
 | # dependents       | 0.0 |
-| # downloads        | 4248740.666666667 |
-| # stars            | 7720.0 |
+| # downloads        | 5170538.0 |
+| # stars            | 7897.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-config)

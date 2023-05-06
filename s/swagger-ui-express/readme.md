@@ -10,10 +10,10 @@ Swagger UI Express
 | ------------------ | :-------------: |
 | Full name          | swagger-ui-express |
 | Keywords           | swagger, express, ui, json, documentation |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 4416609.0 |
-| # stars            | 1069.0 |
+| # downloads        | 4899716.666666667 |
+| # stars            | 1141.0 |
 
 ## Links
 - [Homepage](https://github.com/scottie1984/swagger-ui-express)

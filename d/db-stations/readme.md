@@ -9,11 +9,11 @@ A list of DB stations.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | db-stations |
-| Keywords           | db, deutsche bahn, german railway, public transport, stations, open data, json |
-| # releases         | 3 |
+| Keywords           | db, deutsche bahn, german railway, public transport, transit, stations, open data |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 285.6666666666667 |
-| # stars            | 16.0 |
+| # downloads        | 202.33333333333334 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/derhuerst/db-stations)

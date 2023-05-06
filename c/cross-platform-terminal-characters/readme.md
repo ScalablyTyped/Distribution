@@ -10,10 +10,10 @@ All the characters that work on most terminals
 | ------------------ | :-------------: |
 | Full name          | cross-platform-terminal-characters |
 | Keywords           | windows, macos, linux, shell, bash, cli, unicode, encoding, font, unix, terminal, cross-platform, ascii, utf-8, os, operating-system, codepoints, characters, portability, typescript |
-| # releases         | 13 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 98.33333333333333 |
-| # stars            | 184.0 |
+| # downloads        | 143.0 |
+| # stars            | 190.0 |
 
 ## Links
 - [Homepage](https://www.github.com/ehmicky/cross-platform-terminal-characters)

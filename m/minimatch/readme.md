@@ -10,10 +10,10 @@ a glob matcher in javascript
 | ------------------ | :-------------: |
 | Full name          | minimatch |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 2.36775049E8 |
-| # stars            | 2700.0 |
+| # downloads        | 3.45907449E8 |
+| # stars            | 2878.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/minimatch#readme)

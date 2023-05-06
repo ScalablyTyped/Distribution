@@ -12,8 +12,8 @@ Create a hash checksum over a folder and its content - its children and their co
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 571155.0 |
-| # stars            | 88.0 |
+| # downloads        | 659293.0 |
+| # stars            | 94.0 |
 
 ## Links
 - [Homepage](https://github.com/marc136/node-folder-hash#readme)

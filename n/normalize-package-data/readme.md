@@ -10,10 +10,10 @@ Normalizes data that can be found in package.json files.
 | ------------------ | :-------------: |
 | Full name          | normalize-package-data |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2574544066666667E8 |
-| # stars            | 165.0 |
+| # downloads        | 1.31360242E8 |
+| # stars            | 167.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/normalize-package-data#readme)

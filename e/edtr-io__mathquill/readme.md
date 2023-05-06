@@ -12,8 +12,8 @@ Easily type math in your webapp
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1322.0 |
-| # stars            | 1.0 |
+| # downloads        | 1236.3333333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/edtr-io/mathquill#readme)

@@ -10,15 +10,12 @@ Turns REST API endpoints into generic request options
 | ------------------ | :-------------: |
 | Full name          | @octokit/endpoint |
 | Keywords           | octokit, github, api, rest |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1105537E7 |
-| # stars            | 42.0 |
+| # downloads        | 2.2678506333333332E7 |
+| # stars            | 43.0 |
 
 ## Links
-- [Homepage](https://github.com/octokit/endpoint.js#readme)
-- [Bugs](https://github.com/octokit/endpoint.js/issues)
-- [Repository](https://github.com/octokit/endpoint.js)
 - [Npm](https://www.npmjs.com/package/%40octokit%2Fendpoint)
     
 

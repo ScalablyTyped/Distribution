@@ -10,9 +10,9 @@ Smooch.io powered web messaging
 | ------------------ | :-------------: |
 | Full name          | smooch |
 | Keywords           | smooch, javascript, sdk |
-| # releases         | 36 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 9047.333333333334 |
+| # downloads        | 22902.333333333332 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ JWT authentication middleware.
 | ------------------ | :-------------: |
 | Full name          | express-jwt |
 | Keywords           | auth, authn, authentication, authz, authorization, http, jwt, token, oauth, express |
-| # releases         | 23 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 2436935.0 |
-| # stars            | 4241.0 |
+| # downloads        | 2566867.0 |
+| # stars            | 4304.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/express-jwt#readme)

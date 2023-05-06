@@ -10,10 +10,10 @@ Typings are for version 3.2.45
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-ssr |
 | Keywords           | vue |
-| # releases         | 78 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 6298657.0 |
-| # stars            | 32475.0 |
+| # downloads        | 7403650.0 |
+| # stars            | 33643.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/core/tree/main/packages/compiler-ssr#readme)

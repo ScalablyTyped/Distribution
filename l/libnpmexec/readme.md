@@ -10,10 +10,10 @@ npm exec (npx) programmatic API
 | ------------------ | :-------------: |
 | Full name          | libnpmexec |
 | Keywords           | npm, npmcli, libnpm, cli, workspaces, libnpmexec |
-| # releases         | 29 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 1641621.3333333333 |
-| # stars            | 6352.0 |
+| # downloads        | 1546051.3333333333 |
+| # stars            | 6723.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/cli#readme)

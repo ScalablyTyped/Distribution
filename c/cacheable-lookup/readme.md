@@ -10,10 +10,10 @@ A cacheable dns.lookup(…) that respects TTL
 | ------------------ | :-------------: |
 | Full name          | cacheable-lookup |
 | Keywords           | dns, lookup, cacheable, ttl |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1908671E7 |
-| # stars            | 118.0 |
+| # downloads        | 2.3772145E7 |
+| # stars            | 123.0 |
 
 ## Links
 - [Homepage](https://github.com/szmarczak/cacheable-lookup#readme)

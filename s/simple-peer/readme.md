@@ -12,8 +12,8 @@ Simple one-to-one WebRTC video/voice and data channels
 | Keywords           | data, data channel, data channel stream, data channels, p2p, peer, peer, peer-to-peer, stream, video, voice, webrtc, webrtc stream |
 | # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 119950.66666666667 |
-| # stars            | 6315.0 |
+| # downloads        | 109669.66666666667 |
+| # stars            | 6529.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/simple-peer#readme)

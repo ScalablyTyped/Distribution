@@ -12,8 +12,8 @@ Ready-to-use plotly.js basic distributed bundle.
 | Keywords           | graphing, plotting, data, visualization, plotly |
 | # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 48664.333333333336 |
-| # stars            | 14990.0 |
+| # downloads        | 45660.333333333336 |
+| # stars            | 15309.0 |
 
 ## Links
 - [Homepage](https://github.com/plotly/plotly.js#readme)

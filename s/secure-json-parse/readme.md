@@ -10,10 +10,10 @@ JSON parse with prototype poisoning protection
 | ------------------ | :-------------: |
 | Full name          | secure-json-parse |
 | Keywords           | JSON, parse, safe, security, prototype, pollution |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 5850902.0 |
-| # stars            | 158.0 |
+| # downloads        | 7983975.666666667 |
+| # stars            | 168.0 |
 
 ## Links
 - [Homepage](https://github.com/fastify/secure-json-parse#readme)

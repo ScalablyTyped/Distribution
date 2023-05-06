@@ -10,10 +10,10 @@ A web framework's framework for Node.js
 | ------------------ | :-------------: |
 | Full name          | egg |
 | Keywords           | web, app, http, application, framework, middleware, koa, egg |
-| # releases         | 21 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 328170.3333333333 |
-| # stars            | 18171.0 |
+| # downloads        | 279049.0 |
+| # stars            | 18307.0 |
 
 ## Links
 - [Homepage](https://github.com/eggjs/egg)

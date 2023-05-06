@@ -10,10 +10,10 @@ Cucumber Expressions - a simpler alternative to Regular Expressions
 | ------------------ | :-------------: |
 | Full name          | @cucumber/cucumber-expressions |
 | Keywords           | cucumber, steps, regexp, regex |
-| # releases         | 24 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 1355464.0 |
-| # stars            | 55.0 |
+| # downloads        | 1948987.6666666667 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/cucumber/cucumber-expressions#readme)

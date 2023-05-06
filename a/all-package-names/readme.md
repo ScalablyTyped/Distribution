@@ -10,10 +10,10 @@ Get all NPM package names
 | ------------------ | :-------------: |
 | Full name          | all-package-names |
 | Keywords           | get, all, the, npm, package, packges, name, names, typo, squatting, api |
-| # releases         | 522 |
+| # releases         | 602 |
 | # dependents       | 0.0 |
-| # downloads        | 10042.0 |
-| # stars            | 18.0 |
+| # downloads        | 13197.0 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/bconnorwhite/all-package-names#readme)

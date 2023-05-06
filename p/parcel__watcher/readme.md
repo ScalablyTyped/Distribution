@@ -12,8 +12,8 @@ A native C++ Node module for querying and subscribing to filesystem events. Used
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 4391255.0 |
-| # stars            | 379.0 |
+| # downloads        | 8574652.666666666 |
+| # stars            | 401.0 |
 
 ## Links
 - [Homepage](https://github.com/parcel-bundler/watcher#readme)

@@ -10,12 +10,15 @@ ES 2021 spec-compliant shim for Promise.any
 | ------------------ | :-------------: |
 | Full name          | promise.any |
 | Keywords           | Promise, promises, any, settled, fulfilled, resolved, rejected, allsettled, resolve, race, promise.any, shim, polyfill, es-shim, API |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 413020.3333333333 |
+| # downloads        | 538119.0 |
 | # stars            | 15.0 |
 
 ## Links
+- [Homepage](https://github.com/es-shims/Promise.any#readme)
+- [Bugs](https://github.com/es-shims/Promise.any/issues)
+- [Repository](https://github.com/es-shims/Promise.any)
 - [Npm](https://www.npmjs.com/package/promise.any)
     
 

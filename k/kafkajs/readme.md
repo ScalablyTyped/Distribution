@@ -10,10 +10,10 @@ A modern Apache Kafka client for node.js
 | ------------------ | :-------------: |
 | Full name          | kafkajs |
 | Keywords           | kafka, sasl, scram |
-| # releases         | 100 |
+| # releases         | 89 |
 | # dependents       | 0.0 |
-| # downloads        | 2080051.6666666667 |
-| # stars            | 2909.0 |
+| # downloads        | 2194778.0 |
+| # stars            | 2962.0 |
 
 ## Links
 - [Homepage](https://kafka.js.org)

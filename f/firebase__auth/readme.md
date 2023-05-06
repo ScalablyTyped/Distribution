@@ -10,10 +10,10 @@ The Firebase Authenticaton component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/auth |
 | Keywords           | - |
-| # releases         | 1281 |
+| # releases         | 1088 |
 | # dependents       | 0.0 |
-| # downloads        | 5283728.333333333 |
-| # stars            | 4194.0 |
+| # downloads        | 5349844.666666667 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

@@ -10,10 +10,10 @@ VSCode TextMate grammar helpers
 | ------------------ | :-------------: |
 | Full name          | vscode-textmate |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1794005.0 |
-| # stars            | 371.0 |
+| # downloads        | 2314471.6666666665 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/vscode-textmate#readme)

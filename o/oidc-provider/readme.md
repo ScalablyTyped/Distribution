@@ -10,10 +10,10 @@ OAuth 2.0 Authorization Server implementation for Node.js with OpenID Connect
 | ------------------ | :-------------: |
 | Full name          | oidc-provider |
 | Keywords           | appauth, auth, authentication, authorization, basic, certified, ciba, config, connect, device flow, dpop, dynamic, express, fapi, fastify, hapi, hybrid, identity, implicit, jar, jarm, koa, mtls, oauth 2.0, oauth 2.1, oauth, oauth2, oidc, openid, par, pkce, provider, server |
-| # releases         | 48 |
+| # releases         | 49 |
 | # dependents       | 0.0 |
-| # downloads        | 100059.66666666667 |
-| # stars            | 2405.0 |
+| # downloads        | 109901.33333333333 |
+| # stars            | 2474.0 |
 
 ## Links
 - [Homepage](https://github.com/panva/node-oidc-provider)

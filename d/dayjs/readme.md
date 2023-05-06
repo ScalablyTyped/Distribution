@@ -10,10 +10,10 @@ Typings are for version 1.11.6
 | ------------------ | :-------------: |
 | Full name          | dayjs |
 | Keywords           | dayjs, date, time, immutable, moment |
-| # releases         | 28 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 4.3967875333333336E7 |
-| # stars            | 39898.0 |
+| # downloads        | 5.3685228666666664E7 |
+| # stars            | 41711.0 |
 
 ## Links
 - [Homepage](https://day.js.org)

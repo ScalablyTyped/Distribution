@@ -10,10 +10,10 @@ The Parse JavaScript SDK
 | ------------------ | :-------------: |
 | Full name          | parse |
 | Keywords           | cloud, mobile, api |
-| # releases         | 30 |
+| # releases         | 41 |
 | # dependents       | 0.0 |
-| # downloads        | 497576.0 |
-| # stars            | 1267.0 |
+| # downloads        | 318004.3333333333 |
+| # stars            | 1273.0 |
 
 ## Links
 - [Homepage](https://parseplatform.org/)

@@ -10,10 +10,10 @@ a package manager for JavaScript
 | ------------------ | :-------------: |
 | Full name          | npm |
 | Keywords           | install, modules, package manager, package.json |
-| # releases         | 134 |
+| # releases         | 116 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8208207666666668E7 |
-| # stars            | 6352.0 |
+| # downloads        | 1.9110426666666668E7 |
+| # stars            | 6723.0 |
 
 ## Links
 - [Homepage](https://docs.npmjs.com/)

@@ -10,10 +10,10 @@ Plugin for video.js to add seek buttons to the control bar
 | ------------------ | :-------------: |
 | Full name          | videojs-seek-buttons |
 | Keywords           | videojs, videojs-plugin |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 26156.0 |
-| # stars            | 72.0 |
+| # downloads        | 34342.0 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/mister-ben/videojs-seek-buttons#readme)

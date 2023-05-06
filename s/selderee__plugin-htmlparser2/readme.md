@@ -10,12 +10,15 @@ selderee plugin - selectors decision tree builder for htmlparser2 DOM.
 | ------------------ | :-------------: |
 | Full name          | @selderee/plugin-htmlparser2 |
 | Keywords           | htmlparser2, selderee, plugin, selderee plugin |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1549100.0 |
-| # stars            | 1.0 |
+| # downloads        | 2113622.6666666665 |
+| # stars            | 2.0 |
 
 ## Links
+- [Homepage](https://github.com/mxxii/selderee)
+- [Bugs](https://github.com/mxxii/selderee/issues)
+- [Repository](https://github.com/mxxii/selderee)
 - [Npm](https://www.npmjs.com/package/%40selderee%2Fplugin-htmlparser2)
     
 

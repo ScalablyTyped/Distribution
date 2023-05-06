@@ -10,10 +10,10 @@ A cache object that deletes the least-recently-used items.
 | ------------------ | :-------------: |
 | Full name          | lru-cache |
 | Keywords           | mru, lru, cache |
-| # releases         | 48 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 3.05797097E8 |
-| # stars            | 4310.0 |
+| # downloads        | 3.415786456666667E8 |
+| # stars            | 4443.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/node-lru-cache#readme)

@@ -12,8 +12,8 @@ Typings are for version 1.4
 | Keywords           | aws, lambda, serverless, amazon, cloud, node, nodejs, javascript, proxy, api, api-gateway, fastify, web |
 | # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 56987.333333333336 |
-| # stars            | 337.0 |
+| # downloads        | 32220.333333333332 |
+| # stars            | 386.0 |
 
 ## Links
 - [Homepage](https://github.com/fastify/aws-lambda-fastify)

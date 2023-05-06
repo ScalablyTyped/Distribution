@@ -10,10 +10,10 @@ Convert a tilde path to an absolute path: `~/dev` → `/Users/sindresorhus/dev`
 | ------------------ | :-------------: |
 | Full name          | untildify |
 | Keywords           | tilde, expansion, expand, untildify, path, home, directory, user, shell, bash |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2.8297994666666668E7 |
-| # stars            | 110.0 |
+| # downloads        | 3.7483820666666664E7 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/untildify#readme)

@@ -10,10 +10,10 @@ Polar Axis Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-polar-axis |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 59 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 817952.6666666666 |
-| # stars            | 9887.0 |
+| # downloads        | 812613.0 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

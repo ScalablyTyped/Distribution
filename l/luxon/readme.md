@@ -10,10 +10,10 @@ Immutable date wrapper
 | ------------------ | :-------------: |
 | Full name          | luxon |
 | Keywords           | date, immutable |
-| # releases         | 17 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6779088E7 |
-| # stars            | 12935.0 |
+| # downloads        | 1.8002297E7 |
+| # stars            | 13392.0 |
 
 ## Links
 - [Homepage](https://github.com/moment/luxon#readme)

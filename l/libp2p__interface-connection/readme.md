@@ -10,9 +10,9 @@ Connection interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-connection |
 | Keywords           | interface, libp2p |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 12725.333333333334 |
+| # downloads        | 51896.333333333336 |
 | # stars            | 68.0 |
 
 ## Links

@@ -10,10 +10,10 @@ Blazing Fast React UI Primitive
 | ------------------ | :-------------: |
 | Full name          | ui-box |
 | Keywords           | react |
-| # releases         | 4 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 54514.666666666664 |
-| # stars            | 998.0 |
+| # downloads        | 52068.333333333336 |
+| # stars            | 1030.0 |
 
 ## Links
 - [Homepage](https://github.com/segmentio/ui-box#readme)

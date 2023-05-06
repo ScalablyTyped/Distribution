@@ -10,10 +10,10 @@ This package defines Typescript types (`.d.ts`) for the upcoming [WebGPU standar
 | ------------------ | :-------------: |
 | Full name          | @webgpu/types |
 | Keywords           | - |
-| # releases         | 45 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 233345.0 |
-| # stars            | 78.0 |
+| # downloads        | 417972.0 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/gpuweb/types)

@@ -10,10 +10,10 @@ React.js powered YouTube player component
 | ------------------ | :-------------: |
 | Full name          | react-youtube |
 | Keywords           | react, youtube, player, react-component |
-| # releases         | 41 |
+| # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 865708.3333333334 |
-| # stars            | 1564.0 |
+| # downloads        | 984500.3333333334 |
+| # stars            | 1616.0 |
 
 ## Links
 - [Homepage](https://github.com/tjallingt/react-youtube)

@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-user-agent |
 | Keywords           | - |
-| # releases         | 58 |
+| # releases         | 67 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4949968666666666E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1428747666666668E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-user-agent)

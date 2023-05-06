@@ -9,12 +9,15 @@ Typings are for version 9.2.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-clean |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 658832.0 |
-| # stars            | 1890.0 |
+| # downloads        | 1815469.0 |
+| # stars            | 1957.0 |
 
 ## Links
+- [Homepage](https://github.com/react-native-community/cli/tree/master/packages/cli-clean)
+- [Bugs](https://github.com/react-native-community/cli/issues)
+- [Repository](https://github.com/react-native-community/cli)
 - [Npm](https://www.npmjs.com/package/%40react-native-community%2Fcli-clean)
     
 

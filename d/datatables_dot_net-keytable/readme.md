@@ -12,8 +12,8 @@ KeyTable for DataTables
 | Keywords           | KeyTable, Excel, keyboard, Spreadsheet, Datatables, jQuery, table, filter, sort |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 174454.0 |
-| # stars            | 2.0 |
+| # downloads        | 161847.66666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

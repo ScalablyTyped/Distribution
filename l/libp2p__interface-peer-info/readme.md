@@ -10,9 +10,9 @@ Peer Info interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-peer-info |
 | Keywords           | interface, libp2p |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 9394.666666666666 |
+| # downloads        | 47624.666666666664 |
 | # stars            | 68.0 |
 
 ## Links

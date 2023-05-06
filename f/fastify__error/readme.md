@@ -10,12 +10,15 @@ A small utility, used by Fastify itself, for generating consistent error objects
 | ------------------ | :-------------: |
 | Full name          | @fastify/error |
 | Keywords           | fastify, error, utility, plugin |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 671741.0 |
-| # stars            | 50.0 |
+| # downloads        | 2089814.6666666667 |
+| # stars            | 59.0 |
 
 ## Links
+- [Homepage](https://github.com/fastify/fastify-error#readme)
+- [Bugs](https://github.com/fastify/fastify-error/issues)
+- [Repository](https://github.com/fastify/fastify-error)
 - [Npm](https://www.npmjs.com/package/%40fastify%2Ferror)
     
 

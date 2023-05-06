@@ -10,10 +10,10 @@ Stylable UniDriver testing utilities
 | ------------------ | :-------------: |
 | Full name          | @stylable/uni-driver |
 | Keywords           | - |
-| # releases         | 91 |
+| # releases         | 80 |
 | # dependents       | 0.0 |
-| # downloads        | 4192.333333333333 |
-| # stars            | 1174.0 |
+| # downloads        | 2854.6666666666665 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/stylable/tree/master#readme)

@@ -10,10 +10,10 @@ ArcGIS API for JavaScript: A complete 2D and 3D mapping and data visualization A
 | ------------------ | :-------------: |
 | Full name          | arcgis-js-api |
 | Keywords           | ArcGIS, javascript, map, 3D, 2D, visualization, analytics, spatial, data-driven, gis, Esri |
-| # releases         | 539 |
+| # releases         | 581 |
 | # dependents       | 0.0 |
-| # downloads        | 11686.333333333334 |
-| # stars            | 358.0 |
+| # downloads        | 17280.0 |
+| # stars            | 362.0 |
 
 ## Links
 - [Homepage](https://js.arcgis.com)

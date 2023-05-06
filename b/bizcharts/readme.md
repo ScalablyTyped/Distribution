@@ -10,10 +10,10 @@ bizcharts
 | ------------------ | :-------------: |
 | Full name          | bizcharts |
 | Keywords           | bizcharts, g2 |
-| # releases         | 88 |
+| # releases         | 72 |
 | # dependents       | 0.0 |
-| # downloads        | 101076.0 |
-| # stars            | 5911.0 |
+| # downloads        | 92256.33333333333 |
+| # stars            | 5983.0 |
 
 ## Links
 - [Homepage](https://github.com/alibaba/BizCharts#readme)

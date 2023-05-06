@@ -10,10 +10,10 @@ Typings are for version 1.42.16
 | ------------------ | :-------------: |
 | Full name          | force-graph |
 | Keywords           | 2d, force, simulation, graph, canvas, d3 |
-| # releases         | 38 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 51440.0 |
-| # stars            | 830.0 |
+| # downloads        | 50169.0 |
+| # stars            | 953.0 |
 
 ## Links
 - [Homepage](https://github.com/vasturiano/force-graph)

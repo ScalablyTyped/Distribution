@@ -12,13 +12,13 @@ Runtime for Regenerator-compiled generator and async functions.
 | Keywords           | regenerator, runtime, generator, async |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1.645583E8 |
-| # stars            | 3659.0 |
+| # downloads        | 1.72589364E8 |
+| # stars            | 3708.0 |
 
 ## Links
-- [Homepage](https://github.com/facebook/regenerator#readme)
+- [Homepage](https://github.com/facebook/regenerator/tree/main#readme)
 - [Bugs](https://github.com/facebook/regenerator/issues)
-- [Repository](https://github.com/facebook/regenerator)
+- [Repository](https://github.com/facebook/regenerator/tree/main)
 - [Npm](https://www.npmjs.com/package/regenerator-runtime)
     
 

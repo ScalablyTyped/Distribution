@@ -12,13 +12,13 @@ Cookie authentication plugin
 | Keywords           | hapi, plugin, auth, cookie, session |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 60982.0 |
-| # stars            | 231.0 |
+| # downloads        | 67608.66666666667 |
+| # stars            | 230.0 |
 
 ## Links
-- [Homepage](https://github.com/hapijs/hapi-auth-cookie#readme)
-- [Bugs](https://github.com/hapijs/hapi-auth-cookie/issues)
-- [Repository](https://github.com/hapijs/hapi-auth-cookie)
+- [Homepage](https://github.com/hapijs/cookie#readme)
+- [Bugs](https://github.com/hapijs/cookie/issues)
+- [Repository](https://github.com/hapijs/cookie)
 - [Npm](https://www.npmjs.com/package/%40hapi%2Fcookie)
     
 

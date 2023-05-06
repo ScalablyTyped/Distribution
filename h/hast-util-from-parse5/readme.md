@@ -12,10 +12,13 @@ hast utility to transform from Parse5’s AST
 | Keywords           | unist, hast, hast-util, util, utility, transform, change, ast |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6460994666666666E7 |
-| # stars            | 9.0 |
+| # downloads        | 1.8247934666666668E7 |
+| # stars            | 10.0 |
 
 ## Links
+- [Homepage](https://github.com/syntax-tree/hast-util-from-parse5#readme)
+- [Bugs](https://github.com/syntax-tree/hast-util-from-parse5/issues)
+- [Repository](https://github.com/syntax-tree/hast-util-from-parse5)
 - [Npm](https://www.npmjs.com/package/hast-util-from-parse5)
     
 

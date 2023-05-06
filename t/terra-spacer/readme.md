@@ -10,12 +10,15 @@ This component is used to provide margin and/or padding space between two compon
 | ------------------ | :-------------: |
 | Full name          | terra-spacer |
 | Keywords           | Cerner, Terra, terra-spacer, Spacer, UI |
-| # releases         | 15 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 720.6666666666666 |
-| # stars            | ? |
+| # downloads        | 728.3333333333334 |
+| # stars            | 175.0 |
 
 ## Links
+- [Homepage](https://github.com/cerner/terra-core#readme)
+- [Bugs](https://github.com/cerner/terra-core/issues)
+- [Repository](https://github.com/cerner/terra-core)
 - [Npm](https://www.npmjs.com/package/terra-spacer)
     
 

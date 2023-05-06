@@ -12,7 +12,7 @@ GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 8138588.333333333 |
+| # downloads        | 8117617.333333333 |
 | # stars            | ? |
 
 ## Links

@@ -10,13 +10,13 @@ Auth0 Lock
 | ------------------ | :-------------: |
 | Full name          | auth0-lock |
 | Keywords           | auth0, auth, openid, authentication, passwordless, browser, jwt |
-| # releases         | 25 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 134549.33333333334 |
-| # stars            | 1088.0 |
+| # downloads        | 136552.0 |
+| # stars            | 1107.0 |
 
 ## Links
-- [Homepage](https://github.com/auth0/lock#readme)
+- [Homepage](https://github.com/auth0/lock)
 - [Bugs](https://github.com/auth0/lock/issues)
 - [Repository](https://github.com/auth0/lock)
 - [Npm](https://www.npmjs.com/package/auth0-lock)

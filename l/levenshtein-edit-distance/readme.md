@@ -4,16 +4,16 @@
 Typings are for version 3.0.1
 
 ## Library description:
-Levenshtein edit distance. No cruft. Real fast.
+Levenshtein edit distance
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | levenshtein-edit-distance |
 | Keywords           | vladimir, levenshtein, edit, distance, bin, cli |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 274788.0 |
-| # stars            | 53.0 |
+| # downloads        | 570970.3333333334 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://words.github.io/levenshtein-edit-distance/)

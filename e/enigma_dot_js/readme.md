@@ -12,7 +12,7 @@ JavaScript library for consuming Qlik backend services
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 28645.0 |
+| # downloads        | 28570.666666666668 |
 | # stars            | 193.0 |
 
 ## Links

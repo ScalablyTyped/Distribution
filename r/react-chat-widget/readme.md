@@ -12,8 +12,8 @@ Chat web widget for React apps
 | Keywords           | react, chat, widget, javascript |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 10355.666666666666 |
-| # stars            | 1134.0 |
+| # downloads        | 10836.333333333334 |
+| # stars            | 1156.0 |
 
 ## Links
 - [Homepage](https://github.com/Wolox/react-chat-widget#readme)

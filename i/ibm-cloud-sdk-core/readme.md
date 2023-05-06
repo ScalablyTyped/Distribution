@@ -10,10 +10,10 @@ Core functionality to support SDKs generated with IBM's OpenAPI SDK Generator.
 | ------------------ | :-------------: |
 | Full name          | ibm-cloud-sdk-core |
 | Keywords           | ibm, sdk, openapi, core |
-| # releases         | 50 |
+| # releases         | 58 |
 | # dependents       | 0.0 |
-| # downloads        | 169656.66666666666 |
-| # stars            | 19.0 |
+| # downloads        | 258507.33333333334 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/IBM/node-sdk-core#readme)

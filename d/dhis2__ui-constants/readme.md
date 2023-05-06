@@ -10,10 +10,10 @@ Constants used in the UI libs
 | ------------------ | :-------------: |
 | Full name          | @dhis2/ui-constants |
 | Keywords           | - |
-| # releases         | 204 |
+| # releases         | 213 |
 | # dependents       | 0.0 |
-| # downloads        | 5700.333333333333 |
-| # stars            | 18.0 |
+| # downloads        | 10127.333333333334 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/dhis2/ui#readme)

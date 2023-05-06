@@ -10,10 +10,10 @@ Typings are for version 3.52
 | ------------------ | :-------------: |
 | Full name          | swagger-ui |
 | Keywords           | - |
-| # releases         | 83 |
+| # releases         | 82 |
 | # dependents       | 0.0 |
-| # downloads        | 418323.0 |
-| # stars            | 22529.0 |
+| # downloads        | 458066.6666666667 |
+| # stars            | 22980.0 |
 
 ## Links
 - [Homepage](https://github.com/swagger-api/swagger-ui)

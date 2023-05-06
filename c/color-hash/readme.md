@@ -10,10 +10,10 @@ Generate color based on the given string (using HSL color space and SHA256).
 | ------------------ | :-------------: |
 | Full name          | color-hash |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 295701.3333333333 |
-| # stars            | 628.0 |
+| # downloads        | 479921.6666666667 |
+| # stars            | 647.0 |
 
 ## Links
 - [Homepage](https://github.com/zenozeng/color-hash#readme)

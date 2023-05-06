@@ -12,8 +12,8 @@ Nodejs API Wrapper for the IGDB.com API
 | Keywords           | api, games, igdb, wrapper |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 429.3333333333333 |
-| # stars            | 110.0 |
+| # downloads        | 328.0 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://api-docs.igdb.com)

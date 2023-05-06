@@ -10,10 +10,10 @@ An IRC client library for node
 | ------------------ | :-------------: |
 | Full name          | irc |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 7464.0 |
-| # stars            | 1322.0 |
+| # downloads        | 5584.666666666667 |
+| # stars            | 1330.0 |
 
 ## Links
 - [Homepage](https://github.com/martynsmith/node-irc#readme)

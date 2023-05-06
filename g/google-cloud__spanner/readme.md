@@ -10,10 +10,10 @@ Cloud Spanner Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/spanner |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, spanner |
-| # releases         | 35 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 377850.0 |
-| # stars            | 105.0 |
+| # downloads        | 349649.6666666667 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/nodejs-spanner#readme)

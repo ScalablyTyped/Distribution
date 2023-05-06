@@ -10,10 +10,10 @@ installs a `selenium-standalone` command line to install and start a standalone 
 | ------------------ | :-------------: |
 | Full name          | selenium-standalone |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 1214392.0 |
-| # stars            | 877.0 |
+| # downloads        | 1277628.0 |
+| # stars            | 883.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/selenium-standalone)

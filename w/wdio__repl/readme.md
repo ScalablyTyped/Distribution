@@ -10,10 +10,10 @@ A WDIO helper utility to provide a repl interface for WebdriverIO
 | ------------------ | :-------------: |
 | Full name          | @wdio/repl |
 | Keywords           | webdriverio, webdriver, wdio, repl |
-| # releases         | 85 |
+| # releases         | 108 |
 | # dependents       | 0.0 |
-| # downloads        | 3920690.6666666665 |
-| # stars            | 7720.0 |
+| # downloads        | 4782434.666666667 |
+| # stars            | 7889.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-repl)

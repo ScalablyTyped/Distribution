@@ -10,10 +10,10 @@ Migration framework for versioning of JS IPFS Repo
 | ------------------ | :-------------: |
 | Full name          | ipfs-repo-migrations |
 | Keywords           | IPFS, libp2p, migrations |
-| # releases         | 21 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 41418.0 |
-| # stars            | 76.0 |
+| # downloads        | 44805.0 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-repo/tree/master/packages/ipfs-repo-migrations#readme)

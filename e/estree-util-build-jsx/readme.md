@@ -10,10 +10,10 @@ Transform JSX in estrees to function calls (for react, preact, and most hyperscr
 | ------------------ | :-------------: |
 | Full name          | estree-util-build-jsx |
 | Keywords           | estree, ast, ecmascript, javascript, tree, jsx, xml, build, hyperscript, compile, call, acorn, espree, recast, react, preact |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 504783.0 |
-| # stars            | 12.0 |
+| # downloads        | 1175243.0 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/estree-util-build-jsx#readme)

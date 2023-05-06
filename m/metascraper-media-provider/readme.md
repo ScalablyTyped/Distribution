@@ -10,10 +10,10 @@ Get video property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-media-provider |
 | Keywords           | media, metascraper, youtube-dl |
-| # releases         | 115 |
+| # releases         | 96 |
 | # dependents       | 0.0 |
-| # downloads        | 2129.3333333333335 |
-| # stars            | 1802.0 |
+| # downloads        | 1373.0 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

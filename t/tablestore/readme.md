@@ -10,10 +10,10 @@ TableStore SDK for JavaScript
 | ------------------ | :-------------: |
 | Full name          | tablestore |
 | Keywords           | tablestore, ots |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 7669.666666666667 |
-| # stars            | 85.0 |
+| # downloads        | 3732.3333333333335 |
+| # stars            | 88.0 |
 
 ## Links
 - [Homepage](https://github.com/aliyun/aliyun-tablestore-nodejs-sdk#readme)

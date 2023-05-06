@@ -10,10 +10,10 @@ Parse, validate, manipulate, and display dates
 | ------------------ | :-------------: |
 | Full name          | moment |
 | Keywords           | moment, date, time, parse, format, validate, i18n, l10n, ender |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 8.3502163E7 |
-| # stars            | 46828.0 |
+| # downloads        | 8.333150066666667E7 |
+| # stars            | 47056.0 |
 
 ## Links
 - [Homepage](https://momentjs.com)

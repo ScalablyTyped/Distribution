@@ -12,8 +12,8 @@ Tools for running an osascripts in Node
 | Keywords           | osascript, mac, osx, spawn, exec |
 | # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 716145.3333333334 |
-| # stars            | 2301.0 |
+| # downloads        | 983331.0 |
+| # stars            | 2358.0 |
 
 ## Links
 - [Homepage](https://github.com/expo/expo-cli/tree/main/packages/osascript#readme)

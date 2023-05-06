@@ -10,15 +10,12 @@ Info about your dev environment for debugging purposes
 | ------------------ | :-------------: |
 | Full name          | envinfo |
 | Keywords           | development, env, environment, info, issues, reporting, diagnostics |
-| # releases         | 9 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 2.7307489666666668E7 |
-| # stars            | 649.0 |
+| # downloads        | 2.7728083333333332E7 |
+| # stars            | 659.0 |
 
 ## Links
-- [Homepage](https://github.com/tabrindle/envinfo#readme)
-- [Bugs](https://github.com/tabrindle/envinfo/issues)
-- [Repository](https://github.com/tabrindle/envinfo)
 - [Npm](https://www.npmjs.com/package/envinfo)
     
 

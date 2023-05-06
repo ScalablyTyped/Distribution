@@ -10,9 +10,9 @@ Data module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/data |
 | Keywords           | wordpress, gutenberg, data, redux |
-| # releases         | 70 |
+| # releases         | 72 |
 | # dependents       | 0.0 |
-| # downloads        | 202194.66666666666 |
+| # downloads        | 230897.33333333334 |
 | # stars            | ? |
 
 ## Links

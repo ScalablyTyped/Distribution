@@ -12,7 +12,7 @@ Token generator/validator without external dependencies
 | Keywords           | random, token, generator, javascript, keygen, string, tokenizer, number token, number generator, random string, unique token, unique string token, validator, token validator, typescript, unique, secure, alphanumeric, randomize, rand, generate-password |
 | # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 282.0 |
+| # downloads        | 643.0 |
 | # stars            | 1.0 |
 
 ## Links

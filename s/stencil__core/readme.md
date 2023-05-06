@@ -10,10 +10,10 @@ A Compiler for Web Components and Progressive Web Apps
 | ------------------ | :-------------: |
 | Full name          | @stencil/core |
 | Keywords           | web components, components, stencil, ionic, webapp, custom elements, pwa, progressive web app |
-| # releases         | 54 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 1611619.6666666667 |
-| # stars            | 11021.0 |
+| # downloads        | 1847932.6666666667 |
+| # stars            | 11316.0 |
 
 ## Links
 - [Homepage](https://stenciljs.com/)

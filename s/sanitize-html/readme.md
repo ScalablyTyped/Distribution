@@ -10,10 +10,10 @@ Clean up user-submitted HTML, preserving allowlisted elements and allowlisted at
 | ------------------ | :-------------: |
 | Full name          | sanitize-html |
 | Keywords           | html, parser, sanitizer, sanitize |
-| # releases         | 21 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 5830084.333333333 |
-| # stars            | 3076.0 |
+| # downloads        | 6029347.666666667 |
+| # stars            | 3168.0 |
 
 ## Links
 - [Homepage](https://github.com/apostrophecms/sanitize-html#readme)

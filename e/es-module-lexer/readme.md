@@ -10,10 +10,10 @@ Lexes ES modules returning their import/export metadata
 | ------------------ | :-------------: |
 | Full name          | es-module-lexer |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 3.7503264666666664E7 |
-| # stars            | 650.0 |
+| # downloads        | 4.3397653333333336E7 |
+| # stars            | 682.0 |
 
 ## Links
 - [Homepage](https://github.com/guybedford/es-module-lexer#readme)

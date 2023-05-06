@@ -10,15 +10,12 @@ Webpack hot reloading you can attach to your own server
 | ------------------ | :-------------: |
 | Full name          | webpack-hot-middleware |
 | Keywords           | webpack, hmr, hot, module, reloading, hot-reloading, middleware, express |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8350761666666668E7 |
-| # stars            | 2308.0 |
+| # downloads        | 2.0289059666666668E7 |
+| # stars            | 2319.0 |
 
 ## Links
-- [Homepage](https://github.com/webpack-contrib/webpack-hot-middleware#readme)
-- [Bugs](https://github.com/webpack-contrib/webpack-hot-middleware/issues)
-- [Repository](https://github.com/webpack-contrib/webpack-hot-middleware)
 - [Npm](https://www.npmjs.com/package/webpack-hot-middleware)
     
 

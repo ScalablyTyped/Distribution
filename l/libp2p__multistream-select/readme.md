@@ -10,10 +10,10 @@ JavaScript implementation of multistream-select
 | ------------------ | :-------------: |
 | Full name          | @libp2p/multistream-select |
 | Keywords           | ipfs, libp2p, multistream, protocol, stream |
-| # releases         | 12 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 9165.666666666666 |
-| # stars            | 0.0 |
+| # downloads        | 26457.666666666668 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-multistream-select#readme)

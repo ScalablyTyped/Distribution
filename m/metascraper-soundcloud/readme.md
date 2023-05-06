@@ -10,10 +10,10 @@ Metascraper integration with SoundCloud
 | ------------------ | :-------------: |
 | Full name          | metascraper-soundcloud |
 | Keywords           | audio, metascraper, soundcloud |
-| # releases         | 98 |
+| # releases         | 83 |
 | # dependents       | 0.0 |
-| # downloads        | 2344.0 |
-| # stars            | 1802.0 |
+| # downloads        | 1718.0 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper#readme)

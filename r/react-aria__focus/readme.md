@@ -10,10 +10,10 @@ Spectrum UI components in React
 | ------------------ | :-------------: |
 | Full name          | @react-aria/focus |
 | Keywords           | - |
-| # releases         | 342 |
+| # releases         | 346 |
 | # dependents       | 0.0 |
-| # downloads        | 1480493.6666666667 |
-| # stars            | 7335.0 |
+| # downloads        | 1797695.0 |
+| # stars            | 7787.0 |
 
 ## Links
 - [Homepage](https://github.com/adobe/react-spectrum#readme)

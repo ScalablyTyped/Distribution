@@ -9,10 +9,10 @@ Prefix CSS
 | ------------------ | :-------------: |
 | Full name          | gulp-autoprefixer |
 | Keywords           | gulpplugin, autoprefixer, postcss, css, prefix, prefixes, stylesheet, preprocess, postcss-runner |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1047742.0 |
-| # stars            | 688.0 |
+| # downloads        | 1004466.6666666666 |
+| # stars            | 690.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/gulp-autoprefixer#readme)

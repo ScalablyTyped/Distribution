@@ -10,10 +10,10 @@ Typings are for version 2.0
 | ------------------ | :-------------: |
 | Full name          | mjml-react |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 90109.0 |
-| # stars            | 824.0 |
+| # downloads        | 119120.0 |
+| # stars            | 914.0 |
 
 ## Links
 - [Homepage](https://github.com/wix-incubator/mjml-react)

@@ -10,10 +10,10 @@ Utilities package for configuration providers
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-config-provider |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 9475592.333333334 |
-| # stars            | 1851.0 |
+| # downloads        | 1.2715468333333334E7 |
+| # stars            | 1962.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-config-provider)

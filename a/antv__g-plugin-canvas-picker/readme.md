@@ -10,10 +10,10 @@ A G plugin for picking in canvas
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-canvas-picker |
 | Keywords           | antv, g |
-| # releases         | 121 |
+| # releases         | 144 |
 | # dependents       | 0.0 |
-| # downloads        | 2785.6666666666665 |
-| # stars            | 795.0 |
+| # downloads        | 3168.6666666666665 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

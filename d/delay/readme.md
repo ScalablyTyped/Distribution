@@ -10,10 +10,10 @@ Delay a promise a specified amount of time
 | ------------------ | :-------------: |
 | Full name          | delay |
 | Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird, threshold, range, random |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 7588582.666666667 |
-| # stars            | 495.0 |
+| # downloads        | 9481966.666666666 |
+| # stars            | 516.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/delay#readme)

@@ -10,10 +10,10 @@ Components related to timezone selection and UI
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/timezone |
 | Keywords           | palantir, blueprint, react, timezone, time, select |
-| # releases         | 90 |
+| # releases         | 101 |
 | # dependents       | 0.0 |
-| # downloads        | 39958.0 |
-| # stars            | 19272.0 |
+| # downloads        | 102030.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/palantir/blueprint#readme)

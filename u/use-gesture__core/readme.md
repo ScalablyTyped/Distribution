@@ -10,10 +10,10 @@ Core engine for receiving gestures
 | ------------------ | :-------------: |
 | Full name          | @use-gesture/core |
 | Keywords           | - |
-| # releases         | 60 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 669308.6666666666 |
-| # stars            | 6803.0 |
+| # downloads        | 871904.0 |
+| # stars            | 7261.0 |
 
 ## Links
 - [Homepage](https://use-gesture.netlify.app)

@@ -10,10 +10,10 @@ RESTful web API Documentation Generator
 | ------------------ | :-------------: |
 | Full name          | apidoc |
 | Keywords           | api, apidoc, doc, documentation, rest, restful |
-| # releases         | 15 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 350791.3333333333 |
-| # stars            | 9414.0 |
+| # downloads        | 363646.3333333333 |
+| # stars            | 9445.0 |
 
 ## Links
 - [Homepage](https://apidocjs.com)

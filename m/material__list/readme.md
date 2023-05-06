@@ -10,10 +10,10 @@ The Material Components for the web list component
 | ------------------ | :-------------: |
 | Full name          | @material/list |
 | Keywords           | material components, material design, list |
-| # releases         | 714 |
+| # releases         | 772 |
 | # dependents       | 0.0 |
-| # downloads        | 350319.0 |
-| # stars            | 16381.0 |
+| # downloads        | 535760.6666666666 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -10,10 +10,10 @@ a simple encrypt and decrypt module for node.js
 | ------------------ | :-------------: |
 | Full name          | cryptr |
 | Keywords           | cryptr, crypter, encrypt, decrypt, encryption, decryption, crypto, cipher, aes-256, aes256, aes-256-ctr, aes-256-gcm, hashr |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 333793.3333333333 |
-| # stars            | 190.0 |
+| # downloads        | 395400.0 |
+| # stars            | 208.0 |
 
 ## Links
 - [Homepage](https://github.com/MauriceButler/cryptr)

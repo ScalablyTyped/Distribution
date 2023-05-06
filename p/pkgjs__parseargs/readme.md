@@ -10,10 +10,10 @@ Polyfill of future proposal for `util.parseArgs()`
 | ------------------ | :-------------: |
 | Full name          | @pkgjs/parseargs |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 477.3333333333333 |
-| # stars            | 86.0 |
+| # downloads        | 1292.0 |
+| # stars            | 93.0 |
 
 ## Links
 - [Homepage](https://github.com/pkgjs/parseargs#readme)

@@ -10,10 +10,10 @@ Shared types for commitlint packages
 | ------------------ | :-------------: |
 | Full name          | @commitlint/types |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 7831524.0 |
-| # stars            | 11570.0 |
+| # downloads        | 9222835.333333334 |
+| # stars            | 12927.0 |
 
 ## Links
 - [Homepage](https://commitlint.js.org/)

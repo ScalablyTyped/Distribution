@@ -10,10 +10,10 @@ A G plugin for rendering HTML
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-html-renderer |
 | Keywords           | antv, g |
-| # releases         | 106 |
+| # releases         | 128 |
 | # dependents       | 0.0 |
-| # downloads        | 2690.3333333333335 |
-| # stars            | 795.0 |
+| # downloads        | 3168.3333333333335 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

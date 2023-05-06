@@ -10,10 +10,10 @@ Android Debug Bridge interface
 | ------------------ | :-------------: |
 | Full name          | appium-adb |
 | Keywords           | - |
-| # releases         | 50 |
+| # releases         | 56 |
 | # dependents       | 0.0 |
-| # downloads        | 493145.6666666667 |
-| # stars            | 215.0 |
+| # downloads        | 775284.6666666666 |
+| # stars            | 227.0 |
 
 ## Links
 - [Homepage](https://github.com/appium/appium-adb)

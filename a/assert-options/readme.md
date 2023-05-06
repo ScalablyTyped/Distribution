@@ -10,9 +10,9 @@ Generic options parameter handling.
 | ------------------ | :-------------: |
 | Full name          | assert-options |
 | Keywords           | assert, options |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1152676.0 |
+| # downloads        | 1202880.6666666667 |
 | # stars            | 4.0 |
 
 ## Links

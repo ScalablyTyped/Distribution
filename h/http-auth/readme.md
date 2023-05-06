@@ -10,10 +10,10 @@ Node.js package for HTTP basic and digest access authentication.
 | ------------------ | :-------------: |
 | Full name          | http-auth |
 | Keywords           | http, basic, digest, access, authentication |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1584251.3333333333 |
-| # stars            | 364.0 |
+| # downloads        | 1706680.3333333333 |
+| # stars            | 363.0 |
 
 ## Links
 - [Homepage](https://github.com/gevorg/http-auth)

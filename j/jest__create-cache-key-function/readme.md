@@ -10,9 +10,9 @@ This module creates a function which is used for generating cache keys used by c
 | ------------------ | :-------------: |
 | Full name          | @jest/create-cache-key-function |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 56 |
 | # dependents       | 0.0 |
-| # downloads        | 4884345.666666667 |
+| # downloads        | 5600125.333333333 |
 | # stars            | ? |
 
 ## Links

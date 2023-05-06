@@ -12,8 +12,8 @@ JavaScript Testing utilities for React
 | Keywords           | javascript, shallow rendering, shallowRender, test, reactjs, react, flux, testing, test utils, assertion helpers, tdd, mocha |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 50344.666666666664 |
-| # stars            | 19905.0 |
+| # downloads        | 40850.333333333336 |
+| # stars            | 19952.0 |
 
 ## Links
 - [Homepage](https://enzymejs.github.io/enzyme/)

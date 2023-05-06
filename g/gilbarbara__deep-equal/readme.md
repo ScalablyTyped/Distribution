@@ -10,9 +10,9 @@ Tiny deep equal comparator
 | ------------------ | :-------------: |
 | Full name          | @gilbarbara/deep-equal |
 | Keywords           | equal, deep-equal, typescript |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 147639.33333333334 |
+| # downloads        | 312900.0 |
 | # stars            | 0.0 |
 
 ## Links

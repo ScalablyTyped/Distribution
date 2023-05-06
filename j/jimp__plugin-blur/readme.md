@@ -12,7 +12,7 @@ blur an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5078089.666666667 |
+| # downloads        | 5721906.666666667 |
 | # stars            | ? |
 
 ## Links

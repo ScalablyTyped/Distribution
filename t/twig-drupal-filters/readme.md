@@ -10,12 +10,15 @@ Drupal's Twig filters, implemented for Twig.js
 | ------------------ | :-------------: |
 | Full name          | twig-drupal-filters |
 | Keywords           | Drupal, Twig |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 73106.0 |
-| # stars            | ? |
+| # downloads        | 83921.66666666667 |
+| # stars            | 7.0 |
 
 ## Links
+- [Homepage](https://github.com/kalamuna/twig-drupal-filters#readme)
+- [Bugs](https://github.com/kalamuna/twig-drupal-filters/issues)
+- [Repository](https://github.com/kalamuna/twig-drupal-filters)
 - [Npm](https://www.npmjs.com/package/twig-drupal-filters)
     
 

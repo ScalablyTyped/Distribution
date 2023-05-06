@@ -10,10 +10,10 @@ Creates an HTTP response from an IPFS Hash
 | ------------------ | :-------------: |
 | Full name          | ipfs-http-response |
 | Keywords           | http, ipfs, response |
-| # releases         | 91 |
+| # releases         | 114 |
 | # dependents       | 0.0 |
-| # downloads        | 30016.0 |
-| # stars            | 7036.0 |
+| # downloads        | 29329.666666666668 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-response#readme)

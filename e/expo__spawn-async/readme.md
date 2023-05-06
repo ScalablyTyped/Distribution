@@ -10,9 +10,9 @@ A Promise-based interface into processes created by child_process.spawn
 | ------------------ | :-------------: |
 | Full name          | @expo/spawn-async |
 | Keywords           | spawn, child_process, async, promise, process |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1467883.0 |
+| # downloads        | 1900421.6666666667 |
 | # stars            | 56.0 |
 
 ## Links

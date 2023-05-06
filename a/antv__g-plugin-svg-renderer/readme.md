@@ -10,10 +10,10 @@ A G plugin of renderer implementation with SVG
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-svg-renderer |
 | Keywords           | antv, g |
-| # releases         | 125 |
+| # releases         | 147 |
 | # dependents       | 0.0 |
-| # downloads        | 1935.3333333333333 |
-| # stars            | 795.0 |
+| # downloads        | 2383.3333333333335 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

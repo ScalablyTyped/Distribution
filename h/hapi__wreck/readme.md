@@ -10,10 +10,10 @@ HTTP Client Utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/wreck |
 | Keywords           | utilities, http, client |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2868953.6666666665 |
-| # stars            | 380.0 |
+| # downloads        | 3148431.6666666665 |
+| # stars            | 383.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/wreck#readme)

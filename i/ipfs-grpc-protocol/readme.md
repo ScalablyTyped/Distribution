@@ -10,10 +10,10 @@ Protobuf definitions for the IPFS gRPC API
 | ------------------ | :-------------: |
 | Full name          | ipfs-grpc-protocol |
 | Keywords           | ipfs |
-| # releases         | 179 |
+| # releases         | 197 |
 | # dependents       | 0.0 |
-| # downloads        | 17750.0 |
-| # stars            | 7036.0 |
+| # downloads        | 18634.666666666668 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-grpc-protocol#readme)

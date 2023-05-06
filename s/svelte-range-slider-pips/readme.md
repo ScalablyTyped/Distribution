@@ -10,10 +10,10 @@ Multi-Thumb, Accessible, Beautiful Range Slider with Pips
 | ------------------ | :-------------: |
 | Full name          | svelte-range-slider-pips |
 | Keywords           | svelte, component, ui, input, range, slider, thumb, handle, min, max, accessible, pretty, pip, pips, notch, notches, simey, simon |
-| # releases         | 14 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 28647.666666666668 |
-| # stars            | 247.0 |
+| # downloads        | 31813.0 |
+| # stars            | 262.0 |
 
 ## Links
 - [Homepage](https://simeydotme.github.io/svelte-range-slider-pips/)

@@ -10,10 +10,10 @@ A set of utility functions commonly used by Rollup plugins
 | ------------------ | :-------------: |
 | Full name          | @rollup/pluginutils |
 | Keywords           | rollup, plugin, utils |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 2.5553965666666668E7 |
-| # stars            | 2647.0 |
+| # downloads        | 3.0372728333333332E7 |
+| # stars            | 2836.0 |
 
 ## Links
 - [Homepage](https://github.com/rollup/plugins/tree/master/packages/pluginutils#readme)

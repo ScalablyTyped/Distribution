@@ -10,10 +10,10 @@ Sentry hub which handles global state managment.
 | ------------------ | :-------------: |
 | Full name          | @sentry/hub |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 149 |
 | # dependents       | 0.0 |
-| # downloads        | 2.512304E7 |
-| # stars            | 6549.0 |
+| # downloads        | 2.1104171E7 |
+| # stars            | 6781.0 |
 
 ## Links
 - [Homepage](https://github.com/getsentry/sentry-javascript/tree/master/packages/hub)

@@ -10,10 +10,10 @@ Load node modules according to tsconfig paths, in run-time or via API.
 | ------------------ | :-------------: |
 | Full name          | tsconfig-paths |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 6.803453E7 |
-| # stars            | 1403.0 |
+| # downloads        | 7.894777866666667E7 |
+| # stars            | 1493.0 |
 
 ## Links
 - [Homepage](https://github.com/dividab/tsconfig-paths#readme)

@@ -12,8 +12,8 @@ Convert ARN (Amazon Resource Name) to AWS Console link
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1586.0 |
-| # stars            | 10.0 |
+| # downloads        | 1310.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/link2aws/link2aws#readme)

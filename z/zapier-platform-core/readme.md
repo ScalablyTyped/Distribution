@@ -12,8 +12,8 @@ The core SDK for CLI apps in the Zapier Developer Platform.
 | Keywords           | - |
 | # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 27144.0 |
-| # stars            | 171.0 |
+| # downloads        | 29779.0 |
+| # stars            | 195.0 |
 
 ## Links
 - [Homepage](https://platform.zapier.com/)

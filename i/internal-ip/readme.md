@@ -10,10 +10,10 @@ Get your internal IP address
 | ------------------ | :-------------: |
 | Full name          | internal-ip |
 | Keywords           | ip, ipv6, ipv4, address, internal, local, machine, system, net, gateway |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2.9810031E7 |
-| # stars            | 290.0 |
+| # downloads        | 2.6658444333333332E7 |
+| # stars            | 296.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/internal-ip#readme)

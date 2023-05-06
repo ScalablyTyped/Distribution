@@ -10,12 +10,15 @@ An alternantive to EventEmitter using consumable streams.
 | ------------------ | :-------------: |
 | Full name          | async-stream-emitter |
 | Keywords           | iterable, async, stream, event, emitter, for-await-of |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 19012.0 |
+| # downloads        | 19187.666666666668 |
 | # stars            | 5.0 |
 
 ## Links
+- [Homepage](https://github.com/SocketCluster/async-stream-emitter#readme)
+- [Bugs](https://github.com/SocketCluster/async-stream-emitter/issues)
+- [Repository](https://github.com/SocketCluster/async-stream-emitter)
 - [Npm](https://www.npmjs.com/package/async-stream-emitter)
     
 

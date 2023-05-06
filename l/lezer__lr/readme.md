@@ -10,10 +10,10 @@ Incremental parser
 | ------------------ | :-------------: |
 | Full name          | @lezer/lr |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 1617824.3333333333 |
-| # stars            | 441.0 |
+| # downloads        | 2605939.0 |
+| # stars            | 475.0 |
 
 ## Links
 - [Homepage](https://github.com/lezer-parser/lr#readme)

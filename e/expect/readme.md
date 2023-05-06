@@ -10,9 +10,9 @@ This package exports the `expect` function used in [Jest](https://jestjs.io/). Y
 | ------------------ | :-------------: |
 | Full name          | expect |
 | Keywords           | - |
-| # releases         | 62 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 8.472271466666667E7 |
+| # downloads        | 9.8090925E7 |
 | # stars            | ? |
 
 ## Links

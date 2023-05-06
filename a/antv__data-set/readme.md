@@ -10,10 +10,10 @@ data set with state management
 | ------------------ | :-------------: |
 | Full name          | @antv/data-set |
 | Keywords           | antv, data-set, dataSet |
-| # releases         | 4 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 120574.33333333333 |
-| # stars            | 232.0 |
+| # downloads        | 105616.33333333333 |
+| # stars            | 236.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/data-set)

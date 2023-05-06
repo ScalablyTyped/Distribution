@@ -10,9 +10,9 @@ Webix UI
 | ------------------ | :-------------: |
 | Full name          | webix |
 | Keywords           | webix, ui, tree, datatable, list, chart, form, grid |
-| # releases         | 12 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 2911.3333333333335 |
+| # downloads        | 3216.6666666666665 |
 | # stars            | ? |
 
 ## Links

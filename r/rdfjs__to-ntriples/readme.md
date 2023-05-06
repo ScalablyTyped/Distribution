@@ -12,7 +12,7 @@ Converts RDF/JS Terms, Quads and Datasets to N-Triple strings
 | Keywords           | rdf, rdfjs, ntriples, string |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 36275.666666666664 |
+| # downloads        | 49567.666666666664 |
 | # stars            | 1.0 |
 
 ## Links

@@ -12,8 +12,8 @@ Easily add "zoom on hover" functionality to your site's images. Lightweight, no-
 | Keywords           | javascript, zoom, hover |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 80294.0 |
-| # stars            | 1429.0 |
+| # downloads        | 70010.0 |
+| # stars            | 1439.0 |
 
 ## Links
 - [Homepage](https://github.com/imgix/drift)

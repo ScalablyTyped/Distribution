@@ -10,10 +10,10 @@ Plugin helper for Fastify
 | ------------------ | :-------------: |
 | Full name          | fastify-plugin |
 | Keywords           | plugin, helper, fastify |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 2481276.6666666665 |
-| # stars            | 148.0 |
+| # downloads        | 3637540.0 |
+| # stars            | 159.0 |
 
 ## Links
 - [Homepage](https://github.com/fastify/fastify-plugin#readme)

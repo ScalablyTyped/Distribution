@@ -12,7 +12,7 @@ A mySQL utility function for performing CRUD operations
 | Keywords           | npm, node, mysql, javascript, crud, express, insert, procedure |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 57.333333333333336 |
+| # downloads        | 105.0 |
 | # stars            | 1.0 |
 
 ## Links

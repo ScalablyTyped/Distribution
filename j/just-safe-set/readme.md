@@ -10,10 +10,10 @@ set value at property, create intermediate properties if necessary
 | ------------------ | :-------------: |
 | Full name          | just-safe-set |
 | Keywords           | object, safe, set, no-dependencies, just |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 83079.0 |
-| # stars            | 4414.0 |
+| # downloads        | 116326.66666666667 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

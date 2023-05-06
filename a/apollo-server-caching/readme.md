@@ -10,10 +10,10 @@ Typings are for version 3.3.0
 | ------------------ | :-------------: |
 | Full name          | apollo-server-caching |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0827107333333334E7 |
-| # stars            | 12716.0 |
+| # downloads        | 8313377.0 |
+| # stars            | 13013.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-server#readme)

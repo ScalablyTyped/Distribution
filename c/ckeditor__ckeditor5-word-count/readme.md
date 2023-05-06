@@ -10,10 +10,10 @@ Word and character count feature for CKEditor 5.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-word-count |
 | Keywords           | ckeditor, ckeditor5, ckeditor 5, ckeditor5-feature, ckeditor5-plugin, ckeditor5-dll |
-| # releases         | 21 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 36981.666666666664 |
-| # stars            | 6266.0 |
+| # downloads        | 41398.0 |
+| # stars            | 6596.0 |
 
 ## Links
 - [Homepage](https://ckeditor.com)

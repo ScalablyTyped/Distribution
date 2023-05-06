@@ -10,10 +10,10 @@ Full xterm terminal, in your browser
 | ------------------ | :-------------: |
 | Full name          | xterm |
 | Keywords           | cli, command-line, console, pty, shell, ssh, styles, terminal-emulator, terminal, tty, vt100, webgl, xterm |
-| # releases         | 347 |
+| # releases         | 414 |
 | # dependents       | 0.0 |
-| # downloads        | 1019020.6666666666 |
-| # stars            | 13706.0 |
+| # downloads        | 833216.0 |
+| # stars            | 14267.0 |
 
 ## Links
 - [Homepage](https://github.com/xtermjs/xterm.js#readme)

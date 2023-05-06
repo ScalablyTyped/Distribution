@@ -10,9 +10,9 @@ Like request, but smaller.
 | ------------------ | :-------------: |
 | Full name          | teeny-request |
 | Keywords           | request, node-fetch, fetch |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0935282333333334E7 |
+| # downloads        | 1.0866918666666666E7 |
 | # stars            | 64.0 |
 
 ## Links

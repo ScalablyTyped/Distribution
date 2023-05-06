@@ -10,9 +10,9 @@ JupyterLab - Filebrowser Widget Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/filebrowser-extension |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 137 |
 | # dependents       | 0.0 |
-| # downloads        | 194400.33333333334 |
+| # downloads        | 90835.0 |
 | # stars            | ? |
 
 ## Links

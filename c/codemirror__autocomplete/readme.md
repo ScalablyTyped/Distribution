@@ -10,10 +10,10 @@ Autocompletion for the CodeMirror code editor
 | ------------------ | :-------------: |
 | Full name          | @codemirror/autocomplete |
 | Keywords           | editor, code |
-| # releases         | 44 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 723901.6666666666 |
-| # stars            | 20.0 |
+| # downloads        | 1148544.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/codemirror/autocomplete#readme)

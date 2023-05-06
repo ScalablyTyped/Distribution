@@ -10,10 +10,10 @@ Wrapper implementation for interface-datastore
 | ------------------ | :-------------: |
 | Full name          | datastore-core |
 | Keywords           | datastore, interface, ipfs, key-value |
-| # releases         | 16 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 81671.66666666667 |
-| # stars            | 11.0 |
+| # downloads        | 77140.66666666667 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-datastore-core#readme)

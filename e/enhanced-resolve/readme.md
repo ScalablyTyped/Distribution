@@ -10,10 +10,10 @@ Offers a async require.resolve function. It's highly configurable.
 | ------------------ | :-------------: |
 | Full name          | enhanced-resolve |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0552645733333333E8 |
-| # stars            | 761.0 |
+| # downloads        | 1.1928023733333333E8 |
+| # stars            | 798.0 |
 
 ## Links
 - [Homepage](http://github.com/webpack/enhanced-resolve)

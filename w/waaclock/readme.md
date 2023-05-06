@@ -12,11 +12,11 @@ A comprehensive event scheduling tool for Web Audio API.
 | Keywords           | web audio api, web audio, audio, sound, music |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 385.6666666666667 |
-| # stars            | 229.0 |
+| # downloads        | 220.33333333333334 |
+| # stars            | 234.0 |
 
 ## Links
-- [Homepage](https://github.com/sebpiq/WAAClock)
+- [Homepage](https://github.com/sebpiq/WAAClock#readme)
 - [Bugs](https://github.com/sebpiq/WAAClock/issues)
 - [Repository](https://github.com/sebpiq/WAAClock)
 - [Npm](https://www.npmjs.com/package/waaclock)

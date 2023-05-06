@@ -10,10 +10,10 @@ drawer component for react
 | ------------------ | :-------------: |
 | Full name          | rc-drawer |
 | Keywords           | react, react-component, react-drawer, drawer, drawer-menu, rc-drawer-menu, react-drawer-menu, animation, drawer-motion, drawer-animation |
-| # releases         | 22 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 3319344.6666666665 |
-| # stars            | 338.0 |
+| # downloads        | 3765544.0 |
+| # stars            | 356.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/drawer)

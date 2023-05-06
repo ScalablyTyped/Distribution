@@ -10,10 +10,10 @@ Lumino Signals and Slots
 | ------------------ | :-------------: |
 | Full name          | @lumino/signaling |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 284513.6666666667 |
-| # stars            | 370.0 |
+| # downloads        | 199486.33333333334 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

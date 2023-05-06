@@ -10,10 +10,10 @@ Spectrum UI components in React
 | ------------------ | :-------------: |
 | Full name          | @react-types/shared |
 | Keywords           | - |
-| # releases         | 348 |
+| # releases         | 351 |
 | # dependents       | 0.0 |
-| # downloads        | 2053236.0 |
-| # stars            | 7335.0 |
+| # downloads        | 2476547.6666666665 |
+| # stars            | 7787.0 |
 
 ## Links
 - [Homepage](https://github.com/adobe/react-spectrum#readme)

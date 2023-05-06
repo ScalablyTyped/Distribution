@@ -12,8 +12,8 @@ Slugify a string
 | Keywords           | string, slugify, slug, url, url-safe, urlify, transliterate, transliteration, deburr, unicode, ascii, text, decamelize, pretty, clean, filename, id |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 4036708.0 |
-| # stars            | 2174.0 |
+| # downloads        | 3147441.0 |
+| # stars            | 2217.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/slugify#readme)

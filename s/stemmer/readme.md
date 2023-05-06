@@ -10,10 +10,10 @@ Porter Stemmer algorithm
 | ------------------ | :-------------: |
 | Full name          | stemmer |
 | Keywords           | martin, porter, stemmer, algorithm, cli, bin |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 40604.333333333336 |
-| # stars            | 97.0 |
+| # downloads        | 49962.0 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://words.github.io/stemmer/)

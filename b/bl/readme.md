@@ -10,10 +10,10 @@ Buffer List: collect buffers and access with a standard readable Buffer interfac
 | ------------------ | :-------------: |
 | Full name          | bl |
 | Keywords           | buffer, buffers, stream, awesomesauce |
-| # releases         | 8 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 8.773279933333333E7 |
-| # stars            | 402.0 |
+| # downloads        | 9.745640766666667E7 |
+| # stars            | 407.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/bl)

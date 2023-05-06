@@ -10,10 +10,10 @@ Programmatic API for the bits behind npm publish and unpublish
 | ------------------ | :-------------: |
 | Full name          | libnpmpublish |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 6295537.666666667 |
-| # stars            | 6348.0 |
+| # downloads        | 6425973.666666667 |
+| # stars            | 6718.0 |
 
 ## Links
 - [Homepage](https://npmjs.com/package/libnpmpublish)

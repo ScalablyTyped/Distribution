@@ -10,10 +10,10 @@ a JSON logging library for node.js services
 | ------------------ | :-------------: |
 | Full name          | @expo/bunyan |
 | Keywords           | log, logging, log4j, json, bunyan |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 704255.0 |
-| # stars            | 6884.0 |
+| # downloads        | 974906.6666666666 |
+| # stars            | 6916.0 |
 
 ## Links
 - [Homepage](https://github.com/trentm/node-bunyan#readme)

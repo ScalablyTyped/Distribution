@@ -10,10 +10,10 @@ Super-fast alternative to Babel for when you can target modern JS runtimes
 | ------------------ | :-------------: |
 | Full name          | sucrase |
 | Keywords           | babel, jsx, typescript, flow |
-| # releases         | 20 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 1829457.0 |
-| # stars            | 4820.0 |
+| # downloads        | 2864666.3333333335 |
+| # stars            | 4955.0 |
 
 ## Links
 - [Homepage](https://github.com/alangpierce/sucrase#readme)

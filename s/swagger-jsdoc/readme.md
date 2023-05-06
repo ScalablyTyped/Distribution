@@ -10,10 +10,10 @@ Generates swagger doc based on JSDoc
 | ------------------ | :-------------: |
 | Full name          | swagger-jsdoc |
 | Keywords           | swagger, openapi, jsdoc |
-| # releases         | 37 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 1129514.6666666667 |
-| # stars            | 1400.0 |
+| # downloads        | 1269100.3333333333 |
+| # stars            | 1460.0 |
 
 ## Links
 - [Homepage](https://github.com/Surnet/swagger-jsdoc)

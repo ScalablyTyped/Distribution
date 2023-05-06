@@ -10,9 +10,9 @@ Extension for cell toolbar adapted from jlab-enhanced-cell-toolbar
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/cell-toolbar-extension |
 | Keywords           | - |
-| # releases         | 25 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 36190.666666666664 |
+| # downloads        | 51260.666666666664 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Generate UUID for request
 | ------------------ | :-------------: |
 | Full name          | express-request-id |
 | Keywords           | express, middleware, request, id, uuid |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 298396.0 |
-| # stars            | 102.0 |
+| # downloads        | 335813.0 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/floatdrop/express-request-id#readme)

@@ -10,10 +10,10 @@ Like String.trim() but you can choose granularly what to trim
 | ------------------ | :-------------: |
 | Full name          | string-trim-spaces-only |
 | Keywords           | characters, end, front, just, only, space, spaces, string, text, trim |
-| # releases         | 38 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 343315.6666666667 |
-| # stars            | 111.0 |
+| # downloads        | 401676.0 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/string-trim-spaces-only)

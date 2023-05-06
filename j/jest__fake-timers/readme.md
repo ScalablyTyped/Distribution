@@ -9,10 +9,10 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | @jest/fake-timers |
 | Keywords           | - |
-| # releases         | 65 |
+| # releases         | 66 |
 | # dependents       | 0.0 |
-| # downloads        | 8.2798168E7 |
-| # stars            | ? |
+| # downloads        | 8.614256333333333E7 |
+| # stars            | 40675.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

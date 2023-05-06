@@ -10,9 +10,9 @@ constants from the standard reference ellipsoid
 | ------------------ | :-------------: |
 | Full name          | wgs84 |
 | Keywords           | wgs84, reference, ellipsoid, geodesy |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 959510.0 |
+| # downloads        | 1019076.3333333334 |
 | # stars            | 14.0 |
 
 ## Links

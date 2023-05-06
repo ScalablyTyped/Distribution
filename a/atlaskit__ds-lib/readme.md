@@ -10,9 +10,9 @@ Reusable utilities and hooks specific to design system.
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/ds-lib |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 203941.66666666666 |
+| # downloads        | 272809.6666666667 |
 | # stars            | ? |
 
 ## Links

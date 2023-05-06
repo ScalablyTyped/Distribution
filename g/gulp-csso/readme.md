@@ -10,9 +10,9 @@ Minify CSS with CSSO.
 | ------------------ | :-------------: |
 | Full name          | gulp-csso |
 | Keywords           | gulpplugin, minify, css |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 152703.33333333334 |
+| # downloads        | 158790.33333333334 |
 | # stars            | 242.0 |
 
 ## Links

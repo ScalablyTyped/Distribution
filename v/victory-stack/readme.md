@@ -10,10 +10,10 @@ Stack Layout Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-stack |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 60 |
+| # releases         | 45 |
 | # dependents       | 0.0 |
-| # downloads        | 816391.3333333334 |
-| # stars            | 9887.0 |
+| # downloads        | 810773.6666666666 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

@@ -12,8 +12,8 @@ generator async control flow goodness
 | Keywords           | async, flow, generator, coro, coroutine |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 7.492759566666667E7 |
-| # stars            | 11740.0 |
+| # downloads        | 8.2405189E7 |
+| # stars            | 11793.0 |
 
 ## Links
 - [Homepage](https://github.com/tj/co#readme)

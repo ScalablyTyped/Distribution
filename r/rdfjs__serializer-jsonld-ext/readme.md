@@ -12,7 +12,7 @@ JSON-LD serializer that implements the RDFJS Sink Interfaces and supports differ
 | Keywords           | rdf, rdfjs, serializer, json-ld |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1354.3333333333333 |
+| # downloads        | 1869.6666666666667 |
 | # stars            | 3.0 |
 
 ## Links

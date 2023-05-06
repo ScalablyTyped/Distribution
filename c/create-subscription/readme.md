@@ -10,10 +10,10 @@ utility for subscribing to external data sources inside React components
 | ------------------ | :-------------: |
 | Full name          | create-subscription |
 | Keywords           | - |
-| # releases         | 581 |
+| # releases         | 561 |
 | # dependents       | 0.0 |
-| # downloads        | 13678.333333333334 |
-| # stars            | 191116.0 |
+| # downloads        | 15541.333333333334 |
+| # stars            | 200127.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

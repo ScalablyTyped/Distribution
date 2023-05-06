@@ -10,10 +10,10 @@ Fake HTTP injection library
 | ------------------ | :-------------: |
 | Full name          | light-my-request |
 | Keywords           | http, inject, fake, request, server |
-| # releases         | 30 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 2867255.3333333335 |
-| # stars            | 215.0 |
+| # downloads        | 3387216.3333333335 |
+| # stars            | 237.0 |
 
 ## Links
 - [Homepage](https://github.com/fastify/light-my-request/blob/master/README.md)

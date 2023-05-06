@@ -10,10 +10,10 @@ Check if IP address is private.
 | ------------------ | :-------------: |
 | Full name          | private-ip |
 | Keywords           | ip, ipv4, ipv6, address, private, netmask, localhost, lan |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 171137.0 |
-| # stars            | 24.0 |
+| # downloads        | 258105.33333333334 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/frenchbread/private-ip#readme)

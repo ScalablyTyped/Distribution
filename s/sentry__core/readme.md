@@ -10,10 +10,10 @@ Base implementation for all Sentry JavaScript SDKs
 | ------------------ | :-------------: |
 | Full name          | @sentry/core |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 149 |
 | # dependents       | 0.0 |
-| # downloads        | 2.4091888666666668E7 |
-| # stars            | 6549.0 |
+| # downloads        | 2.5296886333333332E7 |
+| # stars            | 6781.0 |
 
 ## Links
 - [Homepage](https://github.com/getsentry/sentry-javascript/tree/master/packages/core)

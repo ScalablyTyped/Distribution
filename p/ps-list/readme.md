@@ -10,10 +10,10 @@ Get running processes
 | ------------------ | :-------------: |
 | Full name          | ps-list |
 | Keywords           | ps, proc, process, processes, list, running, tasklist |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 5762022.666666667 |
-| # stars            | 230.0 |
+| # downloads        | 5996879.333333333 |
+| # stars            | 248.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ps-list#readme)

@@ -10,15 +10,15 @@ quote and parse shell commands
 | ------------------ | :-------------: |
 | Full name          | shell-quote |
 | Keywords           | command, parse, quote, shell |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 5.4500465666666664E7 |
-| # stars            | 172.0 |
+| # downloads        | 5.587949E7 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-shell-quote)
-- [Bugs](https://github.com/substack/node-shell-quote/issues)
-- [Repository](https://github.com/substack/node-shell-quote)
+- [Homepage](https://github.com/ljharb/shell-quote)
+- [Bugs](https://github.com/ljharb/shell-quote/issues)
+- [Repository](https://github.com/ljharb/shell-quote)
 - [Npm](https://www.npmjs.com/package/shell-quote)
     
 

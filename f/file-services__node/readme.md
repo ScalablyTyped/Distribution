@@ -10,9 +10,9 @@ Node.js file system implementation.
 | ------------------ | :-------------: |
 | Full name          | @file-services/node |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 24263.666666666668 |
+| # downloads        | 16776.0 |
 | # stars            | 15.0 |
 
 ## Links

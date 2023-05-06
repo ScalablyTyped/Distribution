@@ -10,10 +10,10 @@ This is the compat package that recreates the v8 APIs.
 | ------------------ | :-------------: |
 | Full name          | @firebase/messaging-compat |
 | Keywords           | - |
-| # releases         | 444 |
+| # releases         | 548 |
 | # dependents       | 0.0 |
-| # downloads        | 2646517.0 |
-| # stars            | 4194.0 |
+| # downloads        | 3243159.3333333335 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

@@ -10,10 +10,10 @@ Positioning library for floating elements: tooltips, popovers, dropdowns, and mo
 | ------------------ | :-------------: |
 | Full name          | @floating-ui/core |
 | Keywords           | tooltip, popover, dropdown, menu, popup, positioning |
-| # releases         | 24 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 1183211.3333333333 |
-| # stars            | 22451.0 |
+| # downloads        | 5166524.666666667 |
+| # stars            | 23872.0 |
 
 ## Links
 - [Homepage](https://floating-ui.com)

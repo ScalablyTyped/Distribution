@@ -10,10 +10,10 @@ Lint your commit messages
 | ------------------ | :-------------: |
 | Full name          | @commitlint/execute-rule |
 | Keywords           | conventional-changelog, commitlint, library, core |
-| # releases         | 16 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 8347373.333333333 |
-| # stars            | 11570.0 |
+| # downloads        | 9326051.666666666 |
+| # stars            | 12927.0 |
 
 ## Links
 - [Homepage](https://commitlint.js.org/)

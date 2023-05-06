@@ -12,8 +12,8 @@ Transformations between the Web Mercator projection and Latitude Longitude coord
 | Keywords           | map, projection, transformations |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 234907.33333333334 |
-| # stars            | 235.0 |
+| # downloads        | 261576.66666666666 |
+| # stars            | 249.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/sphericalmercator#readme)

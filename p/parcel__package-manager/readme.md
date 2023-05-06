@@ -10,10 +10,10 @@ Blazing fast, zero configuration web application bundler
 | ------------------ | :-------------: |
 | Full name          | @parcel/package-manager |
 | Keywords           | - |
-| # releases         | 360 |
+| # releases         | 331 |
 | # dependents       | 0.0 |
-| # downloads        | 1746739.0 |
-| # stars            | 41287.0 |
+| # downloads        | 1800914.3333333333 |
+| # stars            | 41841.0 |
 
 ## Links
 - [Homepage](https://github.com/parcel-bundler/parcel#readme)

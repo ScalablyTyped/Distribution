@@ -10,10 +10,10 @@ ECMAScript parser
 | ------------------ | :-------------: |
 | Full name          | acorn |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 3.112566416666667E8 |
-| # stars            | 8530.0 |
+| # downloads        | 3.36920952E8 |
+| # stars            | 8852.0 |
 
 ## Links
 - [Homepage](https://github.com/acornjs/acorn)

@@ -10,10 +10,10 @@ Lumino Polling
 | ------------------ | :-------------: |
 | Full name          | @lumino/polling |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 275541.0 |
-| # stars            | 370.0 |
+| # downloads        | 196456.33333333334 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

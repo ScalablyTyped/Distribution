@@ -10,10 +10,10 @@ Fast, small color manipulation and conversion for JavaScript
 | ------------------ | :-------------: |
 | Full name          | @ctrl/tinycolor |
 | Keywords           | typescript, color, manipulation, tinycolor, hsa, rgb |
-| # releases         | 14 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 4238149.666666667 |
-| # stars            | 296.0 |
+| # downloads        | 5177494.0 |
+| # stars            | 356.0 |
 
 ## Links
 - [Homepage](https://tinycolor.vercel.app)

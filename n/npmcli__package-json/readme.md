@@ -10,12 +10,15 @@ Programmatic API to update package.json
 | ------------------ | :-------------: |
 | Full name          | @npmcli/package-json |
 | Keywords           | npm, oss |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 3461681.3333333335 |
-| # stars            | 13.0 |
+| # downloads        | 5593831.666666667 |
+| # stars            | 24.0 |
 
 ## Links
+- [Homepage](https://github.com/npm/package-json#readme)
+- [Bugs](https://github.com/npm/package-json/issues)
+- [Repository](https://github.com/npm/package-json)
 - [Npm](https://www.npmjs.com/package/%40npmcli%2Fpackage-json)
     
 

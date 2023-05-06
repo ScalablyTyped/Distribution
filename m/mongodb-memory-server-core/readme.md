@@ -10,10 +10,10 @@ MongoDB Server for testing (core package, without autodownload). The server will
 | ------------------ | :-------------: |
 | Full name          | mongodb-memory-server-core |
 | Keywords           | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
-| # releases         | 150 |
+| # releases         | 135 |
 | # dependents       | 0.0 |
-| # downloads        | 1582081.0 |
-| # stars            | 1998.0 |
+| # downloads        | 1613822.6666666667 |
+| # stars            | 2088.0 |
 
 ## Links
 - [Homepage](https://github.com/nodkz/mongodb-memory-server)

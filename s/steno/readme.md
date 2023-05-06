@@ -10,10 +10,10 @@ Specialized fast async file writer
 | ------------------ | :-------------: |
 | Full name          | steno |
 | Keywords           | fs, file, write, writer, asynchronous, fast, race, condition, atomic, writing, safe |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 2074381.3333333333 |
-| # stars            | 529.0 |
+| # downloads        | 1942971.0 |
+| # stars            | 574.0 |
 
 ## Links
 - [Homepage](https://github.com/typicode/steno)

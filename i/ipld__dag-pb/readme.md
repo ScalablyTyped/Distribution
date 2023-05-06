@@ -10,10 +10,10 @@ JS implementation of DAG-PB
 | ------------------ | :-------------: |
 | Full name          | @ipld/dag-pb |
 | Keywords           | ipfs, ipld, multiformats |
-| # releases         | 32 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 192410.33333333334 |
-| # stars            | 8.0 |
+| # downloads        | 244898.33333333334 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/ipld/js-dag-pb#readme)

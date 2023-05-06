@@ -10,10 +10,10 @@ Simple functions shared among the sinon end user libraries
 | ------------------ | :-------------: |
 | Full name          | @sinonjs/commons |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 6.4910119666666664E7 |
-| # stars            | 1.0 |
+| # downloads        | 7.4735615E7 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/sinonjs/commons#readme)

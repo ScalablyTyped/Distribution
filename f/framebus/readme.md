@@ -10,12 +10,15 @@ Framebus allows you to easily send messages across frames (and iframes) with a s
 | ------------------ | :-------------: |
 | Full name          | framebus |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 735617.0 |
-| # stars            | 132.0 |
+| # downloads        | 789837.3333333334 |
+| # stars            | 137.0 |
 
 ## Links
+- [Homepage](https://github.com/braintree/framebus)
+- [Bugs](https://github.com/braintree/framebus/issues)
+- [Repository](https://github.com/braintree/framebus)
 - [Npm](https://www.npmjs.com/package/framebus)
     
 

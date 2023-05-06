@@ -10,10 +10,10 @@ Immutable Data Collections
 | ------------------ | :-------------: |
 | Full name          | immutable |
 | Keywords           | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 3.8631788E7 |
-| # stars            | 32101.0 |
+| # downloads        | 4.8637932666666664E7 |
+| # stars            | 32409.0 |
 
 ## Links
 - [Homepage](https://immutable-js.com)

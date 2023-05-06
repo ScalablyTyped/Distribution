@@ -10,10 +10,10 @@ Render a portal positioned relative to another element.
 | ------------------ | :-------------: |
 | Full name          | @reach/popover |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 859518.3333333334 |
-| # stars            | 5390.0 |
+| # downloads        | 901800.3333333334 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)

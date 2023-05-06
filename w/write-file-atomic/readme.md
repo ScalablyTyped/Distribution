@@ -10,10 +10,10 @@ Write files in an atomic fashion w/configurable ownership
 | ------------------ | :-------------: |
 | Full name          | write-file-atomic |
 | Keywords           | writeFile, atomic |
-| # releases         | 2 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3301967466666667E8 |
-| # stars            | 201.0 |
+| # downloads        | 1.47409787E8 |
+| # stars            | 204.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/write-file-atomic)

@@ -10,10 +10,10 @@ Unofficial JavaScript SDK for MEGA
 | ------------------ | :-------------: |
 | Full name          | megajs |
 | Keywords           | mega, mega.io, mega.nz, mega.co.nz, storage |
-| # releases         | 18 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 5756.333333333333 |
-| # stars            | 93.0 |
+| # downloads        | 6474.666666666667 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://mega.js.org/)

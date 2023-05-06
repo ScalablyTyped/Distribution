@@ -10,10 +10,10 @@ Typings are for version 0.4.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/app-check-types |
 | Keywords           | - |
-| # releases         | 597 |
+| # releases         | 689 |
 | # dependents       | 0.0 |
-| # downloads        | 2812335.6666666665 |
-| # stars            | 4194.0 |
+| # downloads        | 3510620.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

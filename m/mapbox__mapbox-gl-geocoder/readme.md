@@ -10,10 +10,10 @@ A geocoder control for Mapbox GL JS
 | ------------------ | :-------------: |
 | Full name          | @mapbox/mapbox-gl-geocoder |
 | Keywords           | geocoder, osm, gl |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 273531.6666666667 |
-| # stars            | 269.0 |
+| # downloads        | 287879.6666666667 |
+| # stars            | 295.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/mapbox-gl-geocoder#readme)

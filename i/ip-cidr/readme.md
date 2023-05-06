@@ -10,10 +10,10 @@ Module for working with CIDR (v4, v6)
 | ------------------ | :-------------: |
 | Full name          | ip-cidr |
 | Keywords           | ip, cidr, range, from, to, array |
-| # releases         | 20 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 266748.3333333333 |
-| # stars            | 34.0 |
+| # downloads        | 252723.66666666666 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/ortexx/ip-cidr#readme)

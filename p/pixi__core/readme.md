@@ -10,15 +10,15 @@ Core PixiJS
 | ------------------ | :-------------: |
 | Full name          | @pixi/core |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 398607.3333333333 |
-| # stars            | ? |
+| # downloads        | 451956.6666666667 |
+| # stars            | 38551.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fcore)
     
 

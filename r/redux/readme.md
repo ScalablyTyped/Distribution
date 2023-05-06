@@ -10,10 +10,10 @@ Predictable state container for JavaScript apps
 | ------------------ | :-------------: |
 | Full name          | redux |
 | Keywords           | redux, reducer, state, predictable, functional, immutable, hot, live, replay, flux, elm |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3.2662623E7 |
-| # stars            | 58254.0 |
+| # downloads        | 3.5719174E7 |
+| # stars            | 58888.0 |
 
 ## Links
 - [Homepage](http://redux.js.org)

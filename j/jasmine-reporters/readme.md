@@ -10,12 +10,15 @@ Reporters for the Jasmine BDD Framework
 | ------------------ | :-------------: |
 | Full name          | jasmine-reporters |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1318783.0 |
-| # stars            | 398.0 |
+| # downloads        | 1363011.3333333333 |
+| # stars            | 397.0 |
 
 ## Links
+- [Homepage](https://github.com/larrymyers/jasmine-reporters)
+- [Bugs](https://github.com/larrymyers/jasmine-reporters/issues)
+- [Repository](https://github.com/larrymyers/jasmine-reporters)
 - [Npm](https://www.npmjs.com/package/jasmine-reporters)
     
 

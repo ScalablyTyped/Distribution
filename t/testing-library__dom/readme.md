@@ -10,10 +10,10 @@ Simple and complete DOM testing utilities that encourage good testing practices.
 | ------------------ | :-------------: |
 | Full name          | @testing-library/dom |
 | Keywords           | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
-| # releases         | 71 |
+| # releases         | 56 |
 | # dependents       | 0.0 |
-| # downloads        | 3.6664479E7 |
-| # stars            | 2971.0 |
+| # downloads        | 4.1077423333333336E7 |
+| # stars            | 3025.0 |
 
 ## Links
 - [Homepage](https://github.com/testing-library/dom-testing-library#readme)

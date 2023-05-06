@@ -12,8 +12,8 @@ Convert TTF font to WOFF
 | Keywords           | font, ttf, woff, convertor |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 647658.6666666666 |
-| # stars            | 298.0 |
+| # downloads        | 690725.0 |
+| # stars            | 302.0 |
 
 ## Links
 - [Homepage](https://github.com/fontello/ttf2woff#readme)

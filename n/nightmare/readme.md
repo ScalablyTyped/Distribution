@@ -10,10 +10,10 @@ A high-level browser automation library.
 | ------------------ | :-------------: |
 | Full name          | nightmare |
 | Keywords           | nightmare, electron |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 68497.33333333333 |
-| # stars            | 19262.0 |
+| # downloads        | 87886.33333333333 |
+| # stars            | 19308.0 |
 
 ## Links
 - [Homepage](https://github.com/segmentio/nightmare#readme)

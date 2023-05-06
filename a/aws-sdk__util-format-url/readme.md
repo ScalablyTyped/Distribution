@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-format-url |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 64 |
 | # dependents       | 0.0 |
-| # downloads        | 3198836.0 |
-| # stars            | 1854.0 |
+| # downloads        | 3900052.0 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-format-url)

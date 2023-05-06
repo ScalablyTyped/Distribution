@@ -10,10 +10,10 @@ Turn a git repository into a javascript object.
 | ------------------ | :-------------: |
 | Full name          | git-parse |
 | Keywords           | git |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 2053493.6666666667 |
-| # stars            | 28.0 |
+| # downloads        | 1961740.3333333333 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/wayfair/git-parse#readme)

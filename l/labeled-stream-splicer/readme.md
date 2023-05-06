@@ -12,8 +12,8 @@ stream splicer with labels
 | Keywords           | splice, stream, labels, mutable, pipeline |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 5511059.333333333 |
-| # stars            | 40.0 |
+| # downloads        | 5392137.333333333 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/labeled-stream-splicer)

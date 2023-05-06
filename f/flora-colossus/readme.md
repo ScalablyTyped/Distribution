@@ -9,13 +9,16 @@ Walks your node_modules tree
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | flora-colossus |
-| Keywords           | prune, production |
-| # releases         | 1 |
+| Keywords           | node_modules, walker |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 371299.3333333333 |
-| # stars            | ? |
+| # downloads        | 364219.6666666667 |
+| # stars            | 5.0 |
 
 ## Links
+- [Homepage](https://github.com/MarshallOfSound/flora-colossus#readme)
+- [Bugs](https://github.com/MarshallOfSound/flora-colossus/issues)
+- [Repository](https://github.com/MarshallOfSound/flora-colossus)
 - [Npm](https://www.npmjs.com/package/flora-colossus)
     
 

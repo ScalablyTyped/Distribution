@@ -10,9 +10,9 @@ Contains various implementations of the API contract described in interface-bloc
 | ------------------ | :-------------: |
 | Full name          | blockstore-core |
 | Keywords           | datastore, interface, ipfs, key-value |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 80360.0 |
+| # downloads        | 127711.0 |
 | # stars            | 1.0 |
 
 ## Links

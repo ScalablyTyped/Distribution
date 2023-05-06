@@ -10,9 +10,9 @@ Check if installed by yarn globally without any `fs` calls
 | ------------------ | :-------------: |
 | Full name          | is-yarn-global |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2.9149297666666668E7 |
+| # downloads        | 2.4790372333333332E7 |
 | # stars            | 4.0 |
 
 ## Links

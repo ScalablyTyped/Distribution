@@ -4,16 +4,16 @@
 Typings are for version 1.13
 
 ## Library description:
-easy javascript drag select functionality for your projects
+Easy JavaScript library for selecting and moving elements. With no dependencies. Drag-Select & Drag-And-Drop.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dragselect |
 | Keywords           | drag, select, plain, js, javascript, vanillajs |
-| # releases         | 17 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 24899.333333333332 |
-| # stars            | 430.0 |
+| # downloads        | 17573.0 |
+| # stars            | 488.0 |
 
 ## Links
 - [Homepage](https://ThibaultJanBeyer.com/)

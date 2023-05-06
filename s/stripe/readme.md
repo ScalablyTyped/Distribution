@@ -10,10 +10,10 @@ Stripe API wrapper
 | ------------------ | :-------------: |
 | Full name          | stripe |
 | Keywords           | stripe, payment processing, credit cards, api |
-| # releases         | 166 |
+| # releases         | 153 |
 | # dependents       | 0.0 |
-| # downloads        | 4275450.0 |
-| # stars            | 3090.0 |
+| # downloads        | 4697616.666666667 |
+| # stars            | 3204.0 |
 
 ## Links
 - [Homepage](https://github.com/stripe/stripe-node)

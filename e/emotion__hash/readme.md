@@ -10,10 +10,10 @@ A MurmurHash2 implementation
 | ------------------ | :-------------: |
 | Full name          | @emotion/hash |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 3.2982890333333332E7 |
-| # stars            | 15226.0 |
+| # downloads        | 3.9029276E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

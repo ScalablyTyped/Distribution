@@ -10,10 +10,10 @@ Test accessibility with axe-core in Cypress
 | ------------------ | :-------------: |
 | Full name          | cypress-axe |
 | Keywords           | a11y, accessibility, axe, axe-core, cypress |
-| # releases         | 12 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1044982.0 |
-| # stars            | 484.0 |
+| # downloads        | 1237544.0 |
+| # stars            | 526.0 |
 
 ## Links
 - [Homepage](https://github.com/component-driven/cypress-axe)

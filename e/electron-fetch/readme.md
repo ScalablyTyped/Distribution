@@ -10,10 +10,10 @@ A light-weight module that brings window.fetch to electron's background process
 | ------------------ | :-------------: |
 | Full name          | electron-fetch |
 | Keywords           | fetch, http, promise, electron |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 346701.6666666667 |
-| # stars            | 116.0 |
+| # downloads        | 316892.0 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/arantes555/electron-fetch)

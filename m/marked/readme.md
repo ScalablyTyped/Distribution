@@ -10,10 +10,10 @@ A markdown parser built for speed
 | ------------------ | :-------------: |
 | Full name          | marked |
 | Keywords           | markdown, markup, html |
-| # releases         | 52 |
+| # releases         | 59 |
 | # dependents       | 0.0 |
-| # downloads        | 2.3099885E7 |
-| # stars            | 28175.0 |
+| # downloads        | 2.6372298E7 |
+| # stars            | 28933.0 |
 
 ## Links
 - [Homepage](https://marked.js.org)

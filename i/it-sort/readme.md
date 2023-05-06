@@ -10,10 +10,10 @@ Collects all values from an async iterator, sorts them using the passed function
 | ------------------ | :-------------: |
 | Full name          | it-sort |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 30354.0 |
-| # stars            | 200.0 |
+| # downloads        | 31104.333333333332 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-sort#readme)

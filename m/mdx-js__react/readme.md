@@ -10,10 +10,10 @@ React context for MDX
 | ------------------ | :-------------: |
 | Full name          | @mdx-js/react |
 | Keywords           | mdx, markdown, react, jsx, remark, mdxast |
-| # releases         | 22 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1.321766E7 |
-| # stars            | 13642.0 |
+| # downloads        | 1.5850564666666666E7 |
+| # stars            | 14346.0 |
 
 ## Links
 - [Homepage](https://mdxjs.com)

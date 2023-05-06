@@ -10,10 +10,10 @@ SDK for the Facebook Ads API in Javascript and Node.js
 | ------------------ | :-------------: |
 | Full name          | facebook-nodejs-business-sdk |
 | Keywords           | facebook, ads, sdk, api, javascript, es6, es2015, isomorphic, nodejs, amd, requirejs, umd, promises |
-| # releases         | 14 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 223290.33333333334 |
-| # stars            | 402.0 |
+| # downloads        | 206498.0 |
+| # stars            | 408.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/facebook-nodejs-business-sdk)

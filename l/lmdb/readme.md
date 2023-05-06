@@ -10,10 +10,10 @@ Simple, efficient, scalable, high-performance LMDB interface
 | ------------------ | :-------------: |
 | Full name          | lmdb |
 | Keywords           | lmdb, database, mdb, lightning, key-value store, storage, adapter, performance |
-| # releases         | 80 |
+| # releases         | 95 |
 | # dependents       | 0.0 |
-| # downloads        | 2289480.6666666665 |
-| # stars            | 250.0 |
+| # downloads        | 2726032.0 |
+| # stars            | 289.0 |
 
 ## Links
 - [Homepage](https://github.com/kriszyp/lmdb-js#readme)

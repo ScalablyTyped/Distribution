@@ -10,10 +10,10 @@ Get the npm config
 | ------------------ | :-------------: |
 | Full name          | @pnpm/npm-conf |
 | Keywords           | conf, config, global, npm, path, prefix, rc |
-| # releases         | 7 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 249576.33333333334 |
-| # stars            | 3.0 |
+| # downloads        | 1931861.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/pnpm/npm-conf#readme)

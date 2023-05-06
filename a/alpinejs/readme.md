@@ -12,7 +12,7 @@ The rugged, minimal JavaScript framework
 | Keywords           | - |
 | # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 393357.3333333333 |
+| # downloads        | 471119.0 |
 | # stars            | ? |
 
 ## Links

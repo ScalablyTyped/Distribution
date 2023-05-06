@@ -12,8 +12,8 @@ Full CSS support for JSX without compromises
 | Keywords           | babel-plugin-macros, vercel, zeit, css-in-js, css |
 | # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2513941E7 |
-| # stars            | 7163.0 |
+| # downloads        | 1.4849888E7 |
+| # stars            | 7279.0 |
 
 ## Links
 - [Homepage](https://github.com/vercel/styled-jsx#readme)

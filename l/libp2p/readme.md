@@ -10,10 +10,10 @@ JavaScript implementation of libp2p, a modular peer to peer network stack
 | ------------------ | :-------------: |
 | Full name          | libp2p |
 | Keywords           | IPFS, libp2p, network, p2p, peer, peer-to-peer |
-| # releases         | 162 |
+| # releases         | 194 |
 | # dependents       | 0.0 |
-| # downloads        | 59749.666666666664 |
-| # stars            | 1893.0 |
+| # downloads        | 66178.0 |
+| # stars            | 1955.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p#readme)

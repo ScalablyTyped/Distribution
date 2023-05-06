@@ -12,8 +12,8 @@ Module to parse multipart/form data
 | Keywords           | express, form, data, multipart, multipart/form, json |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 131990.0 |
-| # stars            | 26.0 |
+| # downloads        | 140630.33333333334 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/ortexx/express-form-data#readme)

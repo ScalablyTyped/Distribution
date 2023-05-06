@@ -10,9 +10,9 @@ DHT interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-dht |
 | Keywords           | interface, libp2p |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 9458.666666666666 |
+| # downloads        | 22829.333333333332 |
 | # stars            | 68.0 |
 
 ## Links

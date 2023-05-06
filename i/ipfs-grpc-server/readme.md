@@ -10,10 +10,10 @@ A server library for the IPFS gRPC API
 | ------------------ | :-------------: |
 | Full name          | ipfs-grpc-server |
 | Keywords           | ipfs |
-| # releases         | 214 |
+| # releases         | 226 |
 | # dependents       | 0.0 |
-| # downloads        | 14908.666666666666 |
-| # stars            | 7055.0 |
+| # downloads        | 15899.333333333334 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-grpc-server#readme)

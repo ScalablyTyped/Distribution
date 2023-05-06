@@ -12,8 +12,8 @@ A JavaScript SDK used to integrate applications with the Force.com Canvas framew
 | Keywords           | salesforce, canvas |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 8927.333333333334 |
-| # stars            | 35.0 |
+| # downloads        | 12077.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/forcedotcom/SalesforceCanvasJavascriptSDK#readme)

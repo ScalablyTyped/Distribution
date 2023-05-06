@@ -10,10 +10,10 @@ Storybook framework-agnostic API
 | ------------------ | :-------------: |
 | Full name          | @storybook/manager-webpack4 |
 | Keywords           | storybook |
-| # releases         | 265 |
+| # releases         | 275 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3712654333333334E7 |
-| # stars            | 74176.0 |
+| # downloads        | 1.4257531E7 |
+| # stars            | 75924.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/core)

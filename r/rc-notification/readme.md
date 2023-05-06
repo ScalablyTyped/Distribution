@@ -12,8 +12,8 @@ notification ui component for react
 | Keywords           | react, react-component, react-notification, notification |
 | # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 3258359.0 |
-| # stars            | 335.0 |
+| # downloads        | 3495536.3333333335 |
+| # stars            | 352.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/notification)

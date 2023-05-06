@@ -10,10 +10,10 @@ Automatically update markdown files with content from external sources
 | ------------------ | :-------------: |
 | Full name          | markdown-magic |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 71991.0 |
-| # stars            | 682.0 |
+| # downloads        | 55001.0 |
+| # stars            | 708.0 |
 
 ## Links
 - [Homepage](https://github.com/DavidWells/markdown-magic#readme)

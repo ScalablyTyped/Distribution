@@ -9,9 +9,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | jest-util |
 | Keywords           | - |
-| # releases         | 56 |
+| # releases         | 55 |
 | # dependents       | 0.0 |
-| # downloads        | 1.53798014E8 |
+| # downloads        | 1.8014074866666666E8 |
 | # stars            | ? |
 
 ## Links

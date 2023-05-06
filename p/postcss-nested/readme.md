@@ -10,10 +10,10 @@ PostCSS plugin to unwrap nested rules like how Sass does it
 | ------------------ | :-------------: |
 | Full name          | postcss-nested |
 | Keywords           | postcss, css, postcss-plugin, sass, nested |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3718411E7 |
-| # stars            | 987.0 |
+| # downloads        | 1.6052334333333334E7 |
+| # stars            | 1006.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-nested#readme)

@@ -10,9 +10,9 @@ This is an [Esotope](https://github.com/inikulin/esotope) fork that contains enh
 | ------------------ | :-------------: |
 | Full name          | esotope-hammerhead |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1074608.6666666667 |
+| # downloads        | 1219284.6666666667 |
 | # stars            | 0.0 |
 
 ## Links

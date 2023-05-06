@@ -10,15 +10,15 @@ Custom Mesh display objects, like Rope and SimplePlane
 | ------------------ | :-------------: |
 | Full name          | @pixi/mesh-extras |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 358045.3333333333 |
-| # stars            | 37483.0 |
+| # downloads        | 386685.3333333333 |
+| # stars            | 38551.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fmesh-extras)
     
 

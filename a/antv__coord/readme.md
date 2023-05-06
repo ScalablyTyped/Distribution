@@ -10,9 +10,9 @@ Toolkit for mapping elements of sets into geometric objects.
 | ------------------ | :-------------: |
 | Full name          | @antv/coord |
 | Keywords           | coordinate, transformation, visualization |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 364546.3333333333 |
+| # downloads        | 371428.6666666667 |
 | # stars            | 37.0 |
 
 ## Links

@@ -10,10 +10,10 @@ Switch backgrounds to view components in different settings
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-backgrounds |
 | Keywords           | addon, background, react, storybook, essentials, design |
-| # releases         | 478 |
+| # releases         | 463 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1519820333333334E7 |
-| # stars            | 73947.0 |
+| # downloads        | 1.2767789333333334E7 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/backgrounds)

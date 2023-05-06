@@ -10,9 +10,9 @@ Next.js dotenv file loading
 | ------------------ | :-------------: |
 | Full name          | @next/env |
 | Keywords           | react, next, next.js, dotenv |
-| # releases         | 685 |
+| # releases         | 700 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2207705333333334E7 |
+| # downloads        | 1.3989293333333334E7 |
 | # stars            | ? |
 
 ## Links

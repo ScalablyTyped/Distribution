@@ -12,8 +12,8 @@ Provides a compatibility with React codebases
 | Keywords           | babel, react, inferno, framework, interfaces, user interfaces, vdom |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 221495.0 |
-| # stars            | 15512.0 |
+| # downloads        | 265387.0 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

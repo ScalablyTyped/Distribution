@@ -10,12 +10,15 @@ A plugin for nodemailer that uses express-handlebars view engine to generate ema
 | ------------------ | :-------------: |
 | Full name          | nodemailer-express-handlebars |
 | Keywords           | nodemailer, html, express-handlebars, handlebars |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 88535.33333333333 |
-| # stars            | 67.0 |
+| # downloads        | 114819.33333333333 |
+| # stars            | 72.0 |
 
 ## Links
+- [Homepage](https://github.com/yads/nodemailer-express-handlebars)
+- [Bugs](https://github.com/yads/nodemailer-express-handlebars/issues)
+- [Repository](https://github.com/yads/nodemailer-express-handlebars)
 - [Npm](https://www.npmjs.com/package/nodemailer-express-handlebars)
     
 

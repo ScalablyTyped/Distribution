@@ -12,8 +12,8 @@ Provides a function for detecting if an argument is an ArrayBuffer
 | Keywords           | - |
 | # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 1.528747E7 |
-| # stars            | 1851.0 |
+| # downloads        | 1.7759907E7 |
+| # stars            | 1939.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/is-array-buffer)

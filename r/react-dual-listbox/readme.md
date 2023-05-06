@@ -10,10 +10,10 @@ A feature-rich dual listbox for React.
 | ------------------ | :-------------: |
 | Full name          | react-dual-listbox |
 | Keywords           | react, dual-listbox, duallistbox, listbox, list box, list builder, listswap |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 41148.666666666664 |
-| # stars            | 94.0 |
+| # downloads        | 58108.0 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/jakezatecky/react-dual-listbox#readme)

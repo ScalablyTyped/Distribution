@@ -10,10 +10,10 @@ mParticle core SDK for web applications
 | ------------------ | :-------------: |
 | Full name          | @mparticle/web-sdk |
 | Keywords           | mparticle, analytics, cdp |
-| # releases         | 29 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 76761.0 |
-| # stars            | 16.0 |
+| # downloads        | 137121.0 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/mParticle/mparticle-web-sdk#readme)

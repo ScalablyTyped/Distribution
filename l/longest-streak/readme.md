@@ -4,15 +4,15 @@
 Typings are for version 3.0.1
 
 ## Library description:
-Count the longest repeating streak of a character
+Count the longest repeating streak of a substring
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | longest-streak |
-| Keywords           | count, length, longest, repeating, streak, character |
-| # releases         | 3 |
+| Keywords           | count, length, longest, repeating, streak, substring, character |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4347994333333334E7 |
+| # downloads        | 1.5629909E7 |
 | # stars            | 8.0 |
 
 ## Links

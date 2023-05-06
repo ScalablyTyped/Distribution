@@ -10,10 +10,10 @@ Cross-platform process cpu % and memory usage of a PID
 | ------------------ | :-------------: |
 | Full name          | pidusage |
 | Keywords           | pid, usage, ps, cpu, memory, proc |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 9624334.333333334 |
-| # stars            | 415.0 |
+| # downloads        | 9490052.666666666 |
+| # stars            | 431.0 |
 
 ## Links
 - [Homepage](https://github.com/soyuka/pidusage)

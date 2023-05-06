@@ -10,10 +10,10 @@ Highly customizable org chart, created with d3
 | ------------------ | :-------------: |
 | Full name          | d3-org-chart |
 | Keywords           | d3, d3-module, d3-org-chart, org-chart, hierarchy, employee |
-| # releases         | 26 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 30269.333333333332 |
-| # stars            | 374.0 |
+| # downloads        | 63429.0 |
+| # stars            | 460.0 |
 
 ## Links
 - [Homepage](https://github.com/bumbeishvili/d3-organization-chart#readme)

@@ -10,10 +10,10 @@ Enqueues messages onto a given SQS queue
 | ------------------ | :-------------: |
 | Full name          | sqs-producer |
 | Keywords           | aws, sqs, producer, queue |
-| # releases         | 1 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 211283.33333333334 |
-| # stars            | 150.0 |
+| # downloads        | 302524.6666666667 |
+| # stars            | 159.0 |
 
 ## Links
 - [Homepage](https://github.com/bbc/sqs-producer)

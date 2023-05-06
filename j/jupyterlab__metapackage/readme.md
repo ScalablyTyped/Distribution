@@ -10,10 +10,10 @@ JupyterLab - Meta Package.  All of the packages used by the core JupyterLab appl
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/metapackage |
 | Keywords           | - |
-| # releases         | 149 |
+| # releases         | 142 |
 | # dependents       | 0.0 |
-| # downloads        | 191970.66666666666 |
-| # stars            | 12379.0 |
+| # downloads        | 88136.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

@@ -10,10 +10,10 @@ React responsive masonry component built with css flexbox
 | ------------------ | :-------------: |
 | Full name          | react-responsive-masonry |
 | Keywords           | react, masonry, css, flexbox, responsive |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 53892.333333333336 |
-| # stars            | 164.0 |
+| # downloads        | 57120.666666666664 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](https://github.com/cedricdelpoux/react-responsive-masonry#readme)

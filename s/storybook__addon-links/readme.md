@@ -10,10 +10,10 @@ Link stories together to build demos and prototypes with your UI components
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-links |
 | Keywords           | addon, storybook, organize |
-| # releases         | 476 |
+| # releases         | 461 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1233992333333334E7 |
-| # stars            | 73947.0 |
+| # downloads        | 1.1876961333333334E7 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/links)

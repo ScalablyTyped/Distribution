@@ -10,9 +10,9 @@ The log/tasks/spinners portion of Ionic CLI Framework
 | ------------------ | :-------------: |
 | Full name          | @ionic/cli-framework-output |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 648812.6666666666 |
+| # downloads        | 912960.3333333334 |
 | # stars            | ? |
 
 ## Links

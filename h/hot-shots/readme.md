@@ -9,11 +9,11 @@ Node.js client for StatsD, DogStatsD, and Telegraf
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | hot-shots |
-| Keywords           | statsd, dogstatsd, datadog, metrics, telegraf |
-| # releases         | 14 |
+| Keywords           | statsd, dogstatsd, datadog, metrics, telegraf, backend |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 4730683.666666667 |
-| # stars            | 420.0 |
+| # downloads        | 5980543.333333333 |
+| # stars            | 438.0 |
 
 ## Links
 - [Homepage](https://github.com/brightcove/hot-shots#readme)

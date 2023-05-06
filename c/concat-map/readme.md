@@ -12,13 +12,13 @@ concatenative mapdashery
 | Keywords           | concat, concatMap, map, functional, higher-order |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4101492733333334E8 |
-| # stars            | 33.0 |
+| # downloads        | 1.7202245933333334E8 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-concat-map)
-- [Bugs](https://github.com/substack/node-concat-map/issues)
-- [Repository](https://github.com/substack/node-concat-map)
+- [Homepage](https://github.com/ljharb/concat-map#readme)
+- [Bugs](https://github.com/ljharb/concat-map/issues)
+- [Repository](https://github.com/ljharb/concat-map)
 - [Npm](https://www.npmjs.com/package/concat-map)
     
 

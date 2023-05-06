@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/property-provider |
 | Keywords           | - |
-| # releases         | 58 |
+| # releases         | 67 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8556652333333332E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.4348693E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/property-provider)

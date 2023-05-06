@@ -10,10 +10,10 @@ Traverse an ESTree-compliant AST
 | ------------------ | :-------------: |
 | Full name          | estree-walker |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 5.1725808E7 |
-| # stars            | 257.0 |
+| # downloads        | 5.9021270333333336E7 |
+| # stars            | 295.0 |
 
 ## Links
 - [Homepage](https://github.com/Rich-Harris/estree-walker#readme)

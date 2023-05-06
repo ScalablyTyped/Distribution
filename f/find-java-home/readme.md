@@ -10,9 +10,9 @@ Find JAVA_HOME on any system
 | ------------------ | :-------------: |
 | Full name          | find-java-home |
 | Keywords           | JAVA_HOME, find, java, home |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 197747.33333333334 |
+| # downloads        | 188812.66666666666 |
 | # stars            | 6.0 |
 
 ## Links

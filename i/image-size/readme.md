@@ -10,10 +10,10 @@ get dimensions of any image file
 | ------------------ | :-------------: |
 | Full name          | image-size |
 | Keywords           | image, size, dimensions, resolution, width, height, png, jpeg, bmp, gif, psd, tga, tiff, webp, svg, icns, ico, cur |
-| # releases         | 11 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 2.8965151E7 |
-| # stars            | 1632.0 |
+| # downloads        | 3.1160442E7 |
+| # stars            | 1691.0 |
 
 ## Links
 - [Homepage](https://github.com/image-size/image-size#readme)

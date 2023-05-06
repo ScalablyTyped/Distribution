@@ -10,10 +10,10 @@ Generate hashes from javascript objects in node and the browser.
 | ------------------ | :-------------: |
 | Full name          | object-hash |
 | Keywords           | object, hash, sha1, md5 |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 4.7929675E7 |
-| # stars            | 1153.0 |
+| # downloads        | 5.5509702666666664E7 |
+| # stars            | 1236.0 |
 
 ## Links
 - [Homepage](https://github.com/puleos/object-hash)

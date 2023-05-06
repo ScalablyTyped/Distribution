@@ -10,10 +10,10 @@ OpenTelemetry Node SDK provides automatic telemetry (tracing, metrics, etc) for 
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/sdk-trace-node |
 | Keywords           | opentelemetry, nodejs, tracing, profiling, metrics, stats |
-| # releases         | 32 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 3246121.0 |
-| # stars            | 1462.0 |
+| # downloads        | 3374133.6666666665 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-node)

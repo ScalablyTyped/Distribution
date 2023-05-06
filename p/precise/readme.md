@@ -9,9 +9,9 @@ Precision timer for nanosecond differences
 | ------------------ | :-------------: |
 | Full name          | precise |
 | Keywords           | cpu, precise, precision, nanosecond, timer, time, difference, elasped |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 246.66666666666666 |
+| # downloads        | 399.0 |
 | # stars            | 6.0 |
 
 ## Links

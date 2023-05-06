@@ -10,10 +10,10 @@ A polyfill combinator
 | ------------------ | :-------------: |
 | Full name          | polyfill-library |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 94483.0 |
-| # stars            | 552.0 |
+| # downloads        | 85862.33333333333 |
+| # stars            | 599.0 |
 
 ## Links
 - [Homepage](https://github.com/financial-times/polyfill-library#readme)

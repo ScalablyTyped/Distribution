@@ -10,9 +10,9 @@ A common providers library used within the `wix-design-systems` packages.
 | ------------------ | :-------------: |
 | Full name          | wix-design-systems-providers |
 | Keywords           | - |
-| # releases         | 48 |
+| # releases         | 88 |
 | # dependents       | 0.0 |
-| # downloads        | 953.3333333333334 |
+| # downloads        | 1136.6666666666667 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ JupyterLab - Completer Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/completer-extension |
 | Keywords           | - |
-| # releases         | 144 |
+| # releases         | 138 |
 | # dependents       | 0.0 |
-| # downloads        | 193621.33333333334 |
-| # stars            | ? |
+| # downloads        | 89398.66666666667 |
+| # stars            | 12551.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

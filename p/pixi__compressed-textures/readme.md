@@ -10,15 +10,15 @@ Loaders for compressed texture file formats
 | ------------------ | :-------------: |
 | Full name          | @pixi/compressed-textures |
 | Keywords           | pixi.js, pixi, loaders, ktx, dds, compressed-textures |
-| # releases         | 41 |
+| # releases         | 56 |
 | # dependents       | 0.0 |
-| # downloads        | 285277.3333333333 |
-| # stars            | 37483.0 |
+| # downloads        | 313929.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/pixijs/pixi.js#readme)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Homepage](https://github.com/pixijs/pixijs#readme)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fcompressed-textures)
     
 

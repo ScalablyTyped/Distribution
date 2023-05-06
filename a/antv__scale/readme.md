@@ -10,9 +10,9 @@ Toolkit for mapping abstract data into visual representation.
 | ------------------ | :-------------: |
 | Full name          | @antv/scale |
 | Keywords           | antv, visualization, mapping |
-| # releases         | 29 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 453475.3333333333 |
+| # downloads        | 442469.6666666667 |
 | # stars            | ? |
 
 ## Links

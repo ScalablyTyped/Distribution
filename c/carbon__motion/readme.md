@@ -10,10 +10,10 @@ Motion helpers for digital and software products using the Carbon Design System
 | ------------------ | :-------------: |
 | Full name          | @carbon/motion |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 48 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 148000.33333333334 |
-| # stars            | 5846.0 |
+| # downloads        | 225755.33333333334 |
+| # stars            | 6227.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

@@ -10,10 +10,10 @@ Command line tool for creating and publishing visuals for Power BI
 | ------------------ | :-------------: |
 | Full name          | powerbi-visuals-tools |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 2977.6666666666665 |
-| # stars            | 203.0 |
+| # downloads        | 2896.3333333333335 |
+| # stars            | 222.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/PowerBI-visuals-tools#readme)

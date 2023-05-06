@@ -12,7 +12,7 @@ contain an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5077511.333333333 |
+| # downloads        | 5720232.0 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Node.js library that communicates with Embedded Dart Sass using the Embedded Sas
 | ------------------ | :-------------: |
 | Full name          | sass-embedded |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 87998.0 |
-| # stars            | 98.0 |
+| # downloads        | 297596.6666666667 |
+| # stars            | 109.0 |
 
 ## Links
 - [Homepage](https://github.com/sass/embedded-host-node#readme)

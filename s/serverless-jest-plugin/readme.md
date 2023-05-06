@@ -10,10 +10,10 @@ Serverless plugin for test driven development using Jest
 | ------------------ | :-------------: |
 | Full name          | serverless-jest-plugin |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 38045.0 |
-| # stars            | 120.0 |
+| # downloads        | 39159.333333333336 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/nordcloud/serverless-jest-plugin#readme)

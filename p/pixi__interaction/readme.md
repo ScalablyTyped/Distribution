@@ -10,10 +10,10 @@ Plugin for handling mouse, touch and pointer events
 | ------------------ | :-------------: |
 | Full name          | @pixi/interaction |
 | Keywords           | - |
-| # releases         | 49 |
+| # releases         | 46 |
 | # dependents       | 0.0 |
-| # downloads        | 354150.6666666667 |
-| # stars            | 37387.0 |
+| # downloads        | 397161.0 |
+| # stars            | 38370.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)

@@ -10,10 +10,10 @@ Opinionated, transactional, MobX powered state container
 | ------------------ | :-------------: |
 | Full name          | mobx-state-tree |
 | Keywords           | mobx, mobx-state-tree, promise, reactive, frp, functional-reactive-programming, state management |
-| # releases         | 18 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 332489.6666666667 |
-| # stars            | 6511.0 |
+| # downloads        | 354034.0 |
+| # stars            | 6577.0 |
 
 ## Links
 - [Homepage](https://github.com/mobxjs/mobx-state-tree#readme)

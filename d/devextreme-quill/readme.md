@@ -10,9 +10,9 @@ Core of the DevExtreme HtmlEditor
 | ------------------ | :-------------: |
 | Full name          | devextreme-quill |
 | Keywords           | editor, rich text, wysiwyg |
-| # releases         | 43 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 271764.6666666667 |
+| # downloads        | 338172.6666666667 |
 | # stars            | 13.0 |
 
 ## Links

@@ -11,7 +11,7 @@ Less for Gulp
 | Keywords           | gulpplugin, gulp, less |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 611796.3333333334 |
+| # downloads        | 634566.0 |
 | # stars            | 567.0 |
 
 ## Links

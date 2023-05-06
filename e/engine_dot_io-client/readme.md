@@ -10,10 +10,10 @@ Client for the realtime Engine
 | ------------------ | :-------------: |
 | Full name          | engine.io-client |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7735007333333332E7 |
-| # stars            | 700.0 |
+| # downloads        | 1.7252277666666668E7 |
+| # stars            | 708.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/engine.io-client)

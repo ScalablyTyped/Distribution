@@ -12,7 +12,7 @@ cover an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5077646.0 |
+| # downloads        | 5720284.666666667 |
 | # stars            | ? |
 
 ## Links

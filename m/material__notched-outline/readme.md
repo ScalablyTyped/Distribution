@@ -10,10 +10,10 @@ The Material Components for the web notched-outline component
 | ------------------ | :-------------: |
 | Full name          | @material/notched-outline |
 | Keywords           | material components, material design, notchedoutline, notched outline |
-| # releases         | 714 |
+| # releases         | 772 |
 | # dependents       | 0.0 |
-| # downloads        | 339058.3333333333 |
-| # stars            | 16381.0 |
+| # downloads        | 519711.0 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -10,10 +10,10 @@ Header Tool for Editor.js
 | ------------------ | :-------------: |
 | Full name          | @editorjs/header |
 | Keywords           | codex editor, header, tool, editor.js, editorjs |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 76255.0 |
-| # stars            | 66.0 |
+| # downloads        | 104055.66666666667 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/editor-js/header#readme)

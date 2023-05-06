@@ -10,10 +10,10 @@ A WebAssembly implementation of xxHash
 | ------------------ | :-------------: |
 | Full name          | xxhash-wasm |
 | Keywords           | xxhash, hash, wasm, webassembly |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1010551.0 |
-| # stars            | 79.0 |
+| # downloads        | 1503116.6666666667 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/jungomi/xxhash-wasm#readme)

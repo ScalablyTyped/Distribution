@@ -10,12 +10,15 @@ Composable reactive caching with efficient invalidation.
 | ------------------ | :-------------: |
 | Full name          | optimism |
 | Keywords           | caching, cache, invalidation, reactive, reactivity, dependency, tracking, tracker, memoization |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2145278333333334E7 |
-| # stars            | 83.0 |
+| # downloads        | 1.3082896E7 |
+| # stars            | 87.0 |
 
 ## Links
+- [Homepage](https://github.com/benjamn/optimism#readme)
+- [Bugs](https://github.com/benjamn/optimism/issues)
+- [Repository](https://github.com/benjamn/optimism)
 - [Npm](https://www.npmjs.com/package/optimism)
     
 

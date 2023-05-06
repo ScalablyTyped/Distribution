@@ -12,13 +12,13 @@ Detective to find dependents of CSS (PostCSS dialect)
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 3273927.3333333335 |
+| # downloads        | 3361318.6666666665 |
 | # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/dependents/node-detective-postcss#readme)
-- [Bugs](https://github.com/dependents/node-detective-postcss/issues)
-- [Repository](https://github.com/dependents/node-detective-postcss)
+- [Homepage](https://github.com/joscha/node-detective-postcss#readme)
+- [Bugs](https://github.com/joscha/node-detective-postcss/issues)
+- [Repository](https://github.com/joscha/node-detective-postcss)
 - [Npm](https://www.npmjs.com/package/detective-postcss)
     
 

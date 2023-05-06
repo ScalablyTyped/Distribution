@@ -9,9 +9,9 @@ Typings are for version 2.1
 | ------------------ | :-------------: |
 | Full name          | hyper-function-component |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 172.33333333333334 |
+| # downloads        | 54.666666666666664 |
 | # stars            | ? |
 
 ## Links

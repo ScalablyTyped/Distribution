@@ -10,10 +10,10 @@ Profanity filter, based on Shutterstock dictionary
 | ------------------ | :-------------: |
 | Full name          | leo-profanity |
 | Keywords           | curse, bad, profanity, swear, dirty, obscene, filter, clean, word, words, string, list |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 11993.666666666666 |
-| # stars            | 31.0 |
+| # downloads        | 12259.0 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/jojoee/leo-profanity#readme)

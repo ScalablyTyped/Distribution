@@ -10,10 +10,10 @@ Takes an async iterator that yields buffers and concatenates them all together
 | ------------------ | :-------------: |
 | Full name          | it-to-buffer |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 79239.66666666667 |
-| # stars            | 200.0 |
+| # downloads        | 58453.666666666664 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-to-buffer#readme)

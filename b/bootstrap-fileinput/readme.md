@@ -10,10 +10,10 @@ An enhanced HTML 5 file input for Bootstrap 5.x, 4.x, and 3.x with file preview,
 | ------------------ | :-------------: |
 | Full name          | bootstrap-fileinput |
 | Keywords           | file, input, preview, image, upload, ajax, multiple, delete, progress, gallery |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 29998.0 |
-| # stars            | 5205.0 |
+| # downloads        | 37161.333333333336 |
+| # stars            | 5234.0 |
 
 ## Links
 - [Homepage](https://github.com/kartik-v/bootstrap-fileinput)

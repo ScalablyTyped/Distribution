@@ -12,10 +12,13 @@ o.js is a isomorphic Odata Javascript library to simplify the request of data. T
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 13303.666666666666 |
-| # stars            | 206.0 |
+| # downloads        | 13520.0 |
+| # stars            | 210.0 |
 
 ## Links
+- [Homepage](https://github.com/janhommes/o.js#readme)
+- [Bugs](https://github.com/janhommes/o.js/issues)
+- [Repository](https://github.com/janhommes/o.js)
 - [Npm](https://www.npmjs.com/package/odata)
     
 

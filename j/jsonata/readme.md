@@ -10,10 +10,10 @@ JSON query and transformation language
 | ------------------ | :-------------: |
 | Full name          | jsonata |
 | Keywords           | JSON, query, transformation, transform, mapping, path |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 943219.6666666666 |
-| # stars            | 1301.0 |
+| # downloads        | 926039.0 |
+| # stars            | 1442.0 |
 
 ## Links
 - [Homepage](http://jsonata.org/)

@@ -10,10 +10,10 @@ An ES-spec-compliant shim/polyfill/replacement for the `.cause` property on all 
 | ------------------ | :-------------: |
 | Full name          | error-cause |
 | Keywords           | javascript, polyfill, ecmascript, error, shim, syntaxerror, typeerror, referenceerror, aggregateerror, rangeerror, evalerror, urierror |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1653.6666666666667 |
-| # stars            | 12.0 |
+| # downloads        | 11263.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/es-shims/error-cause#readme)

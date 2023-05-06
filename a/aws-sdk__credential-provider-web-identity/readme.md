@@ -10,10 +10,10 @@ AWS credential provider that calls STS assumeRole for temporary AWS credentials
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-web-identity |
 | Keywords           | aws, credentials |
-| # releases         | 45 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1573151E7 |
-| # stars            | 1854.0 |
+| # downloads        | 1.7096260333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3#readme)

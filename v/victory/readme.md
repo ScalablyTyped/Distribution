@@ -10,10 +10,10 @@ Data viz for React
 | ------------------ | :-------------: |
 | Full name          | victory |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 74 |
+| # releases         | 58 |
 | # dependents       | 0.0 |
-| # downloads        | 772774.0 |
-| # stars            | 9887.0 |
+| # downloads        | 773476.3333333334 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

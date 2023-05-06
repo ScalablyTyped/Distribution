@@ -10,9 +10,9 @@ A repository of all the social logos used on WordPress.com.
 | ------------------ | :-------------: |
 | Full name          | social-logos |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 9216.666666666666 |
+| # downloads        | 9352.666666666666 |
 | # stars            | 113.0 |
 
 ## Links

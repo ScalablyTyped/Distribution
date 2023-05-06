@@ -10,10 +10,10 @@ JS implementation of DAG-JSON
 | ------------------ | :-------------: |
 | Full name          | @ipld/dag-json |
 | Keywords           | ipfs, ipld, multiformats |
-| # releases         | 28 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 92675.33333333333 |
-| # stars            | 9.0 |
+| # downloads        | 110177.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/ipld/js-dag-json#readme)

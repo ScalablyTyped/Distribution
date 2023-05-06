@@ -10,10 +10,10 @@ A collection of credential providers, without requiring service clients like STS
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-providers |
 | Keywords           | aws, credentials |
-| # releases         | 91 |
+| # releases         | 122 |
 | # dependents       | 0.0 |
-| # downloads        | 468074.6666666667 |
-| # stars            | 1905.0 |
+| # downloads        | 3257260.6666666665 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-providers)

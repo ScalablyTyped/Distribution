@@ -10,15 +10,15 @@ react tooltip component
 | ------------------ | :-------------: |
 | Full name          | react-tooltip |
 | Keywords           | react, react-component, tooltip, react-tooltip |
-| # releases         | 14 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 5233781.666666667 |
-| # stars            | 2796.0 |
+| # downloads        | 5152243.666666667 |
+| # stars            | 2984.0 |
 
 ## Links
-- [Homepage](https://github.com/wwayne/react-tooltip#readme)
-- [Bugs](https://github.com/wwayne/react-tooltip/issues)
-- [Repository](https://github.com/wwayne/react-tooltip)
+- [Homepage](https://github.com/ReactTooltip/react-tooltip#readme)
+- [Bugs](https://github.com/ReactTooltip/react-tooltip/issues)
+- [Repository](https://github.com/ReactTooltip/react-tooltip)
 - [Npm](https://www.npmjs.com/package/react-tooltip)
     
 

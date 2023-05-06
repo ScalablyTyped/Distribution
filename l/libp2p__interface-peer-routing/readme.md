@@ -10,12 +10,15 @@ Peer Routing interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-peer-routing |
 | Keywords           | interface, libp2p |
-| # releases         | 4 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1469.6666666666667 |
-| # stars            | 67.0 |
+| # downloads        | 21381.333333333332 |
+| # stars            | 68.0 |
 
 ## Links
+- [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interface-peer-routing#readme)
+- [Bugs](https://github.com/libp2p/js-libp2p-interfaces/issues)
+- [Repository](https://github.com/libp2p/js-libp2p-interfaces)
 - [Npm](https://www.npmjs.com/package/%40libp2p%2Finterface-peer-routing)
     
 

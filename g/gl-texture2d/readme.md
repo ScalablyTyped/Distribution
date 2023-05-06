@@ -12,7 +12,7 @@ WebGL texture wrapper
 | Keywords           | webgl, texture, wrap, ndarray |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 384054.0 |
+| # downloads        | 422766.0 |
 | # stars            | ? |
 
 ## Links

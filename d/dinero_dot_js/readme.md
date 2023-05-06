@@ -10,10 +10,10 @@ An immutable library to create, calculate and format monetary values.
 | ------------------ | :-------------: |
 | Full name          | dinero.js |
 | Keywords           | money, monetary, amount, immutable |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 386716.0 |
-| # stars            | 5541.0 |
+| # downloads        | 483671.6666666667 |
+| # stars            | 5782.0 |
 
 ## Links
 - [Homepage](https://dinerojs.com/)

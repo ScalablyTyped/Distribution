@@ -12,8 +12,8 @@ Read a package.json file
 | Keywords           | json, read, parse, file, fs, graceful, load, package, normalize |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6036102733333334E8 |
-| # stars            | 137.0 |
+| # downloads        | 1.62803273E8 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/read-pkg#readme)

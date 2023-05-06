@@ -10,10 +10,10 @@ tail a file in node
 | ------------------ | :-------------: |
 | Full name          | tail |
 | Keywords           | tail, file, logs |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 915839.6666666666 |
-| # stars            | 408.0 |
+| # downloads        | 992066.0 |
+| # stars            | 421.0 |
 
 ## Links
 - [Homepage](https://www.lucagrulla.com/node-tail)

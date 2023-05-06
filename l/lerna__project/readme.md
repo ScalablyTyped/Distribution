@@ -10,10 +10,10 @@ Lerna project configuration
 | ------------------ | :-------------: |
 | Full name          | @lerna/project |
 | Keywords           | lerna, core |
-| # releases         | 24 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 5534745.0 |
-| # stars            | 33535.0 |
+| # downloads        | 5318393.666666667 |
+| # stars            | 34130.0 |
 
 ## Links
 - [Homepage](https://lerna.js.org)

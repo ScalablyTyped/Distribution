@@ -12,8 +12,8 @@ Leverage other peers in the libp2p network to perform Peer Routing calls.
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 13039.333333333334 |
-| # stars            | 10.0 |
+| # downloads        | 17396.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-delegated-peer-routing#readme)

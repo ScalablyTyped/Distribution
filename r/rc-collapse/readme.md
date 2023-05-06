@@ -10,10 +10,10 @@ rc-collapse ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-collapse |
 | Keywords           | react, react-component, react-rc-collapse, rc-collapse, collapse, accordion |
-| # releases         | 15 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 3708131.3333333335 |
-| # stars            | 302.0 |
+| # downloads        | 3891623.6666666665 |
+| # stars            | 307.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/collapse)

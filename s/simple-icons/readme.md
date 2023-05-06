@@ -10,10 +10,10 @@ SVG icons for popular brands https://simpleicons.org
 | ------------------ | :-------------: |
 | Full name          | simple-icons |
 | Keywords           | svg, icons |
-| # releases         | 101 |
+| # releases         | 96 |
 | # dependents       | 0.0 |
-| # downloads        | 439460.0 |
-| # stars            | 14089.0 |
+| # downloads        | 177180.33333333334 |
+| # stars            | 14717.0 |
 
 ## Links
 - [Homepage](https://simpleicons.org)

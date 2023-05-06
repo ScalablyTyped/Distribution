@@ -10,13 +10,13 @@ Extract color palettes from images
 | ------------------ | :-------------: |
 | Full name          | extract-colors |
 | Keywords           | color, tool, image, extract, palette, browser, rgb, front-end, back-end, node |
-| # releases         | 14 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 7030.666666666667 |
-| # stars            | 21.0 |
+| # downloads        | 5925.666666666667 |
+| # stars            | 33.0 |
 
 ## Links
-- [Homepage](https://github.com/Namide/extract-colors#readme)
+- [Homepage](https://extract-colors.namide.com)
 - [Bugs](https://github.com/Namide/extract-colors/issues)
 - [Repository](https://github.com/Namide/extract-colors)
 - [Npm](https://www.npmjs.com/package/extract-colors)

@@ -10,10 +10,10 @@ Floating UI for the web
 | ------------------ | :-------------: |
 | Full name          | @floating-ui/dom |
 | Keywords           | tooltip, popover, dropdown, menu, popup, positioning |
-| # releases         | 31 |
+| # releases         | 40 |
 | # dependents       | 0.0 |
-| # downloads        | 1761147.3333333333 |
-| # stars            | 22893.0 |
+| # downloads        | 5185357.666666667 |
+| # stars            | 23821.0 |
 
 ## Links
 - [Homepage](https://floating-ui.com)

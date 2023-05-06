@@ -10,10 +10,10 @@ Calendar Picker Component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-calendar-picker |
 | Keywords           | calendar, picker, calendar, picker, date, picker, day, picker |
-| # releases         | 14 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 41518.0 |
-| # stars            | 658.0 |
+| # downloads        | 45880.666666666664 |
+| # stars            | 668.0 |
 
 ## Links
 - [Homepage](https://github.com/stephy/CalendarPicker)

@@ -10,15 +10,15 @@ Types for the Expo config object app.config.ts
 | ------------------ | :-------------: |
 | Full name          | @expo/config-types |
 | Keywords           | json, app.json, app.config.js, react-native, expo, react |
-| # releases         | 44 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 3183327.6666666665 |
-| # stars            | 2257.0 |
+| # downloads        | 3811120.0 |
+| # stars            | 18105.0 |
 
 ## Links
-- [Homepage](https://github.com/expo/expo-cli/tree/main/packages/config-types#readme)
-- [Bugs](https://github.com/expo/expo-cli/issues)
-- [Repository](https://github.com/expo/expo-cli)
+- [Homepage](https://github.com/expo/expo/tree/main/packages/@expo/config-types#readme)
+- [Bugs](https://github.com/expo/expo/issues)
+- [Repository](https://github.com/expo/expo)
 - [Npm](https://www.npmjs.com/package/%40expo%2Fconfig-types)
     
 

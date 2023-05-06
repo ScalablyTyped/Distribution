@@ -10,10 +10,10 @@ Get a full fake REST API with zero coding in less than 30 seconds
 | ------------------ | :-------------: |
 | Full name          | json-server |
 | Keywords           | JSON, server, fake, REST, API, prototyping, mock, mocking, test, testing, rest, data, dummy, sandbox |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 857967.0 |
-| # stars            | 63243.0 |
+| # downloads        | 894654.6666666666 |
+| # stars            | 64053.0 |
 
 ## Links
 - [Homepage](https://github.com/typicode/json-server)

@@ -12,8 +12,8 @@ Blazing fast, zero configuration web application bundler
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 396671.3333333333 |
-| # stars            | 40975.0 |
+| # downloads        | 351228.6666666667 |
+| # stars            | 41580.0 |
 
 ## Links
 - [Homepage](https://github.com/parcel-bundler/parcel#readme)

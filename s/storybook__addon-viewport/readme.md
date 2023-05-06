@@ -10,10 +10,10 @@ Build responsive components by adjusting Storybook’s viewport size and orienta
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-viewport |
 | Keywords           | addon, storybook, style, essentials |
-| # releases         | 475 |
+| # releases         | 460 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2707029E7 |
-| # stars            | 73947.0 |
+| # downloads        | 1.3898683333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/viewport)

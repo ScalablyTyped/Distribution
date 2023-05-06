@@ -12,8 +12,8 @@ Less memory usage version of geoip-lite, by supporting only country lookup.
 | Keywords           | geo, geoip, ip, ipv4, ipv6, geolookup, maxmind, geolite |
 | # releases         | 107 |
 | # dependents       | 0.0 |
-| # downloads        | 93887.0 |
-| # stars            | 61.0 |
+| # downloads        | 169057.33333333334 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/sapics/geoip-country)

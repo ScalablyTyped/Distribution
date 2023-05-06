@@ -10,10 +10,10 @@ Quickly process the routing of umi
 | ------------------ | :-------------: |
 | Full name          | @umijs/route-utils |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 137132.66666666666 |
-| # stars            | 33.0 |
+| # downloads        | 147716.33333333334 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/umijs/route-utils#readme)

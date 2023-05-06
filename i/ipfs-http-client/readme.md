@@ -10,10 +10,10 @@ A client library for the IPFS HTTP API
 | ------------------ | :-------------: |
 | Full name          | ipfs-http-client |
 | Keywords           | ipfs |
-| # releases         | 252 |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 282293.0 |
-| # stars            | 7055.0 |
+| # downloads        | 294083.6666666667 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client#readme)

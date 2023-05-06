@@ -9,11 +9,11 @@ Parse JSON without risk of losing numeric information
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lossless-json |
-| Keywords           | json, lossless, circular, parse, stringify, number, long, bignumber |
-| # releases         | 2 |
+| Keywords           | json, lossless, parse, stringify, long, bigint, bignumber, number, date, safe |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 165411.66666666666 |
-| # stars            | 192.0 |
+| # downloads        | 229171.0 |
+| # stars            | 243.0 |
 
 ## Links
 - [Homepage](https://github.com/josdejong/lossless-json#readme)

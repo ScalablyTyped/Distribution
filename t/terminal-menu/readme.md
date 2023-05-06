@@ -10,10 +10,10 @@ retro ansi terminal menus for serious 80s technicolor business
 | ------------------ | :-------------: |
 | Full name          | terminal-menu |
 | Keywords           | menu, terminal, ansi, 80s, ibm |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 4353.333333333333 |
-| # stars            | 364.0 |
+| # downloads        | 3661.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/terminal-menu)

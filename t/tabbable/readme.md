@@ -10,10 +10,10 @@ Returns an array of all tabbable DOM nodes within a containing node.
 | ------------------ | :-------------: |
 | Full name          | tabbable |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 4264701.333333333 |
-| # stars            | 375.0 |
+| # downloads        | 4584891.333333333 |
+| # stars            | 396.0 |
 
 ## Links
 - [Homepage](https://github.com/focus-trap/tabbable#readme)

@@ -12,8 +12,8 @@ Fastest deep equal comparison for React. Great for React.memo & shouldComponentU
 | Keywords           | fast, equal, react, compare, shouldComponentUpdate, deep-equal |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 3.2563625333333332E7 |
-| # stars            | 1352.0 |
+| # downloads        | 3.1930231E7 |
+| # stars            | 1405.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/react-fast-compare)

@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-logger |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 64 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4871197666666666E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1374909333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-logger)

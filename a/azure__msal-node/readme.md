@@ -10,10 +10,10 @@ Microsoft Authentication Library for Node
 | ------------------ | :-------------: |
 | Full name          | @azure/msal-node |
 | Keywords           | js, ts, node, AAD, msal, oauth |
-| # releases         | 42 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 2918233.3333333335 |
-| # stars            | 2595.0 |
+| # downloads        | 4032993.6666666665 |
+| # stars            | 2783.0 |
 
 ## Links
 - [Homepage](https://github.com/AzureAD/microsoft-authentication-library-for-js#readme)

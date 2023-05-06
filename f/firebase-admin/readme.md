@@ -10,10 +10,10 @@ Firebase admin SDK for Node.js
 | ------------------ | :-------------: |
 | Full name          | firebase-admin |
 | Keywords           | admin, database, Firebase, realtime, authentication |
-| # releases         | 25 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 4794662.0 |
-| # stars            | 1341.0 |
+| # downloads        | 4770506.0 |
+| # stars            | 1403.0 |
 
 ## Links
 - [Homepage](https://firebase.google.com/)

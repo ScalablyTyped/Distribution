@@ -10,10 +10,10 @@ Typings are for version 29.2.0
 | ------------------ | :-------------: |
 | Full name          | jest-docblock |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 7.2980465E7 |
-| # stars            | 39951.0 |
+| # downloads        | 7.688252333333333E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

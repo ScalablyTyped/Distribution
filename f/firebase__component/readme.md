@@ -10,10 +10,10 @@ Firebase Component Platform
 | ------------------ | :-------------: |
 | Full name          | @firebase/component |
 | Keywords           | - |
-| # releases         | 1201 |
+| # releases         | 1023 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0653815333333334E7 |
-| # stars            | 4194.0 |
+| # downloads        | 1.0416374333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

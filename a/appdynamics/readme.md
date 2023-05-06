@@ -12,7 +12,7 @@ Performance Profiler and Monitor
 | Keywords           | profiler, profiling, tracing, cpu, heap, performance, instrumentation, response time, performance, bottlenecks, monitoring, analytics, metrics, alerts, dtrace |
 | # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 153019.66666666666 |
+| # downloads        | 107019.0 |
 | # stars            | ? |
 
 ## Links

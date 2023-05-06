@@ -10,9 +10,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | jest-mock |
 | Keywords           | - |
-| # releases         | 52 |
+| # releases         | 55 |
 | # dependents       | 0.0 |
-| # downloads        | 8.330344533333333E7 |
+| # downloads        | 9.171546366666667E7 |
 | # stars            | ? |
 
 ## Links

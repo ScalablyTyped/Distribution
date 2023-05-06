@@ -10,9 +10,9 @@ pprof support for Node.js
 | ------------------ | :-------------: |
 | Full name          | @datadog/pprof |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 4043027.3333333335 |
+| # downloads        | 5058398.666666667 |
 | # stars            | 2.0 |
 
 ## Links

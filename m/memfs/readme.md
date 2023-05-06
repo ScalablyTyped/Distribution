@@ -10,10 +10,10 @@ In-memory file-system with Node's fs API.
 | ------------------ | :-------------: |
 | Full name          | memfs |
 | Keywords           | fs, filesystem, fs.js, memory-fs, memfs, file, file system, mount, memory, in-memory, virtual, test, testing, mock |
-| # releases         | 14 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 3.8238846666666664E7 |
-| # stars            | 1244.0 |
+| # downloads        | 4.6282256333333336E7 |
+| # stars            | 1353.0 |
 
 ## Links
 - [Homepage](https://github.com/streamich/memfs#readme)

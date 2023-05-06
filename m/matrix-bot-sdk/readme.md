@@ -12,8 +12,8 @@ TypeScript/JavaScript SDK for Matrix bots and appservices
 | Keywords           | matrix, bot, sdk, js, ts, node, helpers, snippets, chat, modules, bot-sdk, appservices |
 | # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 8074.0 |
-| # stars            | 125.0 |
+| # downloads        | 8298.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/turt2live/matrix-bot-sdk#readme)

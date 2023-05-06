@@ -9,10 +9,10 @@ Typings are for version 9.2.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-tools |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 5393835.0 |
-| # stars            | 1890.0 |
+| # downloads        | 5843425.0 |
+| # stars            | 1957.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/cli#readme)

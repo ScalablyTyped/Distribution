@@ -10,10 +10,10 @@ Check where the code is running in the browser or node.js
 | ------------------ | :-------------: |
 | Full name          | browser-or-node |
 | Keywords           | npm, browser, node, is browser, is node, is browser node |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1115494.0 |
-| # stars            | 176.0 |
+| # downloads        | 1428312.3333333333 |
+| # stars            | 185.0 |
 
 ## Links
 - [Homepage](https://github.com/flexdinesh/browser-or-node#readme)

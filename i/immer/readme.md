@@ -10,10 +10,10 @@ Create your next immutable state by mutating the current one
 | ------------------ | :-------------: |
 | Full name          | immer |
 | Keywords           | immutable, mutable, copy-on-write |
-| # releases         | 34 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 3.7043952666666664E7 |
-| # stars            | 23135.0 |
+| # downloads        | 3.8002797666666664E7 |
+| # stars            | 24370.0 |
 
 ## Links
 - [Homepage](https://github.com/immerjs/immer#readme)

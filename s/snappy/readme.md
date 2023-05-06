@@ -10,10 +10,10 @@ Fastest Snappy compression library in Node.js
 | ------------------ | :-------------: |
 | Full name          | snappy |
 | Keywords           | snappy, snap, compression, compress, napi-rs, NAPI, N-API, Rust, Node-API, node-addon, node-addon-api |
-| # releases         | 9 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 2436773.3333333335 |
-| # stars            | 87.0 |
+| # downloads        | 2378871.6666666665 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/Brooooooklyn/snappy#readme)

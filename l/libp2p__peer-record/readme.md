@@ -12,7 +12,7 @@ Used to transfer signed peer data across the network
 | Keywords           | IPFS |
 | # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 18185.0 |
+| # downloads        | 28961.0 |
 | # stars            | 0.0 |
 
 ## Links

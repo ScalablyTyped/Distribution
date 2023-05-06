@@ -4,16 +4,16 @@
 Typings are for version 2.0
 
 ## Library description:
-WEBMIDI.js makes it easy to talk to MIDI instruments from a browser or from Node.js. It simplifies the control of external or virtual MIDI instruments with functions such as playNote(), setPitchBend(), sendControlChange(), etc. It also allows reacting to
+WEBMIDI.js makes it easy to talk to MIDI instruments from a browser or from Node.js. It simplifies the control of external or virtual MIDI instruments with functions such as playNote(), sendPitchBend(), sendControlChange(), etc. It also allows reacting to
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | webmidi |
 | Keywords           | midi, message, web, browser, front-end, web midi api, music, djipco, music, protocol, communication, channel, node, instrument, device, note |
-| # releases         | 46 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 4256.0 |
-| # stars            | 1198.0 |
+| # downloads        | 5272.666666666667 |
+| # stars            | 1280.0 |
 
 ## Links
 - [Homepage](https://webmidijs.org)

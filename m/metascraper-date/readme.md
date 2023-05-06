@@ -10,10 +10,10 @@ Get date property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-date |
 | Keywords           | date, metascraper |
-| # releases         | 84 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 33275.333333333336 |
-| # stars            | 1802.0 |
+| # downloads        | 38545.333333333336 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

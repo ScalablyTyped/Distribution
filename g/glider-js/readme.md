@@ -10,10 +10,10 @@ A fast, lightweight carousel alternative
 | ------------------ | :-------------: |
 | Full name          | glider-js |
 | Keywords           | carousel, scrolling, list, paging |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 88608.33333333333 |
-| # stars            | 2988.0 |
+| # downloads        | 93073.66666666667 |
+| # stars            | 3035.0 |
 
 ## Links
 - [Homepage](https://github.com/NickPiscitelli/Glider.js#readme)

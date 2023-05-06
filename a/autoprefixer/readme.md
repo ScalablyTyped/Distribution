@@ -12,8 +12,8 @@ Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use w
 | Keywords           | autoprefixer, css, prefix, postcss, postcss-plugin |
 | # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 7.4934084E7 |
-| # stars            | 20569.0 |
+| # downloads        | 7.9189902E7 |
+| # stars            | 20636.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/autoprefixer#readme)

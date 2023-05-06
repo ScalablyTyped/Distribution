@@ -10,10 +10,10 @@ A react context to provide the current theme.
 | ------------------ | :-------------: |
 | Full name          | terra-theme-context |
 | Keywords           | Cerner, Terra, Framework, terra-theme-context, TerraThemeContext, UI |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 2039.3333333333333 |
-| # stars            | ? |
+| # downloads        | 1791.6666666666667 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/cerner/terra-framework#readme)

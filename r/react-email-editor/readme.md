@@ -10,10 +10,10 @@ Unlayer's Email Editor Component for React.js
 | ------------------ | :-------------: |
 | Full name          | react-email-editor |
 | Keywords           | react-component |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 57933.0 |
-| # stars            | 3381.0 |
+| # downloads        | 78377.0 |
+| # stars            | 3533.0 |
 
 ## Links
 - [Homepage](https://github.com/unlayer/react-email-editor#readme)

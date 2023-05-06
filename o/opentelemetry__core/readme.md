@@ -10,10 +10,10 @@ OpenTelemetry Core provides constants and utilities shared by all OpenTelemetry 
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/core |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling, metrics, stats |
-| # releases         | 117 |
+| # releases         | 109 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0183053666666666E7 |
-| # stars            | 1462.0 |
+| # downloads        | 1.0622900333333334E7 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-core)

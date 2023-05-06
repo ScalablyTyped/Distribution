@@ -10,9 +10,9 @@ Address Manager interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-address-manager |
 | Keywords           | interface, libp2p |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 9184.666666666666 |
+| # downloads        | 28505.333333333332 |
 | # stars            | 68.0 |
 
 ## Links

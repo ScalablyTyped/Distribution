@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-N-Triples serializer that implements the RDFJS Sink interface
+N-Triples serializer that implements the RDF/JS Sink interface
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/serializer-ntriples |
 | Keywords           | rdf, rdfjs, serializer, ntriples |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 6366.0 |
+| # downloads        | 9694.333333333334 |
 | # stars            | 1.0 |
 
 ## Links

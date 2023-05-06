@@ -10,10 +10,10 @@ Support for legacy browser JavaScript environments
 | ------------------ | :-------------: |
 | Full name          | @pixi/polyfill |
 | Keywords           | - |
-| # releases         | 49 |
+| # releases         | 46 |
 | # dependents       | 0.0 |
-| # downloads        | 349087.6666666667 |
-| # stars            | 37387.0 |
+| # downloads        | 390222.3333333333 |
+| # stars            | 38370.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)

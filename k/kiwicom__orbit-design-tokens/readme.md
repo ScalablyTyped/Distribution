@@ -12,8 +12,8 @@ Design tokens for Kiwi.com.
 | Keywords           | orbit, ui, design |
 | # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 16448.0 |
-| # stars            | 1245.0 |
+| # downloads        | 23375.333333333332 |
+| # stars            | 1267.0 |
 
 ## Links
 - [Homepage](https://github.com/kiwicom/orbit#readme)

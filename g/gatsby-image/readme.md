@@ -10,10 +10,10 @@ Lazy-loading React image component with optional support for the blur-up effect.
 | ------------------ | :-------------: |
 | Full name          | gatsby-image |
 | Keywords           | gatsby, gatsby-component, react-component |
-| # releases         | 64 |
+| # releases         | 41 |
 | # dependents       | 0.0 |
-| # downloads        | 637995.0 |
-| # stars            | 53198.0 |
+| # downloads        | 565338.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/gatsbyjs/gatsby#readme)

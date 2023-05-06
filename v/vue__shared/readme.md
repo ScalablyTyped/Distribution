@@ -10,10 +10,10 @@ internal utils shared across @vue packages
 | ------------------ | :-------------: |
 | Full name          | @vue/shared |
 | Keywords           | vue |
-| # releases         | 78 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 7758020.333333333 |
-| # stars            | 32475.0 |
+| # downloads        | 9321730.666666666 |
+| # stars            | 33643.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/core/tree/main/packages/shared#readme)

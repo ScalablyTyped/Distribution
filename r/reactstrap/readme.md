@@ -10,10 +10,10 @@ React Bootstrap components
 | ------------------ | :-------------: |
 | Full name          | reactstrap |
 | Keywords           | reactstrap, bootstrap, react, component, components, react-component, ui |
-| # releases         | 34 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 2486475.6666666665 |
-| # stars            | 10343.0 |
+| # downloads        | 2261860.3333333335 |
+| # stars            | 10419.0 |
 
 ## Links
 - [Homepage](https://github.com/reactstrap/reactstrap#readme)

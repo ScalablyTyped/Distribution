@@ -10,10 +10,10 @@ Node.js driver for Snowflake
 | ------------------ | :-------------: |
 | Full name          | snowflake-sdk |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 919120.3333333334 |
-| # stars            | 69.0 |
+| # downloads        | 952135.6666666666 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/snowflakedb/snowflake-connector-nodejs#readme)

@@ -10,10 +10,10 @@ config validator for commitlint.config.js
 | ------------------ | :-------------: |
 | Full name          | @commitlint/config-validator |
 | Keywords           | conventional-changelog, commitlint, library, core |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 4645256.333333333 |
-| # stars            | 11921.0 |
+| # downloads        | 5864576.666666667 |
+| # stars            | 12927.0 |
 
 ## Links
 - [Homepage](https://commitlint.js.org/)

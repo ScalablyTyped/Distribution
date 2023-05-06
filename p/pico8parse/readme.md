@@ -10,10 +10,10 @@ A Lua parser in JavaScript, with support for the PICO-8 flavour
 | ------------------ | :-------------: |
 | Full name          | pico8parse |
 | Keywords           | ast, lua, parser, parsing, pico8 |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 49.333333333333336 |
-| # stars            | 1.0 |
+| # downloads        | 46.333333333333336 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://pictelm.github.io/pico8parse/)

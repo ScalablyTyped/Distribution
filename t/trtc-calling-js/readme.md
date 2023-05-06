@@ -10,9 +10,9 @@ Typings are for version 0.6
 | ------------------ | :-------------: |
 | Full name          | trtc-calling-js |
 | Keywords           | 视频语音通话, 腾讯云实时音视频 TRTC, WebRTC |
-| # releases         | 21 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 1353.3333333333333 |
+| # downloads        | 1093.3333333333333 |
 | # stars            | ? |
 
 ## Links

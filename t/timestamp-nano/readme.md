@@ -10,9 +10,9 @@ Timestamp for 64-bit time_t, nanosecond precision and strftime
 | ------------------ | :-------------: |
 | Full name          | timestamp-nano |
 | Keywords           | date, datetime, microsecond, nanosecond, strftime, time_t, timestamp |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 61886.666666666664 |
+| # downloads        | 86485.33333333333 |
 | # stars            | 6.0 |
 
 ## Links

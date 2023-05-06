@@ -12,8 +12,8 @@ small opinionated sprites
 | Keywords           | sprite, images, icons, json |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 3192.3333333333335 |
-| # stars            | 143.0 |
+| # downloads        | 2735.0 |
+| # stars            | 144.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/spritezero#readme)

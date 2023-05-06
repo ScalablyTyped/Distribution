@@ -10,9 +10,9 @@ The hapi utility toy chest
 | ------------------ | :-------------: |
 | Full name          | @hapipal/toys |
 | Keywords           | hapi, utility, performance, convenience, tools |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 6990.0 |
+| # downloads        | 7731.333333333333 |
 | # stars            | 31.0 |
 
 ## Links

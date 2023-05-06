@@ -10,10 +10,10 @@ Splits Uint8Arrays emitted by an (async) iterable by a delimiter
 | ------------------ | :-------------: |
 | Full name          | it-split |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 13956.333333333334 |
-| # stars            | 200.0 |
+| # downloads        | 13646.0 |
+| # stars            | 225.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-split#readme)

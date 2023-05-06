@@ -10,10 +10,10 @@ Line Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-line |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 59 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 826384.3333333334 |
-| # stars            | 9909.0 |
+| # downloads        | 810432.0 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

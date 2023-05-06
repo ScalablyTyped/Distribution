@@ -10,10 +10,10 @@ snyk library and cli utility
 | ------------------ | :-------------: |
 | Full name          | snyk |
 | Keywords           | security, vulnerabilities, advisories, audit, snyk, scan, docker, container, scanning |
-| # releases         | 752 |
+| # releases         | 748 |
 | # dependents       | 0.0 |
-| # downloads        | 2132493.6666666665 |
-| # stars            | 4150.0 |
+| # downloads        | 3460863.0 |
+| # stars            | 4286.0 |
 
 ## Links
 - [Homepage](https://github.com/snyk/snyk#readme)

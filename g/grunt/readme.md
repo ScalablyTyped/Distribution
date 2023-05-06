@@ -10,10 +10,10 @@ The JavaScript Task Runner
 | ------------------ | :-------------: |
 | Full name          | grunt |
 | Keywords           | task, async, cli, minify, uglify, build, lodash, unit, test, qunit, nodeunit, server, init, scaffold, make, jake, tool |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 3236527.0 |
-| # stars            | 12152.0 |
+| # downloads        | 3107703.0 |
+| # stars            | 12179.0 |
 
 ## Links
 - [Homepage](https://gruntjs.com/)

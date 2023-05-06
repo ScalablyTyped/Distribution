@@ -10,10 +10,10 @@ Faster swc nodejs binding
 | ------------------ | :-------------: |
 | Full name          | @swc-node/core |
 | Keywords           | swc, babel, esbuild, rust, n-api, napi, node-rs, uglify, napi-rs, terser, webpack, ts-node, typescript, tsc |
-| # releases         | 18 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1859244.3333333333 |
-| # stars            | 1112.0 |
+| # downloads        | 1498269.3333333333 |
+| # stars            | 1223.0 |
 
 ## Links
 - [Homepage](https://github.com/swc-project/swc-node)

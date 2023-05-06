@@ -4,16 +4,16 @@
 Typings are for version 1.1.16
 
 ## Library description:
-Implementation of @libp2p/interface-peer-d
+Implementation of @libp2p/interface-peer-id
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @libp2p/peer-id |
 | Keywords           | IPFS |
-| # releases         | 24 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 23014.0 |
-| # stars            | 0.0 |
+| # downloads        | 64785.666666666664 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-peer-id/tree/master/packages/libp2p-peer-id#readme)

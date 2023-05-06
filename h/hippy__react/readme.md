@@ -10,10 +10,10 @@ Hippy react framework
 | ------------------ | :-------------: |
 | Full name          | @hippy/react |
 | Keywords           | hippy, hippy-react, native, web, framework, compiler |
-| # releases         | 96 |
+| # releases         | 100 |
 | # dependents       | 0.0 |
-| # downloads        | 826.3333333333334 |
-| # stars            | 6790.0 |
+| # downloads        | 873.0 |
+| # stars            | 6937.0 |
 
 ## Links
 - [Homepage](https://hippyjs.org)

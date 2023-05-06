@@ -10,10 +10,10 @@ Merge CSS rules with PostCSS.
 | ------------------ | :-------------: |
 | Full name          | postcss-merge-rules |
 | Keywords           | css, optimise, postcss, postcss-plugin |
-| # releases         | 31 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 4.4625608E7 |
-| # stars            | 4187.0 |
+| # downloads        | 4.6170486333333336E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

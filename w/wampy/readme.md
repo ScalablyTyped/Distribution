@@ -10,13 +10,13 @@ Simple WAMP (WebSocket Application Messaging Protocol) Javascript implementation
 | ------------------ | :-------------: |
 | Full name          | wampy |
 | Keywords           | websocket, wamp, pubsub, rpc |
-| # releases         | 5 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 5716.0 |
-| # stars            | 260.0 |
+| # downloads        | 4753.666666666667 |
+| # stars            | 266.0 |
 
 ## Links
-- [Homepage](https://github.com/KSDaemon/wampy.js)
+- [Homepage](https://github.com/KSDaemon/wampy.js#readme)
 - [Bugs](https://github.com/KSDaemon/wampy.js/issues)
 - [Repository](https://github.com/KSDaemon/wampy.js)
 - [Npm](https://www.npmjs.com/package/wampy)

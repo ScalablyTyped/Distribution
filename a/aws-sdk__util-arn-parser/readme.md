@@ -10,10 +10,10 @@ A parser to Amazon Resource Names
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-arn-parser |
 | Keywords           | - |
-| # releases         | 32 |
+| # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 5980391.666666667 |
-| # stars            | 1851.0 |
+| # downloads        | 6874184.0 |
+| # stars            | 1962.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-arn-parser)

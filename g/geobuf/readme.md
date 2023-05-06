@@ -10,10 +10,10 @@ Compact binary encoding for geographic data
 | ------------------ | :-------------: |
 | Full name          | geobuf |
 | Keywords           | geographic, data, buffer, protobuf, format, compression, geojson, topojson |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 175672.33333333334 |
-| # stars            | 829.0 |
+| # downloads        | 198648.33333333334 |
+| # stars            | 880.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/geobuf)

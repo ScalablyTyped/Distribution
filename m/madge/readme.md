@@ -10,10 +10,10 @@ Create graphs from module dependencies.
 | ------------------ | :-------------: |
 | Full name          | madge |
 | Keywords           | ES6, ES7, AMD, RequireJS, require, module, circular, dependency, dependencies, graphviz, graph |
-| # releases         | 9 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1218657.0 |
-| # stars            | 6197.0 |
+| # downloads        | 1570871.0 |
+| # stars            | 6622.0 |
 
 ## Links
 - [Homepage](https://github.com/pahen/madge)

@@ -10,10 +10,10 @@ default socket.io in-memory adapter
 | ------------------ | :-------------: |
 | Full name          | socket.io-adapter |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9831872666666668E7 |
-| # stars            | 186.0 |
+| # downloads        | 1.9821964333333332E7 |
+| # stars            | 192.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/socket.io-adapter#readme)

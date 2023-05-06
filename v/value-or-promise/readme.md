@@ -10,10 +10,10 @@ A thenable to streamline a possibly sync / possibly async workflow.
 | ------------------ | :-------------: |
 | Full name          | value-or-promise |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6664369E7 |
-| # stars            | 4.0 |
+| # downloads        | 1.6768138666666666E7 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/yaacovCR/value-or-promise#readme)

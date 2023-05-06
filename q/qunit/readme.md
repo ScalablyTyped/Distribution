@@ -10,10 +10,10 @@ The powerful, easy-to-use testing framework.
 | ------------------ | :-------------: |
 | Full name          | qunit |
 | Keywords           | testing, unit, assert, assertion, tap, tape, karma, jquery |
-| # releases         | 19 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 988240.6666666666 |
-| # stars            | 3964.0 |
+| # downloads        | 929436.3333333334 |
+| # stars            | 3977.0 |
 
 ## Links
 - [Homepage](https://qunitjs.com)

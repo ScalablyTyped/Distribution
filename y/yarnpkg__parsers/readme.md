@@ -9,10 +9,10 @@ Typings are for version 3.0.0-rc.26
 | ------------------ | :-------------: |
 | Full name          | @yarnpkg/parsers |
 | Keywords           | - |
-| # releases         | 69 |
+| # releases         | 75 |
 | # dependents       | 0.0 |
-| # downloads        | 1444735.3333333333 |
-| # stars            | 5626.0 |
+| # downloads        | 3541271.6666666665 |
+| # stars            | 5775.0 |
 
 ## Links
 - [Homepage](https://github.com/yarnpkg/berry#readme)

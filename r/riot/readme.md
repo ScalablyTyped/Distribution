@@ -10,10 +10,10 @@ Simple and elegant component-based UI library
 | ------------------ | :-------------: |
 | Full name          | riot |
 | Keywords           | custom tags, custom elements, web components, virtual dom, shadow dom, minimal, minimalist, client-side, framework, declarative, templating, template, data binding, mvc, model, view, controller, riotjs, riot.js |
-| # releases         | 33 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 18458.666666666668 |
-| # stars            | 14706.0 |
+| # downloads        | 18274.666666666668 |
+| # stars            | 14712.0 |
 
 ## Links
 - [Homepage](https://riot.js.org/)

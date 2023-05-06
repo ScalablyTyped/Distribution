@@ -10,9 +10,9 @@ A library for integrating with PayPalHttp.
 | ------------------ | :-------------: |
 | Full name          | @paypal/paypalhttp |
 | Keywords           | paypalhttp, payments |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 113076.66666666667 |
+| # downloads        | 108189.0 |
 | # stars            | 4.0 |
 
 ## Links

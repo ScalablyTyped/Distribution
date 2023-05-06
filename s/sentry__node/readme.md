@@ -10,10 +10,10 @@ Official Sentry SDK for Node.js
 | ------------------ | :-------------: |
 | Full name          | @sentry/node |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 149 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3115724666666666E7 |
-| # stars            | 6549.0 |
+| # downloads        | 1.383959E7 |
+| # stars            | 6782.0 |
 
 ## Links
 - [Homepage](https://github.com/getsentry/sentry-javascript/tree/master/packages/node)

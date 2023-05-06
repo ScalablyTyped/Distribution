@@ -10,10 +10,10 @@ Language support infrastructure for the CodeMirror code editor
 | ------------------ | :-------------: |
 | Full name          | @codemirror/language |
 | Keywords           | editor, code |
-| # releases         | 27 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 722054.6666666666 |
-| # stars            | 7.0 |
+| # downloads        | 1347105.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/codemirror/language#readme)

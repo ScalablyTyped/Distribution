@@ -12,8 +12,8 @@ RDF SHACL validator
 | Keywords           | rdf, shacl, validation |
 | # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 2500.0 |
-| # stars            | 62.0 |
+| # downloads        | 2257.6666666666665 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/zazuko/rdf-validate-shacl#readme)

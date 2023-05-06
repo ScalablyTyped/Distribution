@@ -10,10 +10,10 @@ Typings are for version 11.10.5
 | ------------------ | :-------------: |
 | Full name          | @emotion/react |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6188752666666666E7 |
-| # stars            | 15356.0 |
+| # downloads        | 1.8782815666666668E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

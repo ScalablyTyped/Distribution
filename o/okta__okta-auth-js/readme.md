@@ -10,10 +10,10 @@ The Okta Auth SDK
 | ------------------ | :-------------: |
 | Full name          | @okta/okta-auth-js |
 | Keywords           | Okta, authentication, auth, login |
-| # releases         | 81 |
+| # releases         | 75 |
 | # dependents       | 0.0 |
-| # downloads        | 1229547.0 |
-| # stars            | 354.0 |
+| # downloads        | 1224824.3333333333 |
+| # stars            | 372.0 |
 
 ## Links
 - [Homepage](https://github.com/okta/okta-auth-js)

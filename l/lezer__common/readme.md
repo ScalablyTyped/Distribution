@@ -10,10 +10,10 @@ Syntax tree data structure and parser interfaces for the lezer parser
 | ------------------ | :-------------: |
 | Full name          | @lezer/common |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 1802734.6666666667 |
-| # stars            | 34.0 |
+| # downloads        | 2571665.3333333335 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/lezer-parser/common#readme)

@@ -10,10 +10,10 @@ A wrapper for the Heroku v3 API
 | ------------------ | :-------------: |
 | Full name          | heroku-client |
 | Keywords           | heroku |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 697155.6666666666 |
-| # stars            | 184.0 |
+| # downloads        | 564668.6666666666 |
+| # stars            | 186.0 |
 
 ## Links
 - [Homepage](https://github.com/heroku/node-heroku-client#readme)

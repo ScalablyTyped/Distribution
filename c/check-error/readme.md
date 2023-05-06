@@ -10,10 +10,10 @@ Error comparison and information related utility for node and the browser
 | ------------------ | :-------------: |
 | Full name          | check-error |
 | Keywords           | check-error, error, chai util |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9862199666666668E7 |
-| # stars            | 12.0 |
+| # downloads        | 2.1690618E7 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/chaijs/check-error#readme)

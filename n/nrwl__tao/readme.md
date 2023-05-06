@@ -10,10 +10,10 @@ CLI for generating code and running commands
 | ------------------ | :-------------: |
 | Full name          | @nrwl/tao |
 | Keywords           | Monorepo, Angular, React, Web, Node, Nest, Jest, Cypress, CLI |
-| # releases         | 552 |
+| # releases         | 565 |
 | # dependents       | 0.0 |
-| # downloads        | 9785114.333333334 |
-| # stars            | 14608.0 |
+| # downloads        | 1.1556665333333334E7 |
+| # stars            | 16088.0 |
 
 ## Links
 - [Homepage](https://nx.dev)

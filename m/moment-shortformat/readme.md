@@ -12,7 +12,7 @@ An extension to moment.js that formats dates in a short format like it's used on
 | Keywords           | momentjs, moment, date, short, researchgate |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 3857.3333333333335 |
+| # downloads        | 3854.3333333333335 |
 | # stars            | 17.0 |
 
 ## Links

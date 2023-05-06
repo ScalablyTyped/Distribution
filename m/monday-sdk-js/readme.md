@@ -10,9 +10,9 @@ Typings are for version 0.1
 | ------------------ | :-------------: |
 | Full name          | monday-sdk-js |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 15349.666666666666 |
+| # downloads        | 16134.333333333334 |
 | # stars            | 65.0 |
 
 ## Links

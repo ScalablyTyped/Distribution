@@ -10,10 +10,10 @@ Shared utility functions for frameworks to implement docs
 | ------------------ | :-------------: |
 | Full name          | @storybook/docs-tools |
 | Keywords           | storybook |
-| # releases         | 88 |
+| # releases         | 151 |
 | # dependents       | 0.0 |
-| # downloads        | 7465535.333333333 |
-| # stars            | 74176.0 |
+| # downloads        | 1.1112186E7 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/docs-tools)

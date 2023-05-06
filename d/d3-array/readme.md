@@ -10,10 +10,10 @@ Array manipulation, ordering, searching, summarizing, etc.
 | ------------------ | :-------------: |
 | Full name          | d3-array |
 | Keywords           | d3, d3-module, histogram, bisect, shuffle, statistics, search, sort, array |
-| # releases         | 26 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1221808E7 |
-| # stars            | 395.0 |
+| # downloads        | 2.4651759666666668E7 |
+| # stars            | 408.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-array/)

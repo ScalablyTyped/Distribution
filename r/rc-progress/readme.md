@@ -10,10 +10,10 @@ progress ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-progress |
 | Keywords           | react, react-component, react-progress, progress |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 3605347.6666666665 |
-| # stars            | 631.0 |
+| # downloads        | 3915224.0 |
+| # stars            | 660.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/progress)

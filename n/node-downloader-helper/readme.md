@@ -4,16 +4,16 @@
 Typings are for version 2.1.4
 
 ## Library description:
-A simple http file downloader for node.js
+A simple http/s file downloader for node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-downloader-helper |
-| Keywords           | node, nodejs, node.js, download, resumable, resume, http |
-| # releases         | 12 |
+| Keywords           | nwjs, node, nodejs, node.js, electron, download, resumable, resume, http |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 80112.0 |
-| # stars            | 182.0 |
+| # downloads        | 609940.6666666666 |
+| # stars            | 197.0 |
 
 ## Links
 - [Homepage](https://github.com/hgouveia/node-downloader-helper)

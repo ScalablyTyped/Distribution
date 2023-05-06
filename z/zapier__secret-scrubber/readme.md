@@ -10,9 +10,9 @@ Confidently remove secrets and sensitive values from unstructured objects.
 | ------------------ | :-------------: |
 | Full name          | @zapier/secret-scrubber |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 25127.666666666668 |
+| # downloads        | 38559.0 |
 | # stars            | ? |
 
 ## Links

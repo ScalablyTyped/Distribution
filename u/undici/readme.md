@@ -10,10 +10,10 @@ An HTTP/1.1 client, written from scratch for Node.js
 | ------------------ | :-------------: |
 | Full name          | undici |
 | Keywords           | fetch, http, https, promise, request, curl, wget, xhr, whatwg |
-| # releases         | 98 |
+| # releases         | 93 |
 | # dependents       | 0.0 |
-| # downloads        | 9563552.666666666 |
-| # stars            | 4248.0 |
+| # downloads        | 1.1807244666666666E7 |
+| # stars            | 4462.0 |
 
 ## Links
 - [Homepage](https://undici.nodejs.org)

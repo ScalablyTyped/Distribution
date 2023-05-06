@@ -10,10 +10,10 @@ Embed a representation of an URL on third party sites
 | ------------------ | :-------------: |
 | Full name          | metascraper-iframe |
 | Keywords           | embed, iframe, metascraper, oembed |
-| # releases         | 95 |
+| # releases         | 80 |
 | # dependents       | 0.0 |
-| # downloads        | 2119.3333333333335 |
-| # stars            | 1802.0 |
+| # downloads        | 1277.0 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

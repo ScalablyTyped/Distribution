@@ -10,10 +10,10 @@ Typings are for version 4.20.7
 | ------------------ | :-------------: |
 | Full name          | final-form |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1861254.0 |
-| # stars            | 2851.0 |
+| # downloads        | 1559057.6666666667 |
+| # stars            | 2909.0 |
 
 ## Links
 - [Homepage](https://github.com/final-form/final-form#readme)

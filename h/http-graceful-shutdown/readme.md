@@ -10,10 +10,10 @@ gracefully shuts downs http server
 | ------------------ | :-------------: |
 | Full name          | http-graceful-shutdown |
 | Keywords           | http, https, koa, express, fastify, shutdown, graceful, force, graceful-shutdown, http-shutdown, http-terminate, shutdown, kubernetes, prometheus, backend |
-| # releases         | 12 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 377939.6666666667 |
-| # stars            | 162.0 |
+| # downloads        | 418717.0 |
+| # stars            | 173.0 |
 
 ## Links
 - [Homepage](https://github.com/sebhildebrandt/http-graceful-shutdown)

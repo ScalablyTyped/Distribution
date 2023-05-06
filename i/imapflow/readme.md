@@ -10,10 +10,10 @@ IMAP Client for Node
 | ------------------ | :-------------: |
 | Full name          | imapflow |
 | Keywords           | imap, email, mail |
-| # releases         | 55 |
+| # releases         | 66 |
 | # dependents       | 0.0 |
-| # downloads        | 39919.0 |
-| # stars            | 159.0 |
+| # downloads        | 63974.333333333336 |
+| # stars            | 179.0 |
 
 ## Links
 - [Homepage](https://imapflow.com/)

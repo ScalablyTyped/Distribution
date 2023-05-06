@@ -10,10 +10,10 @@ Connection Encrypter interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-connection-encrypter |
 | Keywords           | interface, libp2p |
-| # releases         | 7 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 2095.6666666666665 |
-| # stars            | 67.0 |
+| # downloads        | 26320.0 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interface-connection-encrypter#readme)

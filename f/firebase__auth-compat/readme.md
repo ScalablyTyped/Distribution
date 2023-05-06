@@ -10,10 +10,10 @@ FirebaseAuth compatibility package that uses API style compatible with Firebase@
 | ------------------ | :-------------: |
 | Full name          | @firebase/auth-compat |
 | Keywords           | - |
-| # releases         | 492 |
+| # releases         | 588 |
 | # dependents       | 0.0 |
-| # downloads        | 2672509.0 |
-| # stars            | 4194.0 |
+| # downloads        | 3242574.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

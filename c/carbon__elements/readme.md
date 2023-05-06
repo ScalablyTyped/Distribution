@@ -10,10 +10,10 @@ A collection of design elements in code for the IBM Design Language
 | ------------------ | :-------------: |
 | Full name          | @carbon/elements |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 105 |
+| # releases         | 106 |
 | # dependents       | 0.0 |
-| # downloads        | 18779.0 |
-| # stars            | 5801.0 |
+| # downloads        | 23748.0 |
+| # stars            | 6227.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

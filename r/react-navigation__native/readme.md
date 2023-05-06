@@ -10,10 +10,10 @@ React Native integration for React Navigation
 | ------------------ | :-------------: |
 | Full name          | @react-navigation/native |
 | Keywords           | react-native, react-navigation, ios, android |
-| # releases         | 58 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 2488738.0 |
-| # stars            | 21622.0 |
+| # downloads        | 2570734.3333333335 |
+| # stars            | 22003.0 |
 
 ## Links
 - [Homepage](https://reactnavigation.org)

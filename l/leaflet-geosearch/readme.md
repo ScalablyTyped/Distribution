@@ -10,10 +10,10 @@ Adds support for address lookup (a.k.a. geocoding / geoseaching) to Leaflet.
 | ------------------ | :-------------: |
 | Full name          | leaflet-geosearch |
 | Keywords           | geolocation, geocoding, plugins, leaflet, geo, map |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 129869.66666666667 |
-| # stars            | 820.0 |
+| # downloads        | 150446.33333333334 |
+| # stars            | 845.0 |
 
 ## Links
 - [Homepage](https://github.com/smeijer/leaflet-geosearch#readme)

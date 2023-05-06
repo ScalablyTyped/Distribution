@@ -10,10 +10,10 @@ fast mysql driver. Implements core protocol, prepared statements, ssl and compre
 | ------------------ | :-------------: |
 | Full name          | mysql2 |
 | Keywords           | mysql, client, server |
-| # releases         | 12 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 4277207.666666667 |
-| # stars            | 3024.0 |
+| # downloads        | 5078884.666666667 |
+| # stars            | 3293.0 |
 
 ## Links
 - [Homepage](https://github.com/sidorares/node-mysql2#readme)

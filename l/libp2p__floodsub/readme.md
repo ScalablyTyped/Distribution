@@ -10,10 +10,10 @@ libp2p-floodsub, also known as pubsub-flood or just dumbsub, this implementation
 | ------------------ | :-------------: |
 | Full name          | @libp2p/floodsub |
 | Keywords           | IPFS, flood, flooding, gossip, libp2p, pubsub |
-| # releases         | 23 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 13775.333333333334 |
-| # stars            | 44.0 |
+| # downloads        | 18266.333333333332 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-floodsub#readme)

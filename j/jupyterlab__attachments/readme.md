@@ -10,9 +10,9 @@ JupyterLab - Notebook Cell Attachments
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/attachments |
 | Keywords           | - |
-| # releases         | 141 |
+| # releases         | 135 |
 | # dependents       | 0.0 |
-| # downloads        | 219894.33333333334 |
+| # downloads        | 116971.33333333333 |
 | # stars            | ? |
 
 ## Links

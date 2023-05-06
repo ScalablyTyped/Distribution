@@ -10,10 +10,10 @@ Shared code to make your bundle smaller when running protons in your app
 | ------------------ | :-------------: |
 | Full name          | protons-runtime |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 14367.666666666666 |
-| # stars            | 21.0 |
+| # downloads        | 58133.0 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/protons/tree/master/packages/protons-runtime#readme)

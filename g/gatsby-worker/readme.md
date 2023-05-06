@@ -10,10 +10,10 @@ Utility to create worker pools
 | ------------------ | :-------------: |
 | Full name          | gatsby-worker |
 | Keywords           | gatsby, worker |
-| # releases         | 116 |
+| # releases         | 142 |
 | # dependents       | 0.0 |
-| # downloads        | 1022996.3333333334 |
-| # stars            | 53533.0 |
+| # downloads        | 1202624.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-worker#readme)

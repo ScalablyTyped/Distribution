@@ -10,10 +10,10 @@ Parse and stringify space separated tokens
 | ------------------ | :-------------: |
 | Full name          | space-separated-tokens |
 | Keywords           | dom, html, space, separated, tokens, parse, stringify |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1656799666666668E7 |
-| # stars            | 8.0 |
+| # downloads        | 2.5544562333333332E7 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/space-separated-tokens#readme)

@@ -10,10 +10,10 @@ Minify at-rule params with PostCSS
 | ------------------ | :-------------: |
 | Full name          | postcss-minify-params |
 | Keywords           | postcss, css, postcss-plugin, minify, optimise, params |
-| # releases         | 31 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 4.4597647E7 |
-| # stars            | 4187.0 |
+| # downloads        | 4.6058398E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

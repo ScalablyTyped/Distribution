@@ -10,10 +10,10 @@ A scrollbar plugin that hides native scrollbars, provides custom styleable overl
 | ------------------ | :-------------: |
 | Full name          | overlayscrollbars |
 | Keywords           | overlayscrollbars, custom, styleable, scrollbar, scrollbars, scroll, frontend, browser |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 8487930.0 |
-| # stars            | 2311.0 |
+| # downloads        | 6150201.333333333 |
+| # stars            | 2515.0 |
 
 ## Links
 - [Homepage](https://kingsora.github.io/OverlayScrollbars)

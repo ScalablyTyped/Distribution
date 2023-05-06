@@ -10,10 +10,10 @@ Show some ❤️ to process errors
 | ------------------ | :-------------: |
 | Full name          | log-process-errors |
 | Keywords           | code-quality, debugging, error, error-handler, error-handling, exception, handler, handling, javascript, library, logging, monitoring, nodejs, process, promise, test, testing, typescript, uncaught, uncaught-exceptions |
-| # releases         | 8 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 352959.6666666667 |
-| # stars            | 450.0 |
+| # downloads        | 396769.6666666667 |
+| # stars            | 452.0 |
 
 ## Links
 - [Homepage](https://www.github.com/ehmicky/log-process-errors)

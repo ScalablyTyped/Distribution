@@ -11,7 +11,7 @@ Typings are for version 29.3.1
 | Keywords           | - |
 | # releases         | 68 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0642198166666667E8 |
+| # downloads        | 1.1579851933333333E8 |
 | # stars            | ? |
 
 ## Links

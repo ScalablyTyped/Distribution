@@ -10,10 +10,10 @@ A browser based code editor
 | ------------------ | :-------------: |
 | Full name          | monaco-editor |
 | Keywords           | - |
-| # releases         | 246 |
+| # releases         | 338 |
 | # dependents       | 0.0 |
-| # downloads        | 2099464.0 |
-| # stars            | 30915.0 |
+| # downloads        | 2433002.3333333335 |
+| # stars            | 32525.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/monaco-editor#readme)

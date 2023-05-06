@@ -10,10 +10,10 @@ String Tokenization Library for JavaScript
 | ------------------ | :-------------: |
 | Full name          | tokenizr |
 | Keywords           | string, token, scanner, lexer |
-| # releases         | 10 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 198821.33333333334 |
-| # stars            | 74.0 |
+| # downloads        | 189231.33333333334 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/rse/tokenizr)

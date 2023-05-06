@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/md5-js |
 | Keywords           | - |
-| # releases         | 54 |
+| # releases         | 65 |
 | # dependents       | 0.0 |
-| # downloads        | 6490128.0 |
-| # stars            | 1854.0 |
+| # downloads        | 8138143.0 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/md5-js)

@@ -12,7 +12,7 @@ A collection of animations for inline styles
 | Keywords           | react, animation, radium, css-in-js |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 138779.33333333334 |
+| # downloads        | 113751.66666666667 |
 | # stars            | ? |
 
 ## Links

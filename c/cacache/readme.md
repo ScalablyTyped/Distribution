@@ -10,10 +10,10 @@ Fast, fault-tolerant, cross-platform, disk-based, data-agnostic, content-address
 | ------------------ | :-------------: |
 | Full name          | cacache |
 | Keywords           | cache, caching, content-addressable, sri, sri hash, subresource integrity, cache, storage, store, file store, filesystem, disk cache, disk storage |
-| # releases         | 15 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1791089433333333E8 |
-| # stars            | 194.0 |
+| # downloads        | 1.21299008E8 |
+| # stars            | 218.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/cacache#readme)

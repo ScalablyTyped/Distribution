@@ -10,10 +10,10 @@ An interface for storing and retrieving blocks
 | ------------------ | :-------------: |
 | Full name          | interface-blockstore |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 169768.0 |
-| # stars            | 1.0 |
+| # downloads        | 198676.33333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-interfaces/tree/master/packages/interface-blockstore#readme)

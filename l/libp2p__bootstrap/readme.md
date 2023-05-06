@@ -10,10 +10,10 @@ Node.js IPFS Implementation of the railing process of a Node through a bootstrap
 | ------------------ | :-------------: |
 | Full name          | @libp2p/bootstrap |
 | Keywords           | IPFS |
-| # releases         | 15 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 14371.333333333334 |
-| # stars            | 25.0 |
+| # downloads        | 22721.333333333332 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-bootstrap#readme)

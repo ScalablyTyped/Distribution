@@ -12,8 +12,8 @@ ipns record definitions
 | Keywords           | ipfs, ipns |
 | # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 64292.333333333336 |
-| # stars            | 56.0 |
+| # downloads        | 76543.66666666667 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipns#readme)

@@ -10,10 +10,10 @@ Edge.js: run .NET and Node.js in-process on Windows, Mac OS, and Linux
 | ------------------ | :-------------: |
 | Full name          | edge-js |
 | Keywords           | owin, edge, net, clr, coreclr, c#, mono, managed, .net |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 9236.0 |
-| # stars            | 447.0 |
+| # downloads        | 9223.666666666666 |
+| # stars            | 465.0 |
 
 ## Links
 - [Homepage](https://github.com/agracio/edge-js)

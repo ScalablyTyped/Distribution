@@ -4,16 +4,16 @@
 Typings are for version 11.1.0
 
 ## Library description:
-Cypress.io end to end testing tool
+Cypress is a next generation front end testing tool built for the modern web
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cypress |
-| Keywords           | automation, browser, cypress, cypress.io, e2e, end-to-end, integration, mocks, runner, spies, stubs, test, testing |
-| # releases         | 69 |
+| Keywords           | automation, browser, cypress, cypress.io, e2e, end-to-end, integration, component, mocks, runner, spies, stubs, test, testing |
+| # releases         | 71 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7077902666666668E7 |
-| # stars            | 40649.0 |
+| # downloads        | 1.796767E7 |
+| # stars            | 42197.0 |
 
 ## Links
 - [Homepage](https://github.com/cypress-io/cypress)

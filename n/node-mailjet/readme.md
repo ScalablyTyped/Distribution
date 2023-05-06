@@ -10,10 +10,10 @@ Mailjet API client
 | ------------------ | :-------------: |
 | Full name          | node-mailjet |
 | Keywords           | email, sms, node, mail, mailjet |
-| # releases         | 19 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 242199.0 |
-| # stars            | 181.0 |
+| # downloads        | 223292.66666666666 |
+| # stars            | 202.0 |
 
 ## Links
 - [Homepage](https://github.com/mailjet/mailjet-apiv3-nodejs#readme)

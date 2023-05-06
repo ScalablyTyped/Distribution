@@ -10,10 +10,10 @@ Safe defaults for cssnano which require minimal configuration.
 | ------------------ | :-------------: |
 | Full name          | cssnano-preset-default |
 | Keywords           | - |
-| # releases         | 50 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 4.3566902666666664E7 |
-| # stars            | 4186.0 |
+| # downloads        | 4.4216646666666664E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

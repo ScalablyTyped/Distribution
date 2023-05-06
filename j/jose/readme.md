@@ -4,16 +4,16 @@
 Typings are for version 4.11.0
 
 ## Library description:
-'JSON Web Almost Everything' - JWA, JWS, JWE, JWT, JWK, JWKS with no dependencies using runtime's native crypto
+'JSON Web Almost Everything' - JWA, JWS, JWE, JWT, JWK, JWKS for Node.js, Browser, Cloudflare Workers, Deno, Bun, and other Web-interoperable runtimes
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jose |
-| Keywords           | browser, cloudflare, compact, decode, decrypt, deno, detached, ec, ecdsa, eddsa, electron, embedded, encrypt, flattened, general, isomorphic, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, oct, okp, payload, pem, pkcs8, rsa, secp256k1, sign, signature, spki, universal, validate, verify, webcrypto, workers, x509 |
-| # releases         | 104 |
+| Keywords           | browser, bun, cloudflare, compact, decode, decrypt, deno, detached, ec, ecdsa, eddsa, edge, electron, embedded, encrypt, flattened, general, isomorphic, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, netlify, next, nextjs, oct, okp, payload, pem, pkcs8, rsa, secp256k1, sign, signature, spki, universal, validate, vercel, verify, webcrypto, workers, x509 |
+| # releases         | 96 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0967955E7 |
-| # stars            | 2546.0 |
+| # downloads        | 1.2803859E7 |
+| # stars            | 2870.0 |
 
 ## Links
 - [Homepage](https://github.com/panva/jose)

@@ -10,12 +10,15 @@ A production-focused playground for live editing React code
 | ------------------ | :-------------: |
 | Full name          | react-live |
 | Keywords           | react, live, live edit, component playground, react live |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 451888.6666666667 |
-| # stars            | 3517.0 |
+| # downloads        | 436104.6666666667 |
+| # stars            | 3658.0 |
 
 ## Links
+- [Homepage](https://github.com/philpl/react-live#readme)
+- [Bugs](https://github.com/philpl/react-live/issues)
+- [Repository](https://github.com/philpl/react-live)
 - [Npm](https://www.npmjs.com/package/react-live)
     
 

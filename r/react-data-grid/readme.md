@@ -10,10 +10,10 @@ Feature-rich and customizable data grid React component
 | ------------------ | :-------------: |
 | Full name          | react-data-grid |
 | Keywords           | react, data grid |
-| # releases         | 47 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 335856.0 |
-| # stars            | 5574.0 |
+| # downloads        | 363206.6666666667 |
+| # stars            | 5698.0 |
 
 ## Links
 - [Homepage](https://github.com/adazzle/react-data-grid#readme)

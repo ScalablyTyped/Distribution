@@ -10,10 +10,10 @@ Tencent Cloud RTC SDK for Web
 | ------------------ | :-------------: |
 | Full name          | trtc-js-sdk |
 | Keywords           | webrtc, TRTC, rtc, javascript, video, audio, camera, microphone, live streaming, real-time communication |
-| # releases         | 46 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 7053.666666666667 |
-| # stars            | 36.0 |
+| # downloads        | 6347.666666666667 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://web.sdk.qcloud.com/trtc/webrtc/doc/en/index.html)

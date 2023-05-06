@@ -10,9 +10,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | jest-circus |
 | Keywords           | - |
-| # releases         | 78 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 4.8109107666666664E7 |
+| # downloads        | 5.4006330666666664E7 |
 | # stars            | ? |
 
 ## Links

@@ -10,12 +10,15 @@ Simple one-to-one WebRTC data channels
 | ------------------ | :-------------: |
 | Full name          | @libp2p/webrtc-peer |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 7003.333333333333 |
-| # stars            | 1.0 |
+| # downloads        | 14081.333333333334 |
+| # stars            | 2.0 |
 
 ## Links
+- [Homepage](https://github.com/libp2p/js-libp2p-webrtc-peer#readme)
+- [Bugs](https://github.com/libp2p/js-libp2p-webrtc-peer/issues)
+- [Repository](https://github.com/libp2p/js-libp2p-webrtc-peer)
 - [Npm](https://www.npmjs.com/package/%40libp2p%2Fwebrtc-peer)
     
 

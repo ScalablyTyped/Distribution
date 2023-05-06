@@ -10,9 +10,9 @@ A convenience-wrapper around protocol-buffers and lp-messages functions
 | ------------------ | :-------------: |
 | Full name          | it-pb-stream |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 8933.0 |
+| # downloads        | 26478.0 |
 | # stars            | 0.0 |
 
 ## Links

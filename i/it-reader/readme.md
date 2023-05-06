@@ -10,9 +10,9 @@ Read an exact number of bytes from a binary (async) iterable
 | ------------------ | :-------------: |
 | Full name          | it-reader |
 | Keywords           | async, binary, buffer, it, iterable, iterator, read, stream |
-| # releases         | 6 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 213830.66666666666 |
+| # downloads        | 164696.33333333334 |
 | # stars            | 2.0 |
 
 ## Links

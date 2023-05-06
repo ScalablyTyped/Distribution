@@ -10,10 +10,10 @@ A React renderer for Threejs
 | ------------------ | :-------------: |
 | Full name          | @react-three/fiber |
 | Keywords           | react, renderer, fiber, three, threejs |
-| # releases         | 154 |
+| # releases         | 160 |
 | # dependents       | 0.0 |
-| # downloads        | 439339.0 |
-| # stars            | 19733.0 |
+| # downloads        | 533530.6666666666 |
+| # stars            | 20837.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/react-three-fiber#readme)

@@ -10,10 +10,10 @@ Create SAML assertions. Supports SAML 1.1 and SAML 2.0 tokens.
 | ------------------ | :-------------: |
 | Full name          | saml |
 | Keywords           | saml, authentication |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 179006.0 |
-| # stars            | 58.0 |
+| # downloads        | 171179.33333333334 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/node-saml#readme)

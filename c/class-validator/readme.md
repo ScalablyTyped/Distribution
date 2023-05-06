@@ -10,10 +10,10 @@ Decorator-based property validation for classes.
 | ------------------ | :-------------: |
 | Full name          | class-validator |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 5642293.333333333 |
-| # stars            | 7960.0 |
+| # downloads        | 7059432.333333333 |
+| # stars            | 8661.0 |
 
 ## Links
 - [Homepage](https://github.com/typestack/class-validator#readme)

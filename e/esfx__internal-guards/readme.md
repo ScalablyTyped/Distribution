@@ -10,13 +10,15 @@ This package provides internal utilities for @esfx and is not intended for use i
 | ------------------ | :-------------: |
 | Full name          | @esfx/internal-guards |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 21706.666666666668 |
-| # stars            | 161.0 |
+| # downloads        | 13127.0 |
+| # stars            | 169.0 |
 
 ## Links
+- [Homepage](https://github.com/esfx/esfx#readme)
 - [Bugs](https://github.com/esfx/esfx/issues)
+- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Finternal-guards)
     
 

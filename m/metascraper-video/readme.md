@@ -10,10 +10,10 @@ Get video property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-video |
 | Keywords           | metascraper, video |
-| # releases         | 89 |
+| # releases         | 81 |
 | # dependents       | 0.0 |
-| # downloads        | 4069.3333333333335 |
-| # stars            | 1802.0 |
+| # downloads        | 4226.666666666667 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

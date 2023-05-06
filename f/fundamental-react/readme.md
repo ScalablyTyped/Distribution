@@ -10,10 +10,10 @@ SAP Fundamental Library, implemented in React
 | ------------------ | :-------------: |
 | Full name          | fundamental-react |
 | Keywords           | - |
-| # releases         | 76 |
+| # releases         | 49 |
 | # dependents       | 0.0 |
-| # downloads        | 5614.0 |
-| # stars            | 167.0 |
+| # downloads        | 5758.0 |
+| # stars            | 173.0 |
 
 ## Links
 - [Homepage](https://sap.github.io/fundamental-react)

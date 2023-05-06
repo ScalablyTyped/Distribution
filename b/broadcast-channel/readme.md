@@ -4,16 +4,16 @@
 Typings are for version 4.18.1
 
 ## Library description:
-A BroadcastChannel that works in New Browsers, Old Browsers, WebWorkers and NodeJs
+A BroadcastChannel that works in New Browsers, Old Browsers, WebWorkers and NodeJs and iframes
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | broadcast-channel |
-| Keywords           | broadcast-channel, broadcastchannel, broadcast, polyfill, localstorage, indexeddb, postMessage, crosstab, ipc, leader-election |
+| Keywords           | broadcast-channel, broadcastchannel, broadcast, polyfill, shim, events, localstorage, indexeddb, postMessage, crosstab, ipc, leader-election |
 | # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 6530689.333333333 |
-| # stars            | 1348.0 |
+| # downloads        | 6333759.666666667 |
+| # stars            | 1423.0 |
 
 ## Links
 - [Homepage](https://github.com/pubkey/broadcast-channel#readme)

@@ -10,10 +10,10 @@ Popover2 and dependent components
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/popover2 |
 | Keywords           | palantir, blueprint, components, styles, theme, ui |
-| # releases         | 85 |
+| # releases         | 99 |
 | # dependents       | 0.0 |
-| # downloads        | 234641.33333333334 |
-| # stars            | 19272.0 |
+| # downloads        | 296160.6666666667 |
+| # stars            | 19529.0 |
 
 ## Links
 - [Homepage](https://github.com/palantir/blueprint#readme)

@@ -10,10 +10,10 @@ TypeScript-STL (Standard Template Library, migrated from C++)
 | ------------------ | :-------------: |
 | Full name          | typescript-stl |
 | Keywords           | stl, standard template library, typescript, standard, template, container, library, vector, deque, list, queue, stack, hash, tree, map, set, iterator |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 208.33333333333334 |
-| # stars            | 485.0 |
+| # downloads        | 268.6666666666667 |
+| # stars            | 499.0 |
 
 ## Links
 - [Homepage](https://github.com/samchon/tstl)

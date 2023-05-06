@@ -10,10 +10,10 @@ Official webpack plugin for Sentry
 | ------------------ | :-------------: |
 | Full name          | @sentry/webpack-plugin |
 | Keywords           | sentry, sentry-cli, webpack, source-map |
-| # releases         | 22 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 4024052.6666666665 |
-| # stars            | 590.0 |
+| # downloads        | 4555208.0 |
+| # stars            | 612.0 |
 
 ## Links
 - [Homepage](https://github.com/getsentry/sentry-webpack-plugin)

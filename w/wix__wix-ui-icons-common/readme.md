@@ -4,15 +4,15 @@
 Typings are for version 3.0.10
 
 ## Library description:
-A set of commonly used icons for the Wix UI design system. [Storybook](https://bo.wix.com/pages/wix-ui-icons-common)
+A set of commonly used icons for the Wix UI design system. [Storybook](https://wix-pages.com/wix-ui-icons-common)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wix/wix-ui-icons-common |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 872.6666666666666 |
+| # downloads        | 1152.6666666666667 |
 | # stars            | ? |
 
 ## Links

@@ -9,10 +9,10 @@ Multiformats Murmur3 implementations
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @multiformats/murmur3 |
-| Keywords           | ipfs, ipld, multiformats, hash, multihash, murmur3 |
-| # releases         | 18 |
+| Keywords           | hash, ipfs, ipld, multiformats, multihash, murmur3 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 93468.0 |
+| # downloads        | 142595.66666666666 |
 | # stars            | 2.0 |
 
 ## Links

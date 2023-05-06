@@ -12,8 +12,8 @@ Universal abstract-level database for Node.js and browsers
 | Keywords           | level, leveldb, stream, database, db, store, storage, json |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 790235.0 |
-| # stars            | 1278.0 |
+| # downloads        | 1241887.3333333333 |
+| # stars            | 1324.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/level)

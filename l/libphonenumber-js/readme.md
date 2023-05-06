@@ -10,9 +10,9 @@ A simpler (and smaller) rewrite of Google Android's libphonenumber library in ja
 | ------------------ | :-------------: |
 | Full name          | libphonenumber-js |
 | Keywords           | telephone, phone, number, input, mobile, libphonenumber |
-| # releases         | 74 |
+| # releases         | 64 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0920813666666666E7 |
+| # downloads        | 1.2426344333333334E7 |
 | # stars            | ? |
 
 ## Links

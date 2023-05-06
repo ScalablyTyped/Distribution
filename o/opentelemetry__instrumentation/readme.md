@@ -10,10 +10,10 @@ Base class for node which OpenTelemetry instrumentation modules extend
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/instrumentation |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling, metrics, stats |
-| # releases         | 98 |
+| # releases         | 88 |
 | # dependents       | 0.0 |
-| # downloads        | 3297818.3333333335 |
-| # stars            | 1462.0 |
+| # downloads        | 6224209.0 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-instrumentation)

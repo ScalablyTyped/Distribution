@@ -10,10 +10,10 @@ JupyterLab - CodeMirror Provider Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/codemirror-extension |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 137 |
 | # dependents       | 0.0 |
-| # downloads        | 193717.0 |
-| # stars            | ? |
+| # downloads        | 89541.0 |
+| # stars            | 12551.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

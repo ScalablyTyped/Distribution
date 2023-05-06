@@ -10,10 +10,10 @@ render domhandler DOM nodes to a string
 | ------------------ | :-------------: |
 | Full name          | dom-serializer |
 | Keywords           | html, xml, render |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1.18946514E8 |
-| # stars            | 70.0 |
+| # downloads        | 1.3589499166666666E8 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/cheeriojs/dom-serializer#readme)

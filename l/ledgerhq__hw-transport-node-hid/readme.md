@@ -10,10 +10,10 @@ Ledger Hardware Wallet Node implementation of the communication layer, using nod
 | ------------------ | :-------------: |
 | Full name          | @ledgerhq/hw-transport-node-hid |
 | Keywords           | Ledger, LedgerWallet, hid, node-hid, NanoS, Blue, Hardware Wallet |
-| # releases         | 75 |
+| # releases         | 92 |
 | # dependents       | 0.0 |
-| # downloads        | 181753.66666666666 |
-| # stars            | 110.0 |
+| # downloads        | 171063.33333333334 |
+| # stars            | 209.0 |
 
 ## Links
 - [Homepage](https://github.com/LedgerHQ/ledger-live/tree/develop/libs/ledgerjs/packages/hw-transport-node-hid)

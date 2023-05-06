@@ -10,10 +10,10 @@ NodeJS/browser bindings to the aws-c-* libraries
 | ------------------ | :-------------: |
 | Full name          | aws-crt |
 | Keywords           | - |
-| # releases         | 59 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 371057.0 |
-| # stars            | 22.0 |
+| # downloads        | 650313.3333333334 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/awslabs/aws-crt-nodejs)

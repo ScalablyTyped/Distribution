@@ -10,10 +10,10 @@ Help in opening URLs (mostly HTTP) in a complex world — basic and digest authe
 | ------------------ | :-------------: |
 | Full name          | urllib |
 | Keywords           | urllib, http, urlopen, curl, wget, request, https, undici, fetch |
-| # releases         | 27 |
+| # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 901025.6666666666 |
-| # stars            | 679.0 |
+| # downloads        | 962880.6666666666 |
+| # stars            | 693.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/urllib)

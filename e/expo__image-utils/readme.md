@@ -10,10 +10,10 @@ A package used by Expo CLI for processing images
 | ------------------ | :-------------: |
 | Full name          | @expo/image-utils |
 | Keywords           | json |
-| # releases         | 19 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1540847.3333333333 |
-| # stars            | 2301.0 |
+| # downloads        | 2086820.6666666667 |
+| # stars            | 2358.0 |
 
 ## Links
 - [Homepage](https://github.com/expo/expo-cli/tree/main/packages/image-utils#readme)

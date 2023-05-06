@@ -12,10 +12,13 @@ Simple wrapper for cross-browser usage of the JavaScript Fullscreen API, which l
 | Keywords           | browser, fullscreen |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 4987872.666666667 |
-| # stars            | 6545.0 |
+| # downloads        | 5546688.0 |
+| # stars            | 6668.0 |
 
 ## Links
+- [Homepage](https://github.com/sindresorhus/screenfull#readme)
+- [Bugs](https://github.com/sindresorhus/screenfull/issues)
+- [Repository](https://github.com/sindresorhus/screenfull)
 - [Npm](https://www.npmjs.com/package/screenfull)
     
 

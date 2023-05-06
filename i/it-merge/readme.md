@@ -10,10 +10,10 @@ Treat one or more iterables as a single iterable
 | ------------------ | :-------------: |
 | Full name          | it-merge |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 49760.666666666664 |
-| # stars            | 200.0 |
+| # downloads        | 45490.666666666664 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-merge#readme)

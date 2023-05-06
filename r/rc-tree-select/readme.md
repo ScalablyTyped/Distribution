@@ -10,10 +10,10 @@ tree-select ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-tree-select |
 | Keywords           | react, react-component, react-tree-select, tree-select |
-| # releases         | 37 |
+| # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 3448641.3333333335 |
-| # stars            | 242.0 |
+| # downloads        | 3763744.3333333335 |
+| # stars            | 247.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/tree-select)

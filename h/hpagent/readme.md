@@ -10,10 +10,10 @@ A ready to use http and https agent for working with proxies that keeps connecti
 | ------------------ | :-------------: |
 | Full name          | hpagent |
 | Keywords           | agent, http, https, secure, proxy, alive, keep-alive |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 3117387.6666666665 |
-| # stars            | 109.0 |
+| # downloads        | 3745423.3333333335 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://github.com/delvedor/hpagent#readme)

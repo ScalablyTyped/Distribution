@@ -10,9 +10,9 @@ mdast extension to parse and serialize GFM strikethrough
 | ------------------ | :-------------: |
 | Full name          | mdast-util-gfm-strikethrough |
 | Keywords           | unist, mdast, mdast-util, util, utility, markdown, markup, strikethrough, strike, through, del, delete, deletion, gfm |
-| # releases         | 9 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 3102206.3333333335 |
+| # downloads        | 4021820.6666666665 |
 | # stars            | 4.0 |
 
 ## Links

@@ -10,10 +10,10 @@ A small React hook to turn elements into fully renderable & editable content sur
 | ------------------ | :-------------: |
 | Full name          | use-editable |
 | Keywords           | contenteditable, text editing, react, hook |
-| # releases         | 16 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 13384.666666666666 |
-| # stars            | 385.0 |
+| # downloads        | 48971.333333333336 |
+| # stars            | 396.0 |
 
 ## Links
 - [Homepage](https://github.com/kitten/use-editable#readme)

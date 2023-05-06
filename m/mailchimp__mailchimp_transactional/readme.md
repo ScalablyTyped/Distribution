@@ -10,12 +10,15 @@ The official Node client library for the Mailchimp Transactional API
 | ------------------ | :-------------: |
 | Full name          | @mailchimp/mailchimp_transactional |
 | Keywords           | mailchimp, api, v3, transactional |
-| # releases         | 41 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 157937.33333333334 |
-| # stars            | 26.0 |
+| # downloads        | 188615.0 |
+| # stars            | 30.0 |
 
 ## Links
+- [Homepage](https://github.com/mailchimp/mailchimp-transactional-node)
+- [Bugs](https://github.com/mailchimp/mailchimp-client-lib-codegen/issues)
+- [Repository](https://github.com/mailchimp/mailchimp-transactional-node)
 - [Npm](https://www.npmjs.com/package/%40mailchimp%2Fmailchimp_transactional)
     
 

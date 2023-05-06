@@ -10,15 +10,15 @@ Error handler for use in development and production environments.
 | ------------------ | :-------------: |
 | Full name          | strong-error-handler |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 260378.33333333334 |
-| # stars            | 36.0 |
+| # downloads        | 252484.66666666666 |
+| # stars            | 39.0 |
 
 ## Links
-- [Homepage](https://github.com/strongloop/strong-error-handler#readme)
-- [Bugs](https://github.com/strongloop/strong-error-handler/issues)
-- [Repository](https://github.com/strongloop/strong-error-handler)
+- [Homepage](https://github.com/loopbackio/strong-error-handler#readme)
+- [Bugs](https://github.com/loopbackio/strong-error-handler/issues)
+- [Repository](https://github.com/loopbackio/strong-error-handler)
 - [Npm](https://www.npmjs.com/package/strong-error-handler)
     
 

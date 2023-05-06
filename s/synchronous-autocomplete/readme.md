@@ -10,10 +10,10 @@ Fast, simple autocompletion.
 | ------------------ | :-------------: |
 | Full name          | synchronous-autocomplete |
 | Keywords           | autocomplete, autocompletion, search |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 128.33333333333334 |
-| # stars            | 9.0 |
+| # downloads        | 160.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/derhuerst/synchronous-autocomplete)

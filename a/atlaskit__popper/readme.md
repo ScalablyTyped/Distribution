@@ -10,9 +10,9 @@ Wrapper for react-popper with common config and some helpers
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/popper |
 | Keywords           | atlaskit, ui |
-| # releases         | 14 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 176932.33333333334 |
+| # downloads        | 178136.33333333334 |
 | # stars            | ? |
 
 ## Links

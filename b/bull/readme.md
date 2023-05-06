@@ -10,10 +10,10 @@ Job manager
 | ------------------ | :-------------: |
 | Full name          | bull |
 | Keywords           | job, queue, task, parallel |
-| # releases         | 63 |
+| # releases         | 65 |
 | # dependents       | 0.0 |
-| # downloads        | 1656172.3333333333 |
-| # stars            | 12961.0 |
+| # downloads        | 1864374.6666666667 |
+| # stars            | 13334.0 |
 
 ## Links
 - [Homepage](https://github.com/OptimalBits/bull#readme)

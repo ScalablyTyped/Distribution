@@ -10,10 +10,10 @@ JavaScript library for the FIWARE Context Broker services (web browsers & Node.j
 | ------------------ | :-------------: |
 | Full name          | ngsijs |
 | Keywords           | context broker, fiware, FIWARE, fiware-orion, iot, IoT, NGSI, NGSIv2, NGSI-LD, orion, wirecloud |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 534.3333333333334 |
-| # stars            | 2.0 |
+| # downloads        | 197.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/Ficodes/ngsijs)

@@ -10,10 +10,10 @@ Interactive Brush Line Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-brush-line |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 59 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 750882.6666666666 |
-| # stars            | 9887.0 |
+| # downloads        | 749949.6666666666 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

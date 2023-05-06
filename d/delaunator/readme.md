@@ -12,8 +12,8 @@ An incredibly fast JavaScript library for Delaunay triangulation of 2D points
 | Keywords           | delaunay triangulation, computational geometry, algorithms |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 4937577.333333333 |
-| # stars            | 1773.0 |
+| # downloads        | 5913450.0 |
+| # stars            | 1874.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/delaunator#readme)

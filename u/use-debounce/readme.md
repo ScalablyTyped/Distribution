@@ -10,10 +10,10 @@ Debounce hook for react
 | ------------------ | :-------------: |
 | Full name          | use-debounce |
 | Keywords           | debounce, react-hook, react |
-| # releases         | 23 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 3559406.6666666665 |
-| # stars            | 1971.0 |
+| # downloads        | 3806030.6666666665 |
+| # stars            | 2093.0 |
 
 ## Links
 - [Homepage](https://github.com/xnimorz/use-debounce#readme)

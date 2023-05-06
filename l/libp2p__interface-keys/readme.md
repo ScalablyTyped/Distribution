@@ -10,10 +10,10 @@ Keys interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-keys |
 | Keywords           | interface, libp2p |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 6480.666666666667 |
-| # stars            | 67.0 |
+| # downloads        | 28641.0 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interface-keys#readme)

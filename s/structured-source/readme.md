@@ -12,13 +12,13 @@ Provides StructuredSource and functionality for converting range and loc vice ve
 | Keywords           | location, range, abstract, syntax, tree |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 383824.0 |
+| # downloads        | 367959.6666666667 |
 | # stars            | 7.0 |
 
 ## Links
-- [Homepage](https://github.com/Constellation/structured-source)
-- [Bugs](https://github.com/Constellation/structured-source/issues)
-- [Repository](https://github.com/Constellation/structured-source)
+- [Homepage](https://github.com/textlint/structured-source)
+- [Bugs](https://github.com/textlint/structured-source/issues)
+- [Repository](https://github.com/textlint/structured-source)
 - [Npm](https://www.npmjs.com/package/structured-source)
     
 

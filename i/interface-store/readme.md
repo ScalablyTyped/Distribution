@@ -10,10 +10,10 @@ A generic interface for storing and retrieving data
 | ------------------ | :-------------: |
 | Full name          | interface-store |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 290442.0 |
-| # stars            | 1.0 |
+| # downloads        | 346329.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-interfaces/tree/master/packages/interface-store#readme)

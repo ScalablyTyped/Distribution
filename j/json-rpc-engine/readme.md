@@ -10,10 +10,10 @@ A tool for processing JSON-RPC messages.
 | ------------------ | :-------------: |
 | Full name          | json-rpc-engine |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1976550.3333333333 |
-| # stars            | 92.0 |
+| # downloads        | 2273793.6666666665 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/MetaMask/json-rpc-engine#readme)

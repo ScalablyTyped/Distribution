@@ -10,9 +10,9 @@ Webpack plugin for creating custom path template tags.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/custom-templated-path-webpack-plugin |
 | Keywords           | wordpress, gutenberg, webpack, plugin, webpack-plugin |
-| # releases         | 22 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 10978.0 |
+| # downloads        | 4209.0 |
 | # stars            | ? |
 
 ## Links

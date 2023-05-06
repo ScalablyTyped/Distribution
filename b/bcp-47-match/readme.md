@@ -12,8 +12,8 @@ Match BCP 47 language tags with language ranges per RFC 4647
 | Keywords           | bcp, 47, bcp47, bcp-47, language, tag, match, matching, check, rfc, 4647 |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 363254.6666666667 |
-| # stars            | 18.0 |
+| # downloads        | 527021.6666666666 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/bcp-47-match#readme)

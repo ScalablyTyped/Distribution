@@ -10,10 +10,10 @@ Async iterable filename pattern matcher
 | ------------------ | :-------------: |
 | Full name          | it-glob |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 437367.0 |
-| # stars            | 200.0 |
+| # downloads        | 371384.0 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-glob#readme)

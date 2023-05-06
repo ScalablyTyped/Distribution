@@ -10,10 +10,10 @@ multiaddr implementation (binary + string representation of network addresses)
 | ------------------ | :-------------: |
 | Full name          | @multiformats/multiaddr |
 | Keywords           | binary, multiaddr, string |
-| # releases         | 31 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 57362.666666666664 |
-| # stars            | 96.0 |
+| # downloads        | 94804.66666666667 |
+| # stars            | 102.0 |
 
 ## Links
 - [Homepage](https://github.com/multiformats/js-multiaddr#readme)

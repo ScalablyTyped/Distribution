@@ -10,10 +10,10 @@ i18next-fs-backend is a backend layer for i18next using in Node.js and for Deno 
 | ------------------ | :-------------: |
 | Full name          | i18next-fs-backend |
 | Keywords           | i18next, i18next-backend, i18next-fs-backend |
-| # releases         | 6 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1322361.6666666667 |
-| # stars            | 52.0 |
+| # downloads        | 1606272.6666666667 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/i18next/i18next-fs-backend)

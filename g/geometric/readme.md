@@ -10,10 +10,10 @@ A JavaScript library with geometric functions.
 | ------------------ | :-------------: |
 | Full name          | geometric |
 | Keywords           | geometry |
-| # releases         | 16 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 12641.666666666666 |
-| # stars            | 774.0 |
+| # downloads        | 15635.333333333334 |
+| # stars            | 816.0 |
 
 ## Links
 - [Homepage](https://github.com/HarryStevens/geometric#readme)

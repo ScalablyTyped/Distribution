@@ -10,10 +10,10 @@ Icons used in the UI libs
 | ------------------ | :-------------: |
 | Full name          | @dhis2/ui-icons |
 | Keywords           | - |
-| # releases         | 204 |
+| # releases         | 213 |
 | # dependents       | 0.0 |
-| # downloads        | 5259.666666666667 |
-| # stars            | 18.0 |
+| # downloads        | 8385.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/dhis2/ui#readme)

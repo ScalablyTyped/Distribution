@@ -10,10 +10,10 @@ Load a submodule, plugin, or file
 | ------------------ | :-------------: |
 | Full name          | load-plugin |
 | Keywords           | load, submodule, package, plugin |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 509911.6666666667 |
-| # stars            | 9.0 |
+| # downloads        | 737465.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/load-plugin#readme)

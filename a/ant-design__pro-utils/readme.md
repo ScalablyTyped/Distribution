@@ -10,10 +10,10 @@ Typings are for version 2.3.4
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-utils |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 189 |
+| # releases         | 190 |
 | # dependents       | 0.0 |
-| # downloads        | 173033.66666666666 |
-| # stars            | 2883.0 |
+| # downloads        | 176169.33333333334 |
+| # stars            | 3211.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/pro-components/tree/master/packages/utils#readme)

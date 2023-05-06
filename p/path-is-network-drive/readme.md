@@ -9,9 +9,9 @@ Typings are for version 1.0.16
 | ------------------ | :-------------: |
 | Full name          | path-is-network-drive |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 1255588.0 |
+| # downloads        | 1585454.0 |
 | # stars            | 1.0 |
 
 ## Links

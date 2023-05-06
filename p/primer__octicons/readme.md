@@ -10,10 +10,10 @@ A scalable set of icons handcrafted with <3 by GitHub.
 | ------------------ | :-------------: |
 | Full name          | @primer/octicons |
 | Keywords           | GitHub, icons, svg, octicons |
-| # releases         | 401 |
+| # releases         | 330 |
 | # dependents       | 0.0 |
-| # downloads        | 322533.3333333333 |
-| # stars            | 7418.0 |
+| # downloads        | 373494.6666666667 |
+| # stars            | 7606.0 |
 
 ## Links
 - [Homepage](https://primer.style/octicons)

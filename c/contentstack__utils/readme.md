@@ -12,7 +12,7 @@ Contentstack utilities for Javascript
 | Keywords           | Contentstack, contentstack, contentstack javascript, Contentstack javascript |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 111299.0 |
+| # downloads        | 137459.0 |
 | # stars            | 1.0 |
 
 ## Links

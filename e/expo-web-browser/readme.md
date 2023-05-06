@@ -12,8 +12,8 @@ Provides access to the system's web browser and supports handling redirects. On 
 | Keywords           | react-native, expo, expo-web-browser, web, browser |
 | # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 389149.0 |
-| # stars            | 17981.0 |
+| # downloads        | 402338.3333333333 |
+| # stars            | 18105.0 |
 
 ## Links
 - [Homepage](https://docs.expo.dev/versions/latest/sdk/webbrowser/)

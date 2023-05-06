@@ -12,8 +12,8 @@ Lumino Drag and Drop
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 283023.6666666667 |
-| # stars            | 370.0 |
+| # downloads        | 194812.33333333334 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

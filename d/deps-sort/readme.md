@@ -10,9 +10,9 @@ sort module-deps output for deterministic browserify bundles
 | ------------------ | :-------------: |
 | Full name          | deps-sort |
 | Keywords           | dependency, graph, browser, browserify, module-deps, browser-pack, sorted, determinism |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 5776351.666666667 |
+| # downloads        | 5635330.333333333 |
 | # stars            | 16.0 |
 
 ## Links

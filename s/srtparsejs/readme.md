@@ -10,10 +10,10 @@ A javascript srt text parser and player.
 | ------------------ | :-------------: |
 | Full name          | srtparsejs |
 | Keywords           | subtitle, srt, parse, srtparse, parser, player, srtplayer |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 143.33333333333334 |
-| # stars            | 0.0 |
+| # downloads        | 762.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/Qiming-Liu/srtparse.js)

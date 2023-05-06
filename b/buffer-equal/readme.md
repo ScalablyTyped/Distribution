@@ -12,13 +12,13 @@ return whether two buffers are equal
 | Keywords           | buffer, equal |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6971329E7 |
-| # stars            | 21.0 |
+| # downloads        | 1.741056E7 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-buffer-equal#readme)
-- [Bugs](https://github.com/substack/node-buffer-equal/issues)
-- [Repository](https://github.com/substack/node-buffer-equal)
+- [Homepage](https://github.com/inspect-js/buffer-equal#readme)
+- [Bugs](https://github.com/inspect-js/buffer-equal/issues)
+- [Repository](https://github.com/inspect-js/buffer-equal)
 - [Npm](https://www.npmjs.com/package/buffer-equal)
     
 

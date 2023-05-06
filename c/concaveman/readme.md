@@ -10,10 +10,10 @@ Fast 2D concave hull algorithm in JavaScript (generates an outline of a point se
 | ------------------ | :-------------: |
 | Full name          | concaveman |
 | Keywords           | concave, hull, algorithm, geometry, shape, outline |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 922380.0 |
-| # stars            | 561.0 |
+| # downloads        | 1097945.0 |
+| # stars            | 579.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/concaveman#readme)

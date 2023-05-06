@@ -12,10 +12,13 @@ Helper functions for managing amounts in different currencies
 | Keywords           | currency, coinify, fiat, crypto |
 | # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 1240.3333333333333 |
+| # downloads        | 1654.0 |
 | # stars            | 3.0 |
 
 ## Links
+- [Homepage](https://github.com/CoinifySoftware/node-currency#readme)
+- [Bugs](https://github.com/CoinifySoftware/node-currency/issues)
+- [Repository](https://github.com/CoinifySoftware/node-currency)
 - [Npm](https://www.npmjs.com/package/%40coinify%2Fcurrency)
     
 

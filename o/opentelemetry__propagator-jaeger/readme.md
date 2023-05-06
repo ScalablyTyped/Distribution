@@ -12,8 +12,8 @@ OpenTelemetry Jaeger propagator provides HTTP header propagation for systems tha
 | Keywords           | opentelemetry, nodejs, tracing, profiling, jaeger |
 | # releases         | 97 |
 | # dependents       | 0.0 |
-| # downloads        | 3624731.6666666665 |
-| # stars            | 1462.0 |
+| # downloads        | 3662874.6666666665 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-propagator-jaeger)

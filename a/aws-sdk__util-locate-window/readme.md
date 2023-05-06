@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-locate-window |
 | Keywords           | - |
-| # releases         | 32 |
+| # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 9558928.333333334 |
-| # stars            | 1851.0 |
+| # downloads        | 1.1793645333333334E7 |
+| # stars            | 1962.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-locate-window)

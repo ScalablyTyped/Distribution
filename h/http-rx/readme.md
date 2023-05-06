@@ -10,9 +10,9 @@ A reactive http client based on Observable and Request
 | ------------------ | :-------------: |
 | Full name          | http-rx |
 | Keywords           | Rx, http, Observable |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 155.33333333333334 |
+| # downloads        | 77.0 |
 | # stars            | 8.0 |
 
 ## Links

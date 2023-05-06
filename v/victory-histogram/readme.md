@@ -10,10 +10,10 @@ Histogram Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-histogram |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 60 |
+| # releases         | 45 |
 | # dependents       | 0.0 |
-| # downloads        | 632587.3333333334 |
-| # stars            | 9887.0 |
+| # downloads        | 659047.3333333334 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

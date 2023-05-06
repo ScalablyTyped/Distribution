@@ -10,10 +10,10 @@ Shared utilities for to be used in middleware packages.
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-middleware |
 | Keywords           | aws, middleware |
-| # releases         | 13 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 6917150.666666667 |
-| # stars            | 1854.0 |
+| # downloads        | 1.3794012333333334E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3#readme)

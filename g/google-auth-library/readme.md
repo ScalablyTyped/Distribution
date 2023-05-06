@@ -10,10 +10,10 @@ Google APIs Authentication Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | google-auth-library |
 | Keywords           | google, api, google apis, client, client library |
-| # releases         | 51 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 2.4693453E7 |
-| # stars            | 1373.0 |
+| # downloads        | 2.6593543E7 |
+| # stars            | 1408.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/google-auth-library-nodejs#readme)

@@ -10,10 +10,10 @@ A tiny (414B) and fast utility to convert milliseconds to and from strings.
 | ------------------ | :-------------: |
 | Full name          | @lukeed/ms |
 | Keywords           | ms, time, format, milliseconds, convert |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 62260.666666666664 |
-| # stars            | 129.0 |
+| # downloads        | 85919.33333333333 |
+| # stars            | 145.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/ms#readme)

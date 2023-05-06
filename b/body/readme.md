@@ -12,8 +12,8 @@ Body parsing
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2489102.0 |
-| # stars            | 118.0 |
+| # downloads        | 2757292.6666666665 |
+| # stars            | 120.0 |
 
 ## Links
 - [Homepage](https://github.com/Raynos/body)

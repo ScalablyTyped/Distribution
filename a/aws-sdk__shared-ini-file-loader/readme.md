@@ -10,10 +10,10 @@ Typings are for version 3.209.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/shared-ini-file-loader |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6627307E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.2956248333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/shared-ini-file-loader)

@@ -10,10 +10,10 @@ Modern copy to clipboard. No Flash. Just 2kb
 | ------------------ | :-------------: |
 | Full name          | clipboard |
 | Keywords           | clipboard, copy, cut |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 9645271.0 |
-| # stars            | 32286.0 |
+| # downloads        | 8750764.333333334 |
+| # stars            | 32730.0 |
 
 ## Links
 - [Homepage](https://clipboardjs.com)

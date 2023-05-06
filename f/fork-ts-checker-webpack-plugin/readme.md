@@ -10,10 +10,10 @@ Runs typescript type checker and linter on separate process.
 | ------------------ | :-------------: |
 | Full name          | fork-ts-checker-webpack-plugin |
 | Keywords           | webpack, plugin, typescript, typecheck, ts-loader, webpack, fork, fast |
-| # releases         | 83 |
+| # releases         | 64 |
 | # dependents       | 0.0 |
-| # downloads        | 5.6885227E7 |
-| # stars            | 1681.0 |
+| # downloads        | 6.1375115E7 |
+| # stars            | 1774.0 |
 
 ## Links
 - [Homepage](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin#readme)

@@ -10,15 +10,15 @@ Mixin to allow caching container and its children to a bitmap texture
 | ------------------ | :-------------: |
 | Full name          | @pixi/mixin-cache-as-bitmap |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 356648.6666666667 |
-| # stars            | 37483.0 |
+| # downloads        | 380820.6666666667 |
+| # stars            | 38551.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fmixin-cache-as-bitmap)
     
 

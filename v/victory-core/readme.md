@@ -10,10 +10,10 @@ Victory Core
 | ------------------ | :-------------: |
 | Full name          | victory-core |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 58 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 893591.6666666666 |
-| # stars            | 9887.0 |
+| # downloads        | 909022.6666666666 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

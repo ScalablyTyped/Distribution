@@ -10,9 +10,9 @@ Blob utilities for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/blob |
 | Keywords           | wordpress, gutenberg, blob |
-| # releases         | 47 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 118717.66666666667 |
+| # downloads        | 123277.33333333333 |
 | # stars            | ? |
 
 ## Links

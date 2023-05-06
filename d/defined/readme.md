@@ -12,10 +12,13 @@ return the first argument that is `!== undefined`
 | Keywords           | undefined, short-circuit, ||, or, //, defined-or |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2.3294248666666668E7 |
-| # stars            | 60.0 |
+| # downloads        | 2.700436E7 |
+| # stars            | 1.0 |
 
 ## Links
+- [Homepage](https://github.com/inspect-js/defined)
+- [Bugs](https://github.com/inspect-js/defined/issues)
+- [Repository](https://github.com/inspect-js/defined)
 - [Npm](https://www.npmjs.com/package/defined)
     
 

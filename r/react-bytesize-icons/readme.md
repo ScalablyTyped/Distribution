@@ -10,9 +10,9 @@ Bytesize Icons as React Components.
 | ------------------ | :-------------: |
 | Full name          | react-bytesize-icons |
 | Keywords           | bytesize, icons, icons, ui, react, components |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 346.3333333333333 |
+| # downloads        | 341.0 |
 | # stars            | 60.0 |
 
 ## Links

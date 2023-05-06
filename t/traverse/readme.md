@@ -10,15 +10,15 @@ traverse and transform objects by visiting every node on a recursive walk
 | ------------------ | :-------------: |
 | Full name          | traverse |
 | Keywords           | traverse, walk, recursive, map, forEach, deep, clone |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2.8300442333333332E7 |
-| # stars            | 993.0 |
+| # downloads        | 3.1902406666666668E7 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/js-traverse)
-- [Bugs](https://github.com/substack/js-traverse/issues)
-- [Repository](https://github.com/substack/js-traverse)
+- [Homepage](https://github.com/ljharb/js-traverse)
+- [Bugs](https://github.com/ljharb/js-traverse/issues)
+- [Repository](https://github.com/ljharb/js-traverse)
 - [Npm](https://www.npmjs.com/package/traverse)
     
 

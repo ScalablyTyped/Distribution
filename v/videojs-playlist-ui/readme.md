@@ -12,8 +12,8 @@ A user interface for the videojs-playlist API
 | Keywords           | playlist, videojs, videojs-plugin |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 6845.333333333333 |
-| # stars            | 106.0 |
+| # downloads        | 7286.666666666667 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/brightcove/videojs-playlist-ui#readme)

@@ -10,12 +10,15 @@ A library for teleporting rich data to another place.
 | ------------------ | :-------------: |
 | Full name          | telejson |
 | Keywords           | JSON, cyclic, cyclical, date, function, parse, regex, stringify |
-| # releases         | 23 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8176981333333332E7 |
-| # stars            | 104.0 |
+| # downloads        | 2.4829077E7 |
+| # stars            | 119.0 |
 
 ## Links
+- [Homepage](https://github.com/storybookjs/telejson)
+- [Bugs](https://github.com/storybookjs/telejson/issues)
+- [Repository](https://github.com/storybookjs/telejson)
 - [Npm](https://www.npmjs.com/package/telejson)
     
 

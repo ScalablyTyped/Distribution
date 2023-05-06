@@ -12,8 +12,8 @@ Generate a changelog from git commits.
 | Keywords           | changelog, cli, npm, version, git, semver |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 76554.0 |
-| # stars            | 464.0 |
+| # downloads        | 71591.0 |
+| # stars            | 483.0 |
 
 ## Links
 - [Homepage](https://github.com/lob/generate-changelog#readme)

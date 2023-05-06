@@ -10,10 +10,10 @@ Extend native Error to create custom errors
 | ------------------ | :-------------: |
 | Full name          | ts-custom-error |
 | Keywords           | custom Error, extend, Error |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 973586.6666666666 |
-| # stars            | 105.0 |
+| # downloads        | 1129971.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/adriengibrat/ts-custom-error#readme)

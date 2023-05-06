@@ -12,7 +12,7 @@ gaussian blur an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5077535.0 |
+| # downloads        | 5720062.666666667 |
 | # stars            | ? |
 
 ## Links

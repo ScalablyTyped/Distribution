@@ -10,10 +10,10 @@ A development middleware for webpack
 | ------------------ | :-------------: |
 | Full name          | webpack-dev-middleware |
 | Keywords           | webpack, middleware, development |
-| # releases         | 20 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 7.336065033333333E7 |
-| # stars            | 2389.0 |
+| # downloads        | 8.066032233333333E7 |
+| # stars            | 2424.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/webpack-dev-middleware)

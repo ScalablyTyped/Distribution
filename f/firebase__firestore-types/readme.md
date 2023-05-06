@@ -10,10 +10,10 @@ Typings are for version 2.5.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/firestore-types |
 | Keywords           | - |
-| # releases         | 1156 |
+| # releases         | 964 |
 | # dependents       | 0.0 |
-| # downloads        | 5092631.333333333 |
-| # stars            | 4194.0 |
+| # downloads        | 5191092.333333333 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

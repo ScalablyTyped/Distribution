@@ -10,10 +10,10 @@ Avatar / profile picture component. Resize and crop your uploaded image using a 
 | ------------------ | :-------------: |
 | Full name          | react-avatar-editor |
 | Keywords           | react-component, reactjs, react, canvas, avatar, editor, profile, image |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 460149.0 |
-| # stars            | 1988.0 |
+| # downloads        | 572910.0 |
+| # stars            | 2031.0 |
 
 ## Links
 - [Homepage](https://github.com/mosch/react-avatar-editor#readme)

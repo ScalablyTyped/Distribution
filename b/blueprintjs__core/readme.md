@@ -10,10 +10,10 @@ Core styles & components
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/core |
 | Keywords           | palantir, blueprint, components, styles, theme, ui |
-| # releases         | 89 |
+| # releases         | 94 |
 | # dependents       | 0.0 |
-| # downloads        | 852760.3333333334 |
-| # stars            | 19272.0 |
+| # downloads        | 856947.0 |
+| # stars            | 19529.0 |
 
 ## Links
 - [Homepage](https://github.com/palantir/blueprint#readme)

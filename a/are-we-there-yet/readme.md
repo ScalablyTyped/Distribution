@@ -10,10 +10,10 @@ Keep track of the overall completion of many disparate processes
 | ------------------ | :-------------: |
 | Full name          | are-we-there-yet |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 8.519713333333333E7 |
-| # stars            | 156.0 |
+| # downloads        | 9.368112166666667E7 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/are-we-there-yet)

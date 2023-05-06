@@ -11,8 +11,8 @@ partition levelup databases
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 728051.3333333334 |
-| # stars            | 197.0 |
+| # downloads        | 746459.3333333334 |
+| # stars            | 196.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/level-sublevel)

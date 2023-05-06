@@ -12,8 +12,8 @@ The smallest and fastest pixel-level image comparison library.
 | Keywords           | image, comparison, diff |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0090355E7 |
-| # stars            | 4816.0 |
+| # downloads        | 8959572.666666666 |
+| # stars            | 5110.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/pixelmatch#readme)

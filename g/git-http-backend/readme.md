@@ -10,15 +10,12 @@ serve a git repository over http
 | ------------------ | :-------------: |
 | Full name          | git-http-backend |
 | Keywords           | git, http, backend, web, server, git-receive-pack, git-update-pack |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2597.6666666666665 |
-| # stars            | 155.0 |
+| # downloads        | 1315.6666666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/git-http-backend)
-- [Bugs](https://github.com/substack/git-http-backend/issues)
-- [Repository](https://github.com/substack/git-http-backend)
 - [Npm](https://www.npmjs.com/package/git-http-backend)
     
 

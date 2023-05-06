@@ -12,8 +12,8 @@ Simple to use, blazing fast and thoroughly tested websocket client and server fo
 | Keywords           | HyBi, Push, RFC-6455, WebSocket, WebSockets, real-time |
 | # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 2.4063769733333334E8 |
-| # stars            | 18519.0 |
+| # downloads        | 2.5734024566666666E8 |
+| # stars            | 19254.0 |
 
 ## Links
 - [Homepage](https://github.com/websockets/ws)

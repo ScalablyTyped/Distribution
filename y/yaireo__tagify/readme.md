@@ -10,10 +10,10 @@ lightweight, efficient Tags input component in Vanilla JS / React / Angular [sup
 | ------------------ | :-------------: |
 | Full name          | @yaireo/tagify |
 | Keywords           | tags, tagging, component, tag, ui |
-| # releases         | 74 |
+| # releases         | 64 |
 | # dependents       | 0.0 |
-| # downloads        | 206836.33333333334 |
-| # stars            | 2684.0 |
+| # downloads        | 224879.33333333334 |
+| # stars            | 2780.0 |
 
 ## Links
 - [Homepage](https://github.com/yairEO/tagify)

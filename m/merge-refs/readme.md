@@ -10,9 +10,9 @@ A function that merges React refs into one.
 | ------------------ | :-------------: |
 | Full name          | merge-refs |
 | Keywords           | react, react ref, react refs, merge |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1606290.0 |
+| # downloads        | 1934672.6666666667 |
 | # stars            | 5.0 |
 
 ## Links

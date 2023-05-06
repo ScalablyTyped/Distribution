@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-blob-browser |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 65 |
 | # dependents       | 0.0 |
-| # downloads        | 5757327.333333333 |
-| # stars            | 1854.0 |
+| # downloads        | 7259178.333333333 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/hash-blob-browser)

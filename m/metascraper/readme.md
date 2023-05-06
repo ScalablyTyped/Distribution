@@ -10,10 +10,10 @@ A library to easily scrape metadata from an article on the web using Open Graph,
 | ------------------ | :-------------: |
 | Full name          | metascraper |
 | Keywords           | RDF, article, browser, cheerio, content, expand, extract, facebook, fallback, fetch, get, graph, html, json-ld, jsonld, linked data, meta, metadata, micro format, microformat, og, open, open graph, opengraph, page, parse, parser, scrape, scraper, semantic, semantic web, server, site, summarize, summary, tag, tags, twitter, unfluff, unfurl, url, web, website |
-| # releases         | 95 |
+| # releases         | 88 |
 | # dependents       | 0.0 |
-| # downloads        | 111573.66666666667 |
-| # stars            | 1802.0 |
+| # downloads        | 151295.0 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://metascraper.js.org)

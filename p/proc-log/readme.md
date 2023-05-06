@@ -12,8 +12,8 @@ just emit 'log' events on the process object
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 8503702.333333334 |
-| # stars            | 4.0 |
+| # downloads        | 1.3030787333333334E7 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/proc-log#readme)

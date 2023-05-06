@@ -10,10 +10,10 @@ JupyterLab - Document Provider Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/docprovider-extension |
 | Keywords           | - |
-| # releases         | 101 |
+| # releases         | 112 |
 | # dependents       | 0.0 |
-| # downloads        | 166408.66666666666 |
-| # stars            | 12379.0 |
+| # downloads        | 71587.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

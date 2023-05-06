@@ -10,10 +10,10 @@ the mighty option parser used by yargs
 | ------------------ | :-------------: |
 | Full name          | yargs-parser |
 | Keywords           | argument, parser, yargs, command, cli, parsing, option, args, argument |
-| # releases         | 22 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 3.02425438E8 |
-| # stars            | 414.0 |
+| # downloads        | 3.40811499E8 |
+| # stars            | 435.0 |
 
 ## Links
 - [Homepage](https://github.com/yargs/yargs-parser#readme)

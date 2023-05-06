@@ -10,10 +10,10 @@ Array utils
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-array |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 665208.6666666666 |
-| # stars            | 1982.0 |
+| # downloads        | 932169.6666666666 |
+| # stars            | 1983.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com/)

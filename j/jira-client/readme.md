@@ -10,10 +10,10 @@ Wrapper for the JIRA API
 | ------------------ | :-------------: |
 | Full name          | jira-client |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 302207.3333333333 |
-| # stars            | 375.0 |
+| # downloads        | 409905.6666666667 |
+| # stars            | 393.0 |
 
 ## Links
 - [Homepage](http://github.com/jira-node/node-jira-client)

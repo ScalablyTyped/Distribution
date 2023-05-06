@@ -10,10 +10,10 @@ The terra-action-header component is a header bar containing a title and optiona
 | ------------------ | :-------------: |
 | Full name          | terra-action-header |
 | Keywords           | Cerner, Terra, terra-action-header, ActionHeader, UI |
-| # releases         | 21 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1769.6666666666667 |
-| # stars            | ? |
+| # downloads        | 1632.0 |
+| # stars            | 175.0 |
 
 ## Links
 - [Homepage](https://github.com/cerner/terra-core#readme)

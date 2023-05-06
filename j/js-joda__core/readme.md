@@ -10,10 +10,10 @@ a date and time library for javascript
 | ------------------ | :-------------: |
 | Full name          | @js-joda/core |
 | Keywords           | date, time, timezone |
-| # releases         | 11 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 1903132.3333333333 |
-| # stars            | 1452.0 |
+| # downloads        | 2469929.0 |
+| # stars            | 1482.0 |
 
 ## Links
 - [Homepage](https://js-joda.github.io/js-joda)

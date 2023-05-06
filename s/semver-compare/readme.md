@@ -10,10 +10,10 @@ compare two semver version strings, returning -1, 0, or 1
 | ------------------ | :-------------: |
 | Full name          | semver-compare |
 | Keywords           | semver, compare, cmp, comparison, sort |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2.6483536E7 |
-| # stars            | 117.0 |
+| # downloads        | 2.5378721E7 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/semver-compare)

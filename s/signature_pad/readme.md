@@ -10,10 +10,10 @@ Library for drawing smooth signatures.
 | ------------------ | :-------------: |
 | Full name          | signature_pad |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 1266622.0 |
-| # stars            | 8446.0 |
+| # downloads        | 1364182.3333333333 |
+| # stars            | 8618.0 |
 
 ## Links
 - [Homepage](https://github.com/szimek/signature_pad)

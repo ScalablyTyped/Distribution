@@ -12,7 +12,7 @@ Wait for multiple callback
 | Keywords           | async, flow control, callback |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2827175.3333333335 |
+| # downloads        | 3219827.6666666665 |
 | # stars            | 14.0 |
 
 ## Links

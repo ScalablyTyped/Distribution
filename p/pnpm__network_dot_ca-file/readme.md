@@ -9,9 +9,9 @@ Typings are for version 1.0.1
 | ------------------ | :-------------: |
 | Full name          | @pnpm/network.ca-file |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 59219.666666666664 |
+| # downloads        | 1537419.3333333333 |
 | # stars            | ? |
 
 ## Links

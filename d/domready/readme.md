@@ -12,7 +12,7 @@ modern domready
 | Keywords           | ender, domready, dom |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1162401.0 |
+| # downloads        | 1227304.6666666667 |
 | # stars            | 878.0 |
 
 ## Links

@@ -10,10 +10,10 @@ JS implementation of DAG-CBOR
 | ------------------ | :-------------: |
 | Full name          | @ipld/dag-cbor |
 | Keywords           | ipfs, ipld, multiformats |
-| # releases         | 34 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 350210.3333333333 |
-| # stars            | 10.0 |
+| # downloads        | 433628.6666666667 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/ipld/js-dag-cbor#readme)

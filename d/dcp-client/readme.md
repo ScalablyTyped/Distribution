@@ -10,9 +10,9 @@ Core libraries for accessing DCP network
 | ------------------ | :-------------: |
 | Full name          | dcp-client |
 | Keywords           | dcp |
-| # releases         | 73 |
+| # releases         | 78 |
 | # dependents       | 0.0 |
-| # downloads        | 931.0 |
+| # downloads        | 1298.6666666666667 |
 | # stars            | 4.0 |
 
 ## Links

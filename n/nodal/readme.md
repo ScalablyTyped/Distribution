@@ -10,12 +10,15 @@ An API Server and Framework for node.js
 | ------------------ | :-------------: |
 | Full name          | nodal |
 | Keywords           | framework, api, application, branding, server, modular, nodal |
-| # releases         | 6 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 931.3333333333334 |
-| # stars            | 4552.0 |
+| # downloads        | 1345.3333333333333 |
+| # stars            | 4546.0 |
 
 ## Links
+- [Homepage](https://github.com/keithwhor/nodal)
+- [Bugs](https://github.com/keithwhor/nodal/issues)
+- [Repository](https://github.com/keithwhor/nodal)
 - [Npm](https://www.npmjs.com/package/nodal)
     
 

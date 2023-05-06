@@ -12,8 +12,8 @@ Typings are for version 3.201.0
 | Keywords           | - |
 | # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5044086E7 |
-| # stars            | 1851.0 |
+| # downloads        | 1.7495094666666668E7 |
+| # stars            | 1939.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-uri-escape)

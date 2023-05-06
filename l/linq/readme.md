@@ -12,8 +12,8 @@ linq.js - LINQ for JavaScript
 | Keywords           | linq |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 127361.66666666667 |
-| # stars            | 1445.0 |
+| # downloads        | 138170.33333333334 |
+| # stars            | 1495.0 |
 
 ## Links
 - [Homepage](https://github.com/mihaifm/linq)

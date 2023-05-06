@@ -10,10 +10,10 @@ Typings are for version 6.0.10
 | ------------------ | :-------------: |
 | Full name          | postcss-selector-parser |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5747797366666666E8 |
-| # stars            | 179.0 |
+| # downloads        | 1.5363469233333334E8 |
+| # stars            | 181.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-selector-parser)

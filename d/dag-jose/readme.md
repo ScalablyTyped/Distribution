@@ -12,8 +12,8 @@ Typescript implementation of the IPLD dag-jose format
 | Keywords           | ipld, ipfs, jose, dag |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 76653.66666666667 |
-| # stars            | 39.0 |
+| # downloads        | 102731.33333333333 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/ceramicnetwork/js-dag-jose#readme)

@@ -12,8 +12,8 @@ Crazy fast http radix based router
 | Keywords           | http, router, radix, fast, speed |
 | # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 4723735.666666667 |
-| # stars            | 1177.0 |
+| # downloads        | 4018948.6666666665 |
+| # stars            | 1219.0 |
 
 ## Links
 - [Homepage](https://github.com/delvedor/find-my-way#readme)

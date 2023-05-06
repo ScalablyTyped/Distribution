@@ -10,10 +10,10 @@ Spectrum UI components in React
 | ------------------ | :-------------: |
 | Full name          | @react-aria/interactions |
 | Keywords           | - |
-| # releases         | 347 |
+| # releases         | 349 |
 | # dependents       | 0.0 |
-| # downloads        | 1559327.0 |
-| # stars            | 7335.0 |
+| # downloads        | 1806863.3333333333 |
+| # stars            | 7787.0 |
 
 ## Links
 - [Homepage](https://github.com/adobe/react-spectrum#readme)

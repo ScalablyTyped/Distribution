@@ -10,12 +10,15 @@ React hook for determining the preferred color scheme
 | ------------------ | :-------------: |
 | Full name          | use-prefers-color-scheme |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 72.0 |
-| # stars            | 8.0 |
+| # downloads        | 246.0 |
+| # stars            | ? |
 
 ## Links
+- [Homepage](https://github.com/rfoel/use-prefers-color-scheme#readme)
+- [Bugs](https://github.com/rfoel/use-prefers-color-scheme/issues)
+- [Repository](https://github.com/rfoel/use-prefers-color-scheme)
 - [Npm](https://www.npmjs.com/package/use-prefers-color-scheme)
     
 

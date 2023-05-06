@@ -12,8 +12,8 @@ React library for [LogRocket](https://logrocket.com/).
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 440435.3333333333 |
-| # stars            | 69.0 |
+| # downloads        | 309304.3333333333 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/LogRocket/logrocket-react#readme)

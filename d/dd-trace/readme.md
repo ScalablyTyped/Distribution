@@ -10,10 +10,10 @@ Datadog APM tracing client for JavaScript
 | ------------------ | :-------------: |
 | Full name          | dd-trace |
 | Keywords           | datadog, trace, tracing, profile, profiler, profiling, opentracing, apm |
-| # releases         | 117 |
+| # releases         | 123 |
 | # dependents       | 0.0 |
-| # downloads        | 6253284.0 |
-| # stars            | 382.0 |
+| # downloads        | 6862060.0 |
+| # stars            | 415.0 |
 
 ## Links
 - [Homepage](https://github.com/DataDog/dd-trace-js#readme)

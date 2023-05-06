@@ -10,10 +10,10 @@ Let users toggle colors
 | ------------------ | :-------------: |
 | Full name          | colors-option |
 | Keywords           | color, colors, option, config, configuration, disable, chalk, typescript, ansi, rgb, terminal, tty, shell, bash, cli, es6, javascript, nodejs, library, windows |
-| # releases         | 7 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 233632.0 |
-| # stars            | 4.0 |
+| # downloads        | 298565.6666666667 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://www.github.com/ehmicky/colors-option)

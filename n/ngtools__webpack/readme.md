@@ -9,10 +9,10 @@ Webpack plugin that AoT compiles your Angular components and modules.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @ngtools/webpack |
-| Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
-| # releases         | 217 |
+| Keywords           | Angular CLI, Angular DevKit, angular, aot, devkit, plugin, sdk, webpack |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 9360240.333333334 |
+| # downloads        | 9641392.0 |
 | # stars            | ? |
 
 ## Links

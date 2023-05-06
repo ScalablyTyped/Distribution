@@ -10,10 +10,10 @@ Shared Event Helper for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-shared-events |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 60 |
+| # releases         | 45 |
 | # dependents       | 0.0 |
-| # downloads        | 820139.6666666666 |
-| # stars            | 9887.0 |
+| # downloads        | 814612.6666666666 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

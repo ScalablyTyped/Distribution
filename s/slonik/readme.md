@@ -10,10 +10,10 @@ A Node.js PostgreSQL client with strict types, detailed logging and assertions.
 | ------------------ | :-------------: |
 | Full name          | slonik |
 | Keywords           | postgresql, promise, types |
-| # releases         | 80 |
+| # releases         | 83 |
 | # dependents       | 0.0 |
-| # downloads        | 306708.0 |
-| # stars            | 3253.0 |
+| # downloads        | 332868.0 |
+| # stars            | 3531.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/slonik#readme)

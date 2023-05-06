@@ -12,10 +12,13 @@ textarea component for React which grows with content
 | Keywords           | autosize, grow, react, react-component, textarea |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8814328666666668E7 |
-| # stars            | 1670.0 |
+| # downloads        | 1.5139377E7 |
+| # stars            | 1735.0 |
 
 ## Links
+- [Homepage](https://github.com/Andarist/react-textarea-autosize#readme)
+- [Bugs](https://github.com/Andarist/react-textarea-autosize/issues)
+- [Repository](https://github.com/Andarist/react-textarea-autosize)
 - [Npm](https://www.npmjs.com/package/react-textarea-autosize)
     
 

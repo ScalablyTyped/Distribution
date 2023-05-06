@@ -10,10 +10,10 @@ Reduces the values yielded from an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-reduce |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 14948.666666666666 |
-| # stars            | 200.0 |
+| # downloads        | 15074.0 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-reduce#readme)

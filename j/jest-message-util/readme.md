@@ -9,9 +9,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | jest-message-util |
 | Keywords           | - |
-| # releases         | 61 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0526600033333333E8 |
+| # downloads        | 1.21564392E8 |
 | # stars            | ? |
 
 ## Links

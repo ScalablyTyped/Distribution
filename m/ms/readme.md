@@ -12,8 +12,8 @@ Tiny millisecond conversion utility
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 6.983692053333334E8 |
-| # stars            | 4206.0 |
+| # downloads        | 7.385232716666666E8 |
+| # stars            | 4269.0 |
 
 ## Links
 - [Homepage](https://github.com/vercel/ms#readme)

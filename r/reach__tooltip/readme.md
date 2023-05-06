@@ -10,10 +10,10 @@ Accessible tooltips
 | ------------------ | :-------------: |
 | Full name          | @reach/tooltip |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 369865.6666666667 |
-| # stars            | 5390.0 |
+| # downloads        | 400131.6666666667 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)

@@ -10,10 +10,10 @@ The official Semantic-UI-React integration.
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-react |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1050943.0 |
-| # stars            | 12779.0 |
+| # downloads        | 1053322.6666666667 |
+| # stars            | 12903.0 |
 
 ## Links
 - [Homepage](https://github.com/Semantic-Org/Semantic-UI-React#readme)

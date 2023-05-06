@@ -10,10 +10,10 @@ Package to share code between ipfs and ipfs-http-client
 | ------------------ | :-------------: |
 | Full name          | ipfs-core-utils |
 | Keywords           | - |
-| # releases         | 247 |
+| # releases         | 214 |
 | # dependents       | 0.0 |
-| # downloads        | 301602.6666666667 |
-| # stars            | 7055.0 |
+| # downloads        | 330897.6666666667 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-core-utils#readme)

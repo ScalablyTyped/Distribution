@@ -10,10 +10,10 @@ Implements https://w3c.github.io/accname/
 | ------------------ | :-------------: |
 | Full name          | dom-accessibility-api |
 | Keywords           | accessibility, ARIA, accname |
-| # releases         | 18 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 3.1611696E7 |
-| # stars            | 59.0 |
+| # downloads        | 3.5602077666666664E7 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/eps1lon/dom-accessibility-api#readme)

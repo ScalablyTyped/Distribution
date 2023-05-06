@@ -12,8 +12,8 @@ Switches between unfetch & node-fetch for client & server.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 6001382.0 |
-| # stars            | 5351.0 |
+| # downloads        | 1.3622722666666666E7 |
+| # stars            | 5432.0 |
 
 ## Links
 - [Homepage](https://github.com/developit/unfetch#readme)

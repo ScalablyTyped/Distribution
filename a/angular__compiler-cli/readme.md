@@ -10,10 +10,10 @@ Angular - the compiler CLI for Node.js
 | ------------------ | :-------------: |
 | Full name          | @angular/compiler-cli |
 | Keywords           | angular, compiler |
-| # releases         | 220 |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 9129863.0 |
-| # stars            | ? |
+| # downloads        | 9324318.666666666 |
+| # stars            | 85816.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/angular/tree/main/packages/compiler-cli)

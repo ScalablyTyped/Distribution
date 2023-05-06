@@ -10,10 +10,10 @@ Multi Backend system compatible with DnD Core / React DnD
 | ------------------ | :-------------: |
 | Full name          | dnd-multi-backend |
 | Keywords           | agnostic, dnd, drag, drop, backend, multi |
-| # releases         | 5 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 201649.0 |
-| # stars            | 157.0 |
+| # downloads        | 278111.3333333333 |
+| # stars            | 171.0 |
 
 ## Links
 - [Homepage](https://louisbrunner.github.io/dnd-multi-backend/packages/dnd-multi-backend/)

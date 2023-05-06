@@ -10,10 +10,10 @@ Object transformations implementing the Node.js `stream.Transform` API
 | ------------------ | :-------------: |
 | Full name          | stream-transform |
 | Keywords           | stream, transform, csv, object |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 4482791.0 |
-| # stars            | 3273.0 |
+| # downloads        | 3599926.6666666665 |
+| # stars            | 3375.0 |
 
 ## Links
 - [Homepage](https://csv.js.org/transform/)

@@ -10,9 +10,9 @@ Remove trailing path separator from string.
 | ------------------ | :-------------: |
 | Full name          | path-strip-sep |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 1255607.0 |
+| # downloads        | 1585481.3333333333 |
 | # stars            | 1.0 |
 
 ## Links

@@ -12,8 +12,8 @@ Provides GLView that acts as OpenGL ES render target and gives GL context object
 | Keywords           | react-native, expo, gl, glview, webgl |
 | # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 31778.666666666668 |
-| # stars            | 17981.0 |
+| # downloads        | 32450.666666666668 |
+| # stars            | 18105.0 |
 
 ## Links
 - [Homepage](https://docs.expo.dev/versions/latest/sdk/gl-view/)

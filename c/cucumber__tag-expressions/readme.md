@@ -12,10 +12,13 @@ Cucumber Tag Expression parser
 | Keywords           | cucumber |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1335303.6666666667 |
-| # stars            | ? |
+| # downloads        | 1864243.0 |
+| # stars            | 1.0 |
 
 ## Links
+- [Homepage](https://github.com/cucumber/tag-expressions)
+- [Bugs](https://github.com/cucumber/tag-expressions/issues)
+- [Repository](https://github.com/cucumber/tag-expressions)
 - [Npm](https://www.npmjs.com/package/%40cucumber%2Ftag-expressions)
     
 

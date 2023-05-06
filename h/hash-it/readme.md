@@ -10,10 +10,10 @@ Hash any object based on its value
 | ------------------ | :-------------: |
 | Full name          | hash-it |
 | Keywords           | hash, hashcode, object-hash, unique |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 330781.0 |
-| # stars            | 155.0 |
+| # downloads        | 401658.0 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/planttheidea/hash-it#readme)

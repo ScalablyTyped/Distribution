@@ -10,12 +10,15 @@ Lumino Pluggable Application
 | ------------------ | :-------------: |
 | Full name          | @lumino/application |
 | Keywords           | - |
-| # releases         | 36 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 257604.33333333334 |
-| # stars            | 370.0 |
+| # downloads        | 163275.66666666666 |
+| # stars            | 420.0 |
 
 ## Links
+- [Homepage](https://github.com/jupyterlab/lumino)
+- [Bugs](https://github.com/jupyterlab/lumino/issues)
+- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Fapplication)
     
 

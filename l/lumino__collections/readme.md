@@ -10,12 +10,15 @@ Lumino Generic Collections
 | ------------------ | :-------------: |
 | Full name          | @lumino/collections |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 383021.3333333333 |
-| # stars            | 370.0 |
+| # downloads        | 206054.0 |
+| # stars            | 420.0 |
 
 ## Links
+- [Homepage](https://github.com/jupyterlab/lumino)
+- [Bugs](https://github.com/jupyterlab/lumino/issues)
+- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Fcollections)
     
 

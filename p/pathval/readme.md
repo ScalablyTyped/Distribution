@@ -10,10 +10,10 @@ Object value retrieval given a string path
 | ------------------ | :-------------: |
 | Full name          | pathval |
 | Keywords           | pathval, value retrieval, chai util |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9454334333333332E7 |
-| # stars            | 40.0 |
+| # downloads        | 2.1559498E7 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/chaijs/pathval)

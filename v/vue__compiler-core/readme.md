@@ -10,10 +10,10 @@ Typings are for version 3.2.45
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-core |
 | Keywords           | vue |
-| # releases         | 78 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 6999261.0 |
-| # stars            | 32475.0 |
+| # downloads        | 8138260.0 |
+| # stars            | 33643.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/core/tree/main/packages/compiler-core#readme)

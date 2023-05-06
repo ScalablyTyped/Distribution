@@ -10,10 +10,10 @@ MongoDB query filtering in JavaScript
 | ------------------ | :-------------: |
 | Full name          | sift |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 7603061.0 |
-| # stars            | 1546.0 |
+| # downloads        | 8089480.0 |
+| # stars            | 1566.0 |
 
 ## Links
 - [Homepage](https://github.com/crcn/sift.js#readme)

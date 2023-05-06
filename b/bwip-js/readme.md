@@ -10,10 +10,10 @@ JavaScript barcode generator supporting over 100 types and standards.
 | ------------------ | :-------------: |
 | Full name          | bwip-js |
 | Keywords           | bar code, generator, barcode, javascript, node, react, browser, itf, gs1, upc, ean, pdf417, matrix, datamatrix, qrcode, databar, code128, code39, svg, pdfkit |
-| # releases         | 16 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 224589.0 |
-| # stars            | 1482.0 |
+| # downloads        | 296387.0 |
+| # stars            | 1548.0 |
 
 ## Links
 - [Homepage](https://github.com/metafloor/bwip-js)

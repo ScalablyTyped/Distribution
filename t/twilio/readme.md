@@ -10,10 +10,10 @@ A Twilio helper library
 | ------------------ | :-------------: |
 | Full name          | twilio |
 | Keywords           | twilio, sms, rest, api |
-| # releases         | 53 |
+| # releases         | 57 |
 | # dependents       | 0.0 |
-| # downloads        | 3523763.0 |
-| # stars            | 1199.0 |
+| # downloads        | 3731106.0 |
+| # stars            | 1224.0 |
 
 ## Links
 - [Homepage](https://github.com/twilio/twilio-node#readme)

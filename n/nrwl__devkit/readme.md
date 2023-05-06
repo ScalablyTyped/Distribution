@@ -10,10 +10,10 @@ The Nx Devkit is used to customize Nx for different technologies and use cases. 
 | ------------------ | :-------------: |
 | Full name          | @nrwl/devkit |
 | Keywords           | Monorepo, Angular, React, Web, Node, Nest, Jest, Cypress, CLI |
-| # releases         | 530 |
+| # releases         | 563 |
 | # dependents       | 0.0 |
-| # downloads        | 7088259.0 |
-| # stars            | ? |
+| # downloads        | 9345441.666666666 |
+| # stars            | 16088.0 |
 
 ## Links
 - [Homepage](https://nx.dev)

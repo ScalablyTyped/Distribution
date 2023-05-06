@@ -10,12 +10,15 @@ hast utility to transform to nlcst
 | ------------------ | :-------------: |
 | Full name          | hast-util-to-nlcst |
 | Keywords           | unist, hast, hast-util, util, utility, rehype, retext, nlcst, html, natural, language |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 72602.33333333333 |
+| # downloads        | 72164.0 |
 | # stars            | 2.0 |
 
 ## Links
+- [Homepage](https://github.com/syntax-tree/hast-util-to-nlcst#readme)
+- [Bugs](https://github.com/syntax-tree/hast-util-to-nlcst/issues)
+- [Repository](https://github.com/syntax-tree/hast-util-to-nlcst)
 - [Npm](https://www.npmjs.com/package/hast-util-to-nlcst)
     
 

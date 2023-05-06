@@ -10,10 +10,10 @@ Typings are for version 0.66
 | ------------------ | :-------------: |
 | Full name          | metro-resolver |
 | Keywords           | - |
-| # releases         | 24 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 4204133.666666667 |
-| # stars            | 4576.0 |
+| # downloads        | 4671100.0 |
+| # stars            | 4674.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/metro#readme)

@@ -10,10 +10,10 @@ Typings are for version 9.2.2
 | ------------------ | :-------------: |
 | Full name          | @intlify/vue-devtools |
 | Keywords           | i18n, internationalization, intlify, vue-devtools |
-| # releases         | 66 |
+| # releases         | 93 |
 | # dependents       | 0.0 |
-| # downloads        | 915872.3333333334 |
-| # stars            | 959.0 |
+| # downloads        | 1271051.6666666667 |
+| # stars            | 1132.0 |
 
 ## Links
 - [Homepage](https://github.com/intlify/vue-i18n-next/tree/master/packages/vue-devtools#readme)

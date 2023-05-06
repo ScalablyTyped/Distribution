@@ -12,7 +12,7 @@ Creates a shadow on an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 4391078.0 |
+| # downloads        | 4675757.666666667 |
 | # stars            | ? |
 
 ## Links

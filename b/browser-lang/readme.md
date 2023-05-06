@@ -10,10 +10,10 @@ Detect user's most preferred language within the given language list.
 | ------------------ | :-------------: |
 | Full name          | browser-lang |
 | Keywords           | browser language, language detect, accepted language, default language, i18n |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 121055.33333333333 |
-| # stars            | 19.0 |
+| # downloads        | 120535.66666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/wiziple/browser-lang)

@@ -10,10 +10,10 @@ Normalize a URL
 | ------------------ | :-------------: |
 | Full name          | normalize-url |
 | Keywords           | normalize, url, uri, address, string, normalization, normalisation, query, querystring, simplify, strip, trim, canonical |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1.31770449E8 |
-| # stars            | 712.0 |
+| # downloads        | 1.3254993766666667E8 |
+| # stars            | 756.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/normalize-url#readme)

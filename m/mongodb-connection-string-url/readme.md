@@ -10,10 +10,10 @@ MongoDB connection strings, based on the WhatWG URL API
 | ------------------ | :-------------: |
 | Full name          | mongodb-connection-string-url |
 | Keywords           | password, prompt, tty |
-| # releases         | 19 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 4520266.0 |
-| # stars            | 8.0 |
+| # downloads        | 7105496.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/mongodb-js/mongodb-connection-string-url)

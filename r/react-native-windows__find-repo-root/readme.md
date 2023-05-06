@@ -9,10 +9,10 @@ Typings are for version 0.70.0
 | ------------------ | :-------------: |
 | Full name          | @react-native-windows/find-repo-root |
 | Keywords           | - |
-| # releases         | 43 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 68470.66666666667 |
-| # stars            | 14959.0 |
+| # downloads        | 76184.0 |
+| # stars            | 15200.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/react-native-windows#readme)

@@ -10,10 +10,10 @@ FixedHeader for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-fixedheader |
 | Keywords           | FixedHeader, Fixed Headers, Sticky, Datatables, jQuery, table, filter, sort |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 222687.66666666666 |
-| # stars            | 3.0 |
+| # downloads        | 210975.33333333334 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

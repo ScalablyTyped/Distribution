@@ -10,10 +10,10 @@ Looks up the first non-whitespace character to the left/right of a given index
 | ------------------ | :-------------: |
 | Full name          | string-left-right |
 | Keywords           | check, left, look, lookup, loop, right, see, string, text, the, to, traversal, traverse |
-| # releases         | 42 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 319988.6666666667 |
-| # stars            | 116.0 |
+| # downloads        | 388918.3333333333 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/string-left-right)

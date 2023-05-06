@@ -9,10 +9,10 @@ Typings are for version 9.1.0
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-types |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 3576345.3333333335 |
-| # stars            | 1890.0 |
+| # downloads        | 4289138.333333333 |
+| # stars            | 1957.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/cli/tree/master/packages/cli-types)

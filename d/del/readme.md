@@ -10,10 +10,10 @@ Delete files and directories
 | ------------------ | :-------------: |
 | Full name          | del |
 | Keywords           | delete, files, folders, directories, remove, destroy, trash, unlink, clean, cleaning, cleanup, rm, rmrf, rimraf, rmdir, glob, gulpfriendly, file, folder, directory, fs, filesystem |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 6.718257033333333E7 |
-| # stars            | 1260.0 |
+| # downloads        | 6.4798272333333336E7 |
+| # stars            | 1272.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/del#readme)

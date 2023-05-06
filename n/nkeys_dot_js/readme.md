@@ -10,9 +10,9 @@ A public-key signature system based on Ed25519 for the NATS ecosystem in javascr
 | ------------------ | :-------------: |
 | Full name          | nkeys.js |
 | Keywords           | nats, Ed25519, javascript |
-| # releases         | 16 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 257396.66666666666 |
+| # downloads        | 404055.0 |
 | # stars            | ? |
 
 ## Links

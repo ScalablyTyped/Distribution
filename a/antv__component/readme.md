@@ -10,10 +10,10 @@ The component module for antv
 | ------------------ | :-------------: |
 | Full name          | @antv/component |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 394498.3333333333 |
-| # stars            | 47.0 |
+| # downloads        | 397022.3333333333 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/component#readme)

@@ -10,10 +10,10 @@ Quantum computation simulation JavaScript library
 | ------------------ | :-------------: |
 | Full name          | jsqubits |
 | Keywords           | quantum |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 134.33333333333334 |
-| # stars            | 120.0 |
+| # downloads        | 103.33333333333333 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://davidbkemp.github.io/jsqubits/)

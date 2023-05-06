@@ -12,8 +12,8 @@ Execute code when the js-process exits. On all javascript-environments
 | Keywords           | unload, exit, onunload, SIGINT, uncaughtException, beforeExit |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 5628069.0 |
-| # stars            | 44.0 |
+| # downloads        | 6534271.333333333 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/pubkey/unload#readme)

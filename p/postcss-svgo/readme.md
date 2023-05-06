@@ -10,10 +10,10 @@ Optimise inline SVG with PostCSS.
 | ------------------ | :-------------: |
 | Full name          | postcss-svgo |
 | Keywords           | css, minify, optimise, postcss, postcss-plugin, svg, svgo |
-| # releases         | 28 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 4.4847795666666664E7 |
-| # stars            | 4187.0 |
+| # downloads        | 4.5850533333333336E7 |
+| # stars            | 4328.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

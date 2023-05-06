@@ -10,9 +10,9 @@ React admin frontend for Django.
 | ------------------ | :-------------: |
 | Full name          | django-bananas |
 | Keywords           | admin, bananas, django, django-admin, react |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 238.33333333333334 |
+| # downloads        | 147.0 |
 | # stars            | 6.0 |
 
 ## Links

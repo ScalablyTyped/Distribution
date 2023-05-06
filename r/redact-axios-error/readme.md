@@ -10,9 +10,9 @@ grooms and redacts axios errors to trim them down and make them more useful for 
 | ------------------ | :-------------: |
 | Full name          | redact-axios-error |
 | Keywords           | redact, error, axios |
-| # releases         | 10 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 116.0 |
+| # downloads        | 90.0 |
 | # stars            | 4.0 |
 
 ## Links

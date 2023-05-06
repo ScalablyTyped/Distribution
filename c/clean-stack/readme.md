@@ -10,10 +10,10 @@ Clean up error stack traces
 | ------------------ | :-------------: |
 | Full name          | clean-stack |
 | Keywords           | clean, stack, trace, traces, error, electron |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 8.137699266666667E7 |
-| # stars            | 290.0 |
+| # downloads        | 8.799200266666667E7 |
+| # stars            | 316.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/clean-stack#readme)

@@ -10,10 +10,10 @@ hast utility to transform to estree (JavaScript AST) JSX
 | ------------------ | :-------------: |
 | Full name          | hast-util-to-estree |
 | Keywords           | unist, hast, hast-util, util, utility, html, change, transform, rehype, estree, babel, jsx, javascript, ecmascript, mdx |
-| # releases         | 16 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 509245.3333333333 |
-| # stars            | 8.0 |
+| # downloads        | 1217926.3333333333 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/hast-util-to-estree#readme)

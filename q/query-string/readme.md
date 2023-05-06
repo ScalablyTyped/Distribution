@@ -10,12 +10,15 @@ Parse and stringify URL query strings
 | ------------------ | :-------------: |
 | Full name          | query-string |
 | Keywords           | browser, querystring, query, string, qs, param, parameter, url, parse, stringify, encode, decode, searchparams, filter |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 6.896679033333333E7 |
-| # stars            | 5972.0 |
+| # downloads        | 6.3044741E7 |
+| # stars            | 6208.0 |
 
 ## Links
+- [Homepage](https://github.com/sindresorhus/query-string#readme)
+- [Bugs](https://github.com/sindresorhus/query-string/issues)
+- [Repository](https://github.com/sindresorhus/query-string)
 - [Npm](https://www.npmjs.com/package/query-string)
     
 

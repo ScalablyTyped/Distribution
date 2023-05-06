@@ -10,10 +10,10 @@ TensorFlow Data API in JavaScript
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-data |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 354504.0 |
-| # stars            | 16517.0 |
+| # downloads        | 339167.0 |
+| # stars            | 16876.0 |
 
 ## Links
 - [Homepage](https://github.com/tensorflow/tfjs#readme)

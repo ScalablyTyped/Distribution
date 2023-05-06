@@ -10,9 +10,9 @@ This package provides support for the [RedisBloom](https://redisbloom.io) module
 | ------------------ | :-------------: |
 | Full name          | @redis/bloom |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 786428.3333333334 |
+| # downloads        | 1957676.6666666667 |
 | # stars            | ? |
 
 ## Links

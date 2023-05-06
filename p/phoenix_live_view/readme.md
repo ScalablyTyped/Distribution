@@ -10,10 +10,10 @@ The Phoenix LiveView JavaScript client.
 | ------------------ | :-------------: |
 | Full name          | phoenix_live_view |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 12307.0 |
-| # stars            | 4674.0 |
+| # downloads        | 19545.666666666668 |
+| # stars            | 4971.0 |
 
 ## Links
 - [Homepage](https://github.com/phoenixframework/phoenix_live_view#readme)

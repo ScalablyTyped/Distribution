@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/chunked-blob-reader-native |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 5668229.0 |
-| # stars            | 1851.0 |
+| # downloads        | 6662529.333333333 |
+| # stars            | 1962.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/chunked-blob-reader-native)

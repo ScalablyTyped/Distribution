@@ -10,9 +10,9 @@ Streaming length prefixed buffers with async iterables
 | ------------------ | :-------------: |
 | Full name          | it-length-prefixed |
 | Keywords           | async, iterable, iterator, length-prefixed, length-prefixed-stream, varint |
-| # releases         | 11 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 79443.66666666667 |
+| # downloads        | 85496.66666666667 |
 | # stars            | 2.0 |
 
 ## Links

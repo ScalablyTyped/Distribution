@@ -10,10 +10,10 @@ An interactive and responsive charting library
 | ------------------ | :-------------: |
 | Full name          | @antv/g2plot |
 | Keywords           | chart, plot, antv |
-| # releases         | 86 |
+| # releases         | 58 |
 | # dependents       | 0.0 |
-| # downloads        | 267801.0 |
-| # stars            | 2274.0 |
+| # downloads        | 307951.3333333333 |
+| # stars            | 2347.0 |
 
 ## Links
 - [Homepage](https://g2plot.antv.vision)

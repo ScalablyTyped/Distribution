@@ -12,8 +12,8 @@ A formatter for the pino logger compatible with Elastic Common Schema.
 | Keywords           | pino, serializer, formatter, elasticsearch, ecs, ecs-logging, elastic, common, schema |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 834188.6666666666 |
-| # stars            | 53.0 |
+| # downloads        | 918656.6666666666 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/elastic/ecs-logging-nodejs/blob/master/loggers/pino/README.md)

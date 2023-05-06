@@ -12,7 +12,7 @@ Search for stations of DB.
 | Keywords           | db, deutsche bahn, stations, autocomplete, search, public transport, open data |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 95.33333333333333 |
+| # downloads        | 134.33333333333334 |
 | # stars            | 6.0 |
 
 ## Links

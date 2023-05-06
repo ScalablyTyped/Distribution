@@ -10,10 +10,10 @@ React Native wrapper for Android and iOS ViewPager
 | ------------------ | :-------------: |
 | Full name          | react-native-pager-view |
 | Keywords           | react-native, ios, android |
-| # releases         | 54 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 592011.3333333334 |
-| # stars            | 1749.0 |
+| # downloads        | 732079.3333333334 |
+| # stars            | 1859.0 |
 
 ## Links
 - [Homepage](https://github.com/callstack/react-native-pager-view#readme)

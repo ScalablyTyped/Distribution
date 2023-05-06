@@ -12,7 +12,7 @@ Default Jimp gif encoder/decoder.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5258194.0 |
+| # downloads        | 5916100.333333333 |
 | # stars            | ? |
 
 ## Links

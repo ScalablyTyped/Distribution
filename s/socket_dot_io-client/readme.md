@@ -10,10 +10,10 @@ Realtime application framework client
 | ------------------ | :-------------: |
 | Full name          | socket.io-client |
 | Keywords           | realtime, framework, websocket, tcp, events, client |
-| # releases         | 32 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8070387E7 |
-| # stars            | 9908.0 |
+| # downloads        | 1.8323934E7 |
+| # stars            | 10015.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/socket.io-client#readme)

@@ -10,10 +10,10 @@ A smaller version of caniuse-db, with only the essentials!
 | ------------------ | :-------------: |
 | Full name          | caniuse-lite |
 | Keywords           | support, css, js, html5, svg |
-| # releases         | 233 |
+| # releases         | 228 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4453591233333334E8 |
-| # stars            | 414.0 |
+| # downloads        | 1.5044019733333334E8 |
+| # stars            | 435.0 |
 
 ## Links
 - [Homepage](https://github.com/browserslist/caniuse-lite#readme)

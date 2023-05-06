@@ -10,10 +10,10 @@ Library to introspect tokens of services following RFC-7662
 | ------------------ | :-------------: |
 | Full name          | token-introspection |
 | Keywords           | token, introspection, rfc7662 |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 14449.666666666666 |
-| # stars            | 12.0 |
+| # downloads        | 10427.666666666666 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/schibsted/node-token-introspection#readme)

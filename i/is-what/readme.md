@@ -10,12 +10,15 @@ JS type check (TypeScript supported) functions like `isPlainObject() isArray()` 
 | ------------------ | :-------------: |
 | Full name          | is-what |
 | Keywords           | javascript, typescript, typechecker, check-type, javascript-type, primitive-types, plain-object, plain-objects, class-instance, class-identifier, type-checking, type-checker, type-check, define-type, get-type, what-type, is-object, is-plain-obj, is-plain-object |
-| # releases         | 18 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2614776666666666E7 |
-| # stars            | 56.0 |
+| # downloads        | 1.4013914666666666E7 |
+| # stars            | 68.0 |
 
 ## Links
+- [Homepage](https://github.com/mesqueeb/is-what#readme)
+- [Bugs](https://github.com/mesqueeb/is-what/issues)
+- [Repository](https://github.com/mesqueeb/is-what)
 - [Npm](https://www.npmjs.com/package/is-what)
     
 

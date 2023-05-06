@@ -10,10 +10,10 @@ Selectors decision tree - choose matching selectors, fast
 | ------------------ | :-------------: |
 | Full name          | selderee |
 | Keywords           | CSS, selectors, decision tree, match |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1561558.3333333333 |
-| # stars            | 1.0 |
+| # downloads        | 2116123.3333333335 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/mxxii/selderee)

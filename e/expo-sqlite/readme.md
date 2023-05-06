@@ -12,8 +12,8 @@ Provides access to a database that can be queried through a WebSQL-like API (htt
 | Keywords           | react-native, expo, sqlite, websql, sql |
 | # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 80017.66666666667 |
-| # stars            | 16865.0 |
+| # downloads        | 92059.66666666667 |
+| # stars            | 18105.0 |
 
 ## Links
 - [Homepage](https://docs.expo.dev/versions/latest/sdk/sqlite/)

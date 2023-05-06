@@ -10,13 +10,15 @@ JavaScript parser, mangler/compressor and beautifier toolkit for ES6+
 | ------------------ | :-------------: |
 | Full name          | terser |
 | Keywords           | uglify, terser, uglify-es, uglify-js, minify, minifier, javascript, ecmascript, es5, es6, es7, es8, es2015, es2016, es2017, async, await |
-| # releases         | 30 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2146768366666667E8 |
-| # stars            | 7300.0 |
+| # downloads        | 1.3530652066666666E8 |
+| # stars            | 7540.0 |
 
 ## Links
 - [Homepage](https://terser.org)
+- [Bugs](https://github.com/terser/terser/issues)
+- [Repository](https://github.com/terser/terser)
 - [Npm](https://www.npmjs.com/package/terser)
     
 

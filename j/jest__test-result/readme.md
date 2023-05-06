@@ -9,9 +9,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | @jest/test-result |
 | Keywords           | - |
-| # releases         | 61 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 9.1314274E7 |
+| # downloads        | 9.992918466666667E7 |
 | # stars            | ? |
 
 ## Links

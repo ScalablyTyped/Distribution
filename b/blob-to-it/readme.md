@@ -10,10 +10,10 @@ Turns a blob into an async iterator
 | ------------------ | :-------------: |
 | Full name          | blob-to-it |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 307685.6666666667 |
-| # stars            | 200.0 |
+| # downloads        | 267542.6666666667 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/blob-to-it#readme)

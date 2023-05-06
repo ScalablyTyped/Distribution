@@ -10,10 +10,10 @@ MDXv2 to CSF webpack compiler and loader
 | ------------------ | :-------------: |
 | Full name          | @storybook/mdx2-csf |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 119781.66666666667 |
-| # stars            | 5.0 |
+| # downloads        | 321893.3333333333 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/csf-mdx2#readme)

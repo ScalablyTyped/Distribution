@@ -10,10 +10,10 @@ Generate a markdown (GFM) table
 | ------------------ | :-------------: |
 | Full name          | markdown-table |
 | Keywords           | text, markdown, table, align, rows, tabular |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 9430948.666666666 |
-| # stars            | 214.0 |
+| # downloads        | 1.0158286666666666E7 |
+| # stars            | 226.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/markdown-table#readme)

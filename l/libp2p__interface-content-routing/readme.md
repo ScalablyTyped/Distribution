@@ -10,9 +10,9 @@ Content routing interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-content-routing |
 | Keywords           | interface, libp2p |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 9353.333333333334 |
+| # downloads        | 22432.666666666668 |
 | # stars            | 68.0 |
 
 ## Links

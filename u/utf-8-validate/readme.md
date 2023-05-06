@@ -10,10 +10,10 @@ Check if a buffer contains valid UTF-8
 | ------------------ | :-------------: |
 | Full name          | utf-8-validate |
 | Keywords           | utf-8-validate |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 4969724.333333333 |
-| # stars            | 98.0 |
+| # downloads        | 5373300.333333333 |
+| # stars            | 105.0 |
 
 ## Links
 - [Homepage](https://github.com/websockets/utf-8-validate)

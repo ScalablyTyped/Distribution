@@ -10,10 +10,10 @@ A tiny React custom-hook for creating flexible and accessible expand/collapse co
 | ------------------ | :-------------: |
 | Full name          | react-collapsed |
 | Keywords           | collapse, react, collapsible, animate, height, render, expand, hooks, auto |
-| # releases         | 11 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 117847.0 |
-| # stars            | 416.0 |
+| # downloads        | 138242.66666666666 |
+| # stars            | 440.0 |
 
 ## Links
 - [Homepage](https://github.com/roginfarrer/react-collapsed#readme)

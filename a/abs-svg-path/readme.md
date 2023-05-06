@@ -12,7 +12,7 @@ redefine an svg path with absolute coordinates
 | Keywords           | absolute, svg, path |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1732999.0 |
+| # downloads        | 2001089.3333333333 |
 | # stars            | 17.0 |
 
 ## Links

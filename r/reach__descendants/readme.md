@@ -10,12 +10,15 @@ A descendant index solution for better accessibility support in compound compone
 | ------------------ | :-------------: |
 | Full name          | @reach/descendants |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1113870.3333333333 |
-| # stars            | 5390.0 |
+| # downloads        | 1099781.6666666667 |
+| # stars            | 5565.0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fdescendants)
     
 

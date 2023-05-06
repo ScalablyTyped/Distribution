@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-node |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4985265E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1470893E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/hash-node)

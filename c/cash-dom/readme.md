@@ -12,10 +12,13 @@ An absurdly small jQuery alternative for modern browsers.
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 225472.0 |
-| # stars            | 5930.0 |
+| # downloads        | 265961.0 |
+| # stars            | 6036.0 |
 
 ## Links
+- [Homepage](https://github.com/fabiospampinato/cash#readme)
+- [Bugs](https://github.com/fabiospampinato/cash/issues)
+- [Repository](https://github.com/fabiospampinato/cash)
 - [Npm](https://www.npmjs.com/package/cash-dom)
     
 

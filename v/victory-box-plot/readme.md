@@ -10,10 +10,10 @@ Box Plot Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-box-plot |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 59 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 762165.3333333334 |
-| # stars            | 9909.0 |
+| # downloads        | 750189.0 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

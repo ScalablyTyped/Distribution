@@ -10,10 +10,10 @@ Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent data. Sup
 | ------------------ | :-------------: |
 | Full name          | ua-parser-js |
 | Keywords           | user-agent, parser, browser, engine, os, device, cpu, jquery-plugin, ecosystem:jquery |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 3.8772835E7 |
-| # stars            | 6921.0 |
+| # downloads        | 4.0564882333333336E7 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/faisalman/ua-parser-js)

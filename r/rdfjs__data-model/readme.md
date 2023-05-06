@@ -10,10 +10,10 @@ A basic implementation of the RDF/JS Data Model
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/data-model |
 | Keywords           | data-model, rdf, rdfjs |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 90676.66666666667 |
-| # stars            | 19.0 |
+| # downloads        | 93213.66666666667 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/data-model)

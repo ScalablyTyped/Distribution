@@ -10,10 +10,10 @@ An experimental library to read, analyze, transform, and write CSF programmatica
 | ------------------ | :-------------: |
 | Full name          | @storybook/csf-tools |
 | Keywords           | storybook |
-| # releases         | 307 |
+| # releases         | 367 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4687621333333334E7 |
-| # stars            | 74533.0 |
+| # downloads        | 1.5388892666666666E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/csf-tools)

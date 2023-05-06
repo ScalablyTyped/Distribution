@@ -12,7 +12,7 @@ Utils for jimp extensions.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5349333.0 |
+| # downloads        | 6126265.0 |
 | # stars            | ? |
 
 ## Links

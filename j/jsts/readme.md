@@ -10,10 +10,10 @@ A JavaScript library of spatial predicates and functions for processing geometry
 | ------------------ | :-------------: |
 | Full name          | jsts |
 | Keywords           | JSTS, JavaScript, JTS, Java, Topology, Geometry |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 178119.0 |
-| # stars            | 1284.0 |
+| # downloads        | 195078.0 |
+| # stars            | 1300.0 |
 
 ## Links
 - [Homepage](https://github.com/bjornharrtell/jsts#readme)

@@ -10,10 +10,10 @@ An enhanced script component for Gatsby sites with support for various loading s
 | ------------------ | :-------------: |
 | Full name          | gatsby-script |
 | Keywords           | gatsby |
-| # releases         | 55 |
+| # releases         | 81 |
 | # dependents       | 0.0 |
-| # downloads        | 474197.6666666667 |
-| # stars            | 53532.0 |
+| # downloads        | 741135.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-script#readme)

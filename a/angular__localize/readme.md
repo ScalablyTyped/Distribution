@@ -10,10 +10,10 @@ Angular - library for localizing messages
 | ------------------ | :-------------: |
 | Full name          | @angular/localize |
 | Keywords           | - |
-| # releases         | 220 |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 2758616.6666666665 |
-| # stars            | ? |
+| # downloads        | 2918268.0 |
+| # stars            | 85816.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

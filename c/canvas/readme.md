@@ -10,10 +10,10 @@ Canvas graphics API backed by Cairo
 | ------------------ | :-------------: |
 | Full name          | canvas |
 | Keywords           | canvas, graphic, graphics, pixman, cairo, image, images, pdf |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 3802483.0 |
-| # stars            | 8788.0 |
+| # downloads        | 4550561.666666667 |
+| # stars            | 8982.0 |
 
 ## Links
 - [Homepage](https://github.com/Automattic/node-canvas)

@@ -10,10 +10,10 @@ Convert millisecond durations to English and many other languages.
 | ------------------ | :-------------: |
 | Full name          | humanize-duration |
 | Keywords           | humanize, duration, time, hours, minutes, seconds, days, years, months |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 2330642.6666666665 |
-| # stars            | 1404.0 |
+| # downloads        | 2612070.0 |
+| # stars            | 1429.0 |
 
 ## Links
 - [Homepage](https://github.com/EvanHahn/HumanizeDuration.js)

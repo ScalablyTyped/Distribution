@@ -10,10 +10,10 @@ Append and consume bytes using only no-copy operations
 | ------------------ | :-------------: |
 | Full name          | uint8arraylist |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 15059.333333333334 |
-| # stars            | 3.0 |
+| # downloads        | 60419.666666666664 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/uint8arraylist#readme)

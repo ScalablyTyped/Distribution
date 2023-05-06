@@ -10,10 +10,10 @@ Node.js body parsing middleware
 | ------------------ | :-------------: |
 | Full name          | body-parser |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.10485588E8 |
-| # stars            | 5125.0 |
+| # downloads        | 1.1093958266666667E8 |
+| # stars            | 5148.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/body-parser#readme)

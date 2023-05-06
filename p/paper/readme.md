@@ -10,10 +10,10 @@ The Swiss Army Knife of Vector Graphics Scripting
 | ------------------ | :-------------: |
 | Full name          | paper |
 | Keywords           | vector, graphic, graphics, 2d, geometry, bezier, curve, curves, path, paths, canvas, svg, paper, paper.js, paperjs |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 115150.66666666667 |
-| # stars            | 13233.0 |
+| # downloads        | 138026.0 |
+| # stars            | 13404.0 |
 
 ## Links
 - [Homepage](http://paperjs.org)

@@ -10,10 +10,10 @@ Tooltip Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-tooltip |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 62 |
+| # releases         | 46 |
 | # dependents       | 0.0 |
-| # downloads        | 818307.6666666666 |
-| # stars            | 9887.0 |
+| # downloads        | 810972.3333333334 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

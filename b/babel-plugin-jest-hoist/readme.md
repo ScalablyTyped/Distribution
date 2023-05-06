@@ -10,9 +10,9 @@ Babel plugin to hoist `jest.disableAutomock`, `jest.enableAutomock`, `jest.unmoc
 | ------------------ | :-------------: |
 | Full name          | babel-plugin-jest-hoist |
 | Keywords           | - |
-| # releases         | 24 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 7.9173513E7 |
+| # downloads        | 8.1720045E7 |
 | # stars            | ? |
 
 ## Links

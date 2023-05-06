@@ -12,8 +12,8 @@ Loads environment variables from `.env.[development|test|production][.local]` fi
 | Keywords           | dotenv, node_env, development, test, production, local |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 630019.6666666666 |
-| # stars            | 695.0 |
+| # downloads        | 720039.3333333334 |
+| # stars            | 720.0 |
 
 ## Links
 - [Homepage](https://github.com/kerimdzhanov/dotenv-flow#readme)

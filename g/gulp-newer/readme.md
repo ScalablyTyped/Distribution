@@ -9,10 +9,10 @@ Only pass through newer source files
 | ------------------ | :-------------: |
 | Full name          | gulp-newer |
 | Keywords           | gulp, gulpplugin, newer, mtime |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 161378.33333333334 |
-| # stars            | 227.0 |
+| # downloads        | 180336.33333333334 |
+| # stars            | 228.0 |
 
 ## Links
 - [Homepage](https://github.com/tschaub/gulp-newer)

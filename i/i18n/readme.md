@@ -10,10 +10,10 @@ lightweight translation module with dynamic json storage
 | ------------------ | :-------------: |
 | Full name          | i18n |
 | Keywords           | template, i18n, l10n |
-| # releases         | 13 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1061304.6666666667 |
-| # stars            | 2929.0 |
+| # downloads        | 1028527.6666666666 |
+| # stars            | 2956.0 |
 
 ## Links
 - [Homepage](http://github.com/mashpie/i18n-node)

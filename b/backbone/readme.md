@@ -12,8 +12,8 @@ Give your JS App some Backbone with Models, Views, Collections, and Events.
 | Keywords           | model, view, controller, router, server, client, browser |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2407824.6666666665 |
-| # stars            | 27878.0 |
+| # downloads        | 2527124.6666666665 |
+| # stars            | 27911.0 |
 
 ## Links
 - [Homepage](https://github.com/jashkenas/backbone#readme)

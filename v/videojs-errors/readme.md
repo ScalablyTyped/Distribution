@@ -12,8 +12,8 @@ A Video.js plugin for custom error reporting
 | Keywords           | videojs, videojs-plugin |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 4067.0 |
-| # stars            | 78.0 |
+| # downloads        | 5574.0 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/brightcove/videojs-errors#readme)

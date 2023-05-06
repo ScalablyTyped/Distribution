@@ -10,10 +10,10 @@ Change log parser for node.
 | ------------------ | :-------------: |
 | Full name          | changelog-parser |
 | Keywords           | CHANGELOG.md, changelog, parser, semantic, semver, versioning |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 77659.33333333333 |
-| # stars            | 59.0 |
+| # downloads        | 84213.0 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/ungoldman/changelog-parser)

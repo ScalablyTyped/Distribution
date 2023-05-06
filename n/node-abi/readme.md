@@ -10,10 +10,10 @@ Get the Node ABI for a given target and runtime, and vice versa.
 | ------------------ | :-------------: |
 | Full name          | node-abi |
 | Keywords           | node, electron, node_module_version, abi, v8 |
-| # releases         | 29 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5192004666666666E7 |
-| # stars            | 131.0 |
+| # downloads        | 1.6300148333333334E7 |
+| # stars            | 138.0 |
 
 ## Links
 - [Homepage](https://github.com/lgeiger/node-abi#readme)

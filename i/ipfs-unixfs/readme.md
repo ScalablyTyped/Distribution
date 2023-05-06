@@ -10,10 +10,10 @@ JavaScript implementation of IPFS' unixfs (a Unix FileSystem representation on t
 | ------------------ | :-------------: |
 | Full name          | ipfs-unixfs |
 | Keywords           | IPFS |
-| # releases         | 31 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 251802.0 |
-| # stars            | 53.0 |
+| # downloads        | 311955.3333333333 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-unixfs/tree/master/packages/ipfs-unixfs#readme)

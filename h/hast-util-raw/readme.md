@@ -10,10 +10,10 @@ hast utility to reparse a tree
 | ------------------ | :-------------: |
 | Full name          | hast-util-raw |
 | Keywords           | unist, hast, hast-util, util, utility, parse, raw, html |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5534599666666666E7 |
-| # stars            | 4.0 |
+| # downloads        | 1.8667438666666668E7 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/hast-util-raw#readme)

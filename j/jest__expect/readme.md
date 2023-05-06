@@ -10,10 +10,10 @@ This package extends `expect` library with `jest-snapshot` matchers. It exports 
 | ------------------ | :-------------: |
 | Full name          | @jest/expect |
 | Keywords           | - |
-| # releases         | 31 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3734921E7 |
-| # stars            | 40312.0 |
+| # downloads        | 1.8892096333333332E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

@@ -10,10 +10,10 @@ Firebase performance for web
 | ------------------ | :-------------: |
 | Full name          | @firebase/performance |
 | Keywords           | - |
-| # releases         | 1253 |
+| # releases         | 1064 |
 | # dependents       | 0.0 |
-| # downloads        | 5184459.666666667 |
-| # stars            | 4194.0 |
+| # downloads        | 5255368.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

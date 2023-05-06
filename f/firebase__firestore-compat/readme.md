@@ -10,10 +10,10 @@ The Cloud Firestore component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/firestore-compat |
 | Keywords           | - |
-| # releases         | 455 |
+| # releases         | 558 |
 | # dependents       | 0.0 |
-| # downloads        | 2690541.6666666665 |
-| # stars            | 4194.0 |
+| # downloads        | 3254036.6666666665 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

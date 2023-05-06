@@ -10,10 +10,10 @@ convert a string to snake case
 | ------------------ | :-------------: |
 | Full name          | just-snake-case |
 | Keywords           | snake, snake_case, string, no-dependencies, just |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 20219.333333333332 |
-| # stars            | 4414.0 |
+| # downloads        | 15855.333333333334 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

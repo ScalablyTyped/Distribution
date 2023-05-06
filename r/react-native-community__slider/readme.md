@@ -10,10 +10,10 @@ React Native component used to select a single value from a range of values.
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/slider |
 | Keywords           | react-native, react native, slider |
-| # releases         | 29 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 409526.6666666667 |
-| # stars            | 832.0 |
+| # downloads        | 470831.3333333333 |
+| # stars            | 897.0 |
 
 ## Links
 - [Homepage](https://github.com/callstack/react-native-slider#readme)

@@ -10,9 +10,9 @@ Minimalistic linked lists
 | ------------------ | :-------------: |
 | Full name          | linked-list |
 | Keywords           | double, linked, list |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 332003.6666666667 |
+| # downloads        | 282553.6666666667 |
 | # stars            | 74.0 |
 
 ## Links

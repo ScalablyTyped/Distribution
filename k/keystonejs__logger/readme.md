@@ -10,12 +10,15 @@ Common logging functionality used within @keystonejs/* packages.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/logger |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 437.3333333333333 |
+| # downloads        | 391.6666666666667 |
 | # stars            | ? |
 
 ## Links
+- [Homepage](https://github.com/keystonejs/keystone#readme)
+- [Bugs](https://github.com/keystonejs/keystone/issues)
+- [Repository](https://github.com/keystonejs/keystone)
 - [Npm](https://www.npmjs.com/package/%40keystonejs%2Flogger)
     
 

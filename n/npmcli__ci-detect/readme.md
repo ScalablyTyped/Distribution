@@ -10,10 +10,10 @@ Detect what kind of CI environment the program is in
 | ------------------ | :-------------: |
 | Full name          | @npmcli/ci-detect |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 6634150.666666667 |
-| # stars            | 47.0 |
+| # downloads        | 4372114.0 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/ci-detect#readme)

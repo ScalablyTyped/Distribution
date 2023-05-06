@@ -10,9 +10,9 @@ A set of common controls for the @wordpress/data api.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/data-controls |
 | Keywords           | wordpress, gutenberg, data, controls |
-| # releases         | 73 |
+| # releases         | 75 |
 | # dependents       | 0.0 |
-| # downloads        | 73579.0 |
+| # downloads        | 65459.666666666664 |
 | # stars            | ? |
 
 ## Links

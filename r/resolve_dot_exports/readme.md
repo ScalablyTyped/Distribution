@@ -4,16 +4,16 @@
 Typings are for version 1.1.0
 
 ## Library description:
-A tiny (737b), correct, general-purpose, and configurable "exports" resolver without file-system reliance
+A tiny (813b), correct, general-purpose, and configurable "exports" resolver without file-system reliance
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | resolve.exports |
 | Keywords           | esm, exports, esmodules, fields, modules, resolution, resolve |
-| # releases         | 8 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2.9955110666666668E7 |
-| # stars            | 186.0 |
+| # downloads        | 4.3232744666666664E7 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/resolve.exports#readme)

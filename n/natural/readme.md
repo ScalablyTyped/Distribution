@@ -10,10 +10,10 @@ General natural language (tokenizing, stemming (English, Russian, Spanish), part
 | ------------------ | :-------------: |
 | Full name          | natural |
 | Keywords           | natural language processing, artifical intelligence, statistics, Porter stemmer, Lancaster stemmer, tokenizer, bigram, trigram, quadgram, ngram, stemmer, bayes, classifier, phonetic, metaphone, inflector, Wordnet, tf-idf, logistic regression, doublemetaphone, double, jaro-winkler distance, levenshtein distance, string distance, part-of-speech tagger, Eric Brill, Brill tagger, sentiment analysis, maximum entropy modelling |
-| # releases         | 33 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 371844.3333333333 |
-| # stars            | 9846.0 |
+| # downloads        | 307421.3333333333 |
+| # stars            | 9978.0 |
 
 ## Links
 - [Homepage](https://github.com/NaturalNode/natural)

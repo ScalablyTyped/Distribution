@@ -10,10 +10,10 @@ Helpers used alongside icons for digital and software products using the Carbon 
 | ------------------ | :-------------: |
 | Full name          | @carbon/icon-helpers |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 43 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 427769.0 |
-| # stars            | 5735.0 |
+| # downloads        | 502868.0 |
+| # stars            | 6227.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

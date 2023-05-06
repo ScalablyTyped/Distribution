@@ -10,10 +10,10 @@ The Material Components web select (text field drop-down) component
 | ------------------ | :-------------: |
 | Full name          | @material/select |
 | Keywords           | material components, material design, select, multi select |
-| # releases         | 711 |
+| # releases         | 766 |
 | # dependents       | 0.0 |
-| # downloads        | 268645.6666666667 |
-| # stars            | 16381.0 |
+| # downloads        | 455853.3333333333 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

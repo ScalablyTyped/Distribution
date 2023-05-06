@@ -10,10 +10,10 @@ Jaeger binding for OpenTracing API for Node.js
 | ------------------ | :-------------: |
 | Full name          | jaeger-client |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 781140.6666666666 |
-| # stars            | 542.0 |
+| # downloads        | 958062.6666666666 |
+| # stars            | 549.0 |
 
 ## Links
 - [Homepage](https://github.com/jaegertracing/jaeger-client-node#readme)

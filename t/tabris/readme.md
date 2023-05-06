@@ -10,10 +10,10 @@ Mobile apps with native UIs in JavaScript
 | ------------------ | :-------------: |
 | Full name          | tabris |
 | Keywords           | native, mobile, ios, android |
-| # releases         | 1348 |
+| # releases         | 1346 |
 | # dependents       | 0.0 |
-| # downloads        | 16958.666666666668 |
-| # stars            | 1352.0 |
+| # downloads        | 14019.666666666666 |
+| # stars            | 1367.0 |
 
 ## Links
 - [Homepage](http://tabrisjs.com/)

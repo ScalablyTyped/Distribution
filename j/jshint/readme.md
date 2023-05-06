@@ -10,13 +10,15 @@ Static analysis tool for JavaScript
 | ------------------ | :-------------: |
 | Full name          | jshint |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 2067726.0 |
-| # stars            | 8755.0 |
+| # downloads        | 2663576.3333333335 |
+| # stars            | 8802.0 |
 
 ## Links
 - [Homepage](http://jshint.com/)
+- [Bugs](https://github.com/jshint/jshint/issues)
+- [Repository](https://github.com/jshint/jshint)
 - [Npm](https://www.npmjs.com/package/jshint)
     
 

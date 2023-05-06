@@ -10,10 +10,10 @@ JavaScript package downloader
 | ------------------ | :-------------: |
 | Full name          | pacote |
 | Keywords           | packages, npm, git |
-| # releases         | 37 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 2.0048844666666668E7 |
-| # stars            | 202.0 |
+| # downloads        | 2.0843676E7 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/pacote#readme)

@@ -10,15 +10,15 @@ Filter that lets you change RGBA via a 5x4 matrix transformation
 | ------------------ | :-------------: |
 | Full name          | @pixi/filter-color-matrix |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 358210.0 |
-| # stars            | 37483.0 |
+| # downloads        | 383450.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Ffilter-color-matrix)
     
 

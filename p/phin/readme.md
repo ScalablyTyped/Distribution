@@ -12,8 +12,8 @@ The ultra-lightweight Node.js HTTP client
 | Keywords           | http, https, request, fetch, ajax, url, uri |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 5206097.666666667 |
-| # stars            | 511.0 |
+| # downloads        | 5410516.666666667 |
+| # stars            | 526.0 |
 
 ## Links
 - [Homepage](https://github.com/ethanent/phin)

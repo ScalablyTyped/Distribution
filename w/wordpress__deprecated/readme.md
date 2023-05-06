@@ -10,9 +10,9 @@ Deprecation utility for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/deprecated |
 | Keywords           | wordpress, gutenberg, deprecated |
-| # releases         | 49 |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 182698.0 |
+| # downloads        | 192848.66666666666 |
 | # stars            | ? |
 
 ## Links

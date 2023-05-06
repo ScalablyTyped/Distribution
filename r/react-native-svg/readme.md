@@ -10,10 +10,10 @@ SVG library for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-svg |
 | Keywords           | react-component, react-native, ios, android, windows, SVG, ART, VML, gradient |
-| # releases         | 13 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 2326613.0 |
-| # stars            | 6293.0 |
+| # downloads        | 2552019.6666666665 |
+| # stars            | 6525.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/react-native-svg)

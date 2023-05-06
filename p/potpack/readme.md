@@ -10,10 +10,10 @@ A tiny library for packing 2D rectangles (for sprite layouts)
 | ------------------ | :-------------: |
 | Full name          | potpack |
 | Keywords           | algorithms, sprites, bin packing, geometry, rectangles |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2800591.0 |
-| # stars            | 179.0 |
+| # downloads        | 3074129.0 |
+| # stars            | 211.0 |
 
 ## Links
 - [Homepage](https://mapbox.github.io/potpack/)

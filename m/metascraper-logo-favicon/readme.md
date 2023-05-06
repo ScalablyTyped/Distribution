@@ -10,10 +10,10 @@ metascraper logo favicon fallback
 | ------------------ | :-------------: |
 | Full name          | metascraper-logo-favicon |
 | Keywords           | favicon, logo, metascraper |
-| # releases         | 99 |
+| # releases         | 88 |
 | # dependents       | 0.0 |
-| # downloads        | 39969.333333333336 |
-| # stars            | 1802.0 |
+| # downloads        | 75974.66666666667 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper#readme)

@@ -10,10 +10,10 @@ A simple React component capable of building HTML forms out of a JSON schema.
 | ------------------ | :-------------: |
 | Full name          | @rjsf/core |
 | Keywords           | react, form, json-schema |
-| # releases         | 25 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 735380.0 |
-| # stars            | 11872.0 |
+| # downloads        | 696162.0 |
+| # stars            | 12132.0 |
 
 ## Links
 - [Homepage](https://github.com/rjsf-team/react-jsonschema-form)

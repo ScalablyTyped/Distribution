@@ -10,15 +10,12 @@ ansi control sequences for terminal cursor hopping and colors
 | ------------------ | :-------------: |
 | Full name          | charm |
 | Keywords           | terminal, ansi, cursor, color, console, control, escape, sequence |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 5328072.333333333 |
-| # stars            | 374.0 |
+| # downloads        | 6185160.666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/node-charm#readme)
-- [Bugs](https://github.com/substack/node-charm/issues)
-- [Repository](https://github.com/substack/node-charm)
 - [Npm](https://www.npmjs.com/package/charm)
     
 

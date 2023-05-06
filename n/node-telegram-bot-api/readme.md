@@ -10,10 +10,10 @@ Telegram Bot API
 | ------------------ | :-------------: |
 | Full name          | node-telegram-bot-api |
 | Keywords           | telegram, telegram bot, telegram bot api, bot |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 252284.33333333334 |
-| # stars            | 6445.0 |
+| # downloads        | 227068.0 |
+| # stars            | 6767.0 |
 
 ## Links
 - [Homepage](https://github.com/yagop/node-telegram-bot-api)

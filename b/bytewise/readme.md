@@ -12,8 +12,8 @@ Binary serialization which sorts bytewise for arbirarily complex data structures
 | Keywords           | binary, sort, collation, serialization, leveldb, indexeddb |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 471484.3333333333 |
-| # stars            | 111.0 |
+| # downloads        | 470889.0 |
+| # stars            | 112.0 |
 
 ## Links
 - [Homepage](https://github.com/deanlandolt/bytewise)

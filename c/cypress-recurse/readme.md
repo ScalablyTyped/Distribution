@@ -10,10 +10,10 @@ A way to re-run Cypress commands until a predicate function returns true
 | ------------------ | :-------------: |
 | Full name          | cypress-recurse |
 | Keywords           | cypress, cypress-plugin |
-| # releases         | 34 |
+| # releases         | 41 |
 | # dependents       | 0.0 |
-| # downloads        | 341466.0 |
-| # stars            | 64.0 |
+| # downloads        | 537634.6666666666 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/bahmutov/cypress-recurse#readme)

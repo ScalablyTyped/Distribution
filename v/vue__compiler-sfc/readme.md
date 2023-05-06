@@ -10,14 +10,13 @@ Typings are for version 3.2.45
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-sfc |
 | Keywords           | vue |
-| # releases         | 109 |
+| # releases         | 111 |
 | # dependents       | 0.0 |
-| # downloads        | 8391342.666666666 |
-| # stars            | 32475.0 |
+| # downloads        | 1.0804202E7 |
+| # stars            | 33643.0 |
 
 ## Links
-- [Homepage](https://github.com/vuejs/core/tree/main/packages/compiler-sfc#readme)
-- [Bugs](https://github.com/vuejs/core/issues)
+- [Homepage](https://github.com/vuejs/core#readme)
 - [Repository](https://github.com/vuejs/core)
 - [Npm](https://www.npmjs.com/package/%40vue%2Fcompiler-sfc)
     

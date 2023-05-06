@@ -10,10 +10,10 @@ A Chrome DevTools protocol binding that maps WebDriver commands into Chrome DevT
 | ------------------ | :-------------: |
 | Full name          | devtools |
 | Keywords           | devtoolsdriver |
-| # releases         | 116 |
+| # releases         | 149 |
 | # dependents       | 0.0 |
-| # downloads        | 3122101.3333333335 |
-| # stars            | 7720.0 |
+| # downloads        | 3610138.6666666665 |
+| # stars            | 7901.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/devtools)

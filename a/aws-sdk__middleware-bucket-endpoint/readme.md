@@ -10,10 +10,10 @@ Typings are for version 3.209.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-bucket-endpoint |
 | Keywords           | - |
-| # releases         | 78 |
+| # releases         | 86 |
 | # dependents       | 0.0 |
-| # downloads        | 5827177.666666667 |
-| # stars            | 1854.0 |
+| # downloads        | 7335283.333333333 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-bucket-endpoint)

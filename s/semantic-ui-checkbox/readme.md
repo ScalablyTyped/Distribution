@@ -10,13 +10,15 @@ Single component release of checkbox
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-checkbox |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 15821.666666666666 |
+| # downloads        | 1629.3333333333333 |
 | # stars            | 5.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)
+- [Bugs](https://github.com/Semantic-Org/Semantic-UI/issues)
+- [Repository](https://github.com/Semantic-Org/UI-Checkbox)
 - [Npm](https://www.npmjs.com/package/semantic-ui-checkbox)
     
 

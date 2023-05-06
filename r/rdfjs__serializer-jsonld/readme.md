@@ -4,15 +4,15 @@
 Typings are for version 1.2
 
 ## Library description:
-JSON-LD serializer that implements the RDFJS Sink interface
+JSON-LD serializer that implements the RDF/JS Sink interface
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/serializer-jsonld |
 | Keywords           | rdf, rdfjs, serializer, json-ld |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 5731.666666666667 |
+| # downloads        | 9369.666666666666 |
 | # stars            | 3.0 |
 
 ## Links

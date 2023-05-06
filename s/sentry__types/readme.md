@@ -10,10 +10,10 @@ Types for all Sentry JavaScript SDKs
 | ------------------ | :-------------: |
 | Full name          | @sentry/types |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 149 |
 | # dependents       | 0.0 |
-| # downloads        | 2.7029619E7 |
-| # stars            | 6549.0 |
+| # downloads        | 2.8593202333333332E7 |
+| # stars            | 6782.0 |
 
 ## Links
 - [Homepage](https://github.com/getsentry/sentry-javascript/tree/master/packages/types)

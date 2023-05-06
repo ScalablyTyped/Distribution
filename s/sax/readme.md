@@ -10,10 +10,10 @@ An evented streaming XML parser in JavaScript
 | ------------------ | :-------------: |
 | Full name          | sax |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1528898466666667E8 |
-| # stars            | 1006.0 |
+| # downloads        | 1.2006088533333333E8 |
+| # stars            | 1017.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/sax-js#readme)

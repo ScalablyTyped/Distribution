@@ -12,8 +12,8 @@ Client for prometheus
 | Keywords           | Prometheus, Metrics, Client |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 5339366.333333333 |
-| # stars            | 2361.0 |
+| # downloads        | 5621307.666666667 |
+| # stars            | 2492.0 |
 
 ## Links
 - [Homepage](https://github.com/siimon/prom-client)

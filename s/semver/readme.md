@@ -12,8 +12,8 @@ The semantic version parser used by npm.
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 8.001145296666666E8 |
-| # stars            | 4263.0 |
+| # downloads        | 9.18351229E8 |
+| # stars            | 4495.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/node-semver#readme)

@@ -10,10 +10,10 @@ Matches strings against configurable strings, globs, regular expressions, and/or
 | ------------------ | :-------------: |
 | Full name          | anymatch |
 | Keywords           | match, any, string, file, fs, list, glob, regex, regexp, regular, expression, function |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8803987366666666E8 |
-| # stars            | 322.0 |
+| # downloads        | 2.0105261033333334E8 |
+| # stars            | 334.0 |
 
 ## Links
 - [Homepage](https://github.com/micromatch/anymatch)

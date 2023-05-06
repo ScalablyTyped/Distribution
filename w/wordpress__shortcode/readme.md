@@ -10,9 +10,9 @@ Shortcode module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/shortcode |
 | Keywords           | wordpress, gutenberg, shortcode |
-| # releases         | 47 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 117252.33333333333 |
+| # downloads        | 123851.33333333333 |
 | # stars            | ? |
 
 ## Links

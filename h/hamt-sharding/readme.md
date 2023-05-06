@@ -10,9 +10,9 @@ JavaScript implementation of sharding using hash array mapped tries
 | ------------------ | :-------------: |
 | Full name          | hamt-sharding |
 | Keywords           | IPFS, hamt, sharding |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 133168.66666666666 |
+| # downloads        | 161302.66666666666 |
 | # stars            | 1.0 |
 
 ## Links

@@ -12,7 +12,7 @@ Helpers to get information about single/multi-package contexts
 | Keywords           | packages, directory, workspace, npm, yarn |
 | # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 20373.333333333332 |
+| # downloads        | 17129.333333333332 |
 | # stars            | 2.0 |
 
 ## Links

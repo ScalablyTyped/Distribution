@@ -10,10 +10,10 @@ Convert HTML code to PDFMake
 | ------------------ | :-------------: |
 | Full name          | html-to-pdfmake |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 114202.66666666667 |
-| # stars            | 307.0 |
+| # downloads        | 152548.33333333334 |
+| # stars            | 338.0 |
 
 ## Links
 - [Homepage](https://github.com/Aymkdn/html-to-pdfmake#readme)

@@ -10,10 +10,10 @@ Customizable Date Picker for React
 | ------------------ | :-------------: |
 | Full name          | react-day-picker |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 2219093.3333333335 |
-| # stars            | 4629.0 |
+| # downloads        | 2726992.3333333335 |
+| # stars            | 4761.0 |
 
 ## Links
 - [Homepage](http://react-day-picker.js.org)

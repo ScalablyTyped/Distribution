@@ -9,11 +9,11 @@ Content Addressable aRchive format reader and writer
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @ipld/car |
-| Keywords           | car, ipld, ipfs, multiformats |
-| # releases         | 54 |
+| Keywords           | car, ipfs, ipld, multiformats |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 107967.66666666667 |
-| # stars            | 28.0 |
+| # downloads        | 151439.66666666666 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/ipld/js-car#readme)

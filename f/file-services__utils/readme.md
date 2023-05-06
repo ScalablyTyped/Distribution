@@ -10,9 +10,9 @@ Common file system utility functions.
 | ------------------ | :-------------: |
 | Full name          | @file-services/utils |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 24682.666666666668 |
+| # downloads        | 17271.333333333332 |
 | # stars            | 15.0 |
 
 ## Links

@@ -10,10 +10,10 @@ Intl.LocaleMatcher ponyfill
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-localematcher |
 | Keywords           | intl, locale, formatjs, react-intl, i18n, ecma402, tc39 |
-| # releases         | 35 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 5218544.666666667 |
-| # stars            | 13324.0 |
+| # downloads        | 7409048.666666667 |
+| # stars            | 13464.0 |
 
 ## Links
 - [Homepage](https://github.com/formatjs/formatjs#readme)

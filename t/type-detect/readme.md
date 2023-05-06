@@ -12,8 +12,8 @@ Improved typeof detection for node.js and the browser.
 | Keywords           | type, typeof, types |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 7.530352133333333E7 |
-| # stars            | 111.0 |
+| # downloads        | 8.430371966666667E7 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/chaijs/type-detect#readme)

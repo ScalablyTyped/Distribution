@@ -10,10 +10,10 @@ New Relic agent
 | ------------------ | :-------------: |
 | Full name          | newrelic |
 | Keywords           | apm, performance, monitoring, instrumentation, debugging, profiling |
-| # releases         | 51 |
+| # releases         | 55 |
 | # dependents       | 0.0 |
-| # downloads        | 3029013.0 |
-| # stars            | 885.0 |
+| # downloads        | 3084528.0 |
+| # stars            | 895.0 |
 
 ## Links
 - [Homepage](https://github.com/newrelic/node-newrelic)

@@ -12,7 +12,7 @@ Asset support code for React Native.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 2692584.0 |
+| # downloads        | 3260507.3333333335 |
 | # stars            | ? |
 
 ## Links

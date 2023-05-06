@@ -12,7 +12,7 @@ Hijack clicks on and within links, probably for client-side routing
 | Keywords           | client-side-routing, routing, hijack, links |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 674.3333333333334 |
+| # downloads        | 1584.6666666666667 |
 | # stars            | 40.0 |
 
 ## Links

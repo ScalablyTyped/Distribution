@@ -12,8 +12,8 @@ Browser-side SDF font generator
 | Keywords           | sdf, signed distance fields, font, canvas, text, distance transform |
 | # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 2819869.6666666665 |
-| # stars            | 422.0 |
+| # downloads        | 3457714.3333333335 |
+| # stars            | 459.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/tiny-sdf#readme)

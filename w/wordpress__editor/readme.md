@@ -10,9 +10,9 @@ Enhanced block editor for WordPress posts.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/editor |
 | Keywords           | wordpress, gutenberg, editor |
-| # releases         | 136 |
+| # releases         | 135 |
 | # dependents       | 0.0 |
-| # downloads        | 52792.0 |
+| # downloads        | 51272.333333333336 |
 | # stars            | ? |
 
 ## Links

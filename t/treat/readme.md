@@ -10,10 +10,10 @@ Themeable, statically extracted CSS-in-JS with near-zero runtime
 | ------------------ | :-------------: |
 | Full name          | treat |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 22995.333333333332 |
-| # stars            | 1125.0 |
+| # downloads        | 20974.666666666668 |
+| # stars            | 1144.0 |
 
 ## Links
 - [Homepage](https://github.com/seek-oss/treat#readme)

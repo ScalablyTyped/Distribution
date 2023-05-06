@@ -10,10 +10,10 @@ AWS credential provider that sources credentials from a Node.JS environment.
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-node |
 | Keywords           | aws, credentials |
-| # releases         | 115 |
+| # releases         | 138 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5536725E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.3130442666666668E7 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-provider-node)

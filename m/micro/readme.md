@@ -10,10 +10,10 @@ Asynchronous HTTP microservices
 | ------------------ | :-------------: |
 | Full name          | micro |
 | Keywords           | micro, service, microservice, serverless, API |
-| # releases         | 1 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 547275.0 |
-| # stars            | 10135.0 |
+| # downloads        | 670110.3333333334 |
+| # stars            | 10280.0 |
 
 ## Links
 - [Homepage](https://github.com/vercel/micro#readme)

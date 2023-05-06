@@ -10,10 +10,10 @@ Reduce initial definitions to the actual initial value, where possible.
 | ------------------ | :-------------: |
 | Full name          | postcss-reduce-initial |
 | Keywords           | css, postcss, postcss-plugin |
-| # releases         | 26 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 4.4022301E7 |
-| # stars            | 4187.0 |
+| # downloads        | 4.5638139333333336E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

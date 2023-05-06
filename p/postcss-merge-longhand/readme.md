@@ -10,10 +10,10 @@ Merge longhand properties into shorthand with PostCSS.
 | ------------------ | :-------------: |
 | Full name          | postcss-merge-longhand |
 | Keywords           | css, minify, optimise, postcss, postcss-plugin |
-| # releases         | 35 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 4.4936366666666664E7 |
-| # stars            | 4187.0 |
+| # downloads        | 4.6336789333333336E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

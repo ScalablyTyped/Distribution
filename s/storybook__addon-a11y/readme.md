@@ -10,10 +10,10 @@ Test component compliance with web accessibility standards
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-a11y |
 | Keywords           | a11y, accessibility, addon, storybook, valid, verify, test |
-| # releases         | 476 |
+| # releases         | 461 |
 | # dependents       | 0.0 |
-| # downloads        | 4530190.333333333 |
-| # stars            | ? |
+| # downloads        | 4799127.333333333 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/a11y)

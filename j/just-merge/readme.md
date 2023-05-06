@@ -10,10 +10,10 @@ shallow extend an object
 | ------------------ | :-------------: |
 | Full name          | just-merge |
 | Keywords           | object, assign, copy, extend, merge, no-dependencies, just |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 10399.666666666666 |
-| # stars            | 4414.0 |
+| # downloads        | 15572.333333333334 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

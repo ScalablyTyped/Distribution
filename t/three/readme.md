@@ -10,10 +10,10 @@ JavaScript 3D library
 | ------------------ | :-------------: |
 | Full name          | three |
 | Keywords           | three, three.js, javascript, 3d, virtual-reality, augmented-reality, webgl, webgl2, webaudio, webgpu, webxr, canvas, svg, html5 |
-| # releases         | 46 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 2827446.6666666665 |
-| # stars            | 84860.0 |
+| # downloads        | 3385150.3333333335 |
+| # stars            | 87722.0 |
 
 ## Links
 - [Homepage](https://threejs.org/)

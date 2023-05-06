@@ -10,10 +10,10 @@ Run some code when the process exits
 | ------------------ | :-------------: |
 | Full name          | exit-hook |
 | Keywords           | exit, quit, process, hook, graceful, handler, shutdown, sigterm, sigint, terminate, kill, stop, event, signal, async, asynchronous |
-| # releases         | 2 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2954639666666666E7 |
-| # stars            | 164.0 |
+| # downloads        | 1.6353301333333334E7 |
+| # stars            | 218.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/exit-hook#readme)

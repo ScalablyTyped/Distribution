@@ -10,10 +10,10 @@ XML builder for the AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/xml-builder |
 | Keywords           | - |
-| # releases         | 36 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 5790983.666666667 |
-| # stars            | 1851.0 |
+| # downloads        | 6644221.666666667 |
+| # stars            | 1939.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/xml-builder)

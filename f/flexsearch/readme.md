@@ -10,10 +10,10 @@ Next-Generation full text search library with zero dependencies.
 | ------------------ | :-------------: |
 | Full name          | flexsearch |
 | Keywords           | fulltext search, elastic search, fastest search, contextual search, document search, fuzzy search, fuzzy match, search engine |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 249692.33333333334 |
-| # stars            | 8613.0 |
+| # downloads        | 371815.3333333333 |
+| # stars            | 8889.0 |
 
 ## Links
 - [Homepage](https://github.com/nextapps-de/flexsearch/)

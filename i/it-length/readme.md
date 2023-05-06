@@ -10,10 +10,10 @@ Counts the number of items in an async iterable
 | ------------------ | :-------------: |
 | Full name          | it-length |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 41815.333333333336 |
-| # stars            | 200.0 |
+| # downloads        | 38245.666666666664 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-length#readme)

@@ -9,10 +9,10 @@ Typings are for version 4.1.6
 | ------------------ | :-------------: |
 | Full name          | vue-router |
 | Keywords           | - |
-| # releases         | 59 |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 9161187.333333334 |
-| # stars            | 2368.0 |
+| # downloads        | 9466254.333333334 |
+| # stars            | 2478.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/router#readme)

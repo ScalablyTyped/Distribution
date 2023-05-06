@@ -10,10 +10,10 @@ Normalize unicode-range descriptors, and can convert to wildcard ranges.
 | ------------------ | :-------------: |
 | Full name          | postcss-normalize-unicode |
 | Keywords           | css, postcss, postcss-plugin |
-| # releases         | 27 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 4.1233149333333336E7 |
-| # stars            | 4187.0 |
+| # downloads        | 4.2878010666666664E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

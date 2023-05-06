@@ -10,10 +10,10 @@ A library to process OpenAPI security definitions in parallel.
 | ------------------ | :-------------: |
 | Full name          | openapi-security-handler |
 | Keywords           | openapi, security, handler, jsonschema |
-| # releases         | 14 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 92779.0 |
-| # stars            | ? |
+| # downloads        | 118470.66666666667 |
+| # stars            | 765.0 |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-security-handler#readme)

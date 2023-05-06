@@ -10,10 +10,10 @@ An extremely fast JavaScript and CSS bundler and minifier.
 | ------------------ | :-------------: |
 | Full name          | esbuild |
 | Keywords           | - |
-| # releases         | 224 |
+| # releases         | 200 |
 | # dependents       | 0.0 |
-| # downloads        | 3.0229365E7 |
-| # stars            | 33272.0 |
+| # downloads        | 4.2002750333333336E7 |
+| # stars            | 34305.0 |
 
 ## Links
 - [Homepage](https://github.com/evanw/esbuild#readme)

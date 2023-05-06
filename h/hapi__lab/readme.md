@@ -10,10 +10,10 @@ Test utility
 | ------------------ | :-------------: |
 | Full name          | @hapi/lab |
 | Keywords           | test, runner |
-| # releases         | 18 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 79712.66666666667 |
-| # stars            | 740.0 |
+| # downloads        | 68764.66666666667 |
+| # stars            | 739.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/lab#readme)

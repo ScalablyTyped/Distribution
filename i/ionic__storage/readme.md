@@ -10,10 +10,10 @@ Ionic Storage Helper
 | ------------------ | :-------------: |
 | Full name          | @ionic/storage |
 | Keywords           | capacitor, plugin, native |
-| # releases         | 11 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 239157.0 |
-| # stars            | 297.0 |
+| # downloads        | 276691.0 |
+| # stars            | 327.0 |
 
 ## Links
 - [Homepage](https://github.com/ionic-team/ionic-storage#readme)

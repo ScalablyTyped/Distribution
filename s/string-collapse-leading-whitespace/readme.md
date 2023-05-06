@@ -10,10 +10,10 @@ Collapse the leading and trailing whitespace of a string
 | ------------------ | :-------------: |
 | Full name          | string-collapse-leading-whitespace |
 | Keywords           | alt, attributes, characters, dash, email, encoding, fancy, quote, remove, replace, simple, string, tags, templates |
-| # releases         | 42 |
+| # releases         | 45 |
 | # dependents       | 0.0 |
-| # downloads        | 348334.6666666667 |
-| # stars            | 116.0 |
+| # downloads        | 403227.0 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/string-collapse-leading-whitespace)

@@ -10,10 +10,10 @@ Layout helpers for digital and software products using the Carbon Design System
 | ------------------ | :-------------: |
 | Full name          | @carbon/layout |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 62 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 330657.0 |
-| # stars            | 5846.0 |
+| # downloads        | 398463.3333333333 |
+| # stars            | 6227.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

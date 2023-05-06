@@ -10,10 +10,10 @@ Decode JWT tokens, mostly useful for browser applications.
 | ------------------ | :-------------: |
 | Full name          | jwt-decode |
 | Keywords           | jwt, browser |
-| # releases         | 7 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.637671E7 |
-| # stars            | 2592.0 |
+| # downloads        | 1.8507888666666668E7 |
+| # stars            | 2691.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/jwt-decode#readme)

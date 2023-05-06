@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/path-util |
 | Keywords           | util, antv, g |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 326049.0 |
-| # stars            | 71.0 |
+| # downloads        | 349458.0 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

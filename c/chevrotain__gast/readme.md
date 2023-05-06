@@ -10,10 +10,10 @@ Grammar AST structure for Chevrotain Parsers
 | ------------------ | :-------------: |
 | Full name          | @chevrotain/gast |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 239541.66666666666 |
-| # stars            | 1979.0 |
+| # downloads        | 332297.6666666667 |
+| # stars            | 2046.0 |
 
 ## Links
 - [Homepage](https://github.com/Chevrotain/chevrotain#readme)

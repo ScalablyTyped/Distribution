@@ -12,7 +12,7 @@ Promises of moves of files or directories with rename, falling back to recursive
 | Keywords           | move |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 4.1129797E7 |
+| # downloads        | 3.8792761333333336E7 |
 | # stars            | 18.0 |
 
 ## Links

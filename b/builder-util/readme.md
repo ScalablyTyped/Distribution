@@ -10,10 +10,10 @@ Various utilities. Used by [electron-builder](https://github.com/electron-userla
 | ------------------ | :-------------: |
 | Full name          | builder-util |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 1185300.0 |
-| # stars            | 12258.0 |
+| # downloads        | 1091127.0 |
+| # stars            | 12487.0 |
 
 ## Links
 - [Homepage](https://github.com/electron-userland/electron-builder)

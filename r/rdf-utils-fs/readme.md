@@ -10,9 +10,9 @@ RDF/JS file system utils
 | ------------------ | :-------------: |
 | Full name          | rdf-utils-fs |
 | Keywords           | rdf, rdfjs, fs, utils |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 4242.666666666667 |
+| # downloads        | 7536.333333333333 |
 | # stars            | 0.0 |
 
 ## Links

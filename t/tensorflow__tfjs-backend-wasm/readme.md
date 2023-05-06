@@ -10,10 +10,10 @@ This package adds a WebAssembly backend to TensorFlow.js. It currently supports 
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-backend-wasm |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 29375.0 |
-| # stars            | 16518.0 |
+| # downloads        | 43241.333333333336 |
+| # stars            | 16876.0 |
 
 ## Links
 - [Homepage](https://github.com/tensorflow/tfjs#readme)

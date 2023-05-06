@@ -12,8 +12,8 @@ A set of utilities to help identify IPFS resources on the web
 | Keywords           | dnslink, gateway, ipfs, ipns, js-ipfs |
 | # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 209429.33333333334 |
-| # stars            | 97.0 |
+| # downloads        | 215844.0 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs-shipyard/is-ipfs#readme)

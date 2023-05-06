@@ -10,10 +10,10 @@ ProseMirror's document model
 | ------------------ | :-------------: |
 | Full name          | prosemirror-model |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 1839886.0 |
-| # stars            | 164.0 |
+| # downloads        | 2319714.3333333335 |
+| # stars            | 180.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-model#readme)

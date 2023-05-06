@@ -12,7 +12,7 @@ Email address and domain validation
 | Keywords           | email, domain, address, validation |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7747356666666668E7 |
+| # downloads        | 1.5052877333333334E7 |
 | # stars            | 26.0 |
 
 ## Links

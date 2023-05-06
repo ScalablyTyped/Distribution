@@ -10,10 +10,10 @@ Slice GeoJSON data into vector tiles efficiently
 | ------------------ | :-------------: |
 | Full name          | geojson-vt |
 | Keywords           | spatial, geojson, tiles, geometry |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2778129.3333333335 |
-| # stars            | 1576.0 |
+| # downloads        | 2891778.6666666665 |
+| # stars            | 1619.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/geojson-vt)

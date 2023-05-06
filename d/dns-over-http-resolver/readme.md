@@ -10,10 +10,10 @@ DNS over HTTP resolver
 | ------------------ | :-------------: |
 | Full name          | dns-over-http-resolver |
 | Keywords           | dns, doh, http |
-| # releases         | 12 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 345678.0 |
-| # stars            | 4.0 |
+| # downloads        | 349542.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/vasco-santos/dns-over-http-resolver#readme)

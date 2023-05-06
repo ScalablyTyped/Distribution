@@ -10,10 +10,10 @@ A standalone implementation of the AWS Signature V4 request signing algorithm
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/signature-v4 |
 | Keywords           | - |
-| # releases         | 64 |
+| # releases         | 73 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6514264E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.3494252333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/signature-v4)

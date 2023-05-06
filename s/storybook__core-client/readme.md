@@ -10,10 +10,10 @@ Storybook framework-agnostic API
 | ------------------ | :-------------: |
 | Full name          | @storybook/core-client |
 | Keywords           | storybook |
-| # releases         | 376 |
+| # releases         | 439 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4915890666666666E7 |
-| # stars            | 74176.0 |
+| # downloads        | 1.6236416E7 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/core)

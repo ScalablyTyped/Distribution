@@ -10,15 +10,12 @@ transform the ast on a recursive walk
 | ------------------ | :-------------: |
 | Full name          | falafel |
 | Keywords           | ast, burrito, source, syntax, traversal, tree |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2916859.6666666665 |
-| # stars            | 569.0 |
+| # downloads        | 3340622.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/node-falafel#readme)
-- [Bugs](https://github.com/substack/node-falafel/issues)
-- [Repository](https://github.com/substack/node-falafel)
 - [Npm](https://www.npmjs.com/package/falafel)
     
 

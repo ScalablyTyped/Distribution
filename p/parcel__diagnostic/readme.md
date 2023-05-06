@@ -9,10 +9,10 @@ Typings are for version 2.8.0
 | ------------------ | :-------------: |
 | Full name          | @parcel/diagnostic |
 | Keywords           | - |
-| # releases         | 361 |
+| # releases         | 332 |
 | # dependents       | 0.0 |
-| # downloads        | 1814447.3333333333 |
-| # stars            | 41287.0 |
+| # downloads        | 1996117.6666666667 |
+| # stars            | 41841.0 |
 
 ## Links
 - [Homepage](https://github.com/parcel-bundler/parcel#readme)

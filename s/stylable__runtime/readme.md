@@ -10,10 +10,10 @@ Stylable runtime DOM integration
 | ------------------ | :-------------: |
 | Full name          | @stylable/runtime |
 | Keywords           | - |
-| # releases         | 91 |
+| # releases         | 80 |
 | # dependents       | 0.0 |
-| # downloads        | 28763.666666666668 |
-| # stars            | 1174.0 |
+| # downloads        | 24416.0 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/stylable/tree/master#readme)

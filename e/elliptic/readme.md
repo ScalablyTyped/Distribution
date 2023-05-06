@@ -12,8 +12,8 @@ EC cryptography
 | Keywords           | EC, Elliptic, curve, Cryptography |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 5.3915171E7 |
-| # stars            | 1436.0 |
+| # downloads        | 5.3414113333333336E7 |
+| # stars            | 1483.0 |
 
 ## Links
 - [Homepage](https://github.com/indutny/elliptic)

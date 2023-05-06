@@ -10,12 +10,15 @@ Extend Chai Assertion library with tests for http apis
 | ------------------ | :-------------: |
 | Full name          | chai-http |
 | Keywords           | chai, chai-plugin, browser, http, request, vendor, supertest, superagent |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1452109.3333333333 |
-| # stars            | 625.0 |
+| # downloads        | 1440411.3333333333 |
+| # stars            | 626.0 |
 
 ## Links
+- [Homepage](https://github.com/chaijs/chai-http#readme)
+- [Bugs](https://github.com/chaijs/chai-http/issues)
+- [Repository](https://github.com/chaijs/chai-http)
 - [Npm](https://www.npmjs.com/package/chai-http)
     
 

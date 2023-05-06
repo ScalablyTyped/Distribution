@@ -12,13 +12,11 @@ JSON-Schema + fake data generators
 | Keywords           | json, jsonschema, fake, mocks |
 | # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 726624.0 |
-| # stars            | 2816.0 |
+| # downloads        | 821313.3333333334 |
+| # stars            | 2883.0 |
 
 ## Links
 - [Homepage](http://json-schema-faker.js.org)
-- [Bugs](https://github.com/json-schema-faker/json-schema-faker/issues)
-- [Repository](https://github.com/json-schema-faker/json-schema-faker)
 - [Npm](https://www.npmjs.com/package/json-schema-faker)
     
 

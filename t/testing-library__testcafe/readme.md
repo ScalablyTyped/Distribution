@@ -10,10 +10,10 @@ Typings are for version 4.4.1
 | ------------------ | :-------------: |
 | Full name          | @testing-library/testcafe |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 80775.66666666667 |
-| # stars            | 66.0 |
+| # downloads        | 78051.66666666667 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/testing-library/testcafe-testing-library#readme)

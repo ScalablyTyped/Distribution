@@ -10,9 +10,9 @@ CADViewer - JavaScript CAD Viewer Library for FrameWorks (ReactJS, Angular, VueJ
 | ------------------ | :-------------: |
 | Full name          | cadviewer |
 | Keywords           | CAD, javascript, CAD Viewer, DWG, DXF, DWF, PDF, DGN, TIFF, Annotate, Redline, Space Management, CAFM, IWMS, IOT, Asset Management |
-| # releases         | 122 |
+| # releases         | 176 |
 | # dependents       | 0.0 |
-| # downloads        | 1301.0 |
+| # downloads        | 1519.0 |
 | # stars            | 7.0 |
 
 ## Links

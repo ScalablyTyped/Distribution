@@ -10,10 +10,10 @@ Storybook addons store
 | ------------------ | :-------------: |
 | Full name          | @storybook/addons |
 | Keywords           | storybook |
-| # releases         | 478 |
+| # releases         | 463 |
 | # dependents       | 0.0 |
-| # downloads        | 2.9101931E7 |
-| # stars            | 73947.0 |
+| # downloads        | 3.4189080333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/addons)

@@ -12,8 +12,8 @@ Utilities for testing babel plugins
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 168218.66666666666 |
-| # stars            | 253.0 |
+| # downloads        | 134598.0 |
+| # stars            | 262.0 |
 
 ## Links
 - [Homepage](https://github.com/babel-utils/babel-plugin-tester#readme)

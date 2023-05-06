@@ -10,10 +10,10 @@ Helper functions
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/util |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.126669E7 |
-| # stars            | 39.0 |
+| # downloads        | 1.7771913666666668E7 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-crypto-helpers/tree/master/packages/util)

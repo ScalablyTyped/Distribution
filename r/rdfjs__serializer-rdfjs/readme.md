@@ -10,9 +10,9 @@ RDF/JS JavaScript code serializer that implements the RDF/JS Sink interface
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/serializer-rdfjs |
 | Keywords           | rdf, rdfjs, serializer |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 255.0 |
+| # downloads        | 464.3333333333333 |
 | # stars            | 1.0 |
 
 ## Links

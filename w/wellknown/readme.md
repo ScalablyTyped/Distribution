@@ -12,7 +12,7 @@ convert wkt to geojson
 | Keywords           | wkt, geojson, maps |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 167309.66666666666 |
+| # downloads        | 194158.0 |
 | # stars            | 237.0 |
 
 ## Links

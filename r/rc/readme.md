@@ -12,8 +12,8 @@ hardwired configuration loader
 | Keywords           | config, rc, unix, defaults |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 5.9197735666666664E7 |
-| # stars            | 969.0 |
+| # downloads        | 6.1222627E7 |
+| # stars            | 974.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/rc#readme)

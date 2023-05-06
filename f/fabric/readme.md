@@ -10,10 +10,10 @@ Object model for HTML5 canvas, and SVG-to-canvas parser. Backed by jsdom and nod
 | ------------------ | :-------------: |
 | Full name          | fabric |
 | Keywords           | canvas, graphic, graphics, SVG, node-canvas, parser, HTML5, object model |
-| # releases         | 24 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 484534.6666666667 |
-| # stars            | 22595.0 |
+| # downloads        | 543287.0 |
+| # stars            | 23532.0 |
 
 ## Links
 - [Homepage](http://fabricjs.com/)

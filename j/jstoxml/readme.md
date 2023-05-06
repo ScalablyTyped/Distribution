@@ -10,10 +10,10 @@ Converts JavaScript/JSON to XML (for RSS, Podcasts, AMP, etc.)
 | ------------------ | :-------------: |
 | Full name          | jstoxml |
 | Keywords           | amp, google amp, json, podcast, rss, sitemap, site map, xml |
-| # releases         | 26 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 202658.0 |
-| # stars            | 153.0 |
+| # downloads        | 216974.33333333334 |
+| # stars            | 156.0 |
 
 ## Links
 - [Homepage](http://github.com/davidcalhoun/jstoxml)

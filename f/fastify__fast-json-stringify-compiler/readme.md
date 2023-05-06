@@ -10,9 +10,9 @@ Build and manage the fast-json-stringify instances for the fastify framework
 | ------------------ | :-------------: |
 | Full name          | @fastify/fast-json-stringify-compiler |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 372652.6666666667 |
+| # downloads        | 1273095.0 |
 | # stars            | 2.0 |
 
 ## Links

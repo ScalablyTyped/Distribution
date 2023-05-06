@@ -10,10 +10,10 @@ A tiny utility library for building reactive state-based UI.
 | ------------------ | :-------------: |
 | Full name          | reefjs |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 1117.3333333333333 |
-| # stars            | 849.0 |
+| # downloads        | 1231.0 |
+| # stars            | 853.0 |
 
 ## Links
 - [Homepage](https://github.com/cferdinandi/reef#readme)

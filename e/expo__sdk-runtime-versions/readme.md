@@ -10,9 +10,9 @@ Functions for converting Expo SDK versions to EAS runtime versions
 | ------------------ | :-------------: |
 | Full name          | @expo/sdk-runtime-versions |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1457162.3333333333 |
+| # downloads        | 1771278.6666666667 |
 | # stars            | ? |
 
 ## Links

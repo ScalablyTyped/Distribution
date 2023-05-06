@@ -10,10 +10,10 @@ React binding to canvas element via Konva framework
 | ------------------ | :-------------: |
 | Full name          | react-konva |
 | Keywords           | react, canvas, jsx, konva |
-| # releases         | 19 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 481088.3333333333 |
-| # stars            | 4790.0 |
+| # downloads        | 490704.6666666667 |
+| # stars            | 4823.0 |
 
 ## Links
 - [Homepage](https://github.com/konvajs/react-konva#readme)

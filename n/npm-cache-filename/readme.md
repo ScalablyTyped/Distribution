@@ -12,7 +12,7 @@ Given a cache folder and url, return the appropriate cache folder.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1281299.0 |
+| # downloads        | 1027976.0 |
 | # stars            | 4.0 |
 
 ## Links

@@ -10,9 +10,9 @@ Angular - service worker tooling!
 | ------------------ | :-------------: |
 | Full name          | @angular/service-worker |
 | Keywords           | - |
-| # releases         | 220 |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 1290869.0 |
+| # downloads        | 1265068.0 |
 | # stars            | ? |
 
 ## Links

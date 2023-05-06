@@ -10,10 +10,10 @@ micromark utility to sanitize urls
 | ------------------ | :-------------: |
 | Full name          | micromark-util-sanitize-uri |
 | Keywords           | micromark, util, utility, sanitize, clear, url |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3636052.6666666665 |
-| # stars            | 1252.0 |
+| # downloads        | 4499227.0 |
+| # stars            | 1296.0 |
 
 ## Links
 - [Homepage](https://github.com/micromark/micromark/tree/main#readme)

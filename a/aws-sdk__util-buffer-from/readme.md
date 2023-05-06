@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-buffer-from |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3943239E7 |
-| # stars            | 1851.0 |
+| # downloads        | 1.7505712E7 |
+| # stars            | 1962.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-buffer-from)

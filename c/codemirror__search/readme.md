@@ -10,9 +10,9 @@ Search functionality for the CodeMirror code editor
 | ------------------ | :-------------: |
 | Full name          | @codemirror/search |
 | Keywords           | editor, code |
-| # releases         | 26 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 518352.0 |
+| # downloads        | 982587.6666666666 |
 | # stars            | 5.0 |
 
 ## Links

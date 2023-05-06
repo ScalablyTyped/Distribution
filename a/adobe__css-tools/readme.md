@@ -10,10 +10,10 @@ CSS parser / stringifier
 | ------------------ | :-------------: |
 | Full name          | @adobe/css-tools |
 | Keywords           | css, parser, stringifier, stylesheet |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 287.0 |
-| # stars            | 2.0 |
+| # downloads        | 1.4461462333333334E7 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/adobe/css-tools#readme)

@@ -10,10 +10,10 @@ A very simple placeholder image generator with zero dependencies. Returns a data
 | ------------------ | :-------------: |
 | Full name          | @cloudfour/simple-svg-placeholder |
 | Keywords           | SVG, placeholder, dummy, image, generator, mock, URI |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 7835.333333333333 |
-| # stars            | 142.0 |
+| # downloads        | 9085.333333333334 |
+| # stars            | 151.0 |
 
 ## Links
 - [Homepage](https://github.com/cloudfour/simple-svg-placeholder#readme)

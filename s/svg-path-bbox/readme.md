@@ -10,10 +10,10 @@ Compute bounding boxes of SVG paths.
 | ------------------ | :-------------: |
 | Full name          | svg-path-bbox |
 | Keywords           | svg, path, bbox |
-| # releases         | 33 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 7658.666666666667 |
-| # stars            | 17.0 |
+| # downloads        | 4898.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/mondeja/svg-path-bbox#readme)

@@ -12,8 +12,8 @@ Set for RDF/JS Terms
 | Keywords           | rdf, rdfjs, set, term |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 36951.666666666664 |
-| # stars            | 0.0 |
+| # downloads        | 45956.333333333336 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/term-set)

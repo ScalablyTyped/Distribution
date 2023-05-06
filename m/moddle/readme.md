@@ -10,10 +10,10 @@ A library for importing meta-model based file formats into JS
 | ------------------ | :-------------: |
 | Full name          | moddle |
 | Keywords           | model, meta-model, xml, xsd, import, export |
-| # releases         | 3 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 156962.66666666666 |
-| # stars            | 66.0 |
+| # downloads        | 203431.0 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/bpmn-io/moddle#readme)

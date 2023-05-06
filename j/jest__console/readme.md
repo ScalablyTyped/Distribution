@@ -9,9 +9,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | @jest/console |
 | Keywords           | - |
-| # releases         | 61 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 8.636089433333333E7 |
+| # downloads        | 9.343430633333333E7 |
 | # stars            | ? |
 
 ## Links

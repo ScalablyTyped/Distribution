@@ -10,10 +10,10 @@ Parses data: URLs
 | ------------------ | :-------------: |
 | Full name          | data-urls |
 | Keywords           | data url, data uri, data:, http, fetch, whatwg |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 7.672595433333333E7 |
-| # stars            | 57.0 |
+| # downloads        | 7.190366233333333E7 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/data-urls#readme)

@@ -10,9 +10,9 @@ Add or remove a terminating newline
 | ------------------ | :-------------: |
 | Full name          | terminating-newline |
 | Keywords           | terminating, newline, add, remove, last, end, one, carriage, return, line, feed, unix, mac, windows, os |
-| # releases         | 12 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 3629.6666666666665 |
+| # downloads        | 11063.0 |
 | # stars            | 1.0 |
 
 ## Links

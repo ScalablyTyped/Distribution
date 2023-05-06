@@ -10,10 +10,10 @@ A drawing component for Mapbox GL JS
 | ------------------ | :-------------: |
 | Full name          | @mapbox/mapbox-gl-draw |
 | Keywords           | webgl, mapbox, draw, drawing |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 292419.6666666667 |
-| # stars            | 704.0 |
+| # downloads        | 476628.3333333333 |
+| # stars            | 755.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/mapbox-gl-draw)

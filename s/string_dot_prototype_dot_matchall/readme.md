@@ -10,10 +10,10 @@ Spec-compliant polyfill for String.prototype.matchAll
 | ------------------ | :-------------: |
 | Full name          | string.prototype.matchall |
 | Keywords           | ES2020, ES, String.prototype.matchAll, matchAll, match, regex, regexp, regular, expression, matches |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 4.8530192666666664E7 |
-| # stars            | 14.0 |
+| # downloads        | 5.4212106E7 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/es-shims/String.prototype.matchAll#readme)

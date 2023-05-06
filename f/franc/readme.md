@@ -10,10 +10,10 @@ Detect the language of text
 | ------------------ | :-------------: |
 | Full name          | franc |
 | Keywords           | natural, language, writing, system, detect, guess |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 157697.33333333334 |
-| # stars            | 3689.0 |
+| # downloads        | 131241.66666666666 |
+| # stars            | 3745.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/franc/tree/main#readme)

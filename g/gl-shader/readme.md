@@ -10,12 +10,15 @@ WebGL shader wrapper
 | ------------------ | :-------------: |
 | Full name          | gl-shader |
 | Keywords           | webgl, shader, fragment, vertex, uniform, attribute, wrap, 3d, gl |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 398817.3333333333 |
+| # downloads        | 447764.0 |
 | # stars            | ? |
 
 ## Links
+- [Homepage](https://github.com/stackgl/gl-shader#readme)
+- [Bugs](https://github.com/stackgl/gl-shader/issues)
+- [Repository](https://github.com/stackgl/gl-shader)
 - [Npm](https://www.npmjs.com/package/gl-shader)
     
 

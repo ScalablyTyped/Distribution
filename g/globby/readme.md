@@ -10,10 +10,10 @@ User-friendly glob matching
 | ------------------ | :-------------: |
 | Full name          | globby |
 | Keywords           | all, array, directories, expand, files, filesystem, filter, find, fnmatch, folders, fs, glob, globbing, globs, gulpfriendly, match, matcher, minimatch, multi, multiple, paths, pattern, patterns, traverse, util, utility, wildcard, wildcards, promise, gitignore, git |
-| # releases         | 14 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 2.21719855E8 |
-| # stars            | 2070.0 |
+| # downloads        | 2.41236221E8 |
+| # stars            | 2191.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/globby#readme)

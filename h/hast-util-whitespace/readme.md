@@ -10,9 +10,9 @@ hast utility to check if a node is inter-element whitespace
 | ------------------ | :-------------: |
 | Full name          | hast-util-whitespace |
 | Keywords           | unist, hast, hast-util, util, utility, html, inter, element, inter-element, white-space, whitespace |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 3964855.3333333335 |
+| # downloads        | 5735935.0 |
 | # stars            | 4.0 |
 
 ## Links

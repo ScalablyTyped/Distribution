@@ -10,10 +10,10 @@ Typings are for version 5.32.1
 | ------------------ | :-------------: |
 | Full name          | babylonjs |
 | Keywords           | 3D, javascript, html5, webgl, babylon.js |
-| # releases         | 164 |
+| # releases         | 153 |
 | # dependents       | 0.0 |
-| # downloads        | 52003.0 |
-| # stars            | 18522.0 |
+| # downloads        | 60974.0 |
+| # stars            | 18782.0 |
 
 ## Links
 - [Homepage](https://www.babylonjs.com)

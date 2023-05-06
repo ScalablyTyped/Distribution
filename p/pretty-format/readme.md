@@ -12,7 +12,7 @@ Stringify any JavaScript value.
 | Keywords           | - |
 | # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 1.89419997E8 |
+| # downloads        | 2.13897254E8 |
 | # stars            | ? |
 
 ## Links

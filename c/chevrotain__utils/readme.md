@@ -10,10 +10,10 @@ common utilities
 | ------------------ | :-------------: |
 | Full name          | @chevrotain/utils |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 715270.6666666666 |
-| # stars            | 1979.0 |
+| # downloads        | 857886.0 |
+| # stars            | 2046.0 |
 
 ## Links
 - [Homepage](https://github.com/Chevrotain/chevrotain#readme)

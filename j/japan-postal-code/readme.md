@@ -12,7 +12,7 @@ Japan postal code library
 | Keywords           | zip, postal code |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 13551.333333333334 |
+| # downloads        | 18074.0 |
 | # stars            | 30.0 |
 
 ## Links

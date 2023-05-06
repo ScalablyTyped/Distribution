@@ -10,10 +10,10 @@ Generated TypeScript definitions based on GitHub's OpenAPI spec for api.github.c
 | ------------------ | :-------------: |
 | Full name          | @octokit/openapi-types |
 | Keywords           | - |
-| # releases         | 126 |
+| # releases         | 129 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1254736333333332E7 |
-| # stars            | 25.0 |
+| # downloads        | 2.1548901E7 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/octokit/openapi-types.ts#readme)

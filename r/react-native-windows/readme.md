@@ -10,10 +10,10 @@ React Native for Windows
 | ------------------ | :-------------: |
 | Full name          | react-native-windows |
 | Keywords           | - |
-| # releases         | 608 |
+| # releases         | 592 |
 | # dependents       | 0.0 |
-| # downloads        | 118591.66666666667 |
-| # stars            | 14977.0 |
+| # downloads        | 134057.33333333334 |
+| # stars            | 15207.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/react-native-windows#readme)

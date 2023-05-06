@@ -10,12 +10,15 @@ React Native wrapper for Razorpay
 | ------------------ | :-------------: |
 | Full name          | react-native-razorpay |
 | Keywords           | react-native, razorpay, payments |
-| # releases         | 12 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 14491.666666666666 |
-| # stars            | 99.0 |
+| # downloads        | 12327.333333333334 |
+| # stars            | 101.0 |
 
 ## Links
+- [Homepage](https://github.com/razorpay/react-native-razorpay#readme)
+- [Bugs](https://github.com/razorpay/react-native-razorpay/issues)
+- [Repository](https://github.com/razorpay/react-native-razorpay)
 - [Npm](https://www.npmjs.com/package/react-native-razorpay)
     
 

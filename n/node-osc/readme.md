@@ -10,10 +10,10 @@ pyOSC inspired library for sending and receiving OSC messages
 | ------------------ | :-------------: |
 | Full name          | node-osc |
 | Keywords           | osc, udp |
-| # releases         | 40 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 1154.3333333333333 |
-| # stars            | 343.0 |
+| # downloads        | 1316.3333333333333 |
+| # stars            | 349.0 |
 
 ## Links
 - [Homepage](https://github.com/MylesBorins/node-osc#readme)

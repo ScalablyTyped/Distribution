@@ -10,10 +10,10 @@ IP lookup using Maxmind databases
 | ------------------ | :-------------: |
 | Full name          | maxmind |
 | Keywords           | maxmind, mmdb, geo, geoip, geoip2, geobase, geo lookup, ip base, geocode, timezone, asn, geo lookup, ip lookup |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 636849.0 |
-| # stars            | 531.0 |
+| # downloads        | 604578.6666666666 |
+| # stars            | 538.0 |
 
 ## Links
 - [Homepage](https://github.com/runk/node-maxmind)

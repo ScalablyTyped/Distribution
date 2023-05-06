@@ -10,10 +10,10 @@ Module to handle web3 RPC connections over WebSockets.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-ws |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 2604486.0 |
-| # stars            | 16013.0 |
+| # downloads        | 2515589.6666666665 |
+| # stars            | 16771.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

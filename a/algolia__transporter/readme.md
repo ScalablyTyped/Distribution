@@ -10,10 +10,10 @@ Promise-based transporter layer with embedded retry strategy.
 | ------------------ | :-------------: |
 | Full name          | @algolia/transporter |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 2837994.0 |
-| # stars            | 1133.0 |
+| # downloads        | 3612168.6666666665 |
+| # stars            | 1172.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

@@ -10,10 +10,10 @@ Get publisher property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-publisher |
 | Keywords           | metascraper, publisher |
-| # releases         | 85 |
+| # releases         | 77 |
 | # dependents       | 0.0 |
-| # downloads        | 65780.0 |
-| # stars            | 1802.0 |
+| # downloads        | 108031.33333333333 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

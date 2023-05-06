@@ -12,7 +12,7 @@ print an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5085545.0 |
+| # downloads        | 5725101.666666667 |
 | # stars            | ? |
 
 ## Links

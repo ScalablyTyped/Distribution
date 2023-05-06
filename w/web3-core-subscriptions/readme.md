@@ -10,10 +10,10 @@ Manages web3 subscriptions. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core-subscriptions |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 52 |
 | # dependents       | 0.0 |
-| # downloads        | 2629387.0 |
-| # stars            | 16013.0 |
+| # downloads        | 2529630.3333333335 |
+| # stars            | 16750.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

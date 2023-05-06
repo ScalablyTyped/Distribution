@@ -10,9 +10,9 @@ A retrying layer for a superagent request with delay support
 | ------------------ | :-------------: |
 | Full name          | superagent-retry-delay |
 | Keywords           | superagent, retry, delay |
-| # releases         | 10 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 31499.666666666668 |
+| # downloads        | 21423.0 |
 | # stars            | 4.0 |
 
 ## Links

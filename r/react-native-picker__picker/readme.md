@@ -10,10 +10,10 @@ React Native Picker for iOS, Android, macOS, and Windows
 | ------------------ | :-------------: |
 | Full name          | @react-native-picker/picker |
 | Keywords           | react-native, react native, picker, dropdown, select |
-| # releases         | 45 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 966735.3333333334 |
-| # stars            | 980.0 |
+| # downloads        | 1050970.0 |
+| # stars            | 1033.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-picker/picker#readme)

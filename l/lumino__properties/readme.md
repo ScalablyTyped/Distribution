@@ -12,8 +12,8 @@ Lumino Attached Properties
 | Keywords           | - |
 | # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 282780.6666666667 |
-| # stars            | 370.0 |
+| # downloads        | 195634.0 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

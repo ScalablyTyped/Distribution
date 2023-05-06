@@ -12,8 +12,8 @@ Stringify an object/array like JSON.stringify just without all the double-quotes
 | Keywords           | object, stringify, pretty, print, dump, format, type, json |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2.9874405666666668E7 |
-| # stars            | 275.0 |
+| # downloads        | 2.9161643E7 |
+| # stars            | 286.0 |
 
 ## Links
 - [Homepage](https://github.com/yeoman/stringify-object#readme)

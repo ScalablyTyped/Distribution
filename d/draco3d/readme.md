@@ -10,10 +10,10 @@ Draco is a library for compressing and decompressing 3D geometric meshes and poi
 | ------------------ | :-------------: |
 | Full name          | draco3d |
 | Keywords           | geometry, compression, mesh, point cloud |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 515658.6666666667 |
-| # stars            | 5058.0 |
+| # downloads        | 636605.6666666666 |
+| # stars            | 5274.0 |
 
 ## Links
 - [Homepage](https://github.com/google/draco#readme)

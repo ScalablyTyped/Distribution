@@ -10,9 +10,9 @@ JSON schema-based messages for Cucumber's inter-process communication
 | ------------------ | :-------------: |
 | Full name          | @cucumber/messages |
 | Keywords           | - |
-| # releases         | 25 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 2534478.3333333335 |
+| # downloads        | 3536400.3333333335 |
 | # stars            | 1.0 |
 
 ## Links

@@ -10,10 +10,10 @@ An asynchronous iterator library for advanced object pipelines.
 | ------------------ | :-------------: |
 | Full name          | asynciterator |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 21850.0 |
-| # stars            | 41.0 |
+| # downloads        | 21932.333333333332 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/RubenVerborgh/AsyncIterator#readme)

@@ -10,10 +10,10 @@ Typings are for version 3.209.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-user-agent-node |
 | Keywords           | - |
-| # releases         | 72 |
+| # releases         | 81 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5090600333333334E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1551176666666668E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-user-agent-node)

@@ -10,10 +10,10 @@ A streaming way to send data to a Node.js Worker Thread
 | ------------------ | :-------------: |
 | Full name          | thread-stream |
 | Keywords           | worker, thread, threads, stream |
-| # releases         | 33 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 4361161.666666667 |
-| # stars            | 160.0 |
+| # downloads        | 6526317.0 |
+| # stars            | 166.0 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/thread-stream#readme)

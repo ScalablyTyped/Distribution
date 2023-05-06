@@ -10,10 +10,10 @@ Core Storybook Router
 | ------------------ | :-------------: |
 | Full name          | @storybook/router |
 | Keywords           | storybook |
-| # releases         | 479 |
+| # releases         | 465 |
 | # dependents       | 0.0 |
-| # downloads        | 3.0226049333333332E7 |
-| # stars            | 73947.0 |
+| # downloads        | 3.5347941E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/router)

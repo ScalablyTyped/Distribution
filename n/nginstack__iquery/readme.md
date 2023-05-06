@@ -10,9 +10,9 @@ Nginstack IQuery Library. See the [nginstack site](nginstack.com) for more infor
 | ------------------ | :-------------: |
 | Full name          | @nginstack/iquery |
 | Keywords           | - |
-| # releases         | 80 |
+| # releases         | 79 |
 | # dependents       | 0.0 |
-| # downloads        | 899.3333333333334 |
+| # downloads        | 812.3333333333334 |
 | # stars            | ? |
 
 ## Links

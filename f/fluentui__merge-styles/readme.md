@@ -10,10 +10,10 @@ Style loading utilities.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/merge-styles |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 569748.6666666666 |
-| # stars            | 13903.0 |
+| # downloads        | 687699.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

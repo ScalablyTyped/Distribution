@@ -10,10 +10,10 @@ Typings are for version 0.66
 | ------------------ | :-------------: |
 | Full name          | metro-transform-worker |
 | Keywords           | - |
-| # releases         | 24 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 3423735.0 |
-| # stars            | 4576.0 |
+| # downloads        | 4006142.6666666665 |
+| # stars            | 4674.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/metro#readme)

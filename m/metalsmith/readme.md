@@ -10,10 +10,10 @@ An extremely simple, pluggable static site generator.
 | ------------------ | :-------------: |
 | Full name          | metalsmith |
 | Keywords           | static, jamstack, file, site, website, blog, generator, markdown, jekyll, metalsmith, yaml |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 221315.66666666666 |
-| # stars            | 7748.0 |
+| # downloads        | 241188.0 |
+| # stars            | 7777.0 |
 
 ## Links
 - [Homepage](https://metalsmith.io)

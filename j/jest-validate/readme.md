@@ -10,9 +10,9 @@ Generic configuration validation tool that helps you with warnings, errors and d
 | ------------------ | :-------------: |
 | Full name          | jest-validate |
 | Keywords           | - |
-| # releases         | 62 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 8.0990352E7 |
+| # downloads        | 8.725580333333333E7 |
 | # stars            | ? |
 
 ## Links

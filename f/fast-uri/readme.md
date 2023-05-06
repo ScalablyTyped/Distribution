@@ -10,10 +10,10 @@ Dependency free RFC 3986 URI toolbox
 | ------------------ | :-------------: |
 | Full name          | fast-uri |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 174322.0 |
-| # stars            | 66.0 |
+| # downloads        | 1270117.3333333333 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/fastify/fast-uri)

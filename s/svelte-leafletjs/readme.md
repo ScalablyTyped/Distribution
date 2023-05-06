@@ -10,10 +10,10 @@ Svelte component for leaflet
 | ------------------ | :-------------: |
 | Full name          | svelte-leafletjs |
 | Keywords           | svelte, leaflet |
-| # releases         | 15 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1673.0 |
-| # stars            | 30.0 |
+| # downloads        | 5512.333333333333 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://ngyewch.github.io/svelte-leaflet/)

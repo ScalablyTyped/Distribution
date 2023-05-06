@@ -10,10 +10,10 @@ Load config default values from ini config files and environmental variable
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/node-config-provider |
 | Keywords           | - |
-| # releases         | 69 |
+| # releases         | 78 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5559074666666666E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.2039678666666668E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/node-config-provider)

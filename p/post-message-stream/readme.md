@@ -12,8 +12,8 @@ Sets up a duplex object stream over window.postMessage
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 11715.333333333334 |
-| # stars            | 33.0 |
+| # downloads        | 12188.666666666666 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/kumavis/post-message-stream#readme)

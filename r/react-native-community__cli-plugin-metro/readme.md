@@ -9,12 +9,15 @@ Typings are for version 9.2.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-plugin-metro |
 | Keywords           | - |
-| # releases         | 26 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 2679099.3333333335 |
-| # stars            | 1891.0 |
+| # downloads        | 3454379.3333333335 |
+| # stars            | 1977.0 |
 
 ## Links
+- [Homepage](https://github.com/react-native-community/cli/tree/master/packages/cli-plugin-metro)
+- [Bugs](https://github.com/react-native-community/cli/issues)
+- [Repository](https://github.com/react-native-community/cli)
 - [Npm](https://www.npmjs.com/package/%40react-native-community%2Fcli-plugin-metro)
     
 

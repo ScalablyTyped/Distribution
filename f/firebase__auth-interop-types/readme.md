@@ -10,10 +10,10 @@ Typings are for version 0.1.7
 | ------------------ | :-------------: |
 | Full name          | @firebase/auth-interop-types |
 | Keywords           | - |
-| # releases         | 1133 |
+| # releases         | 952 |
 | # dependents       | 0.0 |
-| # downloads        | 7789365.666666667 |
-| # stars            | 4194.0 |
+| # downloads        | 8061468.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

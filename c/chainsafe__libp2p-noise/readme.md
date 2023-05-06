@@ -10,10 +10,10 @@ Typings are for version 10.0.0
 | ------------------ | :-------------: |
 | Full name          | @chainsafe/libp2p-noise |
 | Keywords           | crypto, libp2p, noise |
-| # releases         | 19 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 39664.333333333336 |
-| # stars            | 25.0 |
+| # downloads        | 47257.333333333336 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/ChainSafe/js-libp2p-noise#readme)

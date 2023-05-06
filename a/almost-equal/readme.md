@@ -10,9 +10,9 @@ Test if two floats are almost equal
 | ------------------ | :-------------: |
 | Full name          | almost-equal |
 | Keywords           | float, compare, double, round, equal, almost, near, tolerance, epsilon, FLT_EPSILON, DBL_EPSILON |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 701681.3333333334 |
+| # downloads        | 749667.6666666666 |
 | # stars            | ? |
 
 ## Links

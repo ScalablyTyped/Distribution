@@ -10,10 +10,10 @@ A querystring parser that supports nesting and arrays, with a depth limit
 | ------------------ | :-------------: |
 | Full name          | qs |
 | Keywords           | querystring, qs, query, url, parse, stringify |
-| # releases         | 16 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 2.831267423333333E8 |
-| # stars            | 7116.0 |
+| # downloads        | 3.0127717E8 |
+| # stars            | 7459.0 |
 
 ## Links
 - [Homepage](https://github.com/ljharb/qs)

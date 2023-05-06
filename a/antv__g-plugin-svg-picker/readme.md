@@ -10,10 +10,10 @@ A G plugin for picking in SVG
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-svg-picker |
 | Keywords           | antv, g |
-| # releases         | 121 |
+| # releases         | 140 |
 | # dependents       | 0.0 |
-| # downloads        | 1872.6666666666667 |
-| # stars            | 795.0 |
+| # downloads        | 2454.0 |
+| # stars            | 834.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

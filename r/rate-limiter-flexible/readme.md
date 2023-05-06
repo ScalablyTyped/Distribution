@@ -10,10 +10,10 @@ Node.js rate limiter by key and protection from DDoS and Brute-Force attacks in 
 | ------------------ | :-------------: |
 | Full name          | rate-limiter-flexible |
 | Keywords           | authorization, security, rate, limit, ratelimter, brute, force, bruteforce, throttle, koa, express, hapi, auth, ddos, queue |
-| # releases         | 20 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 716122.0 |
-| # stars            | 2240.0 |
+| # downloads        | 761913.0 |
+| # stars            | 2286.0 |
 
 ## Links
 - [Homepage](https://github.com/animir/node-rate-limiter-flexible#readme)

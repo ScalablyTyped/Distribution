@@ -10,10 +10,10 @@ An enterprise-class UI design language and React components implementation
 | ------------------ | :-------------: |
 | Full name          | antd |
 | Keywords           | ant, component, components, design, framework, frontend, react, react-component, ui |
-| # releases         | 153 |
+| # releases         | 175 |
 | # dependents       | 0.0 |
-| # downloads        | 3791945.0 |
-| # stars            | 81939.0 |
+| # downloads        | 4060389.3333333335 |
+| # stars            | 83824.0 |
 
 ## Links
 - [Homepage](https://ant.design)

@@ -12,8 +12,8 @@ Builds Materialize distribution packages
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 3690.6666666666665 |
-| # stars            | 500.0 |
+| # downloads        | 5401.333333333333 |
+| # stars            | 577.0 |
 
 ## Links
 - [Homepage](https://materializecss.github.io/materialize/)

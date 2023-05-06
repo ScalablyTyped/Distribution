@@ -10,10 +10,10 @@ copy an object but with only the specified keys
 | ------------------ | :-------------: |
 | Full name          | just-pick |
 | Keywords           | object, pick, keys, no-dependencies, just |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 28766.0 |
-| # stars            | 4414.0 |
+| # downloads        | 28881.0 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

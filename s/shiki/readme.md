@@ -10,10 +10,10 @@ shiki
 | ------------------ | :-------------: |
 | Full name          | shiki |
 | Keywords           | shiki, syntax-highlighter, highlighter |
-| # releases         | 27 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 1978993.6666666667 |
-| # stars            | 3638.0 |
+| # downloads        | 2390923.3333333335 |
+| # stars            | 4155.0 |
 
 ## Links
 - [Homepage](https://github.com/octref/shiki/tree/main/packages/shiki)

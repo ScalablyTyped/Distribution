@@ -12,8 +12,8 @@ DOM utilities for use within Fluent web components
 | Keywords           | - |
 | # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 691407.6666666666 |
-| # stars            | 13774.0 |
+| # downloads        | 711975.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

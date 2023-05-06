@@ -10,10 +10,10 @@ Manage node_modules trees
 | ------------------ | :-------------: |
 | Full name          | @npmcli/arborist |
 | Keywords           | - |
-| # releases         | 97 |
+| # releases         | 87 |
 | # dependents       | 0.0 |
-| # downloads        | 4943489.0 |
-| # stars            | 6427.0 |
+| # downloads        | 5690893.0 |
+| # stars            | 6723.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/cli#readme)

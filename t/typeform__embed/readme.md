@@ -10,10 +10,10 @@ Typings are for version 2.2.0
 | ------------------ | :-------------: |
 | Full name          | @typeform/embed |
 | Keywords           | typeform, embed, form, widget, slider, sidetab, popover |
-| # releases         | 144 |
+| # releases         | 136 |
 | # dependents       | 0.0 |
-| # downloads        | 610420.0 |
-| # stars            | 205.0 |
+| # downloads        | 785570.0 |
+| # stars            | 220.0 |
 
 ## Links
 - [Homepage](https://github.com/Typeform/embed/blob/main/packages/embed#readme)

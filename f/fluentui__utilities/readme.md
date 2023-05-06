@@ -12,8 +12,8 @@ Fluent UI React utilities for building components.
 | Keywords           | - |
 | # releases         | 57 |
 | # dependents       | 0.0 |
-| # downloads        | 462462.6666666667 |
-| # stars            | 13905.0 |
+| # downloads        | 513026.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

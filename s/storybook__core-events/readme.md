@@ -10,10 +10,10 @@ Event names used in storybook core
 | ------------------ | :-------------: |
 | Full name          | @storybook/core-events |
 | Keywords           | storybook |
-| # releases         | 479 |
+| # releases         | 465 |
 | # dependents       | 0.0 |
-| # downloads        | 3.0548968E7 |
-| # stars            | 73947.0 |
+| # downloads        | 3.6811569333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/core-events)

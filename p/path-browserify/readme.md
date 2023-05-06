@@ -12,8 +12,8 @@ the path module from node core for browsers
 | Keywords           | browser, browserify, path |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 6.280549E7 |
-| # stars            | 108.0 |
+| # downloads        | 7.287956833333333E7 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/path-browserify)

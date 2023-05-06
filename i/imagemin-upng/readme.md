@@ -12,8 +12,8 @@ upng imagemin plugin
 | Keywords           | apng, compress, image, imageminplugin, img, minify, optimize, png, upng, upng-js |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1344.6666666666667 |
-| # stars            | 3.0 |
+| # downloads        | 3482.6666666666665 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/fisker/imagemin-upng#readme)

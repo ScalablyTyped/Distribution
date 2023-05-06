@@ -10,10 +10,10 @@ Vega-Lite is a concise high-level language for interactive visualization.
 | ------------------ | :-------------: |
 | Full name          | vega-lite |
 | Keywords           | vega, chart, visualization |
-| # releases         | 217 |
+| # releases         | 247 |
 | # dependents       | 0.0 |
-| # downloads        | 1117368.6666666667 |
-| # stars            | 3865.0 |
+| # downloads        | 1053512.6666666667 |
+| # stars            | 3975.0 |
 
 ## Links
 - [Homepage](https://vega.github.io/vega-lite/)

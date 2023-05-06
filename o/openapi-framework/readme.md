@@ -12,8 +12,8 @@ An OpenAPI framework for any web framework
 | Keywords           | openapi, swagger, framework |
 | # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 90165.0 |
-| # stars            | ? |
+| # downloads        | 114733.33333333333 |
+| # stars            | 765.0 |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-framework#readme)

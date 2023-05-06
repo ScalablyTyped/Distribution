@@ -12,8 +12,8 @@ A function to check whether a prop is valid for HTML and SVG elements
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 3.9554516333333336E7 |
-| # stars            | 15226.0 |
+| # downloads        | 4.2754971E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

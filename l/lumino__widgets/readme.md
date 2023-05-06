@@ -10,10 +10,10 @@ Lumino Widgets
 | ------------------ | :-------------: |
 | Full name          | @lumino/widgets |
 | Keywords           | - |
-| # releases         | 36 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 288830.6666666667 |
-| # stars            | 370.0 |
+| # downloads        | 197731.0 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

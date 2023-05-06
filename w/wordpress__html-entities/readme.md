@@ -10,9 +10,9 @@ HTML entity utilities for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/html-entities |
 | Keywords           | wordpress, gutenberg, html, entities |
-| # releases         | 47 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 123459.0 |
+| # downloads        | 139793.33333333334 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Native APM agent for the Application Insights Node.js SDK
 | ------------------ | :-------------: |
 | Full name          | applicationinsights-native-metrics |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 46825.333333333336 |
-| # stars            | 4.0 |
+| # downloads        | 48129.666666666664 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/ApplicationInsights-node.js-native-metrics#readme)

@@ -10,10 +10,10 @@ Module to handle web3 RPC connections over IPC sockets.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-ipc |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 2598950.3333333335 |
-| # stars            | 16013.0 |
+| # downloads        | 2513191.0 |
+| # stars            | 16771.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

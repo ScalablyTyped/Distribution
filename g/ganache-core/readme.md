@@ -10,10 +10,10 @@ Typings are for version 2.13.2
 | ------------------ | :-------------: |
 | Full name          | ganache-core |
 | Keywords           | - |
-| # releases         | 30 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 378756.3333333333 |
-| # stars            | 1845.0 |
+| # downloads        | 375589.0 |
+| # stars            | 2113.0 |
 
 ## Links
 - [Homepage](https://github.com/trufflesuite/ganache-core#readme)

@@ -10,9 +10,9 @@ The Cleasby & Vigfusson Old Norse to English Dictionary for Node.js
 | ------------------ | :-------------: |
 | Full name          | cleasby-vigfusson-dictionary |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 545.0 |
+| # downloads        | 276.3333333333333 |
 | # stars            | 2.0 |
 
 ## Links

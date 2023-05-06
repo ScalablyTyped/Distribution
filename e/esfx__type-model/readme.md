@@ -10,12 +10,15 @@ Utility types for TypeScript.
 | ------------------ | :-------------: |
 | Full name          | @esfx/type-model |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 21723.666666666668 |
-| # stars            | 161.0 |
+| # downloads        | 13165.666666666666 |
+| # stars            | 169.0 |
 
 ## Links
+- [Homepage](https://github.com/esfx/esfx#readme)
+- [Bugs](https://github.com/esfx/esfx/issues)
+- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Ftype-model)
     
 

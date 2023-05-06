@@ -10,10 +10,10 @@ A Happo integration with Cypress.io
 | ------------------ | :-------------: |
 | Full name          | happo-cypress |
 | Keywords           | - |
-| # releases         | 46 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 40290.666666666664 |
-| # stars            | 29.0 |
+| # downloads        | 104319.33333333333 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/happo/happo-cypress#readme)

@@ -9,10 +9,10 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | jest-resolve |
 | Keywords           | - |
-| # releases         | 70 |
+| # releases         | 71 |
 | # dependents       | 0.0 |
-| # downloads        | 9.4774459E7 |
-| # stars            | 40312.0 |
+| # downloads        | 1.0124012266666667E8 |
+| # stars            | 40675.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

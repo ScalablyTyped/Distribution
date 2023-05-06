@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/sha256-tree-hash |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 65 |
 | # dependents       | 0.0 |
-| # downloads        | 2386.0 |
-| # stars            | 1854.0 |
+| # downloads        | 4655.666666666667 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/sha256-tree-hash)

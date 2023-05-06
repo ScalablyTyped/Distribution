@@ -10,10 +10,10 @@ Vanilla JavaScript backend for TensorFlow.js
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-backend-cpu |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 450704.6666666667 |
-| # stars            | 16517.0 |
+| # downloads        | 453287.3333333333 |
+| # stars            | 16876.0 |
 
 ## Links
 - [Homepage](https://github.com/tensorflow/tfjs#readme)

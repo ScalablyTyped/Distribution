@@ -11,8 +11,8 @@ Light-weight option parsing with an argv hash. No optstrings attached.
 | Keywords           | argument, args, option, parser, parsing, cli, command |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5223270666666666E7 |
-| # stars            | 2610.0 |
+| # downloads        | 1.4572855E7 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/optimist)

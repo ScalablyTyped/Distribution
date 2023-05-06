@@ -10,10 +10,10 @@ Blazing fast memoization based on all parameters passed
 | ------------------ | :-------------: |
 | Full name          | moize |
 | Keywords           | cache, expire, lru, memoize, memoization, optimize, performance, promise, ttl |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 710163.3333333334 |
-| # stars            | 766.0 |
+| # downloads        | 796684.3333333334 |
+| # stars            | 784.0 |
 
 ## Links
 - [Homepage](https://github.com/planttheidea/moize#readme)

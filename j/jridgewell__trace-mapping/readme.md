@@ -10,10 +10,10 @@ Trace the original position through a source map
 | ------------------ | :-------------: |
 | Full name          | @jridgewell/trace-mapping |
 | Keywords           | source, map |
-| # releases         | 27 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 8.241236366666667E7 |
-| # stars            | 58.0 |
+| # downloads        | 1.1096579266666667E8 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/jridgewell/trace-mapping#readme)

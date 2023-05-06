@@ -10,10 +10,10 @@ Publish Vega visualizations as embedded web components.
 | ------------------ | :-------------: |
 | Full name          | vega-embed |
 | Keywords           | vega, data, visualization, component, embed |
-| # releases         | 69 |
+| # releases         | 68 |
 | # dependents       | 0.0 |
-| # downloads        | 318369.3333333333 |
-| # stars            | 288.0 |
+| # downloads        | 304026.6666666667 |
+| # stars            | 307.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega-embed#readme)

@@ -12,8 +12,8 @@ An image processing library written entirely in JavaScript (i.e. zero external o
 | Keywords           | image, image processing, image manipulation, png, jpg, jpeg, bmp, resize, scale, crop |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 6106239.0 |
-| # stars            | 12136.0 |
+| # downloads        | 6686210.666666667 |
+| # stars            | 12325.0 |
 
 ## Links
 - [Homepage](https://github.com/oliver-moran/jimp#readme)

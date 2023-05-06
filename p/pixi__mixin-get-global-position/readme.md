@@ -10,15 +10,15 @@ Mixin to find the global position of a DisplayObject
 | ------------------ | :-------------: |
 | Full name          | @pixi/mixin-get-global-position |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 355351.3333333333 |
-| # stars            | 37483.0 |
+| # downloads        | 380044.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fmixin-get-global-position)
     
 

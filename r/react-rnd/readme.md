@@ -10,10 +10,10 @@ Typings are for version 10.3.7
 | ------------------ | :-------------: |
 | Full name          | react-rnd |
 | Keywords           | react, resize, resizable, draggable, component |
-| # releases         | 14 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 402528.0 |
-| # stars            | 2861.0 |
+| # downloads        | 430887.6666666667 |
+| # stars            | 3102.0 |
 
 ## Links
 - [Homepage](https://github.com/bokuweb/react-rnd)

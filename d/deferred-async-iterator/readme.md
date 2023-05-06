@@ -10,9 +10,9 @@ Create a deferred async iterator.
 | ------------------ | :-------------: |
 | Full name          | deferred-async-iterator |
 | Keywords           | async, iterator, deferred, defer, await |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 267.0 |
+| # downloads        | 534.0 |
 | # stars            | 1.0 |
 
 ## Links

@@ -12,7 +12,7 @@ Delightful JavaScript Testing.
 | Keywords           | - |
 | # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 7.7391648E7 |
+| # downloads        | 8.436930866666667E7 |
 | # stars            | ? |
 
 ## Links

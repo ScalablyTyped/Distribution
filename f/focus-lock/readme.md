@@ -10,10 +10,10 @@ DOM trap for a focus
 | ------------------ | :-------------: |
 | Full name          | focus-lock |
 | Keywords           | focus, trap, vanilla |
-| # releases         | 12 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 8976925.333333334 |
-| # stars            | 115.0 |
+| # downloads        | 1.0955880666666666E7 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/theKashey/focus-lock#readme)

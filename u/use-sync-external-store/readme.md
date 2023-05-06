@@ -10,10 +10,10 @@ Backwards compatible shim for React's useSyncExternalStore. Works with any React
 | ------------------ | :-------------: |
 | Full name          | use-sync-external-store |
 | Keywords           | - |
-| # releases         | 422 |
+| # releases         | 566 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1032805E7 |
-| # stars            | 195015.0 |
+| # downloads        | 1.7271299333333332E7 |
+| # stars            | 200439.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

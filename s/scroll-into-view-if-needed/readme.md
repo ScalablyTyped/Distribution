@@ -10,15 +10,15 @@ Ponyfill for upcoming Element.scrollIntoView() APIs like scrollMode: if-needed, 
 | ------------------ | :-------------: |
 | Full name          | scroll-into-view-if-needed |
 | Keywords           | behavior-smooth, if-needed, polyfill, ponyfill, scroll, scroll-into-view, scrollIntoView, scrollIntoViewIfNeeded, scrollMode, smooth, smoothscroll, typescript |
-| # releases         | 4 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 6044895.333333333 |
-| # stars            | 1041.0 |
+| # downloads        | 7599767.333333333 |
+| # stars            | 1139.0 |
 
 ## Links
-- [Homepage](https://scroll-into-view-if-needed.netlify.com)
-- [Bugs](https://github.com/stipsan/scroll-into-view-if-needed/issues)
-- [Repository](https://github.com/stipsan/scroll-into-view-if-needed)
+- [Homepage](https://scroll-into-view.dev)
+- [Bugs](https://github.com/scroll-into-view/scroll-into-view-if-needed/issues)
+- [Repository](https://github.com/scroll-into-view/scroll-into-view-if-needed)
 - [Npm](https://www.npmjs.com/package/scroll-into-view-if-needed)
     
 

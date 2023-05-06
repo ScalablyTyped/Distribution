@@ -12,8 +12,8 @@ Throttle the parallelism of an asynchronous (promise returning) function / funct
 | Keywords           | promise, aplus, then, throttle, concurrency, parallelism, limit |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 7.306167533333333E7 |
-| # stars            | 461.0 |
+| # downloads        | 6.3334039333333336E7 |
+| # stars            | 472.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/throat#readme)

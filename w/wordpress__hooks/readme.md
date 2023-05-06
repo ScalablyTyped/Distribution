@@ -10,9 +10,9 @@ WordPress hooks library.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/hooks |
 | Keywords           | wordpress, gutenberg, hooks |
-| # releases         | 47 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 244440.33333333334 |
+| # downloads        | 269114.6666666667 |
 | # stars            | ? |
 
 ## Links

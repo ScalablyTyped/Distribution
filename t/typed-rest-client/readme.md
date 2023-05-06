@@ -12,8 +12,8 @@ Node Rest and Http Clients for use with TypeScript
 | Keywords           | rest, http, client, typescript, node |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1358484.0 |
-| # stars            | 598.0 |
+| # downloads        | 1412508.0 |
+| # stars            | 623.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/typed-rest-client#readme)

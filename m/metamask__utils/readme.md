@@ -10,10 +10,10 @@ Various JavaScript/TypeScript utilities of wide relevance to the MetaMask codeba
 | ------------------ | :-------------: |
 | Full name          | @metamask/utils |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 4436.333333333333 |
-| # stars            | 6.0 |
+| # downloads        | 24710.666666666668 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/MetaMask/utils#readme)

@@ -4,16 +4,16 @@
 Typings are for version 10.0.1
 
 ## Library description:
-hast utility to transform to something else (react, vue, etc) through a hyperscript DSL
+Legacy hast utility to transform to something else
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | hast-to-hyperscript |
-| Keywords           | unist, hast, hast-util, util, utility, html, change, transform, rehype, vdom, virtual, dom, hyperscript, dsl |
+| Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5528778333333334E7 |
-| # stars            | 39.0 |
+| # downloads        | 1.778455E7 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/hast-to-hyperscript#readme)

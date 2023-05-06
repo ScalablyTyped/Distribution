@@ -10,10 +10,10 @@ Chart Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-chart |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 62 |
+| # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 858733.3333333334 |
-| # stars            | 9887.0 |
+| # downloads        | 850204.0 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

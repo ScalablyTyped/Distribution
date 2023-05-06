@@ -10,10 +10,10 @@ Loading wrapper and TypeScript types for the PayPal JS SDK
 | ------------------ | :-------------: |
 | Full name          | @paypal/paypal-js |
 | Keywords           | paypal, sdk, async, script, loader, types, typescript, typescript-definitions |
-| # releases         | 65 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 408442.6666666667 |
-| # stars            | 99.0 |
+| # downloads        | 396860.6666666667 |
+| # stars            | 116.0 |
 
 ## Links
 - [Homepage](https://github.com/paypal/paypal-js#readme)

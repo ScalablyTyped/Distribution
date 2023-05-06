@@ -10,15 +10,12 @@ Algorithm for finding the root of a yarn workspace, extracted from yarnpkg.com
 | ------------------ | :-------------: |
 | Full name          | find-yarn-workspace-root2 |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 1537525.3333333333 |
-| # stars            | 9.0 |
+| # downloads        | 1824571.3333333333 |
+| # stars            | 12.0 |
 
 ## Links
-- [Homepage](https://github.com/bluelovers/ws-yarn-workspaces/tree/master/packages/find-yarn-workspace-root2#readme)
-- [Bugs](https://github.com/bluelovers/ws-yarn-workspaces/issues)
-- [Repository](https://github.com/bluelovers/ws-yarn-workspaces)
 - [Npm](https://www.npmjs.com/package/find-yarn-workspace-root2)
     
 

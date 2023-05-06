@@ -10,10 +10,10 @@ An object of css properties that don't accept values with units
 | ------------------ | :-------------: |
 | Full name          | @emotion/unitless |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 3.4887278333333336E7 |
-| # stars            | 15226.0 |
+| # downloads        | 4.2354787333333336E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

@@ -10,10 +10,10 @@ Convert values with PostCSS (e.g. ms -> s)
 | ------------------ | :-------------: |
 | Full name          | postcss-convert-values |
 | Keywords           | css, optimisation, postcss, postcss-plugin |
-| # releases         | 30 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 4.4606389E7 |
-| # stars            | 4187.0 |
+| # downloads        | 4.6072378666666664E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

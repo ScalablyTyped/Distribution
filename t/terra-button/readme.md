@@ -10,10 +10,10 @@ The terra-button component provides users a way to trigger actions in the UI.
 | ------------------ | :-------------: |
 | Full name          | terra-button |
 | Keywords           | Button, Cerner, Terra, terra-button, UI |
-| # releases         | 15 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 2547.6666666666665 |
-| # stars            | ? |
+| # downloads        | 2287.3333333333335 |
+| # stars            | 175.0 |
 
 ## Links
 - [Homepage](https://github.com/cerner/terra-core#readme)

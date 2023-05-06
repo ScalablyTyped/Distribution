@@ -10,10 +10,10 @@ Fabulously kill processes. Cross-platform.
 | ------------------ | :-------------: |
 | Full name          | fkill |
 | Keywords           | fkill, kill, killing, killall, taskkill, sigkill, sigterm, force, exit, zap, die, force, ps, proc, terminate |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 687841.0 |
-| # stars            | 660.0 |
+| # downloads        | 603734.6666666666 |
+| # stars            | 674.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/fkill#readme)

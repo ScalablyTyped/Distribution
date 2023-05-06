@@ -10,9 +10,9 @@ Deprecated package which became `@emotion/styled/base`
 | ------------------ | :-------------: |
 | Full name          | @emotion/styled-base |
 | Keywords           | styles, emotion, react, css, css-in-js |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4503320333333334E7 |
+| # downloads        | 1.13134E7 |
 | # stars            | ? |
 
 ## Links

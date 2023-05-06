@@ -10,10 +10,10 @@ Get n-grams from text
 | ------------------ | :-------------: |
 | Full name          | n-gram |
 | Keywords           | natural, language, n, gram, n-gram, unigram, bigram, trigram |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 196794.0 |
-| # stars            | 62.0 |
+| # downloads        | 201079.33333333334 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/words/n-gram#readme)

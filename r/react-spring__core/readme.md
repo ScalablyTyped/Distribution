@@ -10,10 +10,10 @@ The platform-agnostic core of `react-spring`
 | ------------------ | :-------------: |
 | Full name          | @react-spring/core |
 | Keywords           | animated, animation, hooks, motion, react, react-native, spring, typescript, velocity |
-| # releases         | 51 |
+| # releases         | 55 |
 | # dependents       | 0.0 |
-| # downloads        | 3393545.6666666665 |
-| # stars            | 24014.0 |
+| # downloads        | 4023246.6666666665 |
+| # stars            | 24618.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/react-spring#readme)

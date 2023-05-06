@@ -10,10 +10,10 @@ A version checker for react-native applications
 | ------------------ | :-------------: |
 | Full name          | react-native-version-check |
 | Keywords           | react-native, android, ios, version check, version, app version, market version, app store version |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 92203.0 |
-| # stars            | 495.0 |
+| # downloads        | 102255.0 |
+| # stars            | 563.0 |
 
 ## Links
 - [Homepage](https://github.com/kimxogus/react-native-version-check)

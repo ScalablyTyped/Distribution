@@ -10,10 +10,10 @@ Skip navigation links for screen reader and keyboard users.
 | ------------------ | :-------------: |
 | Full name          | @reach/skip-nav |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 155895.0 |
-| # stars            | 5390.0 |
+| # downloads        | 175079.33333333334 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)

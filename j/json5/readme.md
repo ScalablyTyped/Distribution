@@ -4,16 +4,16 @@
 Typings are for version 2.2.1
 
 ## Library description:
-JSON for humans.
+JSON for Humans
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | json5 |
 | Keywords           | json, json5, es5, es2015, ecmascript |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 2.5813381833333334E8 |
-| # stars            | 5159.0 |
+| # downloads        | 2.826871253333333E8 |
+| # stars            | 5574.0 |
 
 ## Links
 - [Homepage](http://json5.org/)

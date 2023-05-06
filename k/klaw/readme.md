@@ -10,10 +10,10 @@ File system walker with Readable stream interface.
 | ------------------ | :-------------: |
 | Full name          | klaw |
 | Keywords           | walk, walker, fs, readable, streams |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2.5413486333333332E7 |
-| # stars            | 288.0 |
+| # downloads        | 2.3573640666666668E7 |
+| # stars            | 301.0 |
 
 ## Links
 - [Homepage](https://github.com/jprichardson/node-klaw#readme)

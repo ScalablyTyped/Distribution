@@ -10,12 +10,15 @@ Lumino Commands
 | ------------------ | :-------------: |
 | Full name          | @lumino/commands |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 285568.0 |
-| # stars            | 370.0 |
+| # downloads        | 197915.0 |
+| # stars            | 420.0 |
 
 ## Links
+- [Homepage](https://github.com/jupyterlab/lumino)
+- [Bugs](https://github.com/jupyterlab/lumino/issues)
+- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Fcommands)
     
 

@@ -10,10 +10,10 @@ Tiny local JSON database for Node, Electron and the browser
 | ------------------ | :-------------: |
 | Full name          | lowdb |
 | Keywords           | database, db, electron, embed, embedded, flat, JSON, local, localStorage, browser, esm |
-| # releases         | 7 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 2077124.3333333333 |
-| # stars            | 17842.0 |
+| # downloads        | 1878056.6666666667 |
+| # stars            | 18799.0 |
 
 ## Links
 - [Homepage](https://github.com/typicode/lowdb#readme)

@@ -10,10 +10,10 @@ Fast, in memory work queue
 | ------------------ | :-------------: |
 | Full name          | fastq |
 | Keywords           | fast, queue, async, worker |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 8.963053166666667E7 |
-| # stars            | 558.0 |
+| # downloads        | 1.11148296E8 |
+| # stars            | 622.0 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/fastq#readme)

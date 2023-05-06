@@ -10,10 +10,10 @@ JavaScript image viewer.
 | ------------------ | :-------------: |
 | Full name          | viewerjs |
 | Keywords           | image, viewer, viewerjs, viewer.js, html, css, javascript, front-end, web |
-| # releases         | 13 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 183927.33333333334 |
-| # stars            | 6576.0 |
+| # downloads        | 188668.66666666666 |
+| # stars            | 6905.0 |
 
 ## Links
 - [Homepage](https://fengyuanchen.github.io/viewerjs)

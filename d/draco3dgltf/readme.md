@@ -10,10 +10,10 @@ This package contains a specific version of Draco 3D geometric compression libra
 | ------------------ | :-------------: |
 | Full name          | draco3dgltf |
 | Keywords           | geometry, compression, mesh, point cloud |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 13500.0 |
-| # stars            | 5058.0 |
+| # downloads        | 17696.666666666668 |
+| # stars            | 5274.0 |
 
 ## Links
 - [Homepage](https://github.com/google/draco#readme)

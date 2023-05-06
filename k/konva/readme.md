@@ -10,10 +10,10 @@ Typings are for version 8.3.14
 | ------------------ | :-------------: |
 | Full name          | konva |
 | Keywords           | canvas, animations, graphic, html5 |
-| # releases         | 47 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 709850.6666666666 |
-| # stars            | 7973.0 |
+| # downloads        | 810476.3333333334 |
+| # stars            | 8635.0 |
 
 ## Links
 - [Homepage](http://konvajs.org/)

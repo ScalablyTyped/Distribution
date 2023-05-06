@@ -10,10 +10,10 @@ extend an object
 | ------------------ | :-------------: |
 | Full name          | just-extend |
 | Keywords           | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
-| # releases         | 9 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5903290666666666E7 |
-| # stars            | 4414.0 |
+| # downloads        | 1.6959056666666668E7 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

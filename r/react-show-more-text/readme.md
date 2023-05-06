@@ -10,10 +10,10 @@ The text surrounded by the component will be truncated. Anything surrounded by t
 | ------------------ | :-------------: |
 | Full name          | react-show-more-text |
 | Keywords           | react, show more, ellipsis, multiline, show more text, show partial text, hide partial text, show-more fix, show text, hide text |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 90918.0 |
-| # stars            | 50.0 |
+| # downloads        | 120233.0 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/devzonetech/react-show-more-text)

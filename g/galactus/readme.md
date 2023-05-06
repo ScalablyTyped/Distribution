@@ -10,12 +10,15 @@ Prunes dependencies from your package
 | ------------------ | :-------------: |
 | Full name          | galactus |
 | Keywords           | prune, production |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 381088.6666666667 |
-| # stars            | ? |
+| # downloads        | 371341.3333333333 |
+| # stars            | 9.0 |
 
 ## Links
+- [Homepage](https://github.com/marshallOfSound/galactus#readme)
+- [Bugs](https://github.com/marshallOfSound/galactus/issues)
+- [Repository](https://github.com/marshallOfSound/galactus)
 - [Npm](https://www.npmjs.com/package/galactus)
     
 

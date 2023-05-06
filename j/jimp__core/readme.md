@@ -12,8 +12,8 @@ Jimp core
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5268173.666666667 |
-| # stars            | 12136.0 |
+| # downloads        | 5925973.0 |
+| # stars            | 12325.0 |
 
 ## Links
 - [Homepage](https://github.com/oliver-moran/jimp#readme)

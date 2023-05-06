@@ -10,10 +10,10 @@ draggable component for vue
 | ------------------ | :-------------: |
 | Full name          | vuedraggable |
 | Keywords           | vue, vuejs, drag, and, drop, list, Sortable.js, component, nested |
-| # releases         | 9 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 2430268.0 |
-| # stars            | 17527.0 |
+| # downloads        | 2444936.0 |
+| # stars            | 18154.0 |
 
 ## Links
 - [Homepage](https://github.com/SortableJS/Vue.Draggable#readme)

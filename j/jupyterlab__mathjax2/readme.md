@@ -10,9 +10,9 @@ A MathJax 2 Typesetting provider for JupyterLab
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/mathjax2 |
 | Keywords           | - |
-| # releases         | 140 |
+| # releases         | 130 |
 | # dependents       | 0.0 |
-| # downloads        | 192350.0 |
+| # downloads        | 92272.0 |
 | # stars            | ? |
 
 ## Links

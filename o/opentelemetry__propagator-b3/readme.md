@@ -10,10 +10,10 @@ OpenTelemetry B3 propagator provides context propagation for systems that are us
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/propagator-b3 |
 | Keywords           | opentelemetry, nodejs, tracing, profiling, monitoring, b3 |
-| # releases         | 93 |
+| # releases         | 91 |
 | # dependents       | 0.0 |
-| # downloads        | 3643814.0 |
-| # stars            | 1462.0 |
+| # downloads        | 3684802.0 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-propagator-b3)

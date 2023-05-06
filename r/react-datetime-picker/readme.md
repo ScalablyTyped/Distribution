@@ -10,10 +10,10 @@ A date range picker for your React app.
 | ------------------ | :-------------: |
 | Full name          | react-datetime-picker |
 | Keywords           | calendar, date, date-picker, datetime, datetime-picker, react, time, time-picker |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 129558.0 |
-| # stars            | 420.0 |
+| # downloads        | 142548.66666666666 |
+| # stars            | 435.0 |
 
 ## Links
 - [Homepage](https://github.com/wojtekmaj/react-datetime-picker#readme)

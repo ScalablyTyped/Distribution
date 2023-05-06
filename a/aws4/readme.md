@@ -10,10 +10,10 @@ Signs and prepares requests using AWS Signature Version 4
 | ------------------ | :-------------: |
 | Full name          | aws4 |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 8.576266166666667E7 |
-| # stars            | 620.0 |
+| # downloads        | 7.9740029E7 |
+| # stars            | 633.0 |
 
 ## Links
 - [Homepage](https://github.com/mhart/aws4#readme)

@@ -10,10 +10,10 @@ help secure Express/Connect apps with various HTTP headers
 | ------------------ | :-------------: |
 | Full name          | helmet |
 | Keywords           | express, security, headers, backend |
-| # releases         | 17 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 8760070.0 |
-| # stars            | 9108.0 |
+| # downloads        | 9575696.666666666 |
+| # stars            | 9279.0 |
 
 ## Links
 - [Homepage](https://helmetjs.github.io/)

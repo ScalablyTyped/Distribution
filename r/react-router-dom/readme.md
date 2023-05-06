@@ -10,10 +10,10 @@ Declarative routing for React web applications
 | ------------------ | :-------------: |
 | Full name          | react-router-dom |
 | Keywords           | react, router, route, routing, history, link |
-| # releases         | 48 |
+| # releases         | 80 |
 | # dependents       | 0.0 |
-| # downloads        | 3.3813039666666664E7 |
-| # stars            | 47997.0 |
+| # downloads        | 3.4420379666666664E7 |
+| # stars            | 49355.0 |
 
 ## Links
 - [Homepage](https://github.com/remix-run/react-router#readme)

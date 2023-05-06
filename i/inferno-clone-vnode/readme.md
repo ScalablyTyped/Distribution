@@ -12,8 +12,8 @@ provides helper function to clone Inferno's vNodes
 | Keywords           | babel, react, inferno, framework, interfaces, user interfaces, class, vdom |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 218911.33333333334 |
-| # stars            | 15512.0 |
+| # downloads        | 263684.6666666667 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

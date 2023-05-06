@@ -10,10 +10,10 @@ React Hooks library for remote data fetching
 | ------------------ | :-------------: |
 | Full name          | swr |
 | Keywords           | swr, react, hooks, request, cache, fetch |
-| # releases         | 79 |
+| # releases         | 75 |
 | # dependents       | 0.0 |
-| # downloads        | 3409611.0 |
-| # stars            | 23891.0 |
+| # downloads        | 4009848.3333333335 |
+| # stars            | 24896.0 |
 
 ## Links
 - [Homepage](https://swr.vercel.app)

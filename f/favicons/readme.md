@@ -10,10 +10,10 @@ Favicon generator for Node.js
 | ------------------ | :-------------: |
 | Full name          | favicons |
 | Keywords           | favicon, ico, generator, node, realfavicongenerator |
-| # releases         | 10 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 651827.0 |
-| # stars            | 962.0 |
+| # downloads        | 695284.0 |
+| # stars            | 1086.0 |
 
 ## Links
 - [Homepage](https://github.com/itgalaxy/favicons)

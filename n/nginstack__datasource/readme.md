@@ -10,9 +10,9 @@ Nginstack DataSource library. See the [nginstack site](nginstack.com) for more i
 | ------------------ | :-------------: |
 | Full name          | @nginstack/datasource |
 | Keywords           | - |
-| # releases         | 92 |
+| # releases         | 79 |
 | # dependents       | 0.0 |
-| # downloads        | 1016.0 |
+| # downloads        | 655.3333333333334 |
 | # stars            | ? |
 
 ## Links

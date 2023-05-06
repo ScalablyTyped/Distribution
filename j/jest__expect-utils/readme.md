@@ -10,9 +10,9 @@ This module exports some utils for the `expect` function used in [Jest](https://
 | ------------------ | :-------------: |
 | Full name          | @jest/expect-utils |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4377444666666666E7 |
+| # downloads        | 2.7199748E7 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Used in npm for command line application support
 | ------------------ | :-------------: |
 | Full name          | cmd-shim |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 8831392.333333334 |
-| # stars            | 65.0 |
+| # downloads        | 8725393.333333334 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/cmd-shim#readme)

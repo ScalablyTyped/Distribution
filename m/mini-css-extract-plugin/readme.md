@@ -10,10 +10,10 @@ extracts CSS into separate files
 | ------------------ | :-------------: |
 | Full name          | mini-css-extract-plugin |
 | Keywords           | webpack, css, extract, hmr |
-| # releases         | 51 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 4.9491655666666664E7 |
-| # stars            | 4480.0 |
+| # downloads        | 5.3211574E7 |
+| # stars            | 4545.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/mini-css-extract-plugin)

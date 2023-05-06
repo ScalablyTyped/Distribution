@@ -10,10 +10,10 @@ Editor state data structures for the CodeMirror code editor
 | ------------------ | :-------------: |
 | Full name          | @codemirror/state |
 | Keywords           | editor, code |
-| # releases         | 27 |
+| # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 758548.0 |
-| # stars            | 24.0 |
+| # downloads        | 1384405.0 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/codemirror/state#readme)

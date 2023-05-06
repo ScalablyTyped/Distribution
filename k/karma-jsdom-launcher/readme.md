@@ -10,10 +10,10 @@ A Karma plugin. Launcher for jsdom.
 | ------------------ | :-------------: |
 | Full name          | karma-jsdom-launcher |
 | Keywords           | karma-plugin, karma-launcher, jsdom |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 53020.666666666664 |
-| # stars            | 36.0 |
+| # downloads        | 48097.333333333336 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/badeball/karma-jsdom-launcher#readme)

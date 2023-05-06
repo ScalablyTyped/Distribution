@@ -12,8 +12,8 @@ Parses vector tiles
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2573440.0 |
-| # stars            | 284.0 |
+| # downloads        | 2934880.3333333335 |
+| # stars            | 294.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/vector-tile-js#readme)

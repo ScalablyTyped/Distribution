@@ -10,9 +10,9 @@ Stream Muxer interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-stream-muxer |
 | Keywords           | interface, libp2p |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 5937.666666666667 |
+| # downloads        | 22813.333333333332 |
 | # stars            | 68.0 |
 
 ## Links

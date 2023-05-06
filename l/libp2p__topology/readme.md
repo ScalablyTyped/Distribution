@@ -10,9 +10,9 @@ libp2p network topology
 | ------------------ | :-------------: |
 | Full name          | @libp2p/topology |
 | Keywords           | interface, libp2p |
-| # releases         | 21 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 18468.0 |
+| # downloads        | 26765.333333333332 |
 | # stars            | 0.0 |
 
 ## Links

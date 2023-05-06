@@ -10,15 +10,15 @@ Convert a number in milliseconds to a standard duration string.
 | ------------------ | :-------------: |
 | Full name          | format-duration |
 | Keywords           | display, duration, format, hh:mm:ss, hours, milliseconds, mm:ss, seconds, time |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 17657.666666666668 |
-| # stars            | 37.0 |
+| # downloads        | 25944.666666666668 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/ungoldman/format-duration)
 - [Bugs](https://github.com/ungoldman/format-duration/issues)
-- [Repository](https://github.com/hypermodules/format-duration)
+- [Repository](https://github.com/ungoldman/format-duration)
 - [Npm](https://www.npmjs.com/package/format-duration)
     
 

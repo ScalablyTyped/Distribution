@@ -12,10 +12,13 @@ Lumino Core Utilities
 | Keywords           | - |
 | # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 313660.3333333333 |
-| # stars            | 370.0 |
+| # downloads        | 239216.0 |
+| # stars            | 420.0 |
 
 ## Links
+- [Homepage](https://github.com/jupyterlab/lumino)
+- [Bugs](https://github.com/jupyterlab/lumino/issues)
+- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Fcoreutils)
     
 

@@ -12,8 +12,8 @@ Hydrate plugin to inferno. This package can be used to reuse server side rendere
 | Keywords           | babel, react, inferno, framework, interfaces, user interfaces, vdom |
 | # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 199164.33333333334 |
-| # stars            | 15512.0 |
+| # downloads        | 254290.33333333334 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

@@ -10,10 +10,10 @@ Wrapper for fetch to simplify sending and receiving RDF data
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/fetch-lite |
 | Keywords           | fetch, light, lite, rdf, rdfjs |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 32370.666666666668 |
-| # stars            | 5.0 |
+| # downloads        | 38218.333333333336 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/fetch-lite)

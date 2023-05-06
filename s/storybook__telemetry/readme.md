@@ -10,10 +10,10 @@ Telemetry logging for crash reports and usage statistics
 | ------------------ | :-------------: |
 | Full name          | @storybook/telemetry |
 | Keywords           | storybook |
-| # releases         | 70 |
+| # releases         | 133 |
 | # dependents       | 0.0 |
-| # downloads        | 7142047.666666667 |
-| # stars            | 74176.0 |
+| # downloads        | 1.0726999666666666E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/telemetry)

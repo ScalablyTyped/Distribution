@@ -10,13 +10,13 @@ javascript standard data structure library which benchmark against C++ STL
 | ------------------ | :-------------: |
 | Full name          | js-sdsl |
 | Keywords           | data, structure, data structure, rbTree, rbtree, RBTree, red black tree, ordered, set, map, ordered map, ordered set, deque, heap, priority queue, link list, LinkList, linkedList, vector, stack, queue, hash, hash set, hash map, c++, stl |
-| # releases         | 40 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 1995548.3333333333 |
-| # stars            | 508.0 |
+| # downloads        | 1.8679095333333332E7 |
+| # stars            | 573.0 |
 
 ## Links
-- [Homepage](https://js-sdsl.github.io/)
+- [Homepage](https://js-sdsl.org/)
 - [Bugs](https://github.com/js-sdsl/js-sdsl/issues)
 - [Repository](https://github.com/js-sdsl/js-sdsl)
 - [Npm](https://www.npmjs.com/package/js-sdsl)

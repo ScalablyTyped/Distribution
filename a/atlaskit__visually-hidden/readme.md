@@ -10,9 +10,9 @@ A composable element that hides elements from the screen while keeping them acce
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/visually-hidden |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 52459.333333333336 |
+| # downloads        | 69916.0 |
 | # stars            | ? |
 
 ## Links

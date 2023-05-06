@@ -10,10 +10,10 @@ Scrollbars, simpler.
 | ------------------ | :-------------: |
 | Full name          | simplebar |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 3438866.3333333335 |
-| # stars            | 4966.0 |
+| # downloads        | 3587223.6666666665 |
+| # stars            | 5204.0 |
 
 ## Links
 - [Homepage](https://grsmto.github.io/simplebar/)

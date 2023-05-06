@@ -12,8 +12,8 @@ Encapsulated tokens (encrypted and mac'ed objects)
 | Keywords           | authentication, encryption, data integrity |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2821833.3333333335 |
-| # stars            | 601.0 |
+| # downloads        | 3203223.0 |
+| # stars            | 616.0 |
 
 ## Links
 - [Homepage](https://github.com/hueniverse/iron#readme)

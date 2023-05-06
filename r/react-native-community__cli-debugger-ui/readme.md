@@ -9,10 +9,10 @@ Typings are for version 9.0.0
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-debugger-ui |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 3587454.0 |
-| # stars            | 1878.0 |
+| # downloads        | 4415166.333333333 |
+| # stars            | 1957.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/cli#readme)

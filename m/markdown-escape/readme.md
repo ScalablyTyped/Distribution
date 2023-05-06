@@ -10,10 +10,10 @@ escape Markdown control characters
 | ------------------ | :-------------: |
 | Full name          | markdown-escape |
 | Keywords           | Markdown, escape, string |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 26315.0 |
-| # stars            | 10.0 |
+| # downloads        | 41438.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/kemitchell/markdown-escape.js#readme)

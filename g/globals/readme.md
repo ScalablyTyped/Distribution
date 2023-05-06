@@ -10,10 +10,10 @@ Global identifiers from different JavaScript environments
 | ------------------ | :-------------: |
 | Full name          | globals |
 | Keywords           | globals, global, identifiers, variables, vars, jshint, eslint, environments |
-| # releases         | 16 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2348006966666666E8 |
-| # stars            | 249.0 |
+| # downloads        | 2.4961918566666666E8 |
+| # stars            | 272.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/globals#readme)

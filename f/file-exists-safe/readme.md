@@ -10,9 +10,9 @@ Check if a file exists without try catch
 | ------------------ | :-------------: |
 | Full name          | file-exists-safe |
 | Keywords           | file, exists, exist, check, if, safe, without, try, catch, fs-safe |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3664.0 |
+| # downloads        | 11267.666666666666 |
 | # stars            | 1.0 |
 
 ## Links

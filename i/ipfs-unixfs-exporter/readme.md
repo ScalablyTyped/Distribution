@@ -10,10 +10,10 @@ JavaScript implementation of the UnixFs exporter used by IPFS
 | ------------------ | :-------------: |
 | Full name          | ipfs-unixfs-exporter |
 | Keywords           | IPFS |
-| # releases         | 55 |
+| # releases         | 49 |
 | # dependents       | 0.0 |
-| # downloads        | 114119.66666666667 |
-| # stars            | 57.0 |
+| # downloads        | 151885.66666666666 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-unixfs/tree/master/packages/ipfs-unixfs-exporter#readme)

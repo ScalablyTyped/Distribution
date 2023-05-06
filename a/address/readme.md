@@ -10,10 +10,10 @@ Get current machine IP, MAC and DNS servers.
 | ------------------ | :-------------: |
 | Full name          | address |
 | Keywords           | address, ip, ipv4, mac |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 3.7641002333333336E7 |
-| # stars            | 201.0 |
+| # downloads        | 4.1531012333333336E7 |
+| # stars            | 204.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/address#readme)

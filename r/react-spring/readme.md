@@ -10,10 +10,10 @@ Typings are for version 9.5.4
 | ------------------ | :-------------: |
 | Full name          | react-spring |
 | Keywords           | animated, animation, hooks, motion, react, react-native, spring, typescript, velocity |
-| # releases         | 53 |
+| # releases         | 57 |
 | # dependents       | 0.0 |
-| # downloads        | 3483964.3333333335 |
-| # stars            | 24088.0 |
+| # downloads        | 3438407.6666666665 |
+| # stars            | 24618.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/react-spring#readme)

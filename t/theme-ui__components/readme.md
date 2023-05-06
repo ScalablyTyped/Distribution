@@ -10,10 +10,10 @@ Primitive layout, typographic, and other components for use with Theme UI.
 | ------------------ | :-------------: |
 | Full name          | @theme-ui/components |
 | Keywords           | - |
-| # releases         | 390 |
+| # releases         | 384 |
 | # dependents       | 0.0 |
-| # downloads        | 378073.3333333333 |
-| # stars            | 4677.0 |
+| # downloads        | 401605.6666666667 |
+| # stars            | 4764.0 |
 
 ## Links
 - [Homepage](https://github.com/system-ui/theme-ui#readme)

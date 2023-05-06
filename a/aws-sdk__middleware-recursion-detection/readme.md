@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-recursion-detection |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 4543266.0 |
-| # stars            | 1854.0 |
+| # downloads        | 1.1442754666666666E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-recursion-detection)

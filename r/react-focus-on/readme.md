@@ -12,8 +12,8 @@ The final solution for WAI ARIA compatible modal dialogs or full-screen tasks.
 | Keywords           | react, modal, focus-management, scroll, isolation |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 471510.6666666667 |
-| # stars            | 228.0 |
+| # downloads        | 460847.3333333333 |
+| # stars            | 241.0 |
 
 ## Links
 - [Homepage](https://github.com/theKashey/react-focus-on#readme)

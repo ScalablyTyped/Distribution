@@ -4,18 +4,21 @@
 Typings are for version 2.2
 
 ## Library description:
-tar-stream is a streaming tar parser and generator and nothing else. It is streams2 and operates purely using streams which means you can easily extract/parse tarballs without ever hitting the file system.
+tar-stream is a streaming tar parser and generator and nothing else. It operates purely using streams which means you can easily extract/parse tarballs without ever hitting the file system.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tar-stream |
-| Keywords           | tar, tarball, parse, parser, generate, generator, stream, stream2, streams, streams2, streaming, pack, extract, modify |
+| Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 5.4863783666666664E7 |
-| # stars            | 345.0 |
+| # downloads        | 6.3194637333333336E7 |
+| # stars            | 353.0 |
 
 ## Links
+- [Homepage](https://github.com/mafintosh/tar-stream)
+- [Bugs](https://github.com/mafintosh/tar-stream/issues)
+- [Repository](https://github.com/mafintosh/tar-stream)
 - [Npm](https://www.npmjs.com/package/tar-stream)
     
 

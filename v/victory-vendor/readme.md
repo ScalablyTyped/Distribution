@@ -10,10 +10,10 @@ Vendored dependencies for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-vendor |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 262114.33333333334 |
-| # stars            | 9887.0 |
+| # downloads        | 301080.3333333333 |
+| # stars            | 9926.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

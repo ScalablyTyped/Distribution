@@ -10,10 +10,10 @@ Generates CRC hashes for strings - for use by node redis clients to determine ke
 | ------------------ | :-------------: |
 | Full name          | cluster-key-slot |
 | Keywords           | redis, hash, crc, slot, calc, javascript, node, node_redis, ioredis |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1456508E7 |
-| # stars            | 15.0 |
+| # downloads        | 1.2278891333333334E7 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/Salakar/cluster-key-slot#readme)

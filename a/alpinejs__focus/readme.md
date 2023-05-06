@@ -10,9 +10,9 @@ Manage focus within a page
 | ------------------ | :-------------: |
 | Full name          | @alpinejs/focus |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 42693.333333333336 |
+| # downloads        | 46608.666666666664 |
 | # stars            | ? |
 
 ## Links

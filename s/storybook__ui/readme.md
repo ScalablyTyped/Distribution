@@ -10,10 +10,10 @@ Core Storybook UI
 | ------------------ | :-------------: |
 | Full name          | @storybook/ui |
 | Keywords           | storybook |
-| # releases         | 476 |
+| # releases         | 420 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7560491E7 |
-| # stars            | ? |
+| # downloads        | 1.8035092333333332E7 |
+| # stars            | 75924.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/ui)

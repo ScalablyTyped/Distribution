@@ -12,8 +12,8 @@ Retrying made simple, easy and async
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9446430333333332E7 |
-| # stars            | 1558.0 |
+| # downloads        | 2.0610038E7 |
+| # stars            | 1576.0 |
 
 ## Links
 - [Homepage](https://github.com/vercel/async-retry#readme)

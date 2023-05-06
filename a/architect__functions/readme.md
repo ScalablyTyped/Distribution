@@ -10,10 +10,10 @@ Cloud function signatures for HTTP handlers, pub/sub + scheduled, queued functio
 | ------------------ | :-------------: |
 | Full name          | @architect/functions |
 | Keywords           | aws, lambda, amazon, serverless, cloud, cloudfunctions, apigateway, dynamodb, s3, sns, api gateway, framework |
-| # releases         | 49 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 19928.333333333332 |
-| # stars            | 148.0 |
+| # downloads        | 29754.333333333332 |
+| # stars            | 151.0 |
 
 ## Links
 - [Homepage](https://github.com/architect/functions)

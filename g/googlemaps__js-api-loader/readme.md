@@ -10,10 +10,10 @@ Wrapper for the loading of Google Maps JavaScript API script in the browser
 | ------------------ | :-------------: |
 | Full name          | @googlemaps/js-api-loader |
 | Keywords           | google, maps |
-| # releases         | 44 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 2682518.3333333335 |
-| # stars            | 165.0 |
+| # downloads        | 3010609.0 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/googlemaps/js-api-loader)

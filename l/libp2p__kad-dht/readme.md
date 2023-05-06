@@ -10,10 +10,10 @@ JavaScript implementation of the Kad-DHT for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/kad-dht |
 | Keywords           | IPFS |
-| # releases         | 35 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 15995.0 |
-| # stars            | 119.0 |
+| # downloads        | 21339.333333333332 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-kad-dht#readme)

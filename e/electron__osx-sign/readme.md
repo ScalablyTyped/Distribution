@@ -10,10 +10,10 @@ Codesign Electron macOS apps
 | ------------------ | :-------------: |
 | Full name          | @electron/osx-sign |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2752.6666666666665 |
-| # stars            | 462.0 |
+| # downloads        | 44151.0 |
+| # stars            | 468.0 |
 
 ## Links
 - [Homepage](https://github.com/electron/osx-sign)

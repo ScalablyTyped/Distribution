@@ -12,7 +12,7 @@ This package contains shared types of Jest's packages.
 | Keywords           | - |
 | # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1567754566666666E8 |
+| # downloads        | 2.45174224E8 |
 | # stars            | ? |
 
 ## Links

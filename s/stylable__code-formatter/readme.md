@@ -10,10 +10,10 @@ A code formatting utility for Stylable stylesheets
 | ------------------ | :-------------: |
 | Full name          | @stylable/code-formatter |
 | Keywords           | - |
-| # releases         | 47 |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 17955.333333333332 |
-| # stars            | 1174.0 |
+| # downloads        | 16911.666666666668 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/stylable/tree/master#readme)

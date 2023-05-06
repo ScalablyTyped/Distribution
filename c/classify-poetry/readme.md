@@ -10,10 +10,10 @@ recognize type poetry in a given text excerpt
 | ------------------ | :-------------: |
 | Full name          | classify-poetry |
 | Keywords           | poetry, poem, verse, sonnet, haiku, classification, detect, recognize, analyze, natural, language, processing |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 27.666666666666668 |
-| # stars            | 8.0 |
+| # downloads        | 57.333333333333336 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/ChristianMurphy/classify-poetry#readme)

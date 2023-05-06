@@ -12,8 +12,8 @@ React component to render latex strings
 | Keywords           | react, latex, zzish, component, react-component, react-ui |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 7946.333333333333 |
-| # stars            | 145.0 |
+| # downloads        | 7760.0 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/zzish/react-latex#readme)

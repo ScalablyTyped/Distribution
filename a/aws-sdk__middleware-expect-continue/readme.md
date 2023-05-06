@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-expect-continue |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 66 |
 | # dependents       | 0.0 |
-| # downloads        | 5759040.666666667 |
-| # stars            | 1854.0 |
+| # downloads        | 7255632.666666667 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-expect-continue)

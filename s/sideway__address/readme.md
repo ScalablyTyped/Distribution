@@ -10,12 +10,15 @@ Email address and domain validation
 | ------------------ | :-------------: |
 | Full name          | @sideway/address |
 | Keywords           | email, domain, address, validation |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9529076333333332E7 |
-| # stars            | 27.0 |
+| # downloads        | 2.3927287E7 |
+| # stars            | 26.0 |
 
 ## Links
+- [Homepage](https://github.com/sideway/address#readme)
+- [Bugs](https://github.com/sideway/address/issues)
+- [Repository](https://github.com/sideway/address)
 - [Npm](https://www.npmjs.com/package/%40sideway%2Faddress)
     
 

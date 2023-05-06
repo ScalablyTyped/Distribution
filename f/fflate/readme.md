@@ -10,10 +10,10 @@ High performance (de)compression in an 8kB package
 | ------------------ | :-------------: |
 | Full name          | fflate |
 | Keywords           | gzip, gunzip, deflate, inflate, compression, decompression, zlib, pako, jszip, browser, node.js, tiny, fast, zip, unzip, non-blocking |
-| # releases         | 51 |
+| # releases         | 40 |
 | # dependents       | 0.0 |
-| # downloads        | 4078727.0 |
-| # stars            | 1275.0 |
+| # downloads        | 4657349.0 |
+| # stars            | 1392.0 |
 
 ## Links
 - [Homepage](https://101arrowz.github.io/fflate)

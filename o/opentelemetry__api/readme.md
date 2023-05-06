@@ -10,15 +10,15 @@ Public API for OpenTelemetry
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/api |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling, stats, monitoring |
-| # releases         | 34 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7314006E7 |
-| # stars            | 75.0 |
+| # downloads        | 1.6990774666666668E7 |
+| # stars            | 1700.0 |
 
 ## Links
-- [Homepage](https://github.com/open-telemetry/opentelemetry-js-api#readme)
-- [Bugs](https://github.com/open-telemetry/opentelemetry-js-api/issues)
-- [Repository](https://github.com/open-telemetry/opentelemetry-js-api)
+- [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/api)
+- [Bugs](https://github.com/open-telemetry/opentelemetry-js/issues)
+- [Repository](https://github.com/open-telemetry/opentelemetry-js)
 - [Npm](https://www.npmjs.com/package/%40opentelemetry%2Fapi)
     
 

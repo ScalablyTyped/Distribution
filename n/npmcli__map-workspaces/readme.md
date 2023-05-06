@@ -10,9 +10,9 @@ Retrieves a name:pathname Map for a given workspaces config
 | ------------------ | :-------------: |
 | Full name          | @npmcli/map-workspaces |
 | Keywords           | npm, npmcli, libnpm, cli, workspaces, map-workspaces |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 4951754.666666667 |
+| # downloads        | 5491765.666666667 |
 | # stars            | 11.0 |
 
 ## Links

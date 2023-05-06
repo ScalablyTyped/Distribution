@@ -10,9 +10,9 @@ Nginstack JSUnit Library. See the [nginstack site](nginstack.com) for more infor
 | ------------------ | :-------------: |
 | Full name          | @nginstack/jsunit |
 | Keywords           | - |
-| # releases         | 77 |
+| # releases         | 80 |
 | # dependents       | 0.0 |
-| # downloads        | 1228.6666666666667 |
+| # downloads        | 1297.0 |
 | # stars            | ? |
 
 ## Links

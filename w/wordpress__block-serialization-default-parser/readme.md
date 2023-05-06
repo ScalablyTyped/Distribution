@@ -10,9 +10,9 @@ Block serialization specification parser for WordPress posts.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/block-serialization-default-parser |
 | Keywords           | wordpress, gutenberg, block, parser |
-| # releases         | 47 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 113698.0 |
+| # downloads        | 122513.0 |
 | # stars            | ? |
 
 ## Links

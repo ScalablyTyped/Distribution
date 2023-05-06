@@ -10,10 +10,10 @@ Saga middleware for Redux to handle Side Effects
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/core |
 | Keywords           | javascript, redux, middleware, saga, effects, side effects |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 3300177.0 |
-| # stars            | 22256.0 |
+| # downloads        | 3677183.0 |
+| # stars            | 22343.0 |
 
 ## Links
 - [Homepage](https://redux-saga.js.org/)

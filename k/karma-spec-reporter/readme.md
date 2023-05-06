@@ -10,10 +10,10 @@ A Karma plugin. Report all spec-results to console (like mocha's spec reporter).
 | ------------------ | :-------------: |
 | Full name          | karma-spec-reporter |
 | Keywords           | karma-plugin, reporter |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1553572.0 |
-| # stars            | 151.0 |
+| # downloads        | 1738039.0 |
+| # stars            | 154.0 |
 
 ## Links
 - [Homepage](https://github.com/tmcgee123/karma-spec-reporter#readme)

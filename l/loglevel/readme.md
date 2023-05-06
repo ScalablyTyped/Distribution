@@ -12,8 +12,8 @@ Minimal lightweight logging for JavaScript, adding reliable log level methods to
 | Keywords           | log, logger, logging, browser |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 4.0609138666666664E7 |
-| # stars            | 2258.0 |
+| # downloads        | 3.8884006666666664E7 |
+| # stars            | 2325.0 |
 
 ## Links
 - [Homepage](https://github.com/pimterry/loglevel)

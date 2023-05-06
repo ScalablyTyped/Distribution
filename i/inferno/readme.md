@@ -12,8 +12,8 @@ An extremely fast, React-like JavaScript library for building modern user interf
 | Keywords           | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 369999.6666666667 |
-| # stars            | 15512.0 |
+| # downloads        | 462713.6666666667 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

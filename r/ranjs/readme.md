@@ -10,10 +10,10 @@ Library for generating various random variables.
 | ------------------ | :-------------: |
 | Full name          | ranjs |
 | Keywords           | random, generator, distributions, mcmc, statistics, test |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 334.6666666666667 |
-| # stars            | 10.0 |
+| # downloads        | 1053.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://synesenom.github.io/ran/)

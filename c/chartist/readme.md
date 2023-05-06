@@ -10,10 +10,10 @@ Simple, responsive charts
 | ------------------ | :-------------: |
 | Full name          | chartist |
 | Keywords           | chartist, responsive charts, charts, charting |
-| # releases         | 3 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 405678.0 |
-| # stars            | 12861.0 |
+| # downloads        | 380281.3333333333 |
+| # stars            | 13051.0 |
 
 ## Links
 - [Homepage](https://github.com/chartist-js/chartist#readme)

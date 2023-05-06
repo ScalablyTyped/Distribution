@@ -10,10 +10,10 @@ A collection of common interactive command line user interfaces.
 | ------------------ | :-------------: |
 | Full name          | inquirer |
 | Keywords           | answer, answers, ask, base, cli, cli, command, command-line, confirm, enquirer, generate, generator, hyper, input, inquire, inquirer, interface, iterm, javascript, menu, node, nodejs, prompt, promptly, prompts, question, readline, scaffold, scaffolder, scaffolding, stdin, stdout, terminal, tty, ui, yeoman, yo, zsh |
-| # releases         | 20 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0817918233333333E8 |
-| # stars            | 16841.0 |
+| # downloads        | 1.11007221E8 |
+| # stars            | 17165.0 |
 
 ## Links
 - [Homepage](https://github.com/SBoudrias/Inquirer.js#readme)

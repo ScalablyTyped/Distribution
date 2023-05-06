@@ -10,10 +10,10 @@ React Native toolkit for Auth0 API
 | ------------------ | :-------------: |
 | Full name          | react-native-auth0 |
 | Keywords           | react-native |
-| # releases         | 15 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 68343.66666666667 |
-| # stars            | 374.0 |
+| # downloads        | 80974.33333333333 |
+| # stars            | 391.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/react-native-auth0#readme)

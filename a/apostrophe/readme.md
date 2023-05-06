@@ -12,8 +12,8 @@ The Apostrophe Content Management System.
 | Keywords           | apostrophe, apostrophe-cms, apostrophecms, cms, node cms, headless cms, content management system |
 | # releases         | 108 |
 | # dependents       | 0.0 |
-| # downloads        | 12150.666666666666 |
-| # stars            | 3898.0 |
+| # downloads        | 7525.666666666667 |
+| # stars            | 3939.0 |
 
 ## Links
 - [Homepage](https://github.com/apostrophecms/apostrophe#readme)

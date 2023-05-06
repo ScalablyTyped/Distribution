@@ -10,10 +10,10 @@ Style and render React Native components using emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/native |
 | Keywords           | styles, emotion, react, css, css-in-js, native |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 590946.3333333334 |
-| # stars            | 15226.0 |
+| # downloads        | 652191.0 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://emotion.sh)

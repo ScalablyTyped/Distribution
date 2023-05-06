@@ -10,10 +10,10 @@ Count syllables in English words
 | ------------------ | :-------------: |
 | Full name          | syllable |
 | Keywords           | detect, syllables, natural, language, cli, bin |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 16235.0 |
-| # stars            | 181.0 |
+| # downloads        | 15481.0 |
+| # stars            | 187.0 |
 
 ## Links
 - [Homepage](https://words.github.io/syllable/)

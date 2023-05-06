@@ -12,8 +12,8 @@ Takes an (async) iterable that emits promise-returning functions, invokes them i
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 26727.0 |
-| # stars            | 200.0 |
+| # downloads        | 27113.0 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-parallel#readme)

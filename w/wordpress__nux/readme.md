@@ -10,9 +10,9 @@ NUX (New User eXperience) module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/nux |
 | Keywords           | wordpress, gutenberg, nux |
-| # releases         | 109 |
+| # releases         | 111 |
 | # dependents       | 0.0 |
-| # downloads        | 16159.0 |
+| # downloads        | 18495.0 |
 | # stars            | ? |
 
 ## Links

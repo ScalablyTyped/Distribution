@@ -10,10 +10,10 @@ Internal, shared utilities for Reach UI.
 | ------------------ | :-------------: |
 | Full name          | @reach/utils |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 4458097.333333333 |
-| # stars            | 5390.0 |
+| # downloads        | 4897163.333333333 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)

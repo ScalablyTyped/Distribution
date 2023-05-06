@@ -10,10 +10,10 @@ Typings are for version 5.0.2
 | ------------------ | :-------------: |
 | Full name          | @ant-design/react-native |
 | Keywords           | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 11814.666666666666 |
-| # stars            | 2552.0 |
+| # downloads        | 11417.333333333334 |
+| # stars            | 2642.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/ant-design-mobile-rn#readme)

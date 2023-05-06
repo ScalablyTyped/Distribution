@@ -10,10 +10,10 @@ Opinionated, caching, retrying fetch client
 | ------------------ | :-------------: |
 | Full name          | make-fetch-happen |
 | Keywords           | http, request, fetch, mean girls, caching, cache, subresource integrity |
-| # releases         | 29 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 4.2132909E7 |
-| # stars            | 136.0 |
+| # downloads        | 4.3326538666666664E7 |
+| # stars            | 145.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/make-fetch-happen#readme)

@@ -10,10 +10,10 @@ A WDIO helper utility to provide several utility functions used across the proje
 | ------------------ | :-------------: |
 | Full name          | @wdio/utils |
 | Keywords           | webdriverio, webdriver, wdio, utils |
-| # releases         | 84 |
+| # releases         | 117 |
 | # dependents       | 0.0 |
-| # downloads        | 4386618.333333333 |
-| # stars            | 7720.0 |
+| # downloads        | 5415952.333333333 |
+| # stars            | 7897.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-utils)

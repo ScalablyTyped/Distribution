@@ -9,13 +9,14 @@ Typings are for version 9.2.1
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-config |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 691462.6666666666 |
-| # stars            | 1890.0 |
+| # downloads        | 1831789.6666666667 |
+| # stars            | 1957.0 |
 
 ## Links
-- [Homepage](https://github.com/react-native-community/cli#readme)
+- [Homepage](https://github.com/react-native-community/cli/tree/master/packages/cli-config)
+- [Bugs](https://github.com/react-native-community/cli/issues)
 - [Repository](https://github.com/react-native-community/cli)
 - [Npm](https://www.npmjs.com/package/%40react-native-community%2Fcli-config)
     

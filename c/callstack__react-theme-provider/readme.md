@@ -12,8 +12,8 @@ Theme provider for react and react-native applications
 | Keywords           | react, react-native, theme, provider |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 589369.0 |
-| # stars            | 409.0 |
+| # downloads        | 655410.6666666666 |
+| # stars            | 418.0 |
 
 ## Links
 - [Homepage](https://github.com/callstack/react-theme-provider#readme)

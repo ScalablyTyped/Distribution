@@ -10,10 +10,10 @@ An iteration of the Node.js core streams with a series of improvements
 | ------------------ | :-------------: |
 | Full name          | streamx |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 28049.333333333332 |
-| # stars            | 191.0 |
+| # downloads        | 232040.66666666666 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/streamxorg/streamx)

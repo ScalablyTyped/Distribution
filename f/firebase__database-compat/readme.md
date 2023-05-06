@@ -10,10 +10,10 @@ The Realtime Database component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/database-compat |
 | Keywords           | - |
-| # releases         | 422 |
+| # releases         | 523 |
 | # dependents       | 0.0 |
-| # downloads        | 5512552.0 |
-| # stars            | 4194.0 |
+| # downloads        | 5992736.333333333 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

@@ -9,10 +9,10 @@ Typings are for version 4.14.2
 | ------------------ | :-------------: |
 | Full name          | @algolia/client-account |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 2776990.3333333335 |
-| # stars            | 1133.0 |
+| # downloads        | 3459462.6666666665 |
+| # stars            | 1172.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

@@ -10,10 +10,10 @@ Test your Stylable React components using Jest
 | ------------------ | :-------------: |
 | Full name          | @stylable/jest |
 | Keywords           | - |
-| # releases         | 93 |
+| # releases         | 83 |
 | # dependents       | 0.0 |
-| # downloads        | 7350.0 |
-| # stars            | 1174.0 |
+| # downloads        | 7005.333333333333 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/stylable/tree/master#readme)

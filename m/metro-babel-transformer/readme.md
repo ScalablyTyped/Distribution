@@ -10,10 +10,10 @@ Typings are for version 0.66
 | ------------------ | :-------------: |
 | Full name          | metro-babel-transformer |
 | Keywords           | transformer, metro |
-| # releases         | 24 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 4526739.0 |
-| # stars            | 4576.0 |
+| # downloads        | 5053222.333333333 |
+| # stars            | 4674.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/metro#readme)

@@ -10,10 +10,10 @@ return a debounced function
 | ------------------ | :-------------: |
 | Full name          | just-debounce-it |
 | Keywords           | function, debounce, no-dependencies, just |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 183538.66666666666 |
-| # stars            | 4414.0 |
+| # downloads        | 169912.66666666666 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

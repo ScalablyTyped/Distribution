@@ -10,10 +10,10 @@ WebRTC for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-webrtc |
 | Keywords           | react-component, react-native, ios, android, webrtc |
-| # releases         | 17 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 28107.666666666668 |
-| # stars            | 3932.0 |
+| # downloads        | 32397.333333333332 |
+| # stars            | 4140.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-webrtc/react-native-webrtc)

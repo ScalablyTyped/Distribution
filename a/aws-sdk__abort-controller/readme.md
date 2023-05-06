@@ -10,10 +10,10 @@ A simple abort controller library
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/abort-controller |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5300574E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1727411333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/abort-controller)

@@ -12,13 +12,10 @@ determine if a point is inside a polygon with a ray intersection counting algori
 | Keywords           | point, polygon, inside |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1233471.6666666667 |
-| # stars            | 885.0 |
+| # downloads        | 1843413.6666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/point-in-polygon#readme)
-- [Bugs](https://github.com/substack/point-in-polygon/issues)
-- [Repository](https://github.com/substack/point-in-polygon)
 - [Npm](https://www.npmjs.com/package/point-in-polygon)
     
 

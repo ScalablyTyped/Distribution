@@ -10,10 +10,10 @@ Convert Windows backslash paths to slash paths
 | ------------------ | :-------------: |
 | Full name          | slash |
 | Keywords           | path, seperator, slash, backslash, windows, convert |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9308491766666666E8 |
-| # stars            | 269.0 |
+| # downloads        | 2.0549723266666666E8 |
+| # stars            | 288.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/slash#readme)

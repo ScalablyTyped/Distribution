@@ -10,10 +10,10 @@ retext plugin to check for profane and vulgar wording
 | ------------------ | :-------------: |
 | Full name          | retext-profanities |
 | Keywords           | unified, retext, retext-plugin, plugin, profane, profanity, cuss, obscene, vulgar, profanities |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 78367.66666666667 |
-| # stars            | 35.0 |
+| # downloads        | 73324.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/retextjs/retext-profanities#readme)

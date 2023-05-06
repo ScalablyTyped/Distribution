@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-sdk-glacier |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 66 |
 | # dependents       | 0.0 |
-| # downloads        | 2383.6666666666665 |
-| # stars            | 1854.0 |
+| # downloads        | 3630.6666666666665 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-sdk-glacier)

@@ -12,8 +12,8 @@ A collection of codecs and combinators for use with io-ts
 | Keywords           | io-ts, fp-ts, monocle-ts, newtype-ts |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1146122.0 |
-| # stars            | 267.0 |
+| # downloads        | 1203572.6666666667 |
+| # stars            | 268.0 |
 
 ## Links
 - [Homepage](https://github.com/gcanti/io-ts-types)

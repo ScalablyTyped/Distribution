@@ -10,10 +10,10 @@ React Element Selector Query (resq) - Query React components and children by sel
 | ------------------ | :-------------: |
 | Full name          | resq |
 | Keywords           | react, selector, resq, rescue, queryselector, query |
-| # releases         | 8 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 3390935.6666666665 |
-| # stars            | 136.0 |
+| # downloads        | 3428384.3333333335 |
+| # stars            | 146.0 |
 
 ## Links
 - [Homepage](https://github.com/baruchvlz/resq#readme)

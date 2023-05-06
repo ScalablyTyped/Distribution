@@ -10,10 +10,10 @@ Peer Identifier interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-peer-id |
 | Keywords           | interface, libp2p |
-| # releases         | 8 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 14561.0 |
-| # stars            | 67.0 |
+| # downloads        | 66995.33333333333 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interface-peer-id#readme)

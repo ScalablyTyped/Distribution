@@ -10,10 +10,10 @@ A convenient loader for AssemblyScript modules.
 | ------------------ | :-------------: |
 | Full name          | @assemblyscript/loader |
 | Keywords           | assemblyscript, loader, glue, interop, webassembly, wasm |
-| # releases         | 103 |
+| # releases         | 98 |
 | # dependents       | 0.0 |
-| # downloads        | 6153259.333333333 |
-| # stars            | 14462.0 |
+| # downloads        | 7528313.666666667 |
+| # stars            | 15045.0 |
 
 ## Links
 - [Homepage](https://assemblyscript.org)

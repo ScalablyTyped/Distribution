@@ -10,10 +10,10 @@ An interactive UI dashboard for Bee Queue
 | ------------------ | :-------------: |
 | Full name          | bull-arena |
 | Keywords           | bull-arena, bull, bee, bullmq |
-| # releases         | 43 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 100169.33333333333 |
-| # stars            | 722.0 |
+| # downloads        | 98469.33333333333 |
+| # stars            | 737.0 |
 
 ## Links
 - [Homepage](https://github.com/bee-queue/arena#readme)

@@ -11,8 +11,8 @@ Typings are for version 9.0.5
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 104505.33333333333 |
-| # stars            | 92508.0 |
+| # downloads        | 104512.0 |
+| # stars            | 94463.0 |
 
 ## Links
 - [Homepage](https://github.com/zeit/next.js#readme)

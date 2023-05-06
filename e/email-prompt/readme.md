@@ -12,7 +12,7 @@ CLI email prompt with autocompletion and built-in validation
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 4398.666666666667 |
+| # downloads        | 3032.0 |
 | # stars            | 270.0 |
 
 ## Links

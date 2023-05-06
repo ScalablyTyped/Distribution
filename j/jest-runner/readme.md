@@ -9,10 +9,10 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | jest-runner |
 | Keywords           | - |
-| # releases         | 79 |
+| # releases         | 77 |
 | # dependents       | 0.0 |
-| # downloads        | 7.341588033333333E7 |
-| # stars            | 40312.0 |
+| # downloads        | 7.8852208E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

@@ -10,10 +10,10 @@ tap-producing test harness for node and browsers
 | ------------------ | :-------------: |
 | Full name          | tape |
 | Keywords           | tap, test, harness, assert, browser |
-| # releases         | 22 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 2419728.3333333335 |
-| # stars            | 5667.0 |
+| # downloads        | 2689912.3333333335 |
+| # stars            | 5696.0 |
 
 ## Links
 - [Homepage](https://github.com/ljharb/tape)

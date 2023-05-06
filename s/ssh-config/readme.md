@@ -10,10 +10,10 @@ SSH config parser and stringifier
 | ------------------ | :-------------: |
 | Full name          | ssh-config |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 297368.3333333333 |
-| # stars            | 63.0 |
+| # downloads        | 363248.3333333333 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/cyjake/ssh-config#readme)

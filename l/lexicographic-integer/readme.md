@@ -12,13 +12,10 @@ create lexicographic string keys for positive integers without zero-padding
 | Keywords           | lexicographic, encoding, pack, padding, integer |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 7923.666666666667 |
-| # stars            | 43.0 |
+| # downloads        | 4315.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/lexicographic-integer)
-- [Bugs](https://github.com/substack/lexicographic-integer/issues)
-- [Repository](https://github.com/substack/lexicographic-integer)
 - [Npm](https://www.npmjs.com/package/lexicographic-integer)
     
 

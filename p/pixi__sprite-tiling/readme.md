@@ -10,15 +10,15 @@ Tiling Sprites for faster rendering a tiling image
 | ------------------ | :-------------: |
 | Full name          | @pixi/sprite-tiling |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 356359.3333333333 |
-| # stars            | 37483.0 |
+| # downloads        | 383573.0 |
+| # stars            | 38551.0 |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fsprite-tiling)
     
 

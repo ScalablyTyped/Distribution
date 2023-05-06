@@ -12,8 +12,8 @@ CSRF tokens for Koa
 | Keywords           | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, middleware, next, request, security, site |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 210722.66666666666 |
-| # stars            | 262.0 |
+| # downloads        | 336890.0 |
+| # stars            | 265.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/csrf)

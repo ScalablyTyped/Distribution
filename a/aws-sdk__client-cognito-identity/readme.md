@@ -10,10 +10,10 @@ AWS SDK for JavaScript Cognito Identity Client for Node.js, Browser and React Na
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-cognito-identity |
 | Keywords           | - |
-| # releases         | 126 |
+| # releases         | 151 |
 | # dependents       | 0.0 |
-| # downloads        | 2372599.3333333335 |
-| # stars            | 1854.0 |
+| # downloads        | 5499720.333333333 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-cognito-identity)

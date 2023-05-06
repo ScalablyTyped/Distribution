@@ -12,8 +12,8 @@ A library for server-side integrating with Braintree.
 | Keywords           | braintree, payments |
 | # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 274452.0 |
-| # stars            | 308.0 |
+| # downloads        | 284710.0 |
+| # stars            | 315.0 |
 
 ## Links
 - [Homepage](https://github.com/braintree/braintree_node)

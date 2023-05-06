@@ -10,10 +10,10 @@ Cybernetically enhanced web apps
 | ------------------ | :-------------: |
 | Full name          | svelte |
 | Keywords           | UI, framework, templates, templating |
-| # releases         | 65 |
+| # releases         | 54 |
 | # dependents       | 0.0 |
-| # downloads        | 1483958.6666666667 |
-| # stars            | 61985.0 |
+| # downloads        | 1.7538502E7 |
+| # stars            | 64636.0 |
 
 ## Links
 - [Homepage](https://svelte.dev)

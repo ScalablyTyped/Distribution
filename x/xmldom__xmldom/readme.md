@@ -10,10 +10,10 @@ A pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSer
 | ------------------ | :-------------: |
 | Full name          | @xmldom/xmldom |
 | Keywords           | w3c, dom, xml, parser, javascript, DOMParser, XMLSerializer, ponyfill |
-| # releases         | 11 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0243721333333334E7 |
-| # stars            | 191.0 |
+| # downloads        | 1.4209225333333334E7 |
+| # stars            | 214.0 |
 
 ## Links
 - [Homepage](https://github.com/xmldom/xmldom)

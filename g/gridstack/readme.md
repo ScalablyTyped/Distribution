@@ -4,19 +4,19 @@
 Typings are for version 7.1.1
 
 ## Library description:
-TypeScript/JS lib for dashboard layout and creation, no external dependencies, with many wrappers (React, Angular, Vue, Ember, knockout...)
+TypeScript/JS lib for dashboard layout and creation, responsive, mobile support, no external dependencies, with many wrappers (React, Angular, Vue, Ember, knockout...)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gridstack |
 | Keywords           | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
-| # releases         | 37 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 268405.3333333333 |
-| # stars            | 4265.0 |
+| # downloads        | 415376.0 |
+| # stars            | 4454.0 |
 
 ## Links
-- [Homepage](http://gridstack.github.io/gridstack.js/)
+- [Homepage](http://gridstackjs.com/)
 - [Bugs](https://github.com/gridstack/gridstack.js/issues)
 - [Repository](https://github.com/gridstack/gridstack.js)
 - [Npm](https://www.npmjs.com/package/gridstack)

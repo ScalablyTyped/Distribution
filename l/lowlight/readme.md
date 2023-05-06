@@ -12,8 +12,8 @@ Virtual syntax highlighting for virtual DOMs and non-HTML things
 | Keywords           | syntax, code, ast, virtual, dom, highlight, highlighting |
 | # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9010774E7 |
-| # stars            | 431.0 |
+| # downloads        | 1.6821837E7 |
+| # stars            | 479.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/lowlight#readme)

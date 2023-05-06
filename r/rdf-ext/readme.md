@@ -10,10 +10,10 @@ RDF-Ext is a developer-friendly extension for RDF/JS
 | ------------------ | :-------------: |
 | Full name          | rdf-ext |
 | Keywords           | rdf, rdfjs, rdf-ext |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 27871.666666666668 |
-| # stars            | 109.0 |
+| # downloads        | 34913.0 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://github.com/rdf-ext/rdf-ext)

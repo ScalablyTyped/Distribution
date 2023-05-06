@@ -10,10 +10,10 @@ Internationalize JS apps. This library provides an API to format dates, numbers,
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl |
 | Keywords           | intl, i18n, internationalization, locale, localization, globalization, react-intl, format, formatting, translate, translation |
-| # releases         | 102 |
+| # releases         | 91 |
 | # dependents       | 0.0 |
-| # downloads        | 3316944.3333333335 |
-| # stars            | 13336.0 |
+| # downloads        | 3849619.6666666665 |
+| # stars            | 13464.0 |
 
 ## Links
 - [Homepage](https://formatjs.io)

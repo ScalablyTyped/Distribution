@@ -10,9 +10,9 @@ Pagination feature for CKEditor 5.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-pagination |
 | Keywords           | ckeditor, ckeditor5, ckeditor 5, ckeditor5-feature, ckeditor5-plugin |
-| # releases         | 26 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 6174.333333333333 |
+| # downloads        | 6027.666666666667 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ A base class utility that manages events and options in modules.
 | ------------------ | :-------------: |
 | Full name          | @egjs/component |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 132015.0 |
-| # stars            | 29.0 |
+| # downloads        | 198650.0 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://naver.github.io/egjs-component)

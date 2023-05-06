@@ -10,10 +10,10 @@ Pure JS popover component for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-modal-popover |
 | Keywords           | react, react-native, popover, modal |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 18347.0 |
-| # stars            | 243.0 |
+| # downloads        | 17702.666666666668 |
+| # stars            | 254.0 |
 
 ## Links
 - [Homepage](https://github.com/doomsower/react-native-modal-popover#readme)

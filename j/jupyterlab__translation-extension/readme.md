@@ -10,10 +10,10 @@ JupyterLab - Translation services
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/translation-extension |
 | Keywords           | jupyter, jupyterlab, jupyterlab-extension |
-| # releases         | 134 |
+| # releases         | 131 |
 | # dependents       | 0.0 |
-| # downloads        | 177059.66666666666 |
-| # stars            | 12379.0 |
+| # downloads        | 77081.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

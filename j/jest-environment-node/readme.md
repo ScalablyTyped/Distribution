@@ -9,9 +9,9 @@ Typings are for version 29.3.1
 | ------------------ | :-------------: |
 | Full name          | jest-environment-node |
 | Keywords           | - |
-| # releases         | 69 |
+| # releases         | 70 |
 | # dependents       | 0.0 |
-| # downloads        | 7.764208033333333E7 |
+| # downloads        | 8.036693E7 |
 | # stars            | ? |
 
 ## Links

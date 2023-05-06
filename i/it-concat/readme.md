@@ -9,10 +9,10 @@ Concat all buffers/strings yielded from an async iterable into a single BufferLi
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | it-concat |
-| Keywords           | concat, join, glue, buffer, bufferlist, string, iterable, iterator, async |
+| Keywords           | async, buffer, bufferlist, concat, glue, iterable, iterator, join, string |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 212673.66666666666 |
+| # downloads        | 129586.33333333333 |
 | # stars            | 1.0 |
 
 ## Links

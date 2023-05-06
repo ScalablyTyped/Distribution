@@ -10,10 +10,10 @@ Node.js libp2p mDNS discovery implementation for peer discovery
 | ------------------ | :-------------: |
 | Full name          | @libp2p/mdns |
 | Keywords           | IPFS |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 13850.666666666666 |
-| # stars            | 46.0 |
+| # downloads        | 20133.0 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-mdns#readme)

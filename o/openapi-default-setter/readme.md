@@ -10,10 +10,10 @@ Sets default values in request properties according to defaults defined in opena
 | ------------------ | :-------------: |
 | Full name          | openapi-default-setter |
 | Keywords           | openapi, default, setter |
-| # releases         | 14 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 93303.66666666667 |
-| # stars            | ? |
+| # downloads        | 118923.0 |
+| # stars            | 765.0 |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-default-setter#readme)

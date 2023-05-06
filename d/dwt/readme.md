@@ -12,8 +12,8 @@ Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanning SDK software specifically d
 | Keywords           | TWAIN, JavaScript, document, scanning, web, browser, cross-platform, scanner, document management, HTML5 scan, JavaScript scan, Web scan, HTML5 scanner, JavaScript scanner, web scanner, HTML5 scanning, JavaScript scanning, Web scanning, TWAIN, WIA, Web TWAIN, document scanning, SANE |
 | # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 33847.333333333336 |
-| # stars            | 40.0 |
+| # downloads        | 39412.666666666664 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://www.dynamsoft.com/web-twain/overview/)

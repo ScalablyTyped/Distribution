@@ -10,10 +10,10 @@ Typings are for version 3.2.45
 | ------------------ | :-------------: |
 | Full name          | @vue/runtime-dom |
 | Keywords           | vue |
-| # releases         | 78 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 3659014.6666666665 |
-| # stars            | 32475.0 |
+| # downloads        | 4394936.0 |
+| # stars            | 33643.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/core/tree/main/packages/runtime-dom#readme)

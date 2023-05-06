@@ -10,10 +10,10 @@ A small fast zlib stream built on [minipass](http://npm.im/minipass) and Node.js
 | ------------------ | :-------------: |
 | Full name          | minizlib |
 | Keywords           | zlib, gzip, gunzip, deflate, inflate, compression, zip, unzip |
-| # releases         | 4 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 7.729247533333333E7 |
-| # stars            | 61.0 |
+| # downloads        | 7.774253166666667E7 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/minizlib#readme)

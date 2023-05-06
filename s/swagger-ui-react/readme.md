@@ -10,10 +10,10 @@ Typings are for version 4.11
 | ------------------ | :-------------: |
 | Full name          | swagger-ui-react |
 | Keywords           | - |
-| # releases         | 77 |
+| # releases         | 75 |
 | # dependents       | 0.0 |
-| # downloads        | 330812.0 |
-| # stars            | 22529.0 |
+| # downloads        | 380595.0 |
+| # stars            | 22980.0 |
 
 ## Links
 - [Homepage](https://github.com/swagger-api/swagger-ui)

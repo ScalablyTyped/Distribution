@@ -10,10 +10,10 @@ A flexible math expression evaluator
 | ------------------ | :-------------: |
 | Full name          | math-expression-evaluator |
 | Keywords           | math, expression, evaluator, parser |
-| # releases         | 16 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 5479147.666666667 |
-| # stars            | 139.0 |
+| # downloads        | 5254858.333333333 |
+| # stars            | 157.0 |
 
 ## Links
 - [Homepage](https://github.com/redhivesoftware/math-expression-evaluator#readme)

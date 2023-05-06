@@ -10,10 +10,10 @@ Swiss Army knife for Unix permissions
 | ------------------ | :-------------: |
 | Full name          | unix-permissions |
 | Keywords           | access-control, acl, chmod, cli, javascript, library, nodejs, octal, permissions, posix, setgid, setuid, shell, stat, sticky, symbolic, terminal, typescript, umask, unix |
-| # releases         | 5 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 152.33333333333334 |
-| # stars            | 112.0 |
+| # downloads        | 337.0 |
+| # stars            | 117.0 |
 
 ## Links
 - [Homepage](https://www.github.com/ehmicky/unix-permissions)

@@ -10,10 +10,10 @@ crawl youtube without api key (search videos channels or get all channel/playlis
 | ------------------ | :-------------: |
 | Full name          | usetube |
 | Keywords           | youtube, crawler, scraper, api, no, key, simple, javascript, youtube api, youtube search, youtube api no key, youtube crawler, youtube scrapper, youtube open api, youtube open source, youtube simple, youtube playlist, yt |
-| # releases         | 30 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 954.0 |
-| # stars            | 26.0 |
+| # downloads        | 1479.6666666666667 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/valerebron/usetube#readme)

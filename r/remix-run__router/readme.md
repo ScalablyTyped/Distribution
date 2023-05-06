@@ -10,10 +10,10 @@ Nested/Data-driven/Framework-agnostic Routing
 | ------------------ | :-------------: |
 | Full name          | @remix-run/router |
 | Keywords           | remix, router, location |
-| # releases         | 15 |
+| # releases         | 40 |
 | # dependents       | 0.0 |
-| # downloads        | 15866.333333333334 |
-| # stars            | 47997.0 |
+| # downloads        | 6213712.666666667 |
+| # stars            | 49355.0 |
 
 ## Links
 - [Homepage](https://github.com/remix-run/react-router#readme)

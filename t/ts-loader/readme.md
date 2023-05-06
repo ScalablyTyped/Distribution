@@ -10,10 +10,10 @@ TypeScript loader for webpack
 | ------------------ | :-------------: |
 | Full name          | ts-loader |
 | Keywords           | ts-loader, typescript-loader, webpack, loader, typescript, ts |
-| # releases         | 38 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 2.3097117333333332E7 |
-| # stars            | 3282.0 |
+| # downloads        | 2.5395998666666668E7 |
+| # stars            | 3315.0 |
 
 ## Links
 - [Homepage](https://github.com/TypeStrong/ts-loader)

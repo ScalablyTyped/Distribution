@@ -10,10 +10,10 @@ Functional programming in TypeScript
 | ------------------ | :-------------: |
 | Full name          | fp-ts |
 | Keywords           | typescript, algebraic-data-types, functional-programming |
-| # releases         | 68 |
+| # releases         | 74 |
 | # dependents       | 0.0 |
-| # downloads        | 4444425.333333333 |
-| # stars            | 8371.0 |
+| # downloads        | 4767699.666666667 |
+| # stars            | 8542.0 |
 
 ## Links
 - [Homepage](https://github.com/gcanti/fp-ts)

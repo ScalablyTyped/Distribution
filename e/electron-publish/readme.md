@@ -12,8 +12,8 @@ Part of [electron-builder](https://github.com/electron-userland/electron-builder
 | Keywords           | - |
 | # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 1164373.6666666667 |
-| # stars            | 12258.0 |
+| # downloads        | 1072105.6666666667 |
+| # stars            | 12487.0 |
 
 ## Links
 - [Homepage](https://github.com/electron-userland/electron-builder)

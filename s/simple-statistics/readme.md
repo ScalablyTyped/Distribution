@@ -10,10 +10,10 @@ Simple Statistics
 | ------------------ | :-------------: |
 | Full name          | simple-statistics |
 | Keywords           | descriptive, linear, math, probability, regression, statistics |
-| # releases         | 14 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 363965.3333333333 |
-| # stars            | 2777.0 |
+| # downloads        | 374274.0 |
+| # stars            | 2835.0 |
 
 ## Links
 - [Homepage](https://github.com/simple-statistics/simple-statistics#readme)

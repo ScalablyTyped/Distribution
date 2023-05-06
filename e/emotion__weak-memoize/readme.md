@@ -10,10 +10,10 @@ A memoization function that uses a WeakMap
 | ------------------ | :-------------: |
 | Full name          | @emotion/weak-memoize |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2.7601657333333332E7 |
-| # stars            | 15226.0 |
+| # downloads        | 3.2582890666666668E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

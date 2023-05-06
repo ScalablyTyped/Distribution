@@ -10,10 +10,10 @@ Ignite UI for jQuery by Infragistics
 | ------------------ | :-------------: |
 | Full name          | ignite-ui |
 | Keywords           | igniteui, ignite ui, ignite ui for jquery, infragistics, jquery controls, jquery widgets |
-| # releases         | 14 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 1204.3333333333333 |
-| # stars            | 479.0 |
+| # downloads        | 1319.6666666666667 |
+| # stars            | 480.0 |
 
 ## Links
 - [Homepage](http://www.igniteui.com/)

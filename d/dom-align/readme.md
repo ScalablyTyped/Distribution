@@ -10,10 +10,10 @@ Align DOM Node Flexibly
 | ------------------ | :-------------: |
 | Full name          | dom-align |
 | Keywords           | dom, align |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 6133434.0 |
-| # stars            | 323.0 |
+| # downloads        | 6652337.333333333 |
+| # stars            | 335.0 |
 
 ## Links
 - [Homepage](http://github.com/yiminghe/dom-align)

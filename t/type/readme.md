@@ -12,7 +12,7 @@ Runtime validation and processing of JavaScript types
 | Keywords           | type, coercion |
 | # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 7.757457866666667E7 |
+| # downloads        | 7.885854333333333E7 |
 | # stars            | 30.0 |
 
 ## Links

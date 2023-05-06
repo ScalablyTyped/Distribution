@@ -10,10 +10,10 @@ Typings are for version 7.2.4
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-layout |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 277 |
+| # releases         | 274 |
 | # dependents       | 0.0 |
-| # downloads        | 136495.66666666666 |
-| # stars            | 2883.0 |
+| # downloads        | 137258.66666666666 |
+| # stars            | 3211.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/pro-components/tree/master/packages/layout#readme)

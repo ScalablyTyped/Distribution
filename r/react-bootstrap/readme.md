@@ -10,10 +10,10 @@ Bootstrap 5 components built with React
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap |
 | Keywords           | bootstrap, react, component, components, ecosystem-react, react-component |
-| # releases         | 45 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 6268988.333333333 |
-| # stars            | 21031.0 |
+| # downloads        | 6128757.333333333 |
+| # stars            | 21388.0 |
 
 ## Links
 - [Homepage](https://react-bootstrap.github.io/)

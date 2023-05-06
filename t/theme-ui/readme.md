@@ -10,10 +10,10 @@ The Design Graph Framework
 | ------------------ | :-------------: |
 | Full name          | theme-ui |
 | Keywords           | theme-ui, emotion, mdx, css, styles, css-in-js |
-| # releases         | 386 |
+| # releases         | 381 |
 | # dependents       | 0.0 |
-| # downloads        | 494918.0 |
-| # stars            | 4677.0 |
+| # downloads        | 523071.0 |
+| # stars            | 4764.0 |
 
 ## Links
 - [Homepage](https://github.com/system-ui/theme-ui#readme)

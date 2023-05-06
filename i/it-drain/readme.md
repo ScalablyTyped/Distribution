@@ -10,10 +10,10 @@ Empties an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-drain |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 236331.66666666666 |
-| # stars            | 200.0 |
+| # downloads        | 193212.33333333334 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-drain#readme)

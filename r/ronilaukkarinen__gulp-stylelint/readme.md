@@ -10,15 +10,15 @@ Gulp plugin for running Stylelint results through various reporters.
 | ------------------ | :-------------: |
 | Full name          | @ronilaukkarinen/gulp-stylelint |
 | Keywords           | gulpplugin, stylelint, postcss, css |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3196.6666666666665 |
-| # stars            | 151.0 |
+| # downloads        | 3707.3333333333335 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/olegskl/gulp-stylelint)
-- [Bugs](https://github.com/olegskl/gulp-stylelint/issues)
-- [Repository](https://github.com/olegskl/gulp-stylelint)
+- [Homepage](https://github.com/ronilaukkarinen/gulp-stylelint)
+- [Bugs](https://github.com/ronilaukkarinen/gulp-stylelint/issues)
+- [Repository](https://github.com/ronilaukkarinen/gulp-stylelint)
 - [Npm](https://www.npmjs.com/package/%40ronilaukkarinen%2Fgulp-stylelint)
     
 

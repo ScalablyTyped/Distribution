@@ -10,10 +10,10 @@ Module to generate Windows installers for Electron apps
 | ------------------ | :-------------: |
 | Full name          | electron-winstaller |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 176415.66666666666 |
-| # stars            | 1407.0 |
+| # downloads        | 184960.66666666666 |
+| # stars            | 1427.0 |
 
 ## Links
 - [Homepage](https://github.com/electron/windows-installer#readme)

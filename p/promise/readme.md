@@ -10,10 +10,10 @@ Bare bones Promises/A+ implementation
 | ------------------ | :-------------: |
 | Full name          | promise |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 5.2683224E7 |
-| # stars            | 2467.0 |
+| # downloads        | 5.5933886333333336E7 |
+| # stars            | 2484.0 |
 
 ## Links
 - [Homepage](https://github.com/then/promise#readme)

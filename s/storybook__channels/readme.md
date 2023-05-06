@@ -10,10 +10,10 @@ Storybook Channel is similar to an EventEmitter. Channels are used with Storyboo
 | ------------------ | :-------------: |
 | Full name          | @storybook/channels |
 | Keywords           | storybook |
-| # releases         | 480 |
+| # releases         | 465 |
 | # dependents       | 0.0 |
-| # downloads        | 3.0257624666666668E7 |
-| # stars            | 73947.0 |
+| # downloads        | 3.5922406333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/channels)

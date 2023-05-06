@@ -10,10 +10,10 @@ Metascraper integration with Amazon
 | ------------------ | :-------------: |
 | Full name          | metascraper-amazon |
 | Keywords           | amazon, metascraper |
-| # releases         | 98 |
+| # releases         | 83 |
 | # dependents       | 0.0 |
-| # downloads        | 3328.0 |
-| # stars            | 1802.0 |
+| # downloads        | 2639.0 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper#readme)

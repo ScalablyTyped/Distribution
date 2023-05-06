@@ -10,9 +10,9 @@ Angular - commonly needed directives and services
 | ------------------ | :-------------: |
 | Full name          | @angular/common |
 | Keywords           | - |
-| # releases         | 220 |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 9540403.666666666 |
+| # downloads        | 9856953.0 |
 | # stars            | ? |
 
 ## Links

@@ -10,9 +10,9 @@ Typings are for version 1.73.0
 | ------------------ | :-------------: |
 | Full name          | wix-design-systems-locale-utils |
 | Keywords           | - |
-| # releases         | 71 |
+| # releases         | 86 |
 | # dependents       | 0.0 |
-| # downloads        | 2490.6666666666665 |
+| # downloads        | 1498.6666666666667 |
 | # stars            | ? |
 
 ## Links

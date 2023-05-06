@@ -12,7 +12,7 @@ Bitmap manipulation to adjust the color in an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5084966.666666667 |
+| # downloads        | 5726332.0 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ slugifies even utf-8 chars!
 | ------------------ | :-------------: |
 | Full name          | slug |
 | Keywords           | slugify, slug, string, utf8, utf-8, unicode, url |
-| # releases         | 29 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 786508.3333333334 |
-| # stars            | 210.0 |
+| # downloads        | 821488.3333333334 |
+| # stars            | 214.0 |
 
 ## Links
 - [Homepage](https://github.com/Trott/slug)

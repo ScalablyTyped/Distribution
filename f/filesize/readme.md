@@ -10,13 +10,15 @@ JavaScript library to generate a human readable String describing the file size
 | ------------------ | :-------------: |
 | Full name          | filesize |
 | Keywords           | file, filesize, size, readable, file system, bytes, diff |
-| # releases         | 29 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 4.4602773E7 |
-| # stars            | 1293.0 |
+| # downloads        | 4.4481838E7 |
+| # stars            | 1336.0 |
 
 ## Links
 - [Homepage](https://filesizejs.com)
+- [Bugs](https://github.com/avoidwork/filesize.js/issues)
+- [Repository](https://github.com/avoidwork/filesize.js)
 - [Npm](https://www.npmjs.com/package/filesize)
     
 

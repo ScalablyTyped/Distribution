@@ -10,10 +10,10 @@ React Component for displaying an image from Imgix
 | ------------------ | :-------------: |
 | Full name          | react-imgix |
 | Keywords           | react |
-| # releases         | 14 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 182968.66666666666 |
-| # stars            | 319.0 |
+| # downloads        | 180567.0 |
+| # stars            | 330.0 |
 
 ## Links
 - [Homepage](https://github.com/imgix/react-imgix#readme)

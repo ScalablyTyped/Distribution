@@ -10,10 +10,10 @@ Make a function mimic another one
 | ------------------ | :-------------: |
 | Full name          | mimic-fn |
 | Keywords           | function, mimic, imitate, rename, copy, inherit, properties, name, func, fn, set, infer, change |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.60422428E8 |
-| # stars            | 74.0 |
+| # downloads        | 1.8559715833333334E8 |
+| # stars            | 82.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/mimic-fn#readme)

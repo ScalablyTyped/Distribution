@@ -10,12 +10,15 @@ Accessible React Combobox (Autocomplete).
 | ------------------ | :-------------: |
 | Full name          | @reach/combobox |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 382307.3333333333 |
-| # stars            | 5390.0 |
+| # downloads        | 411877.0 |
+| # stars            | 5565.0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fcombobox)
     
 

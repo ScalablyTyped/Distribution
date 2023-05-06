@@ -10,10 +10,10 @@ Lint your commit messages
 | ------------------ | :-------------: |
 | Full name          | @commitlint/resolve-extends |
 | Keywords           | conventional-changelog, commitlint, library, core |
-| # releases         | 19 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 8782777.0 |
-| # stars            | 11921.0 |
+| # downloads        | 9491059.333333334 |
+| # stars            | 12927.0 |
 
 ## Links
 - [Homepage](https://commitlint.js.org/)

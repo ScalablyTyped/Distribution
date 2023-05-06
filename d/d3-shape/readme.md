@@ -10,10 +10,10 @@ Graphical primitives for visualization, such as lines and areas.
 | ------------------ | :-------------: |
 | Full name          | d3-shape |
 | Keywords           | d3, d3-module, graphics, visualization, canvas, svg |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5868394E7 |
-| # stars            | 2307.0 |
+| # downloads        | 1.9148651E7 |
+| # stars            | 2351.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-shape/)

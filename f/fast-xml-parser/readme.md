@@ -10,10 +10,10 @@ Validate XML, Parse XML, Build XML without C/C++ based libraries
 | ------------------ | :-------------: |
 | Full name          | fast-xml-parser |
 | Keywords           | fast, xml, json, parser, xml2js, x2js, xml2json, js, cli, validator, validate, transformer, assert, js2xml, json2xml, html |
-| # releases         | 28 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9010191666666668E7 |
-| # stars            | 1642.0 |
+| # downloads        | 2.4833176666666668E7 |
+| # stars            | 1765.0 |
 
 ## Links
 - [Homepage](https://github.com/NaturalIntelligence/fast-xml-parser#readme)

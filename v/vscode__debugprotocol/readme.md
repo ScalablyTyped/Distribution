@@ -10,10 +10,10 @@ Npm module with declarations for the Visual Studio Code debug protocol
 | ------------------ | :-------------: |
 | Full name          | @vscode/debugprotocol |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 47882.0 |
-| # stars            | 209.0 |
+| # downloads        | 80715.33333333333 |
+| # stars            | 220.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/vscode-debugadapter-node#readme)

@@ -10,10 +10,10 @@ Allows peeking/pushing an iterable
 | ------------------ | :-------------: |
 | Full name          | it-peekable |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 317859.6666666667 |
-| # stars            | 200.0 |
+| # downloads        | 268166.3333333333 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-peekable#readme)

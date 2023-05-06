@@ -10,10 +10,10 @@ Converting the accented characters to their corresponding non-accented ASCII cha
 | ------------------ | :-------------: |
 | Full name          | remove-accents |
 | Keywords           | accent, accents, remove, diacritic, clean, formatting, umlaut, grave, circumflex, tilde, acute |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 6295837.0 |
-| # stars            | 126.0 |
+| # downloads        | 7981257.0 |
+| # stars            | 136.0 |
 
 ## Links
 - [Homepage](https://github.com/tyxla/remove-accents)

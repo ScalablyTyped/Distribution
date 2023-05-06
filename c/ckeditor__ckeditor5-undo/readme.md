@@ -10,10 +10,10 @@ Undo feature for CKEditor 5.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-undo |
 | Keywords           | ckeditor, ckeditor5, ckeditor 5, ckeditor5-feature, ckeditor5-plugin, ckeditor5-dll |
-| # releases         | 21 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 587762.0 |
-| # stars            | 6266.0 |
+| # downloads        | 668190.0 |
+| # stars            | 6596.0 |
 
 ## Links
 - [Homepage](https://ckeditor.com/ckeditor-5)

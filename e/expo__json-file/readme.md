@@ -10,10 +10,10 @@ A module for reading, writing, and manipulating JSON files
 | ------------------ | :-------------: |
 | Full name          | @expo/json-file |
 | Keywords           | json |
-| # releases         | 15 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 3197581.6666666665 |
-| # stars            | 2301.0 |
+| # downloads        | 2918653.6666666665 |
+| # stars            | 2386.0 |
 
 ## Links
 - [Homepage](https://github.com/expo/expo-cli/tree/main/packages/json-file#readme)

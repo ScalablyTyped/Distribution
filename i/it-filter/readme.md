@@ -10,10 +10,10 @@ Filters the passed iterable by using the filter function
 | ------------------ | :-------------: |
 | Full name          | it-filter |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 134522.33333333334 |
-| # stars            | 200.0 |
+| # downloads        | 144008.66666666666 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-filter#readme)

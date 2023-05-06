@@ -12,8 +12,8 @@ Elegant terminal spinner
 | Keywords           | cli, spinner, spinners, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle |
 | # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 5.7288093666666664E7 |
-| # stars            | 7925.0 |
+| # downloads        | 5.8705277666666664E7 |
+| # stars            | 7942.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ora#readme)

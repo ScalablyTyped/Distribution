@@ -10,12 +10,15 @@ A low-level Symbol-based API for defining a common cancellation protocol.
 | ------------------ | :-------------: |
 | Full name          | @esfx/cancelable |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 22546.333333333332 |
-| # stars            | 161.0 |
+| # downloads        | 22077.333333333332 |
+| # stars            | 169.0 |
 
 ## Links
+- [Homepage](https://github.com/esfx/esfx#readme)
+- [Bugs](https://github.com/esfx/esfx/issues)
+- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Fcancelable)
     
 

@@ -10,10 +10,10 @@ React Native Navigation - truly native navigation for iOS and Android
 | ------------------ | :-------------: |
 | Full name          | react-native-navigation |
 | Keywords           | - |
-| # releases         | 405 |
+| # releases         | 302 |
 | # dependents       | 0.0 |
-| # downloads        | 103241.66666666667 |
-| # stars            | 12629.0 |
+| # downloads        | 95315.0 |
+| # stars            | 12714.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/react-native-navigation)

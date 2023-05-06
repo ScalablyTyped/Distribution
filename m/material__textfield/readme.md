@@ -10,10 +10,10 @@ The Material Components for the web text field component
 | ------------------ | :-------------: |
 | Full name          | @material/textfield |
 | Keywords           | material components, material design, textfield, text field |
-| # releases         | 712 |
+| # releases         | 769 |
 | # dependents       | 0.0 |
-| # downloads        | 326146.3333333333 |
-| # stars            | 16381.0 |
+| # downloads        | 508958.0 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

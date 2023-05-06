@@ -10,10 +10,10 @@ A renderer implemented by Canvas 2D API
 | ------------------ | :-------------: |
 | Full name          | @antv/g-canvas |
 | Keywords           | antv, g, renderer, Canvas2D |
-| # releases         | 140 |
+| # releases         | 159 |
 | # dependents       | 0.0 |
-| # downloads        | 352600.0 |
-| # stars            | 795.0 |
+| # downloads        | 378904.0 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

@@ -10,10 +10,10 @@ Stop iteration after n items have been received
 | ------------------ | :-------------: |
 | Full name          | it-take |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 144800.66666666666 |
-| # stars            | 200.0 |
+| # downloads        | 157929.0 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-take#readme)

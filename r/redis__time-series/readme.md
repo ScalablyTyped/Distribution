@@ -10,9 +10,9 @@ This package provides support for the [RedisTimeSeries](https://redistimeseries.
 | ------------------ | :-------------: |
 | Full name          | @redis/time-series |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 786265.3333333334 |
+| # downloads        | 2060447.3333333333 |
 | # stars            | ? |
 
 ## Links

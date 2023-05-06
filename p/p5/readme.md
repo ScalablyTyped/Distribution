@@ -10,10 +10,10 @@ Typings are for version 1.4
 | ------------------ | :-------------: |
 | Full name          | p5 |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 114940.66666666667 |
-| # stars            | 17802.0 |
+| # downloads        | 93955.33333333333 |
+| # stars            | 18239.0 |
 
 ## Links
 - [Homepage](https://github.com/processing/p5.js#readme)

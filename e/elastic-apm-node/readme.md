@@ -10,10 +10,10 @@ The official Elastic APM agent for Node.js
 | ------------------ | :-------------: |
 | Full name          | elastic-apm-node |
 | Keywords           | opbeat, elastic, elasticapm, elasticsearch, log, logging, bug, bugs, error, errors, exception, exceptions, catch, monitor, monitoring, alert, alerts, performance, apm, ops, devops, stacktrace, trace, tracing, distributedtracing, distributed-tracing |
-| # releases         | 32 |
+| # releases         | 36 |
 | # dependents       | 0.0 |
-| # downloads        | 965046.6666666666 |
-| # stars            | 520.0 |
+| # downloads        | 1051047.3333333333 |
+| # stars            | 534.0 |
 
 ## Links
 - [Homepage](https://github.com/elastic/apm-agent-nodejs)

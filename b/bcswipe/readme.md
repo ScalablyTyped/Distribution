@@ -10,15 +10,12 @@ Super lightweight jQuery plugin to enable swipe gestures for Bootstrap 3 carouse
 | ------------------ | :-------------: |
 | Full name          | bcswipe |
 | Keywords           | jquery-plugin, ecosystem:jquery, bootstrap, mobile |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 775.0 |
+| # downloads        | 591.6666666666666 |
 | # stars            | 2.0 |
 
 ## Links
-- [Homepage](https://github.com/briggySmalls/bcSwipe#readme)
-- [Bugs](https://github.com/briggySmalls/bcSwipe/issues)
-- [Repository](https://github.com/briggySmalls/bcSwipe)
 - [Npm](https://www.npmjs.com/package/bcswipe)
     
 

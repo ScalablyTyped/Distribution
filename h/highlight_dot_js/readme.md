@@ -10,10 +10,10 @@ Syntax highlighting with language autodetection.
 | ------------------ | :-------------: |
 | Full name          | highlight.js |
 | Keywords           | highlight, syntax |
-| # releases         | 33 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 3.4253186666666664E7 |
-| # stars            | 20187.0 |
+| # downloads        | 3.3670549333333336E7 |
+| # stars            | 20690.0 |
 
 ## Links
 - [Homepage](https://highlightjs.org/)

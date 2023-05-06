@@ -12,8 +12,8 @@ React input-number component
 | Keywords           | react, react-component, react-input-number, input-number |
 | # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 3753238.6666666665 |
-| # stars            | 272.0 |
+| # downloads        | 3837494.0 |
+| # stars            | 276.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/input-number)

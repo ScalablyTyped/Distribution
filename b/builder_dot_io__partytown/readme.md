@@ -10,10 +10,10 @@ Relocate resource intensive third-party scripts off of the main thread and into 
 | ------------------ | :-------------: |
 | Full name          | @builder.io/partytown |
 | Keywords           | web worker, 3rd-party, third-party, analytics, webapp, performance, lighthouse, core web vitals, react |
-| # releases         | 65 |
+| # releases         | 69 |
 | # dependents       | 0.0 |
-| # downloads        | 502401.0 |
-| # stars            | 9216.0 |
+| # downloads        | 860972.0 |
+| # stars            | 10518.0 |
 
 ## Links
 - [Homepage](https://github.com/BuilderIO/partytown#readme)

@@ -9,10 +9,10 @@ Typings are for version 4.14.2
 | ------------------ | :-------------: |
 | Full name          | @algolia/client-personalization |
 | Keywords           | - |
-| # releases         | 38 |
+| # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 2512628.0 |
-| # stars            | 1145.0 |
+| # downloads        | 2896497.6666666665 |
+| # stars            | 1176.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

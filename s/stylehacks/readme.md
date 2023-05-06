@@ -10,10 +10,10 @@ Detect/remove browser hacks from CSS files.
 | ------------------ | :-------------: |
 | Full name          | stylehacks |
 | Keywords           | browsers, css, hack, hacks, optimise, postcss, postcss-plugin, stylehacks |
-| # releases         | 25 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 4.1792779666666664E7 |
-| # stars            | 4179.0 |
+| # downloads        | 4.3280049E7 |
+| # stars            | 4267.0 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

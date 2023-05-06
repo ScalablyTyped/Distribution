@@ -10,10 +10,10 @@ Formats data into a string table.
 | ------------------ | :-------------: |
 | Full name          | table |
 | Keywords           | ascii, text, table, align, ansi |
-| # releases         | 29 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 8.092546366666667E7 |
-| # stars            | 740.0 |
+| # downloads        | 7.4428935E7 |
+| # stars            | 769.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/table#readme)

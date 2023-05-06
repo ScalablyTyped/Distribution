@@ -10,10 +10,10 @@ JavaScript implementation of the UnixFs importer used by IPFS
 | ------------------ | :-------------: |
 | Full name          | ipfs-unixfs-importer |
 | Keywords           | IPFS |
-| # releases         | 51 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 150643.33333333334 |
-| # stars            | 57.0 |
+| # downloads        | 187635.66666666666 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs-unixfs/tree/master/packages/ipfs-unixfs-importer#readme)

@@ -10,10 +10,10 @@ Render JSX to an HTML string, with support for Preact components.
 | ------------------ | :-------------: |
 | Full name          | preact-render-to-string |
 | Keywords           | preact, render, universal, isomorphic |
-| # releases         | 18 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 2506621.0 |
-| # stars            | 494.0 |
+| # downloads        | 2823331.3333333335 |
+| # stars            | 502.0 |
 
 ## Links
 - [Homepage](https://github.com/developit/preact-render-to-string)

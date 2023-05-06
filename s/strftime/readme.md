@@ -10,10 +10,10 @@ strftime for JavaScript
 | ------------------ | :-------------: |
 | Full name          | strftime |
 | Keywords           | strftime, format, string, time, date |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1144039.0 |
-| # stars            | 640.0 |
+| # downloads        | 967341.6666666666 |
+| # stars            | 642.0 |
 
 ## Links
 - [Homepage](https://samhuri.net/projects/strftime)

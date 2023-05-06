@@ -10,10 +10,10 @@ Parse and stringify comma-separated tokens
 | ------------------ | :-------------: |
 | Full name          | comma-separated-tokens |
 | Keywords           | dom, html, comma, separated, tokens, parse, stringify |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1717203333333332E7 |
-| # stars            | 9.0 |
+| # downloads        | 2.5429076333333332E7 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/comma-separated-tokens#readme)

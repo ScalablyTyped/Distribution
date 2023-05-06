@@ -10,10 +10,10 @@ Peer Discovery interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-peer-discovery |
 | Keywords           | interface, libp2p |
-| # releases         | 4 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 2078.3333333333335 |
-| # stars            | 67.0 |
+| # downloads        | 24050.333333333332 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interface-peer-discovery#readme)

@@ -10,10 +10,10 @@ Typings are for version 5.25.1
 | ------------------ | :-------------: |
 | Full name          | antd-mobile |
 | Keywords           | - |
-| # releases         | 151 |
+| # releases         | 158 |
 | # dependents       | 0.0 |
-| # downloads        | 169212.66666666666 |
-| # stars            | 10509.0 |
+| # downloads        | 146855.33333333334 |
+| # stars            | 10734.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/ant-design-mobile#readme)

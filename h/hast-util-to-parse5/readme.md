@@ -10,12 +10,15 @@ hast utility to transform hast to Parse5’s AST
 | ------------------ | :-------------: |
 | Full name          | hast-util-to-parse5 |
 | Keywords           | unist, hast, hast-util, util, utility, html, parse5, ast, tree |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5299229333333334E7 |
+| # downloads        | 1.753732E7 |
 | # stars            | 1.0 |
 
 ## Links
+- [Homepage](https://github.com/syntax-tree/hast-util-to-parse5#readme)
+- [Bugs](https://github.com/syntax-tree/hast-util-to-parse5/issues)
+- [Repository](https://github.com/syntax-tree/hast-util-to-parse5)
 - [Npm](https://www.npmjs.com/package/hast-util-to-parse5)
     
 

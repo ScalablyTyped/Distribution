@@ -10,10 +10,10 @@ A polyfill for the motion sensors based on the W3C Generic Sensor API
 | ------------------ | :-------------: |
 | Full name          | motion-sensors-polyfill |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1735.0 |
-| # stars            | 47.0 |
+| # downloads        | 2633.6666666666665 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/kenchris/lit-element)

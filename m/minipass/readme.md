@@ -10,10 +10,10 @@ minimal implementation of a PassThrough stream
 | ------------------ | :-------------: |
 | Full name          | minipass |
 | Keywords           | passthrough, stream |
-| # releases         | 10 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 9.359701E7 |
-| # stars            | 205.0 |
+| # downloads        | 1.0590273066666667E8 |
+| # stars            | 214.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/minipass#readme)

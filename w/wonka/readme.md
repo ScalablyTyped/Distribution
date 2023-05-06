@@ -12,8 +12,8 @@ A tiny but capable push & pull stream library for TypeScript and Flow
 | Keywords           | wonka, typescript, events, callbag, callback, observable, iterable, stream |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1486633.0 |
-| # stars            | 562.0 |
+| # downloads        | 2351074.3333333335 |
+| # stars            | 582.0 |
 
 ## Links
 - [Homepage](https://github.com/0no-co/wonka#readme)

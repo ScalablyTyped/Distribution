@@ -10,10 +10,10 @@ The terra-action-footer component is a footer bar that contains sockets for plac
 | ------------------ | :-------------: |
 | Full name          | terra-action-footer |
 | Keywords           | Cerner, Terra, terra-action-footer, ActionFooter, UI |
-| # releases         | 11 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1092.0 |
-| # stars            | ? |
+| # downloads        | 1190.6666666666667 |
+| # stars            | 175.0 |
 
 ## Links
 - [Homepage](https://github.com/cerner/terra-core#readme)

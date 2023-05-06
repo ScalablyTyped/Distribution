@@ -11,8 +11,8 @@ Arbitrary-precision integer arithmetic using OpenSSL
 | Keywords           | openssl, big, bignum, bigint, integer, arithmetic, precision |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 22301.333333333332 |
-| # stars            | 419.0 |
+| # downloads        | 30426.333333333332 |
+| # stars            | 417.0 |
 
 ## Links
 - [Homepage](https://github.com/justmoon/node-bignum#readme)

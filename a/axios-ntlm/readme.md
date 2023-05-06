@@ -10,13 +10,13 @@ An NTLM auth extension to the Axios HTTP library
 | ------------------ | :-------------: |
 | Full name          | axios-ntlm |
 | Keywords           | axios, ntlm, authentication, windows authentication, windows, auth |
-| # releases         | 20 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 381783.0 |
+| # downloads        | 567958.0 |
 | # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://buttes.dev/axios-ntlm/)
+- [Homepage](https://github.com/catbuttes/axios-ntlm#readme)
 - [Bugs](https://github.com/catbuttes/axios-ntlm/issues)
 - [Repository](https://github.com/catbuttes/axios-ntlm)
 - [Npm](https://www.npmjs.com/package/axios-ntlm)

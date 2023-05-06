@@ -12,8 +12,8 @@ The Carbon Design System is IBM’s open-source design system for products and e
 | Keywords           | react, carbon, carbon-components, ibm, carbon-design-system, components |
 | # releases         | 139 |
 | # dependents       | 0.0 |
-| # downloads        | 201454.33333333334 |
-| # stars            | 5840.0 |
+| # downloads        | 187086.0 |
+| # stars            | 6227.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

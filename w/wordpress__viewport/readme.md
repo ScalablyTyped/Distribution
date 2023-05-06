@@ -10,9 +10,9 @@ Viewport module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/viewport |
 | Keywords           | wordpress, gutenberg, viewport |
-| # releases         | 70 |
+| # releases         | 72 |
 | # dependents       | 0.0 |
-| # downloads        | 74933.66666666667 |
+| # downloads        | 78154.0 |
 | # stars            | ? |
 
 ## Links

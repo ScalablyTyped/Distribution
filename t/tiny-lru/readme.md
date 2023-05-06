@@ -10,10 +10,10 @@ Tiny LRU cache for Client or Server
 | ------------------ | :-------------: |
 | Full name          | tiny-lru |
 | Keywords           | LRU, cache, tiny, client, server, least, recently, used |
-| # releases         | 3 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 3227206.0 |
-| # stars            | 112.0 |
+| # downloads        | 3736105.0 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/avoidwork/tiny-lru)

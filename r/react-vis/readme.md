@@ -10,10 +10,10 @@ Data visualization library based on React and d3.
 | ------------------ | :-------------: |
 | Full name          | react-vis |
 | Keywords           | d3, react, visualization, chart, es6, babel |
-| # releases         | 0 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 342701.0 |
-| # stars            | 8268.0 |
+| # downloads        | 396832.0 |
+| # stars            | 8388.0 |
 
 ## Links
 - [Homepage](https://github.com/uber-common/react-vis#readme)

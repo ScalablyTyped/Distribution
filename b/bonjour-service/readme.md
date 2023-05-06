@@ -10,12 +10,15 @@ A Bonjour/Zeroconf implementation in TypeScript
 | ------------------ | :-------------: |
 | Full name          | bonjour-service |
 | Keywords           | bonjour, zeroconf, zero, configuration, mdns, dns, service, discovery, multicast, broadcast, dns-sd |
-| # releases         | 15 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2052035666666666E7 |
-| # stars            | 19.0 |
+| # downloads        | 1.9881220333333332E7 |
+| # stars            | 29.0 |
 
 ## Links
+- [Homepage](https://github.com/onlxltd/bonjour-service)
+- [Bugs](https://github.com/onlxltd/bonjour-service/issues)
+- [Repository](https://github.com/onlxltd/bonjour-service)
 - [Npm](https://www.npmjs.com/package/bonjour-service)
     
 

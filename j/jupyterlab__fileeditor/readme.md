@@ -10,9 +10,9 @@ JupyterLab - Editor Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/fileeditor |
 | Keywords           | - |
-| # releases         | 142 |
+| # releases         | 136 |
 | # dependents       | 0.0 |
-| # downloads        | 199247.33333333334 |
+| # downloads        | 95778.66666666667 |
 | # stars            | ? |
 
 ## Links

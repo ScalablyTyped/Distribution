@@ -10,10 +10,10 @@ EditorConfig File Locator and Interpreter for Node.js
 | ------------------ | :-------------: |
 | Full name          | editorconfig |
 | Keywords           | editorconfig, core |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1.25073E7 |
-| # stars            | 252.0 |
+| # downloads        | 1.2661922E7 |
+| # stars            | 253.0 |
 
 ## Links
 - [Homepage](https://github.com/editorconfig/editorconfig-core-js#readme)

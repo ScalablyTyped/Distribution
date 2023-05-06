@@ -12,8 +12,8 @@ Get the real path of the system temp directory
 | Keywords           | temp, tmpdir, os, system, real, path, realpath, resolved, temporary, directory, folder |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 2.9047034333333332E7 |
-| # stars            | 65.0 |
+| # downloads        | 3.0859437333333332E7 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/temp-dir#readme)

@@ -10,10 +10,10 @@ Responsible for providing an interface-datastore compliant api to pubsub
 | ------------------ | :-------------: |
 | Full name          | datastore-pubsub |
 | Keywords           | datastore, ipfs, pubsub |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 44151.0 |
-| # stars            | 9.0 |
+| # downloads        | 46372.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-datastore-pubsub#readme)

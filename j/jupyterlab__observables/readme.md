@@ -10,9 +10,9 @@ Data structures which may be observed for changes.
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/observables |
 | Keywords           | - |
-| # releases         | 139 |
+| # releases         | 129 |
 | # dependents       | 0.0 |
-| # downloads        | 299414.0 |
+| # downloads        | 197480.33333333334 |
 | # stars            | ? |
 
 ## Links

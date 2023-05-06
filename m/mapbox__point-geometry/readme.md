@@ -12,10 +12,13 @@ a point geometry with transforms
 | Keywords           | point, geometry, primitive |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 3866207.3333333335 |
-| # stars            | 33.0 |
+| # downloads        | 4338900.333333333 |
+| # stars            | 34.0 |
 
 ## Links
+- [Homepage](https://github.com/mapbox/point-geometry)
+- [Bugs](https://github.com/mapbox/point-geometry/issues)
+- [Repository](https://github.com/mapbox/point-geometry)
 - [Npm](https://www.npmjs.com/package/%40mapbox%2Fpoint-geometry)
     
 

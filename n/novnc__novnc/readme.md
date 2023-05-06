@@ -10,10 +10,10 @@ An HTML5 VNC client
 | ------------------ | :-------------: |
 | Full name          | @novnc/novnc |
 | Keywords           | vnc, rfb, novnc, websockify |
-| # releases         | 31 |
+| # releases         | 77 |
 | # dependents       | 0.0 |
-| # downloads        | 62618.333333333336 |
-| # stars            | 9027.0 |
+| # downloads        | 90499.66666666667 |
+| # stars            | 9336.0 |
 
 ## Links
 - [Homepage](https://github.com/novnc/noVNC)

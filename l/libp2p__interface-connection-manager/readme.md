@@ -10,9 +10,9 @@ Connection Manager interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-connection-manager |
 | Keywords           | interface, libp2p |
-| # releases         | 11 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 9901.666666666666 |
+| # downloads        | 24077.666666666668 |
 | # stars            | 68.0 |
 
 ## Links

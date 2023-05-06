@@ -10,10 +10,10 @@ Container Helper for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-create-container |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 69 |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 813742.0 |
-| # stars            | 9887.0 |
+| # downloads        | 809131.6666666666 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

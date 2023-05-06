@@ -9,15 +9,15 @@ read(1) for node programs
 | ------------------ | :-------------: |
 | Full name          | read |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8108581E7 |
-| # stars            | 170.0 |
+| # downloads        | 1.7421063333333332E7 |
+| # stars            | 175.0 |
 
 ## Links
-- [Homepage](https://github.com/isaacs/read#readme)
-- [Bugs](https://github.com/isaacs/read/issues)
-- [Repository](https://github.com/isaacs/read)
+- [Homepage](https://github.com/npm/read#readme)
+- [Bugs](https://github.com/npm/read/issues)
+- [Repository](https://github.com/npm/read)
 - [Npm](https://www.npmjs.com/package/read)
     
 

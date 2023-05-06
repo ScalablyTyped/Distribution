@@ -12,8 +12,8 @@ Extremely fast utf8 only stream implementation
 | Keywords           | stream, fs, net, fd, file, descriptor, fast |
 | # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7462493666666668E7 |
-| # stars            | 194.0 |
+| # downloads        | 1.7349526666666668E7 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](https://github.com/pinojs/sonic-boom#readme)

@@ -10,12 +10,15 @@ Enzyme extensions tailored at improving dealing with shallowly rendered wrappers
 | ------------------ | :-------------: |
 | Full name          | @commercetools/enzyme-extensions |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 8692.0 |
+| # downloads        | 12304.666666666666 |
 | # stars            | 30.0 |
 
 ## Links
+- [Homepage](https://github.com/commercetools/enzyme-extensions#readme)
+- [Bugs](https://github.com/commercetools/enzyme-extensions/issues)
+- [Repository](https://github.com/commercetools/enzyme-extensions)
 - [Npm](https://www.npmjs.com/package/%40commercetools%2Fenzyme-extensions)
     
 

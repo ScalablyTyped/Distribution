@@ -12,8 +12,8 @@ HTTP payload parsing
 | Keywords           | http, payload, file, stream, multipart |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2320605.6666666665 |
-| # stars            | 23.0 |
+| # downloads        | 2475505.3333333335 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/subtext#readme)

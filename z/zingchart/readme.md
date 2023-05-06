@@ -12,7 +12,7 @@ Our JavaScript charting library is a commercial product. But the full branded ve
 | Keywords           | zingchart, chart, charts, charting, javascript, javascript charts, html5, interactive maps |
 | # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 14080.666666666666 |
+| # downloads        | 17979.333333333332 |
 | # stars            | 252.0 |
 
 ## Links

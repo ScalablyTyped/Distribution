@@ -12,8 +12,8 @@ Official React bindings for Redux
 | Keywords           | react, reactjs, redux |
 | # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 2.5376506E7 |
-| # stars            | 22377.0 |
+| # downloads        | 2.6384301666666668E7 |
+| # stars            | 22454.0 |
 
 ## Links
 - [Homepage](https://github.com/reduxjs/react-redux)

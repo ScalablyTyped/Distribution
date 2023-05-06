@@ -10,9 +10,9 @@ React components for binding events on the global scope.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-component-event-listener |
 | Keywords           | - |
-| # releases         | 46 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 500171.6666666667 |
+| # downloads        | 530690.6666666666 |
 | # stars            | ? |
 
 ## Links

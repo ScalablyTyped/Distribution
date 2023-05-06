@@ -10,10 +10,10 @@ Typings are for version 3.9
 | ------------------ | :-------------: |
 | Full name          | react-speech-recognition |
 | Keywords           | react, reactjs, speech, recognition |
-| # releases         | 24 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 52284.0 |
-| # stars            | 323.0 |
+| # downloads        | 59852.0 |
+| # stars            | 351.0 |
 
 ## Links
 - [Homepage](https://webspeechrecognition.com/)

@@ -10,12 +10,15 @@ Parser for the client for the realtime Engine
 | ------------------ | :-------------: |
 | Full name          | engine.io-parser |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2.5663875333333332E7 |
-| # stars            | 68.0 |
+| # downloads        | 2.5404493333333332E7 |
+| # stars            | 69.0 |
 
 ## Links
+- [Homepage](https://github.com/socketio/engine.io-parser)
+- [Bugs](https://github.com/socketio/engine.io-parser/issues)
+- [Repository](https://github.com/socketio/engine.io-parser)
 - [Npm](https://www.npmjs.com/package/engine.io-parser)
     
 

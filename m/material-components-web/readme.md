@@ -10,10 +10,10 @@ Modular and customizable Material Design UI components for the web
 | ------------------ | :-------------: |
 | Full name          | material-components-web |
 | Keywords           | material components, material design |
-| # releases         | 710 |
+| # releases         | 765 |
 | # dependents       | 0.0 |
-| # downloads        | 241280.66666666666 |
-| # stars            | 16381.0 |
+| # downloads        | 236955.66666666666 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -10,10 +10,10 @@ Material design for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-paper |
 | Keywords           | android, ios, react native, component library, ui kit, material design, bootstrap |
-| # releases         | 32 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 443942.3333333333 |
-| # stars            | 9697.0 |
+| # downloads        | 477398.6666666667 |
+| # stars            | 10174.0 |
 
 ## Links
 - [Homepage](https://callstack.github.io/react-native-paper)

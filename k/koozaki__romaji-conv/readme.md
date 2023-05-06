@@ -12,8 +12,8 @@ Convert romaji into kana
 | Keywords           | romaji, kana, hiragana, katakana, nihongo, japanese, convert, ローマ字, かな, ひらがな, カタカナ |
 | # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 377.6666666666667 |
-| # stars            | 6.0 |
+| # downloads        | 718.6666666666666 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://romaji-conv.koozaki.com/)

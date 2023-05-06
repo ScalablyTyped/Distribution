@@ -10,13 +10,15 @@ Single component release of embed
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-embed |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 372.0 |
+| # downloads        | 213.66666666666666 |
 | # stars            | 5.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)
+- [Bugs](https://github.com/Semantic-Org/Semantic-UI/issues)
+- [Repository](https://github.com/Semantic-Org/UI-Embed)
 - [Npm](https://www.npmjs.com/package/semantic-ui-embed)
     
 

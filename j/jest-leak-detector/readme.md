@@ -12,7 +12,7 @@ Module for verifying whether an object has been garbage collected or not.
 | Keywords           | - |
 | # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 7.268705866666667E7 |
+| # downloads        | 7.837719166666667E7 |
 | # stars            | ? |
 
 ## Links

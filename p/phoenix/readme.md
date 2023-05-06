@@ -10,10 +10,10 @@ The official JavaScript client for the Phoenix web framework.
 | ------------------ | :-------------: |
 | Full name          | phoenix |
 | Keywords           | - |
-| # releases         | 25 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 427125.3333333333 |
-| # stars            | 18530.0 |
+| # downloads        | 496230.0 |
+| # stars            | 18981.0 |
 
 ## Links
 - [Homepage](https://github.com/phoenixframework/phoenix#readme)

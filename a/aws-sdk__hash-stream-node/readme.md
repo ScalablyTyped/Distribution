@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-stream-node |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 66 |
 | # dependents       | 0.0 |
-| # downloads        | 5758814.666666667 |
-| # stars            | 1854.0 |
+| # downloads        | 7258201.0 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/hash-stream-node)

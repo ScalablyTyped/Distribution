@@ -10,10 +10,10 @@ Index for matching points against a set of GeoJSON polygons
 | ------------------ | :-------------: |
 | Full name          | which-polygon |
 | Keywords           | index, polygon, geojson, query |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 12231.0 |
-| # stars            | 114.0 |
+| # downloads        | 11280.333333333334 |
+| # stars            | 115.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/which-polygon#readme)

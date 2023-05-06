@@ -10,9 +10,9 @@ Typescript types for AsyncIterable sink/source/duplex streams
 | ------------------ | :-------------: |
 | Full name          | it-stream-types |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 12167.0 |
+| # downloads        | 60555.333333333336 |
 | # stars            | 1.0 |
 
 ## Links

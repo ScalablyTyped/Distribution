@@ -10,10 +10,10 @@ emotion's stylesheet
 | ------------------ | :-------------: |
 | Full name          | @emotion/sheet |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3.4476940666666664E7 |
-| # stars            | 15226.0 |
+| # downloads        | 3.7013934E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

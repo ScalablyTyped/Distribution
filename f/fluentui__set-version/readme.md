@@ -10,9 +10,9 @@ Non-Fabric-specific package version setter
 | ------------------ | :-------------: |
 | Full name          | @fluentui/set-version |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 576845.3333333334 |
+| # downloads        | 686909.0 |
 | # stars            | ? |
 
 ## Links

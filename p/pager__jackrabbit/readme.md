@@ -10,10 +10,10 @@ Easy RabbitMQ for node
 | ------------------ | :-------------: |
 | Full name          | @pager/jackrabbit |
 | Keywords           | amqp, rabbitmq, rabbit, job, jobs, queue, task, resqueue, rpc, drpc, distributed-rpc |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 4483.666666666667 |
-| # stars            | 26.0 |
+| # downloads        | 8066.333333333333 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/pagerinc/jackrabbit)

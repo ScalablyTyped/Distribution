@@ -10,15 +10,12 @@ Encode and decode HTML entities
 | ------------------ | :-------------: |
 | Full name          | ent |
 | Keywords           | entities, entitify, entity, html, encode, decode |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8667447E7 |
-| # stars            | 205.0 |
+| # downloads        | 1.9872817E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/node-ent)
-- [Bugs](https://github.com/substack/node-ent/issues)
-- [Repository](https://github.com/substack/node-ent)
 - [Npm](https://www.npmjs.com/package/ent)
     
 

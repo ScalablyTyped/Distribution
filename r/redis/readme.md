@@ -10,10 +10,10 @@ A modern, high performance Redis client
 | ------------------ | :-------------: |
 | Full name          | redis |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1837796333333334E7 |
-| # stars            | 15500.0 |
+| # downloads        | 1.2612308333333334E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/redis/node-redis)

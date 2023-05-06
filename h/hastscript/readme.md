@@ -10,10 +10,10 @@ hast utility to create trees
 | ------------------ | :-------------: |
 | Full name          | hastscript |
 | Keywords           | unist, hast, hast-util, util, utility, html, rehype, vdom, virtual, dom, hyperscript, dsl |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2044723E7 |
-| # stars            | 83.0 |
+| # downloads        | 2.3469750666666668E7 |
+| # stars            | 100.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/hastscript#readme)

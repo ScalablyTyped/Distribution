@@ -10,10 +10,10 @@ Compare semver version strings to find greater, equal or lesser.
 | ------------------ | :-------------: |
 | Full name          | compare-versions |
 | Keywords           | semver, version, compare, browser, node |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3119501E7 |
-| # stars            | 455.0 |
+| # downloads        | 1.4728021666666666E7 |
+| # stars            | 484.0 |
 
 ## Links
 - [Homepage](https://github.com/omichelsen/compare-versions#readme)

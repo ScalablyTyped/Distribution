@@ -10,9 +10,9 @@ Atlassian motion variables, components and more.
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/motion |
 | Keywords           | atlaskit, css, animation, motion, react, ui |
-| # releases         | 18 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 133945.66666666666 |
+| # downloads        | 155988.0 |
 | # stars            | ? |
 
 ## Links

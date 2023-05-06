@@ -10,10 +10,10 @@ Declarative routing for React Native applications
 | ------------------ | :-------------: |
 | Full name          | react-router-native |
 | Keywords           | react, router, route, routing, history, link |
-| # releases         | 47 |
+| # releases         | 79 |
 | # dependents       | 0.0 |
-| # downloads        | 120103.66666666667 |
-| # stars            | 47997.0 |
+| # downloads        | 128220.0 |
+| # stars            | 49355.0 |
 
 ## Links
 - [Homepage](https://github.com/remix-run/react-router#readme)

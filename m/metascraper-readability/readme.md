@@ -10,10 +10,10 @@ A Readability connector for metascraper
 | ------------------ | :-------------: |
 | Full name          | metascraper-readability |
 | Keywords           | metascraper, url |
-| # releases         | 88 |
+| # releases         | 78 |
 | # dependents       | 0.0 |
-| # downloads        | 1480.3333333333333 |
-| # stars            | 1802.0 |
+| # downloads        | 990.3333333333334 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

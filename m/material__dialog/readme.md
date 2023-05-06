@@ -10,10 +10,10 @@ The Material Components Web dialog component
 | ------------------ | :-------------: |
 | Full name          | @material/dialog |
 | Keywords           | material components, material design, dialog, modal |
-| # releases         | 713 |
+| # releases         | 770 |
 | # dependents       | 0.0 |
-| # downloads        | 265921.6666666667 |
-| # stars            | 16381.0 |
+| # downloads        | 454285.0 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

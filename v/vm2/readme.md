@@ -10,10 +10,10 @@ vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in mo
 | ------------------ | :-------------: |
 | Full name          | vm2 |
 | Keywords           | sandbox, prison, jail, vm, alcatraz, contextify |
-| # releases         | 8 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3626913E7 |
-| # stars            | 3143.0 |
+| # downloads        | 1.6002777666666666E7 |
+| # stars            | 3385.0 |
 
 ## Links
 - [Homepage](https://github.com/patriksimek/vm2#readme)

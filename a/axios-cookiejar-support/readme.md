@@ -10,10 +10,10 @@ Add tough-cookie support to axios.
 | ------------------ | :-------------: |
 | Full name          | axios-cookiejar-support |
 | Keywords           | axios, cookie, cookiejar, cookies, tough-cookie |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 730143.6666666666 |
-| # stars            | 237.0 |
+| # downloads        | 921185.3333333334 |
+| # stars            | 259.0 |
 
 ## Links
 - [Homepage](https://github.com/3846masa/axios-cookiejar-support#readme)

@@ -10,9 +10,9 @@ Convert objects into directory structures and back again
 | ------------------ | :-------------: |
 | Full name          | fixturify |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1127300.6666666667 |
+| # downloads        | 1199976.6666666667 |
 | # stars            | 17.0 |
 
 ## Links

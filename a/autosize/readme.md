@@ -10,10 +10,10 @@ Autosize is a small, stand-alone script to automatically adjust textarea height 
 | ------------------ | :-------------: |
 | Full name          | autosize |
 | Keywords           | textarea, form, ui |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1938497.3333333333 |
-| # stars            | 4888.0 |
+| # downloads        | 2083723.6666666667 |
+| # stars            | 4938.0 |
 
 ## Links
 - [Homepage](http://www.jacklmoore.com/autosize)

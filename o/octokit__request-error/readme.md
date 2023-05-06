@@ -10,10 +10,10 @@ Error class for Octokit request errors
 | ------------------ | :-------------: |
 | Full name          | @octokit/request-error |
 | Keywords           | octokit, github, api, error |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 2.4432773E7 |
-| # stars            | 3.0 |
+| # downloads        | 2.6304872E7 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/octokit/request-error.js#readme)

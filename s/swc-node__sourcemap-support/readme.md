@@ -10,10 +10,10 @@ Runtime sourcemap support in NodeJS
 | ------------------ | :-------------: |
 | Full name          | @swc-node/sourcemap-support |
 | Keywords           | swc, ts-node, N-API, NAPI, napi-rs, node-rs, rust, esbuild, typescript |
-| # releases         | 10 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2160253.0 |
-| # stars            | 1010.0 |
+| # downloads        | 1432122.6666666667 |
+| # stars            | 1223.0 |
 
 ## Links
 - [Homepage](https://github.com/swc-project/swc-node)

@@ -10,10 +10,10 @@ Native interface to SQLite for PhoneGap / Cordova - cordova-sqlite-storage plugi
 | ------------------ | :-------------: |
 | Full name          | cordova-sqlite-storage |
 | Keywords           | sqlite, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-osx, cordova-windows |
-| # releases         | 4 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 98201.33333333333 |
-| # stars            | 2116.0 |
+| # downloads        | 123266.33333333333 |
+| # stars            | 2121.0 |
 
 ## Links
 - [Homepage](https://github.com/xpbrew/cordova-sqlite-storage)

@@ -10,12 +10,15 @@ Tiny currency string parser utility
 | ------------------ | :-------------: |
 | Full name          | parsecurrency |
 | Keywords           | money, currency, format, utility, finance, parse, unformat |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 4370.666666666667 |
-| # stars            | 10.0 |
+| # downloads        | 8699.333333333334 |
+| # stars            | 13.0 |
 
 ## Links
+- [Homepage](https://github.com/mktj/parsecurrency#readme)
+- [Bugs](https://github.com/mktj/parsecurrency/issues)
+- [Repository](https://github.com/mktj/parsecurrency)
 - [Npm](https://www.npmjs.com/package/parsecurrency)
     
 

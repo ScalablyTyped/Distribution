@@ -10,12 +10,15 @@ Accessible React Alert Dialog.
 | ------------------ | :-------------: |
 | Full name          | @reach/alert-dialog |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 65305.666666666664 |
-| # stars            | 5390.0 |
+| # downloads        | 35167.666666666664 |
+| # stars            | 5565.0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Falert-dialog)
     
 

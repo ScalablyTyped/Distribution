@@ -10,10 +10,10 @@ Serialize Canvas path commands to SVG.
 | ------------------ | :-------------: |
 | Full name          | d3-path |
 | Keywords           | d3, d3-module, canvas, path, svg, graphics, CanvasRenderingContext2D, CanvasPathMethods, Path2D |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5486344666666666E7 |
-| # stars            | 176.0 |
+| # downloads        | 1.8543705666666668E7 |
+| # stars            | 182.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-path/)

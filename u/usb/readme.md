@@ -10,10 +10,10 @@ Library to access USB devices
 | ------------------ | :-------------: |
 | Full name          | usb |
 | Keywords           | usb, hardware |
-| # releases         | 45 |
+| # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 224603.33333333334 |
-| # stars            | 1296.0 |
+| # downloads        | 244661.0 |
+| # stars            | 1330.0 |
 
 ## Links
 - [Homepage](https://github.com/node-usb/node-usb#readme)

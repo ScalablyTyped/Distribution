@@ -10,10 +10,10 @@ Terminal task list reborn! Create beautiful CLI interfaces via easy and logical 
 | ------------------ | :-------------: |
 | Full name          | listr2 |
 | Keywords           | listr, cli, task, list, tasklist, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle |
-| # releases         | 66 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 3.3191588333333332E7 |
-| # stars            | 262.0 |
+| # downloads        | 3.8895020333333336E7 |
+| # stars            | 293.0 |
 
 ## Links
 - [Homepage](https://github.com/cenk1cenk2/listr2#readme)

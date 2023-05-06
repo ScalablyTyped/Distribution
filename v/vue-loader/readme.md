@@ -10,12 +10,15 @@ Typings are for version 17.0.1
 | ------------------ | :-------------: |
 | Full name          | vue-loader |
 | Keywords           | - |
-| # releases         | 42 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2775449E7 |
-| # stars            | ? |
+| # downloads        | 1.3261783666666666E7 |
+| # stars            | 4884.0 |
 
 ## Links
+- [Homepage](https://github.com/vuejs/vue-loader#readme)
+- [Bugs](https://github.com/vuejs/vue-loader/issues)
+- [Repository](https://github.com/vuejs/vue-loader)
 - [Npm](https://www.npmjs.com/package/vue-loader)
     
 

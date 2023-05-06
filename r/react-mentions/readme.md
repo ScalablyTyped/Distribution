@@ -12,8 +12,8 @@ React mentions input
 | Keywords           | react, mentions, react-component |
 | # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 672867.3333333334 |
-| # stars            | 1807.0 |
+| # downloads        | 768164.0 |
+| # stars            | 1929.0 |
 
 ## Links
 - [Homepage](https://github.com/signavio/react-mentions)

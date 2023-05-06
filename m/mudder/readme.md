@@ -10,10 +10,10 @@ Find lexicographical points between strings
 | ------------------ | :-------------: |
 | Full name          | mudder |
 | Keywords           | string, mean, lexicographical, distance, number, radix, base |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 9307.666666666666 |
-| # stars            | 80.0 |
+| # downloads        | 11565.666666666666 |
+| # stars            | 94.0 |
 
 ## Links
 - [Homepage](https://github.com/fasiha/mudderjs#readme)

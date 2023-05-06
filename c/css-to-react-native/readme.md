@@ -10,10 +10,10 @@ Convert CSS text to a React Native stylesheet object
 | ------------------ | :-------------: |
 | Full name          | css-to-react-native |
 | Keywords           | styled-components, React, ReactNative, styles, CSS |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7345387333333332E7 |
-| # stars            | 980.0 |
+| # downloads        | 1.8788997666666668E7 |
+| # stars            | 1026.0 |
 
 ## Links
 - [Homepage](https://github.com/styled-components/css-to-react-native#readme)

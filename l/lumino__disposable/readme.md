@@ -10,13 +10,15 @@ Lumino Disposable
 | ------------------ | :-------------: |
 | Full name          | @lumino/disposable |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 284847.3333333333 |
-| # stars            | 370.0 |
+| # downloads        | 199665.33333333334 |
+| # stars            | 420.0 |
 
 ## Links
+- [Homepage](https://github.com/jupyterlab/lumino)
 - [Bugs](https://github.com/jupyterlab/lumino/issues)
+- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Fdisposable)
     
 

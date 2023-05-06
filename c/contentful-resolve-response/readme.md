@@ -10,10 +10,10 @@ Typings are for version v0.1.2
 | ------------------ | :-------------: |
 | Full name          | contentful-resolve-response |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1748011.6666666667 |
-| # stars            | 34.0 |
+| # downloads        | 1858077.3333333333 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/contentful/contentful-resolve-response)

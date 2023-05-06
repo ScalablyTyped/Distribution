@@ -10,10 +10,10 @@ Get the directory of globally installed packages and binaries
 | ------------------ | :-------------: |
 | Full name          | global-dirs |
 | Keywords           | global, prefix, path, paths, npm, yarn, node, modules, node-modules, package, packages, binary, binaries, bin, directory, directories, npmrc, rc, config, root, resolve |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 6.2334655333333336E7 |
-| # stars            | 67.0 |
+| # downloads        | 5.8892122666666664E7 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/global-dirs#readme)

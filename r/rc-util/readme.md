@@ -10,10 +10,10 @@ Common Utils For React Component
 | ------------------ | :-------------: |
 | Full name          | rc-util |
 | Keywords           | react, util |
-| # releases         | 77 |
+| # releases         | 73 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1402453666666666E7 |
-| # stars            | 431.0 |
+| # downloads        | 1.1801866E7 |
+| # stars            | 474.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/util)

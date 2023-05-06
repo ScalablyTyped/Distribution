@@ -10,9 +10,9 @@ Decorators for ASN.1 schemas building
 | ------------------ | :-------------: |
 | Full name          | @peculiar/asn1-schema |
 | Keywords           | asn, serialize, parse, convert, decorator |
-| # releases         | 19 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1607987.3333333333 |
+| # downloads        | 4470996.666666667 |
 | # stars            | ? |
 
 ## Links

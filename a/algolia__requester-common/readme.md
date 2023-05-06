@@ -10,10 +10,10 @@ Common interfaces for promise-based request libraries
 | ------------------ | :-------------: |
 | Full name          | @algolia/requester-common |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 2848809.6666666665 |
-| # stars            | 1133.0 |
+| # downloads        | 3621260.6666666665 |
+| # stars            | 1172.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-js#readme)

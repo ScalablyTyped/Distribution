@@ -10,10 +10,10 @@ An async stream which can be iterated over using a for-await-of loop.
 | ------------------ | :-------------: |
 | Full name          | writable-consumable-stream |
 | Keywords           | async, generator, stream, data, for-await-of |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 18622.666666666668 |
-| # stars            | 13.0 |
+| # downloads        | 19409.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/writable-consumable-stream#readme)

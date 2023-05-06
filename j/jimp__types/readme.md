@@ -12,7 +12,7 @@ Default Jimp encoder/decoders.
 | Keywords           | - |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 5263792.333333333 |
+| # downloads        | 5921731.0 |
 | # stars            | ? |
 
 ## Links

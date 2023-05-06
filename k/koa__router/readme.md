@@ -12,8 +12,8 @@ Router middleware for koa. Maintained by Forward Email and Lad.
 | Keywords           | koa, middleware, route, router |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1775922.3333333333 |
-| # stars            | 695.0 |
+| # downloads        | 1969648.3333333333 |
+| # stars            | 725.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/router)

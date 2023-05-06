@@ -10,10 +10,10 @@ Native-ESM powered web dev build tool
 | ------------------ | :-------------: |
 | Full name          | vite |
 | Keywords           | - |
-| # releases         | 274 |
+| # releases         | 275 |
 | # dependents       | 0.0 |
-| # downloads        | 7283794.666666667 |
-| # stars            | 48738.0 |
+| # downloads        | 9421681.0 |
+| # stars            | 51296.0 |
 
 ## Links
 - [Homepage](https://github.com/vitejs/vite/tree/main/#readme)

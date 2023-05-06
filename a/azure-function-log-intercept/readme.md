@@ -10,12 +10,15 @@ Add console.log support to Azure Functions
 | ------------------ | :-------------: |
 | Full name          | azure-function-log-intercept |
 | Keywords           | azure functions, log, console, appinsights, application insights |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 4269.333333333333 |
-| # stars            | 18.0 |
+| # downloads        | 6349.333333333333 |
+| # stars            | 21.0 |
 
 ## Links
+- [Homepage](https://github.com/BrianRosamilia/azure-function-log-intercept)
+- [Bugs](https://github.com/BrianRosamilia/azure-function-log-intercept/issues)
+- [Repository](https://github.com/BrianRosamilia/azure-function-log-intercept)
 - [Npm](https://www.npmjs.com/package/azure-function-log-intercept)
     
 

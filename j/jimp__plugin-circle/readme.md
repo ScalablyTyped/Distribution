@@ -12,7 +12,7 @@ Creates a circle out of an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 4400948.333333333 |
+| # downloads        | 4684749.0 |
 | # stars            | ? |
 
 ## Links

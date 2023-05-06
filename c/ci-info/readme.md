@@ -10,10 +10,10 @@ Get details about the current Continuous Integration environment
 | ------------------ | :-------------: |
 | Full name          | ci-info |
 | Keywords           | ci, continuous, integration, test, detect |
-| # releases         | 9 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1.54211781E8 |
-| # stars            | 230.0 |
+| # downloads        | 1.66500831E8 |
+| # stars            | 242.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/ci-info)

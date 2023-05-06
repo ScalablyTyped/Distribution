@@ -10,10 +10,10 @@ Loads themed styles.
 | ------------------ | :-------------: |
 | Full name          | @microsoft/load-themed-styles |
 | Keywords           | - |
-| # releases         | 204 |
+| # releases         | 173 |
 | # dependents       | 0.0 |
-| # downloads        | 666071.0 |
-| # stars            | 4437.0 |
+| # downloads        | 700761.0 |
+| # stars            | 4660.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/rushstack#readme)

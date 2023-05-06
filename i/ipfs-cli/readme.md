@@ -10,10 +10,10 @@ JavaScript implementation of the IPFS specification
 | ------------------ | :-------------: |
 | Full name          | ipfs-cli |
 | Keywords           | IPFS |
-| # releases         | 251 |
+| # releases         | 227 |
 | # dependents       | 0.0 |
-| # downloads        | 20109.0 |
-| # stars            | 7055.0 |
+| # downloads        | 20527.333333333332 |
+| # stars            | 7244.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-cli#readme)

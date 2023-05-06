@@ -10,10 +10,10 @@ A G plugin for loading image
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-image-loader |
 | Keywords           | antv, g |
-| # releases         | 38 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 1731.6666666666667 |
-| # stars            | 795.0 |
+| # downloads        | 3032.3333333333335 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

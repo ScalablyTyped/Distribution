@@ -10,10 +10,10 @@ Component testing utils for Vue 3.
 | ------------------ | :-------------: |
 | Full name          | @vue/test-utils |
 | Keywords           | - |
-| # releases         | 52 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 5277017.333333333 |
-| # stars            | 515.0 |
+| # downloads        | 5375571.666666667 |
+| # stars            | 627.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/test-utils)

@@ -10,12 +10,15 @@ OpenTok server-side SDK
 | ------------------ | :-------------: |
 | Full name          | opentok |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 98776.0 |
-| # stars            | 161.0 |
+| # downloads        | 126509.33333333333 |
+| # stars            | 163.0 |
 
 ## Links
+- [Homepage](https://github.com/opentok/opentok-node)
+- [Bugs](https://github.com/opentok/opentok-node/issues)
+- [Repository](https://github.com/opentok/opentok-node)
 - [Npm](https://www.npmjs.com/package/opentok)
     
 

@@ -10,10 +10,10 @@ Parse e-mails
 | ------------------ | :-------------: |
 | Full name          | mailparser |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1912694.6666666667 |
-| # stars            | 1422.0 |
+| # downloads        | 2112154.3333333335 |
+| # stars            | 1446.0 |
 
 ## Links
 - [Homepage](https://github.com/nodemailer/mailparser#readme)

@@ -10,10 +10,10 @@ This is the main API for the (web) version of the Storybook Preview.
 | ------------------ | :-------------: |
 | Full name          | @storybook/preview-web |
 | Keywords           | storybook |
-| # releases         | 207 |
+| # releases         | 270 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2998540666666666E7 |
-| # stars            | 74176.0 |
+| # downloads        | 1.5549992666666666E7 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/preview-web)

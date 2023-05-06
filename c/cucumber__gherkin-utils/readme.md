@@ -10,10 +10,10 @@ Various Gherkin utilities
 | ------------------ | :-------------: |
 | Full name          | @cucumber/gherkin-utils |
 | Keywords           | cucumber |
-| # releases         | 14 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 525802.3333333334 |
-| # stars            | 3336.0 |
+| # downloads        | 903060.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/cucumber/cucumber)

@@ -10,10 +10,10 @@ WAI-ARIA compliant React command palette like the one in Atom
 | ------------------ | :-------------: |
 | Full name          | react-command-palette |
 | Keywords           | react, command, palette, command palette, command-palette, accessibile, react-component |
-| # releases         | 17 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 19057.666666666668 |
-| # stars            | 497.0 |
+| # downloads        | 20774.666666666668 |
+| # stars            | 522.0 |
 
 ## Links
 - [Homepage](https://github.com/asabaylus/react-command-palette#readme)

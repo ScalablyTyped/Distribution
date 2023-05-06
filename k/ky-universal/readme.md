@@ -12,8 +12,8 @@ Use Ky in both Node.js and browsers
 | Keywords           | ky, universal, isomorphic, browser, browsers, node, react, vue, ssr, fetch, request, requests, http, https, fetching, get, url, curl, wget, net, network, ajax, api, rest, xhr, browser, got, axios, node-fetch |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2186886.3333333335 |
-| # stars            | 532.0 |
+| # downloads        | 2047598.3333333333 |
+| # stars            | 563.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ky-universal#readme)

@@ -10,10 +10,10 @@ OpenTelemetry AsyncHooks-based Context Manager
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/context-async-hooks |
 | Keywords           | opentelemetry, nodejs, tracing, profiling, metrics, stats |
-| # releases         | 75 |
+| # releases         | 72 |
 | # dependents       | 0.0 |
-| # downloads        | 3780337.6666666665 |
-| # stars            | 1462.0 |
+| # downloads        | 3819422.6666666665 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-context-async-hooks)

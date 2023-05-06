@@ -10,10 +10,10 @@ A React component for Plaid Link
 | ------------------ | :-------------: |
 | Full name          | react-plaid-link |
 | Keywords           | react, react-component, plaid |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 602363.0 |
-| # stars            | 206.0 |
+| # downloads        | 752621.0 |
+| # stars            | 218.0 |
 
 ## Links
 - [Homepage](https://github.com/plaid/react-plaid-link)

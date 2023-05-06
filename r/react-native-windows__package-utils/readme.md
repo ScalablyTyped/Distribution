@@ -9,10 +9,10 @@ Typings are for version 0.70.0
 | ------------------ | :-------------: |
 | Full name          | @react-native-windows/package-utils |
 | Keywords           | - |
-| # releases         | 43 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 68447.0 |
-| # stars            | 14959.0 |
+| # downloads        | 76132.66666666667 |
+| # stars            | 15200.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/react-native-windows#readme)

@@ -10,10 +10,10 @@ Get the dependency tree of a module
 | ------------------ | :-------------: |
 | Full name          | dependency-tree |
 | Keywords           | dependency, tree, graph, module, ast, requirejs, AMD, commonjs, es6, sass, stylus, less, typescript |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1375817.6666666667 |
-| # stars            | 508.0 |
+| # downloads        | 1672169.3333333333 |
+| # stars            | 540.0 |
 
 ## Links
 - [Homepage](https://github.com/mrjoelkemp/node-dependency-tree)

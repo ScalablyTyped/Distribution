@@ -12,7 +12,7 @@ Is this JS value callable? Works with Functions and GeneratorFunctions, despite 
 | Keywords           | Function, function, callable, generator, generator function, arrow, arrow function, ES6, toStringTag, @@toStringTag |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2553040566666667E8 |
+| # downloads        | 1.26894786E8 |
 | # stars            | 35.0 |
 
 ## Links

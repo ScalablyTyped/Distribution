@@ -10,10 +10,10 @@ HTTP and HTTPS modules that follow redirects.
 | ------------------ | :-------------: |
 | Full name          | follow-redirects |
 | Keywords           | http, https, url, redirect, client, location, utility |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 1.30019295E8 |
-| # stars            | 442.0 |
+| # downloads        | 1.4532038166666666E8 |
+| # stars            | 458.0 |
 
 ## Links
 - [Homepage](https://github.com/follow-redirects/follow-redirects)

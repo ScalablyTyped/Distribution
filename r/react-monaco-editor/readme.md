@@ -10,10 +10,10 @@ Monaco Editor for React
 | ------------------ | :-------------: |
 | Full name          | react-monaco-editor |
 | Keywords           | monaco, editor, react, vscode |
-| # releases         | 11 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 387631.0 |
-| # stars            | 2893.0 |
+| # downloads        | 433496.6666666667 |
+| # stars            | 3026.0 |
 
 ## Links
 - [Homepage](https://github.com/react-monaco-editor/react-monaco-editor)

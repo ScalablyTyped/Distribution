@@ -10,9 +10,9 @@ parser for esm like imports
 | ------------------ | :-------------: |
 | Full name          | @tokey/imports-parser |
 | Keywords           | parser, esm, imports |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 13414.0 |
+| # downloads        | 15108.0 |
 | # stars            | ? |
 
 ## Links

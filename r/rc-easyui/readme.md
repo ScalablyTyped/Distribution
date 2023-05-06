@@ -10,9 +10,9 @@ The EasyUI for React
 | ------------------ | :-------------: |
 | Full name          | rc-easyui |
 | Keywords           | react, easyui |
-| # releases         | 23 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1268.6666666666667 |
+| # downloads        | 951.6666666666666 |
 | # stars            | ? |
 
 ## Links

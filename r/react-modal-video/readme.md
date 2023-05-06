@@ -10,10 +10,10 @@ Modal Video Viewer
 | ------------------ | :-------------: |
 | Full name          | react-modal-video |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 94265.66666666667 |
-| # stars            | 141.0 |
+| # downloads        | 104545.33333333333 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/appleple/react-modal-video#readme)

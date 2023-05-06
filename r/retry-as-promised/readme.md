@@ -10,10 +10,10 @@ Retry a failed promise
 | ------------------ | :-------------: |
 | Full name          | retry-as-promised |
 | Keywords           | retry, promise, bluebird |
-| # releases         | 3 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 5079628.666666667 |
-| # stars            | 50.0 |
+| # downloads        | 5655021.0 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/mickhansen/retry-as-promised)

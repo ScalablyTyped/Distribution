@@ -10,10 +10,10 @@ A mature CSV toolset with simple api, full of options and tested against large d
 | ------------------ | :-------------: |
 | Full name          | csv |
 | Keywords           | node, csv, tsv, parser, parse, stringifier, stringify, transform, stream, generate, generation |
-| # releases         | 18 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 4482530.666666667 |
-| # stars            | 3273.0 |
+| # downloads        | 3556415.6666666665 |
+| # stars            | 3406.0 |
 
 ## Links
 - [Homepage](https://csv.js.org/)

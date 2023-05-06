@@ -10,10 +10,10 @@ Typings are for version 0.0
 | ------------------ | :-------------: |
 | Full name          | jest-environment-vscode-extension |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 89.66666666666667 |
-| # stars            | 2.0 |
+| # downloads        | 132.66666666666666 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/macabeus/jest-environment-vscode#readme)

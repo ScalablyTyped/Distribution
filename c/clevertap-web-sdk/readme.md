@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | clevertap-web-sdk |
 | Keywords           | clevertap, web-sdk |
-| # releases         | 16 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 18266.333333333332 |
+| # downloads        | 26166.333333333332 |
 | # stars            | 6.0 |
 
 ## Links

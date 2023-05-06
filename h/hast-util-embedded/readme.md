@@ -10,9 +10,9 @@ hast utility to check if a node is an embedded element
 | ------------------ | :-------------: |
 | Full name          | hast-util-embedded |
 | Keywords           | unist, hast, hast-util, util, utility, html, category, embedded |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 348646.0 |
+| # downloads        | 372139.0 |
 | # stars            | 1.0 |
 
 ## Links

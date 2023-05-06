@@ -10,9 +10,9 @@ JupyterLab - Document Provider
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/docprovider |
 | Keywords           | - |
-| # releases         | 103 |
+| # releases         | 114 |
 | # dependents       | 0.0 |
-| # downloads        | 219731.33333333334 |
+| # downloads        | 135490.33333333334 |
 | # stars            | ? |
 
 ## Links

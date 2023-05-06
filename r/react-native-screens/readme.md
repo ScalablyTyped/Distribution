@@ -10,10 +10,10 @@ Native navigation primitives for your React Native app.
 | ------------------ | :-------------: |
 | Full name          | react-native-screens |
 | Keywords           | - |
-| # releases         | 40 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 2398021.0 |
-| # stars            | 2411.0 |
+| # downloads        | 2465399.6666666665 |
+| # stars            | 2454.0 |
 
 ## Links
 - [Homepage](https://github.com/software-mansion/react-native-screens#readme)

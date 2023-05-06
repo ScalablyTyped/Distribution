@@ -10,10 +10,10 @@ Customize and package your Electron app with OS-specific bundles (.app, .exe, et
 | ------------------ | :-------------: |
 | Full name          | electron-packager |
 | Keywords           | electron, packager, bundler, app |
-| # releases         | 5 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 409514.6666666667 |
-| # stars            | 8054.0 |
+| # downloads        | 403223.3333333333 |
+| # stars            | 8107.0 |
 
 ## Links
 - [Homepage](https://github.com/electron/electron-packager)

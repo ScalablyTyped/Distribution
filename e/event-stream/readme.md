@@ -10,10 +10,10 @@ construct pipes of streams of events
 | ------------------ | :-------------: |
 | Full name          | event-stream |
 | Keywords           | stream, map, flatmap, filter, split, join, merge, replace |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2795939E7 |
-| # stars            | 2180.0 |
+| # downloads        | 1.4550374E7 |
+| # stars            | 2187.0 |
 
 ## Links
 - [Homepage](http://github.com/dominictarr/event-stream)

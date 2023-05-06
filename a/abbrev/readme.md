@@ -10,15 +10,15 @@ Like ruby's abbrev module, but in js
 | ------------------ | :-------------: |
 | Full name          | abbrev |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 6.5530882666666664E7 |
-| # stars            | 149.0 |
+| # downloads        | 6.786811833333333E7 |
+| # stars            | 151.0 |
 
 ## Links
-- [Homepage](https://github.com/isaacs/abbrev-js#readme)
-- [Bugs](https://github.com/isaacs/abbrev-js/issues)
-- [Repository](https://github.com/isaacs/abbrev-js)
+- [Homepage](https://github.com/npm/abbrev-js#readme)
+- [Bugs](https://github.com/npm/abbrev-js/issues)
+- [Repository](https://github.com/npm/abbrev-js)
 - [Npm](https://www.npmjs.com/package/abbrev)
     
 

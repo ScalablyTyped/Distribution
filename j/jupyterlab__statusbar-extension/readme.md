@@ -10,9 +10,9 @@ JupyterLab - Statusbar Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/statusbar-extension |
 | Keywords           | - |
-| # releases         | 144 |
+| # releases         | 138 |
 | # dependents       | 0.0 |
-| # downloads        | 192170.66666666666 |
+| # downloads        | 88494.33333333333 |
 | # stars            | ? |
 
 ## Links

@@ -10,9 +10,9 @@ Read files without try catch
 | ------------------ | :-------------: |
 | Full name          | read-file-safe |
 | Keywords           | read, file, safe, try, catch, ENOENT, fs, fs-safe |
-| # releases         | 13 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3347.0 |
+| # downloads        | 8693.666666666666 |
 | # stars            | 1.0 |
 
 ## Links

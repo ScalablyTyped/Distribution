@@ -10,9 +10,9 @@ Date module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/date |
 | Keywords           | wordpress, gutenberg, date |
-| # releases         | 47 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 142054.0 |
+| # downloads        | 142447.0 |
 | # stars            | ? |
 
 ## Links

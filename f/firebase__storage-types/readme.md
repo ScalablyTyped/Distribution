@@ -10,10 +10,10 @@ Typings are for version 0.6.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/storage-types |
 | Keywords           | - |
-| # releases         | 1150 |
+| # releases         | 968 |
 | # dependents       | 0.0 |
-| # downloads        | 5016857.333333333 |
-| # stars            | 4194.0 |
+| # downloads        | 5155624.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

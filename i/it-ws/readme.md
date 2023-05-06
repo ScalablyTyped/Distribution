@@ -10,9 +10,9 @@ Simple async iterables for websocket client connections
 | ------------------ | :-------------: |
 | Full name          | it-ws |
 | Keywords           | async, iterable, iterator, websocket, ws |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 49575.0 |
+| # downloads        | 50238.666666666664 |
 | # stars            | 10.0 |
 
 ## Links

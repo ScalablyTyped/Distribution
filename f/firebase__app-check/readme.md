@@ -10,10 +10,10 @@ The App Check component of the Firebase JS SDK
 | ------------------ | :-------------: |
 | Full name          | @firebase/app-check |
 | Keywords           | - |
-| # releases         | 655 |
+| # releases         | 758 |
 | # dependents       | 0.0 |
-| # downloads        | 3592559.0 |
-| # stars            | 4194.0 |
+| # downloads        | 4071303.3333333335 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

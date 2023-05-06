@@ -12,10 +12,13 @@ ES Proposal spec-compliant shim for AggregateError
 | Keywords           | AggregateError, Error, aggregate, errors, nativeerror, es-shim API, shim, polyfill |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 932855.6666666666 |
-| # stars            | 12.0 |
+| # downloads        | 1836528.0 |
+| # stars            | 14.0 |
 
 ## Links
+- [Homepage](https://github.com/es-shims/AggregateError#readme)
+- [Bugs](https://github.com/es-shims/AggregateError/issues)
+- [Repository](https://github.com/es-shims/AggregateError)
 - [Npm](https://www.npmjs.com/package/es-aggregate-error)
     
 

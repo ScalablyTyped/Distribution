@@ -10,10 +10,10 @@ Architect dev server: run full Architect projects locally & offline
 | ------------------ | :-------------: |
 | Full name          | @architect/sandbox |
 | Keywords           | - |
-| # releases         | 131 |
+| # releases         | 104 |
 | # dependents       | 0.0 |
-| # downloads        | 24921.0 |
-| # stars            | 30.0 |
+| # downloads        | 26042.333333333332 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/architect/sandbox#readme)

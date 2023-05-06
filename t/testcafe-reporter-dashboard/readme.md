@@ -10,9 +10,9 @@ Dashboard TestCafe reporter plugin.
 | ------------------ | :-------------: |
 | Full name          | testcafe-reporter-dashboard |
 | Keywords           | testcafe, reporter, plugin |
-| # releases         | 30 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 659331.0 |
+| # downloads        | 762473.6666666666 |
 | # stars            | ? |
 
 ## Links

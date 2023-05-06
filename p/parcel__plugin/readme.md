@@ -9,10 +9,10 @@ Typings are for version 2.8.0
 | ------------------ | :-------------: |
 | Full name          | @parcel/plugin |
 | Keywords           | - |
-| # releases         | 361 |
+| # releases         | 332 |
 | # dependents       | 0.0 |
-| # downloads        | 1863475.3333333333 |
-| # stars            | 41287.0 |
+| # downloads        | 2057631.3333333333 |
+| # stars            | 41841.0 |
 
 ## Links
 - [Homepage](https://github.com/parcel-bundler/parcel#readme)

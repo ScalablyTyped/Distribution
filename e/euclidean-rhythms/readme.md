@@ -10,10 +10,10 @@ Calculates the patterns based on the euclidean/bjorklund's algorithm
 | ------------------ | :-------------: |
 | Full name          | euclidean-rhythms |
 | Keywords           | euclidean, rhythms, euclid, bjorklund, Godfried Toussaint |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 75.33333333333333 |
-| # stars            | 24.0 |
+| # downloads        | 75.0 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/mkontogiannis/euclidean-rhythms#readme)

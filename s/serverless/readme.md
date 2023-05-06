@@ -10,10 +10,10 @@ Serverless Framework - Build web, mobile and IoT applications with serverless ar
 | ------------------ | :-------------: |
 | Full name          | serverless |
 | Keywords           | serverless, lambda, aws, amazon, azure, google-cloud, apache-open-whisk, iot |
-| # releases         | 1621 |
+| # releases         | 1430 |
 | # dependents       | 0.0 |
-| # downloads        | 4273526.0 |
-| # stars            | 43460.0 |
+| # downloads        | 5147132.333333333 |
+| # stars            | 44007.0 |
 
 ## Links
 - [Homepage](https://serverless.com/framework/docs/)

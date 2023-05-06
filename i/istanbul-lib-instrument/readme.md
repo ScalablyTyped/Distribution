@@ -10,10 +10,10 @@ Core istanbul API for JS code coverage
 | ------------------ | :-------------: |
 | Full name          | istanbul-lib-instrument |
 | Keywords           | coverage, istanbul, js, instrumentation |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0844337966666667E8 |
-| # stars            | 817.0 |
+| # downloads        | 1.1377030133333333E8 |
+| # stars            | 842.0 |
 
 ## Links
 - [Homepage](https://istanbul.js.org/)

@@ -10,10 +10,10 @@ RFC 2822 compliant raw email message generator written in node.js
 | ------------------ | :-------------: |
 | Full name          | mimetext |
 | Keywords           | rfc-2822, mime-message, email-message |
-| # releases         | 11 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 7253.333333333333 |
-| # stars            | 20.0 |
+| # downloads        | 96173.66666666667 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/muratgozel/MIMEText#readme)

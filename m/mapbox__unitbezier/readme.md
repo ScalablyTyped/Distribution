@@ -12,8 +12,8 @@ unit bezier curve interpolation
 | Keywords           | unit, bezier, interpolation, webkit |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2920772.0 |
-| # stars            | 13.0 |
+| # downloads        | 3569003.3333333335 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/unitbezier)

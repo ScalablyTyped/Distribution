@@ -10,10 +10,10 @@ The awesome step wizard plugin for jQuery
 | ------------------ | :-------------: |
 | Full name          | smartwizard |
 | Keywords           | jQuery, Wizard, Tabs, Steps, Bootstrap, Plugin, Step, ui, jquery-plugin, Tabs |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 20468.666666666668 |
-| # stars            | 709.0 |
+| # downloads        | 20735.666666666668 |
+| # stars            | 730.0 |
 
 ## Links
 - [Homepage](http://techlaboratory.net/jquery-smartwizard)

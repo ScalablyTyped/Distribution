@@ -10,10 +10,10 @@ Exposes a simple API for interacting with the Counter-Strike: Global Offensive g
 | ------------------ | :-------------: |
 | Full name          | globaloffensive |
 | Keywords           | csgo, cs:go, cs, counter strike, counter-strike, counter strike global offensive, counter-strike global offensive, global offensive, valve, steam |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 779.0 |
-| # stars            | 138.0 |
+| # downloads        | 911.0 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](https://github.com/DoctorMcKay/node-globaloffensive)

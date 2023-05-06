@@ -12,8 +12,8 @@ Memoize promise-returning & async functions
 | Keywords           | promise, memoize, mem, memoization, function, cache, caching, optimize, performance, ttl, expire, async, await, promises, time, out, cancel, bluebird |
 | # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 2119531.0 |
-| # stars            | 287.0 |
+| # downloads        | 2300591.6666666665 |
+| # stars            | 310.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-memoize#readme)

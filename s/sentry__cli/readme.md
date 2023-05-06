@@ -10,10 +10,10 @@ A command line utility to work with Sentry. https://docs.sentry.io/hosted/learn/
 | ------------------ | :-------------: |
 | Full name          | @sentry/cli |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 52 |
 | # dependents       | 0.0 |
-| # downloads        | 7364369.0 |
-| # stars            | 738.0 |
+| # downloads        | 8526887.333333334 |
+| # stars            | 756.0 |
 
 ## Links
 - [Homepage](https://docs.sentry.io/hosted/learn/cli/)

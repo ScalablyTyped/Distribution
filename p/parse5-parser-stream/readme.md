@@ -12,8 +12,8 @@ Streaming HTML parser with scripting support.
 | Keywords           | parse5, parser, stream, streaming |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1091.3333333333333 |
-| # stars            | 2911.0 |
+| # downloads        | 260.6666666666667 |
+| # stars            | 3184.0 |
 
 ## Links
 - [Homepage](https://github.com/inikulin/parse5)

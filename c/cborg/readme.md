@@ -12,8 +12,8 @@ Fast CBOR with a focus on strictness
 | Keywords           | cbor |
 | # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 213805.66666666666 |
-| # stars            | 21.0 |
+| # downloads        | 262177.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/cborg#readme)

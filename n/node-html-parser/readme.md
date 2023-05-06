@@ -10,10 +10,10 @@ A very fast HTML parser, generating a simplified DOM, with basic element query s
 | ------------------ | :-------------: |
 | Full name          | node-html-parser |
 | Keywords           | html, parser, nodejs, typescript |
-| # releases         | 65 |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 7045243.333333333 |
-| # stars            | 718.0 |
+| # downloads        | 7448747.333333333 |
+| # stars            | 743.0 |
 
 ## Links
 - [Homepage](https://github.com/taoqf/node-fast-html-parser)

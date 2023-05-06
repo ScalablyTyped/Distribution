@@ -10,10 +10,10 @@ A minimal-dependency drop-in replacement to `fs` with changes for resiliency, pr
 | ------------------ | :-------------: |
 | Full name          | @react-native-windows/fs |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 41660.0 |
-| # stars            | 14959.0 |
+| # downloads        | 61601.333333333336 |
+| # stars            | 15200.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/react-native-windows#readme)

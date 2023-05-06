@@ -12,8 +12,8 @@ Official Node.js client library for the Postmark HTTP API - https://www.postmark
 | Keywords           | - |
 | # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 489259.0 |
-| # stars            | 231.0 |
+| # downloads        | 468646.0 |
+| # stars            | 249.0 |
 
 ## Links
 - [Homepage](http://ActiveCampaign.github.io/postmark.js)

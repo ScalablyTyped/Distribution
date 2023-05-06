@@ -11,8 +11,8 @@ Typings are for version 29.3.1
 | Keywords           | - |
 | # releases         | 74 |
 | # dependents       | 0.0 |
-| # downloads        | 7.731881466666667E7 |
-| # stars            | 40312.0 |
+| # downloads        | 8.314322166666667E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

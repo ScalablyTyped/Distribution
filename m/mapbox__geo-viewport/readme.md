@@ -10,12 +10,15 @@ convert between viewports and extents
 | ------------------ | :-------------: |
 | Full name          | @mapbox/geo-viewport |
 | Keywords           | geographic, viewport, zoom, scale |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 187839.66666666666 |
-| # stars            | 168.0 |
+| # downloads        | 186311.66666666666 |
+| # stars            | 176.0 |
 
 ## Links
+- [Homepage](https://github.com/mapbox/geo-viewport)
+- [Bugs](https://github.com/mapbox/geo-viewport/issues)
+- [Repository](https://github.com/mapbox/geo-viewport)
 - [Npm](https://www.npmjs.com/package/%40mapbox%2Fgeo-viewport)
     
 

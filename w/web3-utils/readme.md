@@ -10,10 +10,10 @@ Collection of utility functions used in web3.js.
 | ------------------ | :-------------: |
 | Full name          | web3-utils |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 4094059.0 |
-| # stars            | 16013.0 |
+| # downloads        | 3899812.0 |
+| # stars            | 16771.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

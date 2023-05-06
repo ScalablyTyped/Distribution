@@ -10,13 +10,15 @@ Screenshots with JavaScript
 | ------------------ | :-------------: |
 | Full name          | html2canvas |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 4069717.6666666665 |
-| # stars            | 26262.0 |
+| # downloads        | 4679840.0 |
+| # stars            | 27096.0 |
 
 ## Links
 - [Homepage](https://html2canvas.hertzen.com)
+- [Bugs](https://github.com/niklasvh/html2canvas/issues)
+- [Repository](https://github.com/niklasvh/html2canvas)
 - [Npm](https://www.npmjs.com/package/html2canvas)
     
 

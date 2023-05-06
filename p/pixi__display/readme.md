@@ -10,15 +10,15 @@ Core display functionality
 | ------------------ | :-------------: |
 | Full name          | @pixi/display |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 380230.0 |
-| # stars            | 37483.0 |
+| # downloads        | 409952.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://pixijs.com/)
-- [Bugs](https://github.com/pixijs/pixi.js/issues)
-- [Repository](https://github.com/pixijs/pixi.js)
+- [Bugs](https://github.com/pixijs/pixijs/issues)
+- [Repository](https://github.com/pixijs/pixijs)
 - [Npm](https://www.npmjs.com/package/%40pixi%2Fdisplay)
     
 

@@ -10,9 +10,9 @@ datastore interface
 | ------------------ | :-------------: |
 | Full name          | blockstore-datastore-adapter |
 | Keywords           | datastore, interface, ipfs, key-value |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 27620.0 |
+| # downloads        | 31310.0 |
 | # stars            | 2.0 |
 
 ## Links

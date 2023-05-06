@@ -10,10 +10,10 @@ Fastest JS implementation of secp256k1. Independently audited, high-security, 0-
 | ------------------ | :-------------: |
 | Full name          | @noble/secp256k1 |
 | Keywords           | secp256k1, secp, secp256, elliptic, elliptic curve, curve, signature, ecc, rfc6979, schnorr, sig, bip0340, bip340, ecdsa, endomorphism, cryptography, security, noble |
-| # releases         | 19 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 631027.0 |
-| # stars            | 315.0 |
+| # downloads        | 1400515.6666666667 |
+| # stars            | 426.0 |
 
 ## Links
 - [Homepage](https://paulmillr.com/noble/)

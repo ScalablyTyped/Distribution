@@ -10,10 +10,10 @@ OpenTelemetry SDK resources
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/resources |
 | Keywords           | opentelemetry, nodejs, resources, stats, profiling |
-| # releases         | 120 |
+| # releases         | 112 |
 | # dependents       | 0.0 |
-| # downloads        | 6954659.333333333 |
-| # stars            | 1462.0 |
+| # downloads        | 8146680.666666667 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-resources)

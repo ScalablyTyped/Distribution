@@ -4,7 +4,7 @@
 Typings are for version 0.14.7
 
 ## Library description:
-MDX component context for Theme UI
+[MDX](https://mdxjs.com) utilities for [Theme UI](https://theme-ui.com)
 
 |                    |                 |
 | ------------------ | :-------------: |
@@ -12,8 +12,8 @@ MDX component context for Theme UI
 | Keywords           | - |
 | # releases         | 378 |
 | # dependents       | 0.0 |
-| # downloads        | 349696.0 |
-| # stars            | 4677.0 |
+| # downloads        | 358831.3333333333 |
+| # stars            | 4764.0 |
 
 ## Links
 - [Homepage](https://github.com/system-ui/theme-ui#readme)

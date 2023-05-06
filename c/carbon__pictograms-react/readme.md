@@ -10,10 +10,10 @@ React components for pictograms in digital and software products using the Carbo
 | ------------------ | :-------------: |
 | Full name          | @carbon/pictograms-react |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 69 |
+| # releases         | 73 |
 | # dependents       | 0.0 |
-| # downloads        | 55055.666666666664 |
-| # stars            | 5801.0 |
+| # downloads        | 62061.333333333336 |
+| # stars            | 6129.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

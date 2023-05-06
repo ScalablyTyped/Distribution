@@ -10,9 +10,9 @@ RTD retrier
 | ------------------ | :-------------: |
 | Full name          | @twilio/operation-retrier |
 | Keywords           | - |
-| # releases         | 38 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 191912.0 |
+| # downloads        | 190764.0 |
 | # stars            | 0.0 |
 
 ## Links

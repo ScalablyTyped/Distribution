@@ -10,9 +10,9 @@ Peer Store interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-peer-store |
 | Keywords           | interface, libp2p |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 7333.0 |
+| # downloads        | 24169.0 |
 | # stars            | 68.0 |
 
 ## Links

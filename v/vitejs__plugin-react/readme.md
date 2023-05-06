@@ -10,15 +10,15 @@ The all-in-one Vite plugin for React projects.
 | ------------------ | :-------------: |
 | Full name          | @vitejs/plugin-react |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 40 |
 | # dependents       | 0.0 |
-| # downloads        | 2750536.3333333335 |
-| # stars            | 48132.0 |
+| # downloads        | 3871015.0 |
+| # stars            | 68.0 |
 
 ## Links
-- [Homepage](https://github.com/vitejs/vite/tree/main/packages/plugin-react#readme)
-- [Bugs](https://github.com/vitejs/vite/issues)
-- [Repository](https://github.com/vitejs/vite)
+- [Homepage](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#readme)
+- [Bugs](https://github.com/vitejs/vite-plugin-react/issues)
+- [Repository](https://github.com/vitejs/vite-plugin-react)
 - [Npm](https://www.npmjs.com/package/%40vitejs%2Fplugin-react)
     
 

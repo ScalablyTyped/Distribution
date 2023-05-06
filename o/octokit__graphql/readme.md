@@ -10,10 +10,10 @@ GitHub GraphQL API client for browsers and Node
 | ------------------ | :-------------: |
 | Full name          | @octokit/graphql |
 | Keywords           | octokit, github, api, graphql |
-| # releases         | 13 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7427549333333332E7 |
-| # stars            | 378.0 |
+| # downloads        | 1.942255E7 |
+| # stars            | 387.0 |
 
 ## Links
 - [Homepage](https://github.com/octokit/graphql.js#readme)

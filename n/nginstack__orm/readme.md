@@ -10,9 +10,9 @@ Nginstack ORM Library. See the [nginstack site](nginstack.com) for more informat
 | ------------------ | :-------------: |
 | Full name          | @nginstack/orm |
 | Keywords           | - |
-| # releases         | 88 |
+| # releases         | 84 |
 | # dependents       | 0.0 |
-| # downloads        | 1356.6666666666667 |
+| # downloads        | 1161.3333333333333 |
 | # stars            | ? |
 
 ## Links

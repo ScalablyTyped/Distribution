@@ -10,12 +10,15 @@ A list of TLDs.
 | ------------------ | :-------------: |
 | Full name          | tlds |
 | Keywords           | data, tld, tlds, top, level, domains |
-| # releases         | 25 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 4126893.6666666665 |
-| # stars            | 109.0 |
+| # downloads        | 4845650.666666667 |
+| # stars            | 112.0 |
 
 ## Links
+- [Homepage](https://github.com/stephenmathieson/node-tlds#readme)
+- [Bugs](https://github.com/stephenmathieson/node-tlds/issues)
+- [Repository](https://github.com/stephenmathieson/node-tlds)
 - [Npm](https://www.npmjs.com/package/tlds)
     
 

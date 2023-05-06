@@ -10,10 +10,10 @@ A jQuery timepicker plugin inspired by Google Calendar. It supports both mouse a
 | ------------------ | :-------------: |
 | Full name          | timepicker |
 | Keywords           | timepicker, time, picker, ui, google calendar |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 79902.66666666667 |
-| # stars            | 1836.0 |
+| # downloads        | 96453.0 |
+| # stars            | 1842.0 |
 
 ## Links
 - [Homepage](https://github.com/jonthornton/jquery-timepicker#readme)

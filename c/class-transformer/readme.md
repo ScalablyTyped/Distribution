@@ -10,10 +10,10 @@ Proper decorator-based transformation / serialization / deserialization of plain
 | ------------------ | :-------------: |
 | Full name          | class-transformer |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 6997375.0 |
-| # stars            | 4969.0 |
+| # downloads        | 9080483.666666666 |
+| # stars            | 5404.0 |
 
 ## Links
 - [Homepage](https://github.com/typestack/class-transformer#readme)

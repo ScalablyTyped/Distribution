@@ -10,9 +10,9 @@ A small query tool for Postgres that embraces json and makes life simpler
 | ------------------ | :-------------: |
 | Full name          | massive |
 | Keywords           | postgres, pg, postgresql, sql, database, datamapper, data-mapper, promise, promises |
-| # releases         | 15 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 37074.0 |
+| # downloads        | 34418.333333333336 |
 | # stars            | ? |
 
 ## Links

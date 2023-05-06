@@ -10,9 +10,9 @@ JupyterLab - Editor Widget Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/fileeditor-extension |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 137 |
 | # dependents       | 0.0 |
-| # downloads        | 193371.66666666666 |
+| # downloads        | 89379.66666666667 |
 | # stars            | ? |
 
 ## Links

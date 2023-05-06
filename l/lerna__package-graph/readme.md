@@ -10,10 +10,10 @@ Lerna's internal representation of a package graph
 | ------------------ | :-------------: |
 | Full name          | @lerna/package-graph |
 | Keywords           | lerna, core |
-| # releases         | 24 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 5515484.666666667 |
-| # stars            | 33535.0 |
+| # downloads        | 5311540.0 |
+| # stars            | 34130.0 |
 
 ## Links
 - [Homepage](https://lerna.js.org)

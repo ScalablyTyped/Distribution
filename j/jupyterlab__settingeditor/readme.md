@@ -10,9 +10,9 @@ The JupyterLab default setting editor interface
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/settingeditor |
 | Keywords           | - |
-| # releases         | 142 |
+| # releases         | 136 |
 | # dependents       | 0.0 |
-| # downloads        | 193074.33333333334 |
+| # downloads        | 88989.33333333333 |
 | # stars            | ? |
 
 ## Links

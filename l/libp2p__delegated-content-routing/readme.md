@@ -10,10 +10,10 @@ Leverage other peers in the libp2p network to perform Content Routing calls.
 | ------------------ | :-------------: |
 | Full name          | @libp2p/delegated-content-routing |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 13247.0 |
-| # stars            | 10.0 |
+| # downloads        | 17470.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-delegated-content-routing#readme)

@@ -10,10 +10,10 @@ Typings are for version 2.10
 | ------------------ | :-------------: |
 | Full name          | pinyin |
 | Keywords           | 拼音, 汉语, 汉字, 中文, Pinyin |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 63165.333333333336 |
-| # stars            | 6480.0 |
+| # downloads        | 63310.666666666664 |
+| # stars            | 6660.0 |
 
 ## Links
 - [Homepage](https://pinyin.js.org/)

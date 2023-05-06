@@ -12,7 +12,7 @@ Plugins module for WordPress.
 | Keywords           | wordpress, gutenberg, plugins |
 | # releases         | 73 |
 | # dependents       | 0.0 |
-| # downloads        | 53404.666666666664 |
+| # downloads        | 52946.333333333336 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ A fully-featured and blazing-fast JavaScript API client to interact with Algolia
 | ------------------ | :-------------: |
 | Full name          | algoliasearch |
 | Keywords           | - |
-| # releases         | 49 |
+| # releases         | 52 |
 | # dependents       | 0.0 |
-| # downloads        | 3987384.6666666665 |
-| # stars            | 1145.0 |
+| # downloads        | 4252457.666666667 |
+| # stars            | 1176.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

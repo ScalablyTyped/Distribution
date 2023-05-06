@@ -10,10 +10,10 @@ Handle values based on a property
 | ------------------ | :-------------: |
 | Full name          | zwitch |
 | Keywords           | handle, switch, property |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2127591E7 |
-| # stars            | 7.0 |
+| # downloads        | 2.5912510333333332E7 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/zwitch#readme)

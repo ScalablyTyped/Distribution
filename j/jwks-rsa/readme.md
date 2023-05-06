@@ -10,10 +10,10 @@ Library to retrieve RSA public keys from a JWKS endpoint
 | ------------------ | :-------------: |
 | Full name          | jwks-rsa |
 | Keywords           | jwks, rsa, jwt |
-| # releases         | 18 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 8677289.0 |
-| # stars            | 665.0 |
+| # downloads        | 9039097.0 |
+| # stars            | 708.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/node-jwks-rsa#readme)

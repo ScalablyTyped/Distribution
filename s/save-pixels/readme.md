@@ -10,9 +10,9 @@ Saves an ndarray as an image to a file
 | ------------------ | :-------------: |
 | Full name          | save-pixels |
 | Keywords           | save, pixel, image, png, ndarray |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 461143.0 |
+| # downloads        | 528091.0 |
 | # stars            | ? |
 
 ## Links

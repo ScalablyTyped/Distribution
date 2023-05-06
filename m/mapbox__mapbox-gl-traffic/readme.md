@@ -12,8 +12,8 @@ Mapbox GL JS plugin for enabling/disabling traffic
 | Keywords           | mapbox, gis, vector, leaflet, gl |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 17143.0 |
-| # stars            | 57.0 |
+| # downloads        | 9237.333333333334 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/mapbox-gl-traffic#readme)

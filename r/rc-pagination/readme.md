@@ -10,10 +10,10 @@ pagination ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-pagination |
 | Keywords           | react, react-component, react-pagination, pagination, antd, pager |
-| # releases         | 27 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 3476431.6666666665 |
-| # stars            | 581.0 |
+| # downloads        | 3715512.0 |
+| # stars            | 595.0 |
 
 ## Links
 - [Homepage](https://react-component.github.io/pagination)

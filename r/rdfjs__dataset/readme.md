@@ -12,8 +12,8 @@ An indexed implementation of the RDF/JS Dataset
 | Keywords           | dataset, rdf, rdfjs |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 65990.66666666667 |
-| # stars            | 7.0 |
+| # downloads        | 64545.666666666664 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/dataset)

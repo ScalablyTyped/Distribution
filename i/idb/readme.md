@@ -10,10 +10,10 @@ A small wrapper that makes IndexedDB usable
 | ------------------ | :-------------: |
 | Full name          | idb |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3183659333333334E7 |
-| # stars            | 4614.0 |
+| # downloads        | 1.738065E7 |
+| # stars            | 4910.0 |
 
 ## Links
 - [Homepage](https://github.com/jakearchibald/idb#readme)

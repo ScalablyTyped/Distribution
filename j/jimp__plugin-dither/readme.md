@@ -12,7 +12,7 @@ Dither an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5077307.0 |
+| # downloads        | 5720368.0 |
 | # stars            | ? |
 
 ## Links

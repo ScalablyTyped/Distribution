@@ -9,10 +9,10 @@ GDPR Cookie Consent Banner in vanilla js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @beyonk/gdpr-cookie-consent-banner |
-| Keywords           | gdpr, cookie consent, banner, data protection, eu, consent, cookie, svelte, vanilla, dependency free, beyonk |
+| Keywords           | gdpr, cookie consent, banner, data protection, eu, consent, cookie, svelte, vanilla, beyonk |
 | # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 6286.666666666667 |
+| # downloads        | 7821.0 |
 | # stars            | ? |
 
 ## Links

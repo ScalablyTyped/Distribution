@@ -10,10 +10,10 @@ DOM view component for the CodeMirror code editor
 | ------------------ | :-------------: |
 | Full name          | @codemirror/view |
 | Keywords           | editor, code |
-| # releases         | 106 |
+| # releases         | 114 |
 | # dependents       | 0.0 |
-| # downloads        | 1132760.0 |
-| # stars            | 49.0 |
+| # downloads        | 1363531.3333333333 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/codemirror/view#readme)

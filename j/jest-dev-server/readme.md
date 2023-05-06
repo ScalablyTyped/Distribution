@@ -10,10 +10,10 @@ Starts a server before your Jest tests and tears it down after.
 | ------------------ | :-------------: |
 | Full name          | jest-dev-server |
 | Keywords           | jest, jest-environment, server |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1014822.6666666666 |
-| # stars            | 3347.0 |
+| # downloads        | 1102175.0 |
+| # stars            | 3403.0 |
 
 ## Links
 - [Homepage](https://github.com/smooth-code/jest-puppeteer/tree/master#readme)

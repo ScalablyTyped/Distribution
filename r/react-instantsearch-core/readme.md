@@ -10,15 +10,15 @@ Typings are for version 6.26
 | ------------------ | :-------------: |
 | Full name          | react-instantsearch-core |
 | Keywords           | algolia, components, fast, instantsearch, react, search |
-| # releases         | 51 |
+| # releases         | 54 |
 | # dependents       | 0.0 |
-| # downloads        | 780305.6666666666 |
-| # stars            | 1897.0 |
+| # downloads        | 771911.0 |
+| # stars            | 3044.0 |
 
 ## Links
 - [Homepage](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/)
-- [Bugs](https://github.com/algolia/react-instantsearch/issues)
-- [Repository](https://github.com/algolia/react-instantsearch)
+- [Bugs](https://github.com/algolia/instantsearch.js/issues)
+- [Repository](https://github.com/algolia/instantsearch.js)
 - [Npm](https://www.npmjs.com/package/react-instantsearch-core)
     
 

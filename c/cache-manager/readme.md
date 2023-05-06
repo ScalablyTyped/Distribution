@@ -10,15 +10,15 @@ Cache module for Node.js
 | ------------------ | :-------------: |
 | Full name          | cache-manager |
 | Keywords           | cache, redis, lru-cache, memory cache, multiple cache |
-| # releases         | 13 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 3359552.3333333335 |
-| # stars            | 969.0 |
+| # downloads        | 3831052.6666666665 |
+| # stars            | 1069.0 |
 
 ## Links
-- [Homepage](https://github.com/BryanDonovan/node-cache-manager#readme)
-- [Bugs](https://github.com/BryanDonovan/node-cache-manager/issues)
-- [Repository](https://github.com/BryanDonovan/node-cache-manager)
+- [Homepage](https://github.com/node-cache-manager/node-cache-manager#readme)
+- [Bugs](https://github.com/node-cache-manager/node-cache-manager/issues)
+- [Repository](https://github.com/node-cache-manager/node-cache-manager)
 - [Npm](https://www.npmjs.com/package/cache-manager)
     
 

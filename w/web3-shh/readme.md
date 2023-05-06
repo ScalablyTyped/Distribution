@@ -10,10 +10,10 @@ Web3 module to interact with the Whisper messaging protocol.
 | ------------------ | :-------------: |
 | Full name          | web3-shh |
 | Keywords           | - |
-| # releases         | 49 |
+| # releases         | 48 |
 | # dependents       | 0.0 |
-| # downloads        | 2301956.6666666665 |
-| # stars            | 16013.0 |
+| # downloads        | 2183569.3333333335 |
+| # stars            | 16750.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

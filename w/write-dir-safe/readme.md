@@ -10,9 +10,9 @@ Create directories and their parents recursively
 | ------------------ | :-------------: |
 | Full name          | write-dir-safe |
 | Keywords           | write, dir, safe, fs, fs-safe, without, try, catch, directory |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3611.0 |
+| # downloads        | 11245.0 |
 | # stars            | 1.0 |
 
 ## Links

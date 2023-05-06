@@ -10,10 +10,10 @@ A React table component designed to allow presenting thousands of rows of data.
 | ------------------ | :-------------: |
 | Full name          | fixed-data-table-2 |
 | Keywords           | react, react-component, table, data-table, fixed-table |
-| # releases         | 37 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 151441.66666666666 |
-| # stars            | 1201.0 |
+| # downloads        | 159541.0 |
+| # stars            | 1215.0 |
 
 ## Links
 - [Homepage](https://schrodinger.github.io/fixed-data-table-2)

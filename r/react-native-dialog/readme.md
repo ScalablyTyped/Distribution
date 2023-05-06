@@ -10,10 +10,10 @@ A flexible react-native dialog
 | ------------------ | :-------------: |
 | Full name          | react-native-dialog |
 | Keywords           | react-native, dialog, alert, modal, button, input, switch |
-| # releases         | 19 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 69390.0 |
-| # stars            | 536.0 |
+| # downloads        | 68885.66666666667 |
+| # stars            | 564.0 |
 
 ## Links
 - [Homepage](https://github.com/mmazzarolo/react-native-dialog)

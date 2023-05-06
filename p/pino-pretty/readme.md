@@ -10,10 +10,10 @@ Prettifier for Pino log lines
 | ------------------ | :-------------: |
 | Full name          | pino-pretty |
 | Keywords           | pino |
-| # releases         | 36 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 6941291.666666667 |
-| # stars            | 664.0 |
+| # downloads        | 6645940.0 |
+| # stars            | 692.0 |
 
 ## Links
 - [Homepage](https://github.com/pinojs/pino-pretty#readme)

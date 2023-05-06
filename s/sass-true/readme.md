@@ -12,8 +12,8 @@ Unit testing for Sass.
 | Keywords           | unit-test, test, sass, libsass, TDD, eyeglass-module |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 26497.0 |
-| # stars            | 669.0 |
+| # downloads        | 27437.666666666668 |
+| # stars            | 677.0 |
 
 ## Links
 - [Homepage](https://www.oddbird.net/true/)

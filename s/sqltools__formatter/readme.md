@@ -10,10 +10,10 @@ Formats SQL queries. Part of SQLTools
 | ------------------ | :-------------: |
 | Full name          | @sqltools/formatter |
 | Keywords           | sql, formatter, format, n1ql, whitespaces, sqltools |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3569324.6666666665 |
-| # stars            | 967.0 |
+| # downloads        | 3788019.0 |
+| # stars            | 1019.0 |
 
 ## Links
 - [Homepage](https://github.com/mtxr/vscode-sqltools#readme)

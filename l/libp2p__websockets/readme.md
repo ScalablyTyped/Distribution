@@ -10,10 +10,10 @@ JavaScript implementation of the WebSockets module that libp2p uses and that imp
 | ------------------ | :-------------: |
 | Full name          | @libp2p/websockets |
 | Keywords           | IPFS |
-| # releases         | 22 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 17642.333333333332 |
-| # stars            | 81.0 |
+| # downloads        | 21901.0 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-websockets#readme)

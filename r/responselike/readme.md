@@ -10,10 +10,10 @@ A response-like object for mocking a Node.js HTTP response stream
 | ------------------ | :-------------: |
 | Full name          | responselike |
 | Keywords           | http, https, response, mock, test, request, responselike |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 6.1732994E7 |
-| # stars            | 26.0 |
+| # downloads        | 6.0780639333333336E7 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/responselike#readme)

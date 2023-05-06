@@ -10,10 +10,10 @@ Simple config handling for your app or module
 | ------------------ | :-------------: |
 | Full name          | conf |
 | Keywords           | config, store, app, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save, load, read, write, cache |
-| # releases         | 12 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1927868.0 |
-| # stars            | 946.0 |
+| # downloads        | 1873725.0 |
+| # stars            | 1013.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/conf#readme)

@@ -10,10 +10,10 @@ Fake XHR and server
 | ------------------ | :-------------: |
 | Full name          | nise |
 | Keywords           | test, testing, fake, mock, xhr, server |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6973064333333332E7 |
-| # stars            | 102.0 |
+| # downloads        | 1.8671761E7 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/sinonjs/nise#readme)

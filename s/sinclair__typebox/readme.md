@@ -10,10 +10,10 @@ JSONSchema Type Builder with Static Type Resolution for TypeScript
 | ------------------ | :-------------: |
 | Full name          | @sinclair/typebox |
 | Keywords           | typescript, json-schema, validate, typecheck |
-| # releases         | 98 |
+| # releases         | 115 |
 | # dependents       | 0.0 |
-| # downloads        | 2.5102453333333332E7 |
-| # stars            | 1916.0 |
+| # downloads        | 3.9345774E7 |
+| # stars            | 2219.0 |
 
 ## Links
 - [Homepage](https://github.com/sinclairzx81/typebox#readme)

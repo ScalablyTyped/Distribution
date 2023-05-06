@@ -10,10 +10,10 @@ Exposes a list of quality levels available for the source.
 | ------------------ | :-------------: |
 | Full name          | videojs-contrib-quality-levels |
 | Keywords           | videojs, videojs-plugin |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 317025.0 |
-| # stars            | 119.0 |
+| # downloads        | 409425.3333333333 |
+| # stars            | 125.0 |
 
 ## Links
 - [Homepage](https://github.com/videojs/videojs-contrib-quality-levels#readme)

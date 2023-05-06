@@ -10,9 +10,9 @@ A logging component for use in js-libp2p modules
 | ------------------ | :-------------: |
 | Full name          | @libp2p/logger |
 | Keywords           | IPFS |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 52314.333333333336 |
+| # downloads        | 79928.33333333333 |
 | # stars            | 0.0 |
 
 ## Links

@@ -10,10 +10,10 @@ xstyled system utilities.
 | ------------------ | :-------------: |
 | Full name          | @xstyled/system |
 | Keywords           | emotion, styled-components, css, system, styled-system, tailwindcss |
-| # releases         | 29 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 75207.33333333333 |
-| # stars            | 2000.0 |
+| # downloads        | 75768.0 |
+| # stars            | 2042.0 |
 
 ## Links
 - [Homepage](https://xstyled.dev)

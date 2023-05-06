@@ -10,10 +10,10 @@ Video-React is a web video player built from the ground up for an HTML5 world us
 | ------------------ | :-------------: |
 | Full name          | video-react |
 | Keywords           | react, video, video-react, react-video, player, component, components, react-component, react-components, react component, react components, ui |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 466924.6666666667 |
-| # stars            | 2327.0 |
+| # downloads        | 397711.6666666667 |
+| # stars            | 2401.0 |
 
 ## Links
 - [Homepage](https://github.com/video-react/video-react#readme)

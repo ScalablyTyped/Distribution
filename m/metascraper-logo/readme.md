@@ -10,10 +10,10 @@ Get logo property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-logo |
 | Keywords           | logo, metascraper |
-| # releases         | 84 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 63157.0 |
-| # stars            | 1802.0 |
+| # downloads        | 105549.33333333333 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

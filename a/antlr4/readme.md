@@ -10,10 +10,10 @@ JavaScript runtime for ANTLR4
 | ------------------ | :-------------: |
 | Full name          | antlr4 |
 | Keywords           | lexer, parser, antlr, antlr4, grammar |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 955986.3333333334 |
-| # stars            | 12866.0 |
+| # downloads        | 1170266.3333333333 |
+| # stars            | 13586.0 |
 
 ## Links
 - [Homepage](https://github.com/antlr/antlr4)

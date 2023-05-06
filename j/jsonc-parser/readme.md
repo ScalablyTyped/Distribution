@@ -10,10 +10,10 @@ Scanner and parser for JSON with comments.
 | ------------------ | :-------------: |
 | Full name          | jsonc-parser |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1220358E7 |
-| # stars            | 378.0 |
+| # downloads        | 2.8687551E7 |
+| # stars            | 400.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/node-jsonc-parser#readme)

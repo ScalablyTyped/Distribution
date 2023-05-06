@@ -10,10 +10,10 @@ Test command line on Node.js.
 | ------------------ | :-------------: |
 | Full name          | coffee |
 | Keywords           | cli, test, shell, spawn, fork, child_process, exec |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 119080.66666666667 |
-| # stars            | 94.0 |
+| # downloads        | 80032.0 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/coffee)

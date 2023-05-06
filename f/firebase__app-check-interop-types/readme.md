@@ -10,10 +10,10 @@ Typings are for version 0.1.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/app-check-interop-types |
 | Keywords           | - |
-| # releases         | 576 |
+| # releases         | 669 |
 | # dependents       | 0.0 |
-| # downloads        | 3326877.3333333335 |
-| # stars            | 4194.0 |
+| # downloads        | 3919191.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

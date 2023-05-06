@@ -10,10 +10,10 @@ a CSS selector compiler/engine
 | ------------------ | :-------------: |
 | Full name          | css-select |
 | Keywords           | css, selector, sizzle |
-| # releases         | 20 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0705190566666667E8 |
-| # stars            | 451.0 |
+| # downloads        | 1.1874860633333333E8 |
+| # stars            | 473.0 |
 
 ## Links
 - [Homepage](https://github.com/fb55/css-select#readme)

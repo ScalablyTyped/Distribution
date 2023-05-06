@@ -10,10 +10,10 @@ PlayCanvas WebGL game engine
 | ------------------ | :-------------: |
 | Full name          | playcanvas |
 | Keywords           | 3D, 2D, VR, WebGL, WebGL2, game, engine, HTML5, browser, typings |
-| # releases         | 85 |
+| # releases         | 84 |
 | # dependents       | 0.0 |
-| # downloads        | 5370.333333333333 |
-| # stars            | 7667.0 |
+| # downloads        | 6184.0 |
+| # stars            | 8034.0 |
 
 ## Links
 - [Homepage](https://playcanvas.com)

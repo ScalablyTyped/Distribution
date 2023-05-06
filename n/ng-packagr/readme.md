@@ -10,10 +10,10 @@ Compile and package Angular libraries in Angular Package Format (APF)
 | ------------------ | :-------------: |
 | Full name          | ng-packagr |
 | Keywords           | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
-| # releases         | 109 |
+| # releases         | 110 |
 | # dependents       | 0.0 |
-| # downloads        | 1948676.0 |
-| # stars            | 1769.0 |
+| # downloads        | 1926728.3333333333 |
+| # stars            | 1785.0 |
 
 ## Links
 - [Homepage](https://github.com/ng-packagr/ng-packagr)

@@ -10,10 +10,10 @@ Better file system API
 | ------------------ | :-------------: |
 | Full name          | fs-jetpack |
 | Keywords           | fs, file system |
-| # releases         | 10 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 997830.3333333334 |
-| # stars            | 692.0 |
+| # downloads        | 1259545.3333333333 |
+| # stars            | 702.0 |
 
 ## Links
 - [Homepage](https://github.com/szwacz/fs-jetpack)

@@ -10,10 +10,10 @@ The cross-platform WebAssembly binary for esbuild, a JavaScript bundler.
 | ------------------ | :-------------: |
 | Full name          | esbuild-wasm |
 | Keywords           | - |
-| # releases         | 224 |
+| # releases         | 200 |
 | # dependents       | 0.0 |
-| # downloads        | 7035793.0 |
-| # stars            | 33272.0 |
+| # downloads        | 8589848.333333334 |
+| # stars            | 34305.0 |
 
 ## Links
 - [Homepage](https://github.com/evanw/esbuild#readme)

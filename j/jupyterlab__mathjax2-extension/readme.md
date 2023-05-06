@@ -10,9 +10,9 @@ A JupyterLab extension providing MathJax 2 Typesetting
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/mathjax2-extension |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 137 |
 | # dependents       | 0.0 |
-| # downloads        | 194044.33333333334 |
+| # downloads        | 91010.33333333333 |
 | # stars            | ? |
 
 ## Links

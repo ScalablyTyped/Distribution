@@ -10,10 +10,10 @@ Typings are for version 0.15.4
 | ------------------ | :-------------: |
 | Full name          | @theme-ui/theme-provider |
 | Keywords           | - |
-| # releases         | 383 |
+| # releases         | 380 |
 | # dependents       | 0.0 |
-| # downloads        | 349401.3333333333 |
-| # stars            | 4677.0 |
+| # downloads        | 370323.6666666667 |
+| # stars            | 4764.0 |
 
 ## Links
 - [Homepage](https://github.com/system-ui/theme-ui#readme)

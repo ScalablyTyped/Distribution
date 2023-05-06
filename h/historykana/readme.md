@@ -10,10 +10,10 @@ Analyse Japanese Furigana from key input history
 | ------------------ | :-------------: |
 | Full name          | historykana |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 13765.0 |
-| # stars            | 35.0 |
+| # downloads        | 12523.333333333334 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/inuscript/historykana#readme)

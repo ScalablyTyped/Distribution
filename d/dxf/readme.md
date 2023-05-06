@@ -10,10 +10,10 @@ DXF parser for node/browser
 | ------------------ | :-------------: |
 | Full name          | dxf |
 | Keywords           | DXF, Parser, SVG |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 6616.333333333333 |
-| # stars            | 214.0 |
+| # downloads        | 8298.0 |
+| # stars            | 233.0 |
 
 ## Links
 - [Homepage](https://github.com/skymakerolof/dxf)

@@ -12,7 +12,7 @@ DevExtreme virtual DOM common components
 | Keywords           | - |
 | # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 196936.33333333334 |
+| # downloads        | 257043.66666666666 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Add classes, identifiers and attributes to your markdown with {} curly brackets,
 | ------------------ | :-------------: |
 | Full name          | markdown-it-attrs |
 | Keywords           | commonmark, markdown, markdown-it, markdown-it-plugin, attributes, classes, ids, identifiers, curly brackets, pandoc, header_attributes |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 126523.33333333333 |
-| # stars            | 222.0 |
+| # downloads        | 189041.33333333334 |
+| # stars            | 241.0 |
 
 ## Links
 - [Homepage](https://github.com/arve0/markdown-it-attrs)

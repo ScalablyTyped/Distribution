@@ -10,10 +10,10 @@ Formats ICU Message strings with number, date, plural, and select placeholders t
 | ------------------ | :-------------: |
 | Full name          | intl-messageformat |
 | Keywords           | i18n, intl, internationalization, localization, globalization, messageformat, parser, plural, icu |
-| # releases         | 76 |
+| # releases         | 67 |
 | # dependents       | 0.0 |
-| # downloads        | 9532550.333333334 |
-| # stars            | 13324.0 |
+| # downloads        | 1.1123430333333334E7 |
+| # stars            | 13464.0 |
 
 ## Links
 - [Homepage](https://github.com/formatjs/formatjs)

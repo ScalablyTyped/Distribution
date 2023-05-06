@@ -12,8 +12,8 @@ Named Node builder
 | Keywords           | namednode, namespace, rdf, rdfjs |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 54408.666666666664 |
-| # stars            | 5.0 |
+| # downloads        | 68530.66666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/namespace)

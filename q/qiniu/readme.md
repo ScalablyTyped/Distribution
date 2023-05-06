@@ -10,10 +10,10 @@ Node wrapper for Qiniu Resource (Cloud) Storage API
 | ------------------ | :-------------: |
 | Full name          | qiniu |
 | Keywords           | cloud, storage, s3, qiniu, web-service |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 29548.666666666668 |
-| # stars            | 565.0 |
+| # downloads        | 22349.666666666668 |
+| # stars            | 573.0 |
 
 ## Links
 - [Homepage](https://github.com/qiniu/nodejs-sdk#readme)

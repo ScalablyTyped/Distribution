@@ -10,10 +10,10 @@ Tiny 200b functional Event Emitter / pubsub.
 | ------------------ | :-------------: |
 | Full name          | mitt |
 | Keywords           | events, eventemitter, emitter, pubsub |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 7172500.0 |
-| # stars            | 7726.0 |
+| # downloads        | 7874993.0 |
+| # stars            | 8298.0 |
 
 ## Links
 - [Homepage](https://github.com/developit/mitt)

@@ -12,7 +12,7 @@ Continuation Local Storage made easy
 | Keywords           | threading, shared, context, middleware |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2197.6666666666665 |
+| # downloads        | 1661.0 |
 | # stars            | 11.0 |
 
 ## Links

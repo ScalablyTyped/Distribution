@@ -10,10 +10,10 @@ Typings are for version 3.0
 | ------------------ | :-------------: |
 | Full name          | noise-handshake |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 2330.3333333333335 |
-| # stars            | 12.0 |
+| # downloads        | 4281.333333333333 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/chm-diederichs/noise-handshake#readme)

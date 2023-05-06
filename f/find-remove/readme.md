@@ -10,10 +10,10 @@ recursively finds files and/or directories by filter options from a start direct
 | ------------------ | :-------------: |
 | Full name          | find-remove |
 | Keywords           | file, remove, rmdir, unlink, find, filter, recursive, fs, delete, extension, file stats |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 48962.333333333336 |
-| # stars            | 55.0 |
+| # downloads        | 50447.333333333336 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/binarykitchen/find-remove#readme)

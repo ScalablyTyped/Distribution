@@ -10,10 +10,10 @@ Registrar interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-registrar |
 | Keywords           | interface, libp2p |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 2590.3333333333335 |
-| # stars            | 67.0 |
+| # downloads        | 22929.666666666668 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interface-registrar#readme)

@@ -10,10 +10,10 @@ vfile utility to create a virtual message
 | ------------------ | :-------------: |
 | Full name          | vfile-message |
 | Keywords           | vfile, vfile-util, util, utility, virtual, file, message |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 3.2622059333333332E7 |
-| # stars            | 8.0 |
+| # downloads        | 3.6824377E7 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/vfile/vfile-message#readme)

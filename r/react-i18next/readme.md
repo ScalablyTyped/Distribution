@@ -10,10 +10,10 @@ Internationalization for react done right. Using the i18next i18n ecosystem.
 | ------------------ | :-------------: |
 | Full name          | react-i18next |
 | Keywords           | i18next, internationalization, i18n, translation, localization, l10n, globalization, react, reactjs |
-| # releases         | 64 |
+| # releases         | 58 |
 | # dependents       | 0.0 |
-| # downloads        | 7493596.333333333 |
-| # stars            | 7668.0 |
+| # downloads        | 8691090.0 |
+| # stars            | 7918.0 |
 
 ## Links
 - [Homepage](https://github.com/i18next/react-i18next)

@@ -10,10 +10,10 @@ Exposes a SteamID object class for easy SteamID management
 | ------------------ | :-------------: |
 | Full name          | steamid |
 | Keywords           | steam, steamid, steam account |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 75408.33333333333 |
-| # stars            | 55.0 |
+| # downloads        | 96951.33333333333 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/DoctorMcKay/node-steamid)

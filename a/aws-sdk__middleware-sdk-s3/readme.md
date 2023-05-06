@@ -10,10 +10,10 @@ Typings are for version 3.209.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-sdk-s3 |
 | Keywords           | - |
-| # releases         | 66 |
+| # releases         | 77 |
 | # dependents       | 0.0 |
-| # downloads        | 5848819.333333333 |
-| # stars            | 1854.0 |
+| # downloads        | 7575398.0 |
+| # stars            | 2029.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-sdk-s3)

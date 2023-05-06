@@ -10,10 +10,10 @@ Swell JS library for client-side stores
 | ------------------ | :-------------: |
 | Full name          | swell-js |
 | Keywords           | - |
-| # releases         | 59 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 19927.666666666668 |
-| # stars            | 71.0 |
+| # downloads        | 21201.0 |
+| # stars            | 86.0 |
 
 ## Links
 - [Homepage](https://github.com/swellstores/swell-js#readme)

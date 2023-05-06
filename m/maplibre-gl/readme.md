@@ -10,10 +10,10 @@ BSD licensed community fork of mapbox-gl, a WebGL interactive maps library
 | ------------------ | :-------------: |
 | Full name          | maplibre-gl |
 | Keywords           | - |
-| # releases         | 54 |
+| # releases         | 49 |
 | # dependents       | 0.0 |
-| # downloads        | 362540.0 |
-| # stars            | 3526.0 |
+| # downloads        | 495477.3333333333 |
+| # stars            | 3859.0 |
 
 ## Links
 - [Homepage](https://github.com/maplibre/maplibre-gl-js#readme)

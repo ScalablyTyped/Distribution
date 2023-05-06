@@ -9,10 +9,10 @@ Typings are for version 1.0.0
 | ------------------ | :-------------: |
 | Full name          | gatsby-sharp |
 | Keywords           | gatsby, sharp |
-| # releases         | 60 |
+| # releases         | 85 |
 | # dependents       | 0.0 |
-| # downloads        | 858126.6666666666 |
-| # stars            | 53533.0 |
+| # downloads        | 1135847.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-sharp#readme)

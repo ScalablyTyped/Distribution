@@ -12,8 +12,8 @@ Secure, audited & minimal implementation of BIP32 hierarchical deterministic (HD
 | Keywords           | bip32, hierarchical, deterministic, hd key, bip0032, bip-32, bip39, micro, scure, mnemonic, phrase, code |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 174337.33333333334 |
-| # stars            | 13.0 |
+| # downloads        | 619336.0 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://paulmillr.com/)

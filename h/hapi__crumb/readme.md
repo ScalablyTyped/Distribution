@@ -12,7 +12,7 @@ CSRF crumb generation and validation plugin
 | Keywords           | hapi, plugin, cookies, csrf, session |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 23967.0 |
+| # downloads        | 22083.666666666668 |
 | # stars            | 172.0 |
 
 ## Links

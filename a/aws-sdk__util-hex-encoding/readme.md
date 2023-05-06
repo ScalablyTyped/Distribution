@@ -12,8 +12,8 @@ Converts binary buffers to and from lowercase hexadecimal encoding
 | Keywords           | - |
 | # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 1.6265932333333334E7 |
-| # stars            | 1851.0 |
+| # downloads        | 1.8799652666666668E7 |
+| # stars            | 1939.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-hex-encoding)

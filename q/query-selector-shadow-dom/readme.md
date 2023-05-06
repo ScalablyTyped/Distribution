@@ -10,15 +10,15 @@ use querySelector syntax to search for nodes inside of (nested) shadow roots
 | ------------------ | :-------------: |
 | Full name          | query-selector-shadow-dom |
 | Keywords           | webcomponents, puppeteer, playwright, automation, queryselector, shadowdom, web-components, testing, webdriver, protractor, selenium, webdriverio, codeceptjs |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1879612.0 |
-| # stars            | 165.0 |
+| # downloads        | 1744700.6666666667 |
+| # stars            | 191.0 |
 
 ## Links
-- [Homepage](https://github.com/Georgegriff/query-selector-shadow-dom#readme)
-- [Bugs](https://github.com/Georgegriff/query-selector-shadow-dom/issues)
-- [Repository](https://github.com/Georgegriff/query-selector-shadow-dom)
+- [Homepage](https://github.com/webdriverio/query-selector-shadow-dom#readme)
+- [Bugs](https://github.com/webdriverio/query-selector-shadow-dom/issues)
+- [Repository](https://github.com/webdriverio/query-selector-shadow-dom)
 - [Npm](https://www.npmjs.com/package/query-selector-shadow-dom)
     
 

@@ -10,10 +10,10 @@ Tokenizes a string that represents a regular expression.
 | ------------------ | :-------------: |
 | Full name          | ret |
 | Keywords           | regex, regexp, regular expression, parser, tokenizer |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 7.797446466666667E7 |
-| # stars            | 80.0 |
+| # downloads        | 7.659057466666667E7 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/fent/ret.js#readme)

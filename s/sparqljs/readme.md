@@ -10,12 +10,15 @@ A parser for the SPARQL query language
 | ------------------ | :-------------: |
 | Full name          | sparqljs |
 | Keywords           | sparql, rdf, query, parser |
-| # releases         | 15 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 27581.0 |
-| # stars            | 300.0 |
+| # downloads        | 25984.0 |
+| # stars            | 312.0 |
 
 ## Links
+- [Homepage](https://github.com/RubenVerborgh/SPARQL.js#readme)
+- [Bugs](https://github.com/RubenVerborgh/SPARQL.js/issues)
+- [Repository](https://github.com/RubenVerborgh/SPARQL.js)
 - [Npm](https://www.npmjs.com/package/sparqljs)
     
 

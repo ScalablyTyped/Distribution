@@ -10,10 +10,10 @@ Umbrella package for most common Ethers libraries.
 | ------------------ | :-------------: |
 | Full name          | ethers |
 | Keywords           | Ethereum, ethers |
-| # releases         | 66 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 3716665.6666666665 |
-| # stars            | 5723.0 |
+| # downloads        | 4181942.3333333335 |
+| # stars            | 6181.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

@@ -10,15 +10,15 @@ Convert negative index to positive starting from the end
 | ------------------ | :-------------: |
 | Full name          | negative-index |
 | Keywords           | normalize-offset, negative, index, slice, array, rotate, mod |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1501.0 |
+| # downloads        | 1427.3333333333333 |
 | # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/dy/negative-index#readme)
-- [Bugs](https://github.com/dy/negative-index/issues)
-- [Repository](https://github.com/dy/negative-index)
+- [Homepage](https://github.com/dfcreative/negative-index#readme)
+- [Bugs](https://github.com/dfcreative/negative-index/issues)
+- [Repository](https://github.com/dfcreative/negative-index)
 - [Npm](https://www.npmjs.com/package/negative-index)
     
 

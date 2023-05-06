@@ -10,9 +10,9 @@ Nginstack Web Framework. See the [nginstack site](https://nginstack.com) for mor
 | ------------------ | :-------------: |
 | Full name          | @nginstack/web-framework |
 | Keywords           | - |
-| # releases         | 246 |
+| # releases         | 238 |
 | # dependents       | 0.0 |
-| # downloads        | 4222.333333333333 |
+| # downloads        | 2333.6666666666665 |
 | # stars            | ? |
 
 ## Links

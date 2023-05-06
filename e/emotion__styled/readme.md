@@ -10,10 +10,10 @@ styled API for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/styled |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2904853333333332E7 |
-| # stars            | 15356.0 |
+| # downloads        | 2.3324461E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

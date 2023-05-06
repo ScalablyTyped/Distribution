@@ -10,10 +10,10 @@ Keychain interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-keychain |
 | Keywords           | interface, libp2p |
-| # releases         | 6 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 98.66666666666667 |
-| # stars            | 67.0 |
+| # downloads        | 35882.333333333336 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interface-keychain#readme)

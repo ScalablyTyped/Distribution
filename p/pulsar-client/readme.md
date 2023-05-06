@@ -12,11 +12,11 @@ Pulsar Node.js client
 | Keywords           | - |
 | # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 11047.0 |
-| # stars            | 101.0 |
+| # downloads        | 12655.333333333334 |
+| # stars            | 113.0 |
 
 ## Links
-- [Homepage](https://github.com/apache/pulsar-client-node#readme)
+- [Homepage](https://pulsar.apache.org/docs/en/client-libraries-node)
 - [Bugs](https://github.com/apache/pulsar-client-node/issues)
 - [Repository](https://github.com/apache/pulsar-client-node)
 - [Npm](https://www.npmjs.com/package/pulsar-client)

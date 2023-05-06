@@ -10,12 +10,15 @@ An implementation of the W3C High Resolution Time Level 2 specification.
 | ------------------ | :-------------: |
 | Full name          | w3c-hr-time |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 6.5394723666666664E7 |
-| # stars            | 9.0 |
+| # downloads        | 6.5268097E7 |
+| # stars            | ? |
 
 ## Links
+- [Homepage](https://github.com/jsdom/w3c-hr-time#readme)
+- [Bugs](https://github.com/jsdom/w3c-hr-time/issues)
+- [Repository](https://github.com/jsdom/w3c-hr-time)
 - [Npm](https://www.npmjs.com/package/w3c-hr-time)
     
 

@@ -12,8 +12,8 @@ Deterministic and safely JSON.stringify to quickly serialize JavaScript objects
 | Keywords           | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 2.3295762E7 |
-| # stars            | 114.0 |
+| # downloads        | 2.8411431333333332E7 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/BridgeAR/safe-stable-stringify#readme)

@@ -10,10 +10,10 @@ Promise-based log library using console log.
 | ------------------ | :-------------: |
 | Full name          | @algolia/logger-console |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 2785759.6666666665 |
-| # stars            | 1133.0 |
+| # downloads        | 3476303.0 |
+| # stars            | 1172.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

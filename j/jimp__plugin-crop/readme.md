@@ -12,7 +12,7 @@ crop an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5079324.0 |
+| # downloads        | 5723370.333333333 |
 | # stars            | ? |
 
 ## Links

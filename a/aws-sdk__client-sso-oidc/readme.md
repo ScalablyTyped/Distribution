@@ -10,10 +10,10 @@ AWS SDK for JavaScript Sso Oidc Client for Node.js, Browser and React Native
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-sso-oidc |
 | Keywords           | - |
-| # releases         | 130 |
+| # releases         | 139 |
 | # dependents       | 0.0 |
-| # downloads        | 28752.0 |
-| # stars            | 1962.0 |
+| # downloads        | 3900978.3333333335 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso-oidc)

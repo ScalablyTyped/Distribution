@@ -12,8 +12,8 @@ Ready-to-use minified plotly.js distributed bundle.
 | Keywords           | graphing, plotting, data, visualization, plotly |
 | # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 101741.0 |
-| # stars            | 14990.0 |
+| # downloads        | 135559.0 |
+| # stars            | 15309.0 |
 
 ## Links
 - [Homepage](https://github.com/plotly/plotly.js#readme)

@@ -10,10 +10,10 @@ Provides the Nu Html Checker «vnu.jar» file
 | ------------------ | :-------------: |
 | Full name          | vnu-jar |
 | Keywords           | checker, html, lint, linter, jar, nu, validator, vnu, w3c |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 305954.3333333333 |
-| # stars            | 1250.0 |
+| # downloads        | 288687.6666666667 |
+| # stars            | 1300.0 |
 
 ## Links
 - [Homepage](https://github.com/validator/validator#readme)

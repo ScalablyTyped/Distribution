@@ -10,10 +10,10 @@ focus on the essential experience
 | ------------------ | :-------------: |
 | Full name          | grommet |
 | Keywords           | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
-| # releases         | 24 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 111890.0 |
-| # stars            | 8016.0 |
+| # downloads        | 144206.0 |
+| # stars            | 8118.0 |
 
 ## Links
 - [Homepage](http://grommet.io)

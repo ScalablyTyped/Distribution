@@ -4,15 +4,15 @@
 Typings are for version 4.5
 
 ## Library description:
-A simple express middleware for resizing images using sharp and pipes
+Express middleware for image transforms with sharp
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sharpie |
-| Keywords           | resize, convert, image, express, sharp, ico, favicon |
-| # releases         | 10 |
+| Keywords           | resize, image, express, sharp, favicon |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 176.66666666666666 |
+| # downloads        | 251.66666666666666 |
 | # stars            | 4.0 |
 
 ## Links

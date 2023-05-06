@@ -10,10 +10,10 @@ PrimeReact is an open source UI library for React featuring a rich set of 80+ co
 | ------------------ | :-------------: |
 | Full name          | primereact |
 | Keywords           | primereact, react, hooks, next, nextjs, ui-kit, ui library, component library, material, material design, bootstrap, tailwind theme, dark theme, react components, responsive components |
-| # releases         | 37 |
+| # releases         | 41 |
 | # dependents       | 0.0 |
-| # downloads        | 258057.66666666666 |
-| # stars            | 3102.0 |
+| # downloads        | 314796.6666666667 |
+| # stars            | 3341.0 |
 
 ## Links
 - [Homepage](https://www.primefaces.org/primereact)

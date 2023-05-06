@@ -10,10 +10,10 @@ Minimal key-value cache interface
 | ------------------ | :-------------: |
 | Full name          | @apollo/utils.keyvaluecache |
 | Keywords           | apollo, graphql, typescript, node |
-| # releases         | 4 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3650906.3333333335 |
-| # stars            | 14.0 |
+| # downloads        | 4788960.333333333 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-utils#readme)

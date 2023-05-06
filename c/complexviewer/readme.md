@@ -10,10 +10,10 @@ A network visualisation that displays molecular interaction data, including deta
 | ------------------ | :-------------: |
 | Full name          | complexviewer |
 | Keywords           | biojs, protein, interactions, complexes |
-| # releases         | 23 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 217.66666666666666 |
-| # stars            | 10.0 |
+| # downloads        | 178.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/MICommunity/ComplexViewer#readme)

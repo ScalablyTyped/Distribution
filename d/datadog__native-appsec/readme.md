@@ -10,12 +10,15 @@ Node.js bindings for libddwaf
 | ------------------ | :-------------: |
 | Full name          | @datadog/native-appsec |
 | Keywords           | datadog, appsec |
-| # releases         | 18 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 1656137.0 |
+| # downloads        | 3511057.0 |
 | # stars            | 0.0 |
 
 ## Links
+- [Homepage](https://github.com/DataDog/dd-native-appsec-js#readme)
+- [Bugs](https://github.com/DataDog/dd-native-appsec-js/issues)
+- [Repository](https://github.com/DataDog/dd-native-appsec-js)
 - [Npm](https://www.npmjs.com/package/%40datadog%2Fnative-appsec)
     
 

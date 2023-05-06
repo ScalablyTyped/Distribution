@@ -10,10 +10,10 @@ Typings are for version 3.2.45
 | ------------------ | :-------------: |
 | Full name          | @vue/reactivity |
 | Keywords           | vue |
-| # releases         | 78 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 4102638.0 |
-| # stars            | 32475.0 |
+| # downloads        | 5212898.0 |
+| # stars            | 33643.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/core/tree/main/packages/reactivity#readme)

@@ -10,10 +10,10 @@ A light-weight module that brings Fetch API to node.js
 | ------------------ | :-------------: |
 | Full name          | node-fetch |
 | Keywords           | fetch, http, promise, request, curl, wget, xhr, whatwg |
-| # releases         | 27 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4281281566666666E8 |
-| # stars            | 7766.0 |
+| # downloads        | 1.55127648E8 |
+| # stars            | 8075.0 |
 
 ## Links
 - [Homepage](https://github.com/node-fetch/node-fetch)

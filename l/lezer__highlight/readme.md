@@ -10,10 +10,10 @@ Highlighting system for Lezer parse trees
 | ------------------ | :-------------: |
 | Full name          | @lezer/highlight |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 664256.6666666666 |
-| # stars            | 5.0 |
+| # downloads        | 984649.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/lezer-parser/highlight#readme)

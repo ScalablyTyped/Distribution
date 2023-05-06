@@ -10,13 +10,15 @@ Single component release of accordion
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-accordion |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 15729.333333333334 |
-| # stars            | 4.0 |
+| # downloads        | 1565.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)
+- [Bugs](https://github.com/Semantic-Org/Semantic-UI/issues)
+- [Repository](https://github.com/Semantic-Org/UI-Accordion)
 - [Npm](https://www.npmjs.com/package/semantic-ui-accordion)
     
 

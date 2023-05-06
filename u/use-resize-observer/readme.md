@@ -10,10 +10,10 @@ A React hook that allows you to use a ResizeObserver to measure an element's siz
 | ------------------ | :-------------: |
 | Full name          | use-resize-observer |
 | Keywords           | react, hook, react hook, resize observer, resize observer hook, resize observer react hook, use-resize-observer, useresizeobserver, resize hook, size hook, container query, css in js, measure, size, resize |
-| # releases         | 11 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1274762.0 |
-| # stars            | 490.0 |
+| # downloads        | 1754724.6666666667 |
+| # stars            | 520.0 |
 
 ## Links
 - [Homepage](https://github.com/ZeeCoder/use-resize-observer#readme)

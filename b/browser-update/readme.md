@@ -10,10 +10,10 @@ Remind users to update their browser in an unobtrusive way.
 | ------------------ | :-------------: |
 | Full name          | browser-update |
 | Keywords           | browser, web |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 107999.66666666667 |
-| # stars            | 335.0 |
+| # downloads        | 87747.0 |
+| # stars            | 345.0 |
 
 ## Links
 - [Homepage](https://browser-update.org)

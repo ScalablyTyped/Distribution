@@ -12,7 +12,7 @@ Efficiently query ENAMDICT using Node.js.
 | Keywords           | ja, jp, japanese, romaji, language |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 120.33333333333333 |
+| # downloads        | 105.0 |
 | # stars            | 13.0 |
 
 ## Links

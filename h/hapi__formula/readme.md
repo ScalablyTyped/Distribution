@@ -12,8 +12,8 @@ Math and string formula parser.
 | Keywords           | formula, parser, math, string |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 3577944.6666666665 |
-| # stars            | 6.0 |
+| # downloads        | 3157604.3333333335 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/formula#readme)

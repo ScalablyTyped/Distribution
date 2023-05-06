@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/invalid-dependency |
 | Keywords           | - |
-| # releases         | 51 |
+| # releases         | 62 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4934002E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1421155333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/invalid-dependency)

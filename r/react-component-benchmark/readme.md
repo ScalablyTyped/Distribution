@@ -10,12 +10,13 @@ A component utility for estimating benchmarks of React components
 | ------------------ | :-------------: |
 | Full name          | react-component-benchmark |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 234.66666666666666 |
+| # downloads        | 928.0 |
 | # stars            | ? |
 
 ## Links
+- [Homepage](https://github.com/paularmstrong/react-component-benchmark)
 - [Npm](https://www.npmjs.com/package/react-component-benchmark)
     
 

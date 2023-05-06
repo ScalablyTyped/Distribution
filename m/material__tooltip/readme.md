@@ -10,10 +10,10 @@ The Material Components Web tooltip component.
 | ------------------ | :-------------: |
 | Full name          | @material/tooltip |
 | Keywords           | material components, material design, tooltip |
-| # releases         | 712 |
+| # releases         | 769 |
 | # dependents       | 0.0 |
-| # downloads        | 75755.33333333333 |
-| # stars            | 16381.0 |
+| # downloads        | 260803.33333333334 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

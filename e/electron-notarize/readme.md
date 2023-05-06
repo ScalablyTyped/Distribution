@@ -10,15 +10,15 @@ Notarize your Electron app
 | ------------------ | :-------------: |
 | Full name          | electron-notarize |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1428663.6666666667 |
-| # stars            | 354.0 |
+| # downloads        | 992186.0 |
+| # stars            | 9.0 |
 
 ## Links
-- [Homepage](https://github.com/electron/electron-notarize#readme)
-- [Bugs](https://github.com/electron/electron-notarize/issues)
-- [Repository](https://github.com/electron/electron-notarize)
+- [Homepage](https://github.com/electron/notarize#readme)
+- [Bugs](https://github.com/electron/notarize/issues)
+- [Repository](https://github.com/electron/notarize)
 - [Npm](https://www.npmjs.com/package/electron-notarize)
     
 

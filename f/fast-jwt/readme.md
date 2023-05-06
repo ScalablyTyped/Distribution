@@ -10,10 +10,10 @@ Fast JSON Web Token implementation
 | ------------------ | :-------------: |
 | Full name          | fast-jwt |
 | Keywords           | jwt |
-| # releases         | 24 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 108319.66666666667 |
-| # stars            | 217.0 |
+| # downloads        | 181293.66666666666 |
+| # stars            | 242.0 |
 
 ## Links
 - [Homepage](https://github.com/nearform/fast-jwt)

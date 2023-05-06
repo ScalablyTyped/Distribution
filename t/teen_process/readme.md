@@ -10,9 +10,9 @@ A grown up version of Node's spawn/exec
 | ------------------ | :-------------: |
 | Full name          | teen_process |
 | Keywords           | child_process, process management, subprocess, spawn, exec, process, child |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 456282.3333333333 |
+| # downloads        | 542489.6666666666 |
 | # stars            | 21.0 |
 
 ## Links

@@ -9,10 +9,10 @@ Typings are for version 9.3.0
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cli-platform-ios |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 3831067.3333333335 |
-| # stars            | 1890.0 |
+| # downloads        | 4808740.333333333 |
+| # stars            | 1977.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/cli#readme)

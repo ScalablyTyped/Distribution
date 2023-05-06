@@ -10,10 +10,10 @@ HyperFormula is a JavaScript engine for efficient processing of spreadsheet-like
 | ------------------ | :-------------: |
 | Full name          | hyperformula |
 | Keywords           | formula, spreadsheet, calculation, data, compute, tabular-data, operation, conversion, arithmetic, concatenation, comparison, logical, formulas, parser, excel, office, workbook, worksheet, sheet, open formula, openformula |
-| # releases         | 16 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 117301.33333333333 |
-| # stars            | 1257.0 |
+| # downloads        | 158272.33333333334 |
+| # stars            | 1325.0 |
 
 ## Links
 - [Homepage](https://hyperformula.handsontable.com/)

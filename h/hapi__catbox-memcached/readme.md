@@ -10,9 +10,9 @@ Memcached adapter for catbox
 | ------------------ | :-------------: |
 | Full name          | @hapi/catbox-memcached |
 | Keywords           | cache, catbox, memcached |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1390.3333333333333 |
+| # downloads        | 1609.0 |
 | # stars            | 11.0 |
 
 ## Links

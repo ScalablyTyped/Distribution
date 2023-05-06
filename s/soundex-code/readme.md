@@ -10,10 +10,10 @@ Soundex phonetic algorithm
 | ------------------ | :-------------: |
 | Full name          | soundex-code |
 | Keywords           | natural, language, phonetics, soundex, cli, bin |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1790.3333333333333 |
-| # stars            | 25.0 |
+| # downloads        | 1798.6666666666667 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://words.github.io/soundex-code/)

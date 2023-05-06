@@ -10,10 +10,10 @@ A helper utility for logging of WebdriverIO packages
 | ------------------ | :-------------: |
 | Full name          | @wdio/logger |
 | Keywords           | webdriver, wdio, wdio-utility |
-| # releases         | 28 |
+| # releases         | 52 |
 | # dependents       | 0.0 |
-| # downloads        | 4236547.666666667 |
-| # stars            | 7696.0 |
+| # downloads        | 5630878.0 |
+| # stars            | 7889.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-logger)

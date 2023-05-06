@@ -10,10 +10,10 @@ Allows cookies with every Node.js HTTP clients.
 | ------------------ | :-------------: |
 | Full name          | http-cookie-agent |
 | Keywords           | agent, axios, cookies, fetch, got, http, https, needle, node-fetch, phin, request, superagent, tough-cookie, urllib, undici |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 157537.66666666666 |
-| # stars            | 10.0 |
+| # downloads        | 293384.3333333333 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/3846masa/http-cookie-agent#readme)

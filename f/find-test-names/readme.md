@@ -10,10 +10,10 @@ Given a Mocha / Cypress spec file, returns the list of suite and test names
 | ------------------ | :-------------: |
 | Full name          | find-test-names |
 | Keywords           | mocha, cypress, tests |
-| # releases         | 38 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 666354.6666666666 |
-| # stars            | 5.0 |
+| # downloads        | 1081575.6666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/bahmutov/find-test-names#readme)

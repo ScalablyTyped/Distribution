@@ -10,10 +10,10 @@ PostCSS plugin to use CSS Modules everywhere
 | ------------------ | :-------------: |
 | Full name          | postcss-modules |
 | Keywords           | postcss, css, postcss-plugin, modules, css modules, components |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 4240814.0 |
-| # stars            | 1450.0 |
+| # downloads        | 4688818.666666667 |
+| # stars            | 1470.0 |
 
 ## Links
 - [Homepage](https://github.com/css-modules/postcss-modules#readme)

@@ -10,9 +10,9 @@ United js test tools
 | ------------------ | :-------------: |
 | Full name          | mochaccino |
 | Keywords           | mocha, test, bdd, tdd |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 2983.3333333333335 |
+| # downloads        | 2536.6666666666665 |
 | # stars            | ? |
 
 ## Links

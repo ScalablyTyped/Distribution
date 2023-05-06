@@ -10,10 +10,10 @@ A small library to detect which features of WebAssembly are supported in your cu
 | ------------------ | :-------------: |
 | Full name          | wasm-feature-detect |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 59839.666666666664 |
-| # stars            | 349.0 |
+| # downloads        | 124783.0 |
+| # stars            | 400.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChromeLabs/wasm-feature-detect#readme)

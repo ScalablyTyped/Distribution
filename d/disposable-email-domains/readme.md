@@ -12,8 +12,8 @@ A list of [disposable email domains](http://en.wikipedia.org/wiki/Disposable_ema
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 153288.0 |
-| # stars            | 1126.0 |
+| # downloads        | 202632.66666666666 |
+| # stars            | 1136.0 |
 
 ## Links
 - [Homepage](https://github.com/ivolo/disposable-email-domains#readme)

@@ -10,12 +10,15 @@ hast utility to check if a node has a property
 | ------------------ | :-------------: |
 | Full name          | hast-util-has-property |
 | Keywords           | unist, hast, hast-util, util, utility, html, element, property, check |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1006218.3333333334 |
+| # downloads        | 1274644.6666666667 |
 | # stars            | 0.0 |
 
 ## Links
+- [Homepage](https://github.com/syntax-tree/hast-util-has-property#readme)
+- [Bugs](https://github.com/syntax-tree/hast-util-has-property/issues)
+- [Repository](https://github.com/syntax-tree/hast-util-has-property)
 - [Npm](https://www.npmjs.com/package/hast-util-has-property)
     
 

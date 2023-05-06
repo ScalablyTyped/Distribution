@@ -10,9 +10,9 @@ Native JavaScript library from nginstack Engine. See the [nginstack site](nginst
 | ------------------ | :-------------: |
 | Full name          | @nginstack/engine |
 | Keywords           | - |
-| # releases         | 426 |
+| # releases         | 368 |
 | # dependents       | 0.0 |
-| # downloads        | 6538.0 |
+| # downloads        | 3704.0 |
 | # stars            | ? |
 
 ## Links

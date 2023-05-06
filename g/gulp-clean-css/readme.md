@@ -12,10 +12,13 @@ Minify css with clean-css.
 | Keywords           | css, clean, minify, uglify, clean-css, minify-css, gulp-minify-css, gulp-clean-css, gulpplugin, gulpfriendly |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 931709.6666666666 |
-| # stars            | 643.0 |
+| # downloads        | 937726.3333333334 |
+| # stars            | 642.0 |
 
 ## Links
+- [Homepage](https://github.com/scniro/gulp-clean-css#readme)
+- [Bugs](https://github.com/scniro/gulp-clean-css/issues)
+- [Repository](https://github.com/scniro/gulp-clean-css)
 - [Npm](https://www.npmjs.com/package/gulp-clean-css)
     
 

@@ -4,7 +4,7 @@
 Typings are for version 2.3.1
 
 ## Library description:
-[![NPM version][npm-image]][npm-url] [![build status][travis-image]][travis-url] [![Test coverage][codecov-image]][codecov-url] [![David deps][david-image]][david-url] [![Known Vulnerabilities][snyk-image]][snyk-url] [![npm download][download-image]][down
+egg-errors provide two kinds of errors that is Error and Exception.
 
 |                    |                 |
 | ------------------ | :-------------: |
@@ -12,12 +12,12 @@ Typings are for version 2.3.1
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 158831.0 |
+| # downloads        | 302942.6666666667 |
 | # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/eggjs/egg-errors#readme)
-- [Bugs](https://github.com/eggjs/egg-errors/issues)
+- [Bugs](https://github.com/eggjs/egg/issues)
 - [Repository](https://github.com/eggjs/egg-errors)
 - [Npm](https://www.npmjs.com/package/egg-errors)
     

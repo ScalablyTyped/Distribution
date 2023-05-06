@@ -10,10 +10,10 @@ Crypto primitives for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/crypto |
 | Keywords           | IPFS, crypto, libp2p, rsa, secp256k1 |
-| # releases         | 23 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 24717.666666666668 |
-| # stars            | 74.0 |
+| # downloads        | 39791.666666666664 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-crypto#readme)

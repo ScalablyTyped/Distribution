@@ -10,10 +10,10 @@ Utilities for providing and consuming the window/document objects even across po
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-window-provider |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 611311.3333333334 |
-| # stars            | 13903.0 |
+| # downloads        | 658018.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

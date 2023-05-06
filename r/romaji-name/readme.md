@@ -10,10 +10,10 @@ Normalize and fix common issues with Romaji-based Japanese names.
 | ------------------ | :-------------: |
 | Full name          | romaji-name |
 | Keywords           | ja, jp, japanese, romaji, language |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 111.66666666666667 |
-| # stars            | 37.0 |
+| # downloads        | 105.33333333333333 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/jeresig/node-romaji-name#readme)

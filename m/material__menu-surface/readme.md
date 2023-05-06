@@ -10,10 +10,10 @@ The Material Components for the web menu surface component
 | ------------------ | :-------------: |
 | Full name          | @material/menu-surface |
 | Keywords           | material components, material design, menu surface |
-| # releases         | 714 |
+| # releases         | 773 |
 | # dependents       | 0.0 |
-| # downloads        | 309477.3333333333 |
-| # stars            | 16381.0 |
+| # downloads        | 474030.3333333333 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

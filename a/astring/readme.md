@@ -10,12 +10,15 @@ JavaScript code generator from an ESTree-compliant AST.
 | ------------------ | :-------------: |
 | Full name          | astring |
 | Keywords           | ast, codegen, code generator, estree, astravel |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 1786475.0 |
-| # stars            | 934.0 |
+| # downloads        | 2289028.0 |
+| # stars            | 983.0 |
 
 ## Links
+- [Homepage](https://github.com/davidbonnet/astring#readme)
+- [Bugs](https://github.com/davidbonnet/astring/issues)
+- [Repository](https://github.com/davidbonnet/astring)
 - [Npm](https://www.npmjs.com/package/astring)
     
 

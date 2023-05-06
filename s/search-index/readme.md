@@ -10,10 +10,10 @@ A network resilient, persistent full-text search library for the browser and Nod
 | ------------------ | :-------------: |
 | Full name          | search-index |
 | Keywords           | search, elasticsearch, elastic, lunr.js, flexsearch, norch, solr |
-| # releases         | 23 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 42721.0 |
-| # stars            | 1285.0 |
+| # downloads        | 90667.66666666667 |
+| # stars            | 1308.0 |
 
 ## Links
 - [Homepage](https://fergiemcdowall.github.io/search-index/)

@@ -10,10 +10,10 @@ Double Metaphone algorithm
 | ------------------ | :-------------: |
 | Full name          | double-metaphone |
 | Keywords           | lawrence, philips, double, metaphone, cli, bin |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 4300.666666666667 |
-| # stars            | 66.0 |
+| # downloads        | 4879.333333333333 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://words.github.io/double-metaphone/)

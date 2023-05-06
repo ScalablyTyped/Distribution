@@ -10,10 +10,10 @@ Render text that is announced to screen readers but visually hidden.
 | ------------------ | :-------------: |
 | Full name          | @reach/visually-hidden |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 1858834.6666666667 |
-| # stars            | 5390.0 |
+| # downloads        | 1567285.0 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)

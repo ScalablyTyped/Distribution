@@ -10,10 +10,10 @@ Web3 core tools for sub-packages. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 2628170.3333333335 |
-| # stars            | 16013.0 |
+| # downloads        | 2545919.0 |
+| # stars            | 16771.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

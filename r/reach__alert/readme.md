@@ -10,12 +10,15 @@ Screen-reader-friendly alert messages.
 | ------------------ | :-------------: |
 | Full name          | @reach/alert |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 1255524.0 |
-| # stars            | 5390.0 |
+| # downloads        | 1068547.3333333333 |
+| # stars            | 5565.0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Falert)
     
 

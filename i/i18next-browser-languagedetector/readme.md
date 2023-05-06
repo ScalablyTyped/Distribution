@@ -10,10 +10,10 @@ language detector used in browser environment for i18next
 | ------------------ | :-------------: |
 | Full name          | i18next-browser-languagedetector |
 | Keywords           | i18next, i18next-languageDetector |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 2904944.0 |
-| # stars            | 597.0 |
+| # downloads        | 3262627.3333333335 |
+| # stars            | 629.0 |
 
 ## Links
 - [Homepage](https://github.com/i18next/i18next-browser-languageDetector)

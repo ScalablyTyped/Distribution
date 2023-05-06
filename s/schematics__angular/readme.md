@@ -9,10 +9,10 @@ Schematics specific to Angular
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @schematics/angular |
-| Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit, blueprints, code generation, schematics |
-| # releases         | 217 |
+| Keywords           | Angular CLI, Angular DevKit, angular, blueprints, code generation, devkit, schematics, sdk |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2465875333333334E7 |
+| # downloads        | 1.2578145333333334E7 |
 | # stars            | ? |
 
 ## Links

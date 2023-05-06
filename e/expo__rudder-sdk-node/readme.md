@@ -10,9 +10,9 @@ Compact fork of rudder-node-sdk
 | ------------------ | :-------------: |
 | Full name          | @expo/rudder-sdk-node |
 | Keywords           | analytics |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 664530.6666666666 |
+| # downloads        | 933280.0 |
 | # stars            | 0.0 |
 
 ## Links

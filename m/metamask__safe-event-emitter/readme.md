@@ -10,9 +10,9 @@ An EventEmitter that isolates the emitter from errors in handlers
 | ------------------ | :-------------: |
 | Full name          | @metamask/safe-event-emitter |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 680986.6666666666 |
+| # downloads        | 863721.3333333334 |
 | # stars            | ? |
 
 ## Links

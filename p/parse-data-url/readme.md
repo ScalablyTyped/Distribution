@@ -10,12 +10,15 @@ Parse data URL string
 | ------------------ | :-------------: |
 | Full name          | parse-data-url |
 | Keywords           | parse, data-uri, data-url, data, uri, url, datauri, dataurl |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 57735.333333333336 |
+| # downloads        | 78441.33333333333 |
 | # stars            | 15.0 |
 
 ## Links
+- [Homepage](https://github.com/killmenot/parse-data-url)
+- [Bugs](https://github.com/killmenot/parse-data-url/issues)
+- [Repository](https://github.com/killmenot/parse-data-url)
 - [Npm](https://www.npmjs.com/package/parse-data-url)
     
 

@@ -10,10 +10,10 @@ An ini encoder/decoder for node
 | ------------------ | :-------------: |
 | Full name          | ini |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1.43517504E8 |
-| # stars            | 667.0 |
+| # downloads        | 1.4543913733333334E8 |
+| # stars            | 690.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/ini#readme)

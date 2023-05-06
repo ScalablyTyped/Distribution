@@ -10,10 +10,10 @@ Minimalistic but perfect custom scrollbar plugin
 | ------------------ | :-------------: |
 | Full name          | perfect-scrollbar |
 | Keywords           | frontend, scroll, scrollbar |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2976514.6666666665 |
-| # stars            | 103.0 |
+| # downloads        | 3235804.3333333335 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://perfectscrollbar.com/)

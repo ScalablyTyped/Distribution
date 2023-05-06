@@ -10,10 +10,10 @@ apache zookeeper client (zookeeper async API v3.5.x - v3.8.x)
 | ------------------ | :-------------: |
 | Full name          | zookeeper |
 | Keywords           | apache, zookeeper, client, typescript |
-| # releases         | 23 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 10218.666666666666 |
-| # stars            | 457.0 |
+| # downloads        | 11834.333333333334 |
+| # stars            | 460.0 |
 
 ## Links
 - [Homepage](https://github.com/yfinkelstein/node-zookeeper#readme)

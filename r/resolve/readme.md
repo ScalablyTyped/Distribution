@@ -10,10 +10,10 @@ resolve like require.resolve() on behalf of files asynchronously and synchronous
 | ------------------ | :-------------: |
 | Full name          | resolve |
 | Keywords           | resolve, require, node, module |
-| # releases         | 11 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 2.40337296E8 |
-| # stars            | 693.0 |
+| # downloads        | 2.61330105E8 |
+| # stars            | 706.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/resolve#readme)

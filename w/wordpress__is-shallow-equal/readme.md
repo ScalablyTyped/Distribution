@@ -10,9 +10,9 @@ Test for shallow equality between two objects or arrays.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/is-shallow-equal |
 | Keywords           | wordpress, gutenberg, shallow, shallow-equal, shallowequal |
-| # releases         | 45 |
+| # releases         | 49 |
 | # dependents       | 0.0 |
-| # downloads        | 195028.0 |
+| # downloads        | 217975.0 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ A typescript implementation of gossipsub
 | ------------------ | :-------------: |
 | Full name          | @chainsafe/libp2p-gossipsub |
 | Keywords           | libp2p, pubsub, gossip |
-| # releases         | 21 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 10368.0 |
-| # stars            | 83.0 |
+| # downloads        | 22768.666666666668 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/ChainSafe/js-libp2p-gossipsub#readme)

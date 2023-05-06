@@ -10,10 +10,10 @@ A G plugin of renderer implementation with Canvas2D API
 | ------------------ | :-------------: |
 | Full name          | @antv/g-plugin-canvas-renderer |
 | Keywords           | antv, g |
-| # releases         | 126 |
+| # releases         | 148 |
 | # dependents       | 0.0 |
-| # downloads        | 2751.0 |
-| # stars            | 795.0 |
+| # downloads        | 3217.0 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

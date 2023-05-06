@@ -10,10 +10,10 @@ Typings are for version 3.209.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/smithy-client |
 | Keywords           | - |
-| # releases         | 70 |
+| # releases         | 78 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5720859E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.3840907E7 |
+| # stars            | 2036.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/smithy-client)

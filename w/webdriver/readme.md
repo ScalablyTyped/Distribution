@@ -10,10 +10,10 @@ A Node.js bindings implementation for the W3C WebDriver and Mobile JSONWire Prot
 | ------------------ | :-------------: |
 | Full name          | webdriver |
 | Keywords           | webdriver |
-| # releases         | 105 |
+| # releases         | 134 |
 | # dependents       | 0.0 |
-| # downloads        | 4057722.0 |
-| # stars            | 7720.0 |
+| # downloads        | 4996109.666666667 |
+| # stars            | 7901.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/webdriver)

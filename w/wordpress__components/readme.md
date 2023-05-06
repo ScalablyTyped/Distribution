@@ -12,7 +12,7 @@ UI components for WordPress.
 | Keywords           | wordpress, gutenberg, components |
 | # releases         | 109 |
 | # dependents       | 0.0 |
-| # downloads        | 189766.66666666666 |
+| # downloads        | 204676.66666666666 |
 | # stars            | ? |
 
 ## Links

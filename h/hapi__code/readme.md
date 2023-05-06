@@ -10,10 +10,10 @@ assertion library
 | ------------------ | :-------------: |
 | Full name          | @hapi/code |
 | Keywords           | test, expect, assertion |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 75795.33333333333 |
-| # stars            | 234.0 |
+| # downloads        | 59678.333333333336 |
+| # stars            | 233.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/code#readme)

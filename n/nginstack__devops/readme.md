@@ -10,9 +10,9 @@ Nginstack DevOps Library. See the [nginstack site](nginstack.com) for more infor
 | ------------------ | :-------------: |
 | Full name          | @nginstack/devops |
 | Keywords           | - |
-| # releases         | 186 |
+| # releases         | 147 |
 | # dependents       | 0.0 |
-| # downloads        | 3646.6666666666665 |
+| # downloads        | 2612.3333333333335 |
 | # stars            | ? |
 
 ## Links

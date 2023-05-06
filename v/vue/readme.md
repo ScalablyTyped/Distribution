@@ -10,10 +10,10 @@ The progressive JavaScript framework for building modern web UI.
 | ------------------ | :-------------: |
 | Full name          | vue |
 | Keywords           | vue |
-| # releases         | 111 |
+| # releases         | 113 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4116602666666666E7 |
-| # stars            | 32475.0 |
+| # downloads        | 1.5222166E7 |
+| # stars            | 33643.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/core/tree/main/packages/vue#readme)

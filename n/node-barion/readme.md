@@ -10,9 +10,9 @@ Node API library for Barion Smart Gateway electronic payment system.
 | ------------------ | :-------------: |
 | Full name          | node-barion |
 | Keywords           | node, barion, api, e-payment, payment, smart, gateway, online, money, transfer, 3d, secure, 3ds |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 260.3333333333333 |
+| # downloads        | 318.3333333333333 |
 | # stars            | 11.0 |
 
 ## Links

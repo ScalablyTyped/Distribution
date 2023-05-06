@@ -10,10 +10,10 @@ Typings are for version 3.211.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-cognito-identity |
 | Keywords           | - |
-| # releases         | 126 |
+| # releases         | 151 |
 | # dependents       | 0.0 |
-| # downloads        | 2286771.6666666665 |
-| # stars            | 1854.0 |
+| # downloads        | 5396642.0 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-provider-cognito-identity)

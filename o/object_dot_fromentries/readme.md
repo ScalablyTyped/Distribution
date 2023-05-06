@@ -10,12 +10,15 @@ ES proposal-spec-compliant Object.fromEntries shim.
 | ------------------ | :-------------: |
 | Full name          | object.fromentries |
 | Keywords           | Object.fromEntries, Object.entries, Object.values, Object.keys, entries, values, ES7, ES8, ES2017, shim, object, keys, polyfill, es-shim API |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 5.0692474666666664E7 |
-| # stars            | 33.0 |
+| # downloads        | 5.5617878E7 |
+| # stars            | 35.0 |
 
 ## Links
+- [Homepage](https://github.com/es-shims/Object.fromEntries#readme)
+- [Bugs](https://github.com/es-shims/Object.fromEntries/issues)
+- [Repository](https://github.com/es-shims/Object.fromEntries)
 - [Npm](https://www.npmjs.com/package/object.fromentries)
     
 

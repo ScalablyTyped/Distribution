@@ -10,9 +10,9 @@ Event emitter
 | ------------------ | :-------------: |
 | Full name          | @socket.io/component-emitter |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 3353526.0 |
+| # downloads        | 7326905.666666667 |
 | # stars            | 0.0 |
 
 ## Links

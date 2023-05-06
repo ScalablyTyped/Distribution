@@ -10,9 +10,9 @@ React components, HOCs and hooks to assist with tracking user activity with Reac
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/analytics-next |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 358903.3333333333 |
+| # downloads        | 350660.6666666667 |
 | # stars            | ? |
 
 ## Links

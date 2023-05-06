@@ -12,7 +12,7 @@ displace an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5077334.333333333 |
+| # downloads        | 5720037.333333333 |
 | # stars            | ? |
 
 ## Links

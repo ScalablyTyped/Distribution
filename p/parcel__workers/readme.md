@@ -10,10 +10,10 @@ Blazing fast, zero configuration web application bundler
 | ------------------ | :-------------: |
 | Full name          | @parcel/workers |
 | Keywords           | - |
-| # releases         | 361 |
+| # releases         | 332 |
 | # dependents       | 0.0 |
-| # downloads        | 2267922.0 |
-| # stars            | 41287.0 |
+| # downloads        | 2229136.3333333335 |
+| # stars            | 41841.0 |
 
 ## Links
 - [Homepage](https://github.com/parcel-bundler/parcel#readme)

@@ -10,10 +10,10 @@ JavaScript implementation of https://github.com/libp2p/mplex
 | ------------------ | :-------------: |
 | Full name          | @libp2p/mplex |
 | Keywords           | IPFS, connection, duplex, libp2p, mplex, multiplex, muxer, stream |
-| # releases         | 34 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 17356.0 |
-| # stars            | 47.0 |
+| # downloads        | 26953.333333333332 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-mplex#readme)

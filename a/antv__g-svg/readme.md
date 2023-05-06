@@ -10,10 +10,10 @@ A renderer implemented by SVG
 | ------------------ | :-------------: |
 | Full name          | @antv/g-svg |
 | Keywords           | antv, g |
-| # releases         | 128 |
+| # releases         | 148 |
 | # dependents       | 0.0 |
-| # downloads        | 341765.0 |
-| # stars            | 795.0 |
+| # downloads        | 370239.0 |
+| # stars            | 838.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

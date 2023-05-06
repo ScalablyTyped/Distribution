@@ -10,10 +10,10 @@ A port of inflection-js to node.js module
 | ------------------ | :-------------: |
 | Full name          | inflection |
 | Keywords           | inflection, inflections, inflection-js, pluralize, singularize, camelize, underscore, humanize, capitalize, dasherize, titleize, demodulize, tableize, classify, foreign_key, ordinalize |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0643519E7 |
-| # stars            | 490.0 |
+| # downloads        | 1.0960726666666666E7 |
+| # stars            | 496.0 |
 
 ## Links
 - [Homepage](https://github.com/dreamerslab/node.inflection#readme)

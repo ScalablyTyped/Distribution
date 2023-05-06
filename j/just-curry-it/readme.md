@@ -10,10 +10,10 @@ return a curried function
 | ------------------ | :-------------: |
 | Full name          | just-curry-it |
 | Keywords           | function, curry, no-dependencies, just |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1088895.0 |
-| # stars            | 4414.0 |
+| # downloads        | 1176180.3333333333 |
+| # stars            | 4731.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)

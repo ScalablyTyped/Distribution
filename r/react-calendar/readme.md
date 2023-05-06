@@ -12,8 +12,8 @@ Ultimate calendar for your React app.
 | Keywords           | calendar, date, date-picker, month-picker, react |
 | # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1421809.6666666667 |
-| # stars            | 2565.0 |
+| # downloads        | 1535094.3333333333 |
+| # stars            | 2680.0 |
 
 ## Links
 - [Homepage](https://github.com/wojtekmaj/react-calendar#readme)

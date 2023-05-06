@@ -12,8 +12,8 @@ JavaScript WYSIWYG web text editor.
 | Keywords           | ckeditor4, ckeditor, fckeditor, editor, wysiwyg, html, richtext, text, javascript |
 | # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 187941.0 |
-| # stars            | 515.0 |
+| # downloads        | 169182.33333333334 |
+| # stars            | 520.0 |
 
 ## Links
 - [Homepage](https://ckeditor.com/ckeditor-4/)

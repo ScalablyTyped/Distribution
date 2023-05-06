@@ -10,10 +10,10 @@ The iconic font, CSS, and SVG framework
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/fontawesome-common-types |
 | Keywords           | font, awesome, fontawesome, icon, svg, bootstrap |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 6621930.0 |
-| # stars            | 70007.0 |
+| # downloads        | 7005685.333333333 |
+| # stars            | 70445.0 |
 
 ## Links
 - [Homepage](https://fontawesome.com)

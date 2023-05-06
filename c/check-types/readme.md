@@ -4,15 +4,15 @@
 Typings are for version 7.3
 
 ## Library description:
-A little library for asserting types and values.
+A little library for asserting types and values, with zero dependencies.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | check-types |
 | Keywords           | type, types, type-check, type-checking, duck-typing, arguments, parameters, values, data, contract, assert, check, verify, safe, safety |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1638367666666668E7 |
+| # downloads        | 2.2275767666666668E7 |
 | # stars            | ? |
 
 ## Links

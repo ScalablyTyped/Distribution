@@ -4,7 +4,7 @@
 Typings are for version 1.0
 
 ## Library description:
-JavaScript library that builds concave hulls (shapes) by set of points
+JavaScript library that builds concave hulls (shapes) by the set of points
 
 |                    |                 |
 | ------------------ | :-------------: |
@@ -12,8 +12,8 @@ JavaScript library that builds concave hulls (shapes) by set of points
 | Keywords           | geometry, concave-hull, math, alpha-shape, algorithm |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 21700.0 |
-| # stars            | 503.0 |
+| # downloads        | 23991.666666666668 |
+| # stars            | 511.0 |
 
 ## Links
 - [Homepage](https://github.com/AndriiHeonia/hull)

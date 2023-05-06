@@ -10,10 +10,10 @@ Web3 module to interact with the Ethereum blockchain and smart contracts.
 | ------------------ | :-------------: |
 | Full name          | web3-eth |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 2320758.0 |
-| # stars            | 16013.0 |
+| # downloads        | 2220605.0 |
+| # stars            | 16771.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

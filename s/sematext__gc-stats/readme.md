@@ -10,10 +10,10 @@ Exposes node v8 garbage collection stats
 | ------------------ | :-------------: |
 | Full name          | @sematext/gc-stats |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 68382.66666666667 |
-| # stars            | 7.0 |
+| # downloads        | 106657.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/adnanrahic/node-gcstats#readme)

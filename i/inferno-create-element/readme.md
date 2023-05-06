@@ -12,8 +12,8 @@ Provides methods to create Inferno VNodes
 | Keywords           | babel, react, inferno, framework, interfaces, user interfaces, vdom |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 232069.66666666666 |
-| # stars            | 15512.0 |
+| # downloads        | 290766.6666666667 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

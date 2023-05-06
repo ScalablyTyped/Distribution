@@ -10,10 +10,10 @@ A framework for real-time applications and REST API with JavaScript and TypeScri
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/feathers |
 | Keywords           | feathers, REST, socket.io, realtime |
-| # releases         | 31 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 232836.33333333334 |
-| # stars            | 14141.0 |
+| # downloads        | 202090.0 |
+| # stars            | 14275.0 |
 
 ## Links
 - [Homepage](http://feathersjs.com)

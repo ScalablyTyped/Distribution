@@ -12,8 +12,8 @@ A fail-fast circuit breaker for promises and callbacks
 | Keywords           | circuit breaker, circuit-breaker, fail-fast, circuit, breaker, hystrix, rate-limiting |
 | # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 673854.3333333334 |
-| # stars            | 785.0 |
+| # downloads        | 652817.3333333334 |
+| # stars            | 890.0 |
 
 ## Links
 - [Homepage](https://nodeshift.dev/opossum)

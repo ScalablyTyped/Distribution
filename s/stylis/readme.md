@@ -12,8 +12,8 @@ A Light–weight CSS Preprocessor
 | Keywords           | - |
 | # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 2.7762441E7 |
-| # stars            | 1502.0 |
+| # downloads        | 2.9689800333333332E7 |
+| # stars            | 1521.0 |
 
 ## Links
 - [Homepage](https://github.com/thysultan/stylis.js)

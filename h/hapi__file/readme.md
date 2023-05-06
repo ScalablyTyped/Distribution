@@ -12,8 +12,8 @@ General purpose file utilities
 | Keywords           | utilities, file |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2287034.3333333335 |
-| # stars            | 2.0 |
+| # downloads        | 2446282.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/file#readme)

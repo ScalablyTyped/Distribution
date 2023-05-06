@@ -12,8 +12,8 @@ An unopinionated OpenAPI framework for express
 | Keywords           | openapi, swagger, express |
 | # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 89646.33333333333 |
-| # stars            | ? |
+| # downloads        | 148995.0 |
+| # stars            | 765.0 |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi#readme)

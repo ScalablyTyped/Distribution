@@ -12,8 +12,8 @@ Cookie jar plugin for hapi
 | Keywords           | hapi, plugin, cookies, jar, session |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 9785.666666666666 |
-| # stars            | 131.0 |
+| # downloads        | 7887.666666666667 |
+| # stars            | 132.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/yar#readme)

@@ -10,10 +10,10 @@ internal utils for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/utils |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3.8630169E7 |
-| # stars            | 15226.0 |
+| # downloads        | 4.1167614666666664E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

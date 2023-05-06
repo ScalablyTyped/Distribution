@@ -12,8 +12,8 @@ Tourist Guide into your React Components
 | Keywords           | react, tour, intro, guide, introduction, step-by-step, guide, walkthrough, joyride, tourist-guide, product-intro, presentation |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 186371.33333333334 |
-| # stars            | 3028.0 |
+| # downloads        | 179077.0 |
+| # stars            | 3273.0 |
 
 ## Links
 - [Homepage](https://github.com/elrumordelaluz/reactour#readme)

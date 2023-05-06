@@ -10,10 +10,10 @@ Wordwrap a string with ANSI escape codes
 | ------------------ | :-------------: |
 | Full name          | wrap-ansi |
 | Keywords           | wrap, break, wordwrap, wordbreak, linewrap, ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2.706494723333333E8 |
-| # stars            | 90.0 |
+| # downloads        | 2.952922043333333E8 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/chalk/wrap-ansi#readme)

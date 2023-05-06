@@ -10,9 +10,9 @@ Encode FormData content into the multipart/form-data format
 | ------------------ | :-------------: |
 | Full name          | form-data-encoder |
 | Keywords           | form-data, encoder, multipart, files-upload, async-iterator, spec-compatible, form |
-| # releases         | 32 |
+| # releases         | 34 |
 | # dependents       | 0.0 |
-| # downloads        | 6997479.0 |
+| # downloads        | 9866566.0 |
 | # stars            | 11.0 |
 
 ## Links

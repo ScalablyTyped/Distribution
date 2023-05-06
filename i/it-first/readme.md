@@ -10,10 +10,10 @@ Returns the first result from an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-first |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 215461.0 |
-| # stars            | 200.0 |
+| # downloads        | 242704.33333333334 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-first#readme)

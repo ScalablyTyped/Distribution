@@ -12,8 +12,8 @@ A data loading utility to reduce requests to a backend via batching and caching.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.243424E7 |
-| # stars            | 11543.0 |
+| # downloads        | 1.356626E7 |
+| # stars            | 11964.0 |
 
 ## Links
 - [Homepage](https://github.com/graphql/dataloader)

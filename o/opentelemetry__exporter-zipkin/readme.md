@@ -10,10 +10,10 @@ OpenTelemetry Zipkin Exporter allows the user to send collected traces to Zipkin
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/exporter-zipkin |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling |
-| # releases         | 149 |
+| # releases         | 139 |
 | # dependents       | 0.0 |
-| # downloads        | 383007.0 |
-| # stars            | 1462.0 |
+| # downloads        | 916085.0 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-exporter-zipkin)

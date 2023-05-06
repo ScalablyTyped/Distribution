@@ -10,10 +10,10 @@ Typings are for version 14.1.0
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons-angular |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 283560.0 |
-| # stars            | 720.0 |
+| # downloads        | 239070.66666666666 |
+| # stars            | 760.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/ant-design-icons/tree/master#readme)

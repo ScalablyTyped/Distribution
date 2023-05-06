@@ -10,12 +10,15 @@ fs read and write streams based on minipass
 | ------------------ | :-------------: |
 | Full name          | fs-minipass |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 8.0594716E7 |
-| # stars            | 15.0 |
+| # downloads        | 8.038356566666667E7 |
+| # stars            | 16.0 |
 
 ## Links
+- [Homepage](https://github.com/npm/fs-minipass#readme)
+- [Bugs](https://github.com/npm/fs-minipass/issues)
+- [Repository](https://github.com/npm/fs-minipass)
 - [Npm](https://www.npmjs.com/package/fs-minipass)
     
 

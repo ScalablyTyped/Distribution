@@ -10,10 +10,10 @@ Typings are for version 0.9.17
 | ------------------ | :-------------: |
 | Full name          | @firebase/database-types |
 | Keywords           | - |
-| # releases         | 1193 |
+| # releases         | 1015 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0965958666666666E7 |
-| # stars            | 4194.0 |
+| # downloads        | 1.0056758666666666E7 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

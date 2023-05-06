@@ -10,9 +10,9 @@ Reads the pixels of an image as an ndarray
 | ------------------ | :-------------: |
 | Full name          | get-pixels |
 | Keywords           | ndarray, pixel, get, read, pixel, image, png, jpeg, jpg, jpe, gif, decode, buffer, data, parse, dom, node, browserify |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 934403.3333333334 |
+| # downloads        | 950812.0 |
 | # stars            | ? |
 
 ## Links

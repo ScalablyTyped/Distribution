@@ -9,11 +9,11 @@ Format whitespace in a SQL query to make it more readable
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sql-formatter |
-| Keywords           | sql, formatter, format, n1ql, redshift, singlestoredb, spark, whitespace, mysql, mariadb, postgresql, pl/sql, transact-sql, db2, sqlite, trino, presto, prestosql |
-| # releases         | 59 |
+| Keywords           | sql, formatter, format, n1ql, redshift, singlestoredb, spark, whitespace, mysql, mariadb, postgresql, pl/sql, transact-sql, db2, sqlite, trino, presto, prestosql, snowflake |
+| # releases         | 85 |
 | # dependents       | 0.0 |
-| # downloads        | 557906.6666666666 |
-| # stars            | 1299.0 |
+| # downloads        | 623009.3333333334 |
+| # stars            | 1421.0 |
 
 ## Links
 - [Homepage](https://github.com/sql-formatter-org/sql-formatter#readme)

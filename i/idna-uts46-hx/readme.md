@@ -10,10 +10,10 @@ A UTS #46 processing algorithm for IDNA2008 strings
 | ------------------ | :-------------: |
 | Full name          | idna-uts46-hx |
 | Keywords           | hexonet, unicode, idn, idna, domain |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1489536.0 |
-| # stars            | 11.0 |
+| # downloads        | 1537793.6666666667 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/hexonet/idna-uts46)

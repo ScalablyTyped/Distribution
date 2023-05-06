@@ -10,10 +10,10 @@ A pure and powerful JavaScript Bitcoin Cash library.
 | ------------------ | :-------------: |
 | Full name          | bitcore-lib-cash |
 | Keywords           | bitcoin, transaction, address, p2p, ecies, cryptocurrency, blockchain, payment, bip21, bip32, bip37, bip69, bip70, multisig |
-| # releases         | 25 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 17132.333333333332 |
-| # stars            | 4418.0 |
+| # downloads        | 19430.666666666668 |
+| # stars            | 4432.0 |
 
 ## Links
 - [Homepage](https://github.com/bitpay/bitcore#readme)

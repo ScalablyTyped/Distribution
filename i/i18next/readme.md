@@ -10,10 +10,10 @@ i18next internationalization framework
 | ------------------ | :-------------: |
 | Full name          | i18next |
 | Keywords           | i18next, internationalization, i18n, translation, localization, l10n, globalization, gettext |
-| # releases         | 96 |
+| # releases         | 117 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2128696666666666E7 |
-| # stars            | 6377.0 |
+| # downloads        | 1.4071681E7 |
+| # stars            | 6581.0 |
 
 ## Links
 - [Homepage](https://www.i18next.com)

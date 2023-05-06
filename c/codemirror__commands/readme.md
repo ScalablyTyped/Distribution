@@ -10,10 +10,10 @@ Collection of editing commands for the CodeMirror code editor
 | ------------------ | :-------------: |
 | Full name          | @codemirror/commands |
 | Keywords           | editor, code |
-| # releases         | 23 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 519205.6666666667 |
-| # stars            | 10.0 |
+| # downloads        | 1162719.6666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/codemirror/commands#readme)

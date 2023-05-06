@@ -10,9 +10,9 @@ Used to get random Car Names
 | ------------------ | :-------------: |
 | Full name          | car-names |
 | Keywords           | car, names, random, all |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 129.66666666666666 |
+| # downloads        | 154.66666666666666 |
 | # stars            | 5.0 |
 
 ## Links

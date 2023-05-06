@@ -10,10 +10,10 @@ Better Queue for NodeJS
 | ------------------ | :-------------: |
 | Full name          | better-queue |
 | Keywords           | queue, cargo, async, timeout, priority |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1016942.0 |
-| # stars            | 388.0 |
+| # downloads        | 1031358.3333333334 |
+| # stars            | 390.0 |
 
 ## Links
 - [Homepage](https://github.com/diamondio/better-queue)

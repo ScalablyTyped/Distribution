@@ -10,10 +10,10 @@ Merge and sort string index ranges
 | ------------------ | :-------------: |
 | Full name          | ranges-merge |
 | Keywords           | index, join, manage, merge, multiple, ranges, slices, string, substring, two |
-| # releases         | 46 |
+| # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 352385.0 |
-| # stars            | 116.0 |
+| # downloads        | 406222.0 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/ranges-merge)

@@ -10,12 +10,15 @@ An accessible and easy tab component for ReactJS
 | ------------------ | :-------------: |
 | Full name          | react-tabs |
 | Keywords           | react, tabs, a11y, react-component |
-| # releases         | 12 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 2246084.6666666665 |
-| # stars            | 2744.0 |
+| # downloads        | 2291733.6666666665 |
+| # stars            | 2839.0 |
 
 ## Links
+- [Homepage](https://github.com/reactjs/react-tabs)
+- [Bugs](https://github.com/reactjs/react-tabs/issues)
+- [Repository](https://github.com/reactjs/react-tabs)
 - [Npm](https://www.npmjs.com/package/react-tabs)
     
 

@@ -12,8 +12,8 @@ Compute contour polygons using marching squares.
 | Keywords           | d3, d3-module, contour, isoline |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 5419938.0 |
-| # stars            | 430.0 |
+| # downloads        | 6216879.666666667 |
+| # stars            | 452.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-contour/)

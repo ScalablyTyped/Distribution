@@ -10,10 +10,10 @@ International sales tax calculator for Node (offline, but provides optional onli
 | ------------------ | :-------------: |
 | Full name          | sales-tax |
 | Keywords           | sales, tax, salestax, money, billing, invoice, vat, gst, vatmoss |
-| # releases         | 9 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 12539.666666666666 |
-| # stars            | 237.0 |
+| # downloads        | 17535.0 |
+| # stars            | 250.0 |
 
 ## Links
 - [Homepage](https://github.com/valeriansaliou/node-sales-tax)

@@ -10,9 +10,9 @@ JupyterLab - Running Sessions Panel
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/running |
 | Keywords           | - |
-| # releases         | 146 |
+| # releases         | 134 |
 | # dependents       | 0.0 |
-| # downloads        | 191509.66666666666 |
+| # downloads        | 90498.33333333333 |
 | # stars            | ? |
 
 ## Links

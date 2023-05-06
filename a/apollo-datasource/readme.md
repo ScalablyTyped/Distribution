@@ -9,10 +9,10 @@ Typings are for version 3.3.2
 | ------------------ | :-------------: |
 | Full name          | apollo-datasource |
 | Keywords           | - |
-| # releases         | 24 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0410154333333334E7 |
-| # stars            | 12821.0 |
+| # downloads        | 1.0799444333333334E7 |
+| # stars            | 13013.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-server#readme)

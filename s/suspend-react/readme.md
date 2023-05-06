@@ -10,10 +10,10 @@ Integrate React Suspense into your apps
 | ------------------ | :-------------: |
 | Full name          | suspend-react |
 | Keywords           | react, suspense, resource, asset |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 197030.33333333334 |
-| # stars            | 870.0 |
+| # downloads        | 467652.6666666667 |
+| # stars            | 988.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/suspend-react#readme)

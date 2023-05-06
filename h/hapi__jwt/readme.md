@@ -10,10 +10,10 @@ JWT (JSON Web Token) Authentication
 | ------------------ | :-------------: |
 | Full name          | @hapi/jwt |
 | Keywords           | jwt, authentication, plugin, hapi |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 13425.0 |
-| # stars            | 31.0 |
+| # downloads        | 25602.333333333332 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/jwt#readme)

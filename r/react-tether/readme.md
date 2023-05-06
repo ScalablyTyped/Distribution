@@ -10,10 +10,10 @@ A positioning engine to make overlays, tooltips and dropdowns better
 | ------------------ | :-------------: |
 | Full name          | react-tether |
 | Keywords           | react, react-tether, tether, component, drop |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 275818.0 |
-| # stars            | 374.0 |
+| # downloads        | 277654.6666666667 |
+| # stars            | 385.0 |
 
 ## Links
 - [Homepage](https://github.com/danreeves/react-tether)

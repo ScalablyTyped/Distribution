@@ -10,10 +10,10 @@ Paragraph feature for CKEditor 5.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-paragraph |
 | Keywords           | ckeditor, ckeditor5, ckeditor 5, ckeditor5-feature, ckeditor5-plugin, ckeditor5-dll |
-| # releases         | 21 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 594579.6666666666 |
-| # stars            | 6266.0 |
+| # downloads        | 674416.6666666666 |
+| # stars            | 6596.0 |
 
 ## Links
 - [Homepage](https://ckeditor.com/ckeditor-5)

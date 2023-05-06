@@ -10,10 +10,10 @@ HTML5 Canvas Components for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-canvas |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 22 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 325470.3333333333 |
-| # stars            | 9887.0 |
+| # downloads        | 347668.0 |
+| # stars            | 9926.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

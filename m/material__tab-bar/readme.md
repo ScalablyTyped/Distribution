@@ -10,10 +10,10 @@ The Material Components for the web tab bar component
 | ------------------ | :-------------: |
 | Full name          | @material/tab-bar |
 | Keywords           | material components, material design, tab, bar |
-| # releases         | 711 |
+| # releases         | 766 |
 | # dependents       | 0.0 |
-| # downloads        | 205007.66666666666 |
-| # stars            | 16381.0 |
+| # downloads        | 396645.0 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

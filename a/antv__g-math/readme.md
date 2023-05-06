@@ -10,10 +10,10 @@ Geometry util
 | ------------------ | :-------------: |
 | Full name          | @antv/g-math |
 | Keywords           | antv, g |
-| # releases         | 96 |
+| # releases         | 114 |
 | # dependents       | 0.0 |
-| # downloads        | 332760.3333333333 |
-| # stars            | 795.0 |
+| # downloads        | 353631.0 |
+| # stars            | 834.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/g#readme)

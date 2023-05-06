@@ -12,7 +12,7 @@ Proxy handler plugin for hapi.js
 | Keywords           | HTTP, proxy, handler, hapi, plugin |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1708456.3333333333 |
+| # downloads        | 1878671.3333333333 |
 | # stars            | 161.0 |
 
 ## Links

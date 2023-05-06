@@ -10,10 +10,10 @@ Utilities you'll need when migrating to ESModule.
 | ------------------ | :-------------: |
 | Full name          | esm-utils |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 140853.33333333334 |
-| # stars            | 16.0 |
+| # downloads        | 182338.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/fisker/esm-utils#readme)

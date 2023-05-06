@@ -9,11 +9,11 @@ A JavaScript library to zip and unzip files in the browser, Deno and Node.js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @zip.js/zip.js |
-| Keywords           | zip, unzip, browser, web, aes-256, aes-192, aes-128, zip-crypto, encryption, zip64, web-streams, compression-streams, web-crypto, web-workers, deno, node.js, multi-core |
-| # releases         | 169 |
+| Keywords           | zip, unzip, browser, web, aes-256, aes-192, aes-128, zip-crypto, encryption, zip64, web-streams, compression-streams, web-crypto, web-workers, deno, node.js, multi-core, split-zip |
+| # releases         | 201 |
 | # dependents       | 0.0 |
-| # downloads        | 118514.66666666667 |
-| # stars            | 2697.0 |
+| # downloads        | 145653.66666666666 |
+| # stars            | 2787.0 |
 
 ## Links
 - [Homepage](https://gildas-lormeau.github.io/zip.js)

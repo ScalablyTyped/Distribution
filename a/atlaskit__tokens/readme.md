@@ -10,13 +10,13 @@ Design tokens are the single source of truth to name and store design decisions.
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/tokens |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 83 |
 | # dependents       | 0.0 |
-| # downloads        | 404844.6666666667 |
+| # downloads        | 528155.3333333334 |
 | # stars            | ? |
 
 ## Links
-- [Homepage](https://bitbucket.org/atlassian/atlassian-frontend-mirror#readme)
+- [Homepage](https://atlassian.design/components/tokens)
 - [Bugs](https://bitbucket.org/atlassian/atlassian-frontend-mirror/issues)
 - [Repository](https://bitbucket.org/atlassian/atlassian-frontend-mirror)
 - [Npm](https://www.npmjs.com/package/%40atlaskit%2Ftokens)

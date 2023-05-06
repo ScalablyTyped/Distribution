@@ -10,10 +10,10 @@ Basic building blocks for Fluent UI React Component themes
 | ------------------ | :-------------: |
 | Full name          | @fluentui/theme |
 | Keywords           | - |
-| # releases         | 93 |
+| # releases         | 75 |
 | # dependents       | 0.0 |
-| # downloads        | 649158.6666666666 |
-| # stars            | 13904.0 |
+| # downloads        | 719276.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

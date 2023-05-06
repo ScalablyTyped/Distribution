@@ -10,10 +10,10 @@ cssnano plugin for Webpack
 | ------------------ | :-------------: |
 | Full name          | css-minimizer-webpack-plugin |
 | Keywords           | cssnano, css, csso, clean-css, esbuild, webpack, webpack-plugin, minimize, minimizer, minify, minifier, optimize, optimizer |
-| # releases         | 21 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4987042666666666E7 |
-| # stars            | 238.0 |
+| # downloads        | 1.5976977333333334E7 |
+| # stars            | 243.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/css-minimizer-webpack-plugin)

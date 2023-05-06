@@ -10,10 +10,10 @@ Simple, sexy, declarative video editing
 | ------------------ | :-------------: |
 | Full name          | editly |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 577.6666666666666 |
-| # stars            | 3511.0 |
+| # downloads        | 711.6666666666666 |
+| # stars            | 3796.0 |
 
 ## Links
 - [Homepage](https://github.com/mifi/editly#readme)

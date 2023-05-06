@@ -12,8 +12,8 @@ HTTP server mocking and expectations library for Node.js
 | Keywords           | - |
 | # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 9576484.333333334 |
-| # stars            | 11588.0 |
+| # downloads        | 1.0018807E7 |
+| # stars            | 11906.0 |
 
 ## Links
 - [Homepage](https://github.com/nock/nock#readme)

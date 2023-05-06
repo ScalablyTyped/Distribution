@@ -10,10 +10,10 @@ Create a subset of a TTF/WOFF/WOFF2 font using the wasm build of harfbuzz/hb-sub
 | ------------------ | :-------------: |
 | Full name          | subset-font |
 | Keywords           | font, subset, harfbuzz, hb-subset, fonttools, truetype, TTF, WOFF, WOFF2, wasm |
-| # releases         | 16 |
+| # releases         | 22 |
 | # dependents       | 0.0 |
-| # downloads        | 5857.333333333333 |
-| # stars            | 31.0 |
+| # downloads        | 16423.666666666668 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/papandreou/subset-font#readme)

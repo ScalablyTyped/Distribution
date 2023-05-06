@@ -12,8 +12,8 @@ Converts a XML string into a human readable format (pretty print) while respecti
 | Keywords           | xml, pretty, print, pretty-print, indent, parser, formatter, xml:space, preserve |
 | # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 465214.6666666667 |
-| # stars            | 49.0 |
+| # downloads        | 621231.6666666666 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/chrisbottin/xml-formatter#readme)

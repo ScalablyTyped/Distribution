@@ -10,10 +10,10 @@ Zones for JavaScript
 | ------------------ | :-------------: |
 | Full name          | zone.js |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1772598666666666E7 |
-| # stars            | 83179.0 |
+| # downloads        | 1.2236042E7 |
+| # stars            | 84705.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

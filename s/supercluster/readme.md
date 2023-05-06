@@ -10,10 +10,10 @@ A very fast geospatial point clustering library.
 | ------------------ | :-------------: |
 | Full name          | supercluster |
 | Keywords           | clustering, geospatial, markers |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 4178544.3333333335 |
-| # stars            | 1536.0 |
+| # downloads        | 4584902.0 |
+| # stars            | 1599.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/supercluster#readme)

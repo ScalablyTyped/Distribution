@@ -12,8 +12,8 @@ A better way to develop React Native Components for your app
 | Keywords           | react, react-native, storybook |
 | # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 498990.6666666667 |
-| # stars            | 588.0 |
+| # downloads        | 564835.6666666666 |
+| # stars            | 663.0 |
 
 ## Links
 - [Homepage](https://storybook.js.org/)

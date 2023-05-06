@@ -10,10 +10,10 @@ Common code shared by the various libp2p interfaces
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interfaces |
 | Keywords           | interface, libp2p |
-| # releases         | 55 |
+| # releases         | 59 |
 | # dependents       | 0.0 |
-| # downloads        | 34824.333333333336 |
-| # stars            | 67.0 |
+| # downloads        | 76535.33333333333 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/interfaces#readme)

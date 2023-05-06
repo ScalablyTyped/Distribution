@@ -10,9 +10,9 @@ Encrypted storage for secrets
 | ------------------ | :-------------: |
 | Full name          | testcafe-safe-storage |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 79392.33333333333 |
+| # downloads        | 518649.3333333333 |
 | # stars            | ? |
 
 ## Links

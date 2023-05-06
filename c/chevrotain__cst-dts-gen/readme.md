@@ -10,10 +10,10 @@ Generates type definitions for chevrotain CST nodes
 | ------------------ | :-------------: |
 | Full name          | @chevrotain/cst-dts-gen |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 239542.0 |
-| # stars            | 1979.0 |
+| # downloads        | 332189.0 |
+| # stars            | 2046.0 |
 
 ## Links
 - [Homepage](https://github.com/Chevrotain/chevrotain#readme)

@@ -10,10 +10,10 @@ Sort string index ranges
 | ------------------ | :-------------: |
 | Full name          | ranges-sort |
 | Keywords           | array, indexes, ranges, sort, string |
-| # releases         | 38 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 347837.0 |
-| # stars            | 111.0 |
+| # downloads        | 405389.6666666667 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/ranges-sort)

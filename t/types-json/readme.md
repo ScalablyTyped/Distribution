@@ -4,15 +4,15 @@
 Typings are for version 1.2.2
 
 ## Library description:
-Type checking for JSON objects
+Type checking for JSON values
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | types-json |
 | Keywords           | json, object, value, array, typescript, types, type, checking, guard, guards |
-| # releases         | 9 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 26445.0 |
+| # downloads        | 34596.333333333336 |
 | # stars            | 2.0 |
 
 ## Links

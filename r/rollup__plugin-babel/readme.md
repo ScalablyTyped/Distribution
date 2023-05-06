@@ -10,10 +10,10 @@ Seamless integration between Rollup and Babel.
 | ------------------ | :-------------: |
 | Full name          | @rollup/plugin-babel |
 | Keywords           | rollup, plugin, rollup-plugin, babel, es2015, es6 |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.1977988333333334E7 |
-| # stars            | 2836.0 |
+| # downloads        | 1.3217904666666666E7 |
+| # stars            | 2890.0 |
 
 ## Links
 - [Homepage](https://github.com/rollup/plugins/tree/master/packages/babel#readme)

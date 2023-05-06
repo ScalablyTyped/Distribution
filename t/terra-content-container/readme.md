@@ -12,8 +12,8 @@ The Terra ContentContainer is a structural component for the purpose of arrangin
 | Keywords           | Cerner, Terra, terra-content-container, ContentContainer, UI |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 2008.0 |
-| # stars            | ? |
+| # downloads        | 1765.3333333333333 |
+| # stars            | 175.0 |
 
 ## Links
 - [Homepage](https://github.com/cerner/terra-core#readme)

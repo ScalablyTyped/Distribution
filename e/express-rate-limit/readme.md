@@ -10,15 +10,12 @@ Basic IP rate-limiting middleware for Express. Use to limit repeated requests to
 | ------------------ | :-------------: |
 | Full name          | express-rate-limit |
 | Keywords           | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
-| # releases         | 23 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 1821910.6666666667 |
-| # stars            | 2154.0 |
+| # downloads        | 2145331.3333333335 |
+| # stars            | 2241.0 |
 
 ## Links
-- [Homepage](https://github.com/nfriedly/express-rate-limit)
-- [Bugs](https://github.com/nfriedly/express-rate-limit/issues)
-- [Repository](https://github.com/nfriedly/express-rate-limit)
 - [Npm](https://www.npmjs.com/package/express-rate-limit)
     
 

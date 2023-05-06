@@ -10,10 +10,10 @@ HTML parser and serializer.
 | ------------------ | :-------------: |
 | Full name          | parse5 |
 | Keywords           | html, parser, html5, WHATWG, specification, fast, html parser, html5 parser, htmlparser, parse5, serializer, html serializer, htmlserializer, parse, serialize |
-| # releases         | 1 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1.35809511E8 |
-| # stars            | 3052.0 |
+| # downloads        | 1.4473779433333334E8 |
+| # stars            | 3184.0 |
 
 ## Links
 - [Homepage](https://github.com/inikulin/parse5)

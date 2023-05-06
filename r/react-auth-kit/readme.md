@@ -10,13 +10,13 @@ Authentication Library for React, which makes Token based auth very easy
 | ------------------ | :-------------: |
 | Full name          | react-auth-kit |
 | Keywords           | react, auth, authentication, jwt, jsonwebtoken, token |
-| # releases         | 69 |
+| # releases         | 71 |
 | # dependents       | 0.0 |
-| # downloads        | 2365.3333333333335 |
-| # stars            | 178.0 |
+| # downloads        | 5651.0 |
+| # stars            | 221.0 |
 
 ## Links
-- [Homepage](https://github.com/react-auth-kit/react-auth-kit#readme)
+- [Homepage](https://authkit.arkadip.dev)
 - [Bugs](https://github.com/react-auth-kit/react-auth-kit/issues)
 - [Repository](https://github.com/react-auth-kit/react-auth-kit)
 - [Npm](https://www.npmjs.com/package/react-auth-kit)

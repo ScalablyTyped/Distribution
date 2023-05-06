@@ -10,10 +10,10 @@ egg logger
 | ------------------ | :-------------: |
 | Full name          | egg-logger |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 202129.33333333334 |
-| # stars            | 139.0 |
+| # downloads        | 368699.6666666667 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/eggjs/egg-logger)

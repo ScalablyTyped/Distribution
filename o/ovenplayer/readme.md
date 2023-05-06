@@ -10,10 +10,10 @@ OvenPlayer is Open-Source HTML5 Player. OvenPlayer supports WebRTC Signaling fro
 | ------------------ | :-------------: |
 | Full name          | ovenplayer |
 | Keywords           | Sub-Second Latency Streaming, WebRTC, OvenMediaEngine, Low Latency HTTP, MPEG-DASH, HLS, HTML5, Video, Player |
-| # releases         | 29 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 2091.0 |
-| # stars            | 346.0 |
+| # downloads        | 2738.0 |
+| # stars            | 404.0 |
 
 ## Links
 - [Homepage](https://www.ovenmediaengine.com/ovenplayer)

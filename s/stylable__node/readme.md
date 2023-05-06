@@ -10,10 +10,10 @@ Integrate Stylable into your node application
 | ------------------ | :-------------: |
 | Full name          | @stylable/node |
 | Keywords           | - |
-| # releases         | 92 |
+| # releases         | 82 |
 | # dependents       | 0.0 |
-| # downloads        | 26139.666666666668 |
-| # stars            | 1174.0 |
+| # downloads        | 24001.666666666668 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/stylable/tree/master#readme)

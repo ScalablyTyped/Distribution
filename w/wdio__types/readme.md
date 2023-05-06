@@ -10,10 +10,10 @@ Utility package providing type information for a variety of WebdriverIO interfac
 | ------------------ | :-------------: |
 | Full name          | @wdio/types |
 | Keywords           | webdriver, wdio |
-| # releases         | 59 |
+| # releases         | 98 |
 | # dependents       | 0.0 |
-| # downloads        | 3005099.3333333335 |
-| # stars            | 7720.0 |
+| # downloads        | 3767907.0 |
+| # stars            | 7897.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-types)

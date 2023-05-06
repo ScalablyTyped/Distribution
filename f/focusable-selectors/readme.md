@@ -10,12 +10,15 @@ A list of CSS selectors for focusable elements
 | ------------------ | :-------------: |
 | Full name          | focusable-selectors |
 | Keywords           | css, selectors, focus, a11y |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 43739.0 |
-| # stars            | 37.0 |
+| # downloads        | 140638.66666666666 |
+| # stars            | 48.0 |
 
 ## Links
+- [Homepage](https://github.com/KittyGiraudel/focusable-selectors#readme)
+- [Bugs](https://github.com/KittyGiraudel/focusable-selectors/issues)
+- [Repository](https://github.com/KittyGiraudel/focusable-selectors)
 - [Npm](https://www.npmjs.com/package/focusable-selectors)
     
 

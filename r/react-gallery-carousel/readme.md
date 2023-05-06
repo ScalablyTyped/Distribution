@@ -10,10 +10,10 @@ Mobile-friendly Carousel with batteries included (supporting touch, mouse emulat
 | ------------------ | :-------------: |
 | Full name          | react-gallery-carousel |
 | Keywords           | carousel, gallery, lightbox, slider, slideshow, swiper, react, component, lazy load, preload, touch, swipe, pinch, zoom, mouse, mouse emulation, drag, keyboard navigation, accessibility, a11y |
-| # releases         | 16 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 3435.3333333333335 |
-| # stars            | 182.0 |
+| # downloads        | 4081.3333333333335 |
+| # stars            | 187.0 |
 
 ## Links
 - [Homepage](https://github.com/yifaneye/react-gallery-carousel#readme)

@@ -12,8 +12,8 @@ Create DMG installers for your electron apps.
 | Keywords           | mongodb.js, electron, installer, electron-installer, gulpfriendly, dmg, electron create dmg |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 128317.0 |
-| # stars            | 280.0 |
+| # downloads        | 131887.0 |
+| # stars            | 288.0 |
 
 ## Links
 - [Homepage](http://github.com/electron-userland/electron-installer-dmg)

@@ -12,8 +12,8 @@ Gather string index ranges
 | Keywords           | delete, from, many, multiple, ranges, replace, slice, slices, splice, string |
 | # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 348299.0 |
-| # stars            | 116.0 |
+| # downloads        | 402465.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://codsen.com/os/ranges-push)

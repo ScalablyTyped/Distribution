@@ -10,10 +10,10 @@ Pure Javascript Multilingual OCR
 | ------------------ | :-------------: |
 | Full name          | tesseract.js |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 138289.33333333334 |
-| # stars            | 27490.0 |
+| # downloads        | 179396.66666666666 |
+| # stars            | 29045.0 |
 
 ## Links
 - [Homepage](https://github.com/naptha/tesseract.js)

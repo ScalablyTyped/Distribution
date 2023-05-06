@@ -10,10 +10,10 @@ A time picker for your React app.
 | ------------------ | :-------------: |
 | Full name          | react-time-picker |
 | Keywords           | react, time, time-picker |
-| # releases         | 15 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 256649.66666666666 |
-| # stars            | 235.0 |
+| # downloads        | 280589.0 |
+| # stars            | 243.0 |
 
 ## Links
 - [Homepage](https://github.com/wojtekmaj/react-time-picker#readme)

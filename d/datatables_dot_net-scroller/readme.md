@@ -10,10 +10,10 @@ Scroller for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-scroller |
 | Keywords           | Scroller, Virtual Scrolling, Datatables, jQuery, table, filter, sort |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 205724.66666666666 |
-| # stars            | 1.0 |
+| # downloads        | 195315.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

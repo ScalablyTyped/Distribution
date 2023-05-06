@@ -10,10 +10,10 @@ A minimal node SOAP client
 | ------------------ | :-------------: |
 | Full name          | soap |
 | Keywords           | soap |
-| # releases         | 14 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1028469.3333333334 |
-| # stars            | 2834.0 |
+| # downloads        | 1413705.3333333333 |
+| # stars            | 2881.0 |
 
 ## Links
 - [Homepage](https://github.com/vpulim/node-soap#readme)

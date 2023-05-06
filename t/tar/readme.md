@@ -10,10 +10,10 @@ tar for node
 | ------------------ | :-------------: |
 | Full name          | tar |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 9.4845824E7 |
-| # stars            | 681.0 |
+| # downloads        | 9.507437133333333E7 |
+| # stars            | 714.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/node-tar#readme)

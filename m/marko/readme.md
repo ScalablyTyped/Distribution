@@ -10,13 +10,13 @@ UI Components + streaming, async, high performance, HTML templating for Node.js 
 | ------------------ | :-------------: |
 | Full name          | marko |
 | Keywords           | front-end, templating, template, async, streaming, components, ui, vdom, dom, morphdom, virtual, virtual-dom |
-| # releases         | 187 |
+| # releases         | 148 |
 | # dependents       | 0.0 |
-| # downloads        | 25582.666666666668 |
-| # stars            | 11545.0 |
+| # downloads        | 27104.0 |
+| # stars            | 12061.0 |
 
 ## Links
-- [Homepage](http://markojs.com/)
+- [Homepage](https://markojs.com/)
 - [Bugs](https://github.com/marko-js/marko/issues)
 - [Repository](https://github.com/marko-js/marko)
 - [Npm](https://www.npmjs.com/package/marko)

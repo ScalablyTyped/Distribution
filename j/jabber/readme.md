@@ -10,9 +10,9 @@ Simple random word, paragraph, lorem ipsum, dummy text generator, fake name, ema
 | ------------------ | :-------------: |
 | Full name          | jabber |
 | Keywords           | lorem, ipsum, lipsum, dummy, content, seed, fake, faker, generator |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 5010.333333333333 |
+| # downloads        | 9503.0 |
 | # stars            | 1.0 |
 
 ## Links

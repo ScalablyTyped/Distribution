@@ -9,10 +9,10 @@ CLI tool for Angular
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @angular/cli |
-| Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit, angular-cli |
-| # releases         | 220 |
+| Keywords           | Angular CLI, Angular DevKit, angular, angular-cli, devkit, sdk |
+| # releases         | 222 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0201376333333334E7 |
+| # downloads        | 1.0516542333333334E7 |
 | # stars            | ? |
 
 ## Links

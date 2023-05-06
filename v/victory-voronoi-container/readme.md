@@ -10,10 +10,10 @@ Interactive Voronoi Mouseover Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-voronoi-container |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 65 |
+| # releases         | 49 |
 | # dependents       | 0.0 |
-| # downloads        | 816006.0 |
-| # stars            | 9887.0 |
+| # downloads        | 810206.6666666666 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

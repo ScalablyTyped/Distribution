@@ -10,9 +10,9 @@ it-tar is a streaming tar parser (and maybe a generator in the future) and nothi
 | ------------------ | :-------------: |
 | Full name          | it-tar |
 | Keywords           | extract, generate, generator, modify, pack, parse, parser, stream, stream2, streaming, streams, streams2, tar, tarball |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 169579.33333333334 |
+| # downloads        | 127921.0 |
 | # stars            | 1.0 |
 
 ## Links

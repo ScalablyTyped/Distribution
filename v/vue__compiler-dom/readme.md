@@ -10,10 +10,10 @@ Typings are for version 3.2.45
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-dom |
 | Keywords           | vue |
-| # releases         | 78 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 6787956.333333333 |
-| # stars            | 32475.0 |
+| # downloads        | 7908029.333333333 |
+| # stars            | 33643.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/core/tree/main/packages/compiler-dom#readme)

@@ -10,9 +10,9 @@ A proxy to `path`, replacing `\` with `/` for all results
 | ------------------ | :-------------: |
 | Full name          | upath2 |
 | Keywords           | absolute, backslash, check, core, detect, dir, file, filepath, fix, forward, fp, fs, is, is-absolute, isabsolute, normalize, path, paths, sep, shim, slash, slashes, trailing, unix, urix, util, utils, win32, windows |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1257558.0 |
+| # downloads        | 1587678.6666666667 |
 | # stars            | 1.0 |
 
 ## Links

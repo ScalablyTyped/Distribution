@@ -12,10 +12,13 @@ Evaluates regular expressions with a time limit to mitigate DOS attacks based on
 | Keywords           | regular, expressions, time, limit, regexp, regex |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 494.0 |
-| # stars            | 1.0 |
+| # downloads        | 916.3333333333334 |
+| # stars            | 3.0 |
 
 ## Links
+- [Homepage](https://github.com/apostrophecms/time-limited-regular-expressions#readme)
+- [Bugs](https://github.com/apostrophecms/time-limited-regular-expressions/issues)
+- [Repository](https://github.com/apostrophecms/time-limited-regular-expressions)
 - [Npm](https://www.npmjs.com/package/time-limited-regular-expressions)
     
 

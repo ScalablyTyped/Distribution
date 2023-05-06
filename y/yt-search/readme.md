@@ -10,10 +10,10 @@ search youtube
 | ------------------ | :-------------: |
 | Full name          | yt-search |
 | Keywords           | - |
-| # releases         | 43 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 160716.0 |
-| # stars            | 79.0 |
+| # downloads        | 112213.33333333333 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/talmobi/yt-search#readme)

@@ -10,10 +10,10 @@ Get the metadata from a Google Cloud Platform environment
 | ------------------ | :-------------: |
 | Full name          | gcp-metadata |
 | Keywords           | google cloud platform, google cloud, google, app engine, compute engine, metadata server, metadata |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1.9183157E7 |
-| # stars            | 38.0 |
+| # downloads        | 2.2401915E7 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/gcp-metadata#readme)

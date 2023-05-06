@@ -10,10 +10,10 @@ The official CouchDB client for Node.js
 | ------------------ | :-------------: |
 | Full name          | nano |
 | Keywords           | couchdb, data, request, json, nosql, micro, nano, database |
-| # releases         | 9 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 240171.66666666666 |
-| # stars            | 543.0 |
+| # downloads        | 242861.0 |
+| # stars            | 580.0 |
 
 ## Links
 - [Homepage](http://github.com/apache/couchdb-nano)

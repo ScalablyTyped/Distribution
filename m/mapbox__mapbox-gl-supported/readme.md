@@ -10,9 +10,9 @@ A library to determine if a browser supports Mapbox GL JS
 | ------------------ | :-------------: |
 | Full name          | @mapbox/mapbox-gl-supported |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 2712880.3333333335 |
+| # downloads        | 3235475.6666666665 |
 | # stars            | 37.0 |
 
 ## Links

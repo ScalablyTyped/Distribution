@@ -10,10 +10,10 @@ A low-level API for defining equality.
 | ------------------ | :-------------: |
 | Full name          | @esfx/equatable |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 29 |
 | # dependents       | 0.0 |
-| # downloads        | 9237.333333333334 |
-| # stars            | 161.0 |
+| # downloads        | 7957.666666666667 |
+| # stars            | 169.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

@@ -12,8 +12,8 @@ The most popular front-end framework for developing responsive, mobile first pro
 | Keywords           | css, sass, mobile-first, responsive, front-end, framework, web |
 | # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1.7864855333333332E7 |
-| # stars            | 159361.0 |
+| # downloads        | 1.9054685E7 |
+| # stars            | 160972.0 |
 
 ## Links
 - [Homepage](https://getbootstrap.com/)

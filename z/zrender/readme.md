@@ -10,10 +10,10 @@ A lightweight graphic library providing 2d draw for Apache ECharts
 | ------------------ | :-------------: |
 | Full name          | zrender |
 | Keywords           | canvas, svg, 2d, html5, vector-graphics |
-| # releases         | 18 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1931633.0 |
-| # stars            | 5404.0 |
+| # downloads        | 2064937.0 |
+| # stars            | 5484.0 |
 
 ## Links
 - [Homepage](https://github.com/ecomfe/zrender#readme)

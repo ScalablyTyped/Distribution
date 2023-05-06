@@ -12,10 +12,13 @@ A collection of fast approximations to common geographic measurements.
 | Keywords           | geospatial, measurement, approximation, distance |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 43481.333333333336 |
-| # stars            | 371.0 |
+| # downloads        | 18820.0 |
+| # stars            | 389.0 |
 
 ## Links
+- [Homepage](https://github.com/mapbox/cheap-ruler#readme)
+- [Bugs](https://github.com/mapbox/cheap-ruler/issues)
+- [Repository](https://github.com/mapbox/cheap-ruler)
 - [Npm](https://www.npmjs.com/package/cheap-ruler)
     
 

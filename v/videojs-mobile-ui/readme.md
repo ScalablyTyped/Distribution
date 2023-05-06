@@ -10,12 +10,15 @@ Mobile tap controls and fullscreen on rotate for Video.js
 | ------------------ | :-------------: |
 | Full name          | videojs-mobile-ui |
 | Keywords           | videojs, videojs-plugin |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 6237.666666666667 |
-| # stars            | 57.0 |
+| # downloads        | 6454.0 |
+| # stars            | 73.0 |
 
 ## Links
+- [Homepage](https://github.com/mister-ben/videojs-mobile-ui#readme)
+- [Bugs](https://github.com/mister-ben/videojs-mobile-ui/issues)
+- [Repository](https://github.com/mister-ben/videojs-mobile-ui)
 - [Npm](https://www.npmjs.com/package/videojs-mobile-ui)
     
 

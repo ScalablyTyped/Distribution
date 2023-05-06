@@ -10,10 +10,10 @@ The set of base classes for Material Components for the web
 | ------------------ | :-------------: |
 | Full name          | @material/base |
 | Keywords           | - |
-| # releases         | 717 |
+| # releases         | 778 |
 | # dependents       | 0.0 |
-| # downloads        | 793016.0 |
-| # stars            | 16381.0 |
+| # downloads        | 1041123.0 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

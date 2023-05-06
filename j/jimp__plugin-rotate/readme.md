@@ -12,7 +12,7 @@ Rotate an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5078182.666666667 |
+| # downloads        | 5721351.0 |
 | # stars            | ? |
 
 ## Links

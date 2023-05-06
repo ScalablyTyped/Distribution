@@ -10,10 +10,10 @@ React target for @use-gesture
 | ------------------ | :-------------: |
 | Full name          | @use-gesture/react |
 | Keywords           | react, hook, gesture, mouse, trackpad, touch, drag, pinch, rotate, scale, zoom, scroll, wheel |
-| # releases         | 60 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 661936.0 |
-| # stars            | 6803.0 |
+| # downloads        | 861971.6666666666 |
+| # stars            | 7261.0 |
 
 ## Links
 - [Homepage](https://use-gesture.netlify.app)

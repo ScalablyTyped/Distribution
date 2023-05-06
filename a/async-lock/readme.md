@@ -10,10 +10,10 @@ Lock on asynchronous code
 | ------------------ | :-------------: |
 | Full name          | async-lock |
 | Keywords           | lock, async, concurrency, critical, section, mutex |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1824203.0 |
-| # stars            | 293.0 |
+| # downloads        | 2922941.6666666665 |
+| # stars            | 312.0 |
 
 ## Links
 - [Homepage](https://github.com/rogierschouten/async-lock)

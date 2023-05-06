@@ -10,10 +10,10 @@ A small EXIF image metadata reader
 | ------------------ | :-------------: |
 | Full name          | exif-reader |
 | Keywords           | exif, image, metadata |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 16210.333333333334 |
-| # stars            | 103.0 |
+| # downloads        | 21056.0 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://github.com/devongovett/exif-reader)

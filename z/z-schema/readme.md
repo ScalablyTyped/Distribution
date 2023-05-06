@@ -12,8 +12,8 @@ JSON schema validator
 | Keywords           | JSON, Schema, Validator |
 | # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 6007609.333333333 |
-| # stars            | 316.0 |
+| # downloads        | 6621172.333333333 |
+| # stars            | 319.0 |
 
 ## Links
 - [Homepage](https://github.com/zaggino/z-schema)

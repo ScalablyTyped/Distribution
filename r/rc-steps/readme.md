@@ -10,10 +10,10 @@ steps ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-steps |
 | Keywords           | react, react-component, react-steps |
-| # releases         | 4 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3257693.6666666665 |
-| # stars            | 294.0 |
+| # downloads        | 3532182.3333333335 |
+| # stars            | 296.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/steps)

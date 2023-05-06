@@ -10,9 +10,9 @@ A set of utilities to transform strings
 | ------------------ | :-------------: |
 | Full name          | @ember/string |
 | Keywords           | ember-addon |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 202350.66666666666 |
+| # downloads        | 229861.66666666666 |
 | # stars            | 4.0 |
 
 ## Links

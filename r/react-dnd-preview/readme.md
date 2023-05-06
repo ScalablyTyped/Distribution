@@ -10,10 +10,10 @@ Preview component for React DnD
 | ------------------ | :-------------: |
 | Full name          | react-dnd-preview |
 | Keywords           | react, dnd, drag, drop, react-dnd, preview |
-| # releases         | 5 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 223947.0 |
-| # stars            | 157.0 |
+| # downloads        | 325562.0 |
+| # stars            | 171.0 |
 
 ## Links
 - [Homepage](https://louisbrunner.github.io/dnd-multi-backend/packages/react-dnd-preview/)

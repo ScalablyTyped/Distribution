@@ -10,10 +10,10 @@ Module to handle web3 RPC connections over HTTP.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-http |
 | Keywords           | - |
-| # releases         | 57 |
+| # releases         | 63 |
 | # dependents       | 0.0 |
-| # downloads        | 2606936.0 |
-| # stars            | 16013.0 |
+| # downloads        | 2521624.3333333335 |
+| # stars            | 16771.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

@@ -10,9 +10,9 @@ JavaScript client-side search API with web-worker support
 | ------------------ | :-------------: |
 | Full name          | js-worker-search |
 | Keywords           | search, filter, database, solr, worker, webworker |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 59485.666666666664 |
+| # downloads        | 31086.333333333332 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ Generic ASN.1 parser/decoder that can decode any valid ASN.1 DER or BER structur
 | ------------------ | :-------------: |
 | Full name          | @lapo/asn1js |
 | Keywords           | asn1, ber, der, pem |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 7559.0 |
-| # stars            | 438.0 |
+| # downloads        | 24913.0 |
+| # stars            | 459.0 |
 
 ## Links
 - [Homepage](https://lapo.it/asn1js/)

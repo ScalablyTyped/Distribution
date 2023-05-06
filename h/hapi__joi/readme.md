@@ -12,8 +12,8 @@ Object schema validation
 | Keywords           | schema, validation |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8609986666666668E7 |
-| # stars            | 19036.0 |
+| # downloads        | 1.5699267333333334E7 |
+| # stars            | 19585.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/joi#readme)

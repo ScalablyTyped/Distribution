@@ -10,10 +10,10 @@ Nodejs-based tool for optimizing SVG vector graphics files
 | ------------------ | :-------------: |
 | Full name          | svgo |
 | Keywords           | svgo, svg, optimize, minify |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 6.0099577666666664E7 |
-| # stars            | 17857.0 |
+| # downloads        | 6.4272193E7 |
+| # stars            | 18515.0 |
 
 ## Links
 - [Homepage](https://github.com/svg/svgo)

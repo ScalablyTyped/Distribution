@@ -12,8 +12,8 @@ Runtime type checking for React props and similar objects.
 | Keywords           | react |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 7.1084935E7 |
-| # stars            | 4172.0 |
+| # downloads        | 7.958901833333333E7 |
+| # stars            | 4241.0 |
 
 ## Links
 - [Homepage](https://facebook.github.io/react/)

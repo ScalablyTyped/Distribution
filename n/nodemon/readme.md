@@ -10,10 +10,10 @@ Simple monitor script for use during development of a Node.js app.
 | ------------------ | :-------------: |
 | Full name          | nodemon |
 | Keywords           | cli, monitor, monitor, development, restart, autoload, reload, terminal |
-| # releases         | 27 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 2.0436095666666668E7 |
-| # stars            | 24428.0 |
+| # downloads        | 2.1023858333333332E7 |
+| # stars            | 24810.0 |
 
 ## Links
 - [Homepage](https://nodemon.io)

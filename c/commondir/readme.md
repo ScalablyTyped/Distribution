@@ -10,10 +10,10 @@ compute the closest common parent for file paths
 | ------------------ | :-------------: |
 | Full name          | commondir |
 | Keywords           | common, path, directory, file, parent, root |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 7.349997766666667E7 |
-| # stars            | 45.0 |
+| # downloads        | 7.954158833333333E7 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/commondir)

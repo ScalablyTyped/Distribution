@@ -10,9 +10,9 @@ A Pug middleware for Koa
 | ------------------ | :-------------: |
 | Full name          | koa-pug |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 166279.0 |
+| # downloads        | 121956.33333333333 |
 | # stars            | ? |
 
 ## Links

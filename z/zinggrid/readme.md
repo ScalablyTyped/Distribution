@@ -10,10 +10,10 @@ ZingGrid - A fully-featured, native, web-component, data table and grid for Java
 | ------------------ | :-------------: |
 | Full name          | zinggrid |
 | Keywords           | zinggrid, grid, datatable, data table, javascript, javascript grid, data-table, zingsoft |
-| # releases         | 11 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 636.3333333333334 |
-| # stars            | 73.0 |
+| # downloads        | 671.0 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://www.zinggrid.com/docs/your-first-grid)

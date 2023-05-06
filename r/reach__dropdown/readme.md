@@ -10,13 +10,14 @@ React dropdown menu.
 | ------------------ | :-------------: |
 | Full name          | @reach/dropdown |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 266047.3333333333 |
-| # stars            | 5390.0 |
+| # downloads        | 269718.0 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
 - [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fdropdown)
     

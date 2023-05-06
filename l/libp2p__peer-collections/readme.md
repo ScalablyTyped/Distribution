@@ -10,9 +10,9 @@ Stores values against a peer id
 | ------------------ | :-------------: |
 | Full name          | @libp2p/peer-collections |
 | Keywords           | IPFS |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 8569.333333333334 |
+| # downloads        | 28407.0 |
 | # stars            | 0.0 |
 
 ## Links

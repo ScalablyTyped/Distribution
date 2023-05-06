@@ -10,10 +10,10 @@ HTTP utilities. Used by [electron-builder](https://github.com/electron-userland/
 | ------------------ | :-------------: |
 | Full name          | builder-util-runtime |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 3269336.0 |
-| # stars            | 12258.0 |
+| # downloads        | 3294219.3333333335 |
+| # stars            | 12487.0 |
 
 ## Links
 - [Homepage](https://github.com/electron-userland/electron-builder)

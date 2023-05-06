@@ -10,9 +10,9 @@ Install Meteor
 | ------------------ | :-------------: |
 | Full name          | meteor |
 | Keywords           | - |
-| # releases         | 49 |
+| # releases         | 53 |
 | # dependents       | 0.0 |
-| # downloads        | 9165.333333333334 |
+| # downloads        | 5955.666666666667 |
 | # stars            | ? |
 
 ## Links

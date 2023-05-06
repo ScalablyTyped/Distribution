@@ -12,7 +12,7 @@ Blit an image.
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 5079828.333333333 |
+| # downloads        | 5723969.333333333 |
 | # stars            | ? |
 
 ## Links

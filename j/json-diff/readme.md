@@ -10,10 +10,10 @@ JSON diff
 | ------------------ | :-------------: |
 | Full name          | json-diff |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 1667674.3333333333 |
-| # stars            | 794.0 |
+| # downloads        | 1581186.6666666667 |
+| # stars            | 898.0 |
 
 ## Links
 - [Homepage](https://github.com/andreyvit/json-diff)

@@ -10,10 +10,10 @@ A quick JavaScript runtime for Atomic CSS compilers.
 | ------------------ | :-------------: |
 | Full name          | styleq |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 6892.0 |
-| # stars            | 112.0 |
+| # downloads        | 484589.3333333333 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](https://github.com/necolas/styleq#readme)

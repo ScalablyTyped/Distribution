@@ -10,10 +10,10 @@ Allure JS Commons
 | ------------------ | :-------------: |
 | Full name          | allure-js-commons |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 1826084.6666666667 |
-| # stars            | 114.0 |
+| # downloads        | 2210765.6666666665 |
+| # stars            | 130.0 |
 
 ## Links
 - [Homepage](https://github.com/allure-framework/allure-js#readme)

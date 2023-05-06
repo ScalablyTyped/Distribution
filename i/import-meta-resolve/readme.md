@@ -12,8 +12,8 @@ Resolve things like Node.js — ponyfill for `import.meta.resolve`
 | Keywords           | resolve, node, esm, module |
 | # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 386037.6666666667 |
-| # stars            | 57.0 |
+| # downloads        | 651273.0 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/import-meta-resolve#readme)

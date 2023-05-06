@@ -10,10 +10,10 @@ Validate literal value of an RDF term based on its datatype.
 | ------------------ | :-------------: |
 | Full name          | rdf-validate-datatype |
 | Keywords           | rdf, validation, datatype |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 2610.3333333333335 |
-| # stars            | 0.0 |
+| # downloads        | 2721.6666666666665 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/zazuko/rdf-validate-datatype#readme)

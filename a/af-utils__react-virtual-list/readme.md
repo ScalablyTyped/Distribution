@@ -10,10 +10,10 @@ React components for rendering large scrollable data
 | ------------------ | :-------------: |
 | Full name          | @af-utils/react-virtual-list |
 | Keywords           | react, reactjs, virtual, table, list, recycle, dom-recycle, dynamic-size, scroll, scrolling, infinite, virtualized, virtual, virtualization, sortable, windowing |
-| # releases         | 49 |
+| # releases         | 52 |
 | # dependents       | 0.0 |
-| # downloads        | 1085.6666666666667 |
-| # stars            | 50.0 |
+| # downloads        | 1093.6666666666667 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://af-virtual-scroll.vercel.app/)

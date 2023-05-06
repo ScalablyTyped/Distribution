@@ -12,8 +12,8 @@ Frecency sorting for search results.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 230.0 |
-| # stars            | 20.0 |
+| # downloads        | 360.3333333333333 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/mixmaxhq/frecency#readme)

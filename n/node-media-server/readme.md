@@ -10,10 +10,10 @@ A Node.js implementation of RTMP Server
 | ------------------ | :-------------: |
 | Full name          | node-media-server |
 | Keywords           | rtmp, flv, server |
-| # releases         | 26 |
+| # releases         | 28 |
 | # dependents       | 0.0 |
-| # downloads        | 9601.0 |
-| # stars            | 4917.0 |
+| # downloads        | 7788.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/illuspas/Node-Media-Server#readme)

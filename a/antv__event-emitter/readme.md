@@ -10,10 +10,10 @@ event emitter for antvis.
 | ------------------ | :-------------: |
 | Full name          | @antv/event-emitter |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 324572.3333333333 |
-| # stars            | 17.0 |
+| # downloads        | 349791.6666666667 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/event-emitter#readme)

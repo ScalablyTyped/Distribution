@@ -10,9 +10,9 @@ Styling helpers for Fluent UI React.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/style-utilities |
 | Keywords           | - |
-| # releases         | 74 |
+| # releases         | 77 |
 | # dependents       | 0.0 |
-| # downloads        | 442886.0 |
+| # downloads        | 501478.3333333333 |
 | # stars            | ? |
 
 ## Links

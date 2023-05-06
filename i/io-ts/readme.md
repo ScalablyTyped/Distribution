@@ -10,10 +10,10 @@ TypeScript runtime type system for IO decoding/encoding
 | ------------------ | :-------------: |
 | Full name          | io-ts |
 | Keywords           | typescript, runtime, decoder, encoder, schema |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3135518.3333333335 |
-| # stars            | 5648.0 |
+| # downloads        | 3839567.0 |
+| # stars            | 5898.0 |
 
 ## Links
 - [Homepage](https://github.com/gcanti/io-ts)

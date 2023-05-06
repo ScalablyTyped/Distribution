@@ -10,10 +10,10 @@ React lifecycle controlled motion library
 | ------------------ | :-------------: |
 | Full name          | rc-motion |
 | Keywords           | react, react-component, react-motion, motion, antd, ant-design |
-| # releases         | 32 |
+| # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 4751031.333333333 |
-| # stars            | 95.0 |
+| # downloads        | 5411911.666666667 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://react-component.github.io/motion)

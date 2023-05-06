@@ -10,10 +10,10 @@ minimal pull stream
 | ------------------ | :-------------: |
 | Full name          | pull-stream |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 534536.6666666666 |
-| # stars            | 773.0 |
+| # downloads        | 528214.6666666666 |
+| # stars            | 778.0 |
 
 ## Links
 - [Homepage](https://pull-stream.github.io)

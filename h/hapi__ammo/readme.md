@@ -12,7 +12,7 @@ HTTP Range processing utilities
 | Keywords           | http, range, utilities |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2311830.3333333335 |
+| # downloads        | 2515336.6666666665 |
 | # stars            | 1.0 |
 
 ## Links

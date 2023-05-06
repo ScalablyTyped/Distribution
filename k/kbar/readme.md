@@ -10,10 +10,10 @@ kbar is a simple plug-n-play React component to add a fast, portable, and extens
 | ------------------ | :-------------: |
 | Full name          | kbar |
 | Keywords           | command bar, search |
-| # releases         | 39 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 58446.0 |
-| # stars            | 2991.0 |
+| # downloads        | 95572.0 |
+| # stars            | 3547.0 |
 
 ## Links
 - [Homepage](https://github.com/timc1/kbar#readme)

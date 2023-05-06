@@ -10,10 +10,10 @@ A analytics package for new firebase packages
 | ------------------ | :-------------: |
 | Full name          | @firebase/analytics |
 | Keywords           | - |
-| # releases         | 1248 |
+| # releases         | 1068 |
 | # dependents       | 0.0 |
-| # downloads        | 5125389.0 |
-| # stars            | ? |
+| # downloads        | 5207388.333333333 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

@@ -10,10 +10,10 @@ JSON OT database backend
 | ------------------ | :-------------: |
 | Full name          | sharedb |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 36691.0 |
-| # stars            | 5307.0 |
+| # downloads        | 38796.666666666664 |
+| # stars            | 5424.0 |
 
 ## Links
 - [Homepage](https://github.com/share/sharedb#readme)

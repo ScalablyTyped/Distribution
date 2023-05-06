@@ -10,10 +10,10 @@ The Firebase Firestore compatibility package
 | ------------------ | :-------------: |
 | Full name          | @firebase/storage-compat |
 | Keywords           | - |
-| # releases         | 442 |
+| # releases         | 544 |
 | # dependents       | 0.0 |
-| # downloads        | 2645647.0 |
-| # stars            | 4194.0 |
+| # downloads        | 3243820.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

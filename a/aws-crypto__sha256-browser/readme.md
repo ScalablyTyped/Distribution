@@ -10,10 +10,10 @@ SHA256 wrapper for browsers that prefers `window.crypto.subtle` but will fall ba
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/sha256-browser |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2120007333333334E7 |
-| # stars            | 39.0 |
+| # downloads        | 1.7825824333333332E7 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-crypto-helpers/tree/master/packages/sha256-browser)

@@ -10,9 +10,9 @@ Minimalistic Virtual DOM implementation with support for animated transitions.
 | ------------------ | :-------------: |
 | Full name          | maquette |
 | Keywords           | virtual, dom, animation, transitions |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 7543.0 |
+| # downloads        | 7445.0 |
 | # stars            | 734.0 |
 
 ## Links

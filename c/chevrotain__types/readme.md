@@ -10,10 +10,10 @@ Type Signatures and API Website for Chevrotain
 | ------------------ | :-------------: |
 | Full name          | @chevrotain/types |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 715516.3333333334 |
-| # stars            | 1979.0 |
+| # downloads        | 858333.3333333334 |
+| # stars            | 2046.0 |
 
 ## Links
 - [Homepage](https://chevrotain.io/documentation/)

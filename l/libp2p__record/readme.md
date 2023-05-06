@@ -12,7 +12,7 @@ libp2p record implementation
 | Keywords           | IPFS |
 | # releases         | 13 |
 | # dependents       | 0.0 |
-| # downloads        | 15281.0 |
+| # downloads        | 21408.333333333332 |
 | # stars            | 15.0 |
 
 ## Links

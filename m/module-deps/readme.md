@@ -10,9 +10,9 @@ walk the dependency graph to generate json output that can be fed into browser-p
 | ------------------ | :-------------: |
 | Full name          | module-deps |
 | Keywords           | dependency, graph, browser, require, module, exports, json |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 6143760.333333333 |
+| # downloads        | 6397855.333333333 |
 | # stars            | 204.0 |
 
 ## Links

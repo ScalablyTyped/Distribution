@@ -10,10 +10,10 @@ Lasso.js is a build tool and runtime library for building and bundling all of th
 | ------------------ | :-------------: |
 | Full name          | lasso |
 | Keywords           | bundler, build, css, javascript, concat, minify |
-| # releases         | 6 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 4821.666666666667 |
-| # stars            | 570.0 |
+| # downloads        | 5182.666666666667 |
+| # stars            | 573.0 |
 
 ## Links
 - [Homepage](https://github.com/lasso-js/lasso#readme)

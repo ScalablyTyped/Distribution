@@ -12,8 +12,8 @@ Use react-devtools outside of the browser
 | Keywords           | - |
 | # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 279447.3333333333 |
-| # stars            | 194948.0 |
+| # downloads        | 319441.0 |
+| # stars            | 198755.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

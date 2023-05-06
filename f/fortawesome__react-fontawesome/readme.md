@@ -10,10 +10,10 @@ Official React component for Font Awesome 5
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/react-fontawesome |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3366331.6666666665 |
-| # stars            | 3519.0 |
+| # downloads        | 3553421.6666666665 |
+| # stars            | 3576.0 |
 
 ## Links
 - [Homepage](https://github.com/FortAwesome/react-fontawesome)

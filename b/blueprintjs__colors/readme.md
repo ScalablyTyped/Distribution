@@ -10,10 +10,10 @@ Blueprint color definitions
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/colors |
 | Keywords           | - |
-| # releases         | 28 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 420755.6666666667 |
-| # stars            | 19256.0 |
+| # downloads        | 517479.6666666667 |
+| # stars            | 19529.0 |
 
 ## Links
 - [Homepage](https://github.com/palantir/blueprint#readme)

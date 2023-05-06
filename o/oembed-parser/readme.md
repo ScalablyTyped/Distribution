@@ -10,10 +10,10 @@ Get oEmbed data from given URL.
 | ------------------ | :-------------: |
 | Full name          | oembed-parser |
 | Keywords           | oembed, extractor, parser, util |
-| # releases         | 38 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 97262.0 |
-| # stars            | 52.0 |
+| # downloads        | 129266.33333333333 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://www.npmjs.com/package/oembed-parser)

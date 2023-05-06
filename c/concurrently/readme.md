@@ -10,10 +10,10 @@ Run commands concurrently
 | ------------------ | :-------------: |
 | Full name          | concurrently |
 | Keywords           | bash, concurrent, parallel, concurrently, command, sh |
-| # releases         | 17 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2418952333333334E7 |
-| # stars            | 5548.0 |
+| # downloads        | 1.3847721666666666E7 |
+| # stars            | 5715.0 |
 
 ## Links
 - [Homepage](https://github.com/open-cli-tools/concurrently#readme)

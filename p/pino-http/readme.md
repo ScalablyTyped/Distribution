@@ -10,10 +10,10 @@ High-speed HTTP logger for Node.js
 | ------------------ | :-------------: |
 | Full name          | pino-http |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 24 |
 | # dependents       | 0.0 |
-| # downloads        | 1778752.0 |
-| # stars            | 301.0 |
+| # downloads        | 2360326.0 |
+| # stars            | 345.0 |
 
 ## Links
 - [Homepage](https://github.com/pinojs/pino-http#readme)

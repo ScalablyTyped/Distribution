@@ -12,7 +12,7 @@ The official Couchbase Node.js Client Library.
 | Keywords           | couchbase, libcouchbase, memcached, nosql, json, document |
 | # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 36808.666666666664 |
+| # downloads        | 43274.0 |
 | # stars            | 460.0 |
 
 ## Links

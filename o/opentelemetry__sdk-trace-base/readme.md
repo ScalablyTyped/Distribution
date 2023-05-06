@@ -10,10 +10,10 @@ OpenTelemetry Tracing
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/sdk-trace-base |
 | Keywords           | opentelemetry, nodejs, tracing, profiling, metrics, stats |
-| # releases         | 30 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 5147056.0 |
-| # stars            | 1462.0 |
+| # downloads        | 6369366.666666667 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-base)

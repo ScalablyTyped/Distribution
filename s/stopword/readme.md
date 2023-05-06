@@ -10,10 +10,10 @@ A module for node.js and the browser that takes in text and returns text that is
 | ------------------ | :-------------: |
 | Full name          | stopword |
 | Keywords           | stopword, stopwords, document-processing, search, search-index, nlp |
-| # releases         | 21 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 83311.66666666667 |
-| # stars            | 171.0 |
+| # downloads        | 93761.66666666667 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/fergiemcdowall/stopword)

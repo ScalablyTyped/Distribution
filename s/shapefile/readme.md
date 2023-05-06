@@ -12,10 +12,13 @@ An implementation of the shapefile (.shp) spatial data format.
 | Keywords           | geojson, shapefile |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 310900.3333333333 |
-| # stars            | 720.0 |
+| # downloads        | 342966.6666666667 |
+| # stars            | 730.0 |
 
 ## Links
+- [Homepage](https://github.com/mbostock/shapefile)
+- [Bugs](https://github.com/mbostock/shapefile/issues)
+- [Repository](https://github.com/mbostock/shapefile)
 - [Npm](https://www.npmjs.com/package/shapefile)
     
 

@@ -12,8 +12,8 @@ Node.js Streams, a user-land copy of the stream library from Node.js
 | Keywords           | readable, stream, pipe |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 4.162059096666667E8 |
-| # stars            | 927.0 |
+| # downloads        | 4.681704333333333E8 |
+| # stars            | 971.0 |
 
 ## Links
 - [Homepage](https://github.com/nodejs/readable-stream)

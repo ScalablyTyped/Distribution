@@ -10,10 +10,10 @@ PostgreSQL client - pure javascript & libpq with the same API
 | ------------------ | :-------------: |
 | Full name          | pg |
 | Keywords           | database, libpq, pg, postgre, postgres, postgresql, rdbms |
-| # releases         | 10 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3717045E7 |
-| # stars            | 10598.0 |
+| # downloads        | 1.5862944E7 |
+| # stars            | 10835.0 |
 
 ## Links
 - [Homepage](https://github.com/brianc/node-postgres)

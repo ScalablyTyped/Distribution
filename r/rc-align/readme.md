@@ -10,10 +10,10 @@ align ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-align |
 | Keywords           | react, react-component, react-align, align |
-| # releases         | 11 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 6417313.666666667 |
-| # stars            | 71.0 |
+| # downloads        | 7100407.0 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/align)

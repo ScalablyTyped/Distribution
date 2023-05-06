@@ -12,10 +12,13 @@ Autocomplete prompt for inquirer
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 3414927.0 |
-| # stars            | 293.0 |
+| # downloads        | 3443815.0 |
+| # stars            | 300.0 |
 
 ## Links
+- [Homepage](https://github.com/mokkabonna/inquirer-autocomplete-prompt#readme)
+- [Bugs](https://github.com/mokkabonna/inquirer-autocomplete-prompt/issues)
+- [Repository](https://github.com/mokkabonna/inquirer-autocomplete-prompt)
 - [Npm](https://www.npmjs.com/package/inquirer-autocomplete-prompt)
     
 

@@ -4,16 +4,16 @@
 Typings are for version 5.0.1
 
 ## Library description:
-Node.js implementation of the TCP module that libp2p uses, which implements the interface-connection and interface-transport interfaces
+A TCP transport for libp2p
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @libp2p/tcp |
 | Keywords           | IPFS, TCP, libp2p, network, p2p, peer, peer-to-peer |
-| # releases         | 33 |
+| # releases         | 45 |
 | # dependents       | 0.0 |
-| # downloads        | 16828.333333333332 |
-| # stars            | 70.0 |
+| # downloads        | 24599.666666666668 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-tcp#readme)

@@ -10,10 +10,10 @@ A list of color names and its values
 | ------------------ | :-------------: |
 | Full name          | color-name |
 | Keywords           | color-name, color, color-keyword, keyword |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 5.134769406666667E8 |
-| # stars            | 79.0 |
+| # downloads        | 6.331762403333334E8 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/colorjs/color-name)

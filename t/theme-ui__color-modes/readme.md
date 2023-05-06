@@ -10,10 +10,10 @@ Adds support for user-controlled color modes
 | ------------------ | :-------------: |
 | Full name          | @theme-ui/color-modes |
 | Keywords           | - |
-| # releases         | 385 |
+| # releases         | 382 |
 | # dependents       | 0.0 |
-| # downloads        | 352394.0 |
-| # stars            | 4677.0 |
+| # downloads        | 373142.6666666667 |
+| # stars            | 4764.0 |
 
 ## Links
 - [Homepage](https://github.com/system-ui/theme-ui#readme)

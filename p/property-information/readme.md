@@ -12,7 +12,7 @@ Info on the properties and attributes of the web platform
 | Keywords           | html, svg, aria, property, attribute, information, info |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2.171497E7 |
+| # downloads        | 2.6316710333333332E7 |
 | # stars            | 27.0 |
 
 ## Links

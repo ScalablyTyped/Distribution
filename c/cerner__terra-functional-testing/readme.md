@@ -10,10 +10,10 @@ A functional testing utility for applications built using Terra.
 | ------------------ | :-------------: |
 | Full name          | @cerner/terra-functional-testing |
 | Keywords           | Cerner, Terra, Terra Toolkit, terra-toolkit, terra-functional-testing |
-| # releases         | 29 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 799.0 |
-| # stars            | 27.0 |
+| # downloads        | 794.6666666666666 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/cerner/terra-toolkit#readme)

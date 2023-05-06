@@ -10,10 +10,10 @@ Wrap a function without changing its name and other properties
 | ------------------ | :-------------: |
 | Full name          | keep-func-props |
 | Keywords           | function, functional, functional-programming, wrapper, name, length, properties, functor, mimic, call, typescript |
-| # releases         | 4 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 325665.3333333333 |
-| # stars            | 10.0 |
+| # downloads        | 369003.3333333333 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://www.github.com/ehmicky/keep-func-props)

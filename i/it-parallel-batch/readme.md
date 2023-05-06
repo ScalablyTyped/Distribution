@@ -10,10 +10,10 @@ Takes an async iterator that emits promise-returning functions, invokes them in 
 | ------------------ | :-------------: |
 | Full name          | it-parallel-batch |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 117325.66666666667 |
-| # stars            | 200.0 |
+| # downloads        | 148813.66666666666 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-parallel-batch#readme)

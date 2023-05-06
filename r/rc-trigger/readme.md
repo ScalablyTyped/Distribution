@@ -10,10 +10,10 @@ base abstract trigger component for react
 | ------------------ | :-------------: |
 | Full name          | rc-trigger |
 | Keywords           | react, react-component, react-trigger, trigger |
-| # releases         | 44 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 7432842.333333333 |
-| # stars            | 286.0 |
+| # downloads        | 8020959.666666667 |
+| # stars            | 293.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/trigger)

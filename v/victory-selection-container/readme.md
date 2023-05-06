@@ -10,10 +10,10 @@ Interactive Selection Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-selection-container |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 59 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 815799.0 |
-| # stars            | 9887.0 |
+| # downloads        | 810172.0 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

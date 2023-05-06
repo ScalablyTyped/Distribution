@@ -10,10 +10,10 @@ Audited & minimal 0-dependency JS implementation of SHA2, SHA3, RIPEMD, BLAKE2/3
 | ------------------ | :-------------: |
 | Full name          | @noble/hashes |
 | Keywords           | sha, sha2, sha3, sha256, sha512, keccak, kangarootwelve, ripemd160, blake2, blake3, hmac, hkdf, pbkdf2, scrypt, kdf, hash, cryptography, security, noble |
-| # releases         | 22 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 387699.0 |
-| # stars            | 175.0 |
+| # downloads        | 1547251.6666666667 |
+| # stars            | 223.0 |
 
 ## Links
 - [Homepage](https://paulmillr.com/noble/)

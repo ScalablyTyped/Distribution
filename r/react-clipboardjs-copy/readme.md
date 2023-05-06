@@ -4,15 +4,15 @@
 Typings are for version 1.3
 
 ## Library description:
-clipboardjs copy component for react
+clipboard.js copy component for react
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-clipboardjs-copy |
 | Keywords           | react, react-component, clipboard, copy, react-clipboardjs-copy |
-| # releases         | 2 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 228.33333333333334 |
+| # downloads        | 278.0 |
 | # stars            | 12.0 |
 
 ## Links

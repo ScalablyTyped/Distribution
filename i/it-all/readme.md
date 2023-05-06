@@ -4,16 +4,16 @@
 Typings are for version 2.0.0
 
 ## Library description:
-Collects all values from an async iterator and returns them as an array
+Collects all values from an (async) iterable and returns them as an array
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | it-all |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 375096.0 |
-| # stars            | 200.0 |
+| # downloads        | 336442.6666666667 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-all#readme)

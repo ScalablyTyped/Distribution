@@ -10,10 +10,10 @@ Social share, sending simple data to other apps.
 | ------------------ | :-------------: |
 | Full name          | react-native-share |
 | Keywords           | react-native, android, ios, windows, bridge, react, share |
-| # releases         | 70 |
+| # releases         | 57 |
 | # dependents       | 0.0 |
-| # downloads        | 549440.3333333334 |
-| # stars            | 3126.0 |
+| # downloads        | 585671.3333333334 |
+| # stars            | 3253.0 |
 
 ## Links
 - [Homepage](https://react-native-share.github.io/react-native-share/)

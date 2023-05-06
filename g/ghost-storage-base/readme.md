@@ -10,9 +10,9 @@ Base storage adapter.
 | ------------------ | :-------------: |
 | Full name          | ghost-storage-base |
 | Keywords           | ghost, storage, adapter |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 34716.666666666664 |
+| # downloads        | 58047.0 |
 | # stars            | 11.0 |
 
 ## Links

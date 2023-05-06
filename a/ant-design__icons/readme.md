@@ -10,10 +10,10 @@ Typings are for version 4.7.0
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 3981930.3333333335 |
-| # stars            | 754.0 |
+| # downloads        | 3895182.6666666665 |
+| # stars            | 772.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/ant-design-icons/tree/master#readme)

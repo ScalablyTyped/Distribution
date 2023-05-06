@@ -10,10 +10,10 @@ An Expo universal module to download assets and pass them into other APIs
 | ------------------ | :-------------: |
 | Full name          | expo-asset |
 | Keywords           | react-native, expo, asset |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1029546.6666666666 |
-| # stars            | 16909.0 |
+| # downloads        | 1330226.0 |
+| # stars            | 18105.0 |
 
 ## Links
 - [Homepage](https://docs.expo.dev/versions/latest/sdk/asset/)

@@ -10,10 +10,10 @@ Typings are for version 7.0.1
 | ------------------ | :-------------: |
 | Full name          | downshift |
 | Keywords           | enhanced input, react, autocomplete, autosuggest, typeahead, dropdown, select, combobox, omnibox, accessibility, WAI-ARIA, multiselect, multiple selection |
-| # releases         | 29 |
+| # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0729294666666666E7 |
-| # stars            | 10755.0 |
+| # downloads        | 8349928.333333333 |
+| # stars            | 11108.0 |
 
 ## Links
 - [Homepage](https://downshift-js.com)

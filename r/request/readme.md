@@ -12,8 +12,8 @@ Simplified HTTP request client.
 | Keywords           | http, simple, util, utility |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 8.507107566666667E7 |
-| # stars            | 25522.0 |
+| # downloads        | 7.4984793E7 |
+| # stars            | 25586.0 |
 
 ## Links
 - [Homepage](https://github.com/request/request#readme)

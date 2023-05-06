@@ -10,10 +10,10 @@ Internal package with TypeScript stuff
 | ------------------ | :-------------: |
 | Full name          | @react-spring/types |
 | Keywords           | animated, animation, hooks, motion, react, react-native, spring, typescript, velocity |
-| # releases         | 53 |
+| # releases         | 57 |
 | # dependents       | 0.0 |
-| # downloads        | 3283660.6666666665 |
-| # stars            | 24014.0 |
+| # downloads        | 3895202.6666666665 |
+| # stars            | 24618.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/react-spring#readme)

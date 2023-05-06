@@ -12,8 +12,8 @@ Jest's reporters
 | Keywords           | - |
 | # releases         | 74 |
 | # dependents       | 0.0 |
-| # downloads        | 7.177552566666667E7 |
-| # stars            | 40312.0 |
+| # downloads        | 7.763735833333333E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://jestjs.io/)

@@ -10,10 +10,10 @@ HTML to React parser.
 | ------------------ | :-------------: |
 | Full name          | html-react-parser |
 | Keywords           | html-react-parser, html, react, parser, dom |
-| # releases         | 39 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 2934124.0 |
-| # stars            | 1406.0 |
+| # downloads        | 3097207.0 |
+| # stars            | 1527.0 |
 
 ## Links
 - [Homepage](https://github.com/remarkablemark/html-react-parser#readme)

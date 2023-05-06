@@ -10,10 +10,10 @@ Redis store for node-cache-manager
 | ------------------ | :-------------: |
 | Full name          | cache-manager-redis-store |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 400737.3333333333 |
-| # stars            | 97.0 |
+| # downloads        | 480794.0 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://github.com/dabroek/node-cache-manager-redis-store#readme)

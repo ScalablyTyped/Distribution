@@ -10,10 +10,10 @@ This is a polyfill for the `Web Share API` that can be used in desktop too, so y
 | ------------------ | :-------------: |
 | Full name          | share-api-polyfill |
 | Keywords           | share, share api, share-api, share polyfill, share-polyfill, share api polyfill, share-api-polyfill |
-| # releases         | 10 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 18607.0 |
-| # stars            | 237.0 |
+| # downloads        | 17039.333333333332 |
+| # stars            | 243.0 |
 
 ## Links
 - [Homepage](https://github.com/on2-dev/share-api-polyfill#readme)

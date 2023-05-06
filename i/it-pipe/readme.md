@@ -10,10 +10,10 @@ Utility to "pipe" async iterables together
 | ------------------ | :-------------: |
 | Full name          | it-pipe |
 | Keywords           | async, await, iterable, iterator, pipe, pipeline, pull, pump, stream |
-| # releases         | 4 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 132888.66666666666 |
-| # stars            | 34.0 |
+| # downloads        | 183826.33333333334 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/alanshaw/it-pipe#readme)

@@ -10,10 +10,10 @@ AWS credential provider that exchanges a resolved SSO login token file for tempo
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-sso |
 | Keywords           | aws, credentials |
-| # releases         | 96 |
+| # releases         | 131 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2742638333333334E7 |
-| # stars            | 1854.0 |
+| # downloads        | 1.9400994333333332E7 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3#readme)

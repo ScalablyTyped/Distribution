@@ -10,10 +10,10 @@ Module to match url by pattern with wildcard
 | ------------------ | :-------------: |
 | Full name          | match-url-wildcard |
 | Keywords           | url, match-url, no-proxy, proxy-bypass, wildcard |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1012681.0 |
-| # stars            | 8.0 |
+| # downloads        | 1012370.6666666666 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/AlexKamaev/match-url-wildcard#readme)

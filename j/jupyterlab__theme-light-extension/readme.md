@@ -10,10 +10,10 @@ JupyterLab - Default Light Theme
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/theme-light-extension |
 | Keywords           | - |
-| # releases         | 143 |
+| # releases         | 137 |
 | # dependents       | 0.0 |
-| # downloads        | 218152.33333333334 |
-| # stars            | 12379.0 |
+| # downloads        | 119199.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

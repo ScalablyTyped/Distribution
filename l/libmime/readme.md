@@ -12,8 +12,8 @@ Encode and decode quoted printable and base64 strings
 | Keywords           | MIME, Base64, Quoted-Printable |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3636402.3333333335 |
-| # stars            | 18.0 |
+| # downloads        | 4039913.3333333335 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/andris9/libmime)

@@ -10,10 +10,10 @@ A validator for OpenAPI documents.
 | ------------------ | :-------------: |
 | Full name          | openapi-schema-validator |
 | Keywords           | openapi, schema, validator |
-| # releases         | 14 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 655559.0 |
-| # stars            | ? |
+| # downloads        | 767142.3333333334 |
+| # stars            | 765.0 |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-schema-validator#readme)

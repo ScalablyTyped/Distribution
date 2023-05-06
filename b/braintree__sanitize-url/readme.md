@@ -10,10 +10,10 @@ A url sanitizer
 | ------------------ | :-------------: |
 | Full name          | @braintree/sanitize-url |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 2642237.6666666665 |
-| # stars            | 188.0 |
+| # downloads        | 3284287.0 |
+| # stars            | 212.0 |
 
 ## Links
 - [Homepage](https://github.com/braintree/sanitize-url#readme)

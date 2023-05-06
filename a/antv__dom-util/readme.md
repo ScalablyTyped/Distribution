@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/dom-util |
 | Keywords           | util, antv, g |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 325110.3333333333 |
-| # stars            | 71.0 |
+| # downloads        | 348956.3333333333 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

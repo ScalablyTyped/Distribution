@@ -10,10 +10,10 @@ An internal Lerna tool
 | ------------------ | :-------------: |
 | Full name          | @lerna/run-topologically |
 | Keywords           | lerna, utils |
-| # releases         | 24 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 5314856.333333333 |
-| # stars            | 33535.0 |
+| # downloads        | 5151162.333333333 |
+| # stars            | 34130.0 |
 
 ## Links
 - [Homepage](https://lerna.js.org)

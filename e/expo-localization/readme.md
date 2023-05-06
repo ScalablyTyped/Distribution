@@ -10,10 +10,10 @@ Provides an interface for native user localization information.
 | ------------------ | :-------------: |
 | Full name          | expo-localization |
 | Keywords           | react-native, expo, localization, locales, l10n |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 209487.33333333334 |
-| # stars            | 16865.0 |
+| # downloads        | 275524.6666666667 |
+| # stars            | 18105.0 |
 
 ## Links
 - [Homepage](https://docs.expo.dev/versions/latest/sdk/localization/)

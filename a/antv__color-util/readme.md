@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/color-util |
 | Keywords           | util, antv, g |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 271867.6666666667 |
-| # stars            | 71.0 |
+| # downloads        | 298785.6666666667 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

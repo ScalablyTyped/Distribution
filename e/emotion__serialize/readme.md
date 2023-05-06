@@ -10,10 +10,10 @@ serialization utils for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/serialize |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 3.8827263333333336E7 |
-| # stars            | 15226.0 |
+| # downloads        | 4.0877478333333336E7 |
+| # stars            | 15687.0 |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)

@@ -10,10 +10,10 @@ libp2p WebRTC transport that includes a discovery mechanism provided by the sign
 | ------------------ | :-------------: |
 | Full name          | @libp2p/webrtc-star |
 | Keywords           | IPFS, libp2p |
-| # releases         | 26 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 14247.0 |
-| # stars            | 306.0 |
+| # downloads        | 18228.0 |
+| # stars            | 311.0 |
 
 ## Links
 - [Homepage](https://github.com/libp2p/js-libp2p-webrtc-star/tree/master/packages/webrtc-star-transport#readme)

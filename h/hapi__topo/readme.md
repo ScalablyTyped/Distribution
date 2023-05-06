@@ -12,8 +12,8 @@ Topological sorting with grouping support
 | Keywords           | topological, sort, toposort, topsort |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 3.7563604333333336E7 |
-| # stars            | 107.0 |
+| # downloads        | 3.7820204333333336E7 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/topo#readme)

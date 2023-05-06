@@ -9,10 +9,10 @@ Typings are for version 0.5.16
 | ------------------ | :-------------: |
 | Full name          | @firebase/installations |
 | Keywords           | - |
-| # releases         | 1249 |
+| # releases         | 1060 |
 | # dependents       | 0.0 |
-| # downloads        | 5283921.666666667 |
-| # stars            | ? |
+| # downloads        | 5360730.333333333 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

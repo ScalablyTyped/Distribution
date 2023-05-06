@@ -10,10 +10,10 @@ A JavaScript implementation of many web standards
 | ------------------ | :-------------: |
 | Full name          | jsdom |
 | Keywords           | dom, html, whatwg, w3c |
-| # releases         | 15 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 8.3529581E7 |
-| # stars            | 17626.0 |
+| # downloads        | 8.197129933333333E7 |
+| # stars            | 18304.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/jsdom#readme)

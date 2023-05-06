@@ -12,8 +12,8 @@ BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 | Keywords           | test, assertion, assert, testing, chai |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 2.2848451666666668E7 |
-| # stars            | 7621.0 |
+| # downloads        | 2.4883144666666668E7 |
+| # stars            | 7799.0 |
 
 ## Links
 - [Homepage](http://chaijs.com)

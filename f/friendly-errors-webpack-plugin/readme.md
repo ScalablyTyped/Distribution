@@ -10,10 +10,10 @@ Recognizes certain classes of webpack errors and cleans, aggregates and prioriti
 | ------------------ | :-------------: |
 | Full name          | friendly-errors-webpack-plugin |
 | Keywords           | friendly, errors, webpack, plugin |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 2194946.6666666665 |
-| # stars            | 747.0 |
+| # downloads        | 2039364.3333333333 |
+| # stars            | 749.0 |
 
 ## Links
 - [Homepage](https://github.com/geowarin/friendly-errors-webpack-plugin#readme)

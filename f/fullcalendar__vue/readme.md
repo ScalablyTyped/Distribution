@@ -4,21 +4,21 @@
 Typings are for version 5.11.2
 
 ## Library description:
-An official FullCalendar component for Vue 2
+The official Vue 2 component for FullCalendar
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @fullcalendar/vue |
-| Keywords           | vue, calendar, fullcalendar |
-| # releases         | 14 |
+| Keywords           | calendar, event, full-sized, fullcalendar, vue, vue2 |
+| # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 236020.66666666666 |
-| # stars            | 1054.0 |
+| # downloads        | 228616.66666666666 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/fullcalendar/fullcalendar-vue#readme)
-- [Bugs](https://github.com/fullcalendar/fullcalendar-vue/issues)
-- [Repository](https://github.com/fullcalendar/fullcalendar-vue)
+- [Homepage](https://fullcalendar.io/docs/vue)
+- [Bugs](https://github.com/fullcalendar/fullcalendar-vue2/issues)
+- [Repository](https://github.com/fullcalendar/fullcalendar-vue2)
 - [Npm](https://www.npmjs.com/package/%40fullcalendar%2Fvue)
     
 

@@ -10,9 +10,9 @@ Add a header to a file.
 | ------------------ | :-------------: |
 | Full name          | postcss-header |
 | Keywords           | header, banner, postcss, postcss-plugin, css |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 34914.333333333336 |
+| # downloads        | 35700.333333333336 |
 | # stars            | 3.0 |
 
 ## Links

@@ -10,10 +10,10 @@ use this with vue-inbrowser-compiler to allow jsx compilation
 | ------------------ | :-------------: |
 | Full name          | vue-inbrowser-compiler-utils |
 | Keywords           | vue, compile, live, browser, acorn |
-| # releases         | 34 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 974780.3333333334 |
-| # stars            | 2269.0 |
+| # downloads        | 765333.3333333334 |
+| # stars            | 2295.0 |
 
 ## Links
 - [Homepage](https://vue-styleguidist.github.io)

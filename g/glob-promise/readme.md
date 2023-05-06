@@ -10,10 +10,10 @@ Promise version of glob
 | ------------------ | :-------------: |
 | Full name          | glob-promise |
 | Keywords           | glob, promise |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4403677333333334E7 |
-| # stars            | 47.0 |
+| # downloads        | 1.7153417666666668E7 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/ahmadnassri/node-glob-promise)

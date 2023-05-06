@@ -10,10 +10,10 @@ Emoji picker for the web
 | ------------------ | :-------------: |
 | Full name          | emoji-mart |
 | Keywords           | emoji, emoticons, emoji-picker, web-component, twemoji |
-| # releases         | 5 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1612559.0 |
-| # stars            | 5894.0 |
+| # downloads        | 1788741.6666666667 |
+| # stars            | 6221.0 |
 
 ## Links
 - [Homepage](https://missiveapp.com/open/emoji-mart)

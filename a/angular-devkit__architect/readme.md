@@ -9,10 +9,10 @@ Angular Build Facade
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @angular-devkit/architect |
-| Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit |
-| # releases         | 217 |
+| Keywords           | Angular CLI, Angular DevKit, angular, devkit, sdk |
+| # releases         | 219 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5019599666666666E7 |
+| # downloads        | 1.5177471333333334E7 |
 | # stars            | ? |
 
 ## Links

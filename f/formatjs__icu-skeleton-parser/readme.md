@@ -9,10 +9,10 @@ Typings are for version 1.3.14
 | ------------------ | :-------------: |
 | Full name          | @formatjs/icu-skeleton-parser |
 | Keywords           | - |
-| # releases         | 33 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 5255465.0 |
-| # stars            | 13324.0 |
+| # downloads        | 6821324.666666667 |
+| # stars            | 13464.0 |
 
 ## Links
 - [Homepage](https://github.com/formatjs/formatjs#readme)

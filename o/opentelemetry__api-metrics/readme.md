@@ -10,13 +10,13 @@ Public metrics API for OpenTelemetry
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/api-metrics |
 | Keywords           | opentelemetry, nodejs, browser, profiling, metrics, stats, monitoring |
-| # releases         | 70 |
+| # releases         | 71 |
 | # dependents       | 0.0 |
-| # downloads        | 5849764.666666667 |
-| # stars            | 1462.0 |
+| # downloads        | 7009362.333333333 |
+| # stars            | 1545.0 |
 
 ## Links
-- [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-api-metrics)
+- [Homepage](https://github.com/open-telemetry/opentelemetry-js#readme)
 - [Bugs](https://github.com/open-telemetry/opentelemetry-js/issues)
 - [Repository](https://github.com/open-telemetry/opentelemetry-js)
 - [Npm](https://www.npmjs.com/package/%40opentelemetry%2Fapi-metrics)

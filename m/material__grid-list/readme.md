@@ -12,8 +12,8 @@ The Material Components for the web grid list component
 | Keywords           | material components, material design, grid list |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 64609.666666666664 |
-| # stars            | 16284.0 |
+| # downloads        | 58209.333333333336 |
+| # stars            | 16547.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -10,12 +10,15 @@ Windows Azure Active Directory Client Library for node
 | ------------------ | :-------------: |
 | Full name          | adal-node |
 | Keywords           | node, azure, AAD, adal, adfs, oauth |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 1738014.6666666667 |
-| # stars            | 2487.0 |
+| # downloads        | 1824870.0 |
+| # stars            | 2738.0 |
 
 ## Links
+- [Homepage](https://github.com/AzureAD/microsoft-authentication-library-for-js#readme)
+- [Bugs](https://github.com/AzureAD/microsoft-authentication-library-for-js/issues)
+- [Repository](https://github.com/AzureAD/microsoft-authentication-library-for-js)
 - [Npm](https://www.npmjs.com/package/adal-node)
     
 

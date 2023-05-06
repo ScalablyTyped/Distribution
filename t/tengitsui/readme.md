@@ -10,9 +10,9 @@ Typings are for version 4.3
 | ------------------ | :-------------: |
 | Full name          | tengitsui |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 188.66666666666666 |
+| # downloads        | 263.0 |
 | # stars            | ? |
 
 ## Links

@@ -10,10 +10,10 @@ HTTP2 client, just with the familiar `https` API
 | ------------------ | :-------------: |
 | Full name          | http2-wrapper |
 | Keywords           | http2, https, http, request |
-| # releases         | 29 |
+| # releases         | 27 |
 | # dependents       | 0.0 |
-| # downloads        | 1.8655824333333332E7 |
-| # stars            | 209.0 |
+| # downloads        | 2.3640199333333332E7 |
+| # stars            | 215.0 |
 
 ## Links
 - [Homepage](https://github.com/szmarczak/http2-wrapper#readme)

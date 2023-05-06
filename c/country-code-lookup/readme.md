@@ -12,10 +12,13 @@ Finds countries by various country codes
 | Keywords           | fips, iso, country, code, countries |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 206640.33333333334 |
-| # stars            | 56.0 |
+| # downloads        | 220577.66666666666 |
+| # stars            | 63.0 |
 
 ## Links
+- [Homepage](https://github.com/richorama/country-code-lookup)
+- [Bugs](https://github.com/richorama/country-code-lookup/issues)
+- [Repository](https://github.com/richorama/country-code-lookup)
 - [Npm](https://www.npmjs.com/package/country-code-lookup)
     
 

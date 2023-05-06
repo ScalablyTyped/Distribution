@@ -10,10 +10,10 @@ Consul client
 | ------------------ | :-------------: |
 | Full name          | consul |
 | Keywords           | consul |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 238419.66666666666 |
-| # stars            | 531.0 |
+| # downloads        | 281290.0 |
+| # stars            | 532.0 |
 
 ## Links
 - [Homepage](https://github.com/silas/node-consul#readme)

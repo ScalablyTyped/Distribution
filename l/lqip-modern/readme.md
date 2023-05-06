@@ -10,10 +10,10 @@ Modern approach to Low Quality Image Placeholders (LQIP) using webp and sharp.
 | ------------------ | :-------------: |
 | Full name          | lqip-modern |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 7050.666666666667 |
-| # stars            | 159.0 |
+| # downloads        | 9993.333333333334 |
+| # stars            | 176.0 |
 
 ## Links
 - [Homepage](https://github.com/transitive-bullshit/lqip-modern#readme)

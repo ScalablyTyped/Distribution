@@ -10,9 +10,9 @@ Transport interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-transport |
 | Keywords           | interface, libp2p |
-| # releases         | 9 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 10384.666666666666 |
+| # downloads        | 31786.666666666668 |
 | # stars            | 68.0 |
 
 ## Links

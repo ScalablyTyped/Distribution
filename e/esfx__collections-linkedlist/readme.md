@@ -10,12 +10,15 @@ LinkedList collection API.
 | ------------------ | :-------------: |
 | Full name          | @esfx/collections-linkedlist |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 8799.0 |
-| # stars            | 161.0 |
+| # downloads        | 6638.333333333333 |
+| # stars            | 169.0 |
 
 ## Links
+- [Homepage](https://github.com/esfx/esfx#readme)
+- [Bugs](https://github.com/esfx/esfx/issues)
+- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Fcollections-linkedlist)
     
 

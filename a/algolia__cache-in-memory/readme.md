@@ -10,10 +10,10 @@ Promise-based cache library using memory.
 | ------------------ | :-------------: |
 | Full name          | @algolia/cache-in-memory |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 21 |
 | # dependents       | 0.0 |
-| # downloads        | 2788017.3333333335 |
-| # stars            | 1133.0 |
+| # downloads        | 3481357.3333333335 |
+| # stars            | 1172.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

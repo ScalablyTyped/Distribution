@@ -10,10 +10,10 @@ Generate trusted local SSL/TLS certificates for local SSL development
 | ------------------ | :-------------: |
 | Full name          | @expo/devcert |
 | Keywords           | ssl, certificate, openssl, trust |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 632707.3333333334 |
-| # stars            | ? |
+| # downloads        | 916488.6666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/expo/devcert#readme)

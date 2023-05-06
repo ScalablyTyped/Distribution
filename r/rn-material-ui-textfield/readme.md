@@ -10,10 +10,10 @@ Material UI textfield
 | ------------------ | :-------------: |
 | Full name          | rn-material-ui-textfield |
 | Keywords           | react, react-component, react-native, ios, android, material, material-ui, input, textinput, field, textfield, floating, label |
-| # releases         | 8 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 15704.666666666666 |
-| # stars            | 29.0 |
+| # downloads        | 18381.0 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/gabrieldonadel/rn-material-ui-textfield#readme)

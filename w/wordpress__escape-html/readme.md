@@ -10,9 +10,9 @@ Escape HTML utils.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/escape-html |
 | Keywords           | wordpress, gutenberg, html |
-| # releases         | 47 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 295982.6666666667 |
+| # downloads        | 317831.6666666667 |
 | # stars            | ? |
 
 ## Links

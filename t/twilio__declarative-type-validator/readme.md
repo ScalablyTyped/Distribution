@@ -10,9 +10,9 @@ Declarative runtime type validator for JavaScript
 | ------------------ | :-------------: |
 | Full name          | @twilio/declarative-type-validator |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 192024.33333333334 |
+| # downloads        | 258862.33333333334 |
 | # stars            | ? |
 
 ## Links

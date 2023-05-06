@@ -10,10 +10,10 @@ Use cascade layers in CSS
 | ------------------ | :-------------: |
 | Full name          | @csstools/postcss-cascade-layers |
 | Keywords           | cascade, css, layers, postcss, postcss-plugin, selectors, specificity |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 6663667.333333333 |
-| # stars            | 345.0 |
+| # downloads        | 9688470.333333334 |
+| # stars            | 418.0 |
 
 ## Links
 - [Homepage](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-cascade-layers#readme)

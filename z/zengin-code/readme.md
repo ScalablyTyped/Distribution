@@ -10,10 +10,10 @@ bank codes and branch codes for japanese
 | ------------------ | :-------------: |
 | Full name          | zengin-code |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 10261.0 |
-| # stars            | 60.0 |
+| # downloads        | 11890.666666666666 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/zengin-code/zengin-js#readme)

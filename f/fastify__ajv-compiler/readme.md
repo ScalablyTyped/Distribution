@@ -10,10 +10,10 @@ Build and manage the AJV instances for the fastify framework
 | ------------------ | :-------------: |
 | Full name          | @fastify/ajv-compiler |
 | Keywords           | ajv, validator, schema, compiler, fastify |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 2132142.3333333335 |
-| # stars            | 10.0 |
+| # downloads        | 2823680.3333333335 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/fastify/ajv-compiler#readme)

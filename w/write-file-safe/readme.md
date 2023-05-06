@@ -4,15 +4,15 @@
 Typings are for version 1.3.1
 
 ## Library description:
-Write files atomically and create parent directories if necessary
+Write files atomically, and create parent directories if necessary
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | write-file-safe |
 | Keywords           | write, file, safe, fs-safe, fs, without, try, catch, parent, directories, directory, recursive, atomic |
-| # releases         | 12 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 3697.6666666666665 |
+| # downloads        | 11349.0 |
 | # stars            | 2.0 |
 
 ## Links

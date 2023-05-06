@@ -10,9 +10,9 @@ Nginstack DevTools Library. See the [nginstack site](nginstack.com) for more inf
 | ------------------ | :-------------: |
 | Full name          | @nginstack/dev-tools |
 | Keywords           | - |
-| # releases         | 172 |
+| # releases         | 156 |
 | # dependents       | 0.0 |
-| # downloads        | 2145.0 |
+| # downloads        | 1609.3333333333333 |
 | # stars            | ? |
 
 ## Links

@@ -12,10 +12,13 @@ Synchronous version of the Fetch API
 | Keywords           | fetch, sync |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 9288544.666666666 |
-| # stars            | 18.0 |
+| # downloads        | 8806560.666666666 |
+| # stars            | 19.0 |
 
 ## Links
+- [Homepage](https://github.com/larsgw/sync-fetch#readme)
+- [Bugs](https://github.com/larsgw/sync-fetch/issues)
+- [Repository](https://github.com/larsgw/sync-fetch)
 - [Npm](https://www.npmjs.com/package/sync-fetch)
     
 

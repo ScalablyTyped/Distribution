@@ -12,8 +12,8 @@ Embed react-devtools within a website
 | Keywords           | - |
 | # releases         | 46 |
 | # dependents       | 0.0 |
-| # downloads        | 60931.666666666664 |
-| # stars            | 194948.0 |
+| # downloads        | 84194.0 |
+| # stars            | 198755.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

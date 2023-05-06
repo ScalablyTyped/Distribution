@@ -10,10 +10,10 @@ Finite key-value map using the Least Recently Used (LRU) algorithm where the mos
 | ------------------ | :-------------: |
 | Full name          | lru_map |
 | Keywords           | cache, lru, buffer, map |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0970071666666666E7 |
-| # stars            | 745.0 |
+| # downloads        | 1.2570504E7 |
+| # stars            | 749.0 |
 
 ## Links
 - [Homepage](https://github.com/rsms/js-lru#readme)

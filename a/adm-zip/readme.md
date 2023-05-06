@@ -10,10 +10,10 @@ Javascript implementation of zip for nodejs with support for electron original-f
 | ------------------ | :-------------: |
 | Full name          | adm-zip |
 | Keywords           | zip, methods, archive, unzip |
-| # releases         | 11 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3716092E7 |
-| # stars            | 1636.0 |
+| # downloads        | 1.5518363666666666E7 |
+| # stars            | 1732.0 |
 
 ## Links
 - [Homepage](https://github.com/cthackers/adm-zip)

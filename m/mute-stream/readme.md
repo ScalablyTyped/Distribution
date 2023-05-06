@@ -10,15 +10,15 @@ Bytes go in, but they don't come out (when muted).
 | ------------------ | :-------------: |
 | Full name          | mute-stream |
 | Keywords           | mute, stream, pipe |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 8.752427733333333E7 |
-| # stars            | 44.0 |
+| # downloads        | 8.759926066666667E7 |
+| # stars            | 47.0 |
 
 ## Links
-- [Homepage](https://github.com/isaacs/mute-stream#readme)
-- [Bugs](https://github.com/isaacs/mute-stream/issues)
-- [Repository](https://github.com/isaacs/mute-stream)
+- [Homepage](https://github.com/npm/mute-stream#readme)
+- [Bugs](https://github.com/npm/mute-stream/issues)
+- [Repository](https://github.com/npm/mute-stream)
 - [Npm](https://www.npmjs.com/package/mute-stream)
     
 

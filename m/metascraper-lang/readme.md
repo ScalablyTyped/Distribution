@@ -10,10 +10,10 @@ Get lang property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-lang |
 | Keywords           | lang, metascraper |
-| # releases         | 84 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 7503.666666666667 |
-| # stars            | 1802.0 |
+| # downloads        | 3882.0 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

@@ -9,9 +9,9 @@ Typings are for version 0.7
 | ------------------ | :-------------: |
 | Full name          | @storefront-ui/vue |
 | Keywords           | - |
-| # releases         | 31 |
+| # releases         | 30 |
 | # dependents       | 0.0 |
-| # downloads        | 23910.666666666668 |
+| # downloads        | 25990.0 |
 | # stars            | ? |
 
 ## Links

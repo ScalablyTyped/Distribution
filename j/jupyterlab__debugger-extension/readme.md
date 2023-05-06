@@ -10,10 +10,10 @@ JupyterLab - Debugger Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/debugger-extension |
 | Keywords           | jupyter, jupyterlab, jupyterlab-extension |
-| # releases         | 135 |
+| # releases         | 132 |
 | # dependents       | 0.0 |
-| # downloads        | 176882.66666666666 |
-| # stars            | 544.0 |
+| # downloads        | 77051.66666666667 |
+| # stars            | 547.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/debugger)

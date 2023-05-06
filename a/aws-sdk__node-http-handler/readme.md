@@ -10,10 +10,10 @@ Provides a way to make requests
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/node-http-handler |
 | Keywords           | - |
-| # releases         | 63 |
+| # releases         | 73 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5244458666666666E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1770508333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/node-http-handler)

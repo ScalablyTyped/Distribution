@@ -10,10 +10,10 @@ CLI for Jasmine, a simple JavaScript testing framework for browsers and Node
 | ------------------ | :-------------: |
 | Full name          | jasmine |
 | Keywords           | test, testing, jasmine, tdd, bdd |
-| # releases         | 15 |
+| # releases         | 16 |
 | # dependents       | 0.0 |
-| # downloads        | 7912800.333333333 |
-| # stars            | 357.0 |
+| # downloads        | 8149174.0 |
+| # stars            | 360.0 |
 
 ## Links
 - [Homepage](http://jasmine.github.io/)

@@ -10,9 +10,9 @@ A shim module of colorbrewer2 by Cythina Brewer for browserify
 | ------------------ | :-------------: |
 | Full name          | colorbrewer |
 | Keywords           | colors, design, visualization, cartography, svg, d3, browserify |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 222545.33333333334 |
+| # downloads        | 258810.33333333334 |
 | # stars            | 31.0 |
 
 ## Links

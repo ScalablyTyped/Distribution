@@ -10,10 +10,10 @@ Easily send emails from a KeystoneJS application
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/email |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 319.0 |
-| # stars            | 61.0 |
+| # downloads        | 396.3333333333333 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/keystonejs/keystone-5#readme)

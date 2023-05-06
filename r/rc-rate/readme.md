@@ -12,8 +12,8 @@ React Star Rate Component
 | Keywords           | react, react-component, react-rate, rate |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3163109.6666666665 |
-| # stars            | 84.0 |
+| # downloads        | 3305855.6666666665 |
+| # stars            | 89.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/rate)

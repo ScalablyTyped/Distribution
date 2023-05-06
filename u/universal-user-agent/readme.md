@@ -12,8 +12,8 @@ Get a user agent string across all JavaScript Runtime Environments
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 2.7258677333333332E7 |
-| # stars            | 14.0 |
+| # downloads        | 2.5675580333333332E7 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/gr2m/universal-user-agent#readme)

@@ -10,15 +10,12 @@ A lightning fast JavaScript grid/spreadsheet
 | ------------------ | :-------------: |
 | Full name          | slickgrid |
 | Keywords           | slickgrid, grid |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 24554.0 |
-| # stars            | 1508.0 |
+| # downloads        | 26834.666666666668 |
+| # stars            | 1544.0 |
 
 ## Links
-- [Homepage](https://github.com/6pac/SlickGrid#readme)
-- [Bugs](https://github.com/6pac/SlickGrid/issues)
-- [Repository](https://github.com/6pac/SlickGrid)
 - [Npm](https://www.npmjs.com/package/slickgrid)
     
 

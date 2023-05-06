@@ -10,10 +10,10 @@ React image gallery, react slideshow carousel, react content rotator
 | ------------------ | :-------------: |
 | Full name          | react-alice-carousel |
 | Keywords           | react, carousel, gallery, slider, slideshow, rotator, react-slideshow, react-gallery, react carousel, react slideshow, react gallery, image gallery, image slider, image carousel, image rotator, content gallery, content rotator |
-| # releases         | 13 |
+| # releases         | 17 |
 | # dependents       | 0.0 |
-| # downloads        | 141439.66666666666 |
-| # stars            | 629.0 |
+| # downloads        | 157224.0 |
+| # stars            | 677.0 |
 
 ## Links
 - [Homepage](https://github.com/maxmarinich/react-alice-carousel#readme)

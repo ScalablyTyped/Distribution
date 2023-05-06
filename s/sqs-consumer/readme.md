@@ -10,13 +10,13 @@ Build SQS-based Node applications without the boilerplate
 | ------------------ | :-------------: |
 | Full name          | sqs-consumer |
 | Keywords           | sqs, queue, consumer |
-| # releases         | 3 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 1166555.3333333333 |
-| # stars            | 1293.0 |
+| # downloads        | 1292804.0 |
+| # stars            | 1388.0 |
 
 ## Links
-- [Homepage](https://github.com/BBC/sqs-consumer)
+- [Homepage](https://bbc.github.io/sqs-consumer/)
 - [Bugs](https://github.com/BBC/sqs-consumer/issues)
 - [Repository](https://github.com/BBC/sqs-consumer)
 - [Npm](https://www.npmjs.com/package/sqs-consumer)

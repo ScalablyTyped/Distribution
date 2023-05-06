@@ -10,10 +10,10 @@ Strip HTML tags from strings. No parser, accepts mixed sources.
 | ------------------ | :-------------: |
 | Full name          | string-strip-html |
 | Keywords           | code, extract, from, html, jsp, mixed, remove, separate, stri, string, strip, tags, templating, text, xhtml |
-| # releases         | 66 |
+| # releases         | 74 |
 | # dependents       | 0.0 |
-| # downloads        | 312520.0 |
-| # stars            | 116.0 |
+| # downloads        | 379704.6666666667 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/string-strip-html)

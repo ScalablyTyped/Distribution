@@ -10,10 +10,10 @@ Typings are for version 3.209.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-create-request |
 | Keywords           | - |
-| # releases         | 71 |
+| # releases         | 79 |
 | # dependents       | 0.0 |
-| # downloads        | 2495711.6666666665 |
-| # stars            | 1854.0 |
+| # downloads        | 3208081.0 |
+| # stars            | 2036.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-create-request)

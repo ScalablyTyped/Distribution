@@ -12,7 +12,7 @@ Optimization plugin to shorten the names of CSS variables
 | Keywords           | css, variables, custom, properties, short, hash, name, shorten |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 214.0 |
+| # downloads        | 219.0 |
 | # stars            | 4.0 |
 
 ## Links

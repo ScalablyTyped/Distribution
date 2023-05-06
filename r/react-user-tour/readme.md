@@ -11,8 +11,8 @@ give your user a guided tour around your application
 | Keywords           | onboarding, user, tour, user-tour, tour-guide, guide, joyride, hopscotch, shepard, react |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1216.6666666666667 |
-| # stars            | 148.0 |
+| # downloads        | 1319.6666666666667 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](https://github.com/socialtables/react-user-tour)

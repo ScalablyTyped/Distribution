@@ -12,7 +12,7 @@ Storybook for HTML: View HTML snippets in isolation with Hot Reloading.
 | Keywords           | storybook |
 | # releases         | 460 |
 | # dependents       | 0.0 |
-| # downloads        | 238128.0 |
+| # downloads        | 270175.6666666667 |
 | # stars            | ? |
 
 ## Links

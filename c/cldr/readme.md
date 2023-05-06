@@ -10,10 +10,10 @@ Library for extracting data from CLDR (the Unicode Common Locale Data Repository
 | ------------------ | :-------------: |
 | Full name          | cldr |
 | Keywords           | locale, i18n, cldr, l10n, internationalization, localization, date, time, interval, format, formats, pattern, patterns, plural, plurals, number, country, territory, time, zone, timezone, currency, script, list, units |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 21858.666666666668 |
-| # stars            | 110.0 |
+| # downloads        | 35446.0 |
+| # stars            | 116.0 |
 
 ## Links
 - [Homepage](https://github.com/papandreou/node-cldr#readme)

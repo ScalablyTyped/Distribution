@@ -12,8 +12,8 @@ Lumino Virtual DOM
 | Keywords           | - |
 | # releases         | 20 |
 | # dependents       | 0.0 |
-| # downloads        | 283251.0 |
-| # stars            | 370.0 |
+| # downloads        | 197103.33333333334 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

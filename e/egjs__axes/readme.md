@@ -10,10 +10,10 @@ A module used to change the information of user action entered by various input 
 | ------------------ | :-------------: |
 | Full name          | @egjs/axes |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 26 |
 | # dependents       | 0.0 |
-| # downloads        | 78202.66666666667 |
-| # stars            | 127.0 |
+| # downloads        | 105076.66666666667 |
+| # stars            | 138.0 |
 
 ## Links
 - [Homepage](https://github.com/naver/egjs-axes)

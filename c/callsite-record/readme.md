@@ -10,12 +10,15 @@ Create fancy log entries for errors and function call sites.
 | ------------------ | :-------------: |
 | Full name          | callsite-record |
 | Keywords           | source, code, frame, stack, callstack, call, source-code |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1397006.3333333333 |
-| # stars            | 153.0 |
+| # downloads        | 1487167.3333333333 |
+| # stars            | 155.0 |
 
 ## Links
+- [Homepage](https://github.com/inikulin/source-frame#readme)
+- [Bugs](https://github.com/inikulin/source-frame/issues)
+- [Repository](https://github.com/inikulin/source-frame)
 - [Npm](https://www.npmjs.com/package/callsite-record)
     
 

@@ -10,13 +10,13 @@ Logger for Hexo
 | ------------------ | :-------------: |
 | Full name          | hexo-log |
 | Keywords           | website, blog, cms, framework, hexo |
-| # releases         | 2 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 137108.33333333334 |
+| # downloads        | 170252.66666666666 |
 | # stars            | 7.0 |
 
 ## Links
-- [Homepage](http://hexo.io/)
+- [Homepage](https://hexo.io/)
 - [Bugs](https://github.com/hexojs/hexo-log/issues)
 - [Repository](https://github.com/hexojs/hexo-log)
 - [Npm](https://www.npmjs.com/package/hexo-log)

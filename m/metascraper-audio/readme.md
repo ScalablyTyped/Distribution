@@ -10,10 +10,10 @@ Get audio property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-audio |
 | Keywords           | author, metascraper |
-| # releases         | 92 |
+| # releases         | 83 |
 | # dependents       | 0.0 |
-| # downloads        | 2898.0 |
-| # stars            | 1802.0 |
+| # downloads        | 2447.0 |
+| # stars            | 1943.0 |
 
 ## Links
 - [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)

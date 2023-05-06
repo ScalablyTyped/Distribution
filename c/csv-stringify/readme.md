@@ -10,10 +10,10 @@ CSV stringifier implementing the Node.js `stream.Transform` API
 | ------------------ | :-------------: |
 | Full name          | csv-stringify |
 | Keywords           | csv, stringify, stringifier |
-| # releases         | 20 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 9540639.666666666 |
-| # stars            | 3273.0 |
+| # downloads        | 7892520.666666667 |
+| # stars            | 3406.0 |
 
 ## Links
 - [Homepage](https://csv.js.org/stringify/)

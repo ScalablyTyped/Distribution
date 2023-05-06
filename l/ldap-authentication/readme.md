@@ -10,10 +10,10 @@ A simple async nodejs library for LDAP user authentication
 | ------------------ | :-------------: |
 | Full name          | ldap-authentication |
 | Keywords           | ldap, authenticate, authentication, ldapjs, security, simple, lightweight, fast, async, passport, passportjs, login, password, username, ldap-authentication, ldap-authenticate |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 7756.666666666667 |
-| # stars            | 58.0 |
+| # downloads        | 7770.333333333333 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/shaozi/ldap-authentication#readme)

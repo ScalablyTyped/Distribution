@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/chunked-stream-reader-node |
 | Keywords           | - |
-| # releases         | 32 |
+| # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 1984.3333333333333 |
-| # stars            | 1851.0 |
+| # downloads        | 2707.0 |
+| # stars            | 1962.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/chunked-stream-reader-node)

@@ -10,10 +10,10 @@ Interact with the Xumm Developer API
 | ------------------ | :-------------: |
 | Full name          | xumm-sdk |
 | Keywords           | xrp, xrpl, xumm, sdk, api |
-| # releases         | 48 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 983.0 |
-| # stars            | 22.0 |
+| # downloads        | 3080.3333333333335 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/XRPL-Labs/XUMM-SDK/#readme)

@@ -10,10 +10,10 @@ Expand environment variables using dotenv
 | ------------------ | :-------------: |
 | Full name          | dotenv-expand |
 | Keywords           | dotenv, expand, variables, env, .env |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 3.7933274E7 |
-| # stars            | 673.0 |
+| # downloads        | 4.3121036333333336E7 |
+| # stars            | 725.0 |
 
 ## Links
 - [Homepage](https://github.com/motdotla/dotenv-expand#readme)

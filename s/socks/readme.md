@@ -12,8 +12,8 @@ Fully featured SOCKS proxy client supporting SOCKSv4, SOCKSv4a, and SOCKSv5. Inc
 | Keywords           | socks, proxy, tor, socks 4, socks 5, socks4, socks5 |
 | # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 4.9273306666666664E7 |
-| # stars            | 249.0 |
+| # downloads        | 5.3465473333333336E7 |
+| # stars            | 258.0 |
 
 ## Links
 - [Homepage](https://github.com/JoshGlazebrook/socks/)

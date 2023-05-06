@@ -10,10 +10,10 @@ Declarative tracking for React apps.
 | ------------------ | :-------------: |
 | Full name          | react-tracking |
 | Keywords           | declarative, layer, metrics, nyt, react, tracking |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 113452.33333333333 |
-| # stars            | 1651.0 |
+| # downloads        | 120521.33333333333 |
+| # stars            | 1723.0 |
 
 ## Links
 - [Homepage](https://github.com/nytimes/react-tracking)

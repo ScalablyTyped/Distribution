@@ -10,10 +10,10 @@ A small configuration module for your Feathers application.
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/configuration |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 34 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 86634.33333333333 |
-| # stars            | 14155.0 |
+| # downloads        | 86242.33333333333 |
+| # stars            | 14275.0 |
 
 ## Links
 - [Homepage](https://feathersjs.com)

@@ -10,10 +10,10 @@ Microsoft Authentication Library for js
 | ------------------ | :-------------: |
 | Full name          | @azure/msal-browser |
 | Keywords           | implicit, authorization code, PKCE, js, AAD, msal, oauth |
-| # releases         | 48 |
+| # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 3049311.0 |
-| # stars            | 2595.0 |
+| # downloads        | 4379514.0 |
+| # stars            | 2783.0 |
 
 ## Links
 - [Homepage](https://github.com/AzureAD/microsoft-authentication-library-for-js#readme)

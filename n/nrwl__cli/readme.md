@@ -12,8 +12,8 @@ Smart, Fast and Extensible Build System
 | Keywords           | Monorepo, Angular, React, Web, Node, Nest, Jest, Cypress, CLI |
 | # releases         | 570 |
 | # dependents       | 0.0 |
-| # downloads        | 8023945.333333333 |
-| # stars            | 14693.0 |
+| # downloads        | 9755618.666666666 |
+| # stars            | 16088.0 |
 
 ## Links
 - [Homepage](https://nx.dev)

@@ -12,8 +12,8 @@ A Test-Anything-Protocol library for JavaScript
 | Keywords           | assert, tap, test, testing |
 | # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 856187.0 |
-| # stars            | 2040.0 |
+| # downloads        | 1118450.6666666667 |
+| # stars            | 2122.0 |
 
 ## Links
 - [Homepage](http://www.node-tap.org/)

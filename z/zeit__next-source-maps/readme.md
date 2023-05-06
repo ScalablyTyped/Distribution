@@ -10,10 +10,10 @@ Generate source maps during production build in your Next.js project
 | ------------------ | :-------------: |
 | Full name          | @zeit/next-source-maps |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 353767.0 |
-| # stars            | 2675.0 |
+| # downloads        | 367086.0 |
+| # stars            | 2672.0 |
 
 ## Links
 - [Homepage](https://github.com/zeit/next-plugins#readme)

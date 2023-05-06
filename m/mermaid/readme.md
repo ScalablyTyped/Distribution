@@ -4,21 +4,21 @@
 Typings are for version 9.1
 
 ## Library description:
-Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.
+Markdown-ish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | mermaid |
 | Keywords           | diagram, markdown, flowchart, sequence diagram, gantt, class diagram, git graph |
-| # releases         | 43 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 894889.6666666666 |
-| # stars            | 49869.0 |
+| # downloads        | 1064534.0 |
+| # stars            | 52122.0 |
 
 ## Links
-- [Homepage](https://github.com/knsv/mermaid#readme)
-- [Bugs](https://github.com/knsv/mermaid/issues)
-- [Repository](https://github.com/knsv/mermaid)
+- [Homepage](https://github.com/mermaid-js/mermaid#readme)
+- [Bugs](https://github.com/mermaid-js/mermaid/issues)
+- [Repository](https://github.com/mermaid-js/mermaid)
 - [Npm](https://www.npmjs.com/package/mermaid)
     
 

@@ -12,7 +12,7 @@ Extract meaning from JS Errors
 | Keywords           | stacktrace, error, stack, parser |
 | # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 627691.0 |
+| # downloads        | 705082.0 |
 | # stars            | 0.0 |
 
 ## Links

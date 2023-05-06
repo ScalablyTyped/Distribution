@@ -10,9 +10,9 @@ PubSub interface for libp2p
 | ------------------ | :-------------: |
 | Full name          | @libp2p/interface-pubsub |
 | Keywords           | interface, libp2p |
-| # releases         | 12 |
+| # releases         | 15 |
 | # dependents       | 0.0 |
-| # downloads        | 13676.0 |
+| # downloads        | 60193.333333333336 |
 | # stars            | 68.0 |
 
 ## Links

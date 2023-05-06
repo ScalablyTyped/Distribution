@@ -10,9 +10,9 @@ selector parser for css
 | ------------------ | :-------------: |
 | Full name          | @tokey/css-selector-parser |
 | Keywords           | parser, css, selector |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 13490.333333333334 |
+| # downloads        | 14398.333333333334 |
 | # stars            | ? |
 
 ## Links

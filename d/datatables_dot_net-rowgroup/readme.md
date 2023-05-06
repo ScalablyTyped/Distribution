@@ -10,10 +10,10 @@ RowGroup for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-rowgroup |
 | Keywords           | RowGroup, Row Grouping, Datatables, jQuery, table, filter, sort |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 192468.0 |
-| # stars            | 2.0 |
+| # downloads        | 180046.33333333334 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

@@ -10,10 +10,10 @@ The store is reponsible for loading a story from a CSF file and preparing into a
 | ------------------ | :-------------: |
 | Full name          | @storybook/store |
 | Keywords           | storybook |
-| # releases         | 207 |
+| # releases         | 270 |
 | # dependents       | 0.0 |
-| # downloads        | 1.3678345666666666E7 |
-| # stars            | 74176.0 |
+| # downloads        | 1.6765029666666666E7 |
+| # stars            | 75982.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/store)

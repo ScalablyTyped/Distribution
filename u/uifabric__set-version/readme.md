@@ -10,9 +10,9 @@ Non-Fabric-specific package version setter
 | ------------------ | :-------------: |
 | Full name          | @uifabric/set-version |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 2 |
 | # dependents       | 0.0 |
-| # downloads        | 347054.3333333333 |
+| # downloads        | 266620.3333333333 |
 | # stars            | ? |
 
 ## Links

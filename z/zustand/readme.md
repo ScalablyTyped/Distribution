@@ -10,10 +10,10 @@ Typings are for version 4.1.1
 | ------------------ | :-------------: |
 | Full name          | zustand |
 | Keywords           | react, state, manager, management, redux, store |
-| # releases         | 63 |
+| # releases         | 60 |
 | # dependents       | 0.0 |
-| # downloads        | 2443018.6666666665 |
-| # stars            | 20752.0 |
+| # downloads        | 3873906.3333333335 |
+| # stars            | 25902.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/zustand)

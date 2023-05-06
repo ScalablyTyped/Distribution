@@ -10,10 +10,10 @@ Scatter Component for Victory
 | ------------------ | :-------------: |
 | Full name          | victory-scatter |
 | Keywords           | data visualization, React, d3, charting |
-| # releases         | 59 |
+| # releases         | 44 |
 | # dependents       | 0.0 |
-| # downloads        | 826520.6666666666 |
-| # stars            | 9909.0 |
+| # downloads        | 809891.3333333334 |
+| # stars            | 10115.0 |
 
 ## Links
 - [Homepage](https://formidable.com/open-source/victory)

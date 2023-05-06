@@ -10,10 +10,10 @@ Graph based search interface for Neo4j database.
 | ------------------ | :-------------: |
 | Full name          | popoto |
 | Keywords           | popoto, d3, neo4j, cypher, graph, search |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 1161.3333333333333 |
-| # stars            | 409.0 |
+| # downloads        | 1259.3333333333333 |
+| # stars            | 427.0 |
 
 ## Links
 - [Homepage](https://popotojs.com/)

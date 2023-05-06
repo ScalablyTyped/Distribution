@@ -10,10 +10,10 @@ Travelport Universal API
 | ------------------ | :-------------: |
 | Full name          | uapi-json |
 | Keywords           | uapi, node, travelport |
-| # releases         | 38 |
+| # releases         | 33 |
 | # dependents       | 0.0 |
-| # downloads        | 7846.0 |
-| # stars            | 58.0 |
+| # downloads        | 609.6666666666666 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/Travelport-Ukraine/uapi-json#readme)

@@ -10,10 +10,10 @@ Typings are for version 0.4.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/installations-types |
 | Keywords           | - |
-| # releases         | 1161 |
+| # releases         | 969 |
 | # dependents       | 0.0 |
-| # downloads        | 3334463.0 |
-| # stars            | 4194.0 |
+| # downloads        | 4120341.3333333335 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

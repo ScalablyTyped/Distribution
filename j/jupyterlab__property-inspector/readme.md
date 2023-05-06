@@ -10,9 +10,9 @@ A property inspector display for widgets
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/property-inspector |
 | Keywords           | - |
-| # releases         | 141 |
+| # releases         | 135 |
 | # dependents       | 0.0 |
-| # downloads        | 185060.33333333334 |
+| # downloads        | 85767.33333333333 |
 | # stars            | ? |
 
 ## Links

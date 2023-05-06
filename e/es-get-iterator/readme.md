@@ -10,10 +10,10 @@ Get an iterator for any JS language value. Works robustly across all environment
 | ------------------ | :-------------: |
 | Full name          | es-get-iterator |
 | Keywords           | iterator, Symbol.iterator, iterable, collection, next, iteration |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2.0489364E7 |
-| # stars            | 12.0 |
+| # downloads        | 2.7780848E7 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/ljharb/es-get-iterator#readme)

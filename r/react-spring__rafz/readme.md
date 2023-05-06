@@ -10,10 +10,10 @@ react-spring's fork of rafz one frameloop to rule them all
 | ------------------ | :-------------: |
 | Full name          | @react-spring/rafz |
 | Keywords           | animated, animation, hooks, motion, react, react-native, spring, typescript, velocity |
-| # releases         | 39 |
+| # releases         | 43 |
 | # dependents       | 0.0 |
-| # downloads        | 3083039.6666666665 |
-| # stars            | 24014.0 |
+| # downloads        | 3729353.6666666665 |
+| # stars            | 24618.0 |
 
 ## Links
 - [Homepage](https://github.com/pmndrs/react-spring/tree/master/packages/rafz#readme)

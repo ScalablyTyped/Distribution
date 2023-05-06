@@ -10,10 +10,10 @@ Typings are for version 0.1.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/performance-types |
 | Keywords           | - |
-| # releases         | 1155 |
+| # releases         | 965 |
 | # dependents       | 0.0 |
-| # downloads        | 4857478.333333333 |
-| # stars            | 4194.0 |
+| # downloads        | 5044561.0 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

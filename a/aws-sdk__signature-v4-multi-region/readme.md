@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/signature-v4-multi-region |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 35 |
 | # dependents       | 0.0 |
-| # downloads        | 2748685.6666666665 |
-| # stars            | 1854.0 |
+| # downloads        | 4448659.0 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/signature-v4-multi-region)

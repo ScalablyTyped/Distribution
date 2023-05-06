@@ -12,8 +12,8 @@ VSCode oniguruma bindings
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 1423881.6666666667 |
-| # stars            | 46.0 |
+| # downloads        | 1986498.6666666667 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/vscode-oniguruma#readme)

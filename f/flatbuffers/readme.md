@@ -10,10 +10,10 @@ Memory Efficient Serialization Library
 | ------------------ | :-------------: |
 | Full name          | flatbuffers |
 | Keywords           | flatbuffers |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 388955.0 |
-| # stars            | 18616.0 |
+| # downloads        | 585890.3333333334 |
+| # stars            | 19628.0 |
 
 ## Links
 - [Homepage](https://google.github.io/flatbuffers/)

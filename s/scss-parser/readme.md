@@ -10,10 +10,10 @@ A library to parse/stringify SCSS
 | ------------------ | :-------------: |
 | Full name          | scss-parser |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 1007639.6666666666 |
-| # stars            | 100.0 |
+| # downloads        | 1175467.6666666667 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/salesforce-ux/scss-parser#readme)

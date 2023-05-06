@@ -10,10 +10,10 @@ simple node sql parser
 | ------------------ | :-------------: |
 | Full name          | node-sql-parser |
 | Keywords           | sql, sql-parser, parser, node, nodejs, node-parser, node-sql-parser, ast, sql-ast |
-| # releases         | 41 |
+| # releases         | 47 |
 | # dependents       | 0.0 |
-| # downloads        | 110448.66666666667 |
-| # stars            | 399.0 |
+| # downloads        | 196746.33333333334 |
+| # stars            | 452.0 |
 
 ## Links
 - [Homepage](https://github.com/taozhi8833998/node-sql-parser#readme)

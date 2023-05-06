@@ -10,10 +10,10 @@ A schema validation package that supports direct validation of MongoDB update mo
 | ------------------ | :-------------: |
 | Full name          | simpl-schema |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 96861.33333333333 |
-| # stars            | 552.0 |
+| # downloads        | 103056.0 |
+| # stars            | 557.0 |
 
 ## Links
 - [Homepage](https://github.com/longshotlabs/simpl-schema)

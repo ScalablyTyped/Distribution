@@ -10,12 +10,15 @@ A bcrypt library for NodeJS.
 | ------------------ | :-------------: |
 | Full name          | bcrypt |
 | Keywords           | bcrypt, password, auth, authentication, encryption, crypt, crypto |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 3847803.6666666665 |
-| # stars            | 6427.0 |
+| # downloads        | 3795863.0 |
+| # stars            | 6588.0 |
 
 ## Links
+- [Homepage](https://github.com/kelektiv/node.bcrypt.js#readme)
+- [Bugs](https://github.com/kelektiv/node.bcrypt.js/issues)
+- [Repository](https://github.com/kelektiv/node.bcrypt.js)
 - [Npm](https://www.npmjs.com/package/bcrypt)
     
 

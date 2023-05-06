@@ -10,10 +10,10 @@ An internal Lerna tool
 | ------------------ | :-------------: |
 | Full name          | @lerna/query-graph |
 | Keywords           | lerna, utils |
-| # releases         | 24 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 5330816.0 |
-| # stars            | 33535.0 |
+| # downloads        | 5158800.666666667 |
+| # stars            | 34130.0 |
 
 ## Links
 - [Homepage](https://lerna.js.org)

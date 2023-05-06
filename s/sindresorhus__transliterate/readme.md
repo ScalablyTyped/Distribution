@@ -10,10 +10,10 @@ Convert Unicode characters to Latin characters using transliteration
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/transliterate |
 | Keywords           | transliterate, transliteration, string, deburr, unicode, ascii, text, latin, latinize, convert, replace |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0.0 |
-| # downloads        | 3342524.6666666665 |
-| # stars            | 229.0 |
+| # downloads        | 3176809.0 |
+| # stars            | 250.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/transliterate#readme)

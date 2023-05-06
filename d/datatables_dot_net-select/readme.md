@@ -10,10 +10,10 @@ Select for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-select |
 | Keywords           | select, selection, Datatables, jQuery, table, filter, sort |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 343774.0 |
-| # stars            | 3.0 |
+| # downloads        | 325668.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

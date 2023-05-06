@@ -10,10 +10,10 @@ Generic logger interface
 | ------------------ | :-------------: |
 | Full name          | @apollo/utils.logger |
 | Keywords           | apollo, graphql, typescript, node |
-| # releases         | 2 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 4019598.6666666665 |
-| # stars            | 14.0 |
+| # downloads        | 4792658.333333333 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-utils#readme)

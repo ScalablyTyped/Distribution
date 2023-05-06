@@ -10,10 +10,10 @@ After Effects plugin for exporting animations to SVG + JavaScript or canvas + Ja
 | ------------------ | :-------------: |
 | Full name          | lottie-web |
 | Keywords           | animation, canvas, svg, after effects, plugin, export |
-| # releases         | 24 |
+| # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 4658179.0 |
-| # stars            | 26971.0 |
+| # downloads        | 5173331.333333333 |
+| # stars            | 27920.0 |
 
 ## Links
 - [Homepage](https://github.com/airbnb/lottie-web#readme)

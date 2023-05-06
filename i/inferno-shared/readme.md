@@ -12,8 +12,8 @@ Helpers functions for Inferno
 | Keywords           | inferno, helpers |
 | # releases         | 19 |
 | # dependents       | 0.0 |
-| # downloads        | 361665.0 |
-| # stars            | 15512.0 |
+| # downloads        | 448369.0 |
+| # stars            | 15597.0 |
 
 ## Links
 - [Homepage](https://github.com/infernojs/inferno#readme)

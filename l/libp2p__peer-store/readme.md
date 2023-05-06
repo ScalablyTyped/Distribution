@@ -12,7 +12,7 @@ Stores information about peers libp2p knows on the network
 | Keywords           | IPFS |
 | # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 17271.333333333332 |
+| # downloads        | 26908.333333333332 |
 | # stars            | 0.0 |
 
 ## Links

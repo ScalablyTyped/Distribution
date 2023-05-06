@@ -10,10 +10,10 @@ Fire events the same way the user does
 | ------------------ | :-------------: |
 | Full name          | @testing-library/user-event |
 | Keywords           | react-testing-library, dom-testing-library, react, testing |
-| # releases         | 112 |
+| # releases         | 107 |
 | # dependents       | 0.0 |
-| # downloads        | 2.0224473E7 |
-| # stars            | 1741.0 |
+| # downloads        | 2.2665945666666668E7 |
+| # stars            | 1810.0 |
 
 ## Links
 - [Homepage](https://github.com/testing-library/user-event#readme)

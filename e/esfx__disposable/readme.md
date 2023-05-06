@@ -10,10 +10,10 @@ A low-level API for defining explicit resource management.
 | ------------------ | :-------------: |
 | Full name          | @esfx/disposable |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 32 |
 | # dependents       | 0.0 |
-| # downloads        | 22689.0 |
-| # stars            | 161.0 |
+| # downloads        | 22487.666666666668 |
+| # stars            | 169.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

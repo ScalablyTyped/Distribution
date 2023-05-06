@@ -12,7 +12,7 @@ Unicode CLDR pluralization rules as JavaScript functions
 | Keywords           | unicode, cldr, i18n, internationalization, pluralization |
 | # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 4234214.333333333 |
+| # downloads        | 3781300.3333333335 |
 | # stars            | 48.0 |
 
 ## Links

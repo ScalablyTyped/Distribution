@@ -10,10 +10,10 @@ Enables developers to use a unified Postman Collection format Object across proj
 | ------------------ | :-------------: |
 | Full name          | postman-collection |
 | Keywords           | postman, collection, sdk |
-| # releases         | 16 |
+| # releases         | 14 |
 | # dependents       | 0.0 |
-| # downloads        | 2436752.0 |
-| # stars            | 347.0 |
+| # downloads        | 2805474.0 |
+| # stars            | 365.0 |
 
 ## Links
 - [Homepage](https://github.com/postmanlabs/postman-collection#readme)

@@ -10,10 +10,10 @@ The source code and documentation for this package are in the main [node-redis](
 | ------------------ | :-------------: |
 | Full name          | @redis/client |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 12 |
 | # dependents       | 0.0 |
-| # downloads        | 1438032.0 |
-| # stars            | 15439.0 |
+| # downloads        | 2609602.6666666665 |
+| # stars            | 15761.0 |
 
 ## Links
 - [Homepage](https://github.com/redis/node-redis/tree/master/packages/client)

@@ -10,10 +10,10 @@ A mighty, modern CSS linter.
 | ------------------ | :-------------: |
 | Full name          | stylelint |
 | Keywords           | css-in-js, css, less, lint, linter, markdown, sass, scss, stylelint, sugarss |
-| # releases         | 36 |
+| # releases         | 38 |
 | # dependents       | 0.0 |
-| # downloads        | 1.4865265666666666E7 |
-| # stars            | 9906.0 |
+| # downloads        | 1.5604025333333334E7 |
+| # stars            | 10070.0 |
 
 ## Links
 - [Homepage](https://stylelint.io)

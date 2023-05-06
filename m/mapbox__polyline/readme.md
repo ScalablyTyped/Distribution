@@ -12,10 +12,13 @@ Polyline encoding and decoding
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 832700.6666666666 |
-| # stars            | 568.0 |
+| # downloads        | 762528.3333333334 |
+| # stars            | 582.0 |
 
 ## Links
+- [Homepage](https://github.com/mapbox/polyline#readme)
+- [Bugs](https://github.com/mapbox/polyline/issues)
+- [Repository](https://github.com/mapbox/polyline)
 - [Npm](https://www.npmjs.com/package/%40mapbox%2Fpolyline)
     
 

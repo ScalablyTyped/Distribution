@@ -10,10 +10,10 @@ Interact with the Vue devtools from the page
 | ------------------ | :-------------: |
 | Full name          | @vue/devtools-api |
 | Keywords           | - |
-| # releases         | 43 |
+| # releases         | 50 |
 | # dependents       | 0.0 |
-| # downloads        | 2356489.3333333335 |
-| # stars            | 22635.0 |
+| # downloads        | 3097684.6666666665 |
+| # stars            | 23007.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/vue-devtools#readme)

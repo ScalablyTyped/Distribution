@@ -10,10 +10,10 @@ Convert .json files to ES6 modules
 | ------------------ | :-------------: |
 | Full name          | @rollup/plugin-json |
 | Keywords           | rollup, plugin, json, es2015, npm, modules |
-| # releases         | 1 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 5076168.666666667 |
-| # stars            | 2638.0 |
+| # downloads        | 6406974.0 |
+| # stars            | 2927.0 |
 
 ## Links
 - [Homepage](https://github.com/rollup/plugins/tree/master/packages/json#readme)

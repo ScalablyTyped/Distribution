@@ -10,10 +10,10 @@ Typings are for version 9.2.2
 | ------------------ | :-------------: |
 | Full name          | @intlify/devtools-if |
 | Keywords           | devtools, i18n, internationalization, intlify |
-| # releases         | 66 |
+| # releases         | 94 |
 | # dependents       | 0.0 |
-| # downloads        | 914766.6666666666 |
-| # stars            | 959.0 |
+| # downloads        | 1270389.0 |
+| # stars            | 1132.0 |
 
 ## Links
 - [Homepage](https://github.com/intlify/vue-i18n-next/tree/master/packages/devtools-if#readme)

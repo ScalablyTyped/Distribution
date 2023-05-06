@@ -10,9 +10,9 @@ WordPress word count utility.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/wordcount |
 | Keywords           | wordpress, gutenberg, wordcount |
-| # releases         | 48 |
+| # releases         | 51 |
 | # dependents       | 0.0 |
-| # downloads        | 101245.33333333333 |
+| # downloads        | 112795.66666666667 |
 | # stars            | ? |
 
 ## Links

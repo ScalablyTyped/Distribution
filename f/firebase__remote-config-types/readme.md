@@ -10,10 +10,10 @@ Typings are for version 0.2.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/remote-config-types |
 | Keywords           | - |
-| # releases         | 1155 |
+| # releases         | 969 |
 | # dependents       | 0.0 |
-| # downloads        | 4766891.0 |
-| # stars            | 4194.0 |
+| # downloads        | 4995955.333333333 |
+| # stars            | 4344.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

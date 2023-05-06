@@ -10,10 +10,10 @@ Bindings for RE2: fast, safe alternative to backtracking regular expression engi
 | ------------------ | :-------------: |
 | Full name          | re2 |
 | Keywords           | RegExp, RegEx, text processing, PCRE alternative |
-| # releases         | 17 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 2145164.0 |
-| # stars            | 366.0 |
+| # downloads        | 2512570.0 |
+| # stars            | 388.0 |
 
 ## Links
 - [Homepage](https://github.com/uhop/node-re2)

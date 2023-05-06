@@ -10,10 +10,10 @@ ENS support for web3.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-ens |
 | Keywords           | - |
-| # releases         | 55 |
+| # releases         | 61 |
 | # dependents       | 0.0 |
-| # downloads        | 2301894.0 |
-| # stars            | 16013.0 |
+| # downloads        | 2203162.0 |
+| # stars            | 16771.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)

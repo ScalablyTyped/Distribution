@@ -10,10 +10,10 @@ Minify files with UglifyJS.
 | ------------------ | :-------------: |
 | Full name          | gulp-uglify |
 | Keywords           | gulpplugin |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 1613931.3333333333 |
-| # stars            | 1237.0 |
+| # downloads        | 1590825.3333333333 |
+| # stars            | 1230.0 |
 
 ## Links
 - [Homepage](https://github.com/terinjokes/gulp-uglify/)

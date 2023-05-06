@@ -10,12 +10,15 @@ The JavaScript version of Open Chinese Convert (OpenCC)
 | ------------------ | :-------------: |
 | Full name          | opencc-js |
 | Keywords           | opencc, Chinese, unicode, Chinese Language, Simplified Chinese, Traditional Chinese, chinese-language, chinese-characters, traditional-chinese, simplified-chinese |
-| # releases         | 15 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 3887.3333333333335 |
-| # stars            | 86.0 |
+| # downloads        | 5329.333333333333 |
+| # stars            | 107.0 |
 
 ## Links
+- [Homepage](https://github.com/nk2028/opencc-js#readme)
+- [Bugs](https://github.com/nk2028/opencc-js/issues)
+- [Repository](https://github.com/nk2028/opencc-js)
 - [Npm](https://www.npmjs.com/package/opencc-js)
     
 

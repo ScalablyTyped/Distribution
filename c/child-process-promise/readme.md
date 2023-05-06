@@ -12,10 +12,13 @@ Simple wrapper around the "child_process" module that makes use of promises
 | Keywords           | child, process, promises |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 1504230.0 |
-| # stars            | 248.0 |
+| # downloads        | 1308415.6666666667 |
+| # stars            | 250.0 |
 
 ## Links
+- [Homepage](https://github.com/patrick-steele-idem/child-process-promise#readme)
+- [Bugs](https://github.com/patrick-steele-idem/child-process-promise/issues)
+- [Repository](https://github.com/patrick-steele-idem/child-process-promise)
 - [Npm](https://www.npmjs.com/package/child-process-promise)
     
 

@@ -12,8 +12,8 @@ Lumino DOM Utilities
 | Keywords           | - |
 | # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 283247.3333333333 |
-| # stars            | 370.0 |
+| # downloads        | 194908.33333333334 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

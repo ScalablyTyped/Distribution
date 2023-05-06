@@ -10,10 +10,10 @@ Typings are for version 3.209.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-defaults-mode-node |
 | Keywords           | - |
-| # releases         | 38 |
+| # releases         | 58 |
 | # dependents       | 0.0 |
-| # downloads        | 1.0057855E7 |
-| # stars            | 1854.0 |
+| # downloads        | 1.6830827E7 |
+| # stars            | 2036.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-defaults-mode-node)

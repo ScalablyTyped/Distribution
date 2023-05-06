@@ -10,10 +10,10 @@ List of Android Supported Devices
 | ------------------ | :-------------: |
 | Full name          | android-device-list |
 | Keywords           | android, device, devices, model, name, list |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 9859.0 |
-| # stars            | 62.0 |
+| # downloads        | 8814.333333333334 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/pbakondy/android-device-list#readme)

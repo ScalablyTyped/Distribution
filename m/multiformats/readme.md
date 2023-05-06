@@ -10,10 +10,10 @@ Interface for multihash, multicodec, multibase and CID
 | ------------------ | :-------------: |
 | Full name          | multiformats |
 | Keywords           | ipfs, ipld, multiformats |
-| # releases         | 81 |
+| # releases         | 76 |
 | # dependents       | 0.0 |
-| # downloads        | 563006.6666666666 |
-| # stars            | 132.0 |
+| # downloads        | 905347.3333333334 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](https://github.com/multiformats/js-multiformats#readme)

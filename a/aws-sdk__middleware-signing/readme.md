@@ -10,10 +10,10 @@ Typings are for version 3.208.0
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-signing |
 | Keywords           | - |
-| # releases         | 70 |
+| # releases         | 81 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5020624333333334E7 |
-| # stars            | 1854.0 |
+| # downloads        | 2.1272350333333332E7 |
+| # stars            | 2019.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-signing)

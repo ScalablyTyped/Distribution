@@ -10,10 +10,10 @@ The Material Components for the web snackbar component
 | ------------------ | :-------------: |
 | Full name          | @material/snackbar |
 | Keywords           | material components, material design, snackbar |
-| # releases         | 711 |
+| # releases         | 768 |
 | # dependents       | 0.0 |
-| # downloads        | 214760.66666666666 |
-| # stars            | 16381.0 |
+| # downloads        | 403807.6666666667 |
+| # stars            | 16576.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

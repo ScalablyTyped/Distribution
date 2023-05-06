@@ -10,10 +10,10 @@ Stylable DOM testing utilities
 | ------------------ | :-------------: |
 | Full name          | @stylable/dom-test-kit |
 | Keywords           | - |
-| # releases         | 93 |
+| # releases         | 82 |
 | # dependents       | 0.0 |
-| # downloads        | 15887.666666666666 |
-| # stars            | 1174.0 |
+| # downloads        | 16578.333333333332 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/stylable/tree/master#readme)

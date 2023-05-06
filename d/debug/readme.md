@@ -12,8 +12,8 @@ Lightweight debugging utility for Node.js and the browser
 | Keywords           | debug, log, debugger |
 | # releases         | 6 |
 | # dependents       | 0.0 |
-| # downloads        | 7.791562086666666E8 |
-| # stars            | 10290.0 |
+| # downloads        | 8.15117891E8 |
+| # stars            | 10395.0 |
 
 ## Links
 - [Homepage](https://github.com/debug-js/debug#readme)

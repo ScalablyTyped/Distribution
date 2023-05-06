@@ -10,9 +10,9 @@ The Adobe PDF Services Node.js SDK provides APIs for creating, combining, export
 | ------------------ | :-------------: |
 | Full name          | @adobe/pdfservices-node-sdk |
 | Keywords           | pdf, Adobe, acrobat, create, convert, export, merge, html2pdf, ocr, rotate, delete, rearrange, replace, insert, protect, removeprotection, split, document merge, document generation, extract, sdk, api |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0.0 |
-| # downloads        | 8658.333333333334 |
+| # downloads        | 11873.333333333334 |
 | # stars            | ? |
 
 ## Links

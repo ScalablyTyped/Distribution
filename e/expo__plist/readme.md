@@ -10,10 +10,10 @@ Mac OS X Plist parser/builder for Node.js and browsers
 | ------------------ | :-------------: |
 | Full name          | @expo/plist |
 | Keywords           | plist |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 3051269.0 |
-| # stars            | 2299.0 |
+| # downloads        | 3088519.3333333335 |
+| # stars            | 2386.0 |
 
 ## Links
 - [Homepage](https://github.com/expo/expo-cli/tree/main/packages/plist#readme)

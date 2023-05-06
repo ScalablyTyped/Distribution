@@ -10,9 +10,9 @@ Nested/recursive `.gitignore`/`.npmignore` parsing and filtering.
 | ------------------ | :-------------: |
 | Full name          | ignore-walk |
 | Keywords           | ignorefile, ignore, file, .gitignore, .npmignore, glob |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 3.1015385E7 |
+| # downloads        | 3.1201452666666668E7 |
 | # stars            | 43.0 |
 
 ## Links

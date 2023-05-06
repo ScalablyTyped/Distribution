@@ -10,10 +10,10 @@ Core utilities for building navigators
 | ------------------ | :-------------: |
 | Full name          | @react-navigation/core |
 | Keywords           | react, react-native, react-navigation |
-| # releases         | 52 |
+| # releases         | 39 |
 | # dependents       | 0.0 |
-| # downloads        | 2523900.3333333335 |
-| # stars            | 21622.0 |
+| # downloads        | 2597560.3333333335 |
+| # stars            | 22003.0 |
 
 ## Links
 - [Homepage](https://reactnavigation.org)

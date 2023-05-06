@@ -10,12 +10,15 @@ SAML Protocol server middleware
 | ------------------ | :-------------: |
 | Full name          | samlp |
 | Keywords           | saml, auth |
-| # releases         | 11 |
+| # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 73151.33333333333 |
-| # stars            | 118.0 |
+| # downloads        | 46291.666666666664 |
+| # stars            | 121.0 |
 
 ## Links
+- [Homepage](https://github.com/auth0/node-samlp#readme)
+- [Bugs](https://github.com/auth0/node-samlp/issues)
+- [Repository](https://github.com/auth0/node-samlp)
 - [Npm](https://www.npmjs.com/package/samlp)
     
 

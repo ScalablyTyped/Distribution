@@ -10,10 +10,10 @@ Text part language feature for CKEditor 5.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-language |
 | Keywords           | ckeditor, ckeditor5, ckeditor 5, ckeditor5-feature, ckeditor5-plugin, ckeditor5-dll |
-| # releases         | 17 |
+| # releases         | 25 |
 | # dependents       | 0.0 |
-| # downloads        | 38749.0 |
-| # stars            | 6266.0 |
+| # downloads        | 42974.0 |
+| # stars            | 6596.0 |
 
 ## Links
 - [Homepage](https://ckeditor.com/ckeditor-5)

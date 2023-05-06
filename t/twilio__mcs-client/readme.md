@@ -10,9 +10,9 @@ Twilio Media Content Service client library
 | ------------------ | :-------------: |
 | Full name          | @twilio/mcs-client |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 42 |
 | # dependents       | 0.0 |
-| # downloads        | 189285.0 |
+| # downloads        | 172020.33333333334 |
 | # stars            | ? |
 
 ## Links

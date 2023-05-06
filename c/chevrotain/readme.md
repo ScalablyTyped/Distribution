@@ -10,10 +10,10 @@ Chevrotain is a high performance fault tolerant javascript parsing DSL for build
 | ------------------ | :-------------: |
 | Full name          | chevrotain |
 | Keywords           | parser, syntax, lexical, analysis, grammar, lexer, tokenizer, generator, compiler, fault, tolerant |
-| # releases         | 15 |
+| # releases         | 18 |
 | # dependents       | 0.0 |
-| # downloads        | 1754051.0 |
-| # stars            | 1979.0 |
+| # downloads        | 2036603.6666666667 |
+| # stars            | 2046.0 |
 
 ## Links
 - [Homepage](https://chevrotain.io/docs/)

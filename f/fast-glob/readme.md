@@ -12,8 +12,8 @@ It's a very fast and efficient glob library for Node.js
 | Keywords           | glob, patterns, fast, implementation |
 | # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 1.41365166E8 |
-| # stars            | 1783.0 |
+| # downloads        | 1.5971396333333334E8 |
+| # stars            | 1872.0 |
 
 ## Links
 - [Homepage](https://github.com/mrmlnc/fast-glob#readme)

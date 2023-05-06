@@ -12,8 +12,8 @@ A small tool to find unused Sass variables
 | Keywords           | sass, unused, variables, scss |
 | # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 245484.66666666666 |
-| # stars            | 44.0 |
+| # downloads        | 244436.33333333334 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/XhmikosR/find-unused-sass-variables#readme)

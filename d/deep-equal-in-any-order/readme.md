@@ -10,10 +10,10 @@ chai plugin to match objects and arrays deep equality with arrays (including nes
 | ------------------ | :-------------: |
 | Full name          | deep-equal-in-any-order |
 | Keywords           | chai, plugin, chai-plugin, arrays, objects, any, order, deep, equal |
-| # releases         | 24 |
+| # releases         | 23 |
 | # dependents       | 0.0 |
-| # downloads        | 369055.0 |
-| # stars            | 14.0 |
+| # downloads        | 414751.0 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/oprogramador/deep-equal-in-any-order#readme)

@@ -10,12 +10,15 @@ acorn.js parser adapted to TestCafe Hammerhead
 | ------------------ | :-------------: |
 | Full name          | acorn-hammerhead |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0.0 |
-| # downloads        | 1220356.6666666667 |
+| # downloads        | 1266312.6666666667 |
 | # stars            | 1.0 |
 
 ## Links
+- [Homepage](https://github.com/miherlosev/acorn-hammerhead#readme)
+- [Bugs](https://github.com/miherlosev/acorn-hammerhead/issues)
+- [Repository](https://github.com/miherlosev/acorn-hammerhead)
 - [Npm](https://www.npmjs.com/package/acorn-hammerhead)
     
 

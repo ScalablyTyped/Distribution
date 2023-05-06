@@ -10,10 +10,10 @@ Parse a JSON string that has git merge conflicts, resolving if possible
 | ------------------ | :-------------: |
 | Full name          | parse-conflict-json |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 0.0 |
-| # downloads        | 3371156.3333333335 |
-| # stars            | 25.0 |
+| # downloads        | 5299845.333333333 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/parse-conflict-json#readme)

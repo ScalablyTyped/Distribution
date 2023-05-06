@@ -10,10 +10,10 @@ Removes body scroll without content _shake_
 | ------------------ | :-------------: |
 | Full name          | react-remove-scroll-bar |
 | Keywords           | scroll |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 3314954.6666666665 |
-| # stars            | 43.0 |
+| # downloads        | 4004324.0 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/theKashey/react-remove-scroll-bar#readme)

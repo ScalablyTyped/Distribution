@@ -10,9 +10,9 @@ Turns off all rules that are unnecessary or might conflict with Prettier.
 | ------------------ | :-------------: |
 | Full name          | eslint-config-prettier |
 | Keywords           | eslint, eslintconfig, prettier |
-| # releases         | 14 |
+| # releases         | 7 |
 | # dependents       | 0.0 |
-| # downloads        | 5.0297092333333336E7 |
+| # downloads        | 5.4843388333333336E7 |
 | # stars            | ? |
 
 ## Links

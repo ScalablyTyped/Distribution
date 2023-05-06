@@ -10,9 +10,9 @@ A wrapper for Commander that automatically sets the version based on your packag
 | ------------------ | :-------------: |
 | Full name          | commander-version |
 | Keywords           | commander, version, set, package, json, pkg, plugin |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0.0 |
-| # downloads        | 563.6666666666666 |
+| # downloads        | 1037.0 |
 | # stars            | 1.0 |
 
 ## Links

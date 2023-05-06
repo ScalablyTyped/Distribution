@@ -12,11 +12,11 @@ Package to aggregate shared logic and dependencies for the IPFS ecosystem
 | Keywords           | - |
 | # releases         | 31 |
 | # dependents       | 0.0 |
-| # downloads        | 452588.0 |
-| # stars            | 18.0 |
+| # downloads        | 434636.0 |
+| # stars            | 22.0 |
 
 ## Links
-- [Homepage](https://github.com/ipfs/js-ipfs-utils)
+- [Homepage](https://github.com/ipfs/js-ipfs-utils#readme)
 - [Bugs](https://github.com/ipfs/js-ipfs-utils/issues)
 - [Repository](https://github.com/ipfs/js-ipfs-utils)
 - [Npm](https://www.npmjs.com/package/ipfs-utils)

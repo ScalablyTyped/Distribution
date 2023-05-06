@@ -12,7 +12,7 @@ A custom build of Stylis
 | Keywords           | styles, emotion, react, css, css-in-js |
 | # releases         | 1 |
 | # dependents       | 0.0 |
-| # downloads        | 2.7424551666666668E7 |
+| # downloads        | 2.7696598333333332E7 |
 | # stars            | ? |
 
 ## Links
